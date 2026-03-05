@@ -1,0 +1,738 @@
+{
+  "version": "V15",
+  "cardConfig": {
+    "rarityScores": {
+      "common": 2,
+      "rare": 3,
+      "epic": 6,
+      "legendary": 20,
+      "never": 1000
+    },
+    "rarityOrder": ["common", "rare", "epic", "legendary", "never"],
+    "degrees": {
+      "iron": { "multiplier": 1, "color": "#4B4B4B", "glow": "#6B6B6B", "border": "#5B5B5B" },
+      "bronze": { "multiplier": 3, "color": "#CD7F32", "glow": "#E09050", "border": "#DD8F42" },
+      "silver": { "multiplier": 7, "color": "#C0C0C0", "glow": "#D8D8D8", "border": "#D0D0D0" },
+      "pearl": { "multiplier": 15, "color": "#F8F6F0", "glow": "#FFFFF8", "border": "#EEE8E0" },
+      "gold": { "multiplier": 30, "color": "#D4AF37", "glow": "#FFD700", "border": "#E4BF47" },
+      "jade": { "multiplier": 60, "color": "#00A86B", "glow": "#20C880", "border": "#10B878" },
+      "sapphire": { "multiplier": 120, "color": "#0F52BA", "glow": "#2F72DA", "border": "#1F62CA" },
+      "ruby": { "multiplier": 240, "color": "#E0115F", "glow": "#FF1744", "border": "#F0215F" },
+      "emerald": { "multiplier": 500, "color": "#50C878", "glow": "#70E898", "border": "#60D888" },
+      "diamond": { "multiplier": 1200, "color": "#B9F2FF", "glow": "#D9FFFF", "border": "#E6FFFF" }
+    },
+    "degreeOrder": ["iron", "bronze", "silver", "pearl", "gold", "jade", "sapphire", "ruby", "emerald", "diamond"],
+    "combineRecipe": 2
+  },
+  "characters": [
+    {
+      "id": "gumball", "name": "Gumball", "rarity": "common", "packageId": "gumball_pack",
+      "images": { "iron": "gumball.jpg", "bronze": "gumball20.jpg", "silver": "gumball30.jpg", "pearl": "gumball40.jpg", "gold": "gumball50.jpg", "jade": "gumball60.jpg", "sapphire": "gumball70.jpg", "ruby": "gumball80.jpg", "emerald": "gumball90.jpg", "diamond": "gumball100.jpg" }
+    },
+    {
+      "id": "darwin", "name": "Darwin", "rarity": "rare", "packageId": "gumball_pack",
+      "images": { "iron": "darwin.jpg", "bronze": "darwin2.jpg", "silver": "darwin.jpg", "pearl": "darwin.jpg", "gold": "darwin.jpg", "jade": "darwin.jpg", "sapphire": "darwin.jpg", "ruby": "darwin.jpg", "emerald": "darwin.jpg", "diamond": "darwin.jpg" }
+    },
+    {
+      "id": "richard", "name": "Richard", "rarity": "epic", "packageId": "gumball_pack",
+      "images": { "iron": "richard.jpg", "bronze": "richard.jpg", "silver": "richard.jpg", "pearl": "richard.jpg", "gold": "richard.jpg", "jade": "richard.jpg", "sapphire": "richard.jpg", "ruby": "richard.jpg", "emerald": "richard.jpg", "diamond": "richard.jpg" }
+    },
+    {
+      "id": "larry", "name": "Larry", "rarity": "legendary", "packageId": "gumball_pack",
+      "images": { "iron": "larry.png", "bronze": "larry20.jpg", "silver": "larry.png", "pearl": "larry.png", "gold": "larry.png", "jade": "larry.png", "sapphire": "larry.png", "ruby": "larry.png", "emerald": "larry.png", "diamond": "larry.png" }
+    },
+    {
+      "id": "bobert", "name": "Bobert", "rarity": "never", "packageId": "gumball_pack",
+      "images": { "iron": "bobert.jpg", "bronze": "bobert.jpg", "silver": "bobert.jpg", "pearl": "bobert.jpg", "gold": "bobert.jpg", "jade": "bobert.jpg", "sapphire": "bobert.jpg", "ruby": "bobert.jpg", "emerald": "bobert.jpg", "diamond": "bobert.jpg" }
+    },
+    {
+      "id": "pu", "name": "Pu", "rarity": "common", "packageId": "kungfu_pack",
+      "images": { "iron": "pu.jpg", "bronze": "pu2.jpg", "silver": "pu3.jpg", "pearl": "pu4.jpg", "gold": "pu5.jpg", "jade": "pu6.jpg", "sapphire": "pu.jpg", "ruby": "pu.jpg", "emerald": "pu.jpg", "diamond": "pu.jpg" }
+    },
+    {
+      "id": "ping", "name": "Ping", "rarity": "rare", "packageId": "kungfu_pack",
+      "images": { "iron": "ping.jpg", "bronze": "ping.jpg", "silver": "ping.jpg", "pearl": "ping.jpg", "gold": "ping.jpg", "jade": "ping.jpg", "sapphire": "ping.jpg", "ruby": "ping.jpg", "emerald": "ping.jpg", "diamond": "ping.jpg" }
+    },
+    {
+      "id": "monkey", "name": "Monkey", "rarity": "epic", "packageId": "kungfu_pack",
+      "images": { "iron": "monkey.jpg", "bronze": "monkey20.jpg", "silver": "monkey31.jpg", "pearl": "monkey41.jpg", "gold": "monkey.jpg", "jade": "monkey.jpg", "sapphire": "monkey.jpg", "ruby": "monkey.jpg", "emerald": "monkey.jpg", "diamond": "monkey.jpg" }
+    },
+    {
+      "id": "shifu", "name": "Master Shifu", "rarity": "legendary", "packageId": "kungfu_pack",
+      "images": { "iron": "shifu.jpg", "bronze": "shifu.jpg", "silver": "shifu.jpg", "pearl": "shifu.jpg", "gold": "shifu.jpg", "jade": "shifu.jpg", "sapphire": "shifu.jpg", "ruby": "shifu.jpg", "emerald": "shifu.jpg", "diamond": "shifu.jpg" }
+    },
+    {
+      "id": "oogway", "name": "Master Oogway", "rarity": "never", "packageId": "kungfu_pack",
+      "images": { "iron": "oogway.jpg", "bronze": "oogway.jpg", "silver": "oogway.jpg", "pearl": "oogway.jpg", "gold": "oogway.jpg", "jade": "oogway.jpg", "sapphire": "oogway.jpg", "ruby": "oogway.jpg", "emerald": "oogway.jpg", "diamond": "oogway.jpg" }
+    },
+    {
+      "id": "burrito", "name": "Burrito", "rarity": "rare", "packageId": "wbb_pack",
+      "images": { "iron": "burrito.png", "bronze": "burrito.png", "silver": "burrito.png", "pearl": "burrito.png", "gold": "burrito.png", "jade": "burrito.png", "sapphire": "burrito.png", "ruby": "burrito.png", "emerald": "burrito.png", "diamond": "burrito.png" }
+    },
+    {
+      "id": "charlie", "name": "Charlie", "rarity": "rare", "packageId": "wbb_pack",
+      "images": { "iron": "charlie.jpg", "bronze": "charlie20.jpg", "silver": "charlie.jpg", "pearl": "charlie.jpg", "gold": "charlie.jpg", "jade": "charlie.jpg", "sapphire": "charlie.jpg", "ruby": "charlie.jpg", "emerald": "charlie.jpg", "diamond": "charlie.jpg" }
+    },
+    {
+      "id": "grizz", "name": "Grizz", "rarity": "rare", "packageId": "wbb_pack",
+      "images": { "iron": "grizz.jpg", "bronze": "grizz20.jpg", "silver": "grizz30.jpg", "pearl": "grizz40.jpg", "gold": "grizz50.jpg", "jade": "grizz60.jpg", "sapphire": "grizz70.jpg", "ruby": "grizz80.jpg", "emerald": "grizz90.jpg", "diamond": "grizz100.jpg" }
+    },
+    {
+      "id": "ice_bear", "name": "Ice Bear", "rarity": "rare", "packageId": "wbb_pack",
+      "images": { "iron": "ice bear.jpg", "bronze": "ice bear.jpg", "silver": "ice bear.jpg", "pearl": "ice bear.jpg", "gold": "ice bear.jpg", "jade": "ice bear.jpg", "sapphire": "ice bear.jpg", "ruby": "ice bear.jpg", "emerald": "ice bear.jpg", "diamond": "ice bear.jpg" }
+    },
+    {
+      "id": "nom_nom", "name": "Nom Nom", "rarity": "rare", "packageId": "wbb_pack",
+      "images": { "iron": "nom nom.jpg", "bronze": "nom nom.jpg", "silver": "nom nom.jpg", "pearl": "nom nom.jpg", "gold": "nom nom.jpg", "jade": "nom nom.jpg", "sapphire": "nom nom.jpg", "ruby": "nom nom.jpg", "emerald": "nom nom.jpg", "diamond": "nom nom.jpg" }
+    },
+    {
+      "id": "panda", "name": "Panda", "rarity": "rare", "packageId": "wbb_pack",
+      "images": { "iron": "panda.jpg", "bronze": "panda.jpg", "silver": "panda.jpg", "pearl": "panda.jpg", "gold": "panda.jpg", "jade": "panda.jpg", "sapphire": "panda.jpg", "ruby": "panda.jpg", "emerald": "panda.jpg", "diamond": "panda.jpg" }
+    },
+    {
+      "id": "hamster", "name": "Hamster", "rarity": "rare", "packageId": "wbb_pack",
+      "images": { "iron": "hamster.jpg", "bronze": "hamster.jpg", "silver": "hamster.jpg", "pearl": "hamster.jpg", "gold": "hamster", "jade": "hamster.jpg", "sapphire": "hamster.jpg", "ruby": "hamster.jpg", "emerald": "hamster.jpg", "diamond": "hamster.jpg" }
+    },
+    {
+      "id": "chloe", "name": "Chloe", "rarity": "rare", "packageId": "wbb_pack",
+      "images": { "iron": "chloe.png", "bronze": "hamster.jpg", "silver": "hamster.jpg", "pearl": "hamster.jpg", "gold": "hamster.jpg", "jade": "hamster.jpg", "sapphire": "hamster.jpg", "ruby": "hamster.jpg", "emerald": "hamster.jpg", "diamond": "hamster.jpg" }
+    },
+    {
+      "id": "albino_aligator", "name": "Albino Aligator", "rarity": "rare", "packageId": "wbb_pack",
+      "images": { "iron": "albino aligator.jpg", "bronze": "albino aligator.jpg", "silver": "albino aligator.jpg", "pearl": "albino aligator.jpg", "gold": "albino aligator", "jade": "albino aligator.jpg", "sapphire": "albino aligator.jpg", "ruby": "albino aligator.jpg", "emerald": "albino aligator.jpg", "diamond": "albino aligator.jpg" }
+    },
+    {
+      "id": "piniata_cat", "name": "Piniata Cat", "rarity": "rare", "packageId": "wbb_pack",
+      "images": { "iron": "pinatacat.jpg", "bronze": "pinatacat.jpg", "silver": "pinatacat.jpg", "pearl": "pinatacat.jpg", "gold": "pinatacat.jpg", "jade": "pinatacat.jpg", "sapphire": "pinatacat.jpg", "ruby": "pinatacat.jpg", "emerald": "pinatacat.jpg", "diamond": "pinatacat.jpg" }
+    },
+    {
+      "id": "chicken", "name": "Chicken", "rarity": "rare", "packageId": "wbb_pack",
+      "images": { "iron": "chicken.jpg", "bronze": "chicken.jpg", "silver": "chicken.jpg", "pearl": "chicken.jpg", "gold": "chicken", "jade": "chicken.jpg", "sapphire": "chicken.jpg", "ruby": "chicken.jpg", "emerald": "chicken.jpg", "diamond": "chicken.jpg" }
+    },
+    {
+      "id": "silver_bear", "name": "Silver Bear", "rarity": "rare", "packageId": "wbb_pack",
+      "images": { "iron": "silver bear.jpg", "bronze": "silver bear.jpg", "silver": "silver bear.jpg", "pearl": "silver bear.jpg", "gold": "silver bear.jpg", "jade": "silver bear.jpg", "sapphire": "silver bear.jpg", "ruby": "silver bear.jpg", "emerald": "silver bear.jpg", "diamond": "silver bear.jpg" }
+    },
+    {
+      "id": "craboo", "name": "Craboo", "rarity": "rare", "packageId": "wbb_pack",
+      "images": { "iron": "craboo.jpg", "bronze": "craboo.jpg", "silver": "craboo.jpg", "pearl": "craboo.jpg", "gold": "craboo.jpg", "jade": "craboo.jpg", "sapphire": "craboo.jpg", "ruby": "craboo.jpg", "emerald": "craboo.jpg", "diamond": "craboo.jpg" }
+    },
+    {
+      "id": "joey", "name": "Joey", "rarity": "rare", "packageId": "wbb_pack",
+      "images": { "iron": "joey.jpg", "bronze": "joey.jpg", "silver": "joey.jpg", "pearl": "joey.jpg", "gold": "joey.jpg", "jade": "joey.jpg", "sapphire": "joey.jpg", "ruby": "joey.jpg", "emerald": "joey.jpg", "diamond": "joey.jpg" }
+    },
+    {
+      "id": "ben10", "name": "Ben 10", "rarity": "common", "packageId": "ben10_pack",
+      "images": { "iron": "ben10.jpg", "bronze": "ben10_2.jpg", "silver": "ben10.jpg", "pearl": "ben10.jpg", "gold": "ben10.jpg", "jade": "ben10.jpg", "sapphire": "ben10.jpg", "ruby": "ben10.jpg", "emerald": "ben10.jpg", "diamond": "ben10.jpg" }
+    },
+    {
+      "id": "cannonbolt", "name": "Cannonbolt", "rarity": "rare", "packageId": "ben10_pack",
+      "images": { "iron": "cannonbolt.jpg", "bronze": "cannonbolt.jpg", "silver": "cannonbolt.jpg", "pearl": "cannonbolt.jpg", "gold": "cannonbolt.jpg", "jade": "cannonbolt.jpg", "sapphire": "cannonbolt.jpg", "ruby": "cannonbolt.jpg", "emerald": "cannonbolt.jpg", "diamond": "cannonbolt.jpg" }
+    },
+    {
+      "id": "fourarms", "name": "Four Arms", "rarity": "epic", "packageId": "ben10_pack",
+      "images": { "iron": "fourarms.jpg", "bronze": "fourarms2.jpg", "silver": "fourarms.jpg", "pearl": "fourarms.jpg", "gold": "fourarms.jpg", "jade": "fourarms.jpg", "sapphire": "fourarms.jpg", "ruby": "fourarms.jpg", "emerald": "fourarms.jpg", "diamond": "fourarms.jpg" }
+    },
+    {
+      "id": "xlr8", "name": "XLR8", "rarity": "legendary", "packageId": "ben10_pack",
+      "images": { "iron": "xlr8.jpg", "bronze": "xlr8.jpg", "silver": "xlr8.jpg", "pearl": "xlr8.jpg", "gold": "xlr8.jpg", "jade": "xlr8.jpg", "sapphire": "xlr8.jpg", "ruby": "xlr8.jpg", "emerald": "xlr8.jpg", "diamond": "xlr8.jpg" }
+    },
+    {
+      "id": "diamondhead", "name": "Diamondhead", "rarity": "epic", "packageId": "ben10_pack",
+      "images": { "iron": "diamondhead.jpg", "bronze": "diamondhead.jpg", "silver": "diamondhead.jpg", "pearl": "diamondhead.jpg", "gold": "diamondhead.jpg", "jade": "diamondhead.jpg", "sapphire": "diamondhead.jpg", "ruby": "diamondhead.jpg", "emerald": "diamondhead.jpg", "diamond": "diamondhead.jpg" }
+    },
+    {
+      "id": "waybig", "name": "Waybig", "rarity": "never", "packageId": "ben10_pack",
+      "images": { "iron": "waybig.jpg", "bronze": "waybig.jpg", "silver": "diamondhead.jpg", "pearl": "diamondhead.jpg", "gold": "diamondhead.jpg", "jade": "diamondhead.jpg", "sapphire": "diamondhead.jpg", "ruby": "diamondhead.jpg", "emerald": "diamondhead.jpg", "diamond": "diamondhead.jpg" }
+    },
+    {
+      "id": "finn", "name": "Finn", "rarity": "common", "packageId": "adventure_time_pack",
+      "images": { "iron": "finn10.jpg", "bronze": "finn20.jpg", "silver": "finn30.jpg", "pearl": "finn40.jpg", "gold": "finn50.jpg", "jade": "finn60.jpg", "sapphire": "finn70.jpg", "ruby": "finn80.jpg", "emerald": "finn90.jpg", "diamond": "finn100.jpg" }
+    },
+    {
+      "id": "jake", "name": "Jake", "rarity": "rare", "packageId": "adventure_time_pack",
+      "images": { "iron": "jake10.jpg", "bronze": "jake10.jpg", "silver": "jake10.jpg", "pearl": "jake10.jpg", "gold": "jake10.jpg", "jade": "jake10.jpg", "sapphire": "jake10.jpg", "ruby": "jake10.jpg", "emerald": "jake10.jpg", "diamond": "jake10.jpg" }
+    },
+    {
+      "id": "ice_king", "name": "Ice King", "rarity": "epic", "packageId": "adventure_time_pack",
+      "images": { "iron": "ice_king10.jpg", "bronze": "ice_king20.jpg", "silver": "ice_king30.jpg", "pearl": "ice_king40.jpg", "gold": "ice_king50.jpg", "jade": "jake10.jpg", "sapphire": "jake10.jpg", "ruby": "jake10.jpg", "emerald": "jake10.jpg", "diamond": "jake10.jpg" }
+    },
+    {
+      "id": "princess_bubblegum", "name": "Princess Bubblegum", "rarity": "legendary", "packageId": "adventure_time_pack",
+      "images": { "iron": "princess bubblegum.jpg", "bronze": "princess bubblegum.jpg", "silver": "jake10.jpg", "pearl": "jake10.jpg", "gold": "jake10.jpg", "jade": "jake10.jpg", "sapphire": "jake10.jpg", "ruby": "jake10.jpg", "emerald": "jake10.jpg", "diamond": "jake10.jpg" }
+    },
+    {
+      "id": "marceline", "name": "Marceline", "rarity": "never", "packageId": "adventure_time_pack",
+      "images": { "iron": "marceline.jpg", "bronze": "marceline.jpg", "silver": "marceline.jpg", "pearl": "jake10.jpg", "gold": "jake10.jpg", "jade": "jake10.jpg", "sapphire": "jake10.jpg", "ruby": "jake10.jpg", "emerald": "jake10.jpg", "diamond": "jake10.jpg" }
+    },
+    {
+      "id": "sponegbob", "name": "Spongebob", "rarity": "common", "packageId": "spongebob_pack",
+      "images": { "iron": "sponegbob.jpg", "bronze": "sponegbob.jpg", "silver": "spongbob.jpg", "pearl": "spongbob.jpg", "gold": "spongbob.jpg", "jade": "spongbob.jpg", "sapphire": "spongbob.jpg", "ruby": "spongbob.jpg", "emerald": "spongbob.jpg", "diamond": "spongbob.jpg" }
+    },
+    {
+      "id": "patrick", "name": "Patrick", "rarity": "common", "packageId": "spongebob_pack",
+      "images": { "iron": "patrick.jpg", "bronze": "patrick.jpg", "silver": "patrick.jpg", "pearl": "patrick.jpg", "gold": "patrick.jpg", "jade": "patrick.jpg", "sapphire": "patrick.jpg", "ruby": "patrick.jpg", "emerald": "patrick.jpg", "diamond": "patrick.jpg" }
+    },
+    {
+      "id": "squidward", "name": "Squidward", "rarity": "rare", "packageId": "spongebob_pack",
+      "images": { "iron": "squidward10.jpg", "bronze": "spongbob.jpg", "silver": "spongbob.jpg", "pearl": "spongbob.jpg", "gold": "spongbob.jpg", "jade": "spongbob.jpg", "sapphire": "spongbob.jpg", "ruby": "spongbob.jpg", "emerald": "spongbob.jpg", "diamond": "spongbob.jpg" }
+    },
+    {
+      "id": "mr_krabs", "name": "Mr Krabs", "rarity": "epic", "packageId": "spongebob_pack",
+      "images": { "iron": "mr krabs.jpg", "bronze": "patrick.jpg", "silver": "patrick.jpg", "pearl": "patrick.jpg", "gold": "patrick.jpg", "jade": "patrick.jpg", "sapphire": "patrick.jpg", "ruby": "patrick.jpg", "emerald": "patrick.jpg", "diamond": "patrick.jpg" }
+    },
+    {
+      "id": "plankton", "name": "Plankton.jpg", "rarity": "legendary", "packageId": "spongebob_pack",
+      "images": { "iron": "plankton.jpg", "bronze": "patrick.jpg", "silver": "patrick.jpg", "pearl": "patrick.jpg", "gold": "patrick.jpg", "jade": "patrick.jpg", "sapphire": "patrick.jpg", "ruby": "patrick.jpg", "emerald": "patrick.jpg", "diamond": "patrick.jpg" }
+    },
+    {
+      "id": "king_neptune", "name": "King Neptune", "rarity": "never", "packageId": "spongebob_pack",
+      "images": { "iron": "kingneptune.jpg", "bronze": "spongbob.jpg", "silver": "spongbob.jpg", "pearl": "spongbob.jpg", "gold": "spongbob.jpg", "jade": "spongbob.jpg", "sapphire": "spongbob.jpg", "ruby": "spongbob.jpg", "emerald": "spongbob.jpg", "diamond": "spongbob.jpg" }
+    },
+    {
+      "id": "mcqueen", "name": "McQueen", "rarity": "common", "packageId": "cars_pack",
+      "images": { "iron": "mcqueen10.jpg", "bronze": "mcqueen10.jpg", "silver": "mcqueen10.jpg", "pearl": "mcqueen10.jpg", "gold": "mcqueen10.jpg", "jade": "mcqueen10.jpg", "sapphire": "mcqueen10.jpg", "ruby": "mcqueen10.jpg", "emerald": "mcqueen10.jpg", "diamond": "mcqueen10.jpg" }
+    },
+    {
+      "id": "mater", "name": "Mater", "rarity": "rare", "packageId": "cars_pack",
+      "images": { "iron": "mater10.jpg", "bronze": "mater20.jpg", "silver": "mater10.jpg", "pearl": "mater10.jpg", "gold": "mater10.jpg", "jade": "mater10.jpg", "sapphire": "mater10.jpg", "ruby": "mater10.jpg", "emerald": "mater10.jpg", "diamond": "mater10.jpg" }
+    },
+    {
+      "id": "sally", "name": "Sally", "rarity": "epic", "packageId": "cars_pack",
+      "images": { "iron": "sally.jpg", "bronze": "sally.jpg", "silver": "sally.jpg", "pearl": "mater10.jpg", "gold": "mater10.jpg", "jade": "mater10.jpg", "sapphire": "mater10.jpg", "ruby": "mater10.jpg", "emerald": "mater10.jpg", "diamond": "mater10.jpg" }
+    },
+    {
+      "id": "the_king", "name": "The King", "rarity": "legendary", "packageId": "cars_pack",
+      "images": { "iron": "the king.jpg", "bronze": "the king.jpg", "silver": "mater10.jpg", "pearl": "mater10.jpg", "gold": "mater10.jpg", "jade": "mater10.jpg", "sapphire": "mater10.jpg", "ruby": "mater10.jpg", "emerald": "mater10.jpg", "diamond": "mater10.jpg" }
+    },
+    {
+      "id": "doc_hudson", "name": "Doc Hudson", "rarity": "never", "packageId": "cars_pack",
+      "images": { "iron": "doc_hudson.jpg", "bronze": "doc_hudson.jpg", "silver": "mater10.jpg", "pearl": "mater10.jpg", "gold": "mater10.jpg", "jade": "mater10.jpg", "sapphire": "mater10.jpg", "ruby": "mater10.jpg", "emerald": "mater10.jpg", "diamond": "mater10.jpg" }
+    },
+    {
+      "id": "ruffnut", "name": "Riccup", "rarity": "common", "packageId": "httyd_pack",
+      "images": { "iron": "ruffnut.jpg", "bronze": "hiccup10.jpg", "silver": "hiccup10.jpg", "pearl": "hiccup10.jpg", "gold": "hiccup10.jpg", "jade": "hiccup10.jpg", "sapphire": "hiccup10.jpg", "ruby": "hiccup10.jpg", "emerald": "hiccup10.jpg", "diamond": "hiccup10.jpg" }
+    },
+    {
+      "id": "tuffnut", "name": "Tuffnut", "rarity": "common", "packageId": "httyd_pack",
+      "images": { "iron": "tuffnut.jpg", "bronze": "hiccup10.jpg", "silver": "hiccup10.jpg", "pearl": "hiccup10.jpg", "gold": "hiccup10.jpg", "jade": "hiccup10.jpg", "sapphire": "hiccup10.jpg", "ruby": "hiccup10.jpg", "emerald": "hiccup10.jpg", "diamond": "hiccup10.jpg" }
+    },
+    {
+      "id": "fishlegs", "name": "Fishlegs", "rarity": "rare", "packageId": "httyd_pack",
+      "images": { "iron": "fishlegs.jpg", "bronze": "hiccup10.jpg", "silver": "hiccup10.jpg", "pearl": "hiccup10.jpg", "gold": "hiccup10.jpg", "jade": "hiccup10.jpg", "sapphire": "hiccup10.jpg", "ruby": "hiccup10.jpg", "emerald": "hiccup10.jpg", "diamond": "hiccup10.jpg" }
+    },
+    {
+      "id": "snotlout", "name": "Snotlout", "rarity": "epic", "packageId": "httyd_pack",
+      "images": { "iron": "snotlout.jpg", "bronze": "snotlout.jpg", "silver": "hiccup10.jpg", "pearl": "hiccup10.jpg", "gold": "hiccup10.jpg", "jade": "hiccup10.jpg", "sapphire": "hiccup10.jpg", "ruby": "hiccup10.jpg", "emerald": "hiccup10.jpg", "diamond": "hiccup10.jpg" }
+    },
+    {
+      "id": "astrid", "name": "Astrid", "rarity": "legendary", "packageId": "httyd_pack",
+      "images": { "iron": "astrid.jpg", "bronze": "astrid.jpg", "silver": "hiccup10.jpg", "pearl": "hiccup10.jpg", "gold": "hiccup10.jpg", "jade": "hiccup10.jpg", "sapphire": "hiccup10.jpg", "ruby": "hiccup10.jpg", "emerald": "hiccup10.jpg", "diamond": "hiccup10.jpg" }
+    },
+    {
+      "id": "hiccup", "name": "Hiccup", "rarity": "never", "packageId": "httyd_pack",
+      "images": { "iron": "hiccup10.jpg", "bronze": "hiccup10.jpg", "silver": "hiccup10.jpg", "pearl": "hiccup10.jpg", "gold": "hiccup10.jpg", "jade": "hiccup10.jpg", "sapphire": "hiccup10.jpg", "ruby": "hiccup10.jpg", "emerald": "hiccup10.jpg", "diamond": "hiccup10.jpg" }
+    },
+    {
+      "id": "marlin", "name": "Marlin", "rarity": "common", "packageId": "nemo_pack",
+      "images": { "iron": "marlin10.jpg", "bronze": "hiccup10.jpg", "silver": "hiccup10.jpg", "pearl": "hiccup10.jpg", "gold": "hiccup10.jpg", "jade": "hiccup10.jpg", "sapphire": "hiccup10.jpg", "ruby": "hiccup10.jpg", "emerald": "hiccup10.jpg", "diamond": "hiccup10.jpg" }
+    },
+    {
+      "id": "dory", "name": "Dory", "rarity": "rare", "packageId": "nemo_pack",
+      "images": { "iron": "dory10.jpg", "bronze": "dory20.jpg", "silver": "hiccup10.jpg", "pearl": "hiccup10.jpg", "gold": "hiccup10.jpg", "jade": "hiccup10.jpg", "sapphire": "hiccup10.jpg", "ruby": "hiccup10.jpg", "emerald": "hiccup10.jpg", "diamond": "hiccup10.jpg" }
+    },
+    {
+      "id": "nemo", "name": "Nemo", "rarity": "epic", "packageId": "nemo_pack",
+      "images": { "iron": "nemo10.jpg", "bronze": "hiccup10.jpg", "silver": "hiccup10.jpg", "pearl": "hiccup10.jpg", "gold": "hiccup10.jpg", "jade": "hiccup10.jpg", "sapphire": "hiccup10.jpg", "ruby": "hiccup10.jpg", "emerald": "hiccup10.jpg", "diamond": "hiccup10.jpg" }
+    },
+    {
+      "id": "crush", "name": "Crush", "rarity": "legendary", "packageId": "nemo_pack",
+      "images": { "iron": "crush.jpg", "bronze": "hiccup10.jpg", "silver": "hiccup10.jpg", "pearl": "hiccup10.jpg", "gold": "hiccup10.jpg", "jade": "hiccup10.jpg", "sapphire": "hiccup10.jpg", "ruby": "hiccup10.jpg", "emerald": "hiccup10.jpg", "diamond": "hiccup10.jpg" }
+    },
+    {
+      "id": "bruce", "name": "Bruce", "rarity": "never", "packageId": "nemo_pack",
+      "images": { "iron": "bruce10.jpg", "bronze": "hiccup10.jpg", "silver": "hiccup10.jpg", "pearl": "hiccup10.jpg", "gold": "hiccup10.jpg", "jade": "hiccup10.jpg", "sapphire": "hiccup10.jpg", "ruby": "hiccup10.jpg", "emerald": "hiccup10.jpg", "diamond": "hiccup10.jpg" }
+    }
+  ],
+  "members": [
+    {
+      "id": "member_abanoub",
+      "name": "Abanoub", "icon": "nom nom.jpg",
+      "wabi": 0, "spice": 0, "exp": 0, "teamId": "ibrahimia", "role": "normal",
+      "collection": [{ "characterId": "nom_nom", "degree": "iron", "count": 1 }],
+      "skills": { "english": 0, "chess": 0, "python": 0 },
+      "restricted": false, "restrictedUntil": null,
+      "sportEventScore": 0
+    },
+    {
+      "id": "member_daniel",
+      "name": "Daniel", "icon": "fourarms2.jpg",
+      "wabi": 2, "spice": 0, "exp": 2, "teamId": "ibrahimia", "role": "normal",
+      "collection": [
+        { "characterId": "larry", "degree": "iron", "count": 1 },
+        { "characterId": "monkey", "degree": "bronze", "count": 1 },
+        { "characterId": "ben10", "degree": "bronze", "count": 1 },
+        { "characterId": "fourarms", "degree": "bronze", "count": 1 }
+      ],
+      "skills": {},
+      "restricted": true, "restrictedUntil": "2026-03-11",
+      "sportEventScore": 0,
+      "statistics": [
+        { "label": "Bible Days", "value": 0 },
+        { "label": "Push Ups", "value": 0 },
+        { "label": "Habits Completed", "value": 0 },
+        { "label": "Hours Studying", "value": 0 }
+      ]
+    },
+    {
+      "id": "member_david_michael",
+      "name": "David Michael", "icon": "burrito.png",
+      "wabi": 3, "spice": 0, "exp": 1, "teamId": "ibrahimia", "role": "normal",
+      "collection": [{ "characterId": "burrito", "degree": "iron", "count": 1 }],
+      "skills": { "english": 0, "chess": 0, "python": 0 },
+      "sportEventScore": 0
+    },
+    {
+      "id": "member_jonathan",
+      "name": "Jonathan", "icon": "grizz.jpg",
+      "wabi": 5, "spice": 0, "exp": 2, "teamId": "ibrahimia", "role": "leader",
+      "collection": [
+        { "characterId": "grizz", "degree": "iron", "count": 1 },
+        { "characterId": "panda", "degree": "iron", "count": 1 },
+        { "characterId": "ice_bear", "degree": "iron", "count": 1 },
+        { "characterId": "shifu", "degree": "iron", "count": 1 },
+        { "characterId": "larry", "degree": "bronze", "count": 1 }
+      ],
+      "skills": {},
+      "restricted": true, "restrictedUntil": "2026-03-11",
+      "sportEventScore": 0,
+      "statistics": [
+        { "label": "Bible Days", "value": 0 },
+        { "label": "Push Ups", "value": 0 },
+        { "label": "Habits Completed", "value": 0 },
+        { "label": "Hours Studying", "value": 0 }
+      ]
+    },
+    {
+      "id": "member_samih",
+      "name": "Samih", "icon": "charlie.jpg",
+      "wabi": 2, "spice": 0, "exp": 2, "teamId": "ibrahimia", "role": "normal",
+      "collection": [
+        { "characterId": "charlie", "degree": "iron", "count": 1 },
+        { "characterId": "darwin", "degree": "bronze", "count": 1 },
+        { "characterId": "darwin", "degree": "iron", "count": 1 },
+        { "characterId": "pu", "degree": "bronze", "count": 1 },
+        { "characterId": "fourarms", "degree": "iron", "count": 1 },
+        { "characterId": "larry", "degree": "iron", "count": 1 }
+      ],
+      "skills": { "english": 0, "chess": 0, "python": 0 },
+      "restricted": true, "restrictedUntil": "2026-03-11",
+      "sportEventScore": 0
+    },
+    {
+      "id": "member_yassa",
+      "name": "Yassa", "icon": "silver bear.jpg",
+      "wabi": 4, "spice": 0, "exp": 2, "teamId": "ibrahimia", "role": "normal",
+      "collection": [{ "characterId": "silver_bear", "degree": "iron", "count": 1 }],
+      "skills": {},
+      "sportEventScore": 0
+    },
+    {
+      "id": "member_peter",
+      "name": "Peter", "icon": "pu3.jpg",
+      "wabi": 6, "spice": 0, "exp": 2, "teamId": "ibrahimia", "role": "normal",
+      "collection": [
+        { "characterId": "pu", "degree": "silver", "count": 1 },
+        { "characterId": "gumball", "degree": "iron", "count": 1 },
+        { "characterId": "richard", "degree": "iron", "count": 1 }
+
+    ],
+      "skills": { "english": 0, "chess": 0, "python": 0 },
+      "sportEventScore": 0
+    },
+    {
+      "id": "member_mina",
+      "name": "Mina", "icon": "", "wabi": 3, "spice": 0, "exp": 1,
+      "teamId": "ibrahimia", "role": "normal", "collection": [], "skills": {},
+      "sportEventScore": 0
+    },
+    {
+      "id": "member_david_nasser",
+      "name": "David Nasser", "icon": "", "wabi": 1, "spice": 0, "exp": 1,
+      "teamId": "ibrahimia", "role": "normal", "collection": [], "skills": {},
+      "restricted": true, "restrictedUntil": "2026-03-11",
+      "sportEventScore": 0
+    },
+    {
+      "id": "member_joren",
+      "name": "Joren", "icon": "craboo.jpg",
+      "wabi": 16, "spice": 0, "exp": 2, "teamId": "ibrahimia", "role": "normal",
+      "collection": [{ "characterId": "craboo", "degree": "iron", "count": 1 }],
+      "skills": {},
+      "restricted": true, "restrictedUntil": "2026-03-11",
+      "sportEventScore": 0
+    },
+    {
+      "id": "member_haneen",
+      "name": "Haneen", "icon": "hamster.jpg",
+      "wabi": 6, "spice": 0, "exp": 2,
+      "teamId": "ibrahimia", "role": "normal",
+      "collection": [{ "characterId": "hamster", "degree": "iron", "count": 1 }],
+      "skills": {},
+      "sportEventScore": 0
+    },
+    {
+      "id": "member_marette",
+      "name": "Marette", "icon": "", "wabi": 2, "spice": 0, "exp": 2,
+      "teamId": "ibrahimia", "role": "normal", "collection": [], "skills": {},
+      "sportEventScore": 0
+    },
+    {
+      "id": "member_nour",
+      "name": "Nour", "icon": "", "wabi": 3, "spice": 0, "exp": 1,
+      "teamId": "ibrahimia", "role": "normal", "collection": [], "skills": {},
+      "sportEventScore": 0
+    },
+    {
+      "id": "member_philip",
+      "name": "Philip", "icon": "joey.jpg", "wabi": 2, "spice": 0, "exp": 1,
+      "teamId": "ibrahimia", "role": "normal", "collection": [{ "characterId": "joey", "degree": "iron", "count": 1 }], "skills": {},
+      "sportEventScore": 0
+    },
+    {
+      "id": "member_karen",
+      "name": "Karen", "icon": "chloe.png", "wabi": 1, "spice": 0, "exp": 1,
+      "teamId": "ibrahimia", "role": "normal",
+      "collection": [{ "characterId": "chloe", "degree": "iron", "count": 1 }], "skills": {},
+      "sportEventScore": 0
+    },
+    {
+      "id": "member_karim",
+      "name": "Karim", "icon": "albino aligator.jpg", "wabi": 0, "spice": 0, "exp": 0,
+      "teamId": "ibrahimia", "role": "normal",
+      "collection": [{ "characterId": "albino_aligator", "degree": "iron", "count": 1 }], "skills": {},
+      "sportEventScore": 0
+    },
+    {
+      "id": "member_yana",
+      "name": "Yana", "icon": "chicken.jpg", "wabi": 0, "spice": 0, "exp": 0,
+      "teamId": "ibrahimia", "role": "normal",
+      "collection": [{ "characterId": "chicken", "degree": "iron", "count": 1 }], "skills": {},
+      "sportEventScore": 0
+    }
+  ],
+  "teams": [{ "id": "ibrahimia", "name": "Ibrahimia" }],
+  "trainings": [
+    { "name": "Language Course", "description": "Choose any language, study one lesson, complete multiple exercises, and finish with a small exam.", "spice_price": 5, "wabi_price": 20, "pdf_link": "https://drive.google.com/drive/folders/174RWV_x7_t-2UNx9Tcbf4OniDzPJFxOI?usp=sharing", "providedBy": "Website Provider" },
+    { "name": "Drums", "description": "Learn to play the drums.", "spice_price": 10, "wabi_price": 40, "pdf_link": "https://drive.google.com/drive/folders/174RWV_x7_t-2UNx9Tcbf4OniDzPJFxOI?usp=sharing", "providedBy": "Website Provider" },
+    { "name": "Singing", "description": "Improve your vocal skills.", "spice_price": 5, "wabi_price": 20, "pdf_link": "https://drive.google.com/drive/folders/174RWV_x7_t-2UNx9Tcbf4OniDzPJFxOI?usp=sharing", "providedBy": "Website Provider" },
+    { "name": "Python", "description": "Learn programming fundamentals and automation.", "spice_price": 15, "wabi_price": 60, "pdf_link": "https://drive.google.com/drive/folders/174RWV_x7_t-2UNx9Tcbf4OniDzPJFxOI?usp=sharing", "providedBy": "Website Provider" },
+    { "name": "Chess", "description": "Develop strategic thinking and discipline.", "spice_price": 5, "wabi_price": 20, "pdf_link": "https://drive.google.com/drive/folders/174RWV_x7_t-2UNx9Tcbf4OniDzPJFxOI?usp=sharing", "providedBy": "Website Provider" }
+  ],
+  "spiceDeals": [
+    { "spice": 5, "egp": 5, "highlight": false },
+    { "spice": 10, "egp": 10, "highlight": false },
+    { "spice": 25, "egp": 20, "highlight": true }
+  ],
+  "projects": [
+    {
+      "id": "proj-habits", "teamId": "ibrahimia", "name": "Habits",
+      "members": ["Peter", "Jonathan", "Daniel", "Mina", "Philip"],
+      "description": "Daily habit tracking and accountability",
+      "minimumWork": "Send 1 habit", "baseSalary": 1,
+      "startDate": "12-10-2025", "active": true, "projectManagerId": "member_jonathan",
+      "maxMembers": 12,
+      "rules": [
+        "Have a habit tracker app",
+        "Pick 8 habtis that you consider challengeing, make sure they are quantifiable",
+        "Pick only 2 habits that can be done more than once per day up to 3 times",
+        "Send 1 screen shot of your habit tracker once per cycle",
+        "Miss 10 days in a cycle and you are out"
+      ],
+      "bonusSystem": [
+        { "work": "10 habits", "salary": 5 }, { "work": "20 habits", "salary": 10 },
+        { "work": "30 habits", "salary": 15 }, { "work": "40 habits", "salary": 20 },
+        { "work": "50 habits", "salary": 25 }
+      ],
+      "waitingList": ["member_abanoub"]
+    },
+    {
+      "id": "proj-bible", "teamId": "ibrahimia", "name": "Bible",
+      "members": ["Joren", "Haneen", "Marette", "Nour", "Jonathan", "Yassa", "Samih", "Daniel", "Philip", "Karen", "Karim", "Yana"],
+      "description": "Daily Bible Time", "minimumWork": "Read 1 passage", "baseSalary": 1,
+      "startDate": "16-02-2026", "active": true, "projectManagerId": "member_jonathan",
+      "maxMembers": 12,
+      "rules": [
+        "Send daily passages you read from the bible",
+        "(Optionaly) Share one reflection or verse that stood out",
+        "Miss 10 days in a cycle and you are out"
+      ],
+      "bonusSystem": [
+        { "work": "3 days", "salary": 2 }, { "work": "5 days", "salary": 3 },
+        { "work": "7 days", "salary": 5 }, { "work": "10 days", "salary": 8 }
+      ],
+      "lastCycleLeaderboard": [
+        { "name": "Jonathan", "days": 10 },
+        { "name": "Joren", "days": 9 },
+        { "name": "Haneen", "days": 9 },
+        { "name": "Yassa", "days": 5 },
+        { "name": "David", "days": 5 }
+      ]
+    },
+    {
+      "id": "proj-study", "teamId": "ibrahimia", "name": "Study",
+      "members": ["Jonathan"], "description": "Acedemic study on a timer app",
+      "minimumWork": "Study 3 hours", "baseSalary": 3,
+      "startDate": "01-03-2026", "active": true, "projectManagerId": "member_jonathan",
+      "maxMembers": 12,
+      "rules": [
+        "Use a timer app to track study sessions.",
+        "Minimum 3 hours per 10-day cycle."
+      ],
+      "bonusSystem": [
+        { "work": "5 hours", "salary": 5 }, { "work": "10 hours", "salary": 10 },
+        { "work": "15 hours", "salary": 17 }, { "work": "20 hours", "salary": 25 },
+        { "work": "30 hours", "salary": 40 }, { "work": "50 hours", "salary": 70 }
+      ]
+    },
+    {
+      "id": "proj-inactive-demo", "teamId": "ibrahimia", "name": "Blender Tutorials",
+      "members": [], "description": "This is an inactive project.",
+      "minimumWork": "None", "baseSalary": 0,
+      "startDate": "01-01-2025", "active": false,
+      "maxMembers": 12,
+      "rules": [
+        "Follow the tutorial sequence.",
+        "Submit your .blend files for review."
+      ],
+      "bonusSystem": []
+    },
+    {
+      "id": "proj-inactive-demo", "teamId": "ibrahimia", "name": "Fun Edu",
+      "members": [], "description": "This is an inactive project.",
+      "minimumWork": "None", "baseSalary": 0,
+      "startDate": "01-01-2025", "active": false,
+      "maxMembers": 12,
+      "rules": [],
+      "bonusSystem": []
+    }
+  ],
+  "tss": [
+    { "id": "tss-1", "teamId": "ibrahimia", "name": "El Barak Free Meal", "image": "ElBaraka.jpg", "wabiCost": 1900, "description": "Good food" },
+    { "id": "tss-2", "teamId": "ibrahimia", "name": "El Wahsh Free Meal", "image": "ElWahsh.jpg", "wabiCost": 2300, "description": "Good food" },
+    { "id": "tss-3", "teamId": "ibrahimia", "name": "Free Padel!", "image": "Padel.jpg", "wabiCost": 700, "description": "Good sport" }
+  ],
+  "sportEvents": [
+    {
+      "id": "cycling_march",
+      "name": "Cycling Challenge",
+      "description": "Ride as many kilometers as possible!",
+      "type": "distance",
+      "startDate": "2026-03-01",
+      "endDate": "2026-03-31",
+      "visible": true
+    },
+    {
+      "id": "running_feb",
+      "name": "Winter Run",
+      "description": "Keep warm by running!",
+      "type": "distance",
+      "startDate": "2026-02-01",
+      "endDate": "2026-02-28",
+      "visible": true
+    },
+    {
+      "id": "pingpong_april",
+      "name": "Ping Pong Tournament",
+      "description": "Compete in 1v1 matches.",
+      "type": "points",
+      "startDate": "2026-04-01",
+      "endDate": "2026-04-30",
+      "visible": false
+    }
+  ],
+  "cardPackSeasons": [
+    {
+      "seasonId": "march_season",
+      "startDate": "2026-03-01",
+      "endDate": "2026-03-31",
+      "packsVisible": [
+        "gumball_pack",
+        "kungfu_pack",
+        "ben10_pack"
+      ]
+    },
+    {
+      "seasonId": "april_season",
+      "startDate": "2026-04-01",
+      "endDate": "2026-04-31",
+      "packsVisible": [
+        "adventure_time_pack",
+        "cars_pack",
+        "spongebob_pack"
+      ]
+    },
+    {
+      "seasonId": "may_season",
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-31",
+      "packsVisible": [
+        "httyd_pack",
+        "nemo_pack"
+      ]
+    }
+  ],
+  "packs": [
+    {
+      "packageId": "gumball_pack",
+      "name": "Gumball", "banner": "gumball_banner.jpg",
+      "score": 5,
+      "cost": { "wabi": 15, "spice": 5 },
+      "outcomes": [
+        { "characterId": "gumball", "chance": "50%" }, { "characterId": "darwin", "chance": "30%" },
+        { "characterId": "richard", "chance": "15%" }, { "characterId": "larry", "chance": "4.9%" },
+        { "characterId": "bobert", "chance": "0.1%" }
+      ]
+    },
+    {
+      "packageId": "kungfu_pack",
+      "name": "Kung Fu", "banner": "kunfupanda-banner.png",
+      "score": 8,
+      "cost": { "wabi": 24, "spice": 8 },
+      "outcomes": [
+        { "characterId": "pu", "chance": "50%" }, { "characterId": "ping", "chance": "30%" },
+        { "characterId": "monkey", "chance": "15%" }, { "characterId": "shifu", "chance": "4.9%" },
+        { "characterId": "oogway", "chance": "0.1%" }
+      ]
+    },
+    {
+      "packageId": "ben10_pack",
+      "name": "Ben 10", "banner": "ben_10_banner.jpg",
+      "score": 6,
+      "cost": { "wabi": 18, "spice": 6 },
+      "outcomes": [
+        { "characterId": "ben10", "chance": "50%" }, { "characterId": "cannonbolt", "chance": "30%" },
+        { "characterId": "fourarms", "chance": "7.5%" }, { "characterId": "diamondhead", "chance": "7.5%" },
+        { "characterId": "xlr8", "chance": "4.9%" }, { "characterId": "waybig", "chance": "0.1%" }
+        
+      ]
+    },
+    {
+      "packageId": "adventure_time_pack",
+      "name": "Adventure Time", "banner": "adventuretime.jpg",
+      "score": 7,
+      "cost": { "wabi": 21, "spice": 7 },
+      "outcomes": [
+        { "characterId": "finn", "chance": "50%" }, { "characterId": "jake", "chance": "30%" },
+        { "characterId": "ice_king", "chance": "15%" }, { "characterId": "princess_bubblegum", "chance": "4.9%" },
+        { "characterId": "marceline", "chance": "0.1%" }
+      ]
+    },
+    {
+      "packageId": "httyd_pack",
+      "name": "HTTYD", "banner": "httydbanner.jpg",
+      "score": 9,
+      "cost": { "wabi": 27, "spice": 9 },
+      "outcomes": [
+        { "characterId": "tuffnut", "chance": "25%" }, { "characterId": "ruffnut", "chance": "25%" },
+        { "characterId": "fishlegs", "chance": "30%" }, { "characterId": "snotlout", "chance": "15%" },
+        { "characterId": "astrid", "chance": "4.9%" }, { "characterId": "hiccup", "chance": "0.1%" }
+      ]
+    },
+    {
+      "packageId": "spongebob_pack",
+      "name": "Spongebob", "banner": "spongbobbanner.jpg",
+      "score": 7,
+      "cost": { "wabi": 21, "spice": 7 },
+      "outcomes": [
+        { "characterId": "spongebob", "chance": "25%" }, { "characterId": "patrick", "chance": "25%" },
+        { "characterId": "squidward", "chance": "30%" }, { "characterId": "mr_krabs", "chance": "15%" },
+        { "characterId": "plankton", "chance": "4.9%" }, { "characterId": "king_neptune", "chance": "0.1%" }
+      ]
+    },
+    {
+      "packageId": "cars_pack",
+      "name": "Cars", "banner": "cardsbanner.jpg",
+      "score": 8,
+      "cost": { "wabi": 24, "spice": 8 },
+      "outcomes": [
+        { "characterId": "mcqueen", "chance": "50%" }, { "characterId": "mater", "chance": "30%" },
+        { "characterId": "sally", "chance": "15%" }, { "characterId": "the_king", "chance": "4.9%" },
+        { "characterId": "doc_hudson", "chance": "0.1%" }
+      ]
+    },
+    {
+      "packageId": "nemo_pack",
+      "name": "Finding Nemo", "banner": "findingnemo.png",
+      "score": 6,
+      "cost": { "wabi": 18, "spice": 6 },
+      "outcomes": [
+        { "characterId": "marlin", "chance": "50%" }, { "characterId": "dory", "chance": "30%" },
+        { "characterId": "nemo", "chance": "15%" }, { "characterId": "crush", "chance": "4.9%" },
+        { "characterId": "bruce", "chance": "0.1%" }
+      ]
+    },
+    {
+      "packageId": "wbb_pack",
+      "name": "We Bare Bears", "banner": "wbb_banner.jpg",
+      "score": 5,
+      "cost": { "wabi": 15, "spice": 5 },
+      "outcomes": [
+        { "characterId": "grizz", "chance": "7%" }, { "characterId": "charlie", "chance": "7%" },
+        { "characterId": "silver_bear", "chance": "7%" }, { "characterId": "burrito", "chance": "7%" },
+        { "characterId": "panda", "chance": "7%" }, { "characterId": "ice_bear", "chance": "7%" },
+        { "characterId": "chicken", "chance": "7%" }, { "characterId": "albino_aligator", "chance": "7%" },
+        { "characterId": "joey", "chance": "7%" }, { "characterId": "nom_nom", "chance": "7%" },
+        { "characterId": "chloe", "chance": "7%" }, { "characterId": "craboo", "chance": "7%" },
+        { "characterId": "hamster", "chance": "7%" }, { "characterId": "piniata_cat", "chance": "7%" }
+      ]
+    }
+  ],
+  "crafting": [
+    {
+      "id": "craft_1",
+      "start_date": "2026-03-01",
+      "end_date": "2026-03-15",
+      "recipe": {
+        "inputs": [
+          { "card_id": "grizz", "degree": "iron" },
+          { "card_id": "burrito", "degree": "iron" }
+        ],
+        "output": {
+          "card_id": "grizz",
+          "degree": "silver"
+        }
+      }
+    },
+    {
+      "id": "craft_2",
+      "start_date": "2026-03-01",
+      "end_date": "2026-03-20",
+      "recipe": {
+        "inputs": [
+          { "card_id": "gumball", "degree": "bronze" },
+          { "card_id": "darwin", "degree": "bronze" }
+        ],
+        "output": {
+          "card_id": "larry",
+          "degree": "iron"
+        }
+      }
+    },
+    {
+      "id": "craft_3",
+      "start_date": "2026-03-20",
+      "end_date": "2026-07-20",
+      "recipe": {
+        "inputs": [
+          { "card_id": "ice_bear", "degree": "iron" },
+          { "card_id": "shifu", "degree": "iron" }
+        ],
+        "output": {
+          "card_id": "ice_bear",
+          "degree": "silver"
+        }
+      }
+    }
+  ]
+}
