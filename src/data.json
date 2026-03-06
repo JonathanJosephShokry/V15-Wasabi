@@ -39,7 +39,7 @@
     },
     {
       "id": "larry", "name": "Larry", "rarity": "legendary", "packageId": "gumball_pack",
-      "images": { "iron": "larry.png", "bronze": "larry20.jpg", "silver": "larry.png", "pearl": "larry.png", "gold": "larry.png", "jade": "larry.png", "sapphire": "larry.png", "ruby": "larry.png", "emerald": "larry.png", "diamond": "larry.png" }
+      "images": { "iron": "larry.jpg", "bronze": "larry20.jpg", "silver": "larry.png", "pearl": "larry.png", "gold": "larry.png", "jade": "larry.png", "sapphire": "larry.png", "ruby": "larry.png", "emerald": "larry.png", "diamond": "larry.png" }
     },
     {
       "id": "bobert", "name": "Bobert", "rarity": "never", "packageId": "gumball_pack",
@@ -663,7 +663,7 @@
     },
     {
       "packageId": "nemo_pack",
-      "name": "Finding Nemo", "banner": "findingnemo.png",
+      "name": "Finding Nemo", "banner": "findingnemo.jpg",
       "score": 6,
       "cost": { "wabi": 18, "spice": 6 },
       "outcomes": [
