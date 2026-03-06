@@ -596,7 +596,7 @@
     },
     {
       "packageId": "kungfu_pack",
-      "name": "Kung Fu", "banner": "kunfupanda-banner.png",
+      "name": "Kung Fu", "banner": "kunfupanda-banner.jpg",
       "score": 8,
       "cost": { "wabi": 24, "spice": 8 },
       "outcomes": [
