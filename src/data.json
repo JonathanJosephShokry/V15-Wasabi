@@ -401,7 +401,7 @@
     },
     {
       "id": "member_karen",
-      "name": "Karen", "icon": "chloe.png", "wabi": 1, "spice": 0, "exp": 1,
+      "name": "Karen", "icon": "chloe.jpg", "wabi": 1, "spice": 0, "exp": 1,
       "teamId": "team1", "role": "normal",
       "collection": [{ "characterId": "chloe", "degree": "iron", "count": 1 }], "skills": {},
       "sportEventScore": 0
