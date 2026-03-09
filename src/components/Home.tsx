@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { WasabiData, Team, Member, CraftingRecipe } from '../types';
-import { ArrowRight, Trophy as TrophyIcon, Medal, Clock, Plus, Zap, ExternalLink } from 'lucide-react';
+import { ArrowRight, Trophy as TrophyIcon, Medal, Clock, Plus, Zap, ExternalLink, GraduationCap } from 'lucide-react';
 import { getActiveSportEvent, getLastFinishedSportEvent, getActiveCraftingRecipes, calculateDaysRemaining, getCurrentCardPackSeason } from '../utils';
 
 interface HomeProps {
@@ -324,59 +324,60 @@ export const Home: React.FC<HomeProps> = ({ data }) => {
       </section>
 
       {/* 8. Wasabi Training Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#FDFCFB]">
         <div className="container mx-auto px-5">
-          <h2 className="text-4xl font-bold text-[#6B5435] text-center mb-10">Wasabi Training</h2>
+          <h2 className="text-4xl font-black text-[#6B5435] text-center mb-12">Wasabi Training</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {data.trainings.slice(0, 2).map((t: any, i: number) => (
-              <div key={i} className="bg-white border-2 border-[#E0E0E0] rounded-2xl p-8 text-center transition-all hover:-translate-y-2 hover:shadow-2xl relative overflow-hidden group">
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#E8631A] to-[#9FD356] scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
-                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#FDDDC7] to-[#E8631A]/15 flex items-center justify-center mx-auto mb-5 text-3xl border-2 border-[#E8631A]/25 transition-all group-hover:border-[#E8631A]">
-                  {t.name.toLowerCase().includes('python') ? '🐍' : t.name.toLowerCase().includes('chess') ? '♟️' : t.name.toLowerCase().includes('language') ? '📖' : t.name.toLowerCase().includes('drums') ? '🥁' : t.name.toLowerCase().includes('singing') ? '🎤' : '⚡'}
+            {data.trainings.slice(0, 2).map((training: any, i: number) => (
+              <motion.div
+                key={training.name}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="bg-white border-2 border-[#E8E1D9] rounded-2xl p-8 flex flex-col h-full transition-all hover:border-[#9FD356] hover:shadow-xl group"
+              >
+                <div className="w-16 h-16 bg-[#9FD356]/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <GraduationCap size={32} className="text-[#9FD356]" />
                 </div>
-                <div className="text-xl font-bold text-[#6B5435] mb-2">{t.name}</div>
-                {t.providedBy && (
-                  <div className="text-[10px] text-[#666666]/60 font-semibold uppercase tracking-wider mb-2">
-                    {t.name.toLowerCase().includes('singing') || t.name.toLowerCase().includes('drums') || t.name.toLowerCase().includes('language') ? 'Course provided by ' : 'Powered by '}{t.providedBy}
-                  </div>
-                )}
-                <p className="text-sm text-[#666666] mb-6 leading-relaxed">{t.description}</p>
-                <div className="flex flex-col gap-3 items-center">
-                  <div className="flex flex-wrap justify-center gap-3">
-                    {t.spice_price > 0 && (
-                      <div className="flex items-center gap-1.5 px-4 py-1.5 bg-[#E8631A]/10 text-[#E8631A] border-2 border-[#E8631A]/25 rounded-full font-bold text-sm">
-                        <img src="/icons/spice-icon.png" alt="Spice" className="w-4 h-4" />
-                        <span>{t.spice_price} Spice</span>
+                
+                <h3 className="text-2xl font-black text-[#6B5435] mb-3">{training.name}</h3>
+                <p className="text-[#8B6F47] text-sm leading-relaxed mb-8 flex-1">
+                  {training.description}
+                </p>
+
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between p-4 bg-[#F5F1ED] rounded-xl border border-[#E8E1D9]">
+                    <div className="flex flex-col">
+                      <span className="text-[10px] font-bold text-[#8B6F47] uppercase tracking-widest">Cost</span>
+                      <div className="flex items-center gap-3">
+                        <span className="text-[#9FD356] font-black">{training.wabi_price} Wabi</span>
+                        <span className="text-[#E91E63] font-black">{training.spice_price} Spice</span>
                       </div>
-                    )}
-                    {t.wabi_price && t.wabi_price > 0 && (
-                      <div className="flex items-center gap-1.5 px-4 py-1.5 bg-[#9FD356]/10 text-[#9FD356] border-2 border-[#9FD356]/25 rounded-full font-bold text-sm">
-                        <img src="/icons/wabi-icon.png" alt="Wabi" className="w-4 h-4" />
-                        <span>{t.wabi_price} Wabi</span>
-                      </div>
-                    )}
-                  </div>
-                  {t.pdf_link && (
-                    <a
-                      href={t.pdf_link}
-                      target="_blank"
+                    </div>
+                    <a 
+                      href={training.pdf_link} 
+                      target="_blank" 
                       rel="noopener noreferrer"
-                      className="mt-2 flex items-center gap-2 bg-[#6B5435] text-white px-6 py-2.5 rounded-full font-bold text-sm transition-all hover:bg-[#8B6F47] hover:shadow-lg active:scale-95"
+                      className="w-10 h-10 bg-white border border-[#E8E1D9] rounded-lg flex items-center justify-center text-[#6B5435] hover:bg-[#9FD356] hover:text-white hover:border-[#9FD356] transition-all"
                     >
-                      <ExternalLink size={16} />
-                      Open Training PDF
+                      <ExternalLink size={18} />
                     </a>
-                  )}
+                  </div>
+
+                  <button className="w-full py-4 bg-[#9FD356] text-white rounded-xl font-black text-sm uppercase tracking-widest shadow-lg shadow-[#9FD356]/20 transition-all hover:bg-[#8B6F47] hover:-translate-y-1 active:scale-95">
+                    Enroll Now
+                  </button>
                 </div>
-              </div>
+              </motion.div>
             ))}
             {/* Show More Button */}
-            <Link to="/training" className="bg-[#FAFAFA] border-2 border-dashed border-[#E0E0E0] rounded-2xl p-8 flex flex-col items-center justify-center text-center transition-all hover:border-[#9FD356] hover:bg-[#9FD356]/5 group">
-              <div className="w-16 h-16 rounded-full bg-[#E0E0E0] flex items-center justify-center mb-4 group-hover:bg-[#9FD356] group-hover:text-white transition-all">
-                <Plus size={32} />
+            <Link to="/training" className="bg-white border-2 border-dashed border-[#E8E1D9] rounded-2xl p-8 flex flex-col items-center justify-center text-center transition-all hover:border-[#9FD356] hover:bg-[#9FD356]/5 group">
+              <div className="w-16 h-16 rounded-2xl bg-[#F5F1ED] flex items-center justify-center mb-6 group-hover:bg-[#9FD356] group-hover:text-white transition-all">
+                <Plus size={32} className="text-[#9FD356] group-hover:text-white" />
               </div>
-              <div className="text-xl font-bold text-[#6B5435]">Show More</div>
-              <p className="text-sm text-[#666666] mt-2">View all available training courses</p>
+              <div className="text-2xl font-black text-[#6B5435]">Show More</div>
+              <p className="text-[#8B6F47] mt-2">View all available training courses</p>
             </Link>
           </div>
         </div>

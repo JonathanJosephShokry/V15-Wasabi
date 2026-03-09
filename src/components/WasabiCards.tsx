@@ -116,29 +116,23 @@ export const WasabiCards: React.FC<WasabiCardsProps> = ({ data }) => {
                     <div className="space-y-3 mb-8">
                       <div className="text-[10px] font-black text-white/40 uppercase tracking-[0.2em]">Possible Outcomes</div>
                       <div className="grid gap-2">
-                        {event.outcomes.slice(0, 3).map((outcome: any, j: number) => {
+                        {event.outcomes.map((outcome: any, j: number) => {
                           const char = data.characters.find((c: any) => c.id === outcome.characterId);
                           if (!char) return null;
-                          const owned = isCardOwned(char.id);
                           return (
                             <div key={j} className="flex items-center justify-between p-2 bg-white/5 rounded-lg border border-white/5">
                               <div className="flex items-center gap-2">
                                 <img 
                                   src={`/icons/${char.images.iron}`} 
-                                  alt={owned ? char.name : '???'} 
-                                  className={`w-8 h-8 rounded object-cover ${!owned ? 'grayscale brightness-0' : ''}`} 
+                                  alt={char.name} 
+                                  className="w-8 h-8 rounded object-cover" 
                                 />
-                                <span className={`text-xs font-bold ${owned ? 'text-white/80' : 'text-white/20'}`}>{owned ? char.name : '???'}</span>
+                                <span className="text-xs font-bold text-white/80">{char.name}</span>
                               </div>
                               <span className="text-[10px] font-black text-[#9FD356]">{outcome.chance}</span>
                             </div>
                           );
                         })}
-                        {event.outcomes.length > 3 && (
-                          <div className="text-center text-[10px] font-bold text-white/30 pt-1">
-                            + {event.outcomes.length - 3} more characters
-                          </div>
-                        )}
                       </div>
                     </div>
 
@@ -225,38 +219,6 @@ export const WasabiCards: React.FC<WasabiCardsProps> = ({ data }) => {
                       </div>
                     )}
                   </div>
-
-                  {/* Winners */}
-                  {event.winners && event.winners.length > 0 && (
-                    <div className="lg:w-80 bg-white/5 rounded-2xl p-6 border border-white/10">
-                      <h4 className="text-sm font-black text-white/80 uppercase tracking-widest mb-6 flex items-center gap-2">
-                        <Medal size={16} className="text-[#9FD356]" /> Hall of Fame
-                      </h4>
-                      <div className="space-y-4">
-                        {event.winners.map((winner, idx) => {
-                          const member = data.members.find(m => m.id === winner.memberId);
-                          return (
-                            <div key={idx} className="flex items-center justify-between gap-4 p-3 bg-white/5 rounded-xl border border-white/5">
-                              <div className="flex items-center gap-3">
-                                <div className={`w-6 h-6 rounded-full flex items-center justify-center text-[10px] font-black ${
-                                  winner.place === 1 ? 'bg-yellow-500 text-black' :
-                                  winner.place === 2 ? 'bg-gray-400 text-black' :
-                                  'bg-orange-500 text-black'
-                                }`}>
-                                  {winner.place}
-                                </div>
-                                <div className="flex items-center gap-2">
-                                  <img src={`/icons/${member?.icon}`} alt={member?.name} className="w-8 h-8 rounded-full object-cover" />
-                                  <span className="text-xs font-bold text-white/90">{member?.name}</span>
-                                </div>
-                              </div>
-                              <div className="text-[10px] font-black text-[#9FD356]">{winner.score} {event.type === 'distance' ? 'km' : 'pts'}</div>
-                            </div>
-                          );
-                        })}
-                      </div>
-                    </div>
-                  )}
                 </div>
               </motion.div>
             ))}
@@ -445,12 +407,7 @@ export const WasabiCards: React.FC<WasabiCardsProps> = ({ data }) => {
                   onClick={() => setSelectedPackId(pack.packageId)}
                   className="flex items-center gap-4 p-3 bg-[#9FD356]/10 border-2 border-[#9FD356]/35 rounded-xl cursor-pointer transition-all hover:bg-[#9FD356]/20 hover:border-[#9FD356]/70 hover:translate-x-1"
                 >
-                  <div className="flex items-center flex-shrink-0">
-                    {hidden.slice(0, 3).map((char, j) => (
-                      <img key={char.id} src={`/icons/${char.images.iron}`} alt={char.name} className={`w-8 h-8 rounded-lg object-cover border-2 border-[#0d1117] transition-transform hover:scale-110 ${j > 0 ? '-ml-2.5' : ''}`} />
-                    ))}
-                  </div>
-                  <div className="flex-1 flex items-center gap-1.5">
+                  <div className="flex-1 flex items-center gap-1.5 justify-center">
                     <span className="text-xl font-black text-[#9FD356]">+{hidden.length}</span>
                     <span className="text-[10px] font-bold text-white/60 uppercase tracking-widest">More</span>
                   </div>
