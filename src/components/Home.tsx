@@ -138,34 +138,68 @@ export const Home: React.FC<HomeProps> = ({ data }) => {
         </div>
       </section>
 
-      {/* 3. Wasabi Sports Section */}
-      <section className="py-20 bg-[#FAFAFA] relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_20%_60%,rgba(159,211,86,0.12)_0%,transparent_50%),radial-gradient(ellipse_at_80%_30%,rgba(185,242,255,0.08)_0%,transparent_50%)] pointer-events-none"></div>
+      {/* 3. Wasabi Cards Section */}
+      <section className="py-24 bg-[#0d1117] relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_50%,rgba(159,211,86,0.15)_0%,transparent_70%)] pointer-events-none"></div>
         <div className="container mx-auto px-5">
-          <div className="text-center mb-12 relative">
-            <div className="text-6xl mb-4 drop-shadow-[0_0_16px_rgba(159,211,86,0.4)]">🃏</div>
-            <h2 className="text-5xl font-black text-white mb-4 tracking-widest drop-shadow-[0_0_24px_rgba(159,211,86,0.3)]">Wasabi Cards</h2>
-            <p className="text-white/50 text-lg max-w-xl mx-auto leading-relaxed">Collect powerful cards, combine duplicates to upgrade degrees, and climb the leaderboard.</p>
+          <div className="text-center mb-16 relative">
+            <div className="text-7xl mb-6 drop-shadow-[0_0_20px_rgba(159,211,86,0.5)]">🎴</div>
+            <h2 className="text-5xl font-black text-white mb-4 tracking-widest uppercase">Wasabi Cards</h2>
+            <div className="w-24 h-1.5 bg-[#9FD356] mx-auto mb-6 rounded-full"></div>
+            <p className="text-white/60 text-lg max-w-2xl mx-auto leading-relaxed">
+              Collect powerful cards, combine duplicates to upgrade degrees, and climb the global leaderboard. 
+              Participate in seasonal events and craft legendary items.
+            </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto relative">
-            <Link to="/cards?view=packs" className="flex items-center gap-4 p-6 bg-white/5 border border-white/10 rounded-2xl text-white/80 transition-all hover:border-[#9FD356]/60 hover:text-[#9FD356] hover:-translate-y-1 hover:shadow-[0_12px_32px_rgba(159,211,86,0.2)] group relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#9FD356]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <span className="text-3xl shrink-0">🎴</span>
-              <span className="flex-1 font-bold text-lg">Card Packs</span>
-              <ArrowRight className="opacity-40 transition-all group-hover:opacity-100 group-hover:translate-x-1" />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto relative">
+            <Link to="/cards?view=packs" className="flex items-center gap-5 p-8 bg-white/5 border border-white/10 rounded-2xl text-white transition-all hover:border-[#9FD356] hover:bg-[#9FD356]/10 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] group overflow-hidden">
+              <div className="w-14 h-14 bg-[#9FD356]/20 rounded-xl flex items-center justify-center text-3xl shrink-0 group-hover:scale-110 transition-transform">📦</div>
+              <div className="flex-1">
+                <div className="font-black text-xl mb-1">Card Packs</div>
+                <div className="text-white/40 text-xs uppercase tracking-widest">Open new cards</div>
+              </div>
+              <ArrowRight className="text-[#9FD356] opacity-0 group-hover:opacity-100 transition-all -translate-x-4 group-hover:translate-x-0" />
             </Link>
-            <Link to="/cards?view=all" className="flex items-center gap-4 p-6 bg-white/5 border border-white/10 rounded-2xl text-white/80 transition-all hover:border-[#9FD356]/60 hover:text-[#9FD356] hover:-translate-y-1 hover:shadow-[0_12px_32px_rgba(159,211,86,0.2)] group relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#9FD356]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <span className="text-3xl shrink-0">📚</span>
-              <span className="flex-1 font-bold text-lg">All Cards</span>
-              <ArrowRight className="opacity-40 transition-all group-hover:opacity-100 group-hover:translate-x-1" />
+
+            <Link to="/cards?view=all" className="flex items-center gap-5 p-8 bg-white/5 border border-white/10 rounded-2xl text-white transition-all hover:border-[#9FD356] hover:bg-[#9FD356]/10 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] group overflow-hidden">
+              <div className="w-14 h-14 bg-[#9FD356]/20 rounded-xl flex items-center justify-center text-3xl shrink-0 group-hover:scale-110 transition-transform">📚</div>
+              <div className="flex-1">
+                <div className="font-black text-xl mb-1">All Cards</div>
+                <div className="text-white/40 text-xs uppercase tracking-widest">View collection</div>
+              </div>
+              <ArrowRight className="text-[#9FD356] opacity-0 group-hover:opacity-100 transition-all -translate-x-4 group-hover:translate-x-0" />
             </Link>
-            <Link to="/cards?view=leaderboard" className="flex items-center gap-4 p-6 bg-[#D4AF37]/10 border border-[#D4AF37]/30 rounded-2xl text-white/80 transition-all hover:border-[#D4AF37]/70 hover:text-[#D4AF37] hover:-translate-y-1 hover:shadow-[0_12px_32px_rgba(212,175,55,0.25)] group relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#D4AF37]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <span className="text-3xl shrink-0">🏆</span>
-              <span className="flex-1 font-bold text-lg">Global Leaderboard</span>
-              <ArrowRight className="opacity-40 transition-all group-hover:opacity-100 group-hover:translate-x-1" />
+
+            <Link to="/cards?view=leaderboard" className="flex items-center gap-5 p-8 bg-[#D4AF37]/10 border border-[#D4AF37]/30 rounded-2xl text-white transition-all hover:border-[#D4AF37] hover:bg-[#D4AF37]/20 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] group overflow-hidden">
+              <div className="w-14 h-14 bg-[#D4AF37]/20 rounded-xl flex items-center justify-center text-3xl shrink-0 group-hover:scale-110 transition-transform">🏆</div>
+              <div className="flex-1">
+                <div className="font-black text-xl mb-1">Leaderboard</div>
+                <div className="text-white/40 text-xs uppercase tracking-widest">Global ranking</div>
+              </div>
+              <ArrowRight className="text-[#D4AF37] opacity-0 group-hover:opacity-100 transition-all -translate-x-4 group-hover:translate-x-0" />
             </Link>
+
+            {/* Second Row: Events & Crafting */}
+            <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-6 mt-2">
+              <Link to="/cards?view=events" className="flex items-center gap-5 p-8 bg-[#E8631A]/10 border border-[#E8631A]/30 rounded-2xl text-white transition-all hover:border-[#E8631A] hover:bg-[#E8631A]/20 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] group overflow-hidden">
+                <div className="w-14 h-14 bg-[#E8631A]/20 rounded-xl flex items-center justify-center text-3xl shrink-0 group-hover:scale-110 transition-transform">⚡</div>
+                <div className="flex-1">
+                  <div className="font-black text-xl mb-1">Active Events</div>
+                  <div className="text-white/40 text-xs uppercase tracking-widest">Limited time challenges</div>
+                </div>
+                <ArrowRight className="text-[#E8631A] opacity-0 group-hover:opacity-100 transition-all -translate-x-4 group-hover:translate-x-0" />
+              </Link>
+
+              <Link to="/cards?view=crafting" className="flex items-center gap-5 p-8 bg-[#9FD356]/10 border border-[#9FD356]/30 rounded-2xl text-white transition-all hover:border-[#9FD356] hover:bg-[#9FD356]/20 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] group overflow-hidden">
+                <div className="w-14 h-14 bg-[#9FD356]/20 rounded-xl flex items-center justify-center text-3xl shrink-0 group-hover:scale-110 transition-transform">✨</div>
+                <div className="flex-1">
+                  <div className="font-black text-xl mb-1">Wasabi Crafting</div>
+                  <div className="text-white/40 text-xs uppercase tracking-widest">Upgrade your cards</div>
+                </div>
+                <ArrowRight className="text-[#9FD356] opacity-0 group-hover:opacity-100 transition-all -translate-x-4 group-hover:translate-x-0" />
+              </Link>
+            </div>
           </div>
         </div>
       </section>
