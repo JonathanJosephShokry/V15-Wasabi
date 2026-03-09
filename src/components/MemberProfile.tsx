@@ -14,6 +14,8 @@ export const MemberProfile: React.FC<MemberProfileProps> = ({ data }) => {
   const navigate = useNavigate();
   const member = data.members.find(m => m.id === memberId);
 
+  const [showMobileTooltip, setShowMobileTooltip] = React.useState(false);
+
   if (!member) return <div className="p-20 text-center">Member not found</div>;
 
   const level = calculateLevel(member.exp);
@@ -93,9 +95,12 @@ export const MemberProfile: React.FC<MemberProfileProps> = ({ data }) => {
             <h1 className="text-4xl font-bold text-[#6B5435] mb-2 flex flex-wrap items-center justify-center md:justify-start gap-3 relative">
               {member.name}
               {restricted && (
-                <div className="group/restricted relative inline-block">
+                <div 
+                  className="group/restricted relative inline-block"
+                  onClick={() => setShowMobileTooltip(!showMobileTooltip)}
+                >
                   <span className="text-2xl cursor-help">⚠️</span>
-                  <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 opacity-0 group-hover/restricted:opacity-100 transition-opacity bg-red-600 text-white text-[10px] px-3 py-1.5 rounded-lg whitespace-nowrap pointer-events-none shadow-xl border border-white/20 z-50">
+                  <div className={`absolute bottom-full left-1/2 -translate-x-1/2 mb-2 transition-opacity bg-red-600 text-white text-[10px] px-3 py-1.5 rounded-lg whitespace-nowrap pointer-events-none shadow-xl border border-white/20 z-50 ${showMobileTooltip ? 'opacity-100' : 'opacity-0 group-hover/restricted:opacity-100'}`}>
                     Restricted for {daysLeft} days
                     <div className="absolute top-full left-1/2 -translate-x-1/2 border-8 border-transparent border-t-red-600"></div>
                   </div>

@@ -6,6 +6,7 @@ import { MemberProfile } from './components/MemberProfile';
 import { ProjectDetails } from './components/ProjectDetails';
 import { AboutPage } from './components/AboutPage';
 import { WasabiCards } from './components/WasabiCards';
+import { TrainingPage } from './components/TrainingPage';
 import { Layout } from './components/Layout';
 import { WasabiData } from './types';
 import rawData from './data.json';
@@ -43,6 +44,7 @@ const App: React.FC = () => {
           <Route path="/project/:projectId" element={<ProjectDetails data={data} />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/cards" element={<WasabiCards data={data} />} />
+          <Route path="/training" element={<TrainingPage data={data} />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Layout>

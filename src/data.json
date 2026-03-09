@@ -456,7 +456,7 @@
       "sportEventScore": 0
     }
   ],
-  "teams": [{ "id": "team1", "name": "Team1" }],
+  "teams": [{ "id": "team1", "name": "Team 1" }],
   "trainings": [
     { "name": "Language Course", "description": "Choose any language, study one lesson, complete multiple exercises, and finish with a small exam.", "spice_price": 5, "wabi_price": 20, "pdf_link": "https://drive.google.com/drive/folders/174RWV_x7_t-2UNx9Tcbf4OniDzPJFxOI?usp=sharing", "providedBy": "Website Provider" },
     { "name": "Drums", "description": "Learn to play the drums.", "spice_price": 10, "wabi_price": 40, "pdf_link": "https://drive.google.com/drive/folders/174RWV_x7_t-2UNx9Tcbf4OniDzPJFxOI?usp=sharing", "providedBy": "Website Provider" },
@@ -489,6 +489,11 @@
         { "work": "30 habits", "salary": 15 }, { "work": "40 habits", "salary": 20 },
         { "work": "50 habits", "salary": 25 }
       ],
+      "prizes": {
+        "1st": { "characterId": "larry", "degree": "iron" },
+        "2nd": { "characterId": "shifu", "degree": "iron" },
+        "3rd": { "characterId": "gumball", "degree": "iron" }
+      },
       "waitingList": []
     },
     {
@@ -515,7 +520,12 @@
         { "name": "Haneen", "days": 9 },
         { "name": "Yassa", "days": 5 },
         { "name": "David Michael", "days": 5 }
-      ]
+      ],
+      "prizes": {
+        "1st": { "characterId": "oogway", "degree": "iron" },
+        "2nd": { "characterId": "ping", "degree": "iron" },
+        "3rd": { "characterId": "pu", "degree": "iron" }
+      }
     },
     {
       "id": "proj-study", "teamId": "team1", "name": "Study",
@@ -531,7 +541,12 @@
         { "work": "5 hours", "salary": 5 }, { "work": "10 hours", "salary": 10 },
         { "work": "15 hours", "salary": 17 }, { "work": "20 hours", "salary": 25 },
         { "work": "30 hours", "salary": 40 }, { "work": "50 hours", "salary": 70 }
-      ]
+      ],
+      "prizes": {
+        "1st": { "characterId": "xlr8", "degree": "iron" },
+        "2nd": { "characterId": "cannonbolt", "degree": "iron" },
+        "3rd": { "characterId": "ben10", "degree": "iron" }
+      }
     },
     {
       "id": "blender_tutorials", "teamId": "team1", "name": "Blender Tutorials",
@@ -586,7 +601,17 @@
       "type": "distance",
       "startDate": "2026-03-01",
       "endDate": "2026-03-31",
-      "visible": true
+      "visible": true,
+      "prizes": {
+        "1st": { "characterId": "hiccup", "degree": "iron" },
+        "2nd": { "characterId": "astrid", "degree": "iron" },
+        "3rd": { "characterId": "snotlout", "degree": "iron" }
+      },
+      "winners": [
+        { "place": 1, "memberId": "member_jonathan", "score": 450 },
+        { "place": 2, "memberId": "member_peter", "score": 410 },
+        { "place": 3, "memberId": "member_samih", "score": 380 }
+      ]
     },
     {
       "id": "running_feb",
@@ -595,7 +620,17 @@
       "type": "distance",
       "startDate": "2026-02-01",
       "endDate": "2026-02-28",
-      "visible": true
+      "visible": true,
+      "prizes": {
+        "1st": { "characterId": "mcqueen", "degree": "iron" },
+        "2nd": { "characterId": "mater", "degree": "iron" },
+        "3rd": { "characterId": "sally", "degree": "iron" }
+      },
+      "winners": [
+        { "place": 1, "memberId": "member_peter", "score": 120 },
+        { "place": 2, "memberId": "member_samih", "score": 115 },
+        { "place": 3, "memberId": "member_yassa", "score": 90 }
+      ]
     },
     {
       "id": "pingpong_april",
@@ -652,7 +687,7 @@
     },
     {
       "packageId": "kungfu_pack",
-      "name": "Kung Fu", "banner": "kunfupanda-banner.jpg",
+      "name": "Kung Fu Panda", "banner": "kunfupanda-banner.jpg",
       "score": 8,
       "cost": { "wabi": 24, "spice": 8 },
       "outcomes": [

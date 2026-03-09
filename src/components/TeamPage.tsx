@@ -13,6 +13,8 @@ export const TeamPage: React.FC<TeamPageProps> = ({ data }) => {
   const { teamId } = useParams<{ teamId: string }>();
   const team = data.teams.find(t => t.id === teamId);
 
+  const [activeTooltip, setActiveTooltip] = React.useState<string | null>(null);
+
   if (!team) return <div className="p-20 text-center">Team not found</div>;
 
   const members = data.members.filter(m => m.teamId === teamId);
@@ -167,7 +169,24 @@ export const TeamPage: React.FC<TeamPageProps> = ({ data }) => {
                     </div>
                     <div className="text-lg font-bold text-[#6B5435] mb-1.5 flex items-center justify-center gap-2">
                       {member.name}
-                      {restricted && <span className="text-sm" title="Restricted">⚠️</span>}
+                      {restricted && (
+                        <div 
+                          className="relative inline-block"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            setActiveTooltip(activeTooltip === member.id ? null : member.id);
+                          }}
+                        >
+                          <span className="text-sm cursor-help">⚠️</span>
+                          {activeTooltip === member.id && (
+                            <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 bg-red-600 text-white text-[10px] px-3 py-1.5 rounded-lg whitespace-nowrap shadow-xl border border-white/20 z-50">
+                              Restricted {member.restrictedUntil ? `until ${member.restrictedUntil}` : ''}
+                              <div className="absolute top-full left-1/2 -translate-x-1/2 border-8 border-transparent border-t-red-600"></div>
+                            </div>
+                          )}
+                        </div>
+                      )}
                     </div>
                     {isLeader && <span className="inline-block bg-gradient-to-r from-[#F59E0B] to-[#FBBF24] text-[#1a1a1a] font-extrabold px-2.5 py-1 rounded-full text-[10px] uppercase tracking-wider mb-2 shadow-sm">Leader</span>}
                     <div className="text-sm text-[#666666] mb-3.5">Level {level}</div>

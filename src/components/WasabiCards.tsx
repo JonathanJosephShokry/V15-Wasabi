@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useSearchParams, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { WasabiData, Character, Member, CollectionEntry, CardPack } from '../types';
-import { ArrowLeft, X, Trophy, BookOpen, Package } from 'lucide-react';
-import { calcHiddenScore, getMemberTotalScore, formatRarity, formatDegree, getCurrentCardPackSeason } from '../utils';
+import { ArrowLeft, X, Trophy, BookOpen, Package, Zap, Sparkles, Clock, Plus, Dices, Medal } from 'lucide-react';
+import { calcHiddenScore, getMemberTotalScore, formatRarity, formatDegree, getCurrentCardPackSeason, getActiveCraftingRecipes, calculateDaysRemaining } from '../utils';
 
 interface WasabiCardsProps {
   data: WasabiData;
@@ -13,6 +13,10 @@ export const WasabiCards: React.FC<WasabiCardsProps> = ({ data }) => {
   const [searchParams, setSearchParams] = useSearchParams();
   const [view, setView] = useState(searchParams.get('view') || 'packs');
   const [selectedPackId, setSelectedPackId] = useState<string | null>(null);
+  const [rollingPack, setRollingPack] = useState<CardPack | null>(null);
+  const [rollResult, setRollResult] = useState<{ character: Character; rarity: string } | null>(null);
+  const [isRolling, setIsRolling] = useState(false);
+  const [showRollResult, setShowRollResult] = useState(false);
 
   useEffect(() => {
     setSearchParams({ view });
@@ -23,6 +27,365 @@ export const WasabiCards: React.FC<WasabiCardsProps> = ({ data }) => {
 
   // Use the actual packs from data.json
   const visiblePacks = data.packs;
+
+  const handleRoll = (pack: CardPack) => {
+    setRollingPack(pack);
+    setIsRolling(true);
+    setShowRollResult(false);
+    setRollResult(null);
+
+    // Simulate roll logic based on chances
+    const random = Math.random() * 100;
+    let cumulative = 0;
+    let selectedOutcome = pack.outcomes[0];
+
+    for (const outcome of pack.outcomes) {
+      const chance = parseFloat(outcome.chance.replace('%', ''));
+      cumulative += chance;
+      if (random <= cumulative) {
+        selectedOutcome = outcome;
+        break;
+      }
+    }
+
+    const character = data.characters.find(c => c.id === selectedOutcome.characterId);
+    if (character) {
+      setTimeout(() => {
+        setRollResult({ character, rarity: character.rarity });
+        setIsRolling(false);
+        setShowRollResult(true);
+      }, 2000); // Animation duration
+    }
+  };
+
+  const renderEvents = () => {
+    const visibleEventPacks = currentSeason
+      ? data.packs.filter(pack => {
+          const eventPackIds = new Set(
+            pack.outcomes
+              .map((o: any) => data.characters.find((c: any) => c.id === o.characterId)?.packageId)
+              .filter(Boolean)
+          );
+          return [...eventPackIds].some(pid => currentSeason.packsVisible.includes(pid as string));
+        })
+      : [];
+
+    const visibleSportEvents = data.sportEvents.filter(e => e.visible);
+
+    return (
+      <div className="space-y-20">
+        {/* Event Packs */}
+        <div className="space-y-12">
+          <div className="text-center">
+            <h2 className="text-4xl font-black mb-2">Active Event Packs</h2>
+            <p className="text-white/45">Limited time packs available during the current season.</p>
+          </div>
+
+          {visibleEventPacks.length > 0 ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {visibleEventPacks.map((event: any, i: number) => (
+                <motion.div 
+                  key={i} 
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: i * 0.1 }}
+                  className="bg-white/5 rounded-2xl overflow-hidden border border-white/10 transition-all hover:border-[#9FD356]/40 hover:shadow-2xl"
+                >
+                  <div className="relative h-48 overflow-hidden">
+                    <img src={`/icons/${event.banner}`} alt={event.name} className="w-full h-full object-cover transition-transform duration-700 hover:scale-110" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0d1117] via-transparent to-transparent"></div>
+                    <div className="absolute bottom-4 left-6">
+                      <h3 className="text-2xl font-black text-white drop-shadow-lg">{event.name}</h3>
+                    </div>
+                  </div>
+                  <div className="p-6">
+                    <div className="flex gap-4 items-center mb-6">
+                      <div className="flex items-center gap-1.5 px-3.5 py-1.5 bg-[#9FD356]/10 text-[#9FD356] border border-[#9FD356]/30 rounded-full font-bold text-sm">
+                        <img src="/icons/wabi-icon.png" alt="Wabi" className="w-4 h-4" />
+                        <span>{event.cost.wabi}</span>
+                      </div>
+                      <span className="text-[10px] text-white/30 font-black uppercase tracking-widest">or</span>
+                      <div className="flex items-center gap-1.5 px-3.5 py-1.5 bg-[#E8631A]/10 text-[#E8631A] border border-[#E8631A]/30 rounded-full font-bold text-sm">
+                        <img src="/icons/spice-icon.png" alt="Spice" className="w-4 h-4" />
+                        <span>{event.cost.spice}</span>
+                      </div>
+                    </div>
+
+                    <div className="space-y-3 mb-8">
+                      <div className="text-[10px] font-black text-white/40 uppercase tracking-[0.2em]">Possible Outcomes</div>
+                      <div className="grid gap-2">
+                        {event.outcomes.slice(0, 3).map((outcome: any, j: number) => {
+                          const char = data.characters.find((c: any) => c.id === outcome.characterId);
+                          if (!char) return null;
+                          return (
+                            <div key={j} className="flex items-center justify-between p-2 bg-white/5 rounded-lg border border-white/5">
+                              <div className="flex items-center gap-2">
+                                <img src={`/icons/${char.images.iron}`} alt={char.name} className="w-8 h-8 rounded object-cover" />
+                                <span className="text-xs font-bold text-white/80">{char.name}</span>
+                              </div>
+                              <span className="text-[10px] font-black text-[#9FD356]">{outcome.chance}</span>
+                            </div>
+                          );
+                        })}
+                        {event.outcomes.length > 3 && (
+                          <div className="text-center text-[10px] font-bold text-white/30 pt-1">
+                            + {event.outcomes.length - 3} more characters
+                          </div>
+                        )}
+                      </div>
+                    </div>
+
+                    <button 
+                      onClick={() => handleRoll(event)}
+                      className="w-full py-4 bg-[#9FD356] text-white rounded-xl font-black text-sm uppercase tracking-[0.2em] shadow-lg shadow-[#9FD356]/20 transition-all hover:bg-[#8B6F47] hover:-translate-y-1 active:scale-95 flex items-center justify-center gap-2"
+                    >
+                      <Dices size={18} />
+                      Roll for Card
+                    </button>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          ) : (
+            <div className="bg-white/5 border-2 border-dashed border-white/10 rounded-3xl p-20 text-center">
+              <div className="text-4xl mb-4">📦</div>
+              <h3 className="text-2xl font-bold text-white mb-2">No Active Events</h3>
+              <p className="text-white/45">Check back soon for the next season's events!</p>
+            </div>
+          )}
+        </div>
+
+        {/* Sport Events */}
+        <div className="space-y-12">
+          <div className="text-center">
+            <h2 className="text-4xl font-black mb-2">Wasabi Sport Events</h2>
+            <p className="text-white/45">Compete in physical challenges and win exclusive cards.</p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-12 max-w-5xl mx-auto">
+            {visibleSportEvents.map((event, i) => (
+              <motion.div 
+                key={event.id}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.1 }}
+                className="bg-white/5 border border-white/10 rounded-[32px] p-8 md:p-12 relative overflow-hidden"
+              >
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#E8631A] to-transparent opacity-30"></div>
+                
+                <div className="flex flex-col lg:flex-row gap-12">
+                  <div className="flex-1">
+                    <div className="flex items-center gap-4 mb-6">
+                      <div className="w-14 h-14 bg-[#E8631A]/10 rounded-2xl flex items-center justify-center text-[#E8631A]">
+                        <Trophy size={32} />
+                      </div>
+                      <div>
+                        <h3 className="text-3xl font-black text-white">{event.name}</h3>
+                        <p className="text-white/40 text-xs uppercase tracking-widest">{event.type} Challenge</p>
+                      </div>
+                    </div>
+                    <p className="text-white/60 text-lg mb-8 leading-relaxed">{event.description}</p>
+                    
+                    {/* Prizes */}
+                    {event.prizes && (
+                      <div className="space-y-4">
+                        <div className="text-[10px] font-black text-white/40 uppercase tracking-[0.2em]">Event Prizes</div>
+                        <div className="grid grid-cols-3 gap-3">
+                          {['1st', '2nd', '3rd'].map((place) => {
+                            const prize = (event.prizes as any)[place];
+                            if (!prize) return null;
+                            const char = data.characters.find(c => c.id === prize.characterId);
+                            if (!char) return null;
+                            const degree = prize.degree || 'iron';
+                            const degColors = data.cardConfig.degrees[degree];
+                            const imgSrc = char.images[degree] || char.images.iron;
+                            return (
+                              <div key={place} className="bg-white/5 p-3 rounded-xl border border-white/10 text-center">
+                                <div className={`text-[10px] font-black mb-2 uppercase tracking-widest ${
+                                  place === '1st' ? 'text-yellow-500' : 
+                                  place === '2nd' ? 'text-gray-400' : 'text-orange-500'
+                                }`}>
+                                  {place}
+                                </div>
+                                <div className="relative w-full aspect-[3/4] rounded-lg overflow-hidden border border-white/10 mb-2">
+                                  <img src={`/icons/${imgSrc}`} alt={char.name} className="w-full h-full object-cover" />
+                                </div>
+                                <div className="text-[8px] font-bold text-white/80 truncate">{char.name}</div>
+                              </div>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Winners */}
+                  {event.winners && event.winners.length > 0 && (
+                    <div className="lg:w-80 bg-white/5 rounded-2xl p-6 border border-white/10">
+                      <h4 className="text-sm font-black text-white/80 uppercase tracking-widest mb-6 flex items-center gap-2">
+                        <Medal size={16} className="text-[#9FD356]" /> Hall of Fame
+                      </h4>
+                      <div className="space-y-4">
+                        {event.winners.map((winner, idx) => {
+                          const member = data.members.find(m => m.id === winner.memberId);
+                          return (
+                            <div key={idx} className="flex items-center justify-between gap-4 p-3 bg-white/5 rounded-xl border border-white/5">
+                              <div className="flex items-center gap-3">
+                                <div className={`w-6 h-6 rounded-full flex items-center justify-center text-[10px] font-black ${
+                                  winner.place === 1 ? 'bg-yellow-500 text-black' :
+                                  winner.place === 2 ? 'bg-gray-400 text-black' :
+                                  'bg-orange-500 text-black'
+                                }`}>
+                                  {winner.place}
+                                </div>
+                                <div className="flex items-center gap-2">
+                                  <img src={`/icons/${member?.icon}`} alt={member?.name} className="w-8 h-8 rounded-full object-cover" />
+                                  <span className="text-xs font-bold text-white/90">{member?.name}</span>
+                                </div>
+                              </div>
+                              <div className="text-[10px] font-black text-[#9FD356]">{winner.score} {event.type === 'distance' ? 'km' : 'pts'}</div>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </div>
+    );
+  };
+
+  const renderCrafting = () => {
+    const recipes = getActiveCraftingRecipes(data, now);
+    return (
+      <div className="space-y-12">
+        <div className="text-center">
+          <h2 className="text-4xl font-black mb-2">Wasabi Crafting</h2>
+          <p className="text-white/45">Combine your cards to create legendary masterpieces.</p>
+        </div>
+
+        <div className="grid grid-cols-1 gap-12 max-w-5xl mx-auto">
+          {recipes.map((recipe) => {
+            const daysLeft = calculateDaysRemaining(recipe.end_date, now);
+            return (
+              <motion.div 
+                key={recipe.id} 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="bg-white/5 border border-white/10 rounded-[32px] p-8 md:p-12 relative overflow-hidden group"
+              >
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#9FD356] to-transparent opacity-30"></div>
+                
+                <div className="flex justify-between items-start mb-10">
+                  <div className="flex items-center gap-3">
+                    <div className="w-12 h-12 bg-[#9FD356]/10 rounded-xl flex items-center justify-center text-[#9FD356]">
+                      <Zap size={24} />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-black text-white">Legendary Recipe</h3>
+                      <p className="text-white/40 text-xs uppercase tracking-widest">Limited Edition</p>
+                    </div>
+                  </div>
+                  <div className="inline-flex items-center gap-2 text-white/50 bg-white/5 px-4 py-2 rounded-full border border-white/10">
+                    <Clock size={16} className="text-[#9FD356]" />
+                    <span className="text-[10px] font-black uppercase tracking-widest">{daysLeft}d left</span>
+                  </div>
+                </div>
+
+                <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
+                  {/* Inputs */}
+                  <div className="flex flex-wrap justify-center items-center gap-4 md:gap-6">
+                    {recipe.recipe.inputs.map((input: any, idx: number) => {
+                      const char = data.characters.find((c: any) => c.id === input.card_id);
+                      const degree = (data.cardConfig.degrees as any)[input.degree];
+                      if (!char || !degree) return null;
+                      const cardImage = (char as any).images?.[input.degree] ?? char.image;
+                      const isIron = input.degree === 'iron';
+                      return (
+                        <React.Fragment key={idx}>
+                          <div
+                            className="relative rounded-xl overflow-hidden shadow-2xl transition-all duration-300 cursor-pointer hover:scale-110"
+                            style={{
+                              width: '100px',
+                              height: '140px',
+                              backgroundColor: degree.border,
+                              border: `2px solid ${degree.border}`,
+                              boxShadow: `0 0 15px ${degree.glow}40`
+                            }}
+                          >
+                            <div className="absolute inset-[3px] rounded-lg overflow-hidden" style={{ bottom: '30px' }}>
+                              <img src={`/icons/${cardImage}`} alt={char.name} className="w-full h-full object-cover" />
+                              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                            </div>
+                            <div className="absolute bottom-0 left-0 right-0 h-7 flex flex-col items-center justify-center px-1" style={{ backgroundColor: degree.border }}>
+                              <div className="text-[8px] font-black text-white truncate w-full text-center leading-tight">{char.name}</div>
+                              <div className="text-[6px] font-black uppercase tracking-widest" style={{ color: isIron ? '#ddd' : degree.color }}>{input.degree}</div>
+                            </div>
+                          </div>
+                          {idx < recipe.recipe.inputs.length - 1 && (
+                            <Plus className="text-white/20 shrink-0" size={24} />
+                          )}
+                        </React.Fragment>
+                      );
+                    })}
+                  </div>
+
+                  <div className="flex flex-col items-center gap-2">
+                    <div className="w-12 h-12 rounded-full bg-[#9FD356]/20 flex items-center justify-center text-[#9FD356] animate-pulse">
+                      <ArrowLeft className="rotate-180" size={24} />
+                    </div>
+                  </div>
+
+                  {/* Output */}
+                  {(() => {
+                    const char = data.characters.find((c: any) => c.id === recipe.recipe.output.card_id);
+                    const degree = (data.cardConfig.degrees as any)[recipe.recipe.output.degree];
+                    if (!char || !degree) return null;
+                    const cardImage = (char as any).images?.[recipe.recipe.output.degree] ?? char.image;
+                    const isIron = recipe.recipe.output.degree === 'iron';
+                    return (
+                      <div
+                        className="relative rounded-2xl overflow-hidden shadow-[0_0_50px_rgba(159,211,86,0.2)] transition-all duration-500 cursor-pointer hover:scale-110"
+                        style={{
+                          width: '140px',
+                          height: '196px',
+                          backgroundColor: degree.border,
+                          border: `3px solid ${degree.border}`,
+                          boxShadow: `0 0 30px ${degree.glow}, inset 0 0 20px ${degree.glow}`
+                        }}
+                      >
+                        <div className="absolute inset-[4px] rounded-xl overflow-hidden" style={{ bottom: '36px' }}>
+                          <img src={`/icons/${cardImage}`} alt={char.name} className="w-full h-full object-cover" />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                          <div className="absolute top-2 right-2">
+                            <Sparkles className="text-white fill-white animate-bounce" size={20} />
+                          </div>
+                        </div>
+                        <div className="absolute bottom-0 left-0 right-0 h-9 flex flex-col items-center justify-center px-1" style={{ backgroundColor: degree.border }}>
+                          <div className="text-[10px] font-black text-white truncate w-full text-center leading-tight">{char.name}</div>
+                          <div className="text-[7px] font-black uppercase tracking-[0.2em]" style={{ color: isIron ? '#ddd' : degree.color }}>{recipe.recipe.output.degree}</div>
+                        </div>
+                      </div>
+                    );
+                  })()}
+                </div>
+
+                <div className="mt-12 text-center">
+                  <button className="px-12 py-4 bg-white/5 border border-white/10 rounded-xl font-black text-sm uppercase tracking-[0.2em] text-white/40 cursor-not-allowed">
+                    Insufficient Cards
+                  </button>
+                </div>
+              </motion.div>
+            );
+          })}
+        </div>
+      </div>
+    );
+  };
 
   const renderPacks = () => (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -238,6 +601,24 @@ export const WasabiCards: React.FC<WasabiCardsProps> = ({ data }) => {
               <span>Card Packs</span>
             </button>
             <button 
+              onClick={() => setView('events')}
+              className={`flex items-center gap-2.5 px-7 py-3.5 rounded-full font-bold text-sm transition-all ${
+                view === 'events' ? 'bg-[#9FD356]/20 border-2 border-[#9FD356] text-[#9FD356] shadow-[0_4px_16px_rgba(159,211,86,0.3)]' : 'bg-white/5 border-2 border-white/10 text-white/65 hover:bg-[#9FD356]/12 hover:border-[#9FD356]/50 hover:text-[#9FD356] hover:-translate-y-0.5'
+              }`}
+            >
+              <Zap size={20} />
+              <span>Events</span>
+            </button>
+            <button 
+              onClick={() => setView('crafting')}
+              className={`flex items-center gap-2.5 px-7 py-3.5 rounded-full font-bold text-sm transition-all ${
+                view === 'crafting' ? 'bg-[#9FD356]/20 border-2 border-[#9FD356] text-[#9FD356] shadow-[0_4px_16px_rgba(159,211,86,0.3)]' : 'bg-white/5 border-2 border-white/10 text-white/65 hover:bg-[#9FD356]/12 hover:border-[#9FD356]/50 hover:text-[#9FD356] hover:-translate-y-0.5'
+              }`}
+            >
+              <Sparkles size={20} />
+              <span>Crafting</span>
+            </button>
+            <button 
               onClick={() => setView('all')}
               className={`flex items-center gap-2.5 px-7 py-3.5 rounded-full font-bold text-sm transition-all ${
                 view === 'all' ? 'bg-[#9FD356]/20 border-2 border-[#9FD356] text-[#9FD356] shadow-[0_4px_16px_rgba(159,211,86,0.3)]' : 'bg-white/5 border-2 border-white/10 text-white/65 hover:bg-[#9FD356]/12 hover:border-[#9FD356]/50 hover:text-[#9FD356] hover:-translate-y-0.5'
@@ -283,6 +664,10 @@ export const WasabiCards: React.FC<WasabiCardsProps> = ({ data }) => {
             {renderPacks()}
           </div>
         )}
+
+        {view === 'events' && renderEvents()}
+
+        {view === 'crafting' && renderCrafting()}
 
         {view === 'all' && (
           <div className="space-y-12">
@@ -351,6 +736,124 @@ export const WasabiCards: React.FC<WasabiCardsProps> = ({ data }) => {
                 ))}
               </div>
             </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Roll Modal */}
+      <AnimatePresence>
+        {rollingPack && (
+          <motion.div 
+            initial={{ opacity: 0 }} 
+            animate={{ opacity: 1 }} 
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-black/90 backdrop-blur-xl z-[10000] flex items-center justify-center p-5 overflow-hidden"
+          >
+            <div className="relative w-full max-w-lg aspect-[3/4] flex items-center justify-center">
+              {/* Background Effects */}
+              <div className="absolute inset-0 flex items-center justify-center">
+                <motion.div 
+                  animate={{ 
+                    scale: isRolling ? [1, 1.5, 1.2] : [1, 1.1, 1],
+                    rotate: isRolling ? [0, 180, 360] : 0,
+                    opacity: isRolling ? [0.2, 0.5, 0.2] : 0.1
+                  }}
+                  transition={{ duration: 2, repeat: Infinity }}
+                  className="w-[150%] h-[150%] bg-[radial-gradient(circle,rgba(159,211,86,0.3)_0%,transparent_70%)] rounded-full blur-3xl"
+                />
+              </div>
+
+              {/* The Card */}
+              <motion.div 
+                animate={isRolling ? {
+                  y: [0, -20, 0],
+                  scale: [1, 1.05, 1],
+                  rotateY: [0, 360, 720, 1080],
+                } : {}}
+                transition={{ duration: 2, ease: "easeInOut" }}
+                className="relative w-64 h-96 preserve-3d"
+              >
+                <AnimatePresence mode="wait">
+                  {!showRollResult ? (
+                    <motion.div 
+                      key="back"
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0, rotateY: 90 }}
+                      className="absolute inset-0 rounded-2xl border-4 border-[#9FD356] shadow-[0_0_40px_rgba(159,211,86,0.4)] overflow-hidden bg-[#161b22]"
+                    >
+                      <img src="/icons/cardBack.png" alt="Card Back" className="w-full h-full object-cover" />
+                      {isRolling && (
+                        <div className="absolute inset-0 bg-gradient-to-t from-[#9FD356]/40 to-transparent animate-pulse"></div>
+                      )}
+                    </motion.div>
+                  ) : (
+                    <motion.div 
+                      key="front"
+                      initial={{ opacity: 0, rotateY: -90 }}
+                      animate={{ opacity: 1, rotateY: 0 }}
+                      className="absolute inset-0 rounded-2xl overflow-hidden shadow-[0_0_60px_rgba(255,255,255,0.2)]"
+                      style={{
+                        backgroundColor: (data.cardConfig.degrees as any).iron.border,
+                        border: `4px solid ${(data.cardConfig.degrees as any).iron.border}`,
+                        boxShadow: rollResult?.rarity === 'legendary' ? '0 0 60px #FF9800' : 
+                                   rollResult?.rarity === 'epic' ? '0 0 60px #9B59B6' :
+                                   rollResult?.rarity === 'rare' ? '0 0 60px #4A90E2' : '0 0 40px rgba(255,255,255,0.2)'
+                      }}
+                    >
+                      <div className="absolute inset-1 rounded-xl overflow-hidden" style={{ bottom: '40px' }}>
+                        <img src={`/icons/${rollResult?.character.images.iron}`} alt={rollResult?.character.name} className="w-full h-full object-cover" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                        
+                        {/* Rarity Effect */}
+                        {rollResult?.rarity === 'legendary' && (
+                          <motion.div 
+                            animate={{ opacity: [0.4, 0.8, 0.4] }}
+                            transition={{ duration: 1.5, repeat: Infinity }}
+                            className="absolute inset-0 bg-[radial-gradient(circle,rgba(255,152,0,0.3)_0%,transparent_70%)]"
+                          />
+                        )}
+                      </div>
+                      <div className="absolute bottom-0 left-0 right-0 h-10 flex flex-col items-center justify-center px-2" style={{ backgroundColor: (data.cardConfig.degrees as any).iron.border }}>
+                        <div className="text-xs font-black text-white truncate w-full text-center">{rollResult?.character.name}</div>
+                        <div className="text-[8px] font-black uppercase tracking-[0.2em]" style={{ color: rollResult?.rarity === 'legendary' ? '#FF9800' : rollResult?.rarity === 'epic' ? '#9B59B6' : rollResult?.rarity === 'rare' ? '#4A90E2' : '#9E9E9E' }}>{rollResult?.rarity}</div>
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </motion.div>
+
+              {/* Action Buttons */}
+              {showRollResult && (
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="absolute -bottom-24 left-0 right-0 flex flex-col items-center gap-4"
+                >
+                  <div className="text-center">
+                    <h4 className="text-2xl font-black text-white mb-1">You got {rollResult?.character.name}!</h4>
+                    <p className="text-white/50 text-sm uppercase tracking-widest">{rollResult?.rarity} Rarity</p>
+                  </div>
+                  <div className="flex gap-4">
+                    <button 
+                      onClick={() => handleRoll(rollingPack)}
+                      className="px-8 py-3 bg-[#9FD356] text-white rounded-xl font-black text-sm uppercase tracking-widest transition-all hover:bg-[#8B6F47]"
+                    >
+                      Roll Again
+                    </button>
+                    <button 
+                      onClick={() => {
+                        setRollingPack(null);
+                        setShowRollResult(false);
+                      }}
+                      className="px-8 py-3 bg-white/10 border border-white/20 text-white rounded-xl font-black text-sm uppercase tracking-widest transition-all hover:bg-white/20"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </motion.div>
+              )}
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

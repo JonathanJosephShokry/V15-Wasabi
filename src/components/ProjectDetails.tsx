@@ -97,6 +97,42 @@ export const ProjectDetails: React.FC<ProjectDetailsProps> = ({ data }) => {
               </div>
             </section>
 
+            {/* Prizes Section */}
+            {project.prizes && (
+              <section className="bg-white p-8 rounded-2xl border-2 border-[#E0E0E0] shadow-md">
+                <h3 className="text-xl font-bold text-[#6B5435] mb-6 flex items-center gap-2">
+                  <Trophy size={20} className="text-yellow-500" /> Project Prizes
+                </h3>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                  {['1st', '2nd', '3rd'].map((place) => {
+                    const prize = (project.prizes as any)[place];
+                    if (!prize) return null;
+                    const char = data.characters.find(c => c.id === prize.characterId);
+                    if (!char) return null;
+                    const degree = prize.degree || 'iron';
+                    const degColors = data.cardConfig.degrees[degree];
+                    const imgSrc = char.images[degree] || char.images.iron;
+                    
+                    return (
+                      <div key={place} className="bg-[#FAFAFA] p-4 rounded-xl border-2 border-[#E0E0E0] text-center flex flex-col items-center">
+                        <div className={`text-xs font-black mb-2 uppercase tracking-widest ${
+                          place === '1st' ? 'text-yellow-600' : 
+                          place === '2nd' ? 'text-gray-500' : 'text-orange-600'
+                        }`}>
+                          {place} Place
+                        </div>
+                        <div className="relative w-24 h-32 rounded-lg overflow-hidden border-2 mb-2" style={{ borderColor: degColors.border }}>
+                          <img src={`/icons/${imgSrc}`} alt={char.name} className="w-full h-full object-cover" />
+                        </div>
+                        <div className="text-[10px] font-bold text-[#6B5435] truncate w-full">{char.name}</div>
+                        <div className="text-[8px] font-black uppercase tracking-widest" style={{ color: degColors.color }}>{degree}</div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </section>
+            )}
+
             {/* Leaderboard Section */}
             {project.lastCycleLeaderboard && (
               <section className="bg-white p-8 rounded-2xl border-2 border-[#E0E0E0] shadow-md">
