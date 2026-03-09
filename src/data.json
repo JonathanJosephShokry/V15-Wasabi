@@ -456,7 +456,35 @@
       "sportEventScore": 0
     }
   ],
-  "teams": [{ "id": "team1", "name": "Team 1" }],
+  "teams": [
+    { 
+      "id": "team1", 
+      "name": "Team 1",
+      "history": [
+        {
+          "id": "h1",
+          "type": "purchase",
+          "date": "2026-03-05",
+          "description": "Jonathan bought a Gumball Event Pack",
+          "details": { "fromMemberId": "member_jonathan", "packId": "gumball_pack" }
+        },
+        {
+          "id": "h2",
+          "type": "trade",
+          "date": "2026-03-06",
+          "description": "Samih traded Larry (Iron) to Daniel Rafik for 2 Spice",
+          "details": { "fromMemberId": "member_samih", "toMemberId": "member_daniel_rafik", "cardId": "larry", "spiceAmount": 2 }
+        },
+        {
+          "id": "h3",
+          "type": "craft",
+          "date": "2026-03-07",
+          "description": "Peter crafted Master Shifu (Bronze)",
+          "details": { "fromMemberId": "member_peter", "cardId": "shifu" }
+        }
+      ]
+    }
+  ],
   "trainings": [
     { "name": "Language Course", "description": "Choose any language, study one lesson, complete multiple exercises, and finish with a small exam.", "spice_price": 5, "wabi_price": 20, "pdf_link": "https://drive.google.com/drive/folders/174RWV_x7_t-2UNx9Tcbf4OniDzPJFxOI?usp=sharing", "providedBy": "Website Provider" },
     { "name": "Drums", "description": "Learn to play the drums.", "spice_price": 10, "wabi_price": 40, "pdf_link": "https://drive.google.com/drive/folders/174RWV_x7_t-2UNx9Tcbf4OniDzPJFxOI?usp=sharing", "providedBy": "Website Provider" },

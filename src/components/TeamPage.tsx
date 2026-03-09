@@ -210,6 +210,88 @@ export const TeamPage: React.FC<TeamPageProps> = ({ data }) => {
           </div>
         </section>
 
+        {/* Team History Section */}
+        <section className="mt-24">
+          <h2 className="text-3xl font-bold text-[#6B5435] mb-2 flex items-center gap-3">
+            <span className="text-2xl">📜</span> Team History
+          </h2>
+          <p className="text-[#666666] text-sm mb-12">A timeline of significant events, trades, and achievements.</p>
+          
+          <div className="relative border-l-4 border-[#9FD356]/30 ml-4 pl-10 space-y-12 pb-10">
+            {team.history && team.history.length > 0 ? (
+              [...team.history].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).map((entry, idx) => {
+                const fromMember = data.members.find(m => m.id === entry.details?.fromMemberId);
+                const toMember = data.members.find(m => m.id === entry.details?.toMemberId);
+                const card = data.characters.find(c => c.id === entry.details?.cardId);
+
+                return (
+                  <motion.div 
+                    key={entry.id}
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: idx * 0.1 }}
+                    className="relative"
+                  >
+                    {/* Timeline Dot */}
+                    <div className="absolute -left-[50px] top-2 w-6 h-6 bg-white rounded-full border-4 border-[#9FD356] shadow-md z-10"></div>
+                    
+                    <div className="bg-white p-6 rounded-2xl border-2 border-[#E0E0E0] shadow-sm hover:border-[#9FD356]/50 transition-all group">
+                      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+                        <div className="flex items-center gap-3">
+                          <div className={`w-10 h-10 rounded-xl flex items-center justify-center text-xl ${
+                            entry.type === 'trade' ? 'bg-blue-100 text-blue-600' :
+                            entry.type === 'craft' ? 'bg-purple-100 text-purple-600' :
+                            'bg-orange-100 text-orange-600'
+                          }`}>
+                            {entry.type === 'trade' ? '🤝' : entry.type === 'craft' ? '✨' : '📦'}
+                          </div>
+                          <div>
+                            <div className="text-[10px] font-black uppercase tracking-[0.2em] text-[#666666]/40 mb-0.5">{entry.type}</div>
+                            <div className="text-sm font-bold text-[#6B5435]">{new Date(entry.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}</div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <p className="text-[#6B5435] font-semibold leading-relaxed mb-6 text-lg">{entry.description}</p>
+                      
+                      <div className="flex flex-wrap gap-4 items-center">
+                        {fromMember && (
+                          <div className="flex items-center gap-2 bg-[#FAFAFA] px-3 py-1.5 rounded-full border border-[#E0E0E0]">
+                            <img src={`/icons/${fromMember.icon}`} alt={fromMember.name} className="w-6 h-6 rounded-full object-cover" />
+                            <span className="text-xs font-bold text-[#666666]">{fromMember.name}</span>
+                          </div>
+                        )}
+                        {entry.type === 'trade' && <span className="text-[#666666]/30 font-bold">➔</span>}
+                        {toMember && (
+                          <div className="flex items-center gap-2 bg-[#FAFAFA] px-3 py-1.5 rounded-full border border-[#E0E0E0]">
+                            <img src={`/icons/${toMember.icon}`} alt={toMember.name} className="w-6 h-6 rounded-full object-cover" />
+                            <span className="text-xs font-bold text-[#666666]">{toMember.name}</span>
+                          </div>
+                        )}
+                        {card && (
+                          <div className="flex items-center gap-2 bg-[#9FD356]/10 px-3 py-1.5 rounded-full border border-[#9FD356]/20">
+                            <img src={`/icons/${card.images.iron}`} alt={card.name} className="w-6 h-6 rounded-md object-cover" />
+                            <span className="text-xs font-bold text-[#9FD356]">{card.name}</span>
+                          </div>
+                        )}
+                        {entry.details?.spiceAmount && (
+                          <div className="flex items-center gap-1.5 bg-[#E8631A]/10 px-3 py-1.5 rounded-full border border-[#E8631A]/20">
+                            <img src="/icons/spice-icon.png" alt="Spice" className="w-4 h-4" />
+                            <span className="text-xs font-bold text-[#E8631A]">{entry.details.spiceAmount} Spice</span>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  </motion.div>
+                );
+              })
+            ) : (
+              <div className="text-[#666666] italic py-4">No history recorded for this team yet.</div>
+            )}
+          </div>
+        </section>
+
         {/* Team Shop Section */}
         <section className="mt-16">
           <h2 className="text-3xl font-bold text-[#6B5435] mb-2 flex items-center gap-3">

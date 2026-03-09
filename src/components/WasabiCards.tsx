@@ -24,9 +24,11 @@ export const WasabiCards: React.FC<WasabiCardsProps> = ({ data }) => {
 
   const now = new Date("2026-03-03T13:53:28-08:00");
   const currentSeason = getCurrentCardPackSeason(data, now);
-
-  // Use the actual packs from data.json
   const visiblePacks = data.packs;
+
+  const isCardOwned = (characterId: string) => {
+    return data.members.some(m => m.collection.some(entry => entry.characterId === characterId));
+  };
 
   const handleRoll = (pack: CardPack) => {
     setRollingPack(pack);
@@ -117,11 +119,16 @@ export const WasabiCards: React.FC<WasabiCardsProps> = ({ data }) => {
                         {event.outcomes.slice(0, 3).map((outcome: any, j: number) => {
                           const char = data.characters.find((c: any) => c.id === outcome.characterId);
                           if (!char) return null;
+                          const owned = isCardOwned(char.id);
                           return (
                             <div key={j} className="flex items-center justify-between p-2 bg-white/5 rounded-lg border border-white/5">
                               <div className="flex items-center gap-2">
-                                <img src={`/icons/${char.images.iron}`} alt={char.name} className="w-8 h-8 rounded object-cover" />
-                                <span className="text-xs font-bold text-white/80">{char.name}</span>
+                                <img 
+                                  src={`/icons/${char.images.iron}`} 
+                                  alt={owned ? char.name : '???'} 
+                                  className={`w-8 h-8 rounded object-cover ${!owned ? 'grayscale brightness-0' : ''}`} 
+                                />
+                                <span className={`text-xs font-bold ${owned ? 'text-white/80' : 'text-white/20'}`}>{owned ? char.name : '???'}</span>
                               </div>
                               <span className="text-[10px] font-black text-[#9FD356]">{outcome.chance}</span>
                             </div>
@@ -408,23 +415,31 @@ export const WasabiCards: React.FC<WasabiCardsProps> = ({ data }) => {
               <div className="bg-[#9FD356]/20 border border-[#9FD356]/40 text-[#9FD356] px-3.5 py-1 rounded-full text-xs font-bold">Pack Score: {pack.score}</div>
             </div>
             <div className="p-6 space-y-2.5">
-              {visible.map(char => (
-                <div key={char.id} className="flex items-center gap-3.5 p-3 bg-white/5 border-2 border-transparent rounded-xl transition-all hover:translate-x-1 hover:bg-white/10">
-                  <img src={`/icons/${char.images.iron}`} alt={char.name} className="w-12 h-12 rounded-lg object-cover" />
-                  <div className="flex-1 min-w-0">
-                    <div className="text-sm font-bold text-white truncate">{char.name}</div>
-                    <div className="flex gap-1 mt-1">
-                      <span className={`px-2 py-0.5 rounded-lg text-[8px] font-bold uppercase tracking-wider border ${
-                        char.rarity === 'common' ? 'bg-[#9E9E9E]/15 text-[#9E9E9E] border-[#9E9E9E]/30' :
-                        char.rarity === 'rare' ? 'bg-[#4A90E2]/15 text-[#4A90E2] border-[#4A90E2]/30' :
-                        char.rarity === 'epic' ? 'bg-[#9B59B6]/15 text-[#9B59B6] border-[#9B59B6]/30' :
-                        char.rarity === 'legendary' ? 'bg-[#FF9800]/15 text-[#FF9800] border-[#FF9800]/30' : 'bg-[#E91E63]/15 text-[#E91E63] border-[#E91E63]/30'
-                      }`}>{char.rarity}</span>
+              {visible.map(char => {
+                const owned = isCardOwned(char.id);
+                return (
+                  <div key={char.id} className="flex items-center gap-3.5 p-3 bg-white/5 border-2 border-transparent rounded-xl transition-all hover:translate-x-1 hover:bg-white/10">
+                    <img 
+                      src={`/icons/${char.images.iron}`} 
+                      alt={owned ? char.name : '???'} 
+                      className={`w-12 h-12 rounded-lg object-cover ${!owned ? 'grayscale brightness-0' : ''}`} 
+                    />
+                    <div className="flex-1 min-w-0">
+                      <div className={`text-sm font-bold truncate ${owned ? 'text-white' : 'text-white/20'}`}>{owned ? char.name : '???'}</div>
+                      <div className="flex gap-1 mt-1">
+                        <span className={`px-2 py-0.5 rounded-lg text-[8px] font-bold uppercase tracking-wider border ${
+                          !owned ? 'bg-white/5 text-white/10 border-white/10' :
+                          char.rarity === 'common' ? 'bg-[#9E9E9E]/15 text-[#9E9E9E] border-[#9E9E9E]/30' :
+                          char.rarity === 'rare' ? 'bg-[#4A90E2]/15 text-[#4A90E2] border-[#4A90E2]/30' :
+                          char.rarity === 'epic' ? 'bg-[#9B59B6]/15 text-[#9B59B6] border-[#9B59B6]/30' :
+                          char.rarity === 'legendary' ? 'bg-[#FF9800]/15 text-[#FF9800] border-[#FF9800]/30' : 'bg-[#E91E63]/15 text-[#E91E63] border-[#E91E63]/30'
+                        }`}>{owned ? char.rarity : '???'}</span>
+                      </div>
                     </div>
+                    <div className="text-xs font-black text-white/35">{calcHiddenScore(char.id, 'iron', data).toLocaleString()}</div>
                   </div>
-                  <div className="text-xs font-black text-white/35">{calcHiddenScore(char.id, 'iron', data).toLocaleString()}</div>
-                </div>
-              ))}
+                );
+              })}
               {hidden.length > 0 && (
                 <div 
                   onClick={() => setSelectedPackId(pack.packageId)}
@@ -486,18 +501,26 @@ export const WasabiCards: React.FC<WasabiCardsProps> = ({ data }) => {
                 const char = data.characters.find(c => c.id === id);
                 if (!char) return null;
                 const score = calcHiddenScore(id, 'iron', data);
+                const owned = isCardOwned(id);
                 return (
-                  <div key={id} className="flex items-center gap-3.5 p-3 bg-white/5 border-2 border-white/10 rounded-xl transition-all hover:translate-x-1 hover:bg-white/10">
-                    <img src={`/icons/${char.images.iron}`} alt={char.name} className="w-14 h-14 rounded-lg object-cover" />
+                  <div key={id} className={`flex items-center gap-3.5 p-3 border-2 rounded-xl transition-all hover:translate-x-1 ${
+                    owned ? 'bg-white/5 border-white/10 hover:bg-white/10' : 'bg-black/40 border-white/5 opacity-60'
+                  }`}>
+                    <img 
+                      src={`/icons/${char.images.iron}`} 
+                      alt={owned ? char.name : '???'} 
+                      className={`w-14 h-14 rounded-lg object-cover ${!owned ? 'grayscale brightness-0' : ''}`} 
+                    />
                     <div className="flex-1 min-w-0">
-                      <div className="text-sm font-bold text-white truncate">{char.name}</div>
+                      <div className={`text-sm font-bold truncate ${owned ? 'text-white' : 'text-white/20'}`}>{owned ? char.name : '???'}</div>
                       <div className="flex gap-1 mt-1">
                         <span className={`px-2 py-0.5 rounded-lg text-[8px] font-bold uppercase tracking-wider border ${
+                          !owned ? 'bg-white/5 text-white/10 border-white/10' :
                           char.rarity === 'common' ? 'bg-[#9E9E9E]/15 text-[#9E9E9E] border-[#9E9E9E]/30' :
                           char.rarity === 'rare' ? 'bg-[#4A90E2]/15 text-[#4A90E2] border-[#4A90E2]/30' :
                           char.rarity === 'epic' ? 'bg-[#9B59B6]/15 text-[#9B59B6] border-[#9B59B6]/30' :
                           char.rarity === 'legendary' ? 'bg-[#FF9800]/15 text-[#FF9800] border-[#FF9800]/30' : 'bg-[#E91E63]/15 text-[#E91E63] border-[#E91E63]/30'
-                        }`}>{char.rarity}</span>
+                        }`}>{owned ? char.rarity : '???'}</span>
                       </div>
                     </div>
                     <div className="text-xs font-black text-white/35">{score.toLocaleString()}</div>
@@ -717,23 +740,33 @@ export const WasabiCards: React.FC<WasabiCardsProps> = ({ data }) => {
                 </button>
               </div>
               <div className="overflow-y-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-3">
-                {data.characters.filter(c => c.packageId === selectedPackId).map(char => (
-                  <div key={char.id} className="flex items-center gap-3.5 p-3 bg-white/5 border-2 border-white/10 rounded-xl transition-all hover:translate-x-1 hover:bg-white/10">
-                    <img src={`/icons/${char.images.iron}`} alt={char.name} className="w-12 h-12 rounded-lg object-cover" />
-                    <div className="flex-1 min-w-0">
-                      <div className="text-sm font-bold text-white truncate">{char.name}</div>
-                      <div className="flex gap-1 mt-1">
-                        <span className={`px-2 py-0.5 rounded-lg text-[8px] font-bold uppercase tracking-wider border ${
-                          char.rarity === 'common' ? 'bg-[#9E9E9E]/15 text-[#9E9E9E] border-[#9E9E9E]/30' :
-                          char.rarity === 'rare' ? 'bg-[#4A90E2]/15 text-[#4A90E2] border-[#4A90E2]/30' :
-                          char.rarity === 'epic' ? 'bg-[#9B59B6]/15 text-[#9B59B6] border-[#9B59B6]/30' :
-                          char.rarity === 'legendary' ? 'bg-[#FF9800]/15 text-[#FF9800] border-[#FF9800]/30' : 'bg-[#E91E63]/15 text-[#E91E63] border-[#E91E63]/30'
-                        }`}>{char.rarity}</span>
+                {data.characters.filter(c => c.packageId === selectedPackId).map(char => {
+                  const owned = isCardOwned(char.id);
+                  return (
+                    <div key={char.id} className={`flex items-center gap-3.5 p-3 border-2 rounded-xl transition-all hover:translate-x-1 ${
+                      owned ? 'bg-white/5 border-white/10 hover:bg-white/10' : 'bg-black/40 border-white/5 opacity-60'
+                    }`}>
+                      <img 
+                        src={`/icons/${char.images.iron}`} 
+                        alt={owned ? char.name : '???'} 
+                        className={`w-12 h-12 rounded-lg object-cover ${!owned ? 'grayscale brightness-0' : ''}`} 
+                      />
+                      <div className="flex-1 min-w-0">
+                        <div className={`text-sm font-bold truncate ${owned ? 'text-white' : 'text-white/20'}`}>{owned ? char.name : '???'}</div>
+                        <div className="flex gap-1 mt-1">
+                          <span className={`px-2 py-0.5 rounded-lg text-[8px] font-bold uppercase tracking-wider border ${
+                            !owned ? 'bg-white/5 text-white/10 border-white/10' :
+                            char.rarity === 'common' ? 'bg-[#9E9E9E]/15 text-[#9E9E9E] border-[#9E9E9E]/30' :
+                            char.rarity === 'rare' ? 'bg-[#4A90E2]/15 text-[#4A90E2] border-[#4A90E2]/30' :
+                            char.rarity === 'epic' ? 'bg-[#9B59B6]/15 text-[#9B59B6] border-[#9B59B6]/30' :
+                            char.rarity === 'legendary' ? 'bg-[#FF9800]/15 text-[#FF9800] border-[#FF9800]/30' : 'bg-[#E91E63]/15 text-[#E91E63] border-[#E91E63]/30'
+                          }`}>{owned ? char.rarity : '???'}</span>
+                        </div>
                       </div>
+                      <div className="text-xs font-black text-white/35">{calcHiddenScore(char.id, 'iron', data).toLocaleString()}</div>
                     </div>
-                    <div className="text-xs font-black text-white/35">{calcHiddenScore(char.id, 'iron', data).toLocaleString()}</div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </motion.div>
           </motion.div>
