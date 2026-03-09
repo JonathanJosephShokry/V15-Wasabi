@@ -138,57 +138,6 @@ export const Home: React.FC<HomeProps> = ({ data }) => {
         </div>
       </section>
 
-      {/* 3. Training Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-5">
-          <h2 className="text-4xl font-bold text-[#6B5435] text-center mb-10">Wasabi Training</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {data.trainings.map((t: any, i: number) => (
-              <div key={i} className="bg-white border-2 border-[#E0E0E0] rounded-2xl p-8 text-center transition-all hover:-translate-y-2 hover:shadow-2xl relative overflow-hidden group">
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#E8631A] to-[#9FD356] scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
-                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#FDDDC7] to-[#E8631A]/15 flex items-center justify-center mx-auto mb-5 text-3xl border-2 border-[#E8631A]/25 transition-all group-hover:border-[#E8631A]">
-                  {t.name.toLowerCase().includes('python') ? '🐍' : t.name.toLowerCase().includes('chess') ? '♟️' : t.name.toLowerCase().includes('language') ? '📖' : t.name.toLowerCase().includes('drums') ? '🥁' : t.name.toLowerCase().includes('singing') ? '🎤' : '⚡'}
-                </div>
-                <div className="text-xl font-bold text-[#6B5435] mb-2">{t.name}</div>
-                {t.providedBy && (
-                  <div className="text-[10px] text-[#666666]/60 font-semibold uppercase tracking-wider mb-2">
-                    {t.name.toLowerCase().includes('singing') || t.name.toLowerCase().includes('drums') || t.name.toLowerCase().includes('language') ? 'Course provided by ' : 'Powered by '}{t.providedBy}
-                  </div>
-                )}
-                <p className="text-sm text-[#666666] mb-6 leading-relaxed">{t.description}</p>
-                <div className="flex flex-col gap-3 items-center">
-                  <div className="flex flex-wrap justify-center gap-3">
-                    {t.spice_price > 0 && (
-                      <div className="flex items-center gap-1.5 px-4 py-1.5 bg-[#E8631A]/10 text-[#E8631A] border-2 border-[#E8631A]/25 rounded-full font-bold text-sm">
-                        <img src="/icons/spice-icon.png" alt="Spice" className="w-4 h-4" />
-                        <span>{t.spice_price} Spice</span>
-                      </div>
-                    )}
-                    {t.wabi_price && t.wabi_price > 0 && (
-                      <div className="flex items-center gap-1.5 px-4 py-1.5 bg-[#9FD356]/10 text-[#9FD356] border-2 border-[#9FD356]/25 rounded-full font-bold text-sm">
-                        <img src="/icons/wabi-icon.png" alt="Wabi" className="w-4 h-4" />
-                        <span>{t.wabi_price} Wabi</span>
-                      </div>
-                    )}
-                  </div>
-                  {t.pdf_link && (
-                    <a
-                      href={t.pdf_link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-2 flex items-center gap-2 bg-[#6B5435] text-white px-6 py-2.5 rounded-full font-bold text-sm transition-all hover:bg-[#8B6F47] hover:shadow-lg active:scale-95"
-                    >
-                      <ExternalLink size={16} />
-                      Open Training PDF
-                    </a>
-                  )}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* 3. Wasabi Sports Section */}
       <section className="py-20 bg-[#FAFAFA] relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_20%_60%,rgba(159,211,86,0.12)_0%,transparent_50%),radial-gradient(ellipse_at_80%_30%,rgba(185,242,255,0.08)_0%,transparent_50%)] pointer-events-none"></div>
