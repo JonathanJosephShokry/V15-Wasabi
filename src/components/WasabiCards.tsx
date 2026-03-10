@@ -360,6 +360,7 @@ export const WasabiCards: React.FC<WasabiCardsProps> = ({ data }) => {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {visiblePacks.map((pack, i) => {
         const chars = pack.outcomes.map(o => data.characters.find(c => c.id === o.characterId)).filter(Boolean) as Character[];
+        const isAnyCardOwned = chars.some(char => isCardOwned(char.id));
         const MAX_VISIBLE = 4;
         const visible = chars.slice(0, MAX_VISIBLE);
         const hidden = chars.slice(MAX_VISIBLE);
@@ -373,7 +374,7 @@ export const WasabiCards: React.FC<WasabiCardsProps> = ({ data }) => {
             className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden transition-all hover:border-[#9FD356]/40 hover:shadow-[0_12px_40px_rgba(0,0,0,0.4),0_0_30px_rgba(159,211,86,0.1)] hover:-translate-y-1 group"
           >
             <div className="bg-gradient-to-br from-[#9FD356]/15 to-[#9FD356]/5 p-6 border-b border-white/10 flex justify-between items-center">
-              <div className="text-xl font-black text-white">{pack.name}</div>
+              <div className="text-xl font-black text-white">{isAnyCardOwned ? pack.name : '???'}</div>
               <div className="bg-[#9FD356]/20 border border-[#9FD356]/40 text-[#9FD356] px-3.5 py-1 rounded-full text-xs font-bold">Pack Score: {pack.score}</div>
             </div>
             <div className="p-6 space-y-2.5">
