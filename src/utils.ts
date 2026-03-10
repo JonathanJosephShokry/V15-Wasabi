@@ -23,7 +23,7 @@ export function calcHiddenScore(characterId: string, degree: string, data: Wasab
 
   // Find the pack that contains this character to get its score
   const pack = data.packs.find(p => p.packageId === char.packageId);
-  const packScore = pack?.score || 5; // Fallback to 5 if not found
+  const packScore = pack?.score ?? 5; // Fallback to 5 if not found
 
   const rarityScore = data.cardConfig.rarityScores[char.rarity] || 0;
   const degKey = degree || 'iron';
