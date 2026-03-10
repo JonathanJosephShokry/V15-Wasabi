@@ -1,5 +1,5 @@
 {
-  "version": "V15",
+  "version": "V17",
   "cardConfig": {
     "rarityScores": {
       "common": 2,
@@ -252,6 +252,26 @@
     {
       "id": "bruce", "name": "Bruce", "rarity": "never", "packageId": "nemo_pack",
       "images": { "iron": "bruce10.jpg", "bronze": "hiccup10.jpg", "silver": "hiccup10.jpg", "pearl": "hiccup10.jpg", "gold": "hiccup10.jpg", "jade": "hiccup10.jpg", "sapphire": "hiccup10.jpg", "ruby": "hiccup10.jpg", "emerald": "hiccup10.jpg", "diamond": "hiccup10.jpg" }
+    },
+    {
+      "id": "common_token", "name": "Common Token", "rarity": "common", "packageId": "tokens_pack",
+      "images": { "iron": "commonToken.jpg", "bronze": "commonToken.jpg", "silver": "commonToken.jpg", "pearl": "commonToken.jpg", "gold": "commonToken.jpg", "jade": "commonToken.jpg", "sapphire": "commonToken.jpg", "ruby": "commonToken.jpg", "emerald": "commonToken.jpg", "diamond": "commonToken.jpg" }
+    },
+    {
+      "id": "rare_token", "name": "Rare Token", "rarity": "rare", "packageId": "tokens_pack",
+      "images": { "iron": "rareToken.jpg", "bronze": "rareToken.jpg", "silver": "rareToken.jpg", "pearl": "rareToken.jpg", "gold": "rareToken.jpg", "jade": "rareToken.jpg", "sapphire": "rareToken.jpg", "ruby": "rareToken.jpg", "emerald": "rareToken.jpg", "diamond": "rareToken.jpg" }
+    },
+    {
+      "id": "epic_token", "name": "Epic Token", "rarity": "epic", "packageId": "tokens_pack",
+      "images": { "iron": "epicToken.jpg", "bronze": "epicToken.jpg", "silver": "epicToken.jpg", "pearl": "epicToken.jpg", "gold": "epicToken.jpg", "jade": "epicToken.jpg", "sapphire": "epicToken.jpg", "ruby": "epicToken.jpg", "emerald": "epicToken.jpg", "diamond": "epicToken.jpg" }
+    },
+    {
+      "id": "legendary_token", "name": "Legendary Token", "rarity": "legendary", "packageId": "tokens_pack",
+      "images": { "iron": "legendaryToken.jpg", "bronze": "legendaryToken.jpg", "silver": "legendaryToken.jpg", "pearl": "legendaryToken.jpg", "gold": "legendaryToken.jpg", "jade": "legendaryToken.jpg", "sapphire": "legendaryToken.jpg", "ruby": "legendaryToken.jpg", "emerald": "legendaryToken.jpg", "diamond": "legendaryToken.jpg" }
+    },
+    {
+      "id": "never_token", "name": "Never Token", "rarity": "never", "packageId": "tokens_pack",
+      "images": { "iron": "neverToken.jpg", "bronze": "neverToken.jpg", "silver": "neverToken.jpg", "pearl": "neverToken.jpg", "gold": "neverToken.jpg", "jade": "neverToken.jpg", "sapphire": "neverToken.jpg", "ruby": "neverToken.jpg", "emerald": "neverToken.jpg", "diamond": "neverToken.jpg" }
     }
   ],
   "members": [
@@ -463,34 +483,40 @@
       "history": [
         {
           "id": "h1",
-          "type": "purchase",
-          "date": "2026-03-05",
-          "description": "Jonathan bought a Gumball Event Pack",
-          "details": { "fromMemberId": "member_jonathan", "packId": "gumball_pack" }
+          "type": "craft",
+          "date": "2026-03-07",
+          "description": "Peter crafted Pu (Silver)",
+          "details": { "fromMemberId": "member_peter", "cardId": "pu" }
         },
         {
           "id": "h2",
-          "type": "trade",
-          "date": "2026-03-06",
-          "description": "Samih traded Larry (Iron) to Daniel Rafik for 2 Spice",
-          "details": { "fromMemberId": "member_samih", "toMemberId": "member_daniel_rafik", "cardId": "larry", "spiceAmount": 2 }
+          "type": "craft",
+          "date": "2026-03-07",
+          "description": "Daniel Rafik crafted Monkey (Bronze)",
+          "details": { "fromMemberId": "member_daniel_rafik", "cardId": "monkey" }
         },
         {
           "id": "h3",
           "type": "craft",
           "date": "2026-03-07",
-          "description": "Peter crafted Master Shifu (Bronze)",
-          "details": { "fromMemberId": "member_peter", "cardId": "shifu" }
+          "description": "Jonathan crafted Larry (Bronze)",
+          "details": { "fromMemberId": "member_jonathan", "cardId": "larry" }
         }
       ]
     }
   ],
   "trainings": [
-    { "name": "Language Course", "description": "Choose any language, study one lesson, complete multiple exercises, and finish with a small exam.", "spice_price": 5, "wabi_price": 20, "pdf_link": "https://drive.google.com/drive/folders/174RWV_x7_t-2UNx9Tcbf4OniDzPJFxOI?usp=sharing", "providedBy": "Website Provider" },
-    { "name": "Drums", "description": "Learn to play the drums.", "spice_price": 10, "wabi_price": 40, "pdf_link": "https://drive.google.com/drive/folders/174RWV_x7_t-2UNx9Tcbf4OniDzPJFxOI?usp=sharing", "providedBy": "Website Provider" },
-    { "name": "Singing", "description": "Improve your vocal skills.", "spice_price": 5, "wabi_price": 20, "pdf_link": "https://drive.google.com/drive/folders/174RWV_x7_t-2UNx9Tcbf4OniDzPJFxOI?usp=sharing", "providedBy": "Website Provider" },
-    { "name": "Python", "description": "Learn programming fundamentals and automation.", "spice_price": 15, "wabi_price": 60, "pdf_link": "https://drive.google.com/drive/folders/174RWV_x7_t-2UNx9Tcbf4OniDzPJFxOI?usp=sharing", "providedBy": "Website Provider" },
-    { "name": "Chess", "description": "Develop strategic thinking and discipline.", "spice_price": 5, "wabi_price": 20, "pdf_link": "https://drive.google.com/drive/folders/174RWV_x7_t-2UNx9Tcbf4OniDzPJFxOI?usp=sharing", "providedBy": "Website Provider" }
+    { "name": "Language Course",
+    "description": "Learn any language through structured lessons. Study a short lesson, complete practice exercises, and finish with a brief exam to reinforce what you’ve learned.",
+    "spice_price": 5, "wabi_price": 20, "pdf_link": "https://drive.google.com/drive/folders/174RWV_x7_t-2UNx9Tcbf4OniDzPJFxOI?usp=sharing", "providedBy": "Website Provider" },
+    { "name": "Drums", "description": "Learn to play the drums step by step. Practice rhythm, understand drum notation, and complete a short test after each lesson to track your progress.",
+    "spice_price": 10, "wabi_price": 40, "pdf_link": "https://drive.google.com/drive/folders/174RWV_x7_t-2UNx9Tcbf4OniDzPJFxOI?usp=sharing", "providedBy": "Website Provider" },
+    { "name": "Singing", "description": "Improve your vocal skills through guided exercises. Strengthen your voice, develop control, and build confidence with structured practice sessions.",
+    "spice_price": 5, "wabi_price": 20, "pdf_link": "https://drive.google.com/drive/folders/174RWV_x7_t-2UNx9Tcbf4OniDzPJFxOI?usp=sharing", "providedBy": "Website Provider" },
+    { "name": "Python", "description": "Learn programming fundamentals and automation through practical lessons. Start with the basics, practice key concepts, and gradually progress to more advanced skills.",
+    "spice_price": 15, "wabi_price": 60, "pdf_link": "https://drive.google.com/drive/folders/174RWV_x7_t-2UNx9Tcbf4OniDzPJFxOI?usp=sharing", "providedBy": "Website Provider" },
+    { "name": "Chess", "description": "Develop strategic thinking through chess training. Study core principles, practice tactical exercises, and improve your decision-making on the board.",
+    "spice_price": 5, "wabi_price": 20, "pdf_link": "https://drive.google.com/drive/folders/174RWV_x7_t-2UNx9Tcbf4OniDzPJFxOI?usp=sharing", "providedBy": "Website Provider" }
   ],
   "spiceDeals": [
     { "spice": 5, "egp": 5, "highlight": false },
@@ -518,9 +544,9 @@
         { "work": "50 habits", "salary": 25 }
       ],
       "prizes": {
-        "1st": { "characterId": "larry", "degree": "iron" },
-        "2nd": { "characterId": "shifu", "degree": "iron" },
-        "3rd": { "characterId": "gumball", "degree": "iron" }
+        "1st": { "characterId": "rare_token", "degree": "iron" },
+        "2nd": { "characterId": "common_token", "degree": "bronze" },
+        "3rd": { "characterId": "common_token", "degree": "iron" }
       },
       "waitingList": []
     },
@@ -550,9 +576,9 @@
         { "name": "David Michael", "days": 5 }
       ],
       "prizes": {
-        "1st": { "characterId": "oogway", "degree": "iron" },
-        "2nd": { "characterId": "ping", "degree": "iron" },
-        "3rd": { "characterId": "pu", "degree": "iron" }
+        "1st": { "characterId": "rare_token", "degree": "iron" },
+        "2nd": { "characterId": "common_token", "degree": "bronze" },
+        "3rd": { "characterId": "common_token", "degree": "iron" }
       }
     },
     {
@@ -571,9 +597,9 @@
         { "work": "30 hours", "salary": 40 }, { "work": "50 hours", "salary": 70 }
       ],
       "prizes": {
-        "1st": { "characterId": "xlr8", "degree": "iron" },
-        "2nd": { "characterId": "cannonbolt", "degree": "iron" },
-        "3rd": { "characterId": "ben10", "degree": "iron" }
+        "1st": { "characterId": "rare_token", "degree": "iron" },
+        "2nd": { "characterId": "common_token", "degree": "bronze" },
+        "3rd": { "characterId": "common_token", "degree": "iron" }
       }
     },
     {
@@ -617,9 +643,9 @@
     }
   ],
   "tss": [
-    { "id": "tss-1", "teamId": "team1", "name": "El Barak Free Meal", "image": "ElBaraka.jpg", "wabiCost": 1900, "description": "Good food" },
-    { "id": "tss-2", "teamId": "team1", "name": "El Wahsh Free Meal", "image": "ElWahsh.jpg", "wabiCost": 2300, "description": "Good food" },
-    { "id": "tss-3", "teamId": "team1", "name": "Free Padel!", "image": "Padel.jpg", "wabiCost": 700, "description": "Good sport" }
+    { "id": "tss-1", "teamId": "team1", "name": "El Barak Free Meal", "image": "ElBaraka.jpg", "wabiCost": 200, "description": "Good food" },
+    { "id": "tss-2", "teamId": "team1", "name": "El Wahsh Free Meal", "image": "ElWahsh.jpg", "wabiCost": 230, "description": "Good food" },
+    { "id": "tss-3", "teamId": "team1", "name": "Free Padel!", "image": "Padel.jpg", "wabiCost": 85, "description": "Good sport" }
   ],
   "sportEvents": [
     {
@@ -631,9 +657,9 @@
       "endDate": "2026-03-31",
       "visible": true,
       "prizes": {
-        "1st": { "characterId": "hiccup", "degree": "iron" },
-        "2nd": { "characterId": "astrid", "degree": "iron" },
-        "3rd": { "characterId": "snotlout", "degree": "iron" }
+        "1st": { "characterId": "common_token", "degree": "iron" },
+        "2nd": { "characterId": "common_token", "degree": "bronze" },
+        "3rd": { "characterId": "rare_token", "degree": "iron" }
       },
       "winners": [
         { "place": 1, "memberId": "member_jonathan", "score": 450 },
@@ -648,11 +674,11 @@
       "type": "distance",
       "startDate": "2026-02-01",
       "endDate": "2026-02-28",
-      "visible": true,
+      "visible": false,
       "prizes": {
-        "1st": { "characterId": "mcqueen", "degree": "iron" },
-        "2nd": { "characterId": "mater", "degree": "iron" },
-        "3rd": { "characterId": "sally", "degree": "iron" }
+        "1st": { "characterId": "common_token", "degree": "iron" },
+        "2nd": { "characterId": "common_token", "degree": "bronze" },
+        "3rd": { "characterId": "rare_token", "degree": "iron" }
       },
       "winners": [
         { "place": 1, "memberId": "member_peter", "score": 120 },
@@ -805,6 +831,17 @@
         { "characterId": "chloe", "chance": "7%" }, { "characterId": "craboo", "chance": "7%" },
         { "characterId": "hamster", "chance": "7%" }, { "characterId": "piniata_cat", "chance": "7%" }
       ]
+    },
+    {
+      "packageId": "tokens_pack",
+      "name": "Tokens", "banner": "",
+      "score": 0,
+      "cost": { "wabi": 6, "spice": 2 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "rare_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }
+      ]
     }
   ],
   "crafting": [
@@ -841,7 +878,7 @@
     {
       "id": "craft_3",
       "start_date": "2026-03-20",
-      "end_date": "2026-07-20",
+      "end_date": "2026-04-20",
       "recipe": {
         "inputs": [
           { "card_id": "ice_bear", "degree": "iron" },
@@ -849,6 +886,51 @@
         ],
         "output": {
           "card_id": "ice_bear",
+          "degree": "silver"
+        }
+      }
+    },
+    {
+      "id": "craft_4",
+      "start_date": "2026-03-15",
+      "end_date": "2026-04-20",
+      "recipe": {
+        "inputs": [
+          { "card_id": "cannonbolt", "degree": "iron" },
+          { "card_id": "rare_token", "degree": "silver"}
+        ],
+        "output": {
+          "card_id": "cannonbolt",
+          "degree": "bronze"
+        }
+      }
+    },
+    {
+      "id": "craft_5",
+      "start_date": "2026-04-20",
+      "end_date": "2026-05-31",
+      "recipe": {
+        "inputs": [
+          { "card_id": "pu", "degree": "pearl" },
+          { "card_id": "ping", "degree": "pearl"}
+        ],
+        "output": {
+          "card_id": "oogway",
+          "degree": "iron"
+        }
+      }
+    },
+    {
+      "id": "craft_6",
+      "start_date": "2026-03-15",
+      "end_date": "2026-05-31",
+      "recipe": {
+        "inputs": [
+          { "card_id": "jake", "degree": "bronze" },
+          { "card_id": "ice_king", "degree": "bronze"}
+        ],
+        "output": {
+          "card_id": "ice_king",
           "degree": "silver"
         }
       }
