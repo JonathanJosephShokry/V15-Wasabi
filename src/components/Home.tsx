@@ -186,7 +186,7 @@ export const Home: React.FC<HomeProps> = ({ data }) => {
                 <div className="w-14 h-14 bg-[#E8631A]/20 rounded-xl flex items-center justify-center text-3xl shrink-0 group-hover:scale-110 transition-transform">⚡</div>
                 <div className="flex-1">
                   <div className="font-black text-xl mb-1">Active Events</div>
-                  <div className="text-white/40 text-xs uppercase tracking-widest">Limited time challenges</div>
+                  <div className="text-white/40 text-xs uppercase tracking-widest">Limited time packs</div>
                 </div>
                 <ArrowRight className="text-[#E8631A] opacity-0 group-hover:opacity-100 transition-all -translate-x-4 group-hover:translate-x-0" />
               </Link>
