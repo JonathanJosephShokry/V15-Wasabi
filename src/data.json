@@ -323,14 +323,15 @@
     {
       "id": "member_jonathan",
       "name": "Jonathan", "icon": "grizz.jpg",
-      "wabi": 38, "spice": 0, "exp": 3, "teamId": "team1", "role": "leader",
+      "wabi": 38, "spice": 1, "exp": 3, "teamId": "team1", "role": "leader",
       "collection": [
         { "characterId": "grizz", "degree": "iron", "count": 1 },
         { "characterId": "panda", "degree": "iron", "count": 1 },
         { "characterId": "ice_bear", "degree": "iron", "count": 1 },
         { "characterId": "shifu", "degree": "iron", "count": 1 },
         { "characterId": "larry", "degree": "bronze", "count": 1 },
-        { "characterId": "rare_token", "degree": "iron", "count": 2 }
+        { "characterId": "rare_token", "degree": "iron", "count": 2 },
+        { "characterId": "pu", "degree": "silver", "count": 1 }
       ],
       "skills": {},
       "restricted": false, "restrictedUntil": null,
@@ -344,14 +345,15 @@
     {
       "id": "member_samih",
       "name": "Samih", "icon": "charlie.jpg",
-      "wabi": 5, "spice": 0, "exp": 3, "teamId": "team1", "role": "normal",
+      "wabi": 5, "spice": 1, "exp": 3, "teamId": "team1", "role": "normal",
       "collection": [
         { "characterId": "charlie", "degree": "iron", "count": 1 },
-        { "characterId": "darwin", "degree": "bronze", "count": 1 },
-        { "characterId": "darwin", "degree": "iron", "count": 1 },
-        { "characterId": "pu", "degree": "bronze", "count": 1 },
+        { "characterId": "darwin", "degree": "bronze", "count": 2 },
+        { "characterId": "pu", "degree": "iron", "count": 1 },
         { "characterId": "fourarms", "degree": "iron", "count": 1 },
-        { "characterId": "larry", "degree": "iron", "count": 1 }
+        { "characterId": "larry", "degree": "iron", "count": 1 },
+        { "characterId": "ping", "degree": "iron", "count": 1 },
+        { "characterId": "monkey", "degree": "iron", "count": 1 }
       ],
       "skills": { "english": 0, "chess": 0, "python": 0 },
       "restricted": false, "restrictedUntil": null,
@@ -421,8 +423,7 @@
     {
       "id": "member_haneen",
       "name": "Haneen", "icon": "hamster.jpg",
-      "wabi": 11, "spice": 0, "exp": 3,
-      "teamId": "team1", "role": "normal",
+      "wabi": 11, "spice": 0, "exp": 3, "teamId": "team1", "role": "normal",
       "collection": [
         { "characterId": "hamster", "degree": "iron", "count": 1 },
         { "characterId": "common_token", "degree": "iron", "count": 1 }
@@ -579,6 +580,20 @@
           "date": "2026-03-07",
           "description": "Jonathan crafted Larry (Bronze)",
           "details": { "fromMemberId": "member_jonathan", "cardId": "larry" }
+        },
+        {
+          "id": "h4",
+          "type": "purchase",
+          "date": "2026-03-11",
+          "description": "Jonathan bought 3 Kung Fu Panda Packs",
+          "details": { "fromMemberId": "member_jonathan", "packId":"kungfu_pack" }
+        },
+        {
+          "id": "h5",
+          "type": "purchase",
+          "date": "2026-03-11",
+          "description": "Samih bought 2 Kung Fu Panda Packs",
+          "details": { "fromMemberId": "member_samih", "cardId": "kungfu_pack" }
         }
       ]
     }
@@ -586,15 +601,15 @@
   "trainings": [
     { "name": "Language Course",
     "description": "Learn any language through structured lessons. Study a short lesson, complete practice exercises, and finish with a brief exam to reinforce what you’ve learned.",
-    "spice_price": 5, "wabi_price": 20, "pdf_link": "https://drive.google.com/drive/folders/174RWV_x7_t-2UNx9Tcbf4OniDzPJFxOI?usp=sharing", "providedBy": "Website Provider" },
+    "spice_price": 3, "wabi_price": 9, "pdf_link": "https://drive.google.com/drive/folders/174RWV_x7_t-2UNx9Tcbf4OniDzPJFxOI?usp=sharing", "providedBy": "Website Provider" },
     { "name": "Drums", "description": "Learn to play the drums step by step. Practice rhythm, understand drum notation, and complete a short test after each lesson to track your progress.",
-    "spice_price": 10, "wabi_price": 40, "pdf_link": "https://drive.google.com/drive/folders/174RWV_x7_t-2UNx9Tcbf4OniDzPJFxOI?usp=sharing", "providedBy": "Website Provider" },
+    "spice_price": 6, "wabi_price": 18, "pdf_link": "https://drive.google.com/drive/folders/174RWV_x7_t-2UNx9Tcbf4OniDzPJFxOI?usp=sharing", "providedBy": "Website Provider" },
     { "name": "Singing", "description": "Improve your vocal skills through guided exercises. Strengthen your voice, develop control, and build confidence with structured practice sessions.",
-    "spice_price": 5, "wabi_price": 20, "pdf_link": "https://drive.google.com/drive/folders/174RWV_x7_t-2UNx9Tcbf4OniDzPJFxOI?usp=sharing", "providedBy": "Website Provider" },
+    "spice_price": 3, "wabi_price": 9, "pdf_link": "https://drive.google.com/drive/folders/174RWV_x7_t-2UNx9Tcbf4OniDzPJFxOI?usp=sharing", "providedBy": "Website Provider" },
     { "name": "Python", "description": "Learn programming fundamentals and automation through practical lessons. Start with the basics, practice key concepts, and gradually progress to more advanced skills.",
-    "spice_price": 15, "wabi_price": 60, "pdf_link": "https://drive.google.com/drive/folders/174RWV_x7_t-2UNx9Tcbf4OniDzPJFxOI?usp=sharing", "providedBy": "Website Provider" },
+    "spice_price": 9, "wabi_price": 27, "pdf_link": "https://drive.google.com/drive/folders/174RWV_x7_t-2UNx9Tcbf4OniDzPJFxOI?usp=sharing", "providedBy": "Website Provider" },
     { "name": "Chess", "description": "Develop strategic thinking through chess training. Study core principles, practice tactical exercises, and improve your decision-making on the board.",
-    "spice_price": 5, "wabi_price": 20, "pdf_link": "https://drive.google.com/drive/folders/174RWV_x7_t-2UNx9Tcbf4OniDzPJFxOI?usp=sharing", "providedBy": "Website Provider" }
+    "spice_price": 3, "wabi_price": 9, "pdf_link": "https://drive.google.com/drive/folders/174RWV_x7_t-2UNx9Tcbf4OniDzPJFxOI?usp=sharing", "providedBy": "Website Provider" }
   ],
   "spiceDeals": [
     { "spice": 5, "egp": 5, "highlight": false },
