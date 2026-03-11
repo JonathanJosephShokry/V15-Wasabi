@@ -278,16 +278,20 @@
     {
       "id": "member_abanoub",
       "name": "Abanoub", "icon": "nom nom.jpg",
-      "wabi": 0, "spice": 0, "exp": 0, "teamId": "team1", "role": "normal",
+      "wabi": 5, "spice": 0, "exp": 1, "teamId": "team1", "role": "normal",
       "collection": [{ "characterId": "nom_nom", "degree": "iron", "count": 1 }],
       "skills": { "english": 0, "chess": 0, "python": 0 },
       "restricted": false, "restrictedUntil": null,
-      "sportEventScore": 0
+      "sportEventScore": 0,
+      "statistics": [
+        { "label": "Bible Days", "value": 0 },
+        { "label": "Habits Completed", "value": 17 }
+      ]
     },
     {
       "id": "member_daniel_rafik",
       "name": "Daniel Rafik", "icon": "fourarms2.jpg",
-      "wabi": 2, "spice": 0, "exp": 2, "teamId": "team1", "role": "normal",
+      "wabi": 7, "spice": 0, "exp": 3, "teamId": "team1", "role": "normal",
       "collection": [
         { "characterId": "larry", "degree": "iron", "count": 1 },
         { "characterId": "monkey", "degree": "bronze", "count": 1 },
@@ -295,48 +299,49 @@
         { "characterId": "fourarms", "degree": "bronze", "count": 1 }
       ],
       "skills": {},
-      "restricted": true, "restrictedUntil": "2026-03-11",
+      "restricted": false, "restrictedUntil": null,
       "sportEventScore": 0,
       "statistics": [
-        { "label": "Bible Days", "value": 0 },
-        { "label": "Push Ups", "value": 0 },
-        { "label": "Habits Completed", "value": 0 },
-        { "label": "Hours Studying", "value": 0 }
+        { "label": "Bible Days", "value": 5 },
+        { "label": "Habits Completed", "value": 2 }
       ]
     },
     {
       "id": "member_david_michael",
       "name": "David Michael", "icon": "burrito.png",
-      "wabi": 3, "spice": 0, "exp": 1, "teamId": "team1", "role": "normal",
+      "wabi": 6, "spice": 0, "exp": 2, "teamId": "team1", "role": "normal",
       "collection": [{ "characterId": "burrito", "degree": "iron", "count": 1 }],
       "skills": { "english": 0, "chess": 0, "python": 0 },
-      "sportEventScore": 0
+      "sportEventScore": 0,
+      "statistics": [
+        { "label": "Bible Days", "value": 6 }
+      ]
     },
     {
       "id": "member_jonathan",
       "name": "Jonathan", "icon": "grizz.jpg",
-      "wabi": 5, "spice": 0, "exp": 2, "teamId": "team1", "role": "leader",
+      "wabi": 38, "spice": 0, "exp": 3, "teamId": "team1", "role": "leader",
       "collection": [
         { "characterId": "grizz", "degree": "iron", "count": 1 },
         { "characterId": "panda", "degree": "iron", "count": 1 },
         { "characterId": "ice_bear", "degree": "iron", "count": 1 },
         { "characterId": "shifu", "degree": "iron", "count": 1 },
-        { "characterId": "larry", "degree": "bronze", "count": 1 }
+        { "characterId": "larry", "degree": "bronze", "count": 1 },
+        { "characterId": "rare_token", "degree": "iron", "count": 2 }
       ],
       "skills": {},
-      "restricted": true, "restrictedUntil": "2026-03-11",
+      "restricted": false, "restrictedUntil": null,
       "sportEventScore": 0,
       "statistics": [
-        { "label": "Bible Days", "value": 0 },
-        { "label": "Push Ups", "value": 0 },
-        { "label": "Habits Completed", "value": 0 },
-        { "label": "Hours Studying", "value": 0 }
+        { "label": "Bible Days", "value": 10 },
+        { "label": "Habits Completed", "value": 48 },
+        { "label": "Hours Studying", "value": 5 }
       ]
     },
     {
       "id": "member_samih",
       "name": "Samih", "icon": "charlie.jpg",
-      "wabi": 2, "spice": 0, "exp": 2, "teamId": "team1", "role": "normal",
+      "wabi": 5, "spice": 0, "exp": 3, "teamId": "team1", "role": "normal",
       "collection": [
         { "characterId": "charlie", "degree": "iron", "count": 1 },
         { "characterId": "darwin", "degree": "bronze", "count": 1 },
@@ -346,134 +351,204 @@
         { "characterId": "larry", "degree": "iron", "count": 1 }
       ],
       "skills": { "english": 0, "chess": 0, "python": 0 },
-      "restricted": true, "restrictedUntil": "2026-03-11",
-      "sportEventScore": 0
+      "restricted": false, "restrictedUntil": null,
+      "sportEventScore": 0,
+      "statistics": [
+        { "label": "Bible Days", "value": 5 }
+      ]
     },
     {
       "id": "member_yassa",
       "name": "Yassa", "icon": "silver bear.jpg",
-      "wabi": 4, "spice": 0, "exp": 2, "teamId": "team1", "role": "normal",
+      "wabi": 6, "spice": 0, "exp": 3, "teamId": "team1", "role": "normal",
       "collection": [{ "characterId": "silver_bear", "degree": "iron", "count": 1 }],
       "skills": {},
-      "sportEventScore": 0
+      "sportEventScore": 0,
+      "statistics": [
+        { "label": "Bible Days", "value": 4 }
+      ]
     },
     {
       "id": "member_peter",
       "name": "Peter", "icon": "pu3.jpg",
-      "wabi": 6, "spice": 0, "exp": 2, "teamId": "team1", "role": "normal",
+      "wabi": 18, "spice": 0, "exp": 3, "teamId": "team1", "role": "normal",
       "collection": [
         { "characterId": "pu", "degree": "silver", "count": 1 },
         { "characterId": "gumball", "degree": "iron", "count": 1 },
-        { "characterId": "richard", "degree": "iron", "count": 1 }
+        { "characterId": "richard", "degree": "iron", "count": 1 },
+        { "characterId": "common_token", "degree": "iron", "count": 1 }
 
     ],
       "skills": { "english": 0, "chess": 0, "python": 0 },
-      "sportEventScore": 0
+      "sportEventScore": 0,
+      "statistics": [
+        { "label": "Bible Days", "value": 3 },
+        { "label": "Habits Completed", "value": 23 }
+      ]
     },
     {
       "id": "member_mina",
-      "name": "Mina", "icon": "noicon.jpg", "wabi": 3, "spice": 0, "exp": 1,
-      "teamId": "team1", "role": "normal", "collection": [], "skills": {},
-      "sportEventScore": 0
+      "name": "Mina", "icon": "noicon.jpg",
+      "wabi": 4, "spice": 0, "exp": 2, "teamId": "team1", "role": "normal",
+      "collection": [], "skills": {},
+      "sportEventScore": 0,
+      "statistics": [
+        { "label": "Habits Completed", "value": 6 }
+      ]
     },
     {
       "id": "member_david_nasser",
       "name": "David Nasser", "icon": "noicon.jpg", "wabi": 1, "spice": 0, "exp": 1,
       "teamId": "team1", "role": "normal", "collection": [], "skills": {},
-      "restricted": true, "restrictedUntil": "2026-03-11",
+      "restricted": false, "restrictedUntil": null,
       "sportEventScore": 0
     },
     {
       "id": "member_joren",
       "name": "Joren", "icon": "craboo.jpg",
-      "wabi": 16, "spice": 0, "exp": 2, "teamId": "team1", "role": "normal",
+      "wabi": 21, "spice": 0, "exp": 3, "teamId": "team1", "role": "normal",
       "collection": [{ "characterId": "craboo", "degree": "iron", "count": 1 }],
       "skills": {},
-      "restricted": true, "restrictedUntil": "2026-03-11",
-      "sportEventScore": 0
+      "restricted": false, "restrictedUntil": null,
+      "sportEventScore": 0,
+      "statistics": [
+        { "label": "Bible Days", "value": 7 }
+      ]
     },
     {
       "id": "member_haneen",
       "name": "Haneen", "icon": "hamster.jpg",
-      "wabi": 6, "spice": 0, "exp": 2,
+      "wabi": 11, "spice": 0, "exp": 3,
       "teamId": "team1", "role": "normal",
-      "collection": [{ "characterId": "hamster", "degree": "iron", "count": 1 }],
+      "collection": [
+        { "characterId": "hamster", "degree": "iron", "count": 1 },
+        { "characterId": "common_token", "degree": "iron", "count": 1 }
+      ],
       "skills": {},
-      "sportEventScore": 0
+      "sportEventScore": 0,
+      "statistics": [
+        { "label": "Bible Days", "value": 8 }
+      ]
     },
     {
       "id": "member_marette",
-      "name": "Marette", "icon": "noicon.jpg", "wabi": 2, "spice": 0, "exp": 2,
+      "name": "Marette", "icon": "noicon.jpg", "wabi": 4, "spice": 0, "exp": 3,
       "teamId": "team1", "role": "normal", "collection": [], "skills": {},
-      "sportEventScore": 0
+      "sportEventScore": 0,
+      "statistics": [
+        { "label": "Bible Days", "value": 3 }
+      ]
     },
     {
       "id": "member_nour",
-      "name": "Nour", "icon": "noicon.jpg", "wabi": 3, "spice": 0, "exp": 1,
+      "name": "Nour", "icon": "noicon.jpg", "wabi": 6, "spice": 0, "exp": 2,
       "teamId": "team1", "role": "normal", "collection": [], "skills": {},
-      "sportEventScore": 0
+      "sportEventScore": 0,
+      "statistics": [
+        { "label": "Bible Days", "value": 5 }
+      ]
     },
     {
       "id": "member_philip",
-      "name": "Philip", "icon": "joey.jpg", "wabi": 2, "spice": 0, "exp": 1,
-      "teamId": "team1", "role": "normal", "collection": [{ "characterId": "joey", "degree": "iron", "count": 1 }], "skills": {},
-      "sportEventScore": 0
+      "name": "Philip", "icon": "joey.jpg", "wabi": 16, "spice": 0, "exp": 2,
+      "teamId": "team1", "role": "normal",
+      "collection": [
+        { "characterId": "joey", "degree": "iron", "count": 1 },
+        { "characterId": "common_token", "degree": "bronze", "count": 1 }
+        ]
+      , "skills": {},
+      "sportEventScore": 0,
+      "statistics": [
+        { "label": "Bible Days", "value": 6 },
+        { "label": "Habits Completed", "value": 29 }
+      ]
     },
     {
       "id": "member_karen",
-      "name": "Karen", "icon": "chloe.jpg", "wabi": 1, "spice": 0, "exp": 1,
+      "name": "Karen", "icon": "chloe.jpg", "wabi": 6, "spice": 0, "exp": 2,
       "teamId": "team1", "role": "normal",
-      "collection": [{ "characterId": "chloe", "degree": "iron", "count": 1 }], "skills": {},
-      "sportEventScore": 0
+      "collection": [
+        { "characterId": "chloe", "degree": "iron", "count": 1 },
+        { "characterId": "common_token", "degree": "bronze", "count": 1 }
+        ],
+      "skills": {},
+      "sportEventScore": 0,
+      "statistics": [
+        { "label": "Bible Days", "value": 9 }
+      ]
     },
     {
       "id": "member_karim",
-      "name": "Karim", "icon": "albino aligator.jpg", "wabi": 0, "spice": 0, "exp": 0,
+      "name": "Karim", "icon": "albino aligator.jpg", "wabi": 3, "spice": 0, "exp": 1,
       "teamId": "team1", "role": "normal",
       "collection": [{ "characterId": "albino_aligator", "degree": "iron", "count": 1 }], "skills": {},
-      "sportEventScore": 0
+      "sportEventScore": 0,
+      "statistics": [
+        { "label": "Bible Days", "value": 5 }
+      ]
     },
     {
       "id": "member_yana",
-      "name": "Yana", "icon": "chicken.jpg", "wabi": 0, "spice": 0, "exp": 0,
+      "name": "Yana", "icon": "chicken.jpg", "wabi": 5, "spice": 0, "exp": 1,
       "teamId": "team1", "role": "normal",
-      "collection": [{ "characterId": "chicken", "degree": "iron", "count": 1 }], "skills": {},
-      "sportEventScore": 0
+      "collection": [
+        { "characterId": "chicken", "degree": "iron", "count": 1 },
+        { "characterId": "common_token", "degree": "bronze", "count": 1 }
+        ], "skills": {},
+      "sportEventScore": 0,
+      "statistics": [
+        { "label": "Bible Days", "value": 9 }
+      ]
     },
     {
       "id": "member_kevin",
-      "name": "Kevin", "icon": "pinatacat.jpg", "wabi": 0, "spice": 0, "exp": 0,
+      "name": "Kevin", "icon": "pinatacat.jpg", "wabi": 2, "spice": 0, "exp": 1,
       "teamId": "team1", "role": "normal",
       "collection": [{ "characterId": "piniata_cat", "degree": "iron", "count": 1 }], "skills": {},
-      "sportEventScore": 0
+      "sportEventScore": 0,
+      "statistics": [
+        { "label": "Bible Days", "value": 4 }
+      ]
     },
     {
       "id": "member_chris",
-      "name": "Chris", "icon": "noicon.jpg", "wabi": 0, "spice": 0, "exp": 0,
+      "name": "Chris", "icon": "noicon.jpg", "wabi": 2, "spice": 0, "exp": 1,
       "teamId": "team1", "role": "normal",
       "collection": [], "skills": {},
-      "sportEventScore": 0
+      "sportEventScore": 0,
+      "statistics": [
+        { "label": "Bible Days", "value": 4 }
+      ]
     },
     {
       "id": "member_daniel_walaa",
-      "name": "Daniel Walaa", "icon": "noicon.jpg", "wabi": 0, "spice": 0, "exp": 0,
+      "name": "Daniel Walaa", "icon": "noicon.jpg", "wabi": 2, "spice": 0, "exp": 1,
       "teamId": "team1", "role": "normal",
       "collection": [], "skills": {},
-      "sportEventScore": 0
+      "sportEventScore": 0,
+      "statistics": [
+        { "label": "Bible Days", "value": 4 }
+      ]
     },
     {
       "id": "member_manuel",
-      "name": "Manuel", "icon": "noicon.jpg", "wabi": 0, "spice": 0, "exp": 0,
+      "name": "Manuel", "icon": "noicon.jpg", "wabi": 2, "spice": 0, "exp": 1,
       "teamId": "team1", "role": "normal",
       "collection": [], "skills": {},
-      "sportEventScore": 0
+      "sportEventScore": 0,
+      "statistics": [
+        { "label": "Bible Days", "value": 4 }
+      ]
     },
     {
       "id": "member_jenny",
-      "name": "Jenny", "icon": "noicon.jpg", "wabi": 0, "spice": 0, "exp": 0,
+      "name": "Jenny", "icon": "noicon.jpg", "wabi": 1, "spice": 0, "exp": 1,
       "teamId": "team1", "role": "normal",
       "collection": [], "skills": {},
-      "sportEventScore": 0
+      "sportEventScore": 0,
+      "statistics": [
+        { "label": "Bible Days", "value": 2 }
+      ]
     }
   ],
   "teams": [
@@ -543,6 +618,11 @@
         { "work": "30 habits", "salary": 15 }, { "work": "40 habits", "salary": 20 },
         { "work": "50 habits", "salary": 25 }
       ],
+      "lastCycleLeaderboard": [
+        { "name": "Jonathan", "days": 48 },
+        { "name": "Philip", "days": 29 },
+        { "name": "Peter", "days": 23 }
+      ],
       "prizes": {
         "1st": { "characterId": "rare_token", "degree": "iron" },
         "2nd": { "characterId": "common_token", "degree": "bronze" },
@@ -558,7 +638,7 @@
       ],
       "description": "Daily Bible Time", "minimumWork": "Read 1 passage", "baseSalary": 1,
       "startDate": "16-02-2026", "active": true, "projectManagerId": "member_jonathan",
-      "maxMembers": 20,
+      "maxMembers": 10,
       "rules": [
         "Send daily passages you read from the bible",
         "(Optionaly) Share one reflection or verse that stood out",
@@ -570,10 +650,10 @@
       ],
       "lastCycleLeaderboard": [
         { "name": "Jonathan", "days": 10 },
-        { "name": "Joren", "days": 9 },
-        { "name": "Haneen", "days": 9 },
-        { "name": "Yassa", "days": 5 },
-        { "name": "David Michael", "days": 5 }
+        { "name": "Karen", "days": 9 },
+        { "name": "Yana", "days": 9 },
+        { "name": "Haneen", "days": 8 }
+
       ],
       "prizes": {
         "1st": { "characterId": "rare_token", "degree": "iron" },
@@ -596,18 +676,17 @@
         { "work": "15 hours", "salary": 17 }, { "work": "20 hours", "salary": 25 },
         { "work": "30 hours", "salary": 40 }, { "work": "50 hours", "salary": 70 }
       ],
-      "prizes": {
-        "1st": { "characterId": "rare_token", "degree": "iron" },
-        "2nd": { "characterId": "common_token", "degree": "bronze" },
-        "3rd": { "characterId": "common_token", "degree": "iron" }
-      }
+      "lastCycleLeaderboard": [
+        { "name": "Jonathan", "hours": 5 }
+      ],
+      "prizes": {}
     },
     {
       "id": "blender_tutorials", "teamId": "team1", "name": "Blender Tutorials",
       "members": [], "description": "This is an inactive project.",
       "minimumWork": "None", "baseSalary": 0,
-      "startDate": "01-01-2025", "active": false,
-      "maxMembers": 12,
+      "startDate": "01-01-2026", "active": false,
+      "maxMembers": 10,
       "rules": [
         "Follow the tutorial sequence.",
         "Submit your .blend files for review."
@@ -618,26 +697,26 @@
       "id": "fun_edu", "teamId": "team1", "name": "Fun Edu",
       "members": [], "description": "This is an inactive project.",
       "minimumWork": "None", "baseSalary": 0,
-      "startDate": "01-01-2025", "active": false,
-      "maxMembers": 12,
+      "startDate": "01-01-2026", "active": false,
+      "maxMembers": 10,
       "rules": [],
       "bonusSystem": []
     },
     {
       "id": "hidden_in_my_heart", "teamId": "team1", "name": "Hidden in My Heart",
-      "members": [], "description": "This is an inactive project.",
+      "members": ["David Michael", "Jonathan"], "description": "Bible verses memorization",
       "minimumWork": "None", "baseSalary": 0,
-      "startDate": "01-01-2025", "active": false,
-      "maxMembers": 12,
+      "startDate": "11-03-2026", "active": true,
+      "maxMembers": 10,
       "rules": [],
       "bonusSystem": []
     },
     {
       "id": "languages", "teamId": "team1", "name": "Languages",
-      "members": [], "description": "This is an inactive project.",
+      "members": ["Joren"], "description": "Studying a foregeion language",
       "minimumWork": "None", "baseSalary": 0,
-      "startDate": "01-01-2025", "active": false,
-      "maxMembers": 12,
+      "startDate": "11-03-2026", "active": true,
+      "maxMembers": 10,
       "rules": [],
       "bonusSystem": []
     }
