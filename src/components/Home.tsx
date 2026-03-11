@@ -10,7 +10,7 @@ interface HomeProps {
 }
 
 export const Home: React.FC<HomeProps> = ({ data }) => {
-  const now = new Date("2026-03-03T13:53:28-08:00");
+  const now = new Date("2026-03-11T08:34:22-07:00");
   const activeSport = getActiveSportEvent(data, now);
   const lastSport = getLastFinishedSportEvent(data, now);
   const currentSeason = getCurrentCardPackSeason(data, now);

@@ -22,7 +22,7 @@ export const WasabiCards: React.FC<WasabiCardsProps> = ({ data }) => {
     setSearchParams({ view });
   }, [view, setSearchParams]);
 
-  const now = new Date("2026-03-03T13:53:28-08:00");
+  const now = new Date("2026-03-11T08:34:22-07:00");
   const currentSeason = getCurrentCardPackSeason(data, now);
   const visiblePacks = data.packs;
 

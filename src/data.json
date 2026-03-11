@@ -676,8 +676,8 @@
       ],
       "bonusSystem": [
         { "work": "5 hours", "salary": 5 }, { "work": "10 hours", "salary": 10 },
-        { "work": "15 hours", "salary": 17 }, { "work": "20 hours", "salary": 25 },
-        { "work": "30 hours", "salary": 40 }, { "work": "50 hours", "salary": 70 }
+        { "work": "15 hours", "salary": 15 }, { "work": "20 hours", "salary": 20 },
+        { "work": "30 hours", "salary": 30 }, { "work": "50 hours", "salary": 50 }
       ],
       "lastCycleLeaderboard": [
         { "name": "Jonathan", "hours": 5 }
@@ -718,8 +718,8 @@
         "Memorize at least 5 verses during each 10-day cycle."
       ],
       "bonusSystem": [
-        { "work": "10 verses", "salary": 2 }, { "work": "15 verses", "salary": 3 },
-        { "work": "20 verses", "salary": 4 }, { "work": "30 verses", "salary": 5 }
+        { "work": "10 verses", "salary": 3 }, { "work": "15 verses", "salary": 6 },
+        { "work": "20 verses", "salary": 10 }, { "work": "30 verses", "salary": 15 }
       ]
     },
     {
@@ -734,9 +734,9 @@
         "Report your progress in the group, including the number of lessons completed and the total video time watched."
       ],
       "bonusSystem": [
-        { "work": "5 lessons 2 videos", "salary": 3 },
-        { "work": "10 lessons 4 videos", "salary": 7 },
-        { "work": "20 lessons 8 videos", "salary": 15 }
+        { "work": "5 lessons 2 videos", "salary": 4 },
+        { "work": "10 lessons 4 videos", "salary": 9 },
+        { "work": "20 lessons 8 videos", "salary": 19 }
       ]
     }
   ],
@@ -938,7 +938,7 @@
       "outcomes": [
         { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
         { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
-        { "characterId": "never_token", "chance": "0.1%" }
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
       ]
     }
   ],
@@ -990,8 +990,8 @@
     },
     {
       "id": "craft_2.55",
-      "start_date": "2026-03-01",
-      "end_date": "2026-03-31",
+      "start_date": "2026-03-20",
+      "end_date": "2026-04-20",
       "recipe": {
         "inputs": [
           { "card_id": "ben10", "degree": "iron" },

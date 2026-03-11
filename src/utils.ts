@@ -74,8 +74,10 @@ export function getCurrentCardPackSeason(data: WasabiData, date: Date): CardPack
 
 export function getProjectAge(startDate: string): string {
   const start = new Date(startDate.split('-').reverse().join('-'));
-  const now = new Date("2026-03-03T13:53:28-08:00");
+  const now = new Date("2026-03-11T08:34:22-07:00");
   const diffMs = now.getTime() - start.getTime();
+  
+  if (diffMs < 0) return "Just Born";
   
   const hours = Math.floor(diffMs / (1000 * 60 * 60));
   if (hours < 24) return `${hours}h`;
@@ -95,7 +97,7 @@ export function getProjectAge(startDate: string): string {
 
 export function getProjectTheme(startDate: string): { theme: string, visual: string } {
   const start = new Date(startDate.split('-').reverse().join('-'));
-  const now = new Date("2026-03-03T13:53:28-08:00");
+  const now = new Date("2026-03-11T08:34:22-07:00");
   const diffMs = now.getTime() - start.getTime();
   const days = diffMs / (1000 * 60 * 60 * 24);
 

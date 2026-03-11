@@ -134,15 +134,23 @@ export const ProjectDetails: React.FC<ProjectDetailsProps> = ({ data }) => {
             )}
 
             {/* Leaderboard Section */}
-            {project.lastCycleLeaderboard && (
+            {project.lastCycleLeaderboard && project.lastCycleLeaderboard.length > 0 && (
               <section className="bg-white p-8 rounded-2xl border-2 border-[#E0E0E0] shadow-md">
                 <h3 className="text-base sm:text-xl font-bold text-[#6B5435] mb-6 flex items-center gap-2">
                   <Trophy size={20} className="text-yellow-500 shrink-0" />
                   <span className="leading-tight">Leaderboard (Last Cycle – 10 Days)</span>
                 </h3>
                 <div className="space-y-3">
-                  {project.lastCycleLeaderboard.map((entry, i) => {
-                    const rank = project.lastCycleLeaderboard!.filter(e => e.days > entry.days).length + 1;
+                  {project.lastCycleLeaderboard.map((entry: any, i) => {
+                    // Find the value key (the one that isn't 'name')
+                    const valueKey = Object.keys(entry).find(k => k !== 'name');
+                    if (!valueKey) return null;
+                    
+                    const value = entry[valueKey];
+                    const unitLabel = valueKey.charAt(0).toUpperCase() + valueKey.slice(1);
+                    
+                    const rank = project.lastCycleLeaderboard!.filter((e: any) => e[valueKey] > value).length + 1;
+                    
                     return (
                       <div key={i} className={`flex items-center justify-between p-4 rounded-xl border-2 transition-all hover:bg-[#FAFAFA] ${
                         rank === 1 ? 'bg-yellow-50 border-yellow-200' : 
@@ -160,7 +168,7 @@ export const ProjectDetails: React.FC<ProjectDetailsProps> = ({ data }) => {
                           <div className="font-bold text-[#6B5435]">{entry.name}</div>
                         </div>
                         <div className="text-sm font-black text-[#9FD356] bg-white px-4 py-1.5 rounded-full border border-[#E0E0E0] shadow-sm">
-                          {entry.days} Days
+                          {value} {unitLabel}
                         </div>
                       </div>
                     );
