@@ -135,21 +135,26 @@ export interface SportEvent {
   visible: boolean;
 }
 
-export interface CardPackSeason {
-  seasonId: string;
-  startDate: string;
-  endDate: string;
-  packsVisible: string[];
-}
-
 export interface CraftingRecipe {
   id: string;
-  start_date: string;
-  end_date: string;
   recipe: {
     inputs: { card_id: string; degree: string }[];
     output: { card_id: string; degree: string };
   };
+}
+
+export interface CraftingSet {
+  id: string;
+  start_date: string;
+  end_date: string;
+  crafts: CraftingRecipe[];
+}
+
+export interface PackSale {
+  id: string;
+  start_date: string;
+  end_date: string;
+  packs: string[];
 }
 
 export interface WasabiData {
@@ -164,6 +169,6 @@ export interface WasabiData {
   projects: Project[];
   tss: TeamShopItem[];
   sportEvents: SportEvent[];
-  cardPackSeasons: CardPackSeason[];
-  crafting: CraftingRecipe[];
+  crafting_sets: CraftingSet[];
+  pack_sales: PackSale[];
 }

@@ -1,19 +1,28 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { WasabiData, Team, Member, CraftingRecipe } from '../types';
 import { ArrowRight, Trophy as TrophyIcon, Medal, Clock, Plus, Zap, ExternalLink, GraduationCap } from 'lucide-react';
-import { getActiveSportEvent, getLastFinishedSportEvent, getActiveCraftingRecipes, calculateDaysRemaining, getCurrentCardPackSeason } from '../utils';
+import { getActiveSportEvent, getLastFinishedSportEvent, getActiveCraftingRecipes, calculateDaysRemaining, getActiveCraftingSet, getActivePackSale, getTimeRemaining } from '../utils';
 
 interface HomeProps {
   data: WasabiData;
 }
 
 export const Home: React.FC<HomeProps> = ({ data }) => {
-  const now = new Date("2026-03-11T08:34:22-07:00");
+  const [now, setNow] = useState(new Date("2026-03-11T08:34:22-07:00"));
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setNow(new Date());
+    }, 1000);
+    return () => clearInterval(timer);
+  }, []);
+
   const activeSport = getActiveSportEvent(data, now);
   const lastSport = getLastFinishedSportEvent(data, now);
-  const currentSeason = getCurrentCardPackSeason(data, now);
+  const activeCraftingSet = getActiveCraftingSet(data, now);
+  const activePackSale = getActivePackSale(data, now);
 
   const calcTeamCollectionCount = (teamId: string) => {
     const members = data.members.filter(m => m.teamId === teamId);
@@ -30,18 +39,6 @@ export const Home: React.FC<HomeProps> = ({ data }) => {
     .filter(m => (m.sportEventScore || 0) > 0)
     .sort((a, b) => (b.sportEventScore || 0) - (a.sportEventScore || 0))
     .slice(0, 10);
-
-  // Merged events+seasons: filter events to only those whose pack is in current season
-  const visibleEvents = currentSeason
-    ? data.packs.filter(pack => {
-        const eventPackIds = new Set(
-          pack.outcomes
-            .map((o: any) => data.characters.find((c: any) => c.id === o.characterId)?.packageId)
-            .filter(Boolean)
-        );
-        return [...eventPackIds].some(pid => currentSeason.packsVisible.includes(pid as string));
-      })
-    : data.packs;
 
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
@@ -187,6 +184,12 @@ export const Home: React.FC<HomeProps> = ({ data }) => {
                 <div className="flex-1">
                   <div className="font-black text-xl mb-1">Active Events</div>
                   <div className="text-white/40 text-xs uppercase tracking-widest">Limited time packs</div>
+                  {activePackSale && (
+                    <div className="mt-2 flex items-center gap-2 text-[#E8631A] font-bold text-sm">
+                      <Clock size={14} />
+                      <span>{getTimeRemaining(activePackSale.end_date, now)}</span>
+                    </div>
+                  )}
                 </div>
                 <ArrowRight className="text-[#E8631A] opacity-0 group-hover:opacity-100 transition-all -translate-x-4 group-hover:translate-x-0" />
               </Link>
@@ -196,6 +199,12 @@ export const Home: React.FC<HomeProps> = ({ data }) => {
                 <div className="flex-1">
                   <div className="font-black text-xl mb-1">Wasabi Crafting</div>
                   <div className="text-white/40 text-xs uppercase tracking-widest">Upgrade your cards</div>
+                  {activeCraftingSet && (
+                    <div className="mt-2 flex items-center gap-2 text-[#9FD356] font-bold text-sm">
+                      <Clock size={14} />
+                      <span>{getTimeRemaining(activeCraftingSet.end_date, now)}</span>
+                    </div>
+                  )}
                 </div>
                 <ArrowRight className="text-[#9FD356] opacity-0 group-hover:opacity-100 transition-all -translate-x-4 group-hover:translate-x-0" />
               </Link>

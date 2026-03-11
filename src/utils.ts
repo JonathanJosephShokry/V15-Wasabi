@@ -1,4 +1,4 @@
-import { WasabiData, Member, Character, SportEvent, CardPackSeason } from './types';
+import { WasabiData, Member, Character, SportEvent, CraftingSet, PackSale } from './types';
 
 export function calculateLevel(exp: number): number {
   if (exp === 0) return 1;
@@ -64,12 +64,38 @@ export function getLastFinishedSportEvent(data: WasabiData, date: Date): SportEv
   return finished[0];
 }
 
-export function getCurrentCardPackSeason(data: WasabiData, date: Date): CardPackSeason | undefined {
-  return data.cardPackSeasons.find(season => {
-    const start = new Date(season.startDate);
-    const end = new Date(season.endDate);
-    return date >= start && date <= end;
+export function getActiveCraftingSet(data: WasabiData, now: Date): CraftingSet | undefined {
+  return data.crafting_sets.find(set => {
+    const start = new Date(set.start_date);
+    const end = new Date(set.end_date);
+    return now >= start && now <= end;
   });
+}
+
+export function getActivePackSale(data: WasabiData, now: Date): PackSale | undefined {
+  return data.pack_sales.find(sale => {
+    const start = new Date(sale.start_date);
+    const end = new Date(sale.end_date);
+    return now >= start && now <= end;
+  });
+}
+
+export function getTimeRemaining(endDate: string, now: Date): string {
+  const end = new Date(endDate);
+  const diffMs = end.getTime() - now.getTime();
+  if (diffMs <= 0) return "Expired";
+
+  const totalSeconds = Math.floor(diffMs / 1000);
+  const days = Math.floor(totalSeconds / (24 * 3600));
+  const hours = Math.floor((totalSeconds % (24 * 3600)) / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / 60);
+
+  const parts = [];
+  if (days > 0) parts.push(`${days} Day${days > 1 ? 's' : ''}`);
+  if (hours > 0) parts.push(`${hours} Hour${hours > 1 ? 's' : ''}`);
+  if (days === 0 && minutes > 0) parts.push(`${minutes} Minute${minutes > 1 ? 's' : ''}`);
+
+  return parts.length > 0 ? parts.join(' ') : "Less than a minute";
 }
 
 export function getProjectAge(startDate: string): string {
@@ -124,9 +150,6 @@ export function calculateDaysRemaining(endDate: string, now: Date): number {
 }
 
 export function getActiveCraftingRecipes(data: WasabiData, now: Date) {
-  return data.crafting.filter(c => {
-    const start = new Date(c.start_date);
-    const end = new Date(c.end_date);
-    return now >= start && now <= end;
-  }).slice(0, 3);
+  const activeSet = getActiveCraftingSet(data, now);
+  return activeSet ? activeSet.crafts : [];
 }

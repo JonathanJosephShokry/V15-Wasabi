@@ -1,5 +1,5 @@
 {
-  "version": "V17",
+  "version": "V18",
   "cardConfig": {
     "rarityScores": {
       "common": 2,
@@ -594,6 +594,13 @@
           "date": "2026-03-11",
           "description": "Samih bought 2 Kung Fu Panda Packs",
           "details": { "fromMemberId": "member_samih", "cardId": "kungfu_pack" }
+        },
+        {
+          "id": "h6",
+          "type": "trade",
+          "date": "2026-03-11",
+          "description": "Samih traded Pu (Bronze) to Jonathan for Monkey (Iron)",
+          "details": { "fromMemberId": "member_samih", "cardId": "pu" }
         }
       ]
     }
@@ -809,37 +816,6 @@
       "visible": false
     }
   ],
-  "cardPackSeasons": [
-    {
-      "seasonId": "march_season",
-      "startDate": "2026-03-01",
-      "endDate": "2026-03-31",
-      "packsVisible": [
-        "gumball_pack",
-        "kungfu_pack",
-        "ben10_pack"
-      ]
-    },
-    {
-      "seasonId": "april_season",
-      "startDate": "2026-04-01",
-      "endDate": "2026-04-31",
-      "packsVisible": [
-        "adventure_time_pack",
-        "cars_pack",
-        "spongebob_pack"
-      ]
-    },
-    {
-      "seasonId": "may_season",
-      "startDate": "2026-05-01",
-      "endDate": "2026-05-31",
-      "packsVisible": [
-        "httyd_pack",
-        "nemo_pack"
-      ]
-    }
-  ],
   "packs": [
     {
       "packageId": "gumball_pack",
@@ -957,126 +933,101 @@
       ]
     }
   ],
-  "crafting": [
+  "crafting_sets": [
     {
-      "id": "craft_1",
+      "id": "set_1",
       "start_date": "2026-03-01",
       "end_date": "2026-03-15",
-      "recipe": {
-        "inputs": [
-          { "card_id": "grizz", "degree": "iron" },
-          { "card_id": "burrito", "degree": "iron" }
-        ],
-        "output": {
-          "card_id": "grizz",
-          "degree": "silver"
+      "crafts": [
+        {
+          "id": "craft_1",
+          "recipe": {
+            "inputs": [
+              { "card_id": "grizz", "degree": "iron" },
+              { "card_id": "burrito", "degree": "iron" }
+            ],
+            "output": { "card_id": "grizz", "degree": "silver" }
+          }
+        },
+        {
+          "id": "craft_2",
+          "recipe": {
+            "inputs": [
+              { "card_id": "gumball", "degree": "bronze" },
+              { "card_id": "darwin", "degree": "bronze" }
+            ],
+            "output": { "card_id": "larry", "degree": "iron" }
+          }
+        },
+        {
+          "id": "craft_3",
+          "recipe": {
+            "inputs": [
+              { "card_id": "gumball", "degree": "iron" },
+              { "card_id": "common_token", "degree": "bronze" }
+            ],
+            "output": { "card_id": "gumball", "degree": "bronze" }
+          }
         }
-      }
+      ]
     },
     {
-      "id": "craft_2",
+      "id": "set_2",
+      "start_date": "2026-03-16",
+      "end_date": "2026-03-31",
+      "crafts": [
+        {
+          "id": "craft_3",
+          "recipe": {
+            "inputs": [
+              { "card_id": "ice_bear", "degree": "iron" },
+              { "card_id": "shifu", "degree": "iron" }
+            ],
+            "output": { "card_id": "ice_bear", "degree": "silver" }
+          }
+        },
+        {
+          "id": "craft_4",
+          "recipe": {
+            "inputs": [
+              { "card_id": "cannonbolt", "degree": "iron" },
+              { "card_id": "rare_token", "degree": "silver"}
+            ],
+            "output": { "card_id": "cannonbolt", "degree": "bronze" }
+          }
+        }
+      ]
+    }
+  ],
+  "pack_sales": [
+    {
+      "id": "sale_1",
       "start_date": "2026-03-01",
-      "end_date": "2026-03-20",
-      "recipe": {
-        "inputs": [
-          { "card_id": "gumball", "degree": "bronze" },
-          { "card_id": "darwin", "degree": "bronze" }
-        ],
-        "output": {
-          "card_id": "larry",
-          "degree": "iron"
-        }
-      }
+      "end_date": "2026-03-15",
+      "packs": [
+        "gumball_pack",
+        "kungfu_pack",
+        "ben10_pack"
+      ]
     },
     {
-      "id": "craft_2.5",
-      "start_date": "2026-03-01",
-      "end_date": "2026-03-20",
-      "recipe": {
-        "inputs": [
-          { "card_id": "gumball", "degree": "iron" },
-          { "card_id": "common_token", "degree": "bronze" }
-        ],
-        "output": {
-          "card_id": "gumball",
-          "degree": "bronze"
-        }
-      }
+      "id": "sale_2",
+      "start_date": "2026-03-16",
+      "end_date": "2026-03-31",
+      "packs": [
+        "adventure_time_pack",
+        "cars_pack",
+        "spongebob_pack"
+      ]
     },
     {
-      "id": "craft_2.55",
-      "start_date": "2026-03-20",
-      "end_date": "2026-04-20",
-      "recipe": {
-        "inputs": [
-          { "card_id": "ben10", "degree": "iron" },
-          { "card_id": "common_token", "degree": "silver" }
-        ],
-        "output": {
-          "card_id": "ben10",
-          "degree": "bronze"
-        }
-      }
-    },
-    {
-      "id": "craft_3",
-      "start_date": "2026-03-20",
-      "end_date": "2026-04-20",
-      "recipe": {
-        "inputs": [
-          { "card_id": "ice_bear", "degree": "iron" },
-          { "card_id": "shifu", "degree": "iron" }
-        ],
-        "output": {
-          "card_id": "ice_bear",
-          "degree": "silver"
-        }
-      }
-    },
-    {
-      "id": "craft_4",
-      "start_date": "2026-03-15",
-      "end_date": "2026-04-20",
-      "recipe": {
-        "inputs": [
-          { "card_id": "cannonbolt", "degree": "iron" },
-          { "card_id": "rare_token", "degree": "silver"}
-        ],
-        "output": {
-          "card_id": "cannonbolt",
-          "degree": "bronze"
-        }
-      }
-    },
-    {
-      "id": "craft_5",
-      "start_date": "2026-04-20",
-      "end_date": "2026-05-31",
-      "recipe": {
-        "inputs": [
-          { "card_id": "pu", "degree": "pearl" },
-          { "card_id": "ping", "degree": "pearl"}
-        ],
-        "output": {
-          "card_id": "oogway",
-          "degree": "iron"
-        }
-      }
-    },
-    {
-      "id": "craft_6",
-      "start_date": "2026-03-15",
-      "end_date": "2026-05-31",
-      "recipe": {
-        "inputs": [
-          { "card_id": "jake", "degree": "bronze" },
-          { "card_id": "ice_king", "degree": "bronze"}
-        ],
-        "output": {
-          "card_id": "ice_king",
-          "degree": "silver"
-        }
-      }
+      "id": "sale_3",
+      "start_date": "2026-04-01",
+      "end_date": "2026-04-15",
+      "packs": [
+        "httyd_pack",
+        "nemo_pack"
+      ]
     }
   ]
 }

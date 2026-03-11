@@ -3,7 +3,7 @@ import { useSearchParams, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { WasabiData, Character, Member, CollectionEntry, CardPack } from '../types';
 import { ArrowLeft, X, Trophy, BookOpen, Package, Zap, Sparkles, Clock, Plus, Dices, Medal } from 'lucide-react';
-import { calcHiddenScore, getMemberTotalScore, formatRarity, formatDegree, getCurrentCardPackSeason, getActiveCraftingRecipes, calculateDaysRemaining } from '../utils';
+import { calcHiddenScore, getMemberTotalScore, formatRarity, formatDegree, getActiveCraftingRecipes, calculateDaysRemaining, getActiveCraftingSet, getActivePackSale, getTimeRemaining } from '../utils';
 
 interface WasabiCardsProps {
   data: WasabiData;
@@ -18,13 +18,24 @@ export const WasabiCards: React.FC<WasabiCardsProps> = ({ data }) => {
   const [isRolling, setIsRolling] = useState(false);
   const [showRollResult, setShowRollResult] = useState(false);
 
+  const [now, setNow] = useState(new Date("2026-03-11T08:34:22-07:00"));
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setNow(new Date());
+    }, 1000);
+    return () => clearInterval(timer);
+  }, []);
+
   useEffect(() => {
     setSearchParams({ view });
   }, [view, setSearchParams]);
 
-  const now = new Date("2026-03-11T08:34:22-07:00");
-  const currentSeason = getCurrentCardPackSeason(data, now);
-  const visiblePacks = data.packs;
+  const activePackSale = getActivePackSale(data, now);
+  const activeCraftingSet = getActiveCraftingSet(data, now);
+  const visiblePacks = activePackSale
+    ? data.packs.filter(pack => activePackSale.packs.includes(pack.packageId))
+    : [];
 
   const isCardOwned = (characterId: string) => {
     return data.members.some(m => m.collection.some(entry => entry.characterId === characterId));
@@ -61,15 +72,8 @@ export const WasabiCards: React.FC<WasabiCardsProps> = ({ data }) => {
   };
 
   const renderEvents = () => {
-    const visibleEventPacks = currentSeason
-      ? data.packs.filter(pack => {
-          const eventPackIds = new Set(
-            pack.outcomes
-              .map((o: any) => data.characters.find((c: any) => c.id === o.characterId)?.packageId)
-              .filter(Boolean)
-          );
-          return [...eventPackIds].some(pid => currentSeason.packsVisible.includes(pid as string));
-        })
+    const visibleEventPacks = activePackSale
+      ? data.packs.filter(pack => activePackSale.packs.includes(pack.packageId))
       : [];
 
     const visibleSportEvents = data.sportEvents.filter(e => e.visible);
@@ -80,7 +84,13 @@ export const WasabiCards: React.FC<WasabiCardsProps> = ({ data }) => {
         <div className="space-y-12">
           <div className="text-center">
             <h2 className="text-4xl font-black mb-2">Active Event Packs</h2>
-            <p className="text-white/45">Limited time packs available during the current season.</p>
+            <p className="text-white/45">Limited time packs available during the current sale.</p>
+            {activePackSale && (
+              <div className="mt-4 flex items-center justify-center gap-2 text-[#E8631A] font-bold">
+                <Clock size={18} />
+                <span>Packs Sale Ends In: {getTimeRemaining(activePackSale.end_date, now)}</span>
+              </div>
+            )}
           </div>
 
           {visibleEventPacks.length > 0 ? (
@@ -235,11 +245,16 @@ export const WasabiCards: React.FC<WasabiCardsProps> = ({ data }) => {
         <div className="text-center">
           <h2 className="text-4xl font-black mb-2">Wasabi Crafting</h2>
           <p className="text-white/45">Combine your cards to create legendary masterpieces.</p>
+          {activeCraftingSet && (
+            <div className="mt-4 flex items-center justify-center gap-2 text-[#9FD356] font-bold">
+              <Clock size={18} />
+              <span>Crafting Set Ends In: {getTimeRemaining(activeCraftingSet.end_date, now)}</span>
+            </div>
+          )}
         </div>
 
         <div className="grid grid-cols-1 gap-12 max-w-5xl mx-auto">
           {recipes.map((recipe) => {
-            const daysLeft = calculateDaysRemaining(recipe.end_date, now);
             return (
               <motion.div 
                 key={recipe.id} 
@@ -258,10 +273,6 @@ export const WasabiCards: React.FC<WasabiCardsProps> = ({ data }) => {
                       <h3 className="text-xl font-black text-white">Legendary Recipe</h3>
                       <p className="text-white/40 text-xs uppercase tracking-widest">Limited Edition</p>
                     </div>
-                  </div>
-                  <div className="inline-flex items-center gap-2 text-white/50 bg-white/5 px-4 py-2 rounded-full border border-white/10">
-                    <Clock size={16} className="text-[#9FD356]" />
-                    <span className="text-[10px] font-black uppercase tracking-widest">{daysLeft}d left</span>
                   </div>
                 </div>
 
