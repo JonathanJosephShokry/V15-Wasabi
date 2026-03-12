@@ -233,7 +233,7 @@ export const Home: React.FC<HomeProps> = ({ data }) => {
                     <div className="inline-block bg-[#9FD356] text-white px-4 py-1 rounded-full text-xs font-black uppercase tracking-widest mb-4">Active Event</div>
                     <h3 className="text-4xl font-black mb-4">{activeSport.name}</h3>
                     <p className="text-white/80 text-lg mb-8 max-w-lg">{activeSport.description}</p>
-                    <div className="flex flex-wrap gap-6">
+                    <div className="flex flex-wrap gap-6 mb-8">
                       <div className="flex flex-col">
                         <span className="text-white/50 text-[10px] font-bold uppercase tracking-widest">Ends On</span>
                         <span className="text-xl font-bold">{new Date(activeSport.endDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'long' })}</span>
@@ -243,6 +243,30 @@ export const Home: React.FC<HomeProps> = ({ data }) => {
                         <span className="text-xl font-bold capitalize">{activeSport.type}</span>
                       </div>
                     </div>
+
+                    {/* Upcoming Matches */}
+                    {activeSport.upcomingMatches && activeSport.upcomingMatches.some(m => m.active) && (
+                      <div className="space-y-4">
+                        <div className="text-[10px] font-black text-white/40 uppercase tracking-[0.2em]">Upcoming Matches</div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                          {activeSport.upcomingMatches.filter(m => m.active).map((match) => (
+                            <div key={match.id} className="bg-white/10 border border-white/20 rounded-2xl p-5 flex flex-col items-center justify-center text-center backdrop-blur-sm transition-all hover:bg-white/15 hover:border-[#9FD356]/40">
+                              <div className="flex items-center gap-4 w-full">
+                                <div className="flex-1 text-lg font-black text-white truncate">{match.team1}</div>
+                                <div className="px-3 py-1 bg-[#9FD356] text-white text-[10px] font-black rounded-full uppercase tracking-tighter">VS</div>
+                                <div className="flex-1 text-lg font-black text-white truncate">{match.team2}</div>
+                              </div>
+                              {match.date && (
+                                <div className="mt-3 text-[10px] font-bold text-white/40 uppercase tracking-widest flex items-center gap-1.5">
+                                  <Clock size={10} />
+                                  {new Date(match.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}
+                                </div>
+                              )}
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </div>
 

@@ -254,7 +254,7 @@ export const WasabiCards: React.FC<WasabiCardsProps> = ({ data }) => {
         </div>
 
         <div className="grid grid-cols-1 gap-12 max-w-5xl mx-auto">
-          {recipes.map((recipe) => {
+          {recipes.map((recipe, i) => {
             return (
               <motion.div 
                 key={recipe.id} 
@@ -270,8 +270,7 @@ export const WasabiCards: React.FC<WasabiCardsProps> = ({ data }) => {
                       <Zap size={24} />
                     </div>
                     <div>
-                      <h3 className="text-xl font-black text-white">Legendary Recipe</h3>
-                      <p className="text-white/40 text-xs uppercase tracking-widest">Limited Edition</p>
+                      <h3 className="text-xl font-black text-white">Recipe {i + 1}</h3>
                     </div>
                   </div>
                 </div>
@@ -354,11 +353,6 @@ export const WasabiCards: React.FC<WasabiCardsProps> = ({ data }) => {
                   })()}
                 </div>
 
-                <div className="mt-12 text-center">
-                  <button className="px-12 py-4 bg-white/5 border border-white/10 rounded-xl font-black text-sm uppercase tracking-[0.2em] text-white/40 cursor-not-allowed">
-                    Insufficient Cards
-                  </button>
-                </div>
               </motion.div>
             );
           })}
@@ -369,7 +363,7 @@ export const WasabiCards: React.FC<WasabiCardsProps> = ({ data }) => {
 
   const renderPacks = () => (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {visiblePacks.map((pack, i) => {
+      {data.packs.map((pack, i) => {
         const chars = pack.outcomes.map(o => data.characters.find(c => c.id === o.characterId)).filter(Boolean) as Character[];
         const isAnyCardOwned = chars.some(char => isCardOwned(char.id));
         const MAX_VISIBLE = 4;

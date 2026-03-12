@@ -125,6 +125,14 @@ export interface TeamShopItem {
   description: string;
 }
 
+export interface Match {
+  id: string;
+  team1: string;
+  team2: string;
+  active: boolean;
+  date?: string;
+}
+
 export interface SportEvent {
   id: string;
   name: string;
@@ -133,6 +141,9 @@ export interface SportEvent {
   startDate: string;
   endDate: string;
   visible: boolean;
+  upcomingMatches?: Match[];
+  prizes?: Record<string, { characterId: string; degree?: string }>;
+  winners?: { place: number; memberId: string; score: number }[];
 }
 
 export interface CraftingRecipe {

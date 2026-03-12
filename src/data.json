@@ -1,5 +1,5 @@
 {
-  "version": "V18",
+  "version": "V19.1",
   "cardConfig": {
     "rarityScores": {
       "common": 2,
@@ -130,7 +130,7 @@
       "images": { "iron": "cannonbolt.jpg", "bronze": "cannonbolt.jpg", "silver": "cannonbolt.jpg", "pearl": "cannonbolt.jpg", "gold": "cannonbolt.jpg", "jade": "cannonbolt.jpg", "sapphire": "cannonbolt.jpg", "ruby": "cannonbolt.jpg", "emerald": "cannonbolt.jpg", "diamond": "cannonbolt.jpg" }
     },
     {
-      "id": "fourarms", "name": "Four Arms", "rarity": "epic", "packageId": "ben10_pack",
+      "id": "four_arms", "name": "Four Arms", "rarity": "epic", "packageId": "ben10_pack",
       "images": { "iron": "fourarms.jpg", "bronze": "fourarms2.jpg", "silver": "fourarms.jpg", "pearl": "fourarms.jpg", "gold": "fourarms.jpg", "jade": "fourarms.jpg", "sapphire": "fourarms.jpg", "ruby": "fourarms.jpg", "emerald": "fourarms.jpg", "diamond": "fourarms.jpg" }
     },
     {
@@ -179,11 +179,11 @@
     },
     {
       "id": "mr_krabs", "name": "Mr Krabs", "rarity": "epic", "packageId": "spongebob_pack",
-      "images": { "iron": "mr krabs.jpg", "bronze": "patrick.jpg", "silver": "patrick.jpg", "pearl": "patrick.jpg", "gold": "patrick.jpg", "jade": "patrick.jpg", "sapphire": "patrick.jpg", "ruby": "patrick.jpg", "emerald": "patrick.jpg", "diamond": "patrick.jpg" }
+      "images": { "iron": "mr krabs.jpg", "bronze": "mr_krabs21.jpg", "silver": "mr_krabs31.jpg", "pearl": "mr_krabs41.jpg", "gold": "mr_krabs51.jpg", "jade": "mr_krabs61.jpg", "sapphire": "mr_krabs71.jpg", "ruby": "mr_krabs81.jpg", "emerald": "mr_krabs91.jpg", "diamond": "mr_krabs101.jpg" }
     },
     {
       "id": "plankton", "name": "Plankton.jpg", "rarity": "legendary", "packageId": "spongebob_pack",
-      "images": { "iron": "plankton.jpg", "bronze": "patrick.jpg", "silver": "patrick.jpg", "pearl": "patrick.jpg", "gold": "patrick.jpg", "jade": "patrick.jpg", "sapphire": "patrick.jpg", "ruby": "patrick.jpg", "emerald": "patrick.jpg", "diamond": "patrick.jpg" }
+      "images": { "iron": "plankton.jpg", "bronze": "plankton20.jpg", "silver": "plankton30.jpg", "pearl": "plankton40.jpg", "gold": "plankton50.jpg", "jade": "plankton60.jpg", "sapphire": "plankton70.jpg", "ruby": "plankton80.jpg", "emerald": "plankton90.jpg", "diamond": "plankton100.jpg" }
     },
     {
       "id": "king_neptune", "name": "King Neptune", "rarity": "never", "packageId": "spongebob_pack",
@@ -299,7 +299,7 @@
         { "characterId": "larry", "degree": "iron", "count": 1 },
         { "characterId": "monkey", "degree": "bronze", "count": 1 },
         { "characterId": "ben10", "degree": "bronze", "count": 1 },
-        { "characterId": "fourarms", "degree": "bronze", "count": 1 }
+        { "characterId": "four_arms", "degree": "bronze", "count": 1 }
       ],
       "skills": {},
       "restricted": false, "restrictedUntil": null,
@@ -350,7 +350,7 @@
         { "characterId": "charlie", "degree": "iron", "count": 1 },
         { "characterId": "darwin", "degree": "bronze", "count": 2 },
         { "characterId": "pu", "degree": "iron", "count": 1 },
-        { "characterId": "fourarms", "degree": "iron", "count": 1 },
+        { "characterId": "four_arms", "degree": "iron", "count": 1 },
         { "characterId": "larry", "degree": "iron", "count": 1 },
         { "characterId": "ping", "degree": "iron", "count": 1 },
         { "characterId": "monkey", "degree": "iron", "count": 1 }
@@ -561,20 +561,6 @@
       "name": "Team 1",
       "history": [
         {
-          "id": "h1",
-          "type": "craft",
-          "date": "2026-03-07",
-          "description": "Peter crafted Pu (Silver)",
-          "details": { "fromMemberId": "member_peter", "cardId": "pu" }
-        },
-        {
-          "id": "h2",
-          "type": "craft",
-          "date": "2026-03-07",
-          "description": "Daniel Rafik crafted Monkey (Bronze)",
-          "details": { "fromMemberId": "member_daniel_rafik", "cardId": "monkey" }
-        },
-        {
           "id": "h3",
           "type": "craft",
           "date": "2026-03-07",
@@ -601,6 +587,13 @@
           "date": "2026-03-11",
           "description": "Samih traded Pu (Bronze) to Jonathan for Monkey (Iron)",
           "details": { "fromMemberId": "member_samih", "cardId": "pu" }
+        },
+        {
+          "id": "h7",
+          "type": "trade",
+          "date": "2026-03-12",
+          "description": "Samih traded Four Arms (Iron) and Pu (Iron) to Peter for Gumball (Iron)",
+          "details": { "fromMemberId": "member_samih", "cardId": "four_arms" }
         }
       ]
     }
@@ -626,7 +619,7 @@
   "projects": [
     {
       "id": "proj-habits", "teamId": "team1", "name": "Habits",
-      "members": ["Peter", "Jonathan", "Daniel Rafik", "Mina", "Philip", "Abanoub"],
+      "members": ["Peter", "Jonathan", "Daniel Rafik", "Mina", "Philip", "Abanoub", "Chris"],
       "description": "Daily habit tracking and accountability",
       "minimumWork": "Send 1 habit", "baseSalary": 1,
       "startDate": "12-10-2025", "active": true, "projectManagerId": "member_jonathan",
@@ -636,7 +629,8 @@
         "Pick 8 habtis that you consider challengeing, make sure they are quantifiable",
         "Pick only 2 habits that can be done more than once per day up to 3 times",
         "Send 1 screen shot of your habit tracker once per cycle",
-        "Miss 10 days in a cycle and you are out"
+        "Miss 10 days in a cycle and you are out",
+        "You can only one negative habit (Not doing something)"
       ],
       "bonusSystem": [
         { "work": "10 habits", "salary": 4 }, { "work": "20 habits", "salary": 8 },
@@ -777,9 +771,9 @@
       "endDate": "2026-03-31",
       "visible": true,
       "prizes": {
-        "1st": { "characterId": "common_token", "degree": "iron" },
+        "1st": { "characterId": "rare_token", "degree": "iron" },
         "2nd": { "characterId": "common_token", "degree": "bronze" },
-        "3rd": { "characterId": "rare_token", "degree": "iron" }
+        "3rd": { "characterId": "common_token", "degree": "iron" }
       },
       "winners": [
         { "place": 1, "memberId": "member_jonathan", "score": 450 },
@@ -811,9 +805,14 @@
       "name": "Ping Pong Tournament",
       "description": "Compete in 1v1 matches.",
       "type": "points",
-      "startDate": "2026-04-01",
+      "startDate": "2026-03-01",
       "endDate": "2026-04-30",
-      "visible": false
+      "visible": true,
+      "upcomingMatches": [
+        { "id": "match_1", "team1": "Jonathan", "team2": "Samih", "active": true, "date": "2026-03-15" },
+        { "id": "match_2", "team1": "Joren & Haneen", "team2": "Karen & Marette", "active": true, "date": "2026-03-16" },
+        { "id": "match_3", "team1": "Peter", "team2": "Yassa", "active": false, "date": "2026-03-17" }
+      ]
     }
   ],
   "packs": [
@@ -846,7 +845,7 @@
       "cost": { "wabi": 18, "spice": 6 },
       "outcomes": [
         { "characterId": "ben10", "chance": "50%" }, { "characterId": "cannonbolt", "chance": "30%" },
-        { "characterId": "fourarms", "chance": "7.5%" }, { "characterId": "diamondhead", "chance": "7.5%" },
+        { "characterId": "four_arms", "chance": "7.5%" }, { "characterId": "diamondhead", "chance": "7.5%" },
         { "characterId": "xlr8", "chance": "4.9%" }, { "characterId": "waybig", "chance": "0.1%" }
         
       ]
@@ -974,10 +973,10 @@
     {
       "id": "set_2",
       "start_date": "2026-03-16",
-      "end_date": "2026-03-31",
+      "end_date": "2026-03-21",
       "crafts": [
         {
-          "id": "craft_3",
+          "id": "craft_1",
           "recipe": {
             "inputs": [
               { "card_id": "ice_bear", "degree": "iron" },
@@ -987,13 +986,40 @@
           }
         },
         {
-          "id": "craft_4",
+          "id": "craft_2",
           "recipe": {
             "inputs": [
               { "card_id": "cannonbolt", "degree": "iron" },
               { "card_id": "rare_token", "degree": "silver"}
             ],
             "output": { "card_id": "cannonbolt", "degree": "bronze" }
+          }
+        }
+      ]
+    },
+    {
+      "id": "set_3",
+      "start_date": "2026-03-22",
+      "end_date": "2026-03-31",
+      "crafts": [
+        {
+          "id": "craft_1",
+          "recipe": {
+            "inputs": [
+              { "card_id": "finn", "degree": "iron" },
+              { "card_id": "common_token", "degree": "silver" }
+            ],
+            "output": { "card_id": "finn", "degree": "bronze" }
+          }
+        },
+        {
+          "id": "craft_2",
+          "recipe": {
+            "inputs": [
+              { "card_id": "mr_krabs", "degree": "gold" },
+              { "card_id": "plankton", "degree": "pearl"}
+            ],
+            "output": { "card_id": "king_neptune", "degree": "iron" }
           }
         }
       ]
