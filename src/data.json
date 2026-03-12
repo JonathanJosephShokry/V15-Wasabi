@@ -1,5 +1,5 @@
 {
-  "version": "V19.1",
+  "version": "V19.2",
   "cardConfig": {
     "rarityScores": {
       "common": 2,
@@ -349,8 +349,7 @@
       "collection": [
         { "characterId": "charlie", "degree": "iron", "count": 1 },
         { "characterId": "darwin", "degree": "bronze", "count": 2 },
-        { "characterId": "pu", "degree": "iron", "count": 1 },
-        { "characterId": "four_arms", "degree": "iron", "count": 1 },
+        { "characterId": "gumball", "degree": "iron", "count": 1 },
         { "characterId": "larry", "degree": "iron", "count": 1 },
         { "characterId": "ping", "degree": "iron", "count": 1 },
         { "characterId": "monkey", "degree": "iron", "count": 1 }
@@ -379,7 +378,8 @@
       "wabi": 18, "spice": 0, "exp": 3, "teamId": "team1", "role": "normal",
       "collection": [
         { "characterId": "pu", "degree": "silver", "count": 1 },
-        { "characterId": "gumball", "degree": "iron", "count": 1 },
+        { "characterId": "pu", "degree": "iron", "count": 1 },
+        { "characterId": "four_arms", "degree": "iron", "count": 1 },
         { "characterId": "richard", "degree": "iron", "count": 1 },
         { "characterId": "common_token", "degree": "iron", "count": 1 }
 
