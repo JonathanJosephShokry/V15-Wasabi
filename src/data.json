@@ -1,5 +1,5 @@
 {
-  "version": "V19.2",
+  "version": "V19.4",
   "cardConfig": {
     "rarityScores": {
       "common": 2,
@@ -25,6 +25,34 @@
     "combineRecipe": 2
   },
   "characters": [
+    {
+      "id": "________", "name": "______", "rarity": "________", "packageId": "________",
+      "images": { "iron": "________", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "police_courage", "name": "Police Courage", "rarity": "common", "packageId": "courage_pack",
+      "images": { "iron": "police_courage.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "computer_courage", "name": "Computer", "rarity": "rare", "packageId": "courage_pack",
+      "images": { "iron": "computer10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "muriel_bagge", "name": "Muriel Bagge", "rarity": "epic", "packageId": "courage_pack",
+      "images": { "iron": "muriel_bagge.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "eustace_bagge", "name": "Eustace Bagge", "rarity": "epic", "packageId": "courage_pack",
+      "images": { "iron": "eustace_bagge.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "courage", "name": "Courage", "rarity": "legendary", "packageId": "courage_pack",
+      "images": { "iron": "courage10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "katz", "name": "Katz", "rarity": "never", "packageId": "courage_pack",
+      "images": { "iron": "katz.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
     {
       "id": "gumball", "name": "Gumball", "rarity": "common", "packageId": "gumball_pack",
       "images": { "iron": "gumball.jpg", "bronze": "gumball20.jpg", "silver": "gumball30.jpg", "pearl": "gumball40.jpg", "gold": "gumball50.jpg", "jade": "gumball60.jpg", "sapphire": "gumball70.jpg", "ruby": "gumball80.jpg", "emerald": "gumball90.jpg", "diamond": "gumball100.jpg" }
@@ -280,8 +308,8 @@
   ],
   "members": [
     {
-      "id": "member_abanoub",
-      "name": "Abanoub", "icon": "nom nom.jpg",
+      "id": "member_abanoub_ashraf",
+      "name": "Abanoub Ashraf", "icon": "nom nom.jpg",
       "wabi": 5, "spice": 0, "exp": 1, "teamId": "team1", "role": "normal",
       "collection": [{ "characterId": "nom_nom", "degree": "iron", "count": 1 }],
       "skills": { "english": 0, "chess": 0, "python": 0 },
@@ -345,12 +373,10 @@
     {
       "id": "member_samih",
       "name": "Samih", "icon": "charlie.jpg",
-      "wabi": 5, "spice": 1, "exp": 3, "teamId": "team1", "role": "normal",
+      "wabi": 5, "spice": 1, "exp": 3, "teamId": "team1", "role": "leader",
       "collection": [
         { "characterId": "charlie", "degree": "iron", "count": 1 },
-        { "characterId": "darwin", "degree": "bronze", "count": 2 },
-        { "characterId": "gumball", "degree": "iron", "count": 1 },
-        { "characterId": "larry", "degree": "iron", "count": 1 },
+        { "characterId": "larry", "degree": "bronze", "count": 1 },
         { "characterId": "ping", "degree": "iron", "count": 1 },
         { "characterId": "monkey", "degree": "iron", "count": 1 }
       ],
@@ -454,11 +480,12 @@
     },
     {
       "id": "member_philip",
-      "name": "Philip", "icon": "joey.jpg", "wabi": 16, "spice": 0, "exp": 2,
+      "name": "Philo", "icon": "joey.jpg", "wabi": 16, "spice": 0, "exp": 2,
       "teamId": "team1", "role": "normal",
       "collection": [
         { "characterId": "joey", "degree": "iron", "count": 1 },
-        { "characterId": "common_token", "degree": "bronze", "count": 1 }
+        { "characterId": "darwin", "degree": "bronze", "count": 1 }
+
         ]
       , "skills": {},
       "sportEventScore": 0,
@@ -516,7 +543,7 @@
     },
     {
       "id": "member_chris",
-      "name": "Chris", "icon": "noicon.jpg", "wabi": 2, "spice": 0, "exp": 1,
+      "name": "Chris", "icon": "noicon.jpg", "wabi": 2, "spice": 25, "exp": 1,
       "teamId": "team1", "role": "normal",
       "collection": [], "skills": {},
       "sportEventScore": 0,
@@ -552,6 +579,46 @@
       "sportEventScore": 0,
       "statistics": [
         { "label": "Bible Days", "value": 2 }
+      ]
+    },
+    {
+      "id": "member_yasmine",
+      "name": "Yasmine", "icon": "noicon.jpg", "wabi": 0, "spice": 0, "exp": 0,
+      "teamId": "team1", "role": "normal",
+      "collection": [], "skills": {},
+      "sportEventScore": 0,
+      "statistics": [
+        { "label": "Bible Days", "value": 0 }
+      ]
+    },
+    {
+      "id": "member_lucas",
+      "name": "Lucas", "icon": "noicon.jpg", "wabi": 0, "spice": 0, "exp": 0,
+      "teamId": "team1", "role": "normal",
+      "collection": [], "skills": {},
+      "sportEventScore": 0,
+      "statistics": [
+        { "label": "Bible Days", "value": 0 }
+      ]
+    },
+    {
+      "id": "member_rafik_boules",
+      "name": "Rafik", "icon": "noicon.jpg", "wabi": 0, "spice": 0, "exp": 0,
+      "teamId": "team1", "role": "normal",
+      "collection": [], "skills": {},
+      "sportEventScore": 0,
+      "statistics": [
+        { "label": "Bible Days", "value": 0 }
+      ]
+    },
+    {
+      "id": "member_abanoub_mohsen",
+      "name": "Abanoub Mohsen", "icon": "noicon.jpg", "wabi": 0, "spice": 0, "exp": 0,
+      "teamId": "team1", "role": "normal",
+      "collection": [], "skills": {},
+      "sportEventScore": 0,
+      "statistics": [
+        { "label": "Bible Days", "value": 0 }
       ]
     }
   ],
@@ -594,6 +661,20 @@
           "date": "2026-03-12",
           "description": "Samih traded Four Arms (Iron) and Pu (Iron) to Peter for Gumball (Iron)",
           "details": { "fromMemberId": "member_samih", "cardId": "four_arms" }
+        },
+        {
+          "id": "h8",
+          "type": "trade",
+          "date": "2026-03-12",
+          "description": "Samih traded Darwin (Bronze) to Philo for Common Token (Bronze)",
+          "details": { "fromMemberId": "member_samih", "cardId": "darwin" }
+        },
+        {
+          "id": "h9",
+          "type": "craft",
+          "date": "2026-03-13",
+          "description": "Samih crafted Larry (Bronze)",
+          "details": { "fromMemberId": "member_samih", "cardId": "larry" }
         }
       ]
     }
@@ -603,7 +684,7 @@
     "description": "Learn any language through structured lessons. Study a short lesson, complete practice exercises, and finish with a brief exam to reinforce what you’ve learned.",
     "spice_price": 3, "wabi_price": 9, "pdf_link": "https://drive.google.com/drive/folders/174RWV_x7_t-2UNx9Tcbf4OniDzPJFxOI?usp=sharing", "providedBy": "Website Provider" },
     { "name": "Drums", "description": "Learn to play the drums step by step. Practice rhythm, understand drum notation, and complete a short test after each lesson to track your progress.",
-    "spice_price": 6, "wabi_price": 18, "pdf_link": "https://drive.google.com/drive/folders/174RWV_x7_t-2UNx9Tcbf4OniDzPJFxOI?usp=sharing", "providedBy": "Website Provider" },
+    "spice_price": 3, "wabi_price": 9, "pdf_link": "https://drive.google.com/drive/folders/174RWV_x7_t-2UNx9Tcbf4OniDzPJFxOI?usp=sharing", "providedBy": "Website Provider" },
     { "name": "Singing", "description": "Improve your vocal skills through guided exercises. Strengthen your voice, develop control, and build confidence with structured practice sessions.",
     "spice_price": 3, "wabi_price": 9, "pdf_link": "https://drive.google.com/drive/folders/174RWV_x7_t-2UNx9Tcbf4OniDzPJFxOI?usp=sharing", "providedBy": "Website Provider" },
     { "name": "Python", "description": "Learn programming fundamentals and automation through practical lessons. Start with the basics, practice key concepts, and gradually progress to more advanced skills.",
@@ -619,7 +700,7 @@
   "projects": [
     {
       "id": "proj-habits", "teamId": "team1", "name": "Habits",
-      "members": ["Peter", "Jonathan", "Daniel Rafik", "Mina", "Philip", "Abanoub", "Chris"],
+      "members": ["Peter", "Jonathan", "Daniel Rafik", "Mina", "Philo", "Abanoub Ashraf", "Chris"],
       "description": "Daily habit tracking and accountability",
       "minimumWork": "Send 1 habit", "baseSalary": 1,
       "startDate": "12-10-2025", "active": true, "projectManagerId": "member_jonathan",
@@ -639,7 +720,7 @@
       ],
       "lastCycleLeaderboard": [
         { "name": "Jonathan", "habits": 48 },
-        { "name": "Philip", "habits": 29 },
+        { "name": "Philo", "habits": 29 },
         { "name": "Peter", "habits": 23 }
       ],
       "prizes": {
@@ -652,8 +733,8 @@
     {
       "id": "proj-bible", "teamId": "team1", "name": "Bible",
       "members": [
-        "Joren", "Haneen", "Marette", "Nour", "Jonathan", "Yassa", "Samih", "Daniel Rafik", "Philip", "Karen", "Karim", "Yana",
-        "David Michael", "Manuel", "Daniel Walaa", "Kevin", "Chris", "Peter", "Jenny"
+        "Joren", "Haneen", "Marette", "Nour", "Jonathan", "Yassa", "Samih", "Daniel Rafik", "Philo", "Karen", "Karim", "Yana",
+        "David Michael", "Manuel", "Daniel Walaa", "Kevin", "Chris", "Peter", "Jenny", "Yasmine"
       ],
       "description": "Daily Bible Time", "minimumWork": "Read 1 passage", "baseSalary": 1,
       "startDate": "16-02-2026", "active": true, "projectManagerId": "member_jonathan",
@@ -673,6 +754,31 @@
         { "name": "Yana", "days": 9 },
         { "name": "Haneen", "days": 8 }
 
+      ],
+      "prizes": {
+        "1st": { "characterId": "rare_token", "degree": "iron" },
+        "2nd": { "characterId": "common_token", "degree": "bronze" },
+        "3rd": { "characterId": "common_token", "degree": "iron" }
+      }
+    },
+    {
+      "id": "proj-bible2", "teamId": "team1", "name": "Bible 2",
+      "members": [
+        "Abanoub Mohsen", "Mina", "Lucas", "Rafik", "Jonathan"
+      ],
+      "description": "Daily Bible Time", "minimumWork": "Read 1 passage", "baseSalary": 1,
+      "startDate": "16-02-2026", "active": true, "projectManagerId": "member_jonathan",
+      "maxMembers": 10,
+      "rules": [
+        "Send daily passages you read from the bible",
+        "(Optionaly) Share one reflection or verse that stood out",
+        "Miss 10 days in a cycle and you are out"
+      ],
+      "bonusSystem": [
+        { "work": "3 days", "salary": 3 }, { "work": "5 days", "salary": 5 },
+        { "work": "7 days", "salary": 7 }, { "work": "10 days", "salary": 10 }
+      ],
+      "lastCycleLeaderboard": [
       ],
       "prizes": {
         "1st": { "characterId": "rare_token", "degree": "iron" },
@@ -723,7 +829,7 @@
     },
     {
       "id": "hidden_in_my_heart", "teamId": "team1", "name": "Hidden in My Heart",
-      "members": ["David Michael", "Jonathan", "Daniel Rafik", "Samih"], "description": "Bible verses memorization",
+      "members": ["David Michael", "Jonathan", "Daniel Rafik", "Samih", "Daniel Walaa"], "description": "Bible verses memorization",
       "minimumWork": "5 verses", "baseSalary": 1,
       "startDate": "10-03-2026", "active": true, "projectManagerId": "member_david_michael",
       "maxMembers": 10,
@@ -930,6 +1036,491 @@
         { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
         { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
       ]
+    },
+    {
+      "packageId": "luca_pack",
+      "name": "Luca", "banner": "luca_banner.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      "packageId": "angelo_rules_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      "packageId": "in_the_night_garden_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      "packageId": "veggie_tails_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      
+      "packageId": "kungfu_evil_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      "packageId": "frozen_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      "packageId": "regular_show_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      "packageId": "wreck_it_ralph_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      "packageId": "ratatouille_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      "packageId": "clarence_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      "packageId": "adventure_time_2_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      "packageId": "teen_titans_go_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      "packageId": "flapjack_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      "packageId": "over_the_garden_wall_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      "packageId": "chowder_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      "packageId": "courage_pack",
+      "name": "Courage", "banner": "courage_banner.jpg",
+      "score": 4,
+      "cost": { "wabi": 12, "spice": 4 },
+      "outcomes": [
+        { "characterId": "police_courage", "chance": "50%" }, { "characterId": "computer_courage", "chance": "30%" },
+        { "characterId": "muriel_bagge", "chance": "7.5%" }, { "characterId": "eustace_bagge", "chance": "7.5%" },
+        { "characterId": "courage", "chance": "4.9%" }, { "characterId": "katz", "chance": "0.1%" }
+      ]
+    },
+    {
+      "packageId": "steven_univers_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      "packageId": "uncle_grandpa_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      "packageId": "ed_edd_eddy_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      "packageId": "lion_king_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      "packageId": "monsters_inc_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      "packageId": "httyd_dragons_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      "packageId": "cars_2_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      "packageId": "pooh_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      "packageId": "monsters_inc_university_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      "packageId": "penguins_of_madagascar_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      "packageId": "monsters_inc_university_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      "packageId": "up_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      "packageId": "monsters_inc_university_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      "packageId": "the_incredibles_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      "packageId": "toy_story_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      "packageId": "despicable_me_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      "packageId": "inside_out_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      "packageId": "kuzco_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      "packageId": "zootopia_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      "packageId": "ice_age_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      "packageId": "angry_birds_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      "packageId": "a_bug's_life_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      "packageId": "phineas_and_ferb_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      "packageId": "tom_and_jerry_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      "packageId": "bugs_bunny_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      "packageId": "the_fairly_oddparents_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      "packageId": "onward_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
+    },
+    {
+      "packageId": "coco_pack",
+      "name": "NA", "banner": "na.jpg",
+      "score": 0,
+      "cost": { "wabi": 3, "spice": 1 },
+      "outcomes": [
+        { "characterId": "common_token", "chance": "50%" }, { "characterId": "rare_token", "chance": "30%" },
+        { "characterId": "epic_token", "chance": "15%" }, { "characterId": "legendary_token", "chance": "4.9%" },
+        { "characterId": "never_token", "chance": "0.1%" }, { "characterId": "split_token", "chance": "0%" }
+      ]
     }
   ],
   "crafting_sets": [
@@ -1023,6 +1614,23 @@
           }
         }
       ]
+    },
+    {
+      "id": "set_4",
+      "start_date": "2026-04-01",
+      "end_date": "2026-04-07",
+      "crafts": [
+        {
+          "id": "craft_1",
+          "recipe": {
+            "inputs": [
+              { "card_id": "jake", "degree": "iron" },
+              { "card_id": "rare_token", "degree": "pearl" }
+            ],
+            "output": { "card_id": "jake", "degree": "silver" }
+          }
+        }
+      ]
     }
   ],
   "pack_sales": [
@@ -1052,7 +1660,180 @@
       "end_date": "2026-04-15",
       "packs": [
         "httyd_pack",
-        "nemo_pack"
+        "nemo_pack",
+        "luca_pack"
+      ]
+    },
+    {
+      "id": "sale_4",
+      "start_date": "2026-04-16",
+      "end_date": "2026-04-30",
+      "packs": [
+        "angelo_rules_pack",
+        "in_the_night_garden_pack",
+        "veggie_tails_pack"
+      ]
+    },
+    {
+      "id": "sale_5",
+      "start_date": "2026-05-01",
+      "end_date": "2026-05-15",
+      "packs": [
+        "kungfu_evil_pack",
+        "frozen_pack",
+        "regular_show_pack"
+      ]
+    },
+    {
+      "id": "sale_6",
+      "start_date": "2026-05-16",
+      "end_date": "2026-05-31",
+      "packs": [
+          "wreck_it_ralph_pack",
+          "ratatouille_pack",
+          "clarence_pack"
+      ]
+    },
+    {
+      "id": "sale_7",
+      "start_date": "2026-06-1",
+      "end_date": "2026-06-15",
+      "packs": [
+        "adventure_time_2_pack",
+        "teen_titans_go_pack",
+        "flapjack_pack"
+      ]
+    },
+    {
+      "id": "sale_8",
+      "start_date": "2026-06-16",
+      "end_date": "2026-06-30",
+      "packs": [
+        "over_the_garden_wall_pack",
+        "chowder_pack",
+        "courage_pack"
+      ]
+    },
+    {
+      "id": "sale_9",
+      "start_date": "2026-07-01",
+      "end_date": "2026-07-15",
+      "packs": [
+        "steven_univers_pack",
+        "uncle_grandpa_pack",
+        "ed_edd_eddy_pack"
+      ]
+    },
+    {
+      "id": "sale_10",
+      "start_date": "2026-07-16",
+      "end_date": "2026-07-31",
+      "packs": [
+        "lion_king_pack",
+        "monsters_inc_pack",
+        "httyd_dragons_pack"
+      ]
+    },
+    {
+      "id": "sale_10",
+      "start_date": "2026-08-1",
+      "end_date": "2026-08-15",
+      "packs": [
+        "cars_2_pack",
+        "pooh_pack"
+      ]
+    },
+    {
+      "id": "sale_10",
+      "start_date": "2026-08-16",
+      "end_date": "2026-08-31",
+      "packs": [
+        "monsters_inc_university_pack",
+        "penguins_of_madagascar_pack"
+      ]
+    },
+    {
+      "id": "sale_11",
+      "start_date": "2026-09-01",
+      "end_date": "2026-09-15",
+      "packs": [
+        "monsters_inc_university_pack",
+        "up_pack"
+      ]
+    },
+    {
+      "id": "sale_12",
+      "start_date": "2026-09-16",
+      "end_date": "2026-09-30",
+      "packs": [
+        "monsters_inc_university_pack",
+        "the_incredibles_pack"
+      ]
+    },
+    {
+      "id": "sale_13",
+      "start_date": "2026-10-01",
+      "end_date": "2026-10-15",
+      "packs": [
+        "toy_story_pack",
+        "despicable_me_pack"
+      ]
+    },
+    {
+      "id": "sale_14",
+      "start_date": "2026-10-16",
+      "end_date": "2026-10-31",
+      "packs": [
+        "inside_out_pack",
+        "kuzco_pack"
+      ]
+    },
+    {
+      "id": "sale_15",
+      "start_date": "2026-11-16",
+      "end_date": "2026-11-31",
+      "packs": [
+        "zootopia_pack",
+        "ice_age_pack"
+      ]
+    },
+    {
+      "id": "sale_16",
+      "start_date": "2026-11-16",
+      "end_date": "2026-11-30",
+      "packs": [
+        "angry_birds_pack",
+        "a_bug's_life_pack"
+      ]
+    },
+    {
+      "id": "sale_17",
+      "start_date": "2026-12-01",
+      "end_date": "2026-12-15",
+      "packs": [
+        "phineas_and_ferb_pack",
+        "tom_and_jerry_pack",
+        "bugs_bunny_pack"
+      ]
+    },
+    {
+      "id": "sale_18",
+      "start_date": "2026-12-01",
+      "end_date": "2026-12-31",
+      "packs": [
+        "the_fairly_oddparents_pack",
+        "onward_pack",
+        "coco_pack"
+      ]
+    },
+    {
+      "id": "sale_19",
+      "start_date": "2026-01-01",
+      "end_date": "2026-01-15",
+      "packs": [
+        "wall_e_pack",
+        "moana_pack",
+        "big_hero_six_pack"
       ]
     }
   ]
