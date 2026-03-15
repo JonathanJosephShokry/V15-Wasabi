@@ -11,7 +11,6 @@ interface ProjectDetailsProps {
 
 export const ProjectDetails: React.FC<ProjectDetailsProps> = ({ data }) => {
   const { projectId } = useParams<{ projectId: string }>();
-  const [showEnrollAlert, setShowEnrollAlert] = useState(false);
   const project = data.projects.find(p => p.id === projectId);
 
   if (!project) return <div className="p-20 text-center">Project not found</div>;
@@ -22,30 +21,6 @@ export const ProjectDetails: React.FC<ProjectDetailsProps> = ({ data }) => {
 
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="bg-[#FAFAFA] min-h-screen pb-20">
-      {/* Custom Alert Modal */}
-      {showEnrollAlert && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
-          <motion.div 
-            initial={{ scale: 0.9, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            className="bg-white rounded-3xl p-8 max-w-sm w-full shadow-2xl border-4 border-[#9FD356] text-center"
-          >
-            <div className="w-20 h-20 bg-[#9FD356]/20 rounded-full flex items-center justify-center mx-auto mb-6">
-              <UserPlus size={40} className="text-[#9FD356]" />
-            </div>
-            <h3 className="text-2xl font-black text-[#6B5435] mb-2">Join the Team!</h3>
-            <p className="text-[#6B5435]/70 mb-8 font-medium text-sm leading-relaxed">
-              To enroll in <span className="text-[#9FD356] font-bold">{project.name}</span>, please contact your <span className="text-[#E8631A] font-bold">Team Leader</span> directly.
-            </p>
-            <button 
-              onClick={() => setShowEnrollAlert(false)}
-              className="w-full py-4 bg-[#9FD356] text-[#6B5435] font-black rounded-2xl border-b-4 border-[#7CB342] hover:translate-y-0.5 transition-all shadow-lg"
-            >
-              Got it!
-            </button>
-          </motion.div>
-        </div>
-      )}
       <div className="bg-white border-b-2 border-[#E0E0E0] p-5">
         <Link to={`/team/${project.teamId}`} className="inline-flex items-center gap-1.5 px-5 py-2.5 bg-[#9FD356] text-white no-underline rounded-lg font-semibold transition-all hover:bg-[#8B6F47] hover:-translate-x-1">
           <ArrowLeft size={20} />
@@ -58,14 +33,6 @@ export const ProjectDetails: React.FC<ProjectDetailsProps> = ({ data }) => {
         <div className="bg-white p-10 rounded-2xl border-2 border-[#E0E0E0] text-center shadow-md mb-8">
           <h1 className="text-4xl md:text-5xl font-bold text-[#6B5435] mb-4">{project.name}</h1>
           <p className="text-lg text-[#666666] max-w-2xl mx-auto leading-relaxed mb-8">{project.description}</p>
-          
-          <button 
-            onClick={() => setShowEnrollAlert(true)}
-            className="inline-flex items-center gap-2 px-8 py-4 bg-[#9FD356] text-[#6B5435] font-black rounded-2xl border-b-4 border-[#7CB342] hover:translate-y-0.5 transition-all shadow-lg active:scale-95"
-          >
-            <UserPlus size={24} />
-            Enroll Now
-          </button>
           
           {/* Project Age Section */}
           <div className={`mt-8 inline-flex flex-col items-center gap-2 p-6 rounded-2xl border-2 transition-all shadow-sm min-w-[220px] ${

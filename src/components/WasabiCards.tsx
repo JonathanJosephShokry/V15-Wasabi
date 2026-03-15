@@ -18,7 +18,7 @@ export const WasabiCards: React.FC<WasabiCardsProps> = ({ data }) => {
   const [isRolling, setIsRolling] = useState(false);
   const [showRollResult, setShowRollResult] = useState(false);
 
-  const [now, setNow] = useState(new Date("2026-03-11T08:34:22-07:00"));
+  const [now, setNow] = useState(new Date());
 
   useEffect(() => {
     const timer = setInterval(() => {

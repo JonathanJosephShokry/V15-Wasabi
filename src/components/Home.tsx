@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { WasabiData, Team, Member, CraftingRecipe } from '../types';
-import { ArrowRight, Trophy as TrophyIcon, Medal, Clock, Plus, Zap, ExternalLink, GraduationCap } from 'lucide-react';
+import { ArrowRight, Trophy as TrophyIcon, Medal, Clock, Plus, Zap, ExternalLink, GraduationCap, UserPlus } from 'lucide-react';
 import { getActiveSportEvent, getLastFinishedSportEvent, getActiveCraftingRecipes, calculateDaysRemaining, getActiveCraftingSet, getActivePackSale, getTimeRemaining } from '../utils';
 
 interface HomeProps {
@@ -10,7 +10,8 @@ interface HomeProps {
 }
 
 export const Home: React.FC<HomeProps> = ({ data }) => {
-  const [now, setNow] = useState(new Date("2026-03-11T08:34:22-07:00"));
+  const [now, setNow] = useState(new Date());
+  const [enrollTarget, setEnrollTarget] = useState<string | null>(null);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -42,6 +43,30 @@ export const Home: React.FC<HomeProps> = ({ data }) => {
 
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+      {/* Custom Alert Modal */}
+      {enrollTarget && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+          <motion.div 
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            className="bg-white rounded-3xl p-8 max-w-sm w-full shadow-2xl border-4 border-[#9FD356] text-center"
+          >
+            <div className="w-20 h-20 bg-[#9FD356]/20 rounded-full flex items-center justify-center mx-auto mb-6">
+              <UserPlus size={40} className="text-[#9FD356]" />
+            </div>
+            <h3 className="text-2xl font-black text-[#6B5435] mb-2">Join the Training!</h3>
+            <p className="text-[#6B5435]/70 mb-8 font-medium text-sm">
+              To enroll in <span className="text-[#9FD356] font-bold">{enrollTarget}</span>, please contact your <span className="text-[#E8631A] font-bold">Team Leader</span> directly.
+            </p>
+            <button 
+              onClick={() => setEnrollTarget(null)}
+              className="w-full py-4 bg-[#9FD356] text-[#6B5435] font-black rounded-2xl border-b-4 border-[#7CB342] hover:translate-y-0.5 transition-all shadow-lg"
+            >
+              Got it!
+            </button>
+          </motion.div>
+        </div>
+      )}
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#6B5435] via-[#8B6F47] to-[#9FD356] min-h-[60vh] flex items-center justify-center text-center relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_70%_50%,rgba(159,211,86,0.25)_0%,transparent_60%)] pointer-events-none"></div>
@@ -398,7 +423,10 @@ export const Home: React.FC<HomeProps> = ({ data }) => {
                     </a>
                   </div>
 
-                  <button className="w-full py-4 bg-[#9FD356] text-white rounded-xl font-black text-sm uppercase tracking-widest shadow-lg shadow-[#9FD356]/20 transition-all hover:bg-[#8B6F47] hover:-translate-y-1 active:scale-95">
+                  <button 
+                    onClick={() => setEnrollTarget(training.name)}
+                    className="w-full py-4 bg-[#9FD356] text-white rounded-xl font-black text-sm uppercase tracking-widest shadow-lg shadow-[#9FD356]/20 transition-all hover:bg-[#8B6F47] hover:-translate-y-1 active:scale-95"
+                  >
                     Enroll Now
                   </button>
                 </div>

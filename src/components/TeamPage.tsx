@@ -96,8 +96,8 @@ export const TeamPage: React.FC<TeamPageProps> = ({ data }) => {
                   <div className="text-2xl font-bold text-[#6B5435] mb-2">{project.name}</div>
                   <p className="text-sm text-[#666666] mb-5 line-clamp-2 leading-relaxed">{project.description}</p>
                   <div className="flex flex-wrap gap-2">
-                    {project.members.map(name => {
-                      const m = data.members.find(x => x.name === name);
+                    {project.members.map(memberId => {
+                      const m = data.members.find(x => x.id === memberId);
                       if (!m) return null;
                       const restricted = isMemberRestricted(m);
                       const isPM = project.projectManagerId === m.id;
@@ -105,11 +105,11 @@ export const TeamPage: React.FC<TeamPageProps> = ({ data }) => {
                         <div key={m.id} className="relative">
                           <img 
                             src={`/icons/${m.icon}`} 
-                            alt={name} 
+                            alt={m.name} 
                             className={`w-11 h-11 rounded-full object-cover border-2 transition-all hover:scale-110 ${
                               isPM ? 'border-[#E8631A] ring-2 ring-[#E8631A]/20' : restricted ? 'grayscale opacity-75 border-red-400' : 'border-[#9FD356]'
                             }`}
-                            title={name + (isPM ? ' (Project Manager)' : restricted ? ' (Restricted)' : '')}
+                            title={m.name + (isPM ? ' (Project Manager)' : restricted ? ' (Restricted)' : '')}
                           />
                           {isPM && (
                             <div className="absolute -top-1 -right-1 bg-[#E8631A] text-white text-[8px] font-black px-1.5 py-0.5 rounded-full border border-white shadow-sm">PM</div>
