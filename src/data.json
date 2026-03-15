@@ -30,6 +30,22 @@
       "images": { "iron": "________", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
     },
     {
+      "id": "boost", "name": "Boost", "rarity": "never", "packageId": "the_tuner_gang_pack",
+      "images": { "iron": "boost.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "wingo", "name": "Wingo", "rarity": "legendary", "packageId": "the_tuner_gang_pack",
+      "images": { "iron": "wingo.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "dj", "name": "DJ", "rarity": "epic", "packageId": "the_tuner_gang_pack",
+      "images": { "iron": "dj.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "snot_rod ", "name": "Snot Rod", "rarity": "rare", "packageId": "the_tuner_gang_pack",
+      "images": { "iron": "snot_rod.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
       "id": "angelo", "name": "Angelo", "rarity": "never", "packageId": "angelo_rules_pack",
       "images": { "iron": "angelo10.jpg", "bronze": "angelo20.jpg", "silver": "angelo30.jpg", "pearl": "angelo40.jpg", "gold": "angelo50.jpg", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
     },
@@ -344,7 +360,20 @@
     {
       "id": "split_token", "name": "Split Token", "rarity": "never", "packageId": "tokens_pack",
       "images": { "iron": "splitToken.jpg", "bronze": "splitToken.jpg", "silver": "splitToken.jpg", "pearl": "splitToken.jpg", "gold": "splitToken.jpg", "jade": "splitToken.jpg", "sapphire": "splitToken.jpg", "ruby": "splitToken.jpg", "emerald": "splitToken.jpg", "diamond": "splitToken.jpg" }
+    },
+    {
+      "id": "bmo", "name": "BMO", "rarity": "rare", "packageId": "adventure_time_pack",
+      "images": { "iron": "bmo.jpg", "bronze": "bmo2.jpg", "silver": "_________", "pearl": "_________", "gold": "splitToken.jpg", "jade": "splitToken.jpg", "sapphire": "splitToken.jpg", "ruby": "splitToken.jpg", "emerald": "splitToken.jpg", "diamond": "splitToken.jpg" }
+    },
+    {
+      "id": "sandy", "name": "Sandy", "rarity": "rare", "packageId": "spongebob_pack",
+      "images": { "iron": "sandy.jpg", "bronze": "________", "silver": "________", "pearl": "splitToken.jpg", "gold": "splitToken.jpg", "jade": "splitToken.jpg", "sapphire": "splitToken.jpg", "ruby": "splitToken.jpg", "emerald": "splitToken.jpg", "diamond": "splitToken.jpg" }
+    },
+    {
+      "id": "lumpy_space_princess", "name": "Lumpy Space Princess", "rarity": "epic", "packageId": "adventure_time_pack",
+      "images": { "iron": "lumpy_space.jpg", "bronze": "________", "silver": "________", "pearl": "splitToken.jpg", "gold": "splitToken.jpg", "jade": "splitToken.jpg", "sapphire": "splitToken.jpg", "ruby": "splitToken.jpg", "emerald": "splitToken.jpg", "diamond": "splitToken.jpg" }
     }
+
   ],
   "members": [
     {
@@ -705,7 +734,7 @@
         {
           "id": "h8",
           "type": "trade",
-          "date": "2026-03-12",
+          "date": "2026-03-13",
           "description": "Samih traded Darwin (Bronze) to Philo for Common Token (Bronze)",
           "details": { "fromMemberId": "member_samih_nasser", "cardId": "darwin" }
         },
@@ -1001,9 +1030,10 @@
       "score": 7,
       "cost": { "wabi": 21, "spice": 7 },
       "outcomes": [
-        { "characterId": "finn", "chance": "50%" }, { "characterId": "jake", "chance": "30%" },
-        { "characterId": "ice_king", "chance": "15%" }, { "characterId": "princess_bubblegum", "chance": "4.9%" },
-        { "characterId": "marceline", "chance": "0.1%" }
+        { "characterId": "finn", "chance": "50%" },
+        { "characterId": "jake", "chance": "15%" }, { "characterId": "bmo", "chance": "15%" }, 
+        { "characterId": "ice_king", "chance": "7.5%" }, { "characterId": "lumpy_space_princess", "chance": "7.5%" },
+        { "characterId": "princess_bubblegum", "chance": "4.9%" }, { "characterId": "marceline", "chance": "0.1%" }
       ]
     },
     {
@@ -1024,8 +1054,9 @@
       "cost": { "wabi": 21, "spice": 7 },
       "outcomes": [
         { "characterId": "spongebob", "chance": "25%" }, { "characterId": "patrick", "chance": "25%" },
-        { "characterId": "squidward", "chance": "30%" }, { "characterId": "mr_krabs", "chance": "15%" },
-        { "characterId": "plankton", "chance": "4.9%" }, { "characterId": "king_neptune", "chance": "0.1%" }
+        { "characterId": "squidward", "chance": "15%" }, { "characterId": "sandy", "chance": "15%" },
+        { "characterId": "mr_krabs", "chance": "15%" }, { "characterId": "plankton", "chance": "4.9%" },
+        { "characterId": "king_neptune", "chance": "0.1%" }
       ]
     },
     {
@@ -1459,6 +1490,16 @@
       "outcomes": [
 
       ]
+    },
+    {
+      "packageId": "the_tuner_gang_pack",
+      "name": "The Tunder Gang", "banner": "the_tuner_gang_banner.jpg",
+      "score": 7,
+      "cost": { "wabi": 33, "spice": 11 },
+      "outcomes": [
+        { "characterId": "snot_rod", "chance": "80%" }, { "characterId": "dj", "chance": "15%" },
+        { "characterId": "wingo", "chance": "4.9%" }, { "characterId": "boost", "chance": "0.1%" }
+      ]
     }
   ],
   "crafting_sets": [
@@ -1741,7 +1782,8 @@
       "end_date": "2026-12-01",
       "packs": [
         "angry_birds_pack",
-        "a_bug's_life_pack"
+        "a_bug's_life_pack",
+        "the_tuner_gang_pack"
       ]
     },
     {
