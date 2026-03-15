@@ -1,5 +1,5 @@
 {
-  "version": "V20",
+  "version": "V20.1",
   "cardConfig": {
     "rarityScores": {
       "common": 2,
@@ -372,8 +372,11 @@
     {
       "id": "lumpy_space_princess", "name": "Lumpy Space Princess", "rarity": "epic", "packageId": "adventure_time_pack",
       "images": { "iron": "lumpy_space.jpg", "bronze": "________", "silver": "________", "pearl": "splitToken.jpg", "gold": "splitToken.jpg", "jade": "splitToken.jpg", "sapphire": "splitToken.jpg", "ruby": "splitToken.jpg", "emerald": "splitToken.jpg", "diamond": "splitToken.jpg" }
+    },
+    {
+      "id": "sarge", "name": "Sarge", "rarity": "rare", "packageId": "cars_pack",
+      "images": { "iron": "sarge.jpg", "bronze": "________", "silver": "________", "pearl": "splitToken.jpg", "gold": "splitToken.jpg", "jade": "splitToken.jpg", "sapphire": "splitToken.jpg", "ruby": "splitToken.jpg", "emerald": "splitToken.jpg", "diamond": "splitToken.jpg" }
     }
-
   ],
   "members": [
     {
@@ -1065,7 +1068,7 @@
       "score": 8,
       "cost": { "wabi": 24, "spice": 8 },
       "outcomes": [
-        { "characterId": "fillmore", "chance": "50%" }, { "characterId": "mater", "chance": "30%" },
+        { "characterId": "fillmore", "chance": "25%" }, { "characterId": "sarge", "chance": "25%" }, { "characterId": "mater", "chance": "30%" },
         { "characterId": "sally", "chance": "15%" }, { "characterId": "the_king", "chance": "2.45%" },
         { "characterId": "mcqueen", "chance": "2.45%" }, { "characterId": "doc_hudson", "chance": "0.1%" }
       ]
