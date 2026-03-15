@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { WasabiData } from '../types';
-import { ArrowLeft, GraduationCap, ExternalLink } from 'lucide-react';
+import { ArrowLeft, GraduationCap, ExternalLink, UserPlus } from 'lucide-react';
 
 interface TrainingPageProps {
   data: WasabiData;
 }
 
 export const TrainingPage: React.FC<TrainingPageProps> = ({ data }) => {
+  const [showEnrollAlert, setShowEnrollAlert] = useState(false);
+
   return (
     <motion.div 
       initial={{ opacity: 0 }} 
@@ -16,6 +18,31 @@ export const TrainingPage: React.FC<TrainingPageProps> = ({ data }) => {
       exit={{ opacity: 0 }}
       className="min-h-screen bg-[#FDFCFB] pb-20"
     >
+      {/* Custom Alert Modal */}
+      {showEnrollAlert && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+          <motion.div 
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            className="bg-white rounded-3xl p-8 max-w-sm w-full shadow-2xl border-4 border-[#9FD356] text-center"
+          >
+            <div className="w-20 h-20 bg-[#9FD356]/20 rounded-full flex items-center justify-center mx-auto mb-6">
+              <UserPlus size={40} className="text-[#9FD356]" />
+            </div>
+            <h3 className="text-2xl font-black text-[#6B5435] mb-2">Ready to Start?</h3>
+            <p className="text-[#6B5435]/70 mb-8 font-medium text-sm">
+              To enroll in this training program, please contact your <span className="text-[#E8631A] font-bold">Team Leader</span> directly.
+            </p>
+            <button 
+              onClick={() => setShowEnrollAlert(false)}
+              className="w-full py-4 bg-[#9FD356] text-[#6B5435] font-black rounded-2xl border-b-4 border-[#7CB342] hover:translate-y-0.5 transition-all shadow-lg"
+            >
+              Got it!
+            </button>
+          </motion.div>
+        </div>
+      )}
+
       {/* Header */}
       <div className="bg-white border-b border-[#E8E1D9] p-5 sticky top-0 z-50">
         <div className="container mx-auto flex items-center justify-between">
@@ -80,7 +107,10 @@ export const TrainingPage: React.FC<TrainingPageProps> = ({ data }) => {
                   </a>
                 </div>
 
-                <button className="w-full py-4 bg-[#9FD356] text-white rounded-xl font-black text-sm uppercase tracking-widest shadow-lg shadow-[#9FD356]/20 transition-all hover:bg-[#8B6F47] hover:-translate-y-1 active:scale-95">
+                <button 
+                  onClick={() => setShowEnrollAlert(true)}
+                  className="w-full py-4 bg-[#9FD356] text-white rounded-xl font-black text-sm uppercase tracking-widest shadow-lg shadow-[#9FD356]/20 transition-all hover:bg-[#8B6F47] hover:-translate-y-1 active:scale-95"
+                >
                   Enroll Now
                 </button>
               </div>

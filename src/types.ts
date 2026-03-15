@@ -94,8 +94,8 @@ export interface SpiceDeal {
 }
 
 export interface ProjectLeaderboardEntry {
-  name: string;
-  days: number;
+  memberId: string;
+  [key: string]: any;
 }
 
 export interface Project {

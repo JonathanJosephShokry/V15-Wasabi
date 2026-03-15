@@ -700,7 +700,7 @@
   "projects": [
     {
       "id": "proj-habits", "teamId": "team1", "name": "Habits",
-      "members": ["Peter", "Jonathan", "Daniel Rafik", "Mina", "Philo", "Abanoub Ashraf", "Chris"],
+      "members": ["member_peter", "member_jonathan", "member_daniel_rafik", "member_mina", "member_philip", "member_abanoub_ashraf", "member_chris"],
       "description": "Daily habit tracking and accountability",
       "minimumWork": "Send 1 habit", "baseSalary": 1,
       "startDate": "12-10-2025", "active": true, "projectManagerId": "member_jonathan",
@@ -719,9 +719,9 @@
         { "work": "50 habits", "salary": 20 }
       ],
       "lastCycleLeaderboard": [
-        { "name": "Jonathan", "habits": 48 },
-        { "name": "Philo", "habits": 29 },
-        { "name": "Peter", "habits": 23 }
+        { "memberId": "member_jonathan", "habits": 48 },
+        { "memberId": "member_philip", "habits": 29 },
+        { "memberId": "member_peter", "habits": 23 }
       ],
       "prizes": {
         "1st": { "characterId": "rare_token", "degree": "iron" },
@@ -733,12 +733,12 @@
     {
       "id": "proj-bible", "teamId": "team1", "name": "Bible",
       "members": [
-        "Joren", "Haneen", "Marette", "Nour", "Jonathan", "Yassa", "Samih", "Daniel Rafik", "Philo", "Karen", "Karim", "Yana",
-        "David Michael", "Manuel", "Daniel Walaa", "Kevin", "Chris", "Peter", "Jenny", "Yasmine"
+        "member_joren", "member_haneen", "member_marette", "member_nour", "member_jonathan", "member_yassa", "member_samih", "member_daniel_rafik", "member_philip", "member_karen", "member_karim", "member_yana",
+        "member_david_michael", "member_manuel", "member_daniel_walaa", "member_kevin", "member_chris", "member_peter", "member_jenny", "member_yasmine"
       ],
       "description": "Daily Bible Time", "minimumWork": "Read 1 passage", "baseSalary": 1,
       "startDate": "16-02-2026", "active": true, "projectManagerId": "member_jonathan",
-      "maxMembers": 10,
+      "maxMembers": 20,
       "rules": [
         "Send daily passages you read from the bible",
         "(Optionaly) Share one reflection or verse that stood out",
@@ -749,11 +749,10 @@
         { "work": "7 days", "salary": 7 }, { "work": "10 days", "salary": 10 }
       ],
       "lastCycleLeaderboard": [
-        { "name": "Jonathan", "days": 10 },
-        { "name": "Karen", "days": 9 },
-        { "name": "Yana", "days": 9 },
-        { "name": "Haneen", "days": 8 }
-
+        { "memberId": "member_jonathan", "days": 10 },
+        { "memberId": "member_karen", "days": 9 },
+        { "memberId": "member_yana", "days": 9 },
+        { "memberId": "member_haneen", "days": 8 }
       ],
       "prizes": {
         "1st": { "characterId": "rare_token", "degree": "iron" },
@@ -764,7 +763,7 @@
     {
       "id": "proj-bible2", "teamId": "team1", "name": "Bible 2",
       "members": [
-        "Abanoub Mohsen", "Mina", "Lucas", "Rafik", "Jonathan"
+        "member_abanoub_mohsen", "member_mina", "member_lucas", "member_rafik_boules", "member_jonathan"
       ],
       "description": "Daily Bible Time", "minimumWork": "Read 1 passage", "baseSalary": 1,
       "startDate": "16-02-2026", "active": true, "projectManagerId": "member_jonathan",
@@ -788,10 +787,10 @@
     },
     {
       "id": "proj-study", "teamId": "team1", "name": "Study",
-      "members": ["Jonathan", "Kevin"], "description": "Acedemic study on a timer app",
+      "members": ["member_jonathan", "member_kevin"], "description": "Acedemic study on a timer app",
       "minimumWork": "Study 3 hours", "baseSalary": 3,
       "startDate": "01-03-2026", "active": true, "projectManagerId": "member_jonathan",
-      "maxMembers": 20,
+      "maxMembers": 10,
       "rules": [
         "Use a timer app to track study sessions.",
         "Minimum 3 hours per 10-day cycle."
@@ -802,7 +801,7 @@
         { "work": "30 hours", "salary": 30 }, { "work": "50 hours", "salary": 50 }
       ],
       "lastCycleLeaderboard": [
-        { "name": "Jonathan", "hours": 5 }
+        { "memberId": "member_jonathan", "hours": 5 }
       ],
       "prizes": {}
     },
@@ -829,7 +828,7 @@
     },
     {
       "id": "hidden_in_my_heart", "teamId": "team1", "name": "Hidden in My Heart",
-      "members": ["David Michael", "Jonathan", "Daniel Rafik", "Samih", "Daniel Walaa"], "description": "Bible verses memorization",
+      "members": ["member_david_michael", "member_jonathan", "member_daniel_rafik", "member_samih", "member_daniel_walaa"], "description": "Bible verses memorization",
       "minimumWork": "5 verses", "baseSalary": 1,
       "startDate": "10-03-2026", "active": true, "projectManagerId": "member_david_michael",
       "maxMembers": 10,
@@ -846,7 +845,7 @@
     },
     {
       "id": "languages", "teamId": "team1", "name": "Languages",
-      "members": ["Joren"], "description": "Studying a foregeion language",
+      "members": ["member_joren"], "description": "Studying a foregeion language",
       "minimumWork": "2 lessons, 1 video", "baseSalary": 1,
       "startDate": "10-03-2026", "active": true, "projectManagerId": "member_joren",
       "maxMembers": 10,

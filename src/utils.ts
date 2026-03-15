@@ -52,13 +52,18 @@ export function getActiveSportEvent(data: WasabiData, date: Date): SportEvent | 
   return data.sportEvents.find(event => {
     const start = new Date(event.startDate);
     const end = new Date(event.endDate);
+    end.setHours(23, 59, 59, 999);
     return date >= start && date <= end && event.visible;
   });
 }
 
 export function getLastFinishedSportEvent(data: WasabiData, date: Date): SportEvent | undefined {
   const finished = data.sportEvents
-    .filter(event => new Date(event.endDate) < date && event.visible)
+    .filter(event => {
+      const end = new Date(event.endDate);
+      end.setHours(23, 59, 59, 999);
+      return end < date && event.visible;
+    })
     .sort((a, b) => new Date(b.endDate).getTime() - new Date(a.endDate).getTime());
   
   return finished[0];
@@ -68,6 +73,7 @@ export function getActiveCraftingSet(data: WasabiData, now: Date): CraftingSet |
   return data.crafting_sets.find(set => {
     const start = new Date(set.start_date);
     const end = new Date(set.end_date);
+    end.setHours(23, 59, 59, 999);
     return now >= start && now <= end;
   });
 }
@@ -76,6 +82,7 @@ export function getActivePackSale(data: WasabiData, now: Date): PackSale | undef
   return data.pack_sales.find(sale => {
     const start = new Date(sale.start_date);
     const end = new Date(sale.end_date);
+    end.setHours(23, 59, 59, 999);
     return now >= start && now <= end;
   });
 }

@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { WasabiData, Project, Member } from '../types';
-import { ArrowLeft, Clock, Users, Trophy, ListChecks } from 'lucide-react';
+import { ArrowLeft, Clock, Users, Trophy, ListChecks, UserPlus } from 'lucide-react';
 import { getProjectAge, getProjectTheme } from '../utils';
 
 interface ProjectDetailsProps {
@@ -11,6 +11,7 @@ interface ProjectDetailsProps {
 
 export const ProjectDetails: React.FC<ProjectDetailsProps> = ({ data }) => {
   const { projectId } = useParams<{ projectId: string }>();
+  const [showEnrollAlert, setShowEnrollAlert] = useState(false);
   const project = data.projects.find(p => p.id === projectId);
 
   if (!project) return <div className="p-20 text-center">Project not found</div>;
@@ -21,6 +22,30 @@ export const ProjectDetails: React.FC<ProjectDetailsProps> = ({ data }) => {
 
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="bg-[#FAFAFA] min-h-screen pb-20">
+      {/* Custom Alert Modal */}
+      {showEnrollAlert && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+          <motion.div 
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            className="bg-white rounded-3xl p-8 max-w-sm w-full shadow-2xl border-4 border-[#9FD356] text-center"
+          >
+            <div className="w-20 h-20 bg-[#9FD356]/20 rounded-full flex items-center justify-center mx-auto mb-6">
+              <UserPlus size={40} className="text-[#9FD356]" />
+            </div>
+            <h3 className="text-2xl font-black text-[#6B5435] mb-2">Join the Team!</h3>
+            <p className="text-[#6B5435]/70 mb-8 font-medium text-sm leading-relaxed">
+              To enroll in <span className="text-[#9FD356] font-bold">{project.name}</span>, please contact your <span className="text-[#E8631A] font-bold">Team Leader</span> directly.
+            </p>
+            <button 
+              onClick={() => setShowEnrollAlert(false)}
+              className="w-full py-4 bg-[#9FD356] text-[#6B5435] font-black rounded-2xl border-b-4 border-[#7CB342] hover:translate-y-0.5 transition-all shadow-lg"
+            >
+              Got it!
+            </button>
+          </motion.div>
+        </div>
+      )}
       <div className="bg-white border-b-2 border-[#E0E0E0] p-5">
         <Link to={`/team/${project.teamId}`} className="inline-flex items-center gap-1.5 px-5 py-2.5 bg-[#9FD356] text-white no-underline rounded-lg font-semibold transition-all hover:bg-[#8B6F47] hover:-translate-x-1">
           <ArrowLeft size={20} />
@@ -32,7 +57,15 @@ export const ProjectDetails: React.FC<ProjectDetailsProps> = ({ data }) => {
         {/* Header Section */}
         <div className="bg-white p-10 rounded-2xl border-2 border-[#E0E0E0] text-center shadow-md mb-8">
           <h1 className="text-4xl md:text-5xl font-bold text-[#6B5435] mb-4">{project.name}</h1>
-          <p className="text-lg text-[#666666] max-w-2xl mx-auto leading-relaxed">{project.description}</p>
+          <p className="text-lg text-[#666666] max-w-2xl mx-auto leading-relaxed mb-8">{project.description}</p>
+          
+          <button 
+            onClick={() => setShowEnrollAlert(true)}
+            className="inline-flex items-center gap-2 px-8 py-4 bg-[#9FD356] text-[#6B5435] font-black rounded-2xl border-b-4 border-[#7CB342] hover:translate-y-0.5 transition-all shadow-lg active:scale-95"
+          >
+            <UserPlus size={24} />
+            Enroll Now
+          </button>
           
           {/* Project Age Section */}
           <div className={`mt-8 inline-flex flex-col items-center gap-2 p-6 rounded-2xl border-2 transition-all shadow-sm min-w-[220px] ${
@@ -74,8 +107,8 @@ export const ProjectDetails: React.FC<ProjectDetailsProps> = ({ data }) => {
                 </div>
               </div>
               <div className="flex flex-wrap gap-4 justify-center">
-                {project.members.map(name => {
-                  const m = data.members.find(x => x.name === name);
+                {project.members.map(memberId => {
+                  const m = data.members.find(x => x.id === memberId);
                   if (!m) return null;
                   const isPM = project.projectManagerId === m.id;
                   return (
@@ -142,14 +175,15 @@ export const ProjectDetails: React.FC<ProjectDetailsProps> = ({ data }) => {
                 </h3>
                 <div className="space-y-3">
                   {project.lastCycleLeaderboard.map((entry: any, i) => {
-                    // Find the value key (the one that isn't 'name')
-                    const valueKey = Object.keys(entry).find(k => k !== 'name');
+                    // Find the value key (the one that isn't 'memberId')
+                    const valueKey = Object.keys(entry).find(k => k !== 'memberId');
                     if (!valueKey) return null;
                     
                     const value = entry[valueKey];
                     const unitLabel = valueKey.charAt(0).toUpperCase() + valueKey.slice(1);
                     
                     const rank = project.lastCycleLeaderboard!.filter((e: any) => e[valueKey] > value).length + 1;
+                    const member = data.members.find(m => m.id === entry.memberId);
                     
                     return (
                       <div key={i} className={`flex items-center justify-between p-4 rounded-xl border-2 transition-all hover:bg-[#FAFAFA] ${
@@ -165,7 +199,7 @@ export const ProjectDetails: React.FC<ProjectDetailsProps> = ({ data }) => {
                           }`}>
                             {rank}
                           </div>
-                          <div className="font-bold text-[#6B5435]">{entry.name}</div>
+                          <div className="font-bold text-[#6B5435]">{member?.name || 'Unknown'}</div>
                         </div>
                         <div className="text-sm font-black text-[#9FD356] bg-white px-4 py-1.5 rounded-full border border-[#E0E0E0] shadow-sm">
                           {value} {unitLabel}
