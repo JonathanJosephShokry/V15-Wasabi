@@ -1,5 +1,5 @@
 {
-  "version": "V19.4",
+  "version": "V20",
   "cardConfig": {
     "rarityScores": {
       "common": 2,
@@ -194,7 +194,7 @@
       "images": { "iron": "marceline.jpg", "bronze": "marceline.jpg", "silver": "marceline.jpg", "pearl": "jake10.jpg", "gold": "jake10.jpg", "jade": "jake10.jpg", "sapphire": "jake10.jpg", "ruby": "jake10.jpg", "emerald": "jake10.jpg", "diamond": "jake10.jpg" }
     },
     {
-      "id": "sponegbob", "name": "Spongebob", "rarity": "common", "packageId": "spongebob_pack",
+      "id": "spongebob", "name": "Spongebob", "rarity": "common", "packageId": "spongebob_pack",
       "images": { "iron": "sponegbob.jpg", "bronze": "sponegbob.jpg", "silver": "spongbob.jpg", "pearl": "spongbob.jpg", "gold": "spongbob.jpg", "jade": "spongbob.jpg", "sapphire": "spongbob.jpg", "ruby": "spongbob.jpg", "emerald": "spongbob.jpg", "diamond": "spongbob.jpg" }
     },
     {
@@ -349,7 +349,7 @@
       ]
     },
     {
-      "id": "member_jonathan",
+      "id": "member_jonathan_joseph",
       "name": "Jonathan", "icon": "grizz.jpg",
       "wabi": 38, "spice": 1, "exp": 3, "teamId": "team1", "role": "leader",
       "collection": [
@@ -371,7 +371,7 @@
       ]
     },
     {
-      "id": "member_samih",
+      "id": "member_samih_nasser",
       "name": "Samih", "icon": "charlie.jpg",
       "wabi": 5, "spice": 1, "exp": 3, "teamId": "team1", "role": "leader",
       "collection": [
@@ -399,7 +399,7 @@
       ]
     },
     {
-      "id": "member_peter",
+      "id": "member_peter_boshra",
       "name": "Peter", "icon": "pu3.jpg",
       "wabi": 18, "spice": 0, "exp": 3, "teamId": "team1", "role": "normal",
       "collection": [
@@ -632,49 +632,49 @@
           "type": "craft",
           "date": "2026-03-07",
           "description": "Jonathan crafted Larry (Bronze)",
-          "details": { "fromMemberId": "member_jonathan", "cardId": "larry" }
+          "details": { "fromMemberId": "member_jonathan_joseph", "cardId": "larry" }
         },
         {
           "id": "h4",
           "type": "purchase",
           "date": "2026-03-11",
           "description": "Jonathan bought 3 Kung Fu Panda Packs",
-          "details": { "fromMemberId": "member_jonathan", "packId":"kungfu_pack" }
+          "details": { "fromMemberId": "member_jonathan_joseph", "packId":"kungfu_pack" }
         },
         {
           "id": "h5",
           "type": "purchase",
           "date": "2026-03-11",
           "description": "Samih bought 2 Kung Fu Panda Packs",
-          "details": { "fromMemberId": "member_samih", "cardId": "kungfu_pack" }
+          "details": { "fromMemberId": "member_samih_nasser", "cardId": "kungfu_pack" }
         },
         {
           "id": "h6",
           "type": "trade",
           "date": "2026-03-11",
           "description": "Samih traded Pu (Bronze) to Jonathan for Monkey (Iron)",
-          "details": { "fromMemberId": "member_samih", "cardId": "pu" }
+          "details": { "fromMemberId": "member_samih_nasser", "cardId": "pu" }
         },
         {
           "id": "h7",
           "type": "trade",
           "date": "2026-03-12",
           "description": "Samih traded Four Arms (Iron) and Pu (Iron) to Peter for Gumball (Iron)",
-          "details": { "fromMemberId": "member_samih", "cardId": "four_arms" }
+          "details": { "fromMemberId": "member_samih_nasser", "cardId": "four_arms" }
         },
         {
           "id": "h8",
           "type": "trade",
           "date": "2026-03-12",
           "description": "Samih traded Darwin (Bronze) to Philo for Common Token (Bronze)",
-          "details": { "fromMemberId": "member_samih", "cardId": "darwin" }
+          "details": { "fromMemberId": "member_samih_nasser", "cardId": "darwin" }
         },
         {
           "id": "h9",
           "type": "craft",
           "date": "2026-03-13",
           "description": "Samih crafted Larry (Bronze)",
-          "details": { "fromMemberId": "member_samih", "cardId": "larry" }
+          "details": { "fromMemberId": "member_samih_nasser", "cardId": "larry" }
         }
       ]
     }
@@ -700,10 +700,10 @@
   "projects": [
     {
       "id": "proj-habits", "teamId": "team1", "name": "Habits",
-      "members": ["member_peter", "member_jonathan", "member_daniel_rafik", "member_mina", "member_philip", "member_abanoub_ashraf", "member_chris"],
+      "members": ["member_peter_boshra", "member_jonathan_joseph", "member_daniel_rafik", "member_mina", "member_philip", "member_abanoub_ashraf", "member_chris"],
       "description": "Daily habit tracking and accountability",
       "minimumWork": "Send 1 habit", "baseSalary": 1,
-      "startDate": "12-10-2025", "active": true, "projectManagerId": "member_jonathan",
+      "startDate": "12-10-2025", "active": true, "projectManagerId": "member_jonathan_joseph",
       "maxMembers": 10,
       "rules": [
         "Have a habit tracker app",
@@ -719,9 +719,9 @@
         { "work": "50 habits", "salary": 20 }
       ],
       "lastCycleLeaderboard": [
-        { "memberId": "member_jonathan", "habits": 48 },
+        { "memberId": "member_jonathan_joseph", "habits": 48 },
         { "memberId": "member_philip", "habits": 29 },
-        { "memberId": "member_peter", "habits": 23 }
+        { "memberId": "member_peter_boshra", "habits": 23 }
       ],
       "prizes": {
         "1st": { "characterId": "rare_token", "degree": "iron" },
@@ -733,11 +733,11 @@
     {
       "id": "proj-bible", "teamId": "team1", "name": "Bible",
       "members": [
-        "member_joren", "member_haneen", "member_marette", "member_nour", "member_jonathan", "member_yassa", "member_samih", "member_daniel_rafik", "member_philip", "member_karen", "member_karim", "member_yana",
-        "member_david_michael", "member_manuel", "member_daniel_walaa", "member_kevin", "member_chris", "member_peter", "member_jenny", "member_yasmine"
+        "member_joren", "member_haneen", "member_marette", "member_nour", "member_jonathan_joseph", "member_yassa", "member_samih_nasser", "member_daniel_rafik", "member_philip", "member_karen", "member_karim", "member_yana",
+        "member_david_michael", "member_manuel", "member_daniel_walaa", "member_kevin", "member_chris", "member_peter_boshra", "member_jenny", "member_yasmine"
       ],
       "description": "Daily Bible Time", "minimumWork": "Read 1 passage", "baseSalary": 1,
-      "startDate": "16-02-2026", "active": true, "projectManagerId": "member_jonathan",
+      "startDate": "16-02-2026", "active": true, "projectManagerId": "member_jonathan_joseph",
       "maxMembers": 20,
       "rules": [
         "Send daily passages you read from the bible",
@@ -749,7 +749,7 @@
         { "work": "7 days", "salary": 7 }, { "work": "10 days", "salary": 10 }
       ],
       "lastCycleLeaderboard": [
-        { "memberId": "member_jonathan", "days": 10 },
+        { "memberId": "member_jonathan_joseph", "days": 10 },
         { "memberId": "member_karen", "days": 9 },
         { "memberId": "member_yana", "days": 9 },
         { "memberId": "member_haneen", "days": 8 }
@@ -763,10 +763,10 @@
     {
       "id": "proj-bible2", "teamId": "team1", "name": "Bible 2",
       "members": [
-        "member_abanoub_mohsen", "member_mina", "member_lucas", "member_rafik_boules", "member_jonathan"
+        "member_abanoub_mohsen", "member_mina", "member_lucas", "member_rafik_boules", "member_jonathan_joseph"
       ],
       "description": "Daily Bible Time", "minimumWork": "Read 1 passage", "baseSalary": 1,
-      "startDate": "16-02-2026", "active": true, "projectManagerId": "member_jonathan",
+      "startDate": "16-02-2026", "active": true, "projectManagerId": "member_jonathan_joseph",
       "maxMembers": 10,
       "rules": [
         "Send daily passages you read from the bible",
@@ -787,9 +787,9 @@
     },
     {
       "id": "proj-study", "teamId": "team1", "name": "Study",
-      "members": ["member_jonathan", "member_kevin"], "description": "Acedemic study on a timer app",
+      "members": ["member_jonathan_joseph", "member_kevin"], "description": "Acedemic study on a timer app",
       "minimumWork": "Study 3 hours", "baseSalary": 3,
-      "startDate": "01-03-2026", "active": true, "projectManagerId": "member_jonathan",
+      "startDate": "01-03-2026", "active": true, "projectManagerId": "member_jonathan_joseph",
       "maxMembers": 10,
       "rules": [
         "Use a timer app to track study sessions.",
@@ -801,7 +801,7 @@
         { "work": "30 hours", "salary": 30 }, { "work": "50 hours", "salary": 50 }
       ],
       "lastCycleLeaderboard": [
-        { "memberId": "member_jonathan", "hours": 5 }
+        { "memberId": "member_jonathan_joseph", "hours": 5 }
       ],
       "prizes": {}
     },
@@ -828,7 +828,7 @@
     },
     {
       "id": "hidden_in_my_heart", "teamId": "team1", "name": "Hidden in My Heart",
-      "members": ["member_david_michael", "member_jonathan", "member_daniel_rafik", "member_samih", "member_daniel_walaa"], "description": "Bible verses memorization",
+      "members": ["member_david_michael", "member_jonathan_joseph", "member_daniel_rafik", "member_samih_nasser", "member_daniel_walaa"], "description": "Bible verses memorization",
       "minimumWork": "5 verses", "baseSalary": 1,
       "startDate": "10-03-2026", "active": true, "projectManagerId": "member_david_michael",
       "maxMembers": 10,
@@ -881,9 +881,9 @@
         "3rd": { "characterId": "common_token", "degree": "iron" }
       },
       "winners": [
-        { "place": 1, "memberId": "member_jonathan", "score": 450 },
-        { "place": 2, "memberId": "member_peter", "score": 410 },
-        { "place": 3, "memberId": "member_samih", "score": 380 }
+        { "place": 1, "memberId": "member_jonathan_joseph", "score": 450 },
+        { "place": 2, "memberId": "member_peter_boshra", "score": 410 },
+        { "place": 3, "memberId": "member_samih_nasser", "score": 380 }
       ]
     },
     {
@@ -900,8 +900,8 @@
         "3rd": { "characterId": "rare_token", "degree": "iron" }
       },
       "winners": [
-        { "place": 1, "memberId": "member_peter", "score": 120 },
-        { "place": 2, "memberId": "member_samih", "score": 115 },
+        { "place": 1, "memberId": "member_peter_boshra", "score": 120 },
+        { "place": 2, "memberId": "member_samih_nasser", "score": 115 },
         { "place": 3, "memberId": "member_yassa", "score": 90 }
       ]
     },
@@ -1562,7 +1562,7 @@
     },
     {
       "id": "set_2",
-      "start_date": "2026-03-16",
+      "start_date": "2026-03-15",
       "end_date": "2026-03-21",
       "crafts": [
         {
@@ -1645,8 +1645,8 @@
     },
     {
       "id": "sale_2",
-      "start_date": "2026-03-16",
-      "end_date": "2026-03-31",
+      "start_date": "2026-03-15",
+      "end_date": "2026-04-01",
       "packs": [
         "adventure_time_pack",
         "cars_pack",
@@ -1665,8 +1665,8 @@
     },
     {
       "id": "sale_4",
-      "start_date": "2026-04-16",
-      "end_date": "2026-04-30",
+      "start_date": "2026-04-15",
+      "end_date": "2026-05-01",
       "packs": [
         "angelo_rules_pack",
         "in_the_night_garden_pack",
@@ -1685,8 +1685,8 @@
     },
     {
       "id": "sale_6",
-      "start_date": "2026-05-16",
-      "end_date": "2026-05-31",
+      "start_date": "2026-05-15",
+      "end_date": "2026-06-1",
       "packs": [
           "wreck_it_ralph_pack",
           "ratatouille_pack",
@@ -1705,8 +1705,8 @@
     },
     {
       "id": "sale_8",
-      "start_date": "2026-06-16",
-      "end_date": "2026-06-30",
+      "start_date": "2026-06-15",
+      "end_date": "2026-07-01",
       "packs": [
         "over_the_garden_wall_pack",
         "chowder_pack",
@@ -1725,8 +1725,8 @@
     },
     {
       "id": "sale_10",
-      "start_date": "2026-07-16",
-      "end_date": "2026-07-31",
+      "start_date": "2026-07-15",
+      "end_date": "2026-08-1",
       "packs": [
         "lion_king_pack",
         "monsters_inc_pack",
@@ -1744,8 +1744,8 @@
     },
     {
       "id": "sale_10",
-      "start_date": "2026-08-16",
-      "end_date": "2026-08-31",
+      "start_date": "2026-08-15",
+      "end_date": "2026-09-01",
       "packs": [
         "monsters_inc_university_pack",
         "penguins_of_madagascar_pack"
@@ -1762,8 +1762,8 @@
     },
     {
       "id": "sale_12",
-      "start_date": "2026-09-16",
-      "end_date": "2026-09-30",
+      "start_date": "2026-09-15",
+      "end_date": "2026-10-01",
       "packs": [
         "monsters_inc_university_pack",
         "the_incredibles_pack"
@@ -1780,8 +1780,8 @@
     },
     {
       "id": "sale_14",
-      "start_date": "2026-10-16",
-      "end_date": "2026-10-31",
+      "start_date": "2026-10-15",
+      "end_date": "2026-11-01",
       "packs": [
         "inside_out_pack",
         "kuzco_pack"
@@ -1789,8 +1789,8 @@
     },
     {
       "id": "sale_15",
-      "start_date": "2026-11-16",
-      "end_date": "2026-11-31",
+      "start_date": "2026-11-01",
+      "end_date": "2026-11-15",
       "packs": [
         "zootopia_pack",
         "ice_age_pack"
@@ -1798,8 +1798,8 @@
     },
     {
       "id": "sale_16",
-      "start_date": "2026-11-16",
-      "end_date": "2026-11-30",
+      "start_date": "2026-11-15",
+      "end_date": "2026-12-01",
       "packs": [
         "angry_birds_pack",
         "a_bug's_life_pack"
@@ -1817,8 +1817,8 @@
     },
     {
       "id": "sale_18",
-      "start_date": "2026-12-01",
-      "end_date": "2026-12-31",
+      "start_date": "2026-12-15",
+      "end_date": "2026-01-01",
       "packs": [
         "the_fairly_oddparents_pack",
         "onward_pack",

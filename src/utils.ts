@@ -49,12 +49,14 @@ export function getGlobalRank(memberId: string, data: WasabiData): number {
 }
 
 export function getActiveSportEvent(data: WasabiData, date: Date): SportEvent | undefined {
-  return data.sportEvents.find(event => {
-    const start = new Date(event.startDate);
-    const end = new Date(event.endDate);
-    end.setHours(23, 59, 59, 999);
-    return date >= start && date <= end && event.visible;
-  });
+  return [...data.sportEvents]
+    .sort((a, b) => new Date(b.startDate).getTime() - new Date(a.startDate).getTime())
+    .find(event => {
+      const start = new Date(event.startDate);
+      const end = new Date(event.endDate);
+      end.setHours(23, 59, 59, 999);
+      return date >= start && date <= end && event.visible;
+    });
 }
 
 export function getLastFinishedSportEvent(data: WasabiData, date: Date): SportEvent | undefined {
@@ -70,21 +72,25 @@ export function getLastFinishedSportEvent(data: WasabiData, date: Date): SportEv
 }
 
 export function getActiveCraftingSet(data: WasabiData, now: Date): CraftingSet | undefined {
-  return data.crafting_sets.find(set => {
-    const start = new Date(set.start_date);
-    const end = new Date(set.end_date);
-    end.setHours(23, 59, 59, 999);
-    return now >= start && now <= end;
-  });
+  return [...data.crafting_sets]
+    .sort((a, b) => new Date(b.start_date).getTime() - new Date(a.start_date).getTime())
+    .find(set => {
+      const start = new Date(set.start_date);
+      const end = new Date(set.end_date);
+      end.setHours(23, 59, 59, 999);
+      return now >= start && now <= end;
+    });
 }
 
 export function getActivePackSale(data: WasabiData, now: Date): PackSale | undefined {
-  return data.pack_sales.find(sale => {
-    const start = new Date(sale.start_date);
-    const end = new Date(sale.end_date);
-    end.setHours(23, 59, 59, 999);
-    return now >= start && now <= end;
-  });
+  return [...data.pack_sales]
+    .sort((a, b) => new Date(b.start_date).getTime() - new Date(a.start_date).getTime())
+    .find(sale => {
+      const start = new Date(sale.start_date);
+      const end = new Date(sale.end_date);
+      end.setHours(23, 59, 59, 999);
+      return now >= start && now <= end;
+    });
 }
 
 export function getTimeRemaining(endDate: string, now: Date): string {
