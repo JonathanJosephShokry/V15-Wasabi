@@ -1,5 +1,5 @@
 {
-  "version": "V20.1",
+  "version": "V20.2",
   "cardConfig": {
     "rarityScores": {
       "common": 2,
@@ -28,6 +28,34 @@
     {
       "id": "________", "name": "______", "rarity": "________", "packageId": "________",
       "images": { "iron": "________", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "vincenzo_santorini", "name": "Vincenzo Santorini", "rarity": "rare", "packageId": "atlantis_pack",
+      "images": { "iron": "vincenzo_santorini10.jpg", "bronze": "vincenzo_santorini20.jpg", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "audrey_rocio", "name": "Audrey Rocio", "rarity": "epic", "packageId": "atlantis_pack",
+      "images": { "iron": "audrey_rocio10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "dr_joshua_strongbear", "name": "Dr Joshua Strongbear", "rarity": "epic", "packageId": "atlantis_pack",
+      "images": { "iron": "dr_joshua_strongbear10.jpg", "bronze": "dr_joshua_strongbear20.jpg", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "kashekim_nedakh", "name": "Kashekim Nedakh", "rarity": "never", "packageId": "atlantis_pack",
+      "images": { "iron": "kashekim_nedakh10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "kida", "name": "Kida", "rarity": "legendary", "packageId": "atlantis_pack",
+      "images": { "iron": "kida10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "milo_james_thatch", "name": "Milo James Thatch", "rarity": "legendary", "packageId": "atlantis_pack",
+      "images": { "iron": "milo_james_thatch10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "mole", "name": "Mole", "rarity": "common", "packageId": "atlantis_pack",
+      "images": { "iron": "mole2.jpg", "bronze": "mole20.jpg", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
     },
     {
       "id": "boost", "name": "Boost", "rarity": "never", "packageId": "the_tuner_gang_pack",
@@ -374,21 +402,21 @@
       "images": { "iron": "lumpy_space.jpg", "bronze": "________", "silver": "________", "pearl": "splitToken.jpg", "gold": "splitToken.jpg", "jade": "splitToken.jpg", "sapphire": "splitToken.jpg", "ruby": "splitToken.jpg", "emerald": "splitToken.jpg", "diamond": "splitToken.jpg" }
     },
     {
-      "id": "sarge", "name": "Sarge", "rarity": "rare", "packageId": "cars_pack",
-      "images": { "iron": "sarge.jpg", "bronze": "________", "silver": "________", "pearl": "splitToken.jpg", "gold": "splitToken.jpg", "jade": "splitToken.jpg", "sapphire": "splitToken.jpg", "ruby": "splitToken.jpg", "emerald": "splitToken.jpg", "diamond": "splitToken.jpg" }
+      "id": "sarge", "name": "Sarge", "rarity": "common", "packageId": "cars_pack",
+      "images": { "iron": "sarge.jpg", "bronze": "sarge20.jpg", "silver": "________", "pearl": "splitToken.jpg", "gold": "splitToken.jpg", "jade": "splitToken.jpg", "sapphire": "splitToken.jpg", "ruby": "splitToken.jpg", "emerald": "splitToken.jpg", "diamond": "splitToken.jpg" }
     }
   ],
   "members": [
     {
       "id": "member_abanoub_ashraf",
       "name": "Abanoub Ashraf", "icon": "nom nom.jpg",
-      "wabi": 5, "spice": 0, "exp": 1, "teamId": "team1", "role": "normal",
+      "wabi": 6, "spice": 0, "exp": 2, "teamId": "team1", "role": "normal",
       "collection": [{ "characterId": "nom_nom", "degree": "iron", "count": 1 }],
       "skills": { "english": 0, "chess": 0, "python": 0 },
       "restricted": false, "restrictedUntil": null,
       "sportEventScore": 0,
       "statistics": [
-        { "label": "Habits Completed", "value": 17 }
+        { "label": "Habits Completed", "value": 21 }
       ]
     },
     {
@@ -402,7 +430,7 @@
         { "characterId": "four_arms", "degree": "bronze", "count": 1 }
       ],
       "skills": {},
-      "restricted": false, "restrictedUntil": null,
+      "restricted": true, "restrictedUntil": "2026-03-31",
       "sportEventScore": 0,
       "statistics": [
         { "label": "Bible Days", "value": 5 },
@@ -412,40 +440,47 @@
     {
       "id": "member_david_michael",
       "name": "David Michael", "icon": "burrito.png",
-      "wabi": 6, "spice": 0, "exp": 2, "teamId": "team1", "role": "normal",
-      "collection": [{ "characterId": "burrito", "degree": "iron", "count": 1 }],
+      "wabi": 14, "spice": 0, "exp": 3, "teamId": "team1", "role": "normal",
+      "collection": [
+        { "characterId": "burrito", "degree": "iron", "count": 1 },
+        { "characterId": "common_token", "degree": "iron" }
+      ],
       "skills": { "english": 0, "chess": 0, "python": 0 },
       "sportEventScore": 0,
       "statistics": [
-        { "label": "Bible Days", "value": 6 }
+        { "label": "Bible Days", "value": 14 },
+        { "label": "Bible Verses Memorized", "value": 5}
+
       ]
     },
     {
       "id": "member_jonathan_joseph",
       "name": "Jonathan", "icon": "grizz.jpg",
-      "wabi": 38, "spice": 1, "exp": 3, "teamId": "team1", "role": "leader",
+      "wabi": 49, "spice": 26, "exp": 4, "teamId": "team1", "role": "leader",
       "collection": [
         { "characterId": "grizz", "degree": "iron", "count": 1 },
         { "characterId": "panda", "degree": "iron", "count": 1 },
         { "characterId": "ice_bear", "degree": "iron", "count": 1 },
         { "characterId": "shifu", "degree": "iron", "count": 1 },
         { "characterId": "larry", "degree": "bronze", "count": 1 },
-        { "characterId": "rare_token", "degree": "iron", "count": 2 },
-        { "characterId": "pu", "degree": "silver", "count": 1 }
+        { "characterId": "rare_token", "degree": "iron", "count": 4 },
+        { "characterId": "pu", "degree": "silver", "count": 1 },
+        { "characterId": "finn", "degree": "iron", "count": 1 }
       ],
       "skills": {},
       "restricted": false, "restrictedUntil": null,
       "sportEventScore": 0,
       "statistics": [
-        { "label": "Bible Days", "value": 10 },
-        { "label": "Habits Completed", "value": 48 },
-        { "label": "Hours Studying", "value": 5 }
+        { "label": "Bible Days", "value": 20 },
+        { "label": "Habits Completed", "value": 90 },
+        { "label": "Hours Studying", "value": 11 },
+        { "label": "Bible Verses Memorized", "value": 5}
       ]
     },
     {
       "id": "member_samih_nasser",
       "name": "Samih", "icon": "charlie.jpg",
-      "wabi": 5, "spice": 1, "exp": 3, "teamId": "team1", "role": "leader",
+      "wabi": 10, "spice": 1, "exp": 4, "teamId": "team1", "role": "leader",
       "collection": [
         { "characterId": "charlie", "degree": "iron", "count": 1 },
         { "characterId": "larry", "degree": "bronze", "count": 1 },
@@ -456,24 +491,24 @@
       "restricted": false, "restrictedUntil": null,
       "sportEventScore": 0,
       "statistics": [
-        { "label": "Bible Days", "value": 5 }
+        { "label": "Bible Days", "value": 10 }
       ]
     },
     {
       "id": "member_yassa",
       "name": "Yassa", "icon": "silver bear.jpg",
-      "wabi": 6, "spice": 0, "exp": 3, "teamId": "team1", "role": "normal",
+      "wabi": 7, "spice": 0, "exp": 4, "teamId": "team1", "role": "normal",
       "collection": [{ "characterId": "silver_bear", "degree": "iron", "count": 1 }],
       "skills": {},
       "sportEventScore": 0,
       "statistics": [
-        { "label": "Bible Days", "value": 4 }
+        { "label": "Bible Days", "value": 6 }
       ]
     },
     {
       "id": "member_peter_boshra",
       "name": "Peter", "icon": "pu3.jpg",
-      "wabi": 18, "spice": 0, "exp": 3, "teamId": "team1", "role": "normal",
+      "wabi": 31, "spice": 0, "exp": 4, "teamId": "team1", "role": "normal",
       "collection": [
         { "characterId": "pu", "degree": "silver", "count": 1 },
         { "characterId": "pu", "degree": "iron", "count": 1 },
@@ -485,23 +520,25 @@
       "skills": { "english": 0, "chess": 0, "python": 0 },
       "sportEventScore": 0,
       "statistics": [
-        { "label": "Bible Days", "value": 3 },
-        { "label": "Habits Completed", "value": 23 }
+        { "label": "Bible Days", "value": 9 },
+        { "label": "Habits Completed", "value": 51 }
       ]
     },
     {
       "id": "member_mina",
       "name": "Mina", "icon": "noicon.jpg",
-      "wabi": 4, "spice": 0, "exp": 2, "teamId": "team1", "role": "normal",
+      "wabi": 6, "spice": 0, "exp": 4, "teamId": "team1", "role": "normal",
       "collection": [], "skills": {},
       "sportEventScore": 0,
       "statistics": [
-        { "label": "Habits Completed", "value": 6 }
+        { "label": "Bible Days", "value": 1 },
+        { "label": "Habits Completed", "value": 12 }
       ]
     },
     {
       "id": "member_david_nasser",
-      "name": "David Nasser", "icon": "noicon.jpg", "wabi": 1, "spice": 0, "exp": 1,
+      "name": "David Nasser", "icon": "noicon.jpg",
+      "wabi": 1, "spice": 0, "exp": 1,
       "teamId": "team1", "role": "normal", "collection": [], "skills": {},
       "restricted": false, "restrictedUntil": null,
       "sportEventScore": 0
@@ -509,183 +546,219 @@
     {
       "id": "member_joren",
       "name": "Joren", "icon": "craboo.jpg",
-      "wabi": 21, "spice": 0, "exp": 3, "teamId": "team1", "role": "normal",
-      "collection": [{ "characterId": "craboo", "degree": "iron", "count": 1 }],
+      "wabi": 37, "spice": 0, "exp": 4, "teamId": "team1", "role": "normal",
+      "collection": [
+        { "characterId": "craboo", "degree": "iron", "count": 1 },
+        { "characterId": "common_token", "degree": "iron" }
+      ],
       "skills": {},
       "restricted": false, "restrictedUntil": null,
       "sportEventScore": 0,
       "statistics": [
-        { "label": "Bible Days", "value": 7 }
+        { "label": "Bible Days", "value": 15 },
+        { "label": "Language Lessons", "value": 46 }
       ]
     },
     {
       "id": "member_haneen",
       "name": "Haneen", "icon": "hamster.jpg",
-      "wabi": 11, "spice": 0, "exp": 3, "teamId": "team1", "role": "normal",
+      "wabi": 21, "spice": 0, "exp": 4, "teamId": "team1", "role": "normal",
       "collection": [
         { "characterId": "hamster", "degree": "iron", "count": 1 },
-        { "characterId": "common_token", "degree": "iron", "count": 1 }
+        { "characterId": "common_token", "degree": "iron", "count": 1 },
+        { "characterId": "rare_token", "degree": "iron" }
       ],
       "skills": {},
       "sportEventScore": 0,
       "statistics": [
-        { "label": "Bible Days", "value": 8 }
+        { "label": "Bible Days", "value": 18 }
       ]
     },
     {
       "id": "member_marette",
-      "name": "Marette", "icon": "noicon.jpg", "wabi": 4, "spice": 0, "exp": 3,
+      "name": "Marette", "icon": "noicon.jpg",
+      "wabi": 7, "spice": 0, "exp": 4,
       "teamId": "team1", "role": "normal", "collection": [], "skills": {},
       "sportEventScore": 0,
       "statistics": [
-        { "label": "Bible Days", "value": 3 }
+        { "label": "Bible Days", "value": 6 }
       ]
     },
     {
       "id": "member_nour",
-      "name": "Nour", "icon": "noicon.jpg", "wabi": 6, "spice": 0, "exp": 2,
+      "name": "Nour", "icon": "noicon.jpg",
+      "wabi": 9, "spice": 0, "exp": 3,
       "teamId": "team1", "role": "normal", "collection": [], "skills": {},
       "sportEventScore": 0,
       "statistics": [
-        { "label": "Bible Days", "value": 5 }
+        { "label": "Bible Days", "value": 9 }
       ]
     },
     {
       "id": "member_philip",
-      "name": "Philo", "icon": "joey.jpg", "wabi": 16, "spice": 0, "exp": 2,
+      "name": "Philo", "icon": "joey.jpg",
+      "wabi": 42, "spice": 1, "exp": 3,
       "teamId": "team1", "role": "normal",
       "collection": [
         { "characterId": "joey", "degree": "iron", "count": 1 },
-        { "characterId": "darwin", "degree": "bronze", "count": 1 }
+        { "characterId": "darwin", "degree": "bronze", "count": 1 },
+        { "characterId": "sarge", "degree": "bronze", "count": 1 },
+        { "characterId": "mater", "degree": "iron", "count": 1 },
+        { "characterId": "rare_token", "degree": "iron" },
+        { "characterId": "common_token", "degree": "bronze", "count": 1 }
 
         ]
       , "skills": {},
       "sportEventScore": 0,
       "statistics": [
-        { "label": "Bible Days", "value": 6 },
-        { "label": "Habits Completed", "value": 29 }
+        { "label": "Bible Days", "value": 16 },
+        { "label": "Habits Completed", "value": 70 }
       ]
     },
     {
       "id": "member_karen",
-      "name": "Karen", "icon": "chloe.jpg", "wabi": 6, "spice": 0, "exp": 2,
+      "name": "Karen", "icon": "chloe.jpg",
+      "wabi": 13, "spice": 0, "exp": 3,
       "teamId": "team1", "role": "normal",
       "collection": [
         { "characterId": "chloe", "degree": "iron", "count": 1 },
-        { "characterId": "common_token", "degree": "bronze", "count": 1 }
+        { "characterId": "common_token", "degree": "bronze", "count": 2 }
         ],
       "skills": {},
       "sportEventScore": 0,
       "statistics": [
-        { "label": "Bible Days", "value": 9 }
+        { "label": "Bible Days", "value": 18 }
       ]
     },
     {
       "id": "member_karim",
-      "name": "Karim", "icon": "albino aligator.jpg", "wabi": 3, "spice": 0, "exp": 1,
+      "name": "Karim", "icon": "albino aligator.jpg",
+      "wabi": 8, "spice": 0, "exp": 2,
       "teamId": "team1", "role": "normal",
       "collection": [{ "characterId": "albino_aligator", "degree": "iron", "count": 1 }], "skills": {},
+      "sportEventScore": 0,
+      "statistics": [
+        { "label": "Bible Days", "value": 11 }
+      ]
+    },
+    {
+      "id": "member_yana",
+      "name": "Yana", "icon": "chicken.jpg",
+      "wabi": 12, "spice": 0, "exp": 2,
+      "teamId": "team1", "role": "normal",
+      "collection": [
+        { "characterId": "chicken", "degree": "iron", "count": 1 },
+        { "characterId": "common_token", "degree": "bronze", "count": 2 }
+        ], "skills": {},
+      "sportEventScore": 0,
+      "statistics": [
+        { "label": "Bible Days", "value": 18 }
+      ]
+    },
+    {
+      "id": "member_kevin",
+      "name": "Kevin", "icon": "pinatacat.jpg",
+      "wabi": 33, "spice": 0, "exp": 2,
+      "teamId": "team1", "role": "normal",
+      "collection": [{ "characterId": "piniata_cat", "degree": "iron", "count": 1 }], "skills": {},
+      "sportEventScore": 0,
+      "statistics": [
+        { "label": "Bible Days", "value": 6 },
+        { "label": "Hours Studying", "value": 34 }
+      ]
+    },
+    {
+      "id": "member_chris",
+      "name": "Chris", "icon": "mater10.jpg",
+      "wabi": 28, "spice": 2, "exp": 2,
+      "teamId": "team1", "role": "normal",
+      "collection": [
+        { "characterId": "spongebob", "degree": "iron", "count": 1 },
+        { "characterId": "mater", "degree": "iron", "count": 1 },
+        { "characterId": "fillmore", "degree": "iron", "count": 1 },
+        { "characterId": "common_token", "degree": "iron", "count": 1 }
+      ],
+      "skills": {},
+      "sportEventScore": 0,
+      "statistics": [
+        { "label": "Bible Days", "value": 14 },
+        { "label": "Habits Completed", "value": 40 }
+
+      ]
+    },
+    {
+      "id": "member_daniel_walaa",
+      "name": "Daniel Walaa", "icon": "noicon.jpg",
+      "wabi": 7, "spice": 0, "exp": 2,
+      "teamId": "team1", "role": "normal",
+      "collection": [], "skills": {},
+      "restricted": true, "restrictedUntil": "2026-03-31", 
+      "sportEventScore": 0,
+      "statistics": [
+        { "label": "Bible Days", "value": 10 }
+      ]
+    },
+    {
+      "id": "member_manuel",
+      "name": "Manuel", "icon": "noicon.jpg",
+      "wabi": 12, "spice": 0, "exp": 2,
+      "teamId": "team1", "role": "normal",
+      "collection": [
+        { "characterId": "rare_token", "degree": "iron" }
+      ], "skills": {},
+      "sportEventScore": 0,
+      "statistics": [
+        { "label": "Bible Days", "value": 14 }
+      ]
+    },
+    {
+      "id": "member_jenny",
+      "name": "Jenny", "icon": "noicon.jpg",
+      "wabi": 2, "spice": 0, "exp": 2,
+      "teamId": "team1", "role": "normal",
+      "collection": [], "skills": {},
+      "sportEventScore": 0,
+      "statistics": [
+        { "label": "Bible Days", "value": 4 }
+      ]
+    },
+    {
+      "id": "member_yasmine",
+      "name": "Yasmine", "icon": "noicon.jpg",
+      "wabi": 5, "spice": 0, "exp": 1,
+      "teamId": "team1", "role": "normal",
+      "collection": [], "skills": {},
+      "sportEventScore": 0,
+      "statistics": [
+        { "label": "Bible Days", "value": 6 }
+      ]
+    },
+    {
+      "id": "member_lucas",
+      "name": "Lucas", "icon": "noicon.jpg",
+      "wabi": 5, "spice": 0, "exp": 1,
+      "teamId": "team1", "role": "normal",
+      "collection": [], "skills": {},
+      "sportEventScore": 0,
+      "statistics": [
+        { "label": "Bible Days", "value": 6 }
+      ]
+    },
+    {
+      "id": "member_rafik_boules",
+      "name": "Rafik", "icon": "noicon.jpg",
+      "wabi": 5, "spice": 0, "exp": 1,
+      "teamId": "team1", "role": "normal",
+      "collection": [], "skills": {},
       "sportEventScore": 0,
       "statistics": [
         { "label": "Bible Days", "value": 5 }
       ]
     },
     {
-      "id": "member_yana",
-      "name": "Yana", "icon": "chicken.jpg", "wabi": 5, "spice": 0, "exp": 1,
-      "teamId": "team1", "role": "normal",
-      "collection": [
-        { "characterId": "chicken", "degree": "iron", "count": 1 },
-        { "characterId": "common_token", "degree": "bronze", "count": 1 }
-        ], "skills": {},
-      "sportEventScore": 0,
-      "statistics": [
-        { "label": "Bible Days", "value": 9 }
-      ]
-    },
-    {
-      "id": "member_kevin",
-      "name": "Kevin", "icon": "pinatacat.jpg", "wabi": 2, "spice": 0, "exp": 1,
-      "teamId": "team1", "role": "normal",
-      "collection": [{ "characterId": "piniata_cat", "degree": "iron", "count": 1 }], "skills": {},
-      "sportEventScore": 0,
-      "statistics": [
-        { "label": "Bible Days", "value": 4 }
-      ]
-    },
-    {
-      "id": "member_chris",
-      "name": "Chris", "icon": "noicon.jpg", "wabi": 2, "spice": 25, "exp": 1,
-      "teamId": "team1", "role": "normal",
-      "collection": [], "skills": {},
-      "sportEventScore": 0,
-      "statistics": [
-        { "label": "Bible Days", "value": 4 }
-      ]
-    },
-    {
-      "id": "member_daniel_walaa",
-      "name": "Daniel Walaa", "icon": "noicon.jpg", "wabi": 2, "spice": 0, "exp": 1,
-      "teamId": "team1", "role": "normal",
-      "collection": [], "skills": {},
-      "sportEventScore": 0,
-      "statistics": [
-        { "label": "Bible Days", "value": 4 }
-      ]
-    },
-    {
-      "id": "member_manuel",
-      "name": "Manuel", "icon": "noicon.jpg", "wabi": 2, "spice": 0, "exp": 1,
-      "teamId": "team1", "role": "normal",
-      "collection": [], "skills": {},
-      "sportEventScore": 0,
-      "statistics": [
-        { "label": "Bible Days", "value": 4 }
-      ]
-    },
-    {
-      "id": "member_jenny",
-      "name": "Jenny", "icon": "noicon.jpg", "wabi": 1, "spice": 0, "exp": 1,
-      "teamId": "team1", "role": "normal",
-      "collection": [], "skills": {},
-      "sportEventScore": 0,
-      "statistics": [
-        { "label": "Bible Days", "value": 2 }
-      ]
-    },
-    {
-      "id": "member_yasmine",
-      "name": "Yasmine", "icon": "noicon.jpg", "wabi": 0, "spice": 0, "exp": 0,
-      "teamId": "team1", "role": "normal",
-      "collection": [], "skills": {},
-      "sportEventScore": 0,
-      "statistics": [
-        { "label": "Bible Days", "value": 0 }
-      ]
-    },
-    {
-      "id": "member_lucas",
-      "name": "Lucas", "icon": "noicon.jpg", "wabi": 0, "spice": 0, "exp": 0,
-      "teamId": "team1", "role": "normal",
-      "collection": [], "skills": {},
-      "sportEventScore": 0,
-      "statistics": [
-        { "label": "Bible Days", "value": 0 }
-      ]
-    },
-    {
-      "id": "member_rafik_boules",
-      "name": "Rafik", "icon": "noicon.jpg", "wabi": 0, "spice": 0, "exp": 0,
-      "teamId": "team1", "role": "normal",
-      "collection": [], "skills": {},
-      "sportEventScore": 0,
-      "statistics": [
-        { "label": "Bible Days", "value": 0 }
-      ]
-    },
-    {
       "id": "member_abanoub_mohsen",
-      "name": "Abanoub Mohsen", "icon": "noicon.jpg", "wabi": 0, "spice": 0, "exp": 0,
+      "name": "Abanoub Mohsen", "icon": "noicon.jpg",
+      "wabi": 0, "spice": 0, "exp": 1,
       "teamId": "team1", "role": "normal",
       "collection": [], "skills": {},
       "sportEventScore": 0,
@@ -791,9 +864,9 @@
         { "work": "50 habits", "salary": 20 }
       ],
       "lastCycleLeaderboard": [
-        { "memberId": "member_jonathan_joseph", "habits": 48 },
-        { "memberId": "member_philip", "habits": 29 },
-        { "memberId": "member_peter_boshra", "habits": 23 }
+        { "memberId": "member_jonathan_joseph", "habits": 42 },
+        { "memberId": "member_philip", "habits": 41 },
+        { "memberId": "member_chris", "habits": 40 }
       ],
       "prizes": {
         "1st": { "characterId": "rare_token", "degree": "iron" },
@@ -821,10 +894,14 @@
         { "work": "7 days", "salary": 7 }, { "work": "10 days", "salary": 10 }
       ],
       "lastCycleLeaderboard": [
+        { "memberId": "member_philip", "days": 10 },
+        { "memberId": "member_manuel", "days": 10 },
+        { "memberId": "member_haneen", "days": 10 },
         { "memberId": "member_jonathan_joseph", "days": 10 },
-        { "memberId": "member_karen", "days": 9 },
         { "memberId": "member_yana", "days": 9 },
-        { "memberId": "member_haneen", "days": 8 }
+        { "memberId": "member_karen", "days": 9 },
+        { "memberId": "member_joren", "days": 8 },
+        { "memberId": "member_david_michael", "days": 8 }
       ],
       "prizes": {
         "1st": { "characterId": "rare_token", "degree": "iron" },
@@ -849,13 +926,8 @@
         { "work": "3 days", "salary": 3 }, { "work": "5 days", "salary": 5 },
         { "work": "7 days", "salary": 7 }, { "work": "10 days", "salary": 10 }
       ],
-      "lastCycleLeaderboard": [
-      ],
-      "prizes": {
-        "1st": { "characterId": "rare_token", "degree": "iron" },
-        "2nd": { "characterId": "common_token", "degree": "bronze" },
-        "3rd": { "characterId": "common_token", "degree": "iron" }
-      }
+      "lastCycleLeaderboard": [],
+      "prizes": {}
     },
     {
       "id": "proj-study", "teamId": "team1", "name": "Study",
@@ -994,6 +1066,18 @@
   ],
   "packs": [
     {
+      "packageId": "atlantis_pack",
+      "name": "Atlantis", "banner": "atlantis_banner.jpg",
+      "score": 6,
+      "cost": { "wabi": 18, "spice": 6 },
+      "outcomes": [
+        { "characterId": "mole", "chance": "50%" }, { "characterId": "vincenzo_santorini", "chance": "30%" },
+        { "characterId": "dr_joshua_strongbear", "chance": "7.5%" }, { "characterId": "audrey_rocio", "chance": "7.5%" },
+        { "characterId": "milo_james_thatch", "chance": "2.45%" }, { "characterId": "kida", "chance": "2.45%" },
+        { "characterId": "kashekim_nedakh", "chance": "0.1%" } 
+      ]
+    },
+    {
       "packageId": "gumball_pack",
       "name": "Gumball", "banner": "gumball_banner.jpg",
       "score": 5,
@@ -1030,7 +1114,7 @@
     {
       "packageId": "adventure_time_pack",
       "name": "Adventure Time", "banner": "adventuretime.jpg",
-      "score": 7,
+      "score": 8,
       "cost": { "wabi": 21, "spice": 7 },
       "outcomes": [
         { "characterId": "finn", "chance": "50%" },
@@ -1042,7 +1126,7 @@
     {
       "packageId": "httyd_pack",
       "name": "HTTYD", "banner": "httydbanner.jpg",
-      "score": 9,
+      "score": 8,
       "cost": { "wabi": 27, "spice": 9 },
       "outcomes": [
         { "characterId": "tuffnut", "chance": "25%" }, { "characterId": "ruffnut", "chance": "25%" },
@@ -1053,8 +1137,8 @@
     {
       "packageId": "spongebob_pack",
       "name": "Spongebob", "banner": "spongbobbanner_.jpg",
-      "score": 7,
-      "cost": { "wabi": 21, "spice": 7 },
+      "score": 9,
+      "cost": { "wabi": 23, "spice": 8 },
       "outcomes": [
         { "characterId": "spongebob", "chance": "25%" }, { "characterId": "patrick", "chance": "25%" },
         { "characterId": "squidward", "chance": "15%" }, { "characterId": "sandy", "chance": "15%" },
@@ -1065,8 +1149,8 @@
     {
       "packageId": "cars_pack",
       "name": "Cars", "banner": "cardsbanner.jpg",
-      "score": 8,
-      "cost": { "wabi": 24, "spice": 8 },
+      "score": 6,
+      "cost": { "wabi": 15, "spice": 5 },
       "outcomes": [
         { "characterId": "fillmore", "chance": "25%" }, { "characterId": "sarge", "chance": "25%" }, { "characterId": "mater", "chance": "30%" },
         { "characterId": "sally", "chance": "15%" }, { "characterId": "the_king", "chance": "2.45%" },
@@ -1076,7 +1160,7 @@
     {
       "packageId": "nemo_pack",
       "name": "Finding Nemo", "banner": "findingnemo.jpg",
-      "score": 6,
+      "score": 9,
       "cost": { "wabi": 18, "spice": 6 },
       "outcomes": [
         { "characterId": "marlin", "chance": "50%" }, { "characterId": "dory", "chance": "30%" },
@@ -1113,7 +1197,7 @@
     {
       "packageId": "luca_pack",
       "name": "Luca", "banner": "luca_banner.jpg",
-      "score": 0,
+      "score": 6,
       "cost": { "wabi": 3, "spice": 1 },
       "outcomes": [
 
@@ -1122,7 +1206,7 @@
     {
       "packageId": "angelo_rules_pack",
       "name": "Angelo Rules", "banner": "angelo_rules_banner.jpg",
-      "score": 0,
+      "score": 4,
       "cost": { "wabi": 3, "spice": 1 },
       "outcomes": [
         { "characterId": "david", "chance": "25%" }, { "characterId": "summer", "chance": "25%" },
@@ -1135,7 +1219,7 @@
     {
       "packageId": "in_the_night_garden_pack",
       "name": "NA", "banner": "na.jpg",
-      "score": 0,
+      "score": 3,
       "cost": { "wabi": 3, "spice": 1 },
       "outcomes": [
 
@@ -1144,7 +1228,7 @@
     {
       "packageId": "veggie_tails_pack",
       "name": "NA", "banner": "na.jpg",
-      "score": 0,
+      "score": 5,
       "cost": { "wabi": 3, "spice": 1 },
       "outcomes": [
 
@@ -1154,7 +1238,7 @@
       
       "packageId": "kungfu_evil_pack",
       "name": "NA", "banner": "na.jpg",
-      "score": 0,
+      "score": 13,
       "cost": { "wabi": 3, "spice": 1 },
       "outcomes": [
 
@@ -1163,7 +1247,7 @@
     {
       "packageId": "frozen_pack",
       "name": "NA", "banner": "na.jpg",
-      "score": 0,
+      "score": 9,
       "cost": { "wabi": 3, "spice": 1 },
       "outcomes": [
 
@@ -1172,7 +1256,7 @@
     {
       "packageId": "regular_show_pack",
       "name": "NA", "banner": "na.jpg",
-      "score": 0,
+      "score": 7,
       "cost": { "wabi": 3, "spice": 1 },
       "outcomes": [
 
@@ -1181,7 +1265,7 @@
     {
       "packageId": "wreck_it_ralph_pack",
       "name": "NA", "banner": "na.jpg",
-      "score": 0,
+      "score": 7,
       "cost": { "wabi": 3, "spice": 1 },
       "outcomes": [
 
@@ -1190,7 +1274,7 @@
     {
       "packageId": "ratatouille_pack",
       "name": "NA", "banner": "na.jpg",
-      "score": 0,
+      "score": 9,
       "cost": { "wabi": 3, "spice": 1 },
       "outcomes": [
 
@@ -1199,7 +1283,7 @@
     {
       "packageId": "clarence_pack",
       "name": "NA", "banner": "na.jpg",
-      "score": 0,
+      "score": 5,
       "cost": { "wabi": 3, "spice": 1 },
       "outcomes": [
 
@@ -1208,7 +1292,7 @@
     {
       "packageId": "adventure_time_2_pack",
       "name": "NA", "banner": "na.jpg",
-      "score": 0,
+      "score": 7,
       "cost": { "wabi": 3, "spice": 1 },
       "outcomes": [
 
@@ -1217,7 +1301,7 @@
     {
       "packageId": "teen_titans_go_pack",
       "name": "NA", "banner": "na.jpg",
-      "score": 0,
+      "score": 6,
       "cost": { "wabi": 3, "spice": 1 },
       "outcomes": [
 
@@ -1226,7 +1310,7 @@
     {
       "packageId": "flapjack_pack",
       "name": "NA", "banner": "na.jpg",
-      "score": 0,
+      "score": 6,
       "cost": { "wabi": 3, "spice": 1 },
       "outcomes": [
 
@@ -1235,7 +1319,7 @@
     {
       "packageId": "over_the_garden_wall_pack",
       "name": "NA", "banner": "na.jpg",
-      "score": 0,
+      "score": 7,
       "cost": { "wabi": 3, "spice": 1 },
       "outcomes": [
 
@@ -1244,7 +1328,7 @@
     {
       "packageId": "chowder_pack",
       "name": "NA", "banner": "na.jpg",
-      "score": 0,
+      "score": 6,
       "cost": { "wabi": 3, "spice": 1 },
       "outcomes": [
 
@@ -1253,7 +1337,7 @@
     {
       "packageId": "courage_pack",
       "name": "Courage", "banner": "courage_banner.jpg",
-      "score": 4,
+      "score": 8,
       "cost": { "wabi": 12, "spice": 4 },
       "outcomes": [
         { "characterId": "police_courage", "chance": "50%" }, { "characterId": "computer_courage", "chance": "30%" },
@@ -1264,7 +1348,7 @@
     {
       "packageId": "steven_univers_pack",
       "name": "NA", "banner": "na.jpg",
-      "score": 0,
+      "score": 7,
       "cost": { "wabi": 3, "spice": 1 },
       "outcomes": [
 
@@ -1273,7 +1357,7 @@
     {
       "packageId": "uncle_grandpa_pack",
       "name": "NA", "banner": "na.jpg",
-      "score": 0,
+      "score": 4,
       "cost": { "wabi": 3, "spice": 1 },
       "outcomes": [
 
@@ -1282,7 +1366,7 @@
     {
       "packageId": "ed_edd_eddy_pack",
       "name": "NA", "banner": "na.jpg",
-      "score": 0,
+      "score": 8,
       "cost": { "wabi": 3, "spice": 1 },
       "outcomes": [
 
@@ -1291,7 +1375,7 @@
     {
       "packageId": "lion_king_pack",
       "name": "NA", "banner": "na.jpg",
-      "score": 0,
+      "score": 10,
       "cost": { "wabi": 3, "spice": 1 },
       "outcomes": [
 
@@ -1300,7 +1384,7 @@
     {
       "packageId": "monsters_inc_pack",
       "name": "NA", "banner": "na.jpg",
-      "score": 0,
+      "score": 9,
       "cost": { "wabi": 3, "spice": 1 },
       "outcomes": [
 
@@ -1309,7 +1393,7 @@
     {
       "packageId": "httyd_dragons_pack",
       "name": "NA", "banner": "na.jpg",
-      "score": 0,
+      "score": 7,
       "cost": { "wabi": 3, "spice": 1 },
       "outcomes": [
 
@@ -1318,7 +1402,7 @@
     {
       "packageId": "cars_2_pack",
       "name": "NA", "banner": "na.jpg",
-      "score": 0,
+      "score": 5,
       "cost": { "wabi": 3, "spice": 1 },
       "outcomes": [
 
@@ -1327,7 +1411,7 @@
     {
       "packageId": "pooh_pack",
       "name": "NA", "banner": "na.jpg",
-      "score": 0,
+      "score": 7,
       "cost": { "wabi": 3, "spice": 1 },
       "outcomes": [
 
@@ -1336,7 +1420,7 @@
     {
       "packageId": "penguins_of_madagascar_pack",
       "name": "NA", "banner": "na.jpg",
-      "score": 0,
+      "score": 7,
       "cost": { "wabi": 3, "spice": 1 },
       "outcomes": [
 
@@ -1345,7 +1429,7 @@
     {
       "packageId": "up_pack",
       "name": "NA", "banner": "na.jpg",
-      "score": 0,
+      "score": 7,
       "cost": { "wabi": 3, "spice": 1 },
       "outcomes": [
 
@@ -1354,7 +1438,7 @@
     {
       "packageId": "monsters_inc_university_pack",
       "name": "NA", "banner": "na.jpg",
-      "score": 0,
+      "score": 7,
       "cost": { "wabi": 3, "spice": 1 },
       "outcomes": [
 
@@ -1363,7 +1447,7 @@
     {
       "packageId": "the_incredibles_pack",
       "name": "NA", "banner": "na.jpg",
-      "score": 0,
+      "score": 9,
       "cost": { "wabi": 3, "spice": 1 },
       "outcomes": [
 
@@ -1372,7 +1456,7 @@
     {
       "packageId": "toy_story_pack",
       "name": "NA", "banner": "na.jpg",
-      "score": 0,
+      "score": 10,
       "cost": { "wabi": 3, "spice": 1 },
       "outcomes": [
 
@@ -1381,7 +1465,7 @@
     {
       "packageId": "despicable_me_pack",
       "name": "NA", "banner": "na.jpg",
-      "score": 0,
+      "score": 8,
       "cost": { "wabi": 3, "spice": 1 },
       "outcomes": [
 
@@ -1390,7 +1474,7 @@
     {
       "packageId": "inside_out_pack",
       "name": "NA", "banner": "na.jpg",
-      "score": 0,
+      "score": 9,
       "cost": { "wabi": 3, "spice": 1 },
       "outcomes": [
 
@@ -1399,7 +1483,7 @@
     {
       "packageId": "kuzco_pack",
       "name": "NA", "banner": "na.jpg",
-      "score": 0,
+      "score": 7,
       "cost": { "wabi": 3, "spice": 1 },
       "outcomes": [
 
@@ -1408,7 +1492,7 @@
     {
       "packageId": "zootopia_pack",
       "name": "NA", "banner": "na.jpg",
-      "score": 0,
+      "score": 9,
       "cost": { "wabi": 3, "spice": 1 },
       "outcomes": [
 
@@ -1417,7 +1501,7 @@
     {
       "packageId": "ice_age_pack",
       "name": "NA", "banner": "na.jpg",
-      "score": 0,
+      "score": 8,
       "cost": { "wabi": 3, "spice": 1 },
       "outcomes": [
 
@@ -1426,7 +1510,7 @@
     {
       "packageId": "angry_birds_pack",
       "name": "NA", "banner": "na.jpg",
-      "score": 0,
+      "score": 5,
       "cost": { "wabi": 3, "spice": 1 },
       "outcomes": [
 
@@ -1435,7 +1519,7 @@
     {
       "packageId": "a_bug's_life_pack",
       "name": "NA", "banner": "na.jpg",
-      "score": 0,
+      "score": 7,
       "cost": { "wabi": 3, "spice": 1 },
       "outcomes": [
 
@@ -1444,7 +1528,7 @@
     {
       "packageId": "phineas_and_ferb_pack",
       "name": "NA", "banner": "na.jpg",
-      "score": 0,
+      "score": 8,
       "cost": { "wabi": 3, "spice": 1 },
       "outcomes": [
 
@@ -1453,7 +1537,7 @@
     {
       "packageId": "tom_and_jerry_pack",
       "name": "NA", "banner": "na.jpg",
-      "score": 0,
+      "score": 10,
       "cost": { "wabi": 3, "spice": 1 },
       "outcomes": [
       ]
@@ -1461,7 +1545,7 @@
     {
       "packageId": "bugs_bunny_pack",
       "name": "NA", "banner": "na.jpg",
-      "score": 0,
+      "score": 10,
       "cost": { "wabi": 3, "spice": 1 },
       "outcomes": [
 
@@ -1470,7 +1554,7 @@
     {
       "packageId": "the_fairly_oddparents_pack",
       "name": "NA", "banner": "na.jpg",
-      "score": 0,
+      "score": 8,
       "cost": { "wabi": 3, "spice": 1 },
       "outcomes": [
 
@@ -1479,7 +1563,7 @@
     {
       "packageId": "onward_pack",
       "name": "NA", "banner": "na.jpg",
-      "score": 0,
+      "score": 6,
       "cost": { "wabi": 3, "spice": 1 },
       "outcomes": [
 
@@ -1488,7 +1572,7 @@
     {
       "packageId": "coco_pack",
       "name": "NA", "banner": "na.jpg",
-      "score": 0,
+      "score": 10,
       "cost": { "wabi": 3, "spice": 1 },
       "outcomes": [
 
@@ -1502,6 +1586,33 @@
       "outcomes": [
         { "characterId": "snot_rod", "chance": "80%" }, { "characterId": "dj", "chance": "15%" },
         { "characterId": "wingo", "chance": "4.9%" }, { "characterId": "boost", "chance": "0.1%" }
+      ]
+    },
+    {
+      "packageId": "wall_e_pack",
+      "name": "_________", "banner": "____________",
+      "score": 10,
+      "cost": { "wabi": 0, "spice": 0 },
+      "outcomes": [
+
+      ]
+    },
+     {
+      "packageId": "moana_pack",
+      "name": "_________", "banner": "____________",
+      "score": 9,
+      "cost": { "wabi": 0, "spice": 0 },
+      "outcomes": [
+
+      ]
+    },
+     {
+      "packageId": "big_hero_six_pack",
+      "name": "_________", "banner": "____________",
+      "score": 8,
+      "cost": { "wabi": 0, "spice": 0 },
+      "outcomes": [
+
       ]
     }
   ],
