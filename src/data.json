@@ -1,5 +1,5 @@
 {
-  "version": "V20.2",
+  "version": "V20.3",
   "cardConfig": {
     "rarityScores": {
       "common": 2,
@@ -87,7 +87,7 @@
     },
     {
       "id": "fillmore", "name": "Fillmore", "rarity": "common", "packageId": "cars_pack",
-      "images": { "iron": "fillmore.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+      "images": { "iron": "fillmore.jpg", "bronze": "fillmore20.jpg", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
     },
     {
       "id": "lola", "name": "Lola", "rarity": "legendary", "packageId": "angelo_rules_pack",
@@ -307,7 +307,7 @@
     },
     {
       "id": "mater", "name": "Mater", "rarity": "rare", "packageId": "cars_pack",
-      "images": { "iron": "mater10.jpg", "bronze": "mater20.jpg", "silver": "mater10.jpg", "pearl": "mater10.jpg", "gold": "mater10.jpg", "jade": "mater10.jpg", "sapphire": "mater10.jpg", "ruby": "mater10.jpg", "emerald": "mater10.jpg", "diamond": "mater10.jpg" }
+      "images": { "iron": "mater10.jpg", "bronze": "mater20.jpg", "silver": "mater30.jpg", "pearl": "mater40.jpg", "gold": "mater10.jpg", "jade": "mater10.jpg", "sapphire": "mater10.jpg", "ruby": "mater10.jpg", "emerald": "mater10.jpg", "diamond": "mater10.jpg" }
     },
     {
       "id": "sally", "name": "Sally", "rarity": "epic", "packageId": "cars_pack",
@@ -403,7 +403,7 @@
     },
     {
       "id": "sarge", "name": "Sarge", "rarity": "common", "packageId": "cars_pack",
-      "images": { "iron": "sarge.jpg", "bronze": "sarge20.jpg", "silver": "________", "pearl": "splitToken.jpg", "gold": "splitToken.jpg", "jade": "splitToken.jpg", "sapphire": "splitToken.jpg", "ruby": "splitToken.jpg", "emerald": "splitToken.jpg", "diamond": "splitToken.jpg" }
+      "images": { "iron": "sarge.jpg", "bronze": "sarge20.jpg", "silver": "sarge30.jpg", "pearl": "splitToken.jpg", "gold": "splitToken.jpg", "jade": "splitToken.jpg", "sapphire": "splitToken.jpg", "ruby": "splitToken.jpg", "emerald": "splitToken.jpg", "diamond": "splitToken.jpg" }
     }
   ],
   "members": [
@@ -426,14 +426,11 @@
       "collection": [
         { "characterId": "larry", "degree": "iron", "count": 1 },
         { "characterId": "monkey", "degree": "bronze", "count": 1 },
-        { "characterId": "ben10", "degree": "bronze", "count": 1 },
         { "characterId": "four_arms", "degree": "bronze", "count": 1 },
         { "characterId": "sarge", "degree": "silver", "count": 1 },
         { "characterId": "sarge", "degree": "iron", "count": 1 },
         { "characterId": "mcqueen", "degree": "iron", "count": 1 },
-        { "characterId": "mater", "degree": "bronze", "count": 1 },
-        { "characterId": "mater", "degree": "iron", "count": 1 },
-        { "characterId": "fillmore", "degree": "iron", "count": 1 }
+        { "characterId": "mater", "degree": "silver", "count": 1 }
       ],
       "skills": {},
       "restricted": true, "restrictedUntil": "2026-03-31",
@@ -600,11 +597,14 @@
         { "characterId": "joey", "degree": "iron", "count": 1 },
         { "characterId": "darwin", "degree": "bronze", "count": 1 },
         { "characterId": "sarge", "degree": "silver", "count": 1 },
-        { "characterId": "mater", "degree": "bronze", "count": 1 },
         { "characterId": "rare_token", "degree": "iron" },
         { "characterId": "common_token", "degree": "bronze", "count": 1 },
         { "characterId": "sally", "degree": "iron", "count": 1 },
-        { "characterId": "fillmore", "degree": "iron", "count": 1 }
+        { "characterId": "fillmore", "degree": "iron", "count": 1 },
+        { "characterId": "ben10", "degree": "bronze", "count": 1 },
+        { "characterId": "mater", "degree": "iron", "count": 1 },
+        { "characterId": "spongebob", "degree": "iron", "count": 1 },
+        { "characterId": "common_token", "degree": "iron", "count": 1 }
         ]
       , "skills": {},
       "sportEventScore": 0,
@@ -671,10 +671,8 @@
       "wabi": 28, "spice": 17, "exp": 2,
       "teamId": "team1", "role": "normal",
       "collection": [
-        { "characterId": "spongebob", "degree": "iron", "count": 1 },
-        { "characterId": "mater", "degree": "iron", "count": 2 },
-        { "characterId": "fillmore", "degree": "iron", "count": 2 },
-        { "characterId": "common_token", "degree": "iron", "count": 1 }
+        { "characterId": "mater", "degree": "silver", "count": 1 },
+        { "characterId": "fillmore", "degree": "silver", "count": 1 }
       ],
       "skills": {},
       "sportEventScore": 0,
@@ -975,7 +973,7 @@
     },
     {
       "id": "proj-study", "teamId": "team1", "name": "Study",
-      "members": ["member_jonathan_joseph", "member_kevin", "member_karim", "member_haneen", "member_joren"],
+      "members": ["member_jonathan_joseph", "member_kevin", "member_karim", "member_haneen", "member_joren", "member_chris", "member_yana", "member_karen"],
       "description": "Acedemic study on a timer app",
       "minimumWork": "Study 3 hours", "baseSalary": 3,
       "startDate": "01-03-2026", "active": true, "projectManagerId": "member_jonathan_joseph",
