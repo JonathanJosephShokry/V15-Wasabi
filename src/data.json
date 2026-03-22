@@ -87,7 +87,7 @@
     },
     {
       "id": "fillmore", "name": "Fillmore", "rarity": "common", "packageId": "cars_pack",
-      "images": { "iron": "fillmore.jpg", "bronze": "fillmore20.jpg", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+      "images": { "iron": "fillmore.jpg", "bronze": "fillmore20.jpg", "silver": "fillmore30.jpg", "pearl": "fillmore30.jpg", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
     },
     {
       "id": "lola", "name": "Lola", "rarity": "legendary", "packageId": "angelo_rules_pack",
@@ -973,7 +973,9 @@
     },
     {
       "id": "proj-study", "teamId": "team1", "name": "Study",
-      "members": ["member_jonathan_joseph", "member_kevin", "member_karim", "member_haneen", "member_joren", "member_chris", "member_yana", "member_karen"],
+      "members": ["member_jonathan_joseph", "member_kevin", "member_karim", "member_haneen", "member_joren", "member_chris", "member_yana", "member_karen",
+      "member_peter_boshra"
+      ],
       "description": "Acedemic study on a timer app",
       "minimumWork": "Study 3 hours", "baseSalary": 3,
       "startDate": "01-03-2026", "active": true, "projectManagerId": "member_jonathan_joseph",
