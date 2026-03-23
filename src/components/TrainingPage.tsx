@@ -94,7 +94,7 @@ export const TrainingPage: React.FC<TrainingPageProps> = ({ data }) => {
                     <span className="text-[10px] font-bold text-[#8B6F47] uppercase tracking-widest">Cost</span>
                     <div className="flex items-center gap-3">
                       <span className="text-[#9FD356] font-black">{training.wabi_price} Wabi</span>
-                      <span className="text-[#E91E63] font-black">{training.spice_price} Spice</span>
+                      <span className="text-[#E8631A] font-black">{training.spice_price} Spice</span>
                     </div>
                   </div>
                   <a 

@@ -363,10 +363,19 @@ export const WasabiCards: React.FC<WasabiCardsProps> = ({ data }) => {
 
   const renderPacks = () => (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {data.packs.map((pack, i) => {
-        const chars = pack.outcomes.map(o => data.characters.find(c => c.id === o.characterId)).filter(Boolean) as Character[];
-        const isAnyCardOwned = chars.some(char => isCardOwned(char.id));
-        const MAX_VISIBLE = 4;
+      {data.packs
+        .filter(pack => {
+          // Hide placeholder packs
+          if (pack.name === 'NA' || pack.name === '???' || pack.outcomes.length === 0) return false;
+          
+          // Hide packs with no owned cards (as requested "don't show any of the packs that has the name ??? at all")
+          const chars = pack.outcomes.map(o => data.characters.find(c => c.id === o.characterId)).filter(Boolean) as Character[];
+          return chars.some(char => isCardOwned(char.id));
+        })
+        .map((pack, i) => {
+          const chars = pack.outcomes.map(o => data.characters.find(c => c.id === o.characterId)).filter(Boolean) as Character[];
+          const isAnyCardOwned = true; // Since we filtered, this is always true
+          const MAX_VISIBLE = 4;
         const visible = chars.slice(0, MAX_VISIBLE);
         const hidden = chars.slice(MAX_VISIBLE);
 

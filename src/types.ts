@@ -106,6 +106,7 @@ export interface Project {
   description: string;
   minimumWork: string;
   baseSalary: number;
+  currency?: 'wabi' | 'spice';
   startDate: string;
   active: boolean;
   projectManagerId?: string;

@@ -1,5 +1,5 @@
 {
-  "version": "V20.3",
+  "version": "V21",
   "cardConfig": {
     "rarityScores": {
       "common": 2,
@@ -28,6 +28,30 @@
     {
       "id": "________", "name": "______", "rarity": "________", "packageId": "________",
       "images": { "iron": "________", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "luca", "name": "Luca", "rarity": "common", "packageId": "luca_pack",
+      "images": { "iron": "luca10.jpg", "bronze": "luca20.jpg", "silver": "luca30.jpg", "pearl": "luca40.jpg", "gold": "luca50.jpg", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "alberto", "name": "Alberto", "rarity": "rare", "packageId": "luca_pack",
+      "images": { "iron": "alberto10.jpg", "bronze": "alberto20.jpg", "silver": "alberto30.jpg", "pearl": "alberto40.jpg", "gold": "alberto50.jpg", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "giulia", "name": "Giulia", "rarity": "epic", "packageId": "luca_pack",
+      "images": { "iron": "giulia10.jpg", "bronze": "giulia20.jpg", "silver": "giulia30.jpg", "pearl": "giulia40.jpg", "gold": "giulia50.jpg", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "massimo", "name": "Massimo", "rarity": "epic", "packageId": "luca_pack",
+      "images": { "iron": "massimo10.jpg", "bronze": "massimo20.jpg", "silver": "massimo30.jpg", "pearl": "massimo40.jpg", "gold": "massimo50.jpg", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "machiavelli", "name": "Machiavelli", "rarity": "legendary", "packageId": "luca_pack",
+      "images": { "iron": "machiavelli10.jpg", "bronze": "machiavelli20.jpg", "silver": "machiavelli30.jpg", "pearl": "machiavelli40.jpg", "gold": "machiavelli50.jpg", "jade": "machiavelli60.jpg", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "uncle_ugo", "name": "Uncle Ugo", "rarity": "never", "packageId": "luca_pack",
+      "images": { "iron": "uncle_ugo10.jpg", "bronze": "uncle_ugo20.jpg", "silver": "uncle_ugo30.jpg", "pearl": "uncle_ugo40.jpg", "gold": "uncle_ugo50.jpg", "jade": "uncle_ugo60.jpg", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
     },
     {
       "id": "vincenzo_santorini", "name": "Vincenzo Santorini", "rarity": "rare", "packageId": "atlantis_pack",
@@ -540,10 +564,13 @@
     {
       "id": "member_joren",
       "name": "Joren", "icon": "craboo.jpg",
-      "wabi": 37, "spice": 0, "exp": 4, "teamId": "team1", "role": "normal",
+      "wabi": 37, "spice": 3, "exp": 4, "teamId": "team1", "role": "normal",
       "collection": [
         { "characterId": "craboo", "degree": "iron", "count": 1 },
-        { "characterId": "common_token", "degree": "iron" }
+        { "characterId": "common_token", "degree": "iron" },
+        { "characterId": "mater", "degree": "bronze" },
+        { "characterId": "mater", "degree": "iron" },
+        { "characterId": "finn", "degree": "iron" }
       ],
       "skills": {},
       "restricted": false, "restrictedUntil": null,
@@ -667,7 +694,7 @@
     },
     {
       "id": "member_chris",
-      "name": "Chris", "icon": "mater10.jpg",
+      "name": "Chris", "icon": "mater30.jpg",
       "wabi": 28, "spice": 17, "exp": 2,
       "teamId": "team1", "role": "normal",
       "collection": [
@@ -869,7 +896,7 @@
       "id": "proj-habits", "teamId": "team1", "name": "Habits",
       "members": ["member_peter_boshra", "member_jonathan_joseph", "member_mina", "member_philip", "member_abanoub_ashraf", "member_chris", "member_yasmine"],
       "description": "Daily habit tracking and accountability",
-      "minimumWork": "Send 1 habit", "baseSalary": 1,
+      "minimumWork": "Send 1 habit", "baseSalary": 1, "currency": "spice",
       "startDate": "12-10-2025", "active": true, "projectManagerId": "member_jonathan_joseph",
       "maxMembers": 10,
       "rules": [
@@ -903,7 +930,7 @@
         "member_joren", "member_haneen", "member_marette", "member_nour", "member_jonathan_joseph", "member_yassa", "member_samih_nasser", "member_philip", "member_karen", "member_karim", "member_yana",
         "member_david_michael", "member_manuel", "member_daniel_walaa", "member_kevin", "member_chris", "member_peter_boshra", "member_jenny", "member_yasmine"
       ],
-      "description": "Daily Bible Time", "minimumWork": "Read 1 passage", "baseSalary": 1,
+      "description": "Daily Bible Time", "minimumWork": "Read 1 passage", "baseSalary": 1, "currency": "spice",
       "startDate": "16-02-2026", "active": true, "projectManagerId": "member_jonathan_joseph",
       "maxMembers": 20,
       "rules": [
@@ -936,7 +963,7 @@
       "members": [
         "member_abanoub_mohsen", "member_mina", "member_lucas", "member_rafik_boules", "member_jonathan_joseph", "member_bassem_mounir"
       ],
-      "description": "Daily Bible Time", "minimumWork": "Read 1 passage", "baseSalary": 1,
+      "description": "Daily Bible Time", "minimumWork": "Read 1 passage", "baseSalary": 1, "currency": "spice",
       "startDate": "16-02-2026", "active": true, "projectManagerId": "member_jonathan_joseph",
       "maxMembers": 10,
       "rules": [
@@ -956,7 +983,7 @@
       "members": [
         "member_martin", "member_jonathan_joseph", "member_andrea"
       ],
-      "description": "Daily Bible Time", "minimumWork": "Read 1 passage", "baseSalary": 1,
+      "description": "Daily Bible Time", "minimumWork": "Read 1 passage", "baseSalary": 1, "currency": "spice",
       "startDate": "16-02-2026", "active": true, "projectManagerId": "member_jonathan_joseph",
       "maxMembers": 10,
       "rules": [
@@ -977,7 +1004,7 @@
       "member_peter_boshra"
       ],
       "description": "Acedemic study on a timer app",
-      "minimumWork": "Study 3 hours", "baseSalary": 3,
+      "minimumWork": "Study 3 hours", "baseSalary": 2, "currency": "spice",
       "startDate": "01-03-2026", "active": true, "projectManagerId": "member_jonathan_joseph",
       "maxMembers": 10,
       "rules": [
@@ -985,9 +1012,9 @@
         "Minimum 3 hours per 10-day cycle."
       ],
       "bonusSystem": [
-        { "work": "5 hours", "salary": 5 }, { "work": "10 hours", "salary": 10 },
-        { "work": "15 hours", "salary": 15 }, { "work": "20 hours", "salary": 20 },
-        { "work": "30 hours", "salary": 30 }, { "work": "50 hours", "salary": 50 }
+        { "work": "5 hours", "salary": 4 }, { "work": "10 hours", "salary": 10 },
+        { "work": "15 hours", "salary": 9 }, { "work": "20 hours", "salary": 20 },
+        { "work": "30 hours", "salary": 20 }, { "work": "50 hours", "salary": 50 }
       ],
       "lastCycleLeaderboard": [
         { "memberId": "member_jonathan_joseph", "hours": 5 }
@@ -1019,7 +1046,7 @@
       "id": "hidden_in_my_heart", "teamId": "team1", "name": "Hidden in My Heart",
       "members": ["member_david_michael", "member_jonathan_joseph"],
       "description": "Bible verses memorization",
-      "minimumWork": "5 verses", "baseSalary": 1,
+      "minimumWork": "5 verses", "baseSalary": 1, "currency": "spice",
       "startDate": "10-03-2026", "active": true, "projectManagerId": "member_david_michael",
       "maxMembers": 10,
       "rules": [
@@ -1037,7 +1064,7 @@
       "id": "languages", "teamId": "team1", "name": "Languages",
       "members": ["member_joren", "member_philip", "member_jonathan_joseph"],
       "description": "Studying a foregeion language",
-      "minimumWork": "2 lessons, 1 video", "baseSalary": 1,
+      "minimumWork": "2 lessons, 1 video", "baseSalary": 1, "currency": "spice",
       "startDate": "10-03-2026", "active": true, "projectManagerId": "member_joren",
       "maxMembers": 10,
       "rules": [

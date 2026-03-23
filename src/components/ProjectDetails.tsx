@@ -19,6 +19,20 @@ export const ProjectDetails: React.FC<ProjectDetailsProps> = ({ data }) => {
   const { theme, visual } = getProjectTheme(project.startDate);
   const pm = data.members.find(m => m.id === project.projectManagerId);
 
+  const renderCurrency = (amount: number) => {
+    const isSpice = project.currency === 'spice';
+    return (
+      <div className={`flex items-center gap-1.5 text-lg font-black ${isSpice ? 'text-[#E8631A]' : 'text-[#9FD356]'}`}>
+        <img 
+          src={isSpice ? "/icons/spice-icon.png" : "/icons/wabi-icon.png"} 
+          alt={isSpice ? "Spice" : "Wabi"} 
+          className="w-5 h-5" 
+        />
+        <span>{amount}</span>
+      </div>
+    );
+  };
+
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="bg-[#FAFAFA] min-h-screen pb-20">
       <div className="bg-white border-b-2 border-[#E0E0E0] p-5">
@@ -211,10 +225,7 @@ export const ProjectDetails: React.FC<ProjectDetailsProps> = ({ data }) => {
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-sm font-bold text-[#666666]">Base Salary:</span>
-                  <div className="flex items-center gap-1.5 text-lg font-black text-[#9FD356]">
-                    <img src="/icons/wabi-icon.png" alt="Wabi" className="w-5 h-5" />
-                    <span>{project.baseSalary}</span>
-                  </div>
+                  {renderCurrency(project.baseSalary)}
                 </div>
               </div>
             </section>
@@ -226,10 +237,7 @@ export const ProjectDetails: React.FC<ProjectDetailsProps> = ({ data }) => {
                 {project.bonusSystem.map((bonus, i) => (
                   <div key={i} className="bg-[#FAFAFA] p-4 rounded-xl border-l-4 border-[#9FD356] flex justify-between items-center transition-all hover:bg-[#F0F0F0] hover:border-[#E8631A]">
                     <div className="font-bold text-[#2C2C2C]">{bonus.work}</div>
-                    <div className="flex items-center gap-1.5 text-lg font-black text-[#9FD356]">
-                      <img src="/icons/wabi-icon.png" alt="Wabi" className="w-5 h-5" />
-                      <span>{bonus.salary}</span>
-                    </div>
+                    {renderCurrency(bonus.salary)}
                   </div>
                 ))}
               </div>
