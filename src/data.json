@@ -1,6 +1,6 @@
 {
-  "version": "V22",
-  "wasabiRulesLink": "https://www.instagram.com/wasabi_egypt/",
+  "version": "V22.1",
+  "wasabiRulesLink": "https://docs.google.com/document/d/1SfoDRQbWs7yBSIc6YOW61q7s3s4s-D5OP9TCz7zFO30/edit?usp=sharing",
   "cardConfig": {
     "rarityScores": {
       "common": 2,
@@ -319,6 +319,10 @@
       "images": { "iron": "mr krabs.jpg", "bronze": "mr_krabs21.jpg", "silver": "mr_krabs31.jpg", "pearl": "mr_krabs41.jpg", "gold": "mr_krabs51.jpg", "jade": "mr_krabs61.jpg", "sapphire": "mr_krabs71.jpg", "ruby": "mr_krabs81.jpg", "emerald": "mr_krabs91.jpg", "diamond": "mr_krabs101.jpg" }
     },
     {
+      "id": "gray", "name": "Gray", "rarity": "epic", "packageId": "spongebob_pack",
+      "images": { "iron": "gray10.jpg", "bronze": "gray20.jpg", "silver": "gray30.jpg", "pearl": "gray40.jpg", "gold": "gray50.jpg", "jade": "gray60.jpg", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
       "id": "plankton", "name": "Plankton", "rarity": "legendary", "packageId": "spongebob_pack",
       "images": { "iron": "plankton.jpg", "bronze": "plankton20.jpg", "silver": "plankton30.jpg", "pearl": "plankton40.jpg", "gold": "plankton50.jpg", "jade": "plankton60.jpg", "sapphire": "plankton70.jpg", "ruby": "plankton80.jpg", "emerald": "plankton90.jpg", "diamond": "plankton100.jpg" }
     },
@@ -487,15 +491,13 @@
       "wabi": 49, "spice": 5, "exp": 4, "teamId": "team1", "role": "leader",
       "collection": [
         { "characterId": "grizz", "degree": "iron", "count": 1 },
-        { "characterId": "panda", "degree": "iron", "count": 1 },
-        { "characterId": "ice_bear", "degree": "iron", "count": 1 },
         { "characterId": "shifu", "degree": "iron", "count": 1 },
         { "characterId": "larry", "degree": "bronze", "count": 1 },
-        { "characterId": "rare_token", "degree": "iron", "count": 4 },
-        { "characterId": "pu", "degree": "silver", "count": 1 },
         { "characterId": "finn", "degree": "iron", "count": 1 },
         { "characterId": "finn", "degree": "bronze", "count": 1 },
-        { "characterId": "bmo", "degree": "iron", "count": 1 }
+        { "characterId": "mater", "degree": "pearl", "count": 1 }
+
+
       ],
       "skills": {},
       "restricted": false, "restrictedUntil": null,
@@ -565,13 +567,15 @@
     {
       "id": "member_joren",
       "name": "Joren", "icon": "craboo.jpg",
-      "wabi": 37, "spice": 3, "exp": 4, "teamId": "team1", "role": "normal",
+      "wabi": 37, "spice": 2, "exp": 4, "teamId": "team1", "role": "normal",
       "collection": [
         { "characterId": "craboo", "degree": "iron", "count": 1 },
         { "characterId": "common_token", "degree": "iron" },
-        { "characterId": "mater", "degree": "bronze" },
-        { "characterId": "mater", "degree": "iron" },
-        { "characterId": "finn", "degree": "iron" }
+        { "characterId": "finn", "degree": "iron" },
+        { "characterId": "spongebob", "degree": "iron" },
+        { "characterId": "sally", "degree": "iron" },
+        { "characterId": "ben10", "degree": "bronze" },
+        { "characterId": "sarge", "degree": "iron" }
       ],
       "skills": {},
       "restricted": false, "restrictedUntil": null,
@@ -625,14 +629,14 @@
         { "characterId": "joey", "degree": "iron", "count": 1 },
         { "characterId": "darwin", "degree": "bronze", "count": 1 },
         { "characterId": "sarge", "degree": "silver", "count": 1 },
-        { "characterId": "rare_token", "degree": "iron" },
         { "characterId": "common_token", "degree": "bronze", "count": 1 },
-        { "characterId": "sally", "degree": "iron", "count": 1 },
         { "characterId": "fillmore", "degree": "iron", "count": 1 },
-        { "characterId": "ben10", "degree": "bronze", "count": 1 },
-        { "characterId": "mater", "degree": "iron", "count": 1 },
-        { "characterId": "spongebob", "degree": "iron", "count": 1 },
-        { "characterId": "common_token", "degree": "iron", "count": 1 }
+        { "characterId": "rare_token", "degree": "iron" },
+        { "characterId": "common_token", "degree": "iron", "count": 1 },
+        { "characterId": "pu", "degree": "silver", "count": 1 },
+        { "characterId": "panda", "degree": "iron", "count": 1 },
+        { "characterId": "ice_bear", "degree": "iron", "count": 1 },
+        { "characterId": "bmo", "degree": "iron", "count": 1 }
         ]
       , "skills": {},
       "sportEventScore": 0,
@@ -1037,7 +1041,7 @@
       "id": "pm", "teamId": "team1", "name": "PM",
       "members": ["member_karen", "member_david_michael", "member_jonathan_joseph", "member_joren", "member_peter_boshra"],
       "description": "This is an inactive project.", "currency": "spice",
-      "minimumWork": "None", "baseSalary": 5,
+      "minimumWork": "Project Management", "baseSalary": 5,
       "startDate": "22-03-2026", "active": true, "projectManagerId": "member_jonathan_joseph",
       "maxMembers": 10,
       "rules": [],
@@ -1047,7 +1051,7 @@
       "id": "hidden_in_my_heart", "teamId": "team1", "name": "Hidden in My Heart",
       "members": ["member_david_michael", "member_jonathan_joseph"],
       "description": "Bible verses memorization",
-      "minimumWork": "5 verses", "baseSalary": 1, "currency": "wabi",
+      "minimumWork": "5 Verses", "baseSalary": 1, "currency": "wabi",
       "startDate": "10-03-2026", "active": true, "projectManagerId": "member_david_michael",
       "maxMembers": 20,
       "rules": [
@@ -1217,8 +1221,8 @@
       "outcomes": [
         { "characterId": "spongebob", "chance": "25%" }, { "characterId": "patrick", "chance": "25%" },
         { "characterId": "squidward", "chance": "15%" }, { "characterId": "sandy", "chance": "15%" },
-        { "characterId": "mr_krabs", "chance": "15%" }, { "characterId": "plankton", "chance": "4.9%" },
-        { "characterId": "king_neptune", "chance": "0.1%" }
+        { "characterId": "mr_krabs", "chance": "7.5%" }, { "characterId": "gray", "chance": "7.5%" },
+        { "characterId": "plankton", "chance": "4.9%" }, { "characterId": "king_neptune", "chance": "0.1%" }
       ]
     },
     {
