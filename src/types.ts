@@ -171,6 +171,7 @@ export interface PackSale {
 
 export interface WasabiData {
   version: string;
+  wasabiRulesLink?: string;
   cardConfig: CardConfig;
   characters: Character[];
   members: Member[];

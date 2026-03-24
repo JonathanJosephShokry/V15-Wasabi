@@ -517,7 +517,8 @@ export const WasabiCards: React.FC<WasabiCardsProps> = ({ data }) => {
     return (
       <div className="max-w-3xl mx-auto space-y-3">
         {ranked.map((entry, i) => {
-          const rank = ranked.filter(e => e.score > entry.score).length + 1;
+          const uniqueScoresAbove = new Set(ranked.filter(e => e.score > entry.score).map(e => e.score)).size;
+          const rank = uniqueScoresAbove + 1;
           return (
             <Link 
               key={entry.member.id} 

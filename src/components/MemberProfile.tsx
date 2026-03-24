@@ -247,6 +247,12 @@ export const MemberProfile: React.FC<MemberProfileProps> = ({ data }) => {
                 const score = calcHiddenScore(entry.characterId, degree, data);
                 const imgSrc = char.images[degree] || char.images.iron;
 
+                // Calculate how many users own this exact card (same character and degree)
+                const userCount = data.members.reduce((acc, m) => {
+                  const hasCard = m.collection.some(e => e.characterId === entry.characterId && (e.degree || 'iron') === degree);
+                  return hasCard ? acc + 1 : acc;
+                }, 0);
+
                 return (
                   <div key={i} className="relative group">
                     <div className={`bg-[#FAFAFA] rounded-xl overflow-hidden border-3 transition-all hover:-translate-y-1.5 hover:shadow-xl ${
@@ -271,7 +277,10 @@ export const MemberProfile: React.FC<MemberProfileProps> = ({ data }) => {
                             <span className="px-2 py-0.5 rounded-lg text-[8px] font-bold uppercase tracking-wider border" style={{ borderColor: degColors.border, color: degColors.color }}>{formatDegree(degree)}</span>
                           )}
                         </div>
-                        <div className="text-[10px] font-bold text-[#666666]">Score: {score.toLocaleString()}</div>
+                        <div className="space-y-0.5">
+                          <div className="text-[10px] font-bold text-[#666666]">Score: {score.toLocaleString()}</div>
+                          <div className="text-[10px] font-bold text-[#9FD356]">Count: {userCount}</div>
+                        </div>
                       </div>
                     </div>
                     {count >= 2 && (

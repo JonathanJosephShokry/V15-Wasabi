@@ -163,7 +163,13 @@ export const ProjectDetails: React.FC<ProjectDetailsProps> = ({ data }) => {
                     const value = entry[valueKey];
                     const unitLabel = valueKey.charAt(0).toUpperCase() + valueKey.slice(1);
                     
-                    const rank = project.lastCycleLeaderboard!.filter((e: any) => e[valueKey] > value).length + 1;
+                    // Dense ranking: users with same score share same rank, next rank is +1
+                    const uniqueValuesAbove = new Set(
+                      project.lastCycleLeaderboard!
+                        .map((e: any) => e[valueKey])
+                        .filter((v: any) => v > value)
+                    ).size;
+                    const rank = uniqueValuesAbove + 1;
                     const member = data.members.find(m => m.id === entry.memberId);
                     
                     return (

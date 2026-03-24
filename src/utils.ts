@@ -40,12 +40,21 @@ export function getMemberTotalScore(member: Member, data: WasabiData): number {
 }
 
 export function getGlobalRank(memberId: string, data: WasabiData): number {
-  const ranked = [...data.members].map(m => ({
+  const membersWithScores = data.members.map(m => ({
     id: m.id,
     score: getMemberTotalScore(m, data)
-  })).sort((a, b) => b.score - a.score);
+  }));
   
-  return ranked.findIndex(m => m.id === memberId) + 1;
+  const currentMember = membersWithScores.find(m => m.id === memberId);
+  if (!currentMember) return 0;
+
+  const uniqueScoresAbove = new Set(
+    membersWithScores
+      .filter(m => m.score > currentMember.score)
+      .map(m => m.score)
+  ).size;
+  
+  return uniqueScoresAbove + 1;
 }
 
 export function getActiveSportEvent(data: WasabiData, date: Date): SportEvent | undefined {

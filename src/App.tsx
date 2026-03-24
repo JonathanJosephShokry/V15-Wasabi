@@ -36,7 +36,7 @@ const App: React.FC = () => {
   return (
     <Router>
       <ScrollToTop />
-      <Layout version={data.version}>
+      <Layout version={data.version} wasabiRulesLink={data.wasabiRulesLink}>
         <Routes>
           <Route path="/" element={<Home data={data} />} />
           <Route path="/team/:teamId" element={<TeamPage data={data} />} />
