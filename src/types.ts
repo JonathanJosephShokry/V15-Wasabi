@@ -44,24 +44,9 @@ export interface Member {
   statistics?: { label: string; value: number }[];
 }
 
-export interface HistoryEntry {
-  id: string;
-  type: 'trade' | 'craft' | 'purchase';
-  date: string;
-  description: string;
-  details?: {
-    fromMemberId?: string;
-    toMemberId?: string;
-    cardId?: string;
-    spiceAmount?: number;
-    packId?: string;
-  };
-}
-
 export interface Team {
   id: string;
   name: string;
-  history?: HistoryEntry[];
 }
 
 export interface EventOutcome {

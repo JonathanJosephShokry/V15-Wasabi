@@ -175,3 +175,23 @@ export function getActiveCraftingRecipes(data: WasabiData, now: Date) {
   const activeSet = getActiveCraftingSet(data, now);
   return activeSet ? activeSet.crafts : [];
 }
+
+export function getCurrentCycle(now: Date): { startDate: Date; endDate: Date; daysRemaining: number } {
+  const baseDate = new Date("2026-03-01T00:00:00Z");
+  const diffMs = now.getTime() - baseDate.getTime();
+  const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+  
+  const cycleNumber = Math.floor(diffDays / 10) + 1;
+  const cycleStartDays = (cycleNumber - 1) * 10;
+  
+  const startDate = new Date(baseDate);
+  startDate.setDate(baseDate.getDate() + cycleStartDays);
+  
+  const endDate = new Date(startDate);
+  endDate.setDate(startDate.getDate() + 9);
+  endDate.setHours(23, 59, 59, 999);
+  
+  const daysRemaining = Math.max(0, Math.ceil((endDate.getTime() - now.getTime()) / (1000 * 60 * 60 * 24)));
+  
+  return { startDate, endDate, daysRemaining };
+}

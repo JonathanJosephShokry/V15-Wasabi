@@ -1,13 +1,160 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useSearchParams, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { WasabiData, Character, Member, CollectionEntry, CardPack } from '../types';
-import { ArrowLeft, X, Trophy, BookOpen, Package, Zap, Sparkles, Clock, Plus, Dices, Medal } from 'lucide-react';
+import { ArrowLeft, X, Trophy, BookOpen, Package, Zap, Sparkles, Clock, Plus, Dices, Medal, ChevronLeft, ChevronRight } from 'lucide-react';
 import { calcHiddenScore, getMemberTotalScore, formatRarity, formatDegree, getActiveCraftingRecipes, calculateDaysRemaining, getActiveCraftingSet, getActivePackSale, getTimeRemaining } from '../utils';
 
 interface WasabiCardsProps {
   data: WasabiData;
 }
+
+const DegreePill: React.FC<{ deg: string; config: any }> = ({ deg, config }) => {
+  const [isFlipped, setIsFlipped] = useState(false);
+  
+  return (
+    <motion.div
+      onClick={() => setIsFlipped(!isFlipped)}
+      className="cursor-pointer perspective-1000"
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+    >
+      <motion.div
+        animate={{ rotateY: isFlipped ? 180 : 0 }}
+        transition={{ duration: 0.6, type: 'spring', stiffness: 260, damping: 20 }}
+        className="relative preserve-3d w-24 h-8"
+      >
+        {/* Front */}
+        <div 
+          className="absolute inset-0 backface-hidden rounded-full text-[10px] font-bold border-2 flex items-center justify-center"
+          style={{ 
+            color: config.color, 
+            borderColor: config.border,
+            backgroundColor: `${config.color}25`
+          }}
+        >
+          {formatDegree(deg)}
+        </div>
+        
+        {/* Back */}
+        <div 
+          className="absolute inset-0 backface-hidden rounded-full text-[10px] font-bold border-2 flex items-center justify-center rotate-y-180"
+          style={{ 
+            color: config.color, 
+            borderColor: config.border,
+            backgroundColor: `${config.color}40`
+          }}
+        >
+          x{config.multiplier}
+        </div>
+      </motion.div>
+    </motion.div>
+  );
+};
+
+const ProgressionScroller: React.FC<{ data: WasabiData }> = ({ data }) => {
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const [showLeftArrow, setShowLeftArrow] = useState(false);
+  const [showRightArrow, setShowRightArrow] = useState(true);
+
+  const checkScroll = () => {
+    if (scrollRef.current) {
+      const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
+      setShowLeftArrow(scrollLeft > 10);
+      setShowRightArrow(scrollLeft < scrollWidth - clientWidth - 10);
+    }
+  };
+
+  useEffect(() => {
+    checkScroll();
+    window.addEventListener('resize', checkScroll);
+    return () => window.removeEventListener('resize', checkScroll);
+  }, []);
+
+  const scroll = (direction: 'left' | 'right') => {
+    if (scrollRef.current) {
+      const scrollAmount = 300;
+      scrollRef.current.scrollBy({
+        left: direction === 'left' ? -scrollAmount : scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+  };
+
+  return (
+    <div className="relative group">
+      {/* Left Arrow */}
+      <AnimatePresence>
+        {showLeftArrow && (
+          <motion.button
+            initial={{ opacity: 0, x: 10 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: 10 }}
+            onClick={() => scroll('left')}
+            className="absolute left-2 top-1/2 -translate-y-1/2 z-10 p-2 bg-[#6B5435] text-white rounded-full shadow-lg border border-white/10 hover:bg-[#9FD356] hover:text-[#6B5435] transition-colors hidden md:flex"
+          >
+            <ChevronLeft size={20} />
+          </motion.button>
+        )}
+      </AnimatePresence>
+
+      {/* Right Arrow */}
+      <AnimatePresence>
+        {showRightArrow && (
+          <motion.button
+            initial={{ opacity: 0, x: -10 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -10 }}
+            onClick={() => scroll('right')}
+            className="absolute right-2 top-1/2 -translate-y-1/2 z-10 p-2 bg-[#6B5435] text-white rounded-full shadow-lg border border-white/10 hover:bg-[#9FD356] hover:text-[#6B5435] transition-colors hidden md:flex"
+          >
+            <ChevronRight size={20} />
+          </motion.button>
+        )}
+      </AnimatePresence>
+
+      <div 
+        ref={scrollRef}
+        onScroll={checkScroll}
+        className="bg-white/5 border border-white/10 rounded-2xl p-6 overflow-x-auto no-scrollbar scroll-smooth"
+      >
+        <div className="flex items-center gap-6 px-4 min-w-max">
+          {['iron','bronze','silver','pearl','gold','jade','sapphire','ruby','emerald','diamond'].map((deg, i, arr) => (
+            <React.Fragment key={deg}>
+              <div className="flex flex-col items-center gap-2">
+                <DegreePill deg={deg} config={data.cardConfig.degrees[deg]} />
+                <span className="text-[8px] font-black uppercase tracking-widest text-white/20">Step {i + 1}</span>
+              </div>
+              {i < arr.length - 1 && (
+                <div className="flex flex-col items-center gap-1">
+                  <div className="w-8 h-0.5 bg-gradient-to-r from-white/10 via-white/30 to-white/10 rounded-full"></div>
+                  <span className="text-[8px] font-bold text-white/30">×2</span>
+                </div>
+              )}
+            </React.Fragment>
+          ))}
+        </div>
+      </div>
+      
+      {/* Mobile Hint */}
+      <div className="mt-3 flex justify-center md:hidden">
+        <div className="flex gap-1.5">
+          {['iron','bronze','silver','pearl','gold','jade','sapphire','ruby','emerald','diamond'].map((_, i) => (
+            <div 
+              key={i} 
+              className={`w-1.5 h-1.5 rounded-full transition-colors ${
+                // Approximate current step based on scroll
+                Math.floor((scrollRef.current?.scrollLeft || 0) / 120) === i 
+                ? 'bg-[#9FD356]' 
+                : 'bg-white/10'
+              }`}
+            />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export const WasabiCards: React.FC<WasabiCardsProps> = ({ data }) => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -639,23 +786,17 @@ export const WasabiCards: React.FC<WasabiCardsProps> = ({ data }) => {
       <div className="container mx-auto px-5 py-16">
         {view === 'packs' && (
           <div className="space-y-12">
-            <div className="text-center">
-              <h2 className="text-4xl font-black mb-2">Card Packs</h2>
-              <p className="text-white/45">All packs give Iron degree cards. Combine duplicates to upgrade!</p>
-            </div>
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 overflow-x-auto">
-              <div className="flex items-center gap-2 flex-wrap justify-center min-w-max">
-                {['iron','bronze','silver','pearl','gold','jade','sapphire','ruby','emerald','diamond'].map((deg, i, arr) => (
-                  <React.Fragment key={deg}>
-                    <span className="px-3.5 py-1.5 rounded-full text-[10px] font-bold border-2" style={{ 
-                      color: data.cardConfig.degrees[deg].color, 
-                      borderColor: data.cardConfig.degrees[deg].border,
-                      backgroundColor: `${data.cardConfig.degrees[deg].color}25`
-                    }}>{formatDegree(deg)}</span>
-                    {i < arr.length - 1 && <span className="text-white/35 text-[10px] font-bold">×2→</span>}
-                  </React.Fragment>
-                ))}
+            <div className="mb-12">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="p-2 bg-[#9FD356]/15 rounded-xl border border-[#9FD356]/30">
+                  <Sparkles className="text-[#9FD356]" size={20} />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-white">Card Progression</h3>
+                  <p className="text-white/45 text-sm">Combine two cards of the same degree to upgrade to the next level.</p>
+                </div>
               </div>
+              <ProgressionScroller data={data} />
             </div>
             {renderPacks()}
           </div>

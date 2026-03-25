@@ -1,5 +1,5 @@
 {
-  "version": "V22.1",
+  "version": "V23",
   "wasabiRulesLink": "https://docs.google.com/document/d/1SfoDRQbWs7yBSIc6YOW61q7s3s4s-D5OP9TCz7zFO30/edit?usp=sharing",
   "cardConfig": {
     "rarityScores": {
@@ -697,7 +697,7 @@
     },
     {
       "id": "member_chris",
-      "name": "Chris", "icon": "noicon.jpg",
+      "name": "Chris", "icon": "mcqueen10.jpg",
       "wabi": 28, "spice": 17, "exp": 2,
       "teamId": "team1", "role": "normal",
       "collection": [
@@ -841,40 +841,15 @@
   "teams": [
     { 
       "id": "team1", 
-      "name": "Team 1",
-      "history": [
-        {
-          "id": "h5",
-          "type": "purchase",
-          "date": "2026-03-11",
-          "description": "Samih bought 2 Kung Fu Panda Packs",
-          "details": { "fromMemberId": "member_samih_nasser", "cardId": "kungfu_pack" }
-        },
-        {
-          "id": "h8",
-          "type": "trade",
-          "date": "2026-03-13",
-          "description": "Samih traded Darwin (Bronze) to Philo for Common Token (Bronze)",
-          "details": { "fromMemberId": "member_samih_nasser", "cardId": "darwin" }
-        },
-        {
-          "id": "h9",
-          "type": "craft",
-          "date": "2026-03-13",
-          "description": "Samih crafted Larry (Bronze)",
-          "details": { "fromMemberId": "member_samih_nasser", "cardId": "larry" }
-        }
-      ]
+      "name": "Team 1"
     },
     { 
       "id": "team2", 
-      "name": "Team 2",
-      "history": []
+      "name": "Team 2"
     },
     { 
       "id": "team3", 
-      "name": "Team 3",
-      "history": []
+      "name": "Team 3"
     }
   ],
   "trainings": [
