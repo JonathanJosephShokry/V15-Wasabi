@@ -15,12 +15,12 @@
       "bronze": { "multiplier": 3, "color": "#CD7F32", "glow": "#E09050", "border": "#DD8F42" },
       "silver": { "multiplier": 7, "color": "#C0C0C0", "glow": "#D8D8D8", "border": "#D0D0D0" },
       "pearl": { "multiplier": 15, "color": "#F8F6F0", "glow": "#FFFFF8", "border": "#EEE8E0" },
-      "gold": { "multiplier": 30, "color": "#D4AF37", "glow": "#FFD700", "border": "#E4BF47" },
-      "jade": { "multiplier": 60, "color": "#00A86B", "glow": "#20C880", "border": "#10B878" },
-      "sapphire": { "multiplier": 120, "color": "#0F52BA", "glow": "#2F72DA", "border": "#1F62CA" },
-      "ruby": { "multiplier": 240, "color": "#E0115F", "glow": "#FF1744", "border": "#F0215F" },
-      "emerald": { "multiplier": 500, "color": "#50C878", "glow": "#70E898", "border": "#60D888" },
-      "diamond": { "multiplier": 1200, "color": "#B9F2FF", "glow": "#D9FFFF", "border": "#E6FFFF" }
+      "gold": { "multiplier": 35, "color": "#D4AF37", "glow": "#FFD700", "border": "#E4BF47" },
+      "jade": { "multiplier": 75, "color": "#00A86B", "glow": "#20C880", "border": "#10B878" },
+      "sapphire": { "multiplier": 155, "color": "#0F52BA", "glow": "#2F72DA", "border": "#1F62CA" },
+      "ruby": { "multiplier": 315, "color": "#E0115F", "glow": "#FF1744", "border": "#F0215F" },
+      "emerald": { "multiplier": 635, "color": "#50C878", "glow": "#70E898", "border": "#60D888" },
+      "diamond": { "multiplier": 1275, "color": "#B9F2FF", "glow": "#D9FFFF", "border": "#E6FFFF" }
     },
     "degreeOrder": ["iron", "bronze", "silver", "pearl", "gold", "jade", "sapphire", "ruby", "emerald", "diamond"],
     "combineRecipe": 2
@@ -308,7 +308,7 @@
     },
     {
       "id": "patrick", "name": "Patrick", "rarity": "common", "packageId": "spongebob_pack",
-      "images": { "iron": "patrick.jpg", "bronze": "patrick.jpg", "silver": "patrick.jpg", "pearl": "patrick.jpg", "gold": "patrick.jpg", "jade": "patrick.jpg", "sapphire": "patrick.jpg", "ruby": "patrick.jpg", "emerald": "patrick.jpg", "diamond": "patrick.jpg" }
+      "images": { "iron": "patrick.jpg", "bronze": "patrick20.jpg", "silver": "patrick20.jpg", "pearl": "patrick.jpg", "gold": "patrick.jpg", "jade": "patrick.jpg", "sapphire": "patrick.jpg", "ruby": "patrick.jpg", "emerald": "patrick.jpg", "diamond": "patrick.jpg" }
     },
     {
       "id": "squidward", "name": "Squidward", "rarity": "rare", "packageId": "spongebob_pack",
@@ -420,7 +420,7 @@
     },
     {
       "id": "bmo", "name": "BMO", "rarity": "rare", "packageId": "adventure_time_pack",
-      "images": { "iron": "bmo.jpg", "bronze": "bmo2.jpg", "silver": "_________", "pearl": "_________", "gold": "splitToken.jpg", "jade": "splitToken.jpg", "sapphire": "splitToken.jpg", "ruby": "splitToken.jpg", "emerald": "splitToken.jpg", "diamond": "splitToken.jpg" }
+      "images": { "iron": "bmo.jpg", "bronze": "bmo2.jpg", "silver": "bmo30.jpg", "pearl": "bmo 40.jpg", "gold": "bmo50.jpg", "jade": "bmo60.jpg", "sapphire": "bmo70.jpg", "ruby": "bmo80.jpg", "emerald": "bmo90.jpg", "diamond": "bmo100.jpg" }
     },
     {
       "id": "sandy", "name": "Sandy", "rarity": "rare", "packageId": "spongebob_pack",
@@ -450,16 +450,14 @@
     },
     {
       "id": "member_daniel_rafik",
-      "name": "Daniel Rafik", "icon": "mcqueen10.jpg",
+      "name": "Daniel Rafik", "icon": "noicon.jpg",
       "wabi": 7, "spice": 0, "exp": 3, "teamId": "team1", "role": "normal",
       "collection": [
         { "characterId": "larry", "degree": "iron", "count": 1 },
         { "characterId": "monkey", "degree": "bronze", "count": 1 },
         { "characterId": "four_arms", "degree": "bronze", "count": 1 },
         { "characterId": "sarge", "degree": "silver", "count": 1 },
-        { "characterId": "sarge", "degree": "iron", "count": 1 },
-        { "characterId": "mcqueen", "degree": "iron", "count": 1 },
-        { "characterId": "mater", "degree": "silver", "count": 1 }
+        { "characterId": "mater", "degree": "pearl", "count": 1 }
       ],
       "skills": {},
       "restricted": true, "restrictedUntil": "2026-03-31",
@@ -699,11 +697,12 @@
     },
     {
       "id": "member_chris",
-      "name": "Chris", "icon": "mater30.jpg",
+      "name": "Chris", "icon": "noicon.jpg",
       "wabi": 28, "spice": 17, "exp": 2,
       "teamId": "team1", "role": "normal",
       "collection": [
-        { "characterId": "mater", "degree": "silver", "count": 1 },
+        { "characterId": "sarge", "degree": "iron", "count": 1 },
+        { "characterId": "mcqueen", "degree": "iron", "count": 1 },
         { "characterId": "fillmore", "degree": "silver", "count": 1 }
       ],
       "skills": {},
@@ -979,9 +978,7 @@
       "bonusSystem": [
         { "work": "3 days", "salary": 3 }, { "work": "5 days", "salary": 5 },
         { "work": "7 days", "salary": 7 }, { "work": "10 days", "salary": 10 }
-      ],
-      "lastCycleLeaderboard": [],
-      "prizes": {}
+      ]
     },
     {
       "id": "proj-bible3", "teamId": "team3", "name": "Bible",
@@ -999,9 +996,7 @@
       "bonusSystem": [
         { "work": "3 days", "salary": 3 }, { "work": "5 days", "salary": 5 },
         { "work": "7 days", "salary": 7 }, { "work": "10 days", "salary": 10 }
-      ],
-      "lastCycleLeaderboard": [],
-      "prizes": {}
+      ]
     },
     {
       "id": "proj-study", "teamId": "team1", "name": "Study",
@@ -1022,8 +1017,7 @@
         { "work": "15 hours", "salary": 6 }, { "work": "20 hours", "salary": 10 },
         { "work": "30 hours", "salary": 15 }, { "work": "50 hours", "salary": 25 }
       ],
-      "lastCycleLeaderboard": [],
-      "prizes": {}
+      "lastCycleLeaderboard": []
     },
     {
       "id": "blender_tutorials", "teamId": "team1", "name": "Blender Tutorials",
@@ -1044,8 +1038,7 @@
       "minimumWork": "Project Management", "baseSalary": 5,
       "startDate": "22-03-2026", "active": true, "projectManagerId": "member_jonathan_joseph",
       "maxMembers": 10,
-      "rules": [],
-      "bonusSystem": []
+      "rules": []
     },
     {
       "id": "hidden_in_my_heart", "teamId": "team1", "name": "Hidden in My Heart",
@@ -1742,30 +1735,30 @@
           "id": "craft_1",
           "recipe": {
             "inputs": [
-              { "card_id": "spongebob", "degree": "iron" },
-              { "card_id": "patrick", "degree": "iron" }
+              { "card_id": "bmo", "degree": "silver" },
+              { "card_id": "jake", "degree": "jade" }
             ],
-            "output": { "card_id": "squidward", "degree": "iron" }
+            "output": { "card_id": "finn", "degree": "sapphire" }
           }
         },
         {
           "id": "craft_2",
           "recipe": {
             "inputs": [
-              { "card_id": "fillmore", "degree": "iron" },
-              { "card_id": "common_token", "degree": "silver" }
+              { "card_id": "patrick", "degree": "iron" },
+              { "card_id": "common_token", "degree": "bronze" }
             ],
-            "output": { "card_id": "fillmore", "degree": "bronze" }
+            "output": { "card_id": "patrick", "degree": "bronze" }
           }
         },
         {
-          "id": "craft_1",
+          "id": "craft_3",
           "recipe": {
             "inputs": [
-              { "card_id": "jake", "degree": "iron" },
-              { "card_id": "rare_token", "degree": "pearl" }
+              { "card_id": "mater", "degree": "iron" },
+              { "card_id": "rare_token", "degree": "bronze" }
             ],
-            "output": { "card_id": "jake", "degree": "silver" }
+            "output": { "card_id": "mater", "degree": "bronze" }
           }
         }
       ]
