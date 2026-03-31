@@ -336,11 +336,11 @@
     },
     {
       "id": "mater", "name": "Mater", "rarity": "rare", "packageId": "cars_pack",
-      "images": { "iron": "mater10.jpg", "bronze": "mater20.jpg", "silver": "mater30.jpg", "pearl": "mater40.jpg", "gold": "mater10.jpg", "jade": "mater10.jpg", "sapphire": "mater10.jpg", "ruby": "mater10.jpg", "emerald": "mater10.jpg", "diamond": "mater10.jpg" }
+      "images": { "iron": "mater10.jpg", "bronze": "mater20.jpg", "silver": "mater30.jpg", "pearl": "mater40.jpg", "gold": "mater50.jpg", "jade": "mater60.jpg", "sapphire": "mater70.jpg", "ruby": "mater80.jpg", "emerald": "mater90.jpg", "diamond": "mater100.jpg" }
     },
     {
       "id": "sally", "name": "Sally", "rarity": "epic", "packageId": "cars_pack",
-      "images": { "iron": "sally.jpg", "bronze": "sally.jpg", "silver": "sally.jpg", "pearl": "mater10.jpg", "gold": "mater10.jpg", "jade": "mater10.jpg", "sapphire": "mater10.jpg", "ruby": "mater10.jpg", "emerald": "mater10.jpg", "diamond": "mater10.jpg" }
+      "images": { "iron": "sally.jpg", "bronze": "sally20.jpg", "silver": "sally.jpg", "pearl": "mater10.jpg", "gold": "mater10.jpg", "jade": "mater10.jpg", "sapphire": "mater10.jpg", "ruby": "mater10.jpg", "emerald": "mater10.jpg", "diamond": "mater10.jpg" }
     },
     {
       "id": "the_king", "name": "The King", "rarity": "legendary", "packageId": "cars_pack",
@@ -488,12 +488,13 @@
     {
       "id": "member_jonathan_joseph",
       "name": "Jonathan", "icon": "grizz.jpg",
-      "wabi": 100, "spice": 33, "exp": 5, "teamId": "team1", "role": "leader",
+      "wabi": 100, "spice": 1, "exp": 5, "teamId": "team1", "role": "leader",
       "collection": [
         { "characterId": "grizz", "degree": "iron", "count": 1 },
         { "characterId": "shifu", "degree": "iron", "count": 1 },
         { "characterId": "finn", "degree": "iron", "count": 1 },
-        { "characterId": "finn", "degree": "bronze", "count": 1 },
+        { "characterId": "jake", "degree": "bronze", "count": 1 },
+        { "characterId": "finn", "degree": "silver", "count": 1 },
         { "characterId": "mater", "degree": "gold", "count": 1 },
         { "characterId": "common_token", "degree": "bronze", "count": 2 }
       ],
@@ -539,12 +540,14 @@
     {
       "id": "member_peter_boshra",
       "name": "Peter", "icon": "pu3.jpg",
-      "wabi": 44, "spice": 5, "exp": 5, "teamId": "team1", "role": "normal",
+      "wabi": 8, "spice": 5, "exp": 5, "teamId": "team1", "role": "normal",
       "collection": [
         { "characterId": "pu", "degree": "silver", "count": 1 },
         { "characterId": "pu", "degree": "iron", "count": 1 },
         { "characterId": "four_arms", "degree": "iron", "count": 1 },
         { "characterId": "richard", "degree": "iron", "count": 1 },
+        { "characterId": "sally", "degree": "bronze", "count": 1 },
+        { "characterId": "mater", "degree": "iron", "count": 1 },
         { "characterId": "common_token", "degree": "iron", "count": 1 }
 
     ],
@@ -1060,12 +1063,13 @@
     },
     {
       "id": "pm", "teamId": "team1", "name": "PM",
-      "members": ["member_karen", "member_jonathan_joseph", "member_joren", "member_peter_boshra"],
-      "description": "This is an inactive project.", "currency": "spice",
+      "members": ["member_karen", "member_jonathan_joseph", "member_joren", "member_peter_boshra", "member_samih_nasser"],
+      "description": "Project managers project", "currency": "spice",
       "minimumWork": "Project Management", "baseSalary": 5,
       "startDate": "22-03-2026", "active": true, "projectManagerId": "member_jonathan_joseph",
       "maxMembers": 10,
-      "rules": []
+      "rules": ["Don't get banned from your project"],
+      "bonusSystem": []
     },
     {
       "id": "hidden_in_my_heart", "teamId": "team1", "name": "Hidden in My Heart",
