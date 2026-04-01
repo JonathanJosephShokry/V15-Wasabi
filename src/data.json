@@ -1,5 +1,5 @@
 {
-  "version": "V24",
+  "version": "V24.1",
   "wasabiRulesLink": "https://docs.google.com/document/d/1SfoDRQbWs7yBSIc6YOW61q7s3s4s-D5OP9TCz7zFO30/edit?usp=sharing",
   "cardConfig": {
     "rarityScores": {
@@ -31,6 +31,26 @@
       "images": { "iron": "________", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
     },
     {
+      "id": "igglepiggle", "name": "IgglePiggle", "rarity": "common", "packageId": "in_the_night_garden_pack",
+      "images": { "iron": "igglepiggle10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "upsy_daisy", "name": "Upsy Daisy", "rarity": "rare", "packageId": "in_the_night_garden_pack",
+      "images": { "iron": "upsy_daisy10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "makka_pakka", "name": "Makka Pakka", "rarity": "epic", "packageId": "in_the_night_garden_pack",
+      "images": { "iron": "makka_pakka10.jpg", "bronze": "makka_pakka20.jpg", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "pontipines", "name": "Pontipines", "rarity": "legendary", "packageId": "in_the_night_garden_pack",
+      "images": { "iron": "pontipines10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "the_haahoos", "name": "The Haahoos", "rarity": "never", "packageId": "in_the_night_garden_pack",
+      "images": { "iron": "the_haahoos10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
       "id": "luca", "name": "Luca", "rarity": "common", "packageId": "luca_pack",
       "images": { "iron": "luca10.jpg", "bronze": "luca20.jpg", "silver": "luca30.jpg", "pearl": "luca40.jpg", "gold": "luca50.jpg", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
     },
@@ -52,7 +72,7 @@
     },
     {
       "id": "uncle_ugo", "name": "Uncle Ugo", "rarity": "never", "packageId": "luca_pack",
-      "images": { "iron": "uncle_ugo10.jpg", "bronze": "uncle_ugo20.jpg", "silver": "uncle_ugo30.jpg", "pearl": "uncle_ugo40.jpg", "gold": "uncle_ugo50.jpg", "jade": "uncle_ugo60.jpg", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+      "images": { "iron": "uncle_ugo.jpg", "bronze": "uncle_ugo20.jpg", "silver": "uncle_ugo30.jpg", "pearl": "uncle_ugo40.jpg", "gold": "uncle_ugo50.jpg", "jade": "uncle_ugo60.jpg", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
     },
     {
       "id": "vincenzo_santorini", "name": "Vincenzo Santorini", "rarity": "rare", "packageId": "atlantis_pack",
@@ -570,7 +590,7 @@
     {
       "id": "member_joren",
       "name": "Joren", "icon": "craboo.jpg",
-      "wabi": 66, "spice": 20, "exp": 5, "teamId": "team1", "role": "normal",
+      "wabi": 66, "spice": 0, "exp": 5, "teamId": "team1", "role": "normal",
       "collection": [
         { "characterId": "craboo", "degree": "iron", "count": 1 },
         { "characterId": "finn", "degree": "iron" },
@@ -578,6 +598,8 @@
         { "characterId": "sally", "degree": "iron" },
         { "characterId": "ben10", "degree": "bronze" },
         { "characterId": "sarge", "degree": "iron" },
+        { "characterId": "luca", "degree": "bronze" },
+        { "characterId": "tuffnut", "degree": "iron" },
         { "characterId": "common_token", "degree": "iron", "count": 1 },
         { "characterId": "rare_token", "degree": "iron", "count": 2 }
       ],
@@ -785,7 +807,7 @@
         { "label": "Habits Completed", "value": 42 }
       ]
     },
-     {
+    {
       "id": "member_julie",
       "name": "Julie", "icon": "noicon.jpg",
       "wabi": 2, "spice": 0, "exp": 1,
@@ -794,6 +816,17 @@
       "sportEventScore": 0,
       "statistics": [
         { "label": "Bible Days", "value": 2 }
+      ]
+    },
+    {
+      "id": "member_carla_walaa",
+      "name": "Carla", "icon": "noicon.jpg",
+      "wabi": 0, "spice": 0, "exp": 0,
+      "teamId": "team1", "role": "normal",
+      "collection": [], "skills": {},
+      "sportEventScore": 0,
+      "statistics": [
+        { "label": "Bible Days", "value": 0 }
       ]
     },
     {
@@ -920,42 +953,11 @@
   ],
   "projects": [
     {
-      "id": "proj-habits", "teamId": "team1", "name": "Habits",
-      "members": ["member_peter_boshra", "member_jonathan_joseph", "member_mina", "member_philip", "member_chris", "member_yasmine", "member_samih_nasser", "member_yana"],
-      "description": "Daily habit tracking and accountability",
-      "minimumWork": "Send 1 habit", "baseSalary": 1, "currency": "wabi",
-      "startDate": "12-10-2025", "active": true, "projectManagerId": "member_peter_boshra",
-      "maxMembers": 10,
-      "rules": [
-        "Have a habit tracker app",
-        "Pick 8 habtis that you consider challengeing, make sure they are quantifiable",
-        "Pick only 2 habits that can be done more than once per day up to 3 times",
-        "Send 1 screen shot of your habit tracker once per cycle",
-        "Miss 10 days in a cycle and you are out",
-        "You can only one negative habit (Not doing something)"
-      ],
-      "bonusSystem": [
-        { "work": "10 habits", "salary": 3 }, { "work": "20 habits", "salary": 7 },
-        { "work": "30 habits", "salary": 11 }, { "work": "40 habits", "salary": 15 },
-        { "work": "50 habits", "salary": 19 }
-      ],
-      "lastCycleLeaderboard": [
-        { "memberId": "member_chris", "habits": 69 },
-        { "memberId": "member_jonathan_joseph", "habits": 55 },
-        { "memberId": "member_philip", "habits": 54 }
-      ],
-      "prizes": {
-        "1st": { "characterId": "rare_token", "degree": "iron" },
-        "2nd": { "characterId": "common_token", "degree": "bronze" },
-        "3rd": { "characterId": "common_token", "degree": "iron" }
-      },
-      "waitingList": []
-    },
-    {
       "id": "proj-bible", "teamId": "team1", "name": "Bible",
       "members": [
-        "member_joren", "member_haneen", "member_nour", "member_jonathan_joseph", "member_yassa", "member_samih_nasser", "member_philip", "member_karen", "member_karim", "member_yana",
-        "member_david_michael", "member_manuel", "member_daniel_walaa", "member_kevin", "member_chris", "member_peter_boshra", "member_jenny", "member_yasmine", "member_julie"
+        "member_joren", "member_haneen", "member_nour", "member_jonathan_joseph", "member_yassa", "member_samih_nasser", "member_philip", "member_karen",
+        "member_karim", "member_yana", "member_david_michael", "member_manuel", "member_daniel_walaa", "member_kevin", "member_chris", "member_peter_boshra",
+        "member_jenny", "member_yasmine", "member_julie", "member_carla_walaa"
       ],
       "description": "Daily Bible Time", "minimumWork": "Read 1 passage", "baseSalary": 1, "currency": "wabi",
       "startDate": "16-02-2026", "active": true, "projectManagerId": "member_karen",
@@ -1024,6 +1026,56 @@
       ]
     },
     {
+      "id": "proj-habits", "teamId": "team1", "name": "Habits",
+      "members": ["member_peter_boshra", "member_jonathan_joseph", "member_mina", "member_philip", "member_chris", "member_yasmine", "member_samih_nasser", "member_yana"],
+      "description": "Daily habit tracking and accountability",
+      "minimumWork": "Send 1 habit", "baseSalary": 1, "currency": "wabi",
+      "startDate": "12-10-2025", "active": true, "projectManagerId": "member_peter_boshra",
+      "maxMembers": 10,
+      "rules": [
+        "Have a habit tracker app",
+        "Pick 8 habtis that you consider challengeing, make sure they are quantifiable",
+        "Pick only 2 habits that can be done more than once per day up to 3 times",
+        "Send 1 screen shot of your habit tracker once per cycle",
+        "Miss 10 days in a cycle and you are out",
+        "You can only one negative habit (Not doing something)"
+      ],
+      "bonusSystem": [
+        { "work": "10 habits", "salary": 3 }, { "work": "20 habits", "salary": 7 },
+        { "work": "30 habits", "salary": 11 }, { "work": "40 habits", "salary": 15 },
+        { "work": "50 habits", "salary": 19 }
+      ],
+      "lastCycleLeaderboard": [
+        { "memberId": "member_chris", "habits": 69 },
+        { "memberId": "member_jonathan_joseph", "habits": 55 },
+        { "memberId": "member_philip", "habits": 54 }
+      ],
+      "prizes": {
+        "1st": { "characterId": "rare_token", "degree": "iron" },
+        "2nd": { "characterId": "common_token", "degree": "bronze" },
+        "3rd": { "characterId": "common_token", "degree": "iron" }
+      },
+      "waitingList": []
+    },
+    {
+      "id": "hidden_in_my_heart", "teamId": "team1", "name": "Hidden in My Heart",
+      "members": ["member_jonathan_joseph", "member_joren", "member_daniel_walaa"],
+      "description": "Bible verses memorization",
+      "minimumWork": "5 Verses", "baseSalary": 1, "currency": "wabi",
+      "startDate": "10-03-2026", "active": true, "projectManagerId": "member_jonathan_joseph",
+      "maxMembers": 20,
+      "rules": [
+        "Choose one continuous passage from the Bible to memorize.",
+        "Send the starting verse of your chosen passage in the group before beginning.",
+        "Memorize the passage and recite it to another member of the project for verification.",
+        "Memorize at least 5 verses during each 10-day cycle."
+      ],
+      "bonusSystem": [
+        { "work": "10 verses", "salary": 3 }, { "work": "15 verses", "salary": 6 },
+        { "work": "20 verses", "salary": 10 }, { "work": "30 verses", "salary": 15 }
+      ]
+    },
+    {
       "id": "proj-study", "teamId": "team1", "name": "Study",
       "members": [
         "member_jonathan_joseph", "member_kevin", "member_karim", "member_haneen", "member_joren", "member_chris", "member_yana", "member_karen",
@@ -1052,46 +1104,6 @@
       ]
     },
     {
-      "id": "blender_tutorials", "teamId": "team1", "name": "Blender Tutorials",
-      "members": [], "description": "This is an inactive project.",
-      "minimumWork": "None", "baseSalary": 0,
-      "startDate": "01-01-2026", "active": false,
-      "maxMembers": 10,
-      "rules": [
-        "Follow the tutorial sequence.",
-        "Submit your .blend files for review."
-      ],
-      "bonusSystem": []
-    },
-    {
-      "id": "pm", "teamId": "team1", "name": "PM",
-      "members": ["member_karen", "member_jonathan_joseph", "member_joren", "member_peter_boshra", "member_samih_nasser"],
-      "description": "Project managers project", "currency": "spice",
-      "minimumWork": "Project Management", "baseSalary": 2,
-      "startDate": "22-03-2026", "active": true, "projectManagerId": "member_jonathan_joseph",
-      "maxMembers": 10,
-      "rules": ["Don't get banned from your project"],
-      "bonusSystem": []
-    },
-    {
-      "id": "hidden_in_my_heart", "teamId": "team1", "name": "Hidden in My Heart",
-      "members": ["member_jonathan_joseph", "member_joren", "member_daniel_walaa"],
-      "description": "Bible verses memorization",
-      "minimumWork": "5 Verses", "baseSalary": 1, "currency": "wabi",
-      "startDate": "10-03-2026", "active": true, "projectManagerId": "member_jonathan_joseph",
-      "maxMembers": 20,
-      "rules": [
-        "Choose one continuous passage from the Bible to memorize.",
-        "Send the starting verse of your chosen passage in the group before beginning.",
-        "Memorize the passage and recite it to another member of the project for verification.",
-        "Memorize at least 5 verses during each 10-day cycle."
-      ],
-      "bonusSystem": [
-        { "work": "10 verses", "salary": 3 }, { "work": "15 verses", "salary": 6 },
-        { "work": "20 verses", "salary": 10 }, { "work": "30 verses", "salary": 15 }
-      ]
-    },
-    {
       "id": "languages", "teamId": "team1", "name": "Languages",
       "members": ["member_joren", "member_philip", "member_jonathan_joseph"],
       "description": "Studying a foregeion language",
@@ -1108,6 +1120,61 @@
         { "work": "10 lessons 4 videos", "salary": 8 },
         { "work": "20 lessons 8 videos", "salary": 18 }
       ]
+    },
+    {
+      "id": "pm", "teamId": "team1", "name": "PM",
+      "members": ["member_karen", "member_jonathan_joseph", "member_joren", "member_peter_boshra", "member_samih_nasser"],
+      "description": "Project managers project", "currency": "spice",
+      "minimumWork": "Project Management", "baseSalary": 2,
+      "startDate": "22-03-2026", "active": true, "projectManagerId": "member_jonathan_joseph",
+      "maxMembers": 10,
+      "rules": ["Don't get banned from your project"],
+      "bonusSystem": []
+    },
+    {
+      "id": "blender_tutorials", "teamId": "team1", "name": "Blender Tutorials",
+      "members": [], "description": "This is an inactive project.",
+      "minimumWork": "None", "baseSalary": 0,
+      "startDate": "01-01-2026", "active": false,
+      "maxMembers": 10,
+      "rules": [
+        "Follow the tutorial sequence.",
+        "Submit your .blend files for review."
+      ],
+      "bonusSystem": []
+    },
+    {
+      "id": "bible_study", "teamId": "team1", "name": "Bible Study",
+      "members": [], "description": "This is an inactive project.",
+      "minimumWork": "None", "baseSalary": 0,
+      "startDate": "01-01-2026", "active": false,
+      "maxMembers": 10,
+      "rules": [
+        "___"
+      ],
+      "bonusSystem": []
+    },
+    {
+      "id": "worship", "teamId": "team1", "name": "Worship",
+      "members": [], "description": "This is an inactive project.",
+      "minimumWork": "None", "baseSalary": 0,
+      "startDate": "01-01-2026", "active": false,
+      "maxMembers": 10,
+      "rules": [
+        "___"
+      ],
+      "bonusSystem": []
+    },
+    {
+      "id": "fun_edu", "teamId": "team1", "name": "Fun Edu",
+      "members": [], "description": "This is an inactive project.",
+      "minimumWork": "None", "baseSalary": 0,
+      "startDate": "01-01-2026", "active": false,
+      "maxMembers": 10,
+      "rules": [
+        "___"
+      ],
+      "bonusSystem": []
     }
   ],
   "tss": [
@@ -1902,7 +1969,7 @@
       ]
     },
     {
-      "id": "sale_10",
+      "id": "sale_10.5",
       "start_date": "2026-08-1",
       "end_date": "2026-08-15",
       "packs": [
