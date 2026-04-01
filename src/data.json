@@ -1,5 +1,5 @@
 {
-  "version": "V22.3",
+  "version": "V24",
   "wasabiRulesLink": "https://docs.google.com/document/d/1SfoDRQbWs7yBSIc6YOW61q7s3s4s-D5OP9TCz7zFO30/edit?usp=sharing",
   "cardConfig": {
     "rarityScores": {
@@ -183,7 +183,7 @@
       "images": { "iron": "bobert.jpg", "bronze": "bobert.jpg", "silver": "bobert.jpg", "pearl": "bobert.jpg", "gold": "bobert.jpg", "jade": "bobert.jpg", "sapphire": "bobert.jpg", "ruby": "bobert.jpg", "emerald": "bobert.jpg", "diamond": "bobert.jpg" }
     },
     {
-      "id": "pu", "name": "Pu", "rarity": "common", "packageId": "kungfu_pack",
+      "id": "pu", "name": "Po", "rarity": "common", "packageId": "kungfu_pack",
       "images": { "iron": "pu.jpg", "bronze": "pu2.jpg", "silver": "pu3.jpg", "pearl": "pu4.jpg", "gold": "pu5.jpg", "jade": "pu6.jpg", "sapphire": "pu7.jpg", "ruby": "pu8.jpg", "emerald": "pu9.jpg", "diamond": "pu10.jpg" }
     },
     {
@@ -488,7 +488,7 @@
     {
       "id": "member_jonathan_joseph",
       "name": "Jonathan", "icon": "grizz.jpg",
-      "wabi": 100, "spice": 1, "exp": 5, "teamId": "team1", "role": "leader",
+      "wabi": 100, "spice": 3, "exp": 5, "teamId": "team1", "role": "leader",
       "collection": [
         { "characterId": "grizz", "degree": "iron", "count": 1 },
         { "characterId": "shifu", "degree": "iron", "count": 1 },
@@ -512,7 +512,7 @@
     {
       "id": "member_samih_nasser",
       "name": "Samih", "icon": "charlie.jpg",
-      "wabi": 12, "spice": 1, "exp": 5, "teamId": "team1", "role": "leader",
+      "wabi": 12, "spice": 3, "exp": 5, "teamId": "team1", "role": "leader",
       "collection": [
         { "characterId": "charlie", "degree": "iron", "count": 1 },
         { "characterId": "larry", "degree": "bronze", "count": 1 },
@@ -540,7 +540,7 @@
     {
       "id": "member_peter_boshra",
       "name": "Peter", "icon": "pu3.jpg",
-      "wabi": 8, "spice": 5, "exp": 5, "teamId": "team1", "role": "normal",
+      "wabi": 8, "spice": 7, "exp": 5, "teamId": "team1", "role": "normal",
       "collection": [
         { "characterId": "pu", "degree": "silver", "count": 1 },
         { "characterId": "pu", "degree": "iron", "count": 1 },
@@ -570,7 +570,7 @@
     {
       "id": "member_joren",
       "name": "Joren", "icon": "craboo.jpg",
-      "wabi": 37, "spice": 2, "exp": 5, "teamId": "team1", "role": "normal",
+      "wabi": 66, "spice": 20, "exp": 5, "teamId": "team1", "role": "normal",
       "collection": [
         { "characterId": "craboo", "degree": "iron", "count": 1 },
         { "characterId": "finn", "degree": "iron" },
@@ -656,7 +656,7 @@
     {
       "id": "member_karen",
       "name": "Karen", "icon": "chloe.jpg",
-      "wabi": 23, "spice": 5, "exp": 4,
+      "wabi": 23, "spice": 7, "exp": 4,
       "teamId": "team1", "role": "normal",
       "collection": [
         { "characterId": "chloe", "degree": "iron", "count": 1 },
@@ -921,7 +921,7 @@
   "projects": [
     {
       "id": "proj-habits", "teamId": "team1", "name": "Habits",
-      "members": ["member_peter_boshra", "member_jonathan_joseph", "member_mina", "member_philip", "member_chris", "member_yasmine", "member_samih_nasser"],
+      "members": ["member_peter_boshra", "member_jonathan_joseph", "member_mina", "member_philip", "member_chris", "member_yasmine", "member_samih_nasser", "member_yana"],
       "description": "Daily habit tracking and accountability",
       "minimumWork": "Send 1 habit", "baseSalary": 1, "currency": "wabi",
       "startDate": "12-10-2025", "active": true, "projectManagerId": "member_peter_boshra",
@@ -1031,7 +1031,7 @@
       ],
       "description": "Acedemic study on a timer app",
       "minimumWork": "Study 3 hours", "baseSalary": 1, "currency": "spice",
-      "startDate": "01-03-2026", "active": true, "projectManagerId": "member_jonathan_joseph",
+      "startDate": "01-03-2026", "active": true, "projectManagerId": "member_joren",
       "maxMembers": 10,
       "rules": [
         "Use a timer app to track study sessions.",
@@ -1040,13 +1040,15 @@
       "bonusSystem": [
         { "work": "5 hours", "salary": 2 }, { "work": "10 hours", "salary": 4 },
         { "work": "15 hours", "salary": 6 }, { "work": "20 hours", "salary": 10 },
-        { "work": "30 hours", "salary": 15 }, { "work": "40 hours", "salary": 20 }, { "work": "50 hours", "salary": 25 }
+        { "work": "25 hours", "salary": 12 }, { "work": "30 hours", "salary": 15 },
+        { "work": "35 hours", "salary": 17 }, { "work": "40 hours", "salary": 20 },
+        { "work": "45 hours", "salary": 22 }, { "work": "50 hours", "salary": 25 }
       ],
       "lastCycleLeaderboard": [
-        { "memberId": "member_kevin", "habits": 31 },
-        { "memberId": "member_joren", "habits": 31 },
-        { "memberId": "member_yana", "habits": 29 },
-        { "memberId": "member_haneen", "habits": 15 }
+        { "memberId": "member_kevin", "hours": 31 },
+        { "memberId": "member_joren", "hours": 31 },
+        { "memberId": "member_yana", "hours": 29 },
+        { "memberId": "member_haneen", "hours": 15 }
       ]
     },
     {
@@ -1065,7 +1067,7 @@
       "id": "pm", "teamId": "team1", "name": "PM",
       "members": ["member_karen", "member_jonathan_joseph", "member_joren", "member_peter_boshra", "member_samih_nasser"],
       "description": "Project managers project", "currency": "spice",
-      "minimumWork": "Project Management", "baseSalary": 5,
+      "minimumWork": "Project Management", "baseSalary": 2,
       "startDate": "22-03-2026", "active": true, "projectManagerId": "member_jonathan_joseph",
       "maxMembers": 10,
       "rules": ["Don't get banned from your project"],
@@ -1073,7 +1075,7 @@
     },
     {
       "id": "hidden_in_my_heart", "teamId": "team1", "name": "Hidden in My Heart",
-      "members": ["member_jonathan_joseph"],
+      "members": ["member_jonathan_joseph", "member_joren", "member_daniel_walaa"],
       "description": "Bible verses memorization",
       "minimumWork": "5 Verses", "baseSalary": 1, "currency": "wabi",
       "startDate": "10-03-2026", "active": true, "projectManagerId": "member_jonathan_joseph",
@@ -1303,7 +1305,10 @@
       "score": 6,
       "cost": { "wabi": 12, "spice": 6 },
       "outcomes": [
-
+        { "characterId": "luca", "chance": "50%" }, { "characterId": "alberto", "chance": "30%" },
+        { "characterId": "giulia", "chance": "7.5%" }, { "characterId": "massimo", "chance": "7.5%" }, 
+        { "characterId": "machiavelli", "chance": "4.9%" },
+        { "characterId": "uncle_ugo", "chance": "0.1%" }
       ]
     },
     {
