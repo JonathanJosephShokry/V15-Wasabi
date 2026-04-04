@@ -652,7 +652,7 @@
     {
       "id": "member_philip",
       "name": "Philo", "icon": "joey.jpg",
-      "wabi": 83, "spice": 1, "exp": 4,
+      "wabi": 83, "spice": 26, "exp": 4,
       "teamId": "team1", "role": "normal",
       "collection": [
         { "characterId": "joey", "degree": "iron", "count": 1 },
@@ -738,7 +738,7 @@
     {
       "id": "member_chris",
       "name": "Chris", "icon": "mcqueen10.jpg",
-      "wabi": 59, "spice": 22, "exp": 3,
+      "wabi": 59, "spice": 47, "exp": 3,
       "teamId": "team1", "role": "normal",
       "collection": [
         { "characterId": "sarge", "degree": "iron", "count": 1 },
@@ -821,6 +821,61 @@
     {
       "id": "member_carla_walaa",
       "name": "Carla", "icon": "noicon.jpg",
+      "wabi": 0, "spice": 0, "exp": 0,
+      "teamId": "team1", "role": "normal",
+      "collection": [], "skills": {},
+      "sportEventScore": 0,
+      "statistics": [
+        { "label": "Bible Days", "value": 0 }
+      ]
+    },
+    {
+      "id": "member_joy_magued",
+      "name": "Joy", "icon": "noicon.jpg",
+      "wabi": 0, "spice": 0, "exp": 0,
+      "teamId": "team1", "role": "normal",
+      "collection": [], "skills": {},
+      "sportEventScore": 0,
+      "statistics": [
+        { "label": "Bible Days", "value": 0 }
+      ]
+    },
+    {
+      "id": "member_lydia_rafik",
+      "name": "Lydia", "icon": "noicon.jpg",
+      "wabi": 0, "spice": 0, "exp": 0,
+      "teamId": "team1", "role": "normal",
+      "collection": [], "skills": {},
+      "sportEventScore": 0,
+      "statistics": [
+        { "label": "Bible Days", "value": 0 }
+      ]
+    },
+    {
+      "id": "member_venus",
+      "name": "Venus", "icon": "noicon.jpg",
+      "wabi": 0, "spice": 0, "exp": 0,
+      "teamId": "team1", "role": "normal",
+      "collection": [], "skills": {},
+      "sportEventScore": 0,
+      "statistics": [
+        { "label": "Bible Days", "value": 0 }
+      ]
+    },
+    {
+      "id": "member_nana",
+      "name": "Nana", "icon": "noicon.jpg",
+      "wabi": 0, "spice": 0, "exp": 0,
+      "teamId": "team1", "role": "normal",
+      "collection": [], "skills": {},
+      "sportEventScore": 0,
+      "statistics": [
+        { "label": "Bible Days", "value": 0 }
+      ]
+    },
+    {
+      "id": "member_may_hassaan",
+      "name": "May", "icon": "noicon.jpg",
       "wabi": 0, "spice": 0, "exp": 0,
       "teamId": "team1", "role": "normal",
       "collection": [], "skills": {},
@@ -953,15 +1008,15 @@
   ],
   "projects": [
     {
-      "id": "proj-bible", "teamId": "team1", "name": "Bible",
+      "id": "proj-bible1.1", "teamId": "team1", "name": "Bible1",
       "members": [
-        "member_joren", "member_haneen", "member_nour", "member_jonathan_joseph", "member_yassa", "member_samih_nasser", "member_philip", "member_karen",
-        "member_karim", "member_yana", "member_david_michael", "member_manuel", "member_daniel_walaa", "member_kevin", "member_chris", "member_peter_boshra",
-        "member_jenny", "member_yasmine", "member_julie", "member_carla_walaa"
+        "member_joren", "member_lydia", "member_yassa", "member_samih_nasser", "member_philip", "member_karen",
+        "member_yana", "member_david_michael", "member_manuel", "member_daniel_walaa", "member_jenny", "member_haneen",
+        "member_nana"
       ],
       "description": "Daily Bible Time", "minimumWork": "Read 1 passage", "baseSalary": 1, "currency": "wabi",
       "startDate": "16-02-2026", "active": true, "projectManagerId": "member_karen",
-      "maxMembers": 20,
+      "maxMembers": 14,
       "rules": [
         "Send daily passages you read from the bible",
         "(Optionaly) Share one reflection or verse that stood out",
@@ -972,21 +1027,38 @@
         { "work": "8 days", "salary": 7 }, { "work": "9 days", "salary": 8 }, { "work": "10 days", "salary": 9 }
       ],
       "lastCycleLeaderboard": [
-        { "memberId": "member_joren", "days": 10 },
-        { "memberId": "member_chris", "days": 10 },
-        { "memberId": "member_manuel", "days": 10 },
-        { "memberId": "member_philip", "days": 10 },
-        { "memberId": "member_yana", "days": 10 },
-        { "memberId": "member_karen", "days": 10 },
-        { "memberId": "member_yasmine", "days": 10 },
-        { "memberId": "member_jonathan_joseph", "days": 9 },
-        { "memberId": "member_haneen", "days": 7 },
-        { "memberId": "member_daniel_walaa", "days": 7 }
+
       ],
       "prizes": {
-        "1st": { "characterId": "rare_token", "degree": "iron" },
-        "2nd": { "characterId": "common_token", "degree": "bronze" },
-        "3rd": { "characterId": "common_token", "degree": "iron" }
+
+      }
+    },
+    {
+      "id": "proj-bible1.2", "teamId": "team1", "name": "Bible2",
+      "members": [
+        "member_nour", "member_jonathan_joseph", "member_venus",
+        "member_karim", "member_kevin", "member_chris", "member_peter_boshra",
+        "member_yasmine", "member_julie", "member_carla_walaa", "member_may_hassaan",
+        "member_joy_magued", "member_daniel_rafik", "member_karen"
+
+      ],
+      "description": "Daily Bible Time", "minimumWork": "Read 1 passage", "baseSalary": 1, "currency": "wabi",
+      "startDate": "16-02-2026", "active": true, "projectManagerId": "member_karen",
+      "maxMembers": 14,
+      "rules": [
+        "Send daily passages you read from the bible",
+        "(Optionaly) Share one reflection or verse that stood out",
+        "Miss 10 days in a cycle and you are out"
+      ],
+      "bonusSystem": [
+        { "work": "2 days", "salary": 1 }, { "work": "4 days", "salary": 3 }, { "work": "6 days", "salary": 5 },
+        { "work": "8 days", "salary": 7 }, { "work": "9 days", "salary": 8 }, { "work": "10 days", "salary": 9 }
+      ],
+      "lastCycleLeaderboard": [
+
+      ],
+      "prizes": {
+
       }
     },
     {
@@ -996,7 +1068,7 @@
       ],
       "description": "Daily Bible Time", "minimumWork": "Read 1 passage", "baseSalary": 1, "currency": "wabi",
       "startDate": "16-02-2026", "active": true, "projectManagerId": "member_jonathan_joseph",
-      "maxMembers": 10,
+      "maxMembers": 14,
       "rules": [
         "Send daily passages you read from the bible",
         "(Optionaly) Share one reflection or verse that stood out",
@@ -1014,7 +1086,7 @@
       ],
       "description": "Daily Bible Time", "minimumWork": "Read 1 passage", "baseSalary": 1, "currency": "wabi",
       "startDate": "16-02-2026", "active": true, "projectManagerId": "member_jonathan_joseph",
-      "maxMembers": 10,
+      "maxMembers": 14,
       "rules": [
         "Send daily passages you read from the bible",
         "(Optionaly) Share one reflection or verse that stood out",
@@ -1031,7 +1103,7 @@
       "description": "Daily habit tracking and accountability",
       "minimumWork": "Send 1 habit", "baseSalary": 1, "currency": "wabi",
       "startDate": "12-10-2025", "active": true, "projectManagerId": "member_peter_boshra",
-      "maxMembers": 10,
+      "maxMembers": 14,
       "rules": [
         "Have a habit tracker app",
         "Pick 8 habtis that you consider challengeing, make sure they are quantifiable",
@@ -1063,7 +1135,7 @@
       "description": "Bible verses memorization",
       "minimumWork": "5 Verses", "baseSalary": 1, "currency": "wabi",
       "startDate": "10-03-2026", "active": true, "projectManagerId": "member_jonathan_joseph",
-      "maxMembers": 20,
+      "maxMembers": 14,
       "rules": [
         "Choose one continuous passage from the Bible to memorize.",
         "Send the starting verse of your chosen passage in the group before beginning.",
@@ -1084,7 +1156,7 @@
       "description": "Acedemic study on a timer app",
       "minimumWork": "Study 3 hours", "baseSalary": 1, "currency": "spice",
       "startDate": "01-03-2026", "active": true, "projectManagerId": "member_joren",
-      "maxMembers": 10,
+      "maxMembers": 14,
       "rules": [
         "Use a timer app to track study sessions.",
         "Minimum 3 hours per 10-day cycle."
@@ -1107,18 +1179,18 @@
       "id": "languages", "teamId": "team1", "name": "Languages",
       "members": ["member_joren", "member_philip", "member_jonathan_joseph"],
       "description": "Studying a foregeion language",
-      "minimumWork": "2 lessons, 1 video", "baseSalary": 1, "currency": "wabi",
+      "minimumWork": "2 lessons, 1 video", "baseSalary": 1, "currency": "spice",
       "startDate": "10-03-2026", "active": true, "projectManagerId": "member_joren",
-      "maxMembers": 10,
+      "maxMembers": 14,
       "rules": [
         "Complete two lessons in any course of your choice (Academic or Application).",
         "Watch at least one video (minimum 30 minutes) in the language you are currently learning.",
         "Report your progress in the group, including the number of lessons completed and the total video time watched."
       ],
       "bonusSystem": [
-        { "work": "5 lessons 2 videos", "salary": 3 },
-        { "work": "10 lessons 4 videos", "salary": 8 },
-        { "work": "20 lessons 8 videos", "salary": 18 }
+        { "work": "5 lessons 2 videos", "salary": 1 },
+        { "work": "10 lessons 4 videos", "salary": 4 },
+        { "work": "20 lessons 8 videos", "salary": 9 }
       ]
     },
     {
@@ -1127,7 +1199,7 @@
       "description": "Project managers project", "currency": "spice",
       "minimumWork": "Project Management", "baseSalary": 2,
       "startDate": "22-03-2026", "active": true, "projectManagerId": "member_jonathan_joseph",
-      "maxMembers": 10,
+      "maxMembers": 14,
       "rules": ["Don't get banned from your project"],
       "bonusSystem": []
     },
@@ -1136,7 +1208,7 @@
       "members": [], "description": "This is an inactive project.",
       "minimumWork": "None", "baseSalary": 0,
       "startDate": "01-01-2026", "active": false,
-      "maxMembers": 10,
+      "maxMembers": 14,
       "rules": [
         "Follow the tutorial sequence.",
         "Submit your .blend files for review."
@@ -1148,7 +1220,7 @@
       "members": [], "description": "This is an inactive project.",
       "minimumWork": "None", "baseSalary": 0,
       "startDate": "01-01-2026", "active": false,
-      "maxMembers": 10,
+      "maxMembers": 14,
       "rules": [
         "___"
       ],
@@ -1159,7 +1231,7 @@
       "members": [], "description": "This is an inactive project.",
       "minimumWork": "None", "baseSalary": 0,
       "startDate": "01-01-2026", "active": false,
-      "maxMembers": 10,
+      "maxMembers": 14,
       "rules": [
         "___"
       ],
@@ -1170,7 +1242,7 @@
       "members": [], "description": "This is an inactive project.",
       "minimumWork": "None", "baseSalary": 0,
       "startDate": "01-01-2026", "active": false,
-      "maxMembers": 10,
+      "maxMembers": 14,
       "rules": [
         "___"
       ],
@@ -1393,11 +1465,15 @@
     },
     {
       "packageId": "in_the_night_garden_pack",
-      "name": "NA", "banner": "na.jpg",
+      "name": "In The Night Garden", "banner": "in_the_night_garden_banner.jpg",
       "score": 3,
       "cost": { "wabi": 6, "spice": 3 },
       "outcomes": [
-
+        { "characterId": "igglepiggle", "chance": "50%" },
+        { "characterId": "upsy_daisy", "chance": "30%" },
+        { "characterId": "makka_pakka", "chance": "15%" },
+        { "characterId": "pontipines", "chance": "4.9%" },
+        { "characterId": "the_haahoos", "chance": "0.1%" }
       ]
     },
     {
@@ -1793,75 +1869,75 @@
   ],
   "crafting_sets": [
     {
-      "id": "set_3",
-      "start_date": "2026-03-22",
-      "end_date": "2026-03-31",
+      "id": "set_4",
+      "start_date": "2026-04-01",
+      "end_date": "2026-04-15",
       "crafts": [
         {
           "id": "craft_1",
           "recipe": {
             "inputs": [
-              { "card_id": "finn", "degree": "iron" },
-              { "card_id": "common_token", "degree": "silver" }
+              { "card_id": "luca", "degree": "bronze" },
+              { "card_id": "alberto", "degree": "bronze" }
             ],
-            "output": { "card_id": "finn", "degree": "bronze" }
+            "output": { "card_id": "luca", "degree": "pearl" }
           }
         },
         {
           "id": "craft_2",
           "recipe": {
             "inputs": [
-              { "card_id": "mr_krabs", "degree": "gold" },
-              { "card_id": "plankton", "degree": "pearl"}
+              { "card_id": "marlin", "degree": "silver" },
+              { "card_id": "common_token", "degree": "silver" }
             ],
-            "output": { "card_id": "king_neptune", "degree": "iron" }
+            "output": { "card_id": "marlin", "degree": "pearl" }
           }
         },
         {
           "id": "craft_3",
           "recipe": {
             "inputs": [
-              { "card_id": "mater", "degree": "silver" },
-              { "card_id": "rare_token", "degree": "silver"}
+              { "card_id": "fishlegs", "degree": "silver" },
+              { "card_id": "rare_token", "degree": "pearl" }
             ],
-            "output": { "card_id": "mater", "degree": "pearl" }
+            "output": { "card_id": "fishlegs", "degree": "pearl" }
           }
         }
       ]
     },
     {
-      "id": "set_4",
-      "start_date": "2026-04-01",
-      "end_date": "2026-04-07",
+      "id": "set_5",
+      "start_date": "2026-04-15",
+      "end_date": "2026-05-01",
       "crafts": [
         {
           "id": "craft_1",
           "recipe": {
             "inputs": [
-              { "card_id": "bmo", "degree": "silver" },
-              { "card_id": "jake", "degree": "jade" }
+              { "card_id": "luca", "degree": "bronze" },
+              { "card_id": "alberto", "degree": "bronze" }
             ],
-            "output": { "card_id": "finn", "degree": "sapphire" }
+            "output": { "card_id": "luca", "degree": "pearl" }
           }
         },
         {
           "id": "craft_2",
           "recipe": {
             "inputs": [
-              { "card_id": "patrick", "degree": "iron" },
-              { "card_id": "common_token", "degree": "bronze" }
+              { "card_id": "marlin", "degree": "silver" },
+              { "card_id": "common_token", "degree": "silver" }
             ],
-            "output": { "card_id": "patrick", "degree": "bronze" }
+            "output": { "card_id": "marlin", "degree": "pearl" }
           }
         },
         {
           "id": "craft_3",
           "recipe": {
             "inputs": [
-              { "card_id": "mater", "degree": "iron" },
-              { "card_id": "rare_token", "degree": "bronze" }
+              { "card_id": "fishlegs", "degree": "silver" },
+              { "card_id": "rare_token", "degree": "pearl" }
             ],
-            "output": { "card_id": "mater", "degree": "bronze" }
+            "output": { "card_id": "fishlegs", "degree": "pearl" }
           }
         }
       ]
