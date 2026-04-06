@@ -31,6 +31,66 @@
       "images": { "iron": "________", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
     },
     {
+      "id": "bob_the_tomato", "name": "Bob the Tomato", "rarity": "common", "packageId": "veggie_tails_pack",
+      "images": { "iron": "bob_the_tomato10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "larry_the_cucumber", "name": "Larry The Cucumber", "rarity": "common", "packageId": "veggie_tails_pack",
+      "images": { "iron": "larry_the_cucumber10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "junior", "name": "Junior", "rarity": "common", "packageId": "veggie_tails_pack",
+      "images": { "iron": "________", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "laura", "name": "Laura", "rarity": "common", "packageId": "veggie_tails_pack",
+      "images": { "iron": "________", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "petunia", "name": "Petunia", "rarity": "rare", "packageId": "veggie_tails_pack",
+      "images": { "iron": "________", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "mr_lunt", "name": "Mr Lunt", "rarity": "rare", "packageId": "veggie_tails_pack",
+      "images": { "iron": "________", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+        {
+      "id": "jim", "name": "Jim", "rarity": "rare", "packageId": "veggie_tails_pack",
+      "images": { "iron": "________", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "jarry", "name": "Jarry", "rarity": "rare", "packageId": "veggie_tails_pack",
+      "images": { "iron": "________", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "madame_blueberyy", "name": "Madame Blueberyy", "rarity": "epic", "packageId": "veggie_tails_pack",
+      "images": { "iron": "________", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": " grandpa_george", "name": "Grandpa George", "rarity": "epic", "packageId": "veggie_tails_pack",
+      "images": { "iron": "________", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "french_peas", "name": "French Peas", "rarity": "epic", "packageId": "veggie_tails_pack",
+      "images": { "iron": "________", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "the_peach", "name": "The Peach", "rarity": "legendary", "packageId": "veggie_tails_pack",
+      "images": { "iron": "________", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "pa_grape", "name": "Pa Grape", "rarity": "legendary", "packageId": "veggie_tails_pack",
+      "images": { "iron": "________", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "archibald", "name": "Archibald", "rarity": "legendary", "packageId": "veggie_tails_pack",
+      "images": { "iron": "________", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "mr_nezzer", "name": "Mr Nezzer", "rarity": "never", "packageId": "veggie_tails_pack",
+      "images": { "iron": "________", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
       "id": "igglepiggle", "name": "IgglePiggle", "rarity": "common", "packageId": "in_the_night_garden_pack",
       "images": { "iron": "igglepiggle10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
     },
@@ -508,7 +568,7 @@
     {
       "id": "member_jonathan_joseph",
       "name": "Jonathan", "icon": "grizz.jpg",
-      "wabi": 100, "spice": 3, "exp": 5, "teamId": "team1", "role": "leader",
+      "wabi": 100, "spice": 2, "exp": 5, "teamId": "team1", "role": "leader",
       "collection": [
         { "characterId": "grizz", "degree": "iron", "count": 1 },
         { "characterId": "shifu", "degree": "iron", "count": 1 },
@@ -582,7 +642,7 @@
     {
       "id": "member_david_nasser",
       "name": "David Nasser", "icon": "noicon.jpg",
-      "wabi": 31, "spice": 16, "exp": 1,
+      "wabi": 3, "spice": 1, "exp": 1,
       "teamId": "team1", "role": "normal", "collection": [], "skills": {},
       "restricted": false, "restrictedUntil": null,
       "sportEventScore": 0
@@ -652,7 +712,7 @@
     {
       "id": "member_philip",
       "name": "Philo", "icon": "joey.jpg",
-      "wabi": 83, "spice": 26, "exp": 4,
+      "wabi": 83, "spice": 0, "exp": 4,
       "teamId": "team1", "role": "normal",
       "collection": [
         { "characterId": "joey", "degree": "iron", "count": 1 },
@@ -663,6 +723,9 @@
         { "characterId": "panda", "degree": "iron", "count": 1 },
         { "characterId": "ice_bear", "degree": "iron", "count": 1 },
         { "characterId": "bmo", "degree": "iron", "count": 1 },
+        { "characterId": "nemo", "degree": "iron", "count": 1 },
+        { "characterId": "marlin", "degree": "iron", "count": 1 },
+        { "characterId": "crush", "degree": "iron", "count": 1 },
         { "characterId": "common_token", "degree": "bronze", "count": 1 },
         { "characterId": "rare_token", "degree": "iron", "count": 2},
         { "characterId": "common_token", "degree": "iron", "count": 2 }
@@ -874,8 +937,8 @@
       ]
     },
     {
-      "id": "member_may_hassaan",
-      "name": "May", "icon": "noicon.jpg",
+      "id": "member_mai_hassaan",
+      "name": "Mai", "icon": "noicon.jpg",
       "wabi": 0, "spice": 0, "exp": 0,
       "teamId": "team1", "role": "normal",
       "collection": [], "skills": {},
@@ -1038,7 +1101,7 @@
       "members": [
         "member_nour", "member_jonathan_joseph", "member_venus",
         "member_karim", "member_kevin", "member_chris", "member_peter_boshra",
-        "member_yasmine", "member_julie", "member_carla_walaa", "member_may_hassaan",
+        "member_yasmine", "member_julie", "member_carla_walaa", "member_mai_hassaan",
         "member_joy_magued", "member_daniel_rafik", "member_karen"
 
       ],
@@ -1478,11 +1541,19 @@
     },
     {
       "packageId": "veggie_tails_pack",
-      "name": "NA", "banner": "na.jpg",
+      "name": "Veggie Tails", "banner": "veggie_banner.jpg",
       "score": 5,
-      "cost": { "wabi": 10, "spice": 5 },
+      "cost": { "wabi": 9, "spice": 4 },
       "outcomes": [
-
+        { "characterId": "bob_the_tomato", "chance": "12.5%" }, { "characterId": "larry_the_cucumber", "chance": "12.5%" },
+        { "characterId": "junior", "chance": "12.5%" }, { "characterId": "laura", "chance": "12.5%" },
+        { "characterId": "petunia", "chance": "7.5%" }, { "characterId": "mr_lunt", "chance": "7.5%" },
+        { "characterId": "jim", "chance": "7.5%" }, { "characterId": "jarry", "chance": "7.5%" },
+        { "characterId": "madame_blueberyy", "chance": "5%" }, { "characterId": "grandpa_george", "chance": "5%" },
+        { "characterId": "french_peas", "chance": "5%" },
+        { "characterId": "pa_grape", "chance": "1.633%" }, { "characterId": "archibald", "chance": "1.633%" },
+        { "characterId": "archibald", "chance": "1.633%" },
+        { "characterId": "mr_nezzer", "chance": "0.1%" }
       ]
     },
     {
