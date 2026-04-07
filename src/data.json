@@ -1,5 +1,5 @@
 {
-  "version": "V24.1",
+  "version": "V24.3",
   "wasabiRulesLink": "https://docs.google.com/document/d/1SfoDRQbWs7yBSIc6YOW61q7s3s4s-D5OP9TCz7zFO30/edit?usp=sharing",
   "cardConfig": {
     "rarityScores": {
@@ -32,63 +32,63 @@
     },
     {
       "id": "bob_the_tomato", "name": "Bob the Tomato", "rarity": "common", "packageId": "veggie_tails_pack",
-      "images": { "iron": "bob_the_tomato10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+      "images": { "iron": "bob_the_tomato10.jpg", "bronze": "bob_the_tomato20.jpg", "silver": "bob_the_tomato30.jpg", "pearl": "bob_the_tomato40.jpg", "gold": "bob_the_tomato50.jpg", "jade": "bob_the_tomato60.jpg", "sapphire": "bob_the_tomato70.jpg", "ruby": "bob_the_tomato80.jpg", "emerald": "bob_the_tomato90.jpg", "diamond": "bob_the_tomato100.jpg" }
     },
     {
       "id": "larry_the_cucumber", "name": "Larry The Cucumber", "rarity": "common", "packageId": "veggie_tails_pack",
-      "images": { "iron": "larry_the_cucumber10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+      "images": { "iron": "larry_the_cucumber10.jpg", "bronze": "larry_the_cucumber20.jpg", "silver": "larry_the_cucumber30.jpg", "pearl": "larry_the_cucumber40.jpg", "gold": "larry_the_cucumber50.jpg", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
     },
     {
       "id": "junior", "name": "Junior", "rarity": "common", "packageId": "veggie_tails_pack",
-      "images": { "iron": "________", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+      "images": { "iron": "junior10.jpg", "bronze": "junior20.jpg", "silver": "junior30.jpg", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
     },
     {
       "id": "laura", "name": "Laura", "rarity": "common", "packageId": "veggie_tails_pack",
-      "images": { "iron": "________", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+      "images": { "iron": "laura10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
     },
     {
       "id": "petunia", "name": "Petunia", "rarity": "rare", "packageId": "veggie_tails_pack",
-      "images": { "iron": "________", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+      "images": { "iron": "petunia10.jpg", "bronze": "petunia20.jpg", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
     },
     {
       "id": "mr_lunt", "name": "Mr Lunt", "rarity": "rare", "packageId": "veggie_tails_pack",
-      "images": { "iron": "________", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
-    },
-        {
-      "id": "jim", "name": "Jim", "rarity": "rare", "packageId": "veggie_tails_pack",
-      "images": { "iron": "________", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+      "images": { "iron": "mr_lunt10.jpg", "bronze": "mr_lunt20.jpg", "silver": "mr_lunt30.jpg", "pearl": "mr_lunt40.jpg", "gold": "mr_lunt50.jpg", "jade": "mr_lunt60.jpg", "sapphire": "mr_lunt70.jpg", "ruby": "mr_lunt80.jpg", "emerald": "mr_lunt90.jpg", "diamond": "mr_lunt100.jpg" }
     },
     {
-      "id": "jarry", "name": "Jarry", "rarity": "rare", "packageId": "veggie_tails_pack",
-      "images": { "iron": "________", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+      "id": "jimmy", "name": "Jimmy", "rarity": "rare", "packageId": "veggie_tails_pack",
+      "images": { "iron": "jimmy10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "jerry", "name": "Jerry", "rarity": "rare", "packageId": "veggie_tails_pack",
+      "images": { "iron": "jerry10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
     },
     {
       "id": "madame_blueberyy", "name": "Madame Blueberyy", "rarity": "epic", "packageId": "veggie_tails_pack",
-      "images": { "iron": "________", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+      "images": { "iron": "madame_blueberyy10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
     },
     {
       "id": " grandpa_george", "name": "Grandpa George", "rarity": "epic", "packageId": "veggie_tails_pack",
-      "images": { "iron": "________", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+      "images": { "iron": "pa_grape10.jpg", "bronze": "pa_grape20.jpg", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
     },
     {
       "id": "french_peas", "name": "French Peas", "rarity": "epic", "packageId": "veggie_tails_pack",
-      "images": { "iron": "________", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+      "images": { "iron": "french_peas10.jpg", "bronze": "french_peas20.jpg", "silver": "french_peas30.jpg", "pearl": "french_peas40.jpg", "gold": "french_peas50.jpg", "jade": "french_peas60.jpg", "sapphire": "french_peas70.jpg", "ruby": "french_peas80.jpg", "emerald": "french_peas90.jpg", "diamond": "french_peas100.jpg" }
     },
     {
       "id": "the_peach", "name": "The Peach", "rarity": "legendary", "packageId": "veggie_tails_pack",
-      "images": { "iron": "________", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+      "images": { "iron": "the_peach10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
     },
     {
       "id": "pa_grape", "name": "Pa Grape", "rarity": "legendary", "packageId": "veggie_tails_pack",
-      "images": { "iron": "________", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+      "images": { "iron": "pa_grape10.jpg", "bronze": "pa_grape20.jpg", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
     },
     {
       "id": "archibald", "name": "Archibald", "rarity": "legendary", "packageId": "veggie_tails_pack",
-      "images": { "iron": "________", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+      "images": { "iron": "archibald10", "bronze": "archibald20", "silver": "archibald30", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
     },
     {
       "id": "mr_nezzer", "name": "Mr Nezzer", "rarity": "never", "packageId": "veggie_tails_pack",
-      "images": { "iron": "________", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+      "images": { "iron": "mr_nezzer10.jpg", "bronze": "mr_nezzer20.jpg", "silver": "mr_nezzer30.jpg", "pearl": "mr_nezzer40.jpg", "gold": "mr_nezzer50.jpg", "jade": "mr_nezzer60.jpg", "sapphire": "mr_nezzer70.jpg", "ruby": "________", "emerald": "________", "diamond": "________" }
     },
     {
       "id": "igglepiggle", "name": "IgglePiggle", "rarity": "common", "packageId": "in_the_night_garden_pack",
@@ -585,8 +585,7 @@
         { "label": "Bible Days", "value": 29 },
         { "label": "Habits Completed", "value": 145 },
         { "label": "Hours Studying", "value": 17 },
-        { "label": "Bible Verses Memorized", "value": 10},
-        { "label": "Language Lessons", "value": 21 }
+        { "label": "Bible Verses Memorized", "value": 10}
       ]
     },
     {
@@ -668,7 +667,6 @@
       "sportEventScore": 0,
       "statistics": [
         { "label": "Bible Days", "value": 25 },
-        { "label": "Language Lessons", "value": 92 },
         { "label": "Hours Studying", "value": 31 }
       ]
     },
@@ -734,8 +732,7 @@
       "sportEventScore": 0,
       "statistics": [
         { "label": "Bible Days", "value": 26 },
-        { "label": "Habits Completed", "value": 124 },
-        { "label": "Language Lessons", "value": 19 }
+        { "label": "Habits Completed", "value": 124 }
       ]
     },
     {
@@ -1213,8 +1210,8 @@
     {
       "id": "proj-study", "teamId": "team1", "name": "Study",
       "members": [
-        "member_jonathan_joseph", "member_kevin", "member_karim", "member_haneen", "member_joren", "member_chris", "member_yana", "member_karen",
-        "member_peter_boshra", "member_yassa"
+        "member_kevin", "member_karim", "member_haneen", "member_joren", "member_chris", "member_yana", "member_karen",
+        "member_yassa"
       ],
       "description": "Acedemic study on a timer app",
       "minimumWork": "Study 3 hours", "baseSalary": 1, "currency": "spice",
@@ -1230,6 +1227,32 @@
         { "work": "25 hours", "salary": 12 }, { "work": "30 hours", "salary": 15 },
         { "work": "35 hours", "salary": 17 }, { "work": "40 hours", "salary": 20 },
         { "work": "45 hours", "salary": 22 }, { "work": "50 hours", "salary": 25 }
+      ],
+      "lastCycleLeaderboard": [
+        { "memberId": "member_kevin", "hours": 31 },
+        { "memberId": "member_joren", "hours": 31 },
+        { "memberId": "member_yana", "hours": 29 },
+        { "memberId": "member_haneen", "hours": 15 }
+      ]
+    },
+    {
+      "id": "proj-work", "teamId": "team1", "name": "Work",
+      "members": [
+        "member_jonathan_joseph", "member_peter_boshra"
+      ],
+      "description": "Work hours",
+      "minimumWork": "Work 20 hours", "baseSalary": 5, "currency": "spice",
+      "startDate": "06-04-2026", "active": true, "projectManagerId": "member_jonathan_joseph",
+      "maxMembers": 14,
+      "rules": [
+        "Use a timer app to track working hours."
+      ],
+      "bonusSystem": [
+        { "work": "30 hours", "salary": 7 },
+        { "work": "40 hours", "salary": 10 },{ "work": "50 hours", "salary": 12 },
+        { "work": "60 hours", "salary": 15 }, { "work": "70 hours", "salary": 17 },
+        { "work": "80 hours", "salary": 20 }, { "work": "90 hours", "salary": 22 },
+        { "work": "100 hours", "salary": 25 }
       ],
       "lastCycleLeaderboard": [
         { "memberId": "member_kevin", "hours": 31 },
