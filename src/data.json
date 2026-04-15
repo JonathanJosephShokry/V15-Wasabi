@@ -104,7 +104,7 @@
     },
     {
       "id": "pontipines", "name": "Pontipines", "rarity": "legendary", "packageId": "in_the_night_garden_pack",
-      "images": { "iron": "pontipines10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+      "images": { "iron": "pontipines10.jpg", "bronze": "pontipines20", "silver": "pontipines30", "pearl": "pontipines40", "gold": "pontipines50", "jade": "pontipines60", "sapphire": "pontipines70", "ruby": "pontipines80", "emerald": "pontipines90", "diamond": "pontipines100" }
     },
     {
       "id": "the_haahoos", "name": "The Haahoos", "rarity": "never", "packageId": "in_the_night_garden_pack",
