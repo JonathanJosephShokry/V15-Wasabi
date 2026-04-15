@@ -195,7 +195,11 @@ export const WasabiCards: React.FC<WasabiCardsProps> = ({ data }) => {
     setRollResult(null);
 
     // Simulate roll logic based on chances
-    const random = Math.random() * 100;
+    const totalChance = pack.outcomes.reduce((sum, o) => {
+      return sum + parseFloat(o.chance.replace('%', ''));
+    }, 0);
+
+    const random = Math.random() * totalChance;
     let cumulative = 0;
     let selectedOutcome = pack.outcomes[0];
 
