@@ -96,11 +96,11 @@
     },
     {
       "id": "upsy_daisy", "name": "Upsy Daisy", "rarity": "rare", "packageId": "in_the_night_garden_pack",
-      "images": { "iron": "upsy_daisy10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+      "images": { "iron": "upsy_daisy10.jpg", "bronze": "upsy_daisy20.jpg", "silver": "upsy_daisy30.jpg", "pearl": "upsy_daisy40.jpg", "gold": "upsy_daisy50.jpg", "jade": "upsy_daisy60.jpg", "sapphire": "upsy_daisy70.jpg", "ruby": "upsy_daisy80.jpg", "emerald": "upsy_daisy90.jpg", "diamond": "upsy_daisy100.jpg" }
     },
     {
       "id": "makka_pakka", "name": "Makka Pakka", "rarity": "epic", "packageId": "in_the_night_garden_pack",
-      "images": { "iron": "makka_pakka10.jpg", "bronze": "makka_pakka20.jpg", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+      "images": { "iron": "makka_pakka10.jpg", "bronze": "makka_pakka20.jpg", "silver": "makka_pakka30.jpg", "pearl": "makka_pakka40.jpg", "gold": "makka_pakka50.jpg", "jade": "makka_pakka60.jpg", "sapphire": "makka_pakka70.jpg", "ruby": "makka_pakka80.jpg", "emerald": "makka_pakka90.jpg", "diamond": "makka_pakka100.jpg" }
     },
     {
       "id": "pontipines", "name": "Pontipines", "rarity": "legendary", "packageId": "in_the_night_garden_pack",
