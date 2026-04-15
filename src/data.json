@@ -68,7 +68,7 @@
     },
     {
       "id": " grandpa_george", "name": "Grandpa George", "rarity": "epic", "packageId": "veggie_tails_pack",
-      "images": { "iron": "pa_grape10.jpg", "bronze": "pa_grape20.jpg", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+      "images": { "iron": "grandpa_george10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
     },
     {
       "id": "french_peas", "name": "French Peas", "rarity": "epic", "packageId": "veggie_tails_pack",
@@ -84,7 +84,7 @@
     },
     {
       "id": "archibald", "name": "Archibald", "rarity": "legendary", "packageId": "veggie_tails_pack",
-      "images": { "iron": "archibald10", "bronze": "archibald20", "silver": "archibald30", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+      "images": { "iron": "archibald10.jpg", "bronze": "archibald20", "silver": "archibald30", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
     },
     {
       "id": "mr_nezzer", "name": "Mr Nezzer", "rarity": "never", "packageId": "veggie_tails_pack",
@@ -554,7 +554,7 @@
       "wabi": 17, "spice": 0, "exp": 5, "teamId": "team1", "role": "normal",
       "collection": [
         { "characterId": "burrito", "degree": "iron", "count": 1 },
-        { "characterId": "common_token", "degree": "iron" }
+        { "characterId": "common_token", "degree": "iron", "count": 1 }
       ],
       "skills": { "english": 0, "chess": 0, "python": 0 },
       "restricted": true, "restrictedUntil": "2026-04-10",
@@ -1084,7 +1084,11 @@
         { "work": "8 days", "salary": 7 }, { "work": "9 days", "salary": 8 }, { "work": "10 days", "salary": 9 }
       ],
       "lastCycleLeaderboard": [],
-      "prizes": {},
+      "prizes": {
+        "1st": { "characterId": "epic_token", "degree": "iron" },
+        "2nd": { "characterId": "rare_token", "degree": "iron" },
+        "3rd": { "characterId": "common_token", "degree": "iron" }
+      },
       "waitingList": []
     },
     {
@@ -1109,7 +1113,11 @@
         { "work": "8 days", "salary": 7 }, { "work": "9 days", "salary": 8 }, { "work": "10 days", "salary": 9 }
       ],
       "lastCycleLeaderboard": [],
-      "prizes": {},
+      "prizes": {
+        "1st": { "characterId": "epic_token", "degree": "iron" },
+        "2nd": { "characterId": "rare_token", "degree": "iron" },
+        "3rd": { "characterId": "common_token", "degree": "iron" }
+      },
       "waitingList": []
     },
     {
@@ -1171,7 +1179,11 @@
         { "work": "50 habits", "salary": 19 }
       ],
       "lastCycleLeaderboard": [],
-      "prizes": {},
+      "prizes": {
+        "1st": { "characterId": "epic_token", "degree": "iron" },
+        "2nd": { "characterId": "rare_token", "degree": "iron" },
+        "3rd": { "characterId": "common_token", "degree": "iron" }
+      },
       "waitingList": []
     },
     {
@@ -1203,8 +1215,7 @@
       "startDate": "01-03-2026", "active": true, "projectManagerId": "member_joren",
       "maxMembers": 14,
       "rules": [
-        "Use a timer app to track study sessions.",
-        "Minimum 3 hours per 10-day cycle."
+        "Use a timer app to track study sessions.", "Any focused study time is counted", "Minimum 3 hours per 10-day cycle."
       ],
       "bonusSystem": [
         { "work": "5 hours", "salary": 2 }, { "work": "10 hours", "salary": 4 },
@@ -1214,7 +1225,11 @@
         { "work": "45 hours", "salary": 22 }, { "work": "50 hours", "salary": 25 }
       ],
       "lastCycleLeaderboard": [],
-      "prizes": {},
+      "prizes": {
+        "1st": { "characterId": "epic_token", "degree": "iron" },
+        "2nd": { "characterId": "rare_token", "degree": "iron" },
+        "3rd": { "characterId": "common_token", "degree": "iron" }
+      },
       "waitingList": []
     },
     {
@@ -1230,14 +1245,17 @@
         "Use a timer app to track working hours."
       ],
       "bonusSystem": [
-        { "work": "30 hours", "salary": 2 },
-        { "work": "40 hours", "salary": 5 },{ "work": "50 hours", "salary": 7 },
-        { "work": "60 hours", "salary": 10 }, { "work": "70 hours", "salary": 12 },
-        { "work": "80 hours", "salary": 15 }, { "work": "90 hours", "salary": 17 },
-        { "work": "100 hours", "salary": 20 }
+        { "work": "30 hours", "salary": 2 }, { "work": "40 hours", "salary": 5 },
+        { "work": "50 hours", "salary": 7 }, { "work": "60 hours", "salary": 10 },
+        { "work": "70 hours", "salary": 12 },{ "work": "80 hours", "salary": 15 },
+        { "work": "90 hours", "salary": 17 }, { "work": "100 hours", "salary": 20 }
       ],
       "lastCycleLeaderboard": [],
-      "prizes": {},
+      "prizes": {
+        "1st": { "characterId": "epic_token", "degree": "iron" },
+        "2nd": { "characterId": "rare_token", "degree": "iron" },
+        "3rd": { "characterId": "common_token", "degree": "iron" }
+      },
       "waitingList": []
     },
     {
@@ -1253,9 +1271,9 @@
         "Report your progress in the group, including the number of lessons completed and the total video time watched."
       ],
       "bonusSystem": [
-        { "work": "5 lessons 2 videos", "salary": 1 },
-        { "work": "10 lessons 4 videos", "salary": 4 },
-        { "work": "20 lessons 8 videos", "salary": 9 }
+        { "work": "5 lessons, 60 min", "salary": 1 },
+        { "work": "10 lessons, 120 min", "salary": 4 },
+        { "work": "20 lessons, 240 min", "salary": 9 }
       ]
     },
     {
@@ -1269,9 +1287,9 @@
       "bonusSystem": []
     },
     {
-      "id": "fun_edu", "teamId": "team1", "name": "PM",
+      "id": "fun_edu", "teamId": "team1", "name": "Fun Edu",
       "members": ["member_daniel_rafik", "member_jonathan_joseph", "member_peter_boshra", "member_samih_nasser"],
-      "description": "FUN EDU COMPANY", "currency": "spice",
+      "description": "Game dev company", "currency": "spice",
       "minimumWork": "FUN EDU TASKS", "baseSalary": 1,
       "startDate": "07-04-2026", "active": true, "projectManagerId": "member_jonathan_joseph",
       "maxMembers": 14,
@@ -1279,15 +1297,23 @@
       "bonusSystem": []
     },
     {
-      "id": "blender_tutorials", "teamId": "team1", "name": "Blender Tutorials",
-      "members": [], "description": "This is an inactive project.",
-      "minimumWork": "None", "baseSalary": 0,
-      "startDate": "01-01-2026", "active": false,
+      "id": "5am", "teamId": "team1", "name": "5AM",
+      "members": ["member_peter_boshra", "member_jonathan_joseph"],
+      "description": "5am gang", "currency": "spice",
+      "minimumWork": "Wake up 5am", "baseSalary": 0,
+      "startDate": "12-04-2026", "active": true, "projectManagerId": "member_peter_boshra",
       "maxMembers": 14,
-      "rules": [
-        "Follow the tutorial sequence.",
-        "Submit your .blend files for review."
-      ],
+      "rules": [],
+      "bonusSystem": []
+    },
+    {
+      "id": "book_club", "teamId": "team1", "name": "Book Club",
+      "members": ["member_samih_nasser"],
+      "description": "reading books", "currency": "spice",
+      "minimumWork": "Read 10 Pages", "baseSalary": 0,
+      "startDate": "14-04-2026", "active": true, "projectManagerId": "member_samih_nasser",
+      "maxMembers": 14,
+      "rules": [],
       "bonusSystem": []
     },
     {
@@ -1302,7 +1328,7 @@
       "bonusSystem": []
     },
     {
-      "id": "worship", "teamId": "team1", "name": "Worship",
+      "id": "tasbe7", "teamId": "team1", "name": "Tasbe7",
       "members": [], "description": "This is an inactive project.",
       "minimumWork": "None", "baseSalary": 0,
       "startDate": "01-01-2026", "active": false,
@@ -1319,25 +1345,6 @@
     { "id": "tss-3", "teamId": "team1", "name": "Free Padel!", "image": "Padel.jpg", "wabiCost": 85, "description": "Good sport" }
   ],
   "sportEvents": [
-    {
-      "id": "cycling_march",
-      "name": "Cycling Challenge",
-      "description": "Ride as many kilometers as possible!",
-      "type": "distance",
-      "startDate": "2026-03-01",
-      "endDate": "2026-03-31",
-      "visible": true,
-      "prizes": {
-        "1st": { "characterId": "rare_token", "degree": "iron" },
-        "2nd": { "characterId": "common_token", "degree": "bronze" },
-        "3rd": { "characterId": "common_token", "degree": "iron" }
-      },
-      "winners": [
-        { "place": 1, "memberId": "member_jonathan_joseph", "score": 450 },
-        { "place": 2, "memberId": "member_peter_boshra", "score": 410 },
-        { "place": 3, "memberId": "member_samih_nasser", "score": 380 }
-      ]
-    },
     {
       "id": "running_feb",
       "name": "Winter Run",
@@ -1369,6 +1376,16 @@
         { "id": "match_1", "team1": "Jonathan", "team2": "Samih", "active": true, "date": "2026-03-15" },
         { "id": "match_2", "team1": "Joren & Haneen", "team2": "Karen & Marette", "active": true, "date": "2026-03-16" },
         { "id": "match_3", "team1": "Peter", "team2": "Yassa", "active": false, "date": "2026-03-17" }
+      ],
+      "prizes": {
+        "1st": { "characterId": "legendary_token", "degree": "iron" },
+        "2nd": { "characterId": "epic_token", "degree": "iron" },
+        "3rd": { "characterId": "rare_token", "degree": "iron" }
+      },
+      "winners": [
+        { "place": 1, "memberId": "member_peter_boshra", "score": 0 },
+        { "place": 2, "memberId": "member_samih_nasser", "score": 0 },
+        { "place": 3, "memberId": "member_yassa", "score": 0 }
       ]
     }
   ],
@@ -1518,7 +1535,7 @@
       "packageId": "angelo_rules_pack",
       "name": "Angelo Rules", "banner": "angelo_rules_banner.jpg",
       "score": 4,
-      "cost": { "wabi": 8, "spice": 4 },
+      "cost": { "wabi": 6, "spice": 3 },
       "outcomes": [
         { "characterId": "david", "chance": "25%" }, { "characterId": "summer", "chance": "25%" },
         { "characterId": "owen_foot", "chance": "15%" }, { "characterId": "schmitty", "chance": "15%" },
@@ -1544,7 +1561,7 @@
       "packageId": "veggie_tails_pack",
       "name": "Veggie Tails", "banner": "veggie_banner.jpg",
       "score": 5,
-      "cost": { "wabi": 9, "spice": 4 },
+      "cost": { "wabi": 8, "spice": 4 },
       "outcomes": [
         { "characterId": "bob_the_tomato", "chance": "12.5%" }, { "characterId": "larry_the_cucumber", "chance": "12.5%" },
         { "characterId": "junior", "chance": "12.5%" }, { "characterId": "laura", "chance": "12.5%" },
@@ -1553,7 +1570,7 @@
         { "characterId": "madame_blueberyy", "chance": "5%" }, { "characterId": "grandpa_george", "chance": "5%" },
         { "characterId": "french_peas", "chance": "5%" },
         { "characterId": "pa_grape", "chance": "1.633%" }, { "characterId": "archibald", "chance": "1.633%" },
-        { "characterId": "archibald", "chance": "1.633%" },
+        { "characterId": "the_peach", "chance": "1.633%" },
         { "characterId": "mr_nezzer", "chance": "0.1%" }
       ]
     },
@@ -1941,43 +1958,6 @@
   ],
   "crafting_sets": [
     {
-      "id": "set_4",
-      "start_date": "2026-04-01",
-      "end_date": "2026-04-15",
-      "crafts": [
-        {
-          "id": "craft_1",
-          "recipe": {
-            "inputs": [
-              { "card_id": "luca", "degree": "bronze" },
-              { "card_id": "alberto", "degree": "bronze" }
-            ],
-            "output": { "card_id": "luca", "degree": "pearl" }
-          }
-        },
-        {
-          "id": "craft_2",
-          "recipe": {
-            "inputs": [
-              { "card_id": "marlin", "degree": "silver" },
-              { "card_id": "common_token", "degree": "silver" }
-            ],
-            "output": { "card_id": "marlin", "degree": "pearl" }
-          }
-        },
-        {
-          "id": "craft_3",
-          "recipe": {
-            "inputs": [
-              { "card_id": "fishlegs", "degree": "silver" },
-              { "card_id": "rare_token", "degree": "pearl" }
-            ],
-            "output": { "card_id": "fishlegs", "degree": "pearl" }
-          }
-        }
-      ]
-    },
-    {
       "id": "set_5",
       "start_date": "2026-04-15",
       "end_date": "2026-05-01",
@@ -1986,30 +1966,30 @@
           "id": "craft_1",
           "recipe": {
             "inputs": [
-              { "card_id": "luca", "degree": "bronze" },
-              { "card_id": "alberto", "degree": "bronze" }
+              { "card_id": "junior", "degree": "iron" },
+              { "card_id": "laura", "degree": "silver" }
             ],
-            "output": { "card_id": "luca", "degree": "pearl" }
+            "output": { "card_id": "pa_grape", "degree": "iron" }
           }
         },
         {
           "id": "craft_2",
           "recipe": {
             "inputs": [
-              { "card_id": "marlin", "degree": "silver" },
-              { "card_id": "common_token", "degree": "silver" }
+              { "card_id": "summer", "degree": "iron" },
+              { "card_id": "common_token", "degree": "iron" }
             ],
-            "output": { "card_id": "marlin", "degree": "pearl" }
+            "output": { "card_id": "summer", "degree": "bronze" }
           }
         },
         {
           "id": "craft_3",
           "recipe": {
             "inputs": [
-              { "card_id": "fishlegs", "degree": "silver" },
-              { "card_id": "rare_token", "degree": "pearl" }
+              { "card_id": "upsy_daisy", "degree": "bronze" },
+              { "card_id": "rare_token", "degree": "bronze" }
             ],
-            "output": { "card_id": "fishlegs", "degree": "pearl" }
+            "output": { "card_id": "upsy_daisy", "degree": "silver" }
           }
         }
       ]

@@ -254,7 +254,8 @@ export const WasabiCards: React.FC<WasabiCardsProps> = ({ data }) => {
                     <img src={`/icons/${event.banner}`} alt={event.name} className="w-full h-full object-cover transition-transform duration-700 hover:scale-110" />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0d1117] via-transparent to-transparent"></div>
                     <div className="absolute bottom-4 left-6">
-                      <h3 className="text-2xl font-black text-white drop-shadow-lg">{event.name}</h3>
+                      <h3 className="text-2xl font-black text-white drop-shadow-lg mb-1">{event.name}</h3>
+                      <div className="bg-[#9FD356]/20 border border-[#9FD356]/40 text-[#9FD356] px-3.5 py-1 rounded-full text-xs font-bold backdrop-blur-md inline-block">Pack Score: {event.score}</div>
                     </div>
                   </div>
                   <div className="p-6">
