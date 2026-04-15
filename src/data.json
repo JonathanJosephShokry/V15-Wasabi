@@ -538,7 +538,7 @@
         { "characterId": "four_arms", "degree": "bronze", "count": 1 },
         { "characterId": "sarge", "degree": "silver", "count": 1 },
         { "characterId": "larry", "degree": "bronze", "count": 1 },
-        { "characterId": "manetti", "degree": "bronze", "count": 1 }
+        { "characterId": "manetti", "degree": "iron", "count": 1 }
       ],
       "skills": {},
       "restricted": true, "restrictedUntil": "2026-04-19",
@@ -1107,18 +1107,17 @@
         { "work": "8 days", "salary": 7 }, { "work": "9 days", "salary": 8 }, { "work": "10 days", "salary": 9 }
       ],
       "lastCycleLeaderboard": [
-        { "name": "Yana", "days": 10 },
-        { "name": "Philo ", "days": 10 },
-        { "name": "Manuel", "days": 10 },
-        { "name": "Haneen", "days": 9 },
-        { "name": "Karen ", "days": 9 },
-        { "name": "Joren ", "days": 9 },
-        { "name": "Dani ", "days": 8 }
-      
+        { "memberId": "member_yana", "days": 10 },
+        { "memberId": "member_philip", "days": 10 },
+        { "memberId": "member_manuel", "days": 10 },
+        { "memberId": "member_haneen", "days": 9 },
+        { "memberId": "member_karen", "days": 9 },
+        { "memberId": "member_joren", "days": 9 },
+        { "memberId": "member_daniel_walaa", "days": 8 }
       ],
       "prizes": {
-        "1st": { "characterId": "epic_token", "degree": "iron" },
-        "2nd": { "characterId": "rare_token", "degree": "iron" },
+        "1st": { "characterId": "rare_token", "degree": "iron" },
+        "2nd": { "characterId": "common_token", "degree": "bronze" },
         "3rd": { "characterId": "common_token", "degree": "iron" }
       },
       "waitingList": []
@@ -1145,14 +1144,14 @@
         { "work": "8 days", "salary": 7 }, { "work": "9 days", "salary": 8 }, { "work": "10 days", "salary": 9 }
       ],
       "lastCycleLeaderboard": [
-        { "name": "Jonathan", "days": 10 },
-        { "name": "Yasmine", "days": 10 },
-        { "name": "Chris", "days": 9 },
-        { "name": "Julie", "days": 8 }
+        { "memberId": "member_jonathan", "days": 10 },
+        { "memberId": "member_yasmine", "days": 10 },
+        { "memberId": "member_chris", "days": 9 },
+        { "memberId": "member_julie", "days": 8 }
       ],
       "prizes": {
-        "1st": { "characterId": "epic_token", "degree": "iron" },
-        "2nd": { "characterId": "rare_token", "degree": "iron" },
+        "1st": { "characterId": "rare_token", "degree": "iron" },
+        "2nd": { "characterId": "common_token", "degree": "bronze" },
         "3rd": { "characterId": "common_token", "degree": "iron" }
       },
       "waitingList": []
@@ -1216,13 +1215,13 @@
         { "work": "50 habits", "salary": 19 }
       ],
       "lastCycleLeaderboard": [
-        { "name": "Chris", "habits": 62 },
-        { "name": "Yana", "habits": 58 },
-        { "name": "Jonathan", "habits": 54 }
+        { "memberId": "member_chris", "habits": 62 },
+        { "memberId": "member_yana", "habits": 58 },
+        { "memberId": "member_jonathan", "habits": 54 }
       ],
       "prizes": {
-        "1st": { "characterId": "epic_token", "degree": "iron" },
-        "2nd": { "characterId": "rare_token", "degree": "iron" },
+        "1st": { "characterId": "rare_token", "degree": "iron" },
+        "2nd": { "characterId": "common_token", "degree": "bronze" },
         "3rd": { "characterId": "common_token", "degree": "iron" }
       },
       "waitingList": []
@@ -1266,9 +1265,9 @@
         { "work": "45 hours", "salary": 22 }, { "work": "50 hours", "salary": 25 }
       ],
       "lastCycleLeaderboard": [
-        { "name": "Kevin", "hours": 48 },
-        { "name": "Haneen", "hours": 22 },
-        { "name": "Yana", "hours": 15 }
+        { "memberId": "member_kevin", "hours": 62 },
+        { "memberId": "member_haneen", "hours": 58 },
+        { "memberId": "member_yana", "hours": 54 }
       ],
       "prizes": {
         "1st": { "characterId": "epic_token", "degree": "iron" },
@@ -1297,8 +1296,8 @@
       ],
       "lastCycleLeaderboard": [],
       "prizes": {
-        "1st": { "characterId": "epic_token", "degree": "iron" },
-        "2nd": { "characterId": "rare_token", "degree": "iron" },
+        "1st": { "characterId": "rare_token", "degree": "iron" },
+        "2nd": { "characterId": "common_token", "degree": "bronze" },
         "3rd": { "characterId": "common_token", "degree": "iron" }
       },
       "waitingList": []
