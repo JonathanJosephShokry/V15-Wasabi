@@ -92,7 +92,7 @@
     },
     {
       "id": "igglepiggle", "name": "IgglePiggle", "rarity": "common", "packageId": "in_the_night_garden_pack",
-      "images": { "iron": "igglepiggle10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+      "images": { "iron": "igglepiggle10.jpg", "bronze": "igglepiggle20.jpg", "silver": "igglepiggle30.jpg", "pearl": "igglepiggle40.jpg", "gold": "igglepiggle50.jpg", "jade": "igglepiggle60.jpg", "sapphire": "igglepiggle70.jpg", "ruby": "igglepiggle80.jpg", "emerald": "igglepiggle90.jpg", "diamond": "igglepiggle100.jpg" }
     },
     {
       "id": "upsy_daisy", "name": "Upsy Daisy", "rarity": "rare", "packageId": "in_the_night_garden_pack",
@@ -104,7 +104,7 @@
     },
     {
       "id": "pontipines", "name": "Pontipines", "rarity": "legendary", "packageId": "in_the_night_garden_pack",
-      "images": { "iron": "pontipines10.jpg", "bronze": "pontipines20", "silver": "pontipines30", "pearl": "pontipines40", "gold": "pontipines50", "jade": "pontipines60", "sapphire": "pontipines70", "ruby": "pontipines80", "emerald": "pontipines90", "diamond": "pontipines100" }
+      "images": { "iron": "pontipines10.jpg", "bronze": "pontipines20.jpg", "silver": "pontipines30.jpg", "pearl": "pontipines40.jpg", "gold": "pontipines50.jpg", "jade": "pontipines60.jpg", "sapphire": "pontipines70.jpg", "ruby": "pontipines80.jpg", "emerald": "pontipines90.jpg", "diamond": "pontipines100.jpg" }
     },
     {
       "id": "the_haahoos", "name": "The Haahoos", "rarity": "never", "packageId": "in_the_night_garden_pack",
@@ -963,6 +963,17 @@
       ]
     },
     {
+      "id": "member_shady_hassan",
+      "name": "Shady", "icon": "noicon.jpg",
+      "wabi": 0, "spice": 0, "exp": 0,
+      "teamId": "team1", "role": "normal",
+      "collection": [], "skills": {},
+      "sportEventScore": 0,
+      "statistics": [
+        { "label": "Bible Days", "value": 0 }
+      ]
+    },
+    {
       "id": "member_mina",
       "name": "Mina", "icon": "noicon.jpg",
       "wabi": 15, "spice": 0, "exp": 6, "teamId": "team2", "role": "leader",
@@ -1128,7 +1139,7 @@
         "member_nour", "member_jonathan_joseph", "member_venus",
         "member_karim", "member_kevin", "member_chris", "member_peter_boshra",
         "member_yasmine", "member_julie", "member_carla_walaa", "member_mai_hassaan",
-        "member_joy_magued", "member_karen"
+        "member_joy_magued", "member_karen", "member_shady_hassan"
 
       ],
       "description": "Daily Bible Time", "minimumWork": "Read 1 passage", "baseSalary": 1, "currency": "wabi",
@@ -1332,7 +1343,7 @@
     },
     {
       "id": "fun_edu", "teamId": "team1", "name": "Fun Edu",
-      "members": ["member_daniel_rafik", "member_jonathan_joseph", "member_peter_boshra", "member_samih_nasser"],
+      "members": ["member_daniel_rafik", "member_jonathan_joseph", "member_peter_boshra"],
       "description": "Game dev company", "currency": "spice",
       "minimumWork": "FUN EDU TASKS", "baseSalary": 1,
       "startDate": "07-04-2026", "active": true, "projectManagerId": "member_jonathan_joseph",
