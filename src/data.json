@@ -216,7 +216,7 @@
     },
     {
       "id": "summer", "name": "Summer", "rarity": "common", "packageId": "________",
-      "images": { "iron": "Summer10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+      "images": { "iron": "Summer10.jpg", "bronze": "summer20.jpg", "silver": "summer30.jpg", "pearl": "summer40.jpg", "gold": "summer50.jpg", "jade": "summer60.jpg", "sapphire": "summer70.jpg", "ruby": "summer80.jpg", "emerald": "summer90.jpg", "diamond": "summer100.jpg" }
     },
     {
       "id": "police_courage", "name": "Police Courage", "rarity": "common", "packageId": "courage_pack",
@@ -533,11 +533,10 @@
       "name": "Daniel Rafik", "icon": "noicon.jpg",
       "wabi": 1, "spice": 0, "exp": 3, "teamId": "team1", "role": "normal",
       "collection": [
-        { "characterId": "larry", "degree": "iron", "count": 1 },
         { "characterId": "monkey", "degree": "bronze", "count": 1 },
         { "characterId": "four_arms", "degree": "bronze", "count": 1 },
         { "characterId": "sarge", "degree": "silver", "count": 1 },
-        { "characterId": "larry", "degree": "bronze", "count": 1 },
+        { "characterId": "igglepiggle", "degree": "iron", "count": 1 },
         { "characterId": "manetti", "degree": "iron", "count": 1 }
       ],
       "skills": {},
@@ -568,22 +567,19 @@
     {
       "id": "member_jonathan_joseph",
       "name": "Jonathan", "icon": "grizz.jpg",
-      "wabi": 132, "spice": 2, "exp": 6, "teamId": "team1", "role": "leader",
+      "wabi": 102, "spice": 0, "exp": 6, "teamId": "team1", "role": "leader",
       "collection": [
         { "characterId": "grizz", "degree": "iron", "count": 1 },
         { "characterId": "shifu", "degree": "iron", "count": 1 },
-        { "characterId": "finn", "degree": "iron", "count": 1 },
         { "characterId": "jake", "degree": "bronze", "count": 1 },
         { "characterId": "finn", "degree": "silver", "count": 1 },
         { "characterId": "mater", "degree": "gold", "count": 1 },
-        { "characterId": "igglepiggle", "degree": "iron", "count": 1 },
+        { "characterId": "makka_pakka", "degree": "iron", "count": 1 },
         { "characterId": "igglepiggle", "degree": "bronze", "count": 1 },
-        { "characterId": "igglepiggle", "degree": "silver", "count": 1 },
-        { "characterId": "upsy_daisy", "degree": "iron", "count": 4 },
-        { "characterId": "pontipines", "degree": "bronze", "count": 1 },
-        { "characterId": "common_token", "degree": "iron", "count": 1 },
-        { "characterId": "common_token", "degree": "bronze", "count": 2 },
-        { "characterId": "rare_token", "degree": "iron", "count": 1 }
+        { "characterId": "igglepiggle", "degree": "pearl", "count": 1 },
+        { "characterId": "upsy_daisy", "degree": "pearl", "count": 1 },
+        { "characterId": "pontipines", "degree": "iron", "count": 1 },
+        { "characterId": "pontipines", "degree": "bronze", "count": 1 }
       ],
       "skills": {},
       "restricted": false, "restrictedUntil": null,
@@ -600,12 +596,13 @@
       "wabi": 13, "spice": 0, "exp": 6, "teamId": "team1", "role": "leader",
       "collection": [
         { "characterId": "charlie", "degree": "iron", "count": 1 },
-        { "characterId": "larry", "degree": "bronze", "count": 1 },
+        { "characterId": "larry", "degree": "silver", "count": 1 },
+        { "characterId": "larry", "degree": "iron", "count": 1 },
         { "characterId": "ping", "degree": "iron", "count": 1 },
         { "characterId": "monkey", "degree": "iron", "count": 1 },
-        { "characterId": "igglepiggle", "degree": "iron", "count": 1 },
         { "characterId": "igglepiggle", "degree": "gold", "count": 1 },
-        { "characterId": "upsy_daisy", "degree": "iron", "count": 9 },
+        { "characterId": "upsy_daisy", "degree": "iron", "count": 1 },
+        { "characterId": "upsy_daisy", "degree": "bronze", "count": 4 },
         { "characterId": "makka_pakka", "degree": "iron", "count": 1 },
         { "characterId": "makka_pakka", "degree": "bronze", "count": 1 },
         { "characterId": "makka_pakka", "degree": "silver", "count": 1 },
@@ -848,10 +845,12 @@
     {
       "id": "member_manuel",
       "name": "Manuel", "icon": "noicon.jpg",
-      "wabi": 32, "spice": 0, "exp": 4,
+      "wabi": 32, "spice": 2, "exp": 4,
       "teamId": "team1", "role": "normal",
       "collection": [
-        { "characterId": "rare_token", "degree": "iron", "count" : 3}
+        { "characterId": "finn", "degree": "iron", "count": 1 },
+        { "characterId": "common_token", "degree": "iron", "count": 1 },
+        { "characterId": "common_token", "degree": "bronze", "count": 2 }
       ], "skills": {},
       "sportEventScore": 0,
       "statistics": [
