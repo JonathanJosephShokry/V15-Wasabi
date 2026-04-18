@@ -188,39 +188,66 @@ export const WasabiCards: React.FC<WasabiCardsProps> = ({ data }) => {
     return data.members.some(m => m.collection.some(entry => entry.characterId === characterId));
   };
 
-  const handleRoll = (pack: CardPack) => {
-    setRollingPack(pack);
-    setIsRolling(true);
-    setShowRollResult(false);
-    setRollResult(null);
+const handleRoll = (pack: CardPack) => {
+  setRollingPack(pack);
+  setIsRolling(true);
+  setShowRollResult(false);
+  setRollResult(null);
 
-    // Simulate roll logic based on chances
-    const totalChance = pack.outcomes.reduce((sum, o) => {
-      return sum + parseFloat(o.chance.replace('%', ''));
-    }, 0);
+  // ── DEBUG: log all outcomes and their parsed chances ──────────────────
+  console.group(`🎲 Rolling pack: "${pack.name}" (${pack.packageId})`);
+  console.log('Total outcomes:', pack.outcomes.length);
 
-    const random = Math.random() * totalChance;
-    let cumulative = 0;
-    let selectedOutcome = pack.outcomes[0];
+  const parsedOutcomes = pack.outcomes.map(o => ({
+    characterId: o.characterId,
+    chance: parseFloat(o.chance.replace('%', '')),
+    raw: o.chance
+  }));
 
-    for (const outcome of pack.outcomes) {
-      const chance = parseFloat(outcome.chance.replace('%', ''));
-      cumulative += chance;
-      if (random <= cumulative) {
-        selectedOutcome = outcome;
-        break;
-      }
+  const totalChance = parsedOutcomes.reduce((sum, o) => sum + o.chance, 0);
+  console.log('Parsed outcomes:', parsedOutcomes);
+  console.log(`Total chance sum: ${totalChance.toFixed(4)}% (${totalChance === 100 ? '✅ exactly 100' : totalChance < 100 ? '⚠️ UNDER 100 — gap of ' + (100 - totalChance).toFixed(4) + '%' : '⚠️ OVER 100 — excess of ' + (totalChance - 100).toFixed(4) + '%'})`);
+
+  const random = Math.random() * totalChance;
+  console.log(`Random value: ${random.toFixed(4)} (out of ${totalChance.toFixed(4)})`);
+
+  let cumulative = 0;
+  let selectedOutcome = parsedOutcomes[0];
+  for (const outcome of parsedOutcomes) {
+    cumulative += outcome.chance;
+    if (random <= cumulative) {
+      selectedOutcome = outcome;
+      break;
     }
+  }
 
-    const character = data.characters.find(c => c.id === selectedOutcome.characterId);
-    if (character) {
-      setTimeout(() => {
-        setRollResult({ character, rarity: character.rarity });
-        setIsRolling(false);
-        setShowRollResult(true);
-      }, 2000); // Animation duration
-    }
-  };
+  console.log(`Selected outcome: "${selectedOutcome.characterId}" (chance: ${selectedOutcome.raw})`);
+
+  // ── DEBUG: verify the character exists in data ─────────────────────────
+  const character = data.characters.find(c => c.id === selectedOutcome.characterId);
+  if (character) {
+    console.log(`✅ Character found:`, { id: character.id, name: character.name, rarity: character.rarity });
+    console.log(`   images.iron: "${character.images?.iron ?? 'MISSING'}" `);
+    console.groupEnd();
+
+    setTimeout(() => {
+      setRollResult({ character, rarity: character.rarity });
+      setIsRolling(false);
+      setShowRollResult(true);
+    }, 2000);
+  } else {
+    console.error(`❌ Character NOT FOUND for id: "${selectedOutcome.characterId}"`);
+    console.log('Available character IDs:', data.characters.map(c => c.id));
+    console.groupEnd();
+
+    // ── FIX: reset state so the modal doesn't freeze ───────────────────
+    setTimeout(() => {
+      setIsRolling(false);
+      setRollingPack(null);
+      alert(`Roll failed: character "${selectedOutcome.characterId}" not found in data. Check the console for details.`);
+    }, 2000);
+  }
+};
 
   const renderEvents = () => {
     const visibleEventPacks = activePackSale
