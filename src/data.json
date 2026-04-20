@@ -2444,35 +2444,17 @@
           "count": 1
         },
         {
-          "characterId": "ping",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "monkey",
-          "degree": "iron",
-          "count": 1
-        },
-        {
           "characterId": "igglepiggle",
           "degree": "gold",
           "count": 1
         },
-        {
-          "characterId": "upsy_daisy",
-          "degree": "iron",
-          "count": 1
-        },
+
         {
           "characterId": "upsy_daisy",
           "degree": "bronze",
           "count": 4
         },
-        {
-          "characterId": "makka_pakka",
-          "degree": "iron",
-          "count": 1
-        },
+  
         {
           "characterId": "makka_pakka",
           "degree": "bronze",
@@ -2485,6 +2467,26 @@
         },
         {
           "characterId": "pontipines",
+          "degree": "bronze",
+          "count": 1
+        },
+        {
+          "characterId": "igglepiggle",
+          "degree": "iron",
+          "count": 1
+        },
+        {
+          "characterId": "igglepiggle",
+          "degree": "bronze",
+          "count": 1
+        },
+        {
+          "characterId": "common_token",
+          "degree": "bronze",
+          "count": 1
+        },
+        {
+          "characterId": "makka_pakka",
           "degree": "bronze",
           "count": 1
         }
@@ -2781,16 +2783,6 @@
           "count": 1
         },
         {
-          "characterId": "igglepiggle",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "igglepiggle",
-          "degree": "bronze",
-          "count": 1
-        },
-        {
           "characterId": "upsy_daisy",
           "degree": "silver",
           "count": 1
@@ -2806,11 +2798,6 @@
           "count": 1
         },
         {
-          "characterId": "common_token",
-          "degree": "bronze",
-          "count": 1
-        },
-        {
           "characterId": "rare_token",
           "degree": "iron",
           "count": 1
@@ -2819,6 +2806,11 @@
           "characterId": "common_token",
           "degree": "iron",
           "count": 2
+        },
+        {
+          "characterId": "monkey",
+          "degree": "iron",
+          "count": 1
         }
       ],
       "sportEventScore": 0
@@ -2981,17 +2973,27 @@
           "count": 1
         },
         {
-          "characterId": "makka_pakka",
-          "degree": "bronze",
-          "count": 1
-        },
-        {
           "characterId": "common_token",
           "degree": "bronze",
           "count": 1
         },
         {
           "characterId": "rare_token",
+          "degree": "iron",
+          "count": 1
+        },
+        {
+          "characterId": "ping",
+          "degree": "iron",
+          "count": 1
+        },
+        {
+          "characterId": "upsy_daisy",
+          "degree": "iron",
+          "count": 1
+        },
+        {
+          "characterId": "makka_pakka",
           "degree": "iron",
           "count": 1
         }
@@ -3261,10 +3263,6 @@
           "salary": 7
         },
         {
-          "work": "9 days",
-          "salary": 8
-        },
-        {
           "work": "10 days",
           "salary": 9
         }
@@ -3305,10 +3303,6 @@
           "salary": 7
         },
         {
-          "work": "9 days",
-          "salary": 8
-        },
-        {
           "work": "10 days",
           "salary": 9
         }
@@ -3347,10 +3341,6 @@
         {
           "work": "8 days",
           "salary": 7
-        },
-        {
-          "work": "9 days",
-          "salary": 8
         },
         {
           "work": "10 days",
@@ -3465,32 +3455,16 @@
           "salary": 4
         },
         {
-          "work": "15 hours",
-          "salary": 6
-        },
-        {
           "work": "20 hours",
           "salary": 10
-        },
-        {
-          "work": "25 hours",
-          "salary": 12
         },
         {
           "work": "30 hours",
           "salary": 15
         },
         {
-          "work": "35 hours",
-          "salary": 17
-        },
-        {
           "work": "40 hours",
           "salary": 20
-        },
-        {
-          "work": "45 hours",
-          "salary": 22
         },
         {
           "work": "50 hours",
@@ -3519,16 +3493,8 @@
           "salary": 2
         },
         {
-          "work": "50 hours",
-          "salary": 5
-        },
-        {
           "work": "60 hours",
           "salary": 7
-        },
-        {
-          "work": "70 hours",
-          "salary": 10
         },
         {
           "work": "80 hours",
@@ -3573,23 +3539,6 @@
       ]
     },
     {
-      "id": "proj-pm",
-      "teamId": "team1",
-      "name": "PM",
-      "description": "Project managers project",
-      "currency": "spice",
-      "minimumWork": "1 Project Management",
-      "baseSalary": 2,
-      "startDate": "22-03-2026",
-      "active": true,
-      "projectManagerId": "member_jonathan_joseph",
-      "maxMembers": 14,
-      "rules": [
-        "Don't get banned from your project"
-      ],
-      "bonusSystem": []
-    },
-    {
       "id": "fun_edu",
       "teamId": "team1",
       "name": "Fun Edu",
@@ -3600,21 +3549,6 @@
       "startDate": "07-04-2026",
       "active": true,
       "projectManagerId": "member_jonathan_joseph",
-      "maxMembers": 14,
-      "rules": [],
-      "bonusSystem": []
-    },
-    {
-      "id": "5am",
-      "teamId": "team1",
-      "name": "5AM",
-      "description": "5am gang",
-      "currency": "spice",
-      "minimumWork": "Wake up 5am",
-      "baseSalary": 0,
-      "startDate": "12-04-2026",
-      "active": true,
-      "projectManagerId": "member_peter_boshra",
       "maxMembers": 14,
       "rules": [],
       "bonusSystem": []
@@ -3635,25 +3569,10 @@
       "bonusSystem": []
     },
     {
-      "id": "bible_study",
-      "teamId": "team1",
-      "name": "Bible Study",
-      "description": "This is an inactive project.",
-      "minimumWork": "None",
-      "baseSalary": 0,
-      "startDate": "01-01-2026",
-      "active": false,
-      "maxMembers": 14,
-      "rules": [
-        "___"
-      ],
-      "bonusSystem": []
-    },
-    {
       "id": "tasbe7",
       "teamId": "team1",
       "name": "Tasbe7",
-      "description": "This is an inactive project.",
+      "description": "Instruments learning",
       "minimumWork": "None",
       "baseSalary": 0,
       "startDate": "01-01-2026",
