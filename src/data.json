@@ -2324,7 +2324,6 @@
           "count": 1
         }
       ],
-      "skills": {},
       "sportEventScore": 0
     },
     {
@@ -2355,11 +2354,6 @@
           "count": 1
         }
       ],
-      "skills": {
-        "english": 0,
-        "chess": 0,
-        "python": 0
-      },
       "sportEventScore": 0
     },
     {
@@ -2425,7 +2419,6 @@
           "count": 1
         }
       ],
-      "skills": {},
       "sportEventScore": 0
     },
     {
@@ -2496,11 +2489,6 @@
           "count": 1
         }
       ],
-      "skills": {
-        "english": 0,
-        "chess": 0,
-        "python": 0
-      },
       "sportEventScore": 0
     },
     {
@@ -2516,7 +2504,6 @@
           "count": 1
         }
       ],
-      "skills": {},
       "sportEventScore": 0
     },
     {
@@ -2582,11 +2569,6 @@
           "count": 1
         }
       ],
-      "skills": {
-        "english": 0,
-        "chess": 0,
-        "python": 0
-      },
       "sportEventScore": 0
     },
     {
@@ -2596,7 +2578,6 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [],
-      "skills": {},
       "sportEventScore": 0
     },
     {
@@ -2687,7 +2668,6 @@
           "count": 1
         }
       ],
-      "skills": {},
       "sportEventScore": 0
     },
     {
@@ -2718,7 +2698,6 @@
           "count": 2
         }
       ],
-      "skills": {},
       "sportEventScore": 0
     },
     {
@@ -2728,7 +2707,6 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [],
-      "skills": {},
       "sportEventScore": 0
     },
     {
@@ -2738,7 +2716,6 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [],
-      "skills": {},
       "sportEventScore": 0
     },
     {
@@ -2844,7 +2821,6 @@
           "count": 2
         }
       ],
-      "skills": {},
       "sportEventScore": 0
     },
     {
@@ -2885,7 +2861,6 @@
           "count": 1
         }
       ],
-      "skills": {},
       "sportEventScore": 0
     },
     {
@@ -2901,7 +2876,6 @@
           "count": 1
         }
       ],
-      "skills": {},
       "sportEventScore": 0
     },
     {
@@ -2932,7 +2906,6 @@
           "count": 2
         }
       ],
-      "skills": {},
       "sportEventScore": 0
     },
     {
@@ -2953,7 +2926,6 @@
           "count": 2
         }
       ],
-      "skills": {},
       "sportEventScore": 0
     },
     {
@@ -3024,7 +2996,6 @@
           "count": 1
         }
       ],
-      "skills": {},
       "sportEventScore": 0
     },
     {
@@ -3070,7 +3041,6 @@
           "count": 2
         }
       ],
-      "skills": {},
       "sportEventScore": 0
     },
     {
@@ -3096,7 +3066,6 @@
           "count": 2
         }
       ],
-      "skills": {},
       "sportEventScore": 0
     },
     {
@@ -3106,7 +3075,6 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [],
-      "skills": {},
       "sportEventScore": 0
     },
     {
@@ -3122,7 +3090,6 @@
           "count": 2
         }
       ],
-      "skills": {},
       "sportEventScore": 0
     },
     {
@@ -3138,7 +3105,6 @@
           "count": 1
         }
       ],
-      "skills": {},
       "sportEventScore": 0
     },
     {
@@ -3148,7 +3114,6 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [],
-      "skills": {},
       "sportEventScore": 0
     },
     {
@@ -3158,7 +3123,6 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [],
-      "skills": {},
       "sportEventScore": 0
     },
     {
@@ -3168,7 +3132,6 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [],
-      "skills": {},
       "sportEventScore": 0
     },
     {
@@ -3178,7 +3141,6 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [],
-      "skills": {},
       "sportEventScore": 0
     },
     {
@@ -3188,7 +3150,6 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [],
-      "skills": {},
       "sportEventScore": 0
     },
     {
@@ -3198,7 +3159,6 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [],
-      "skills": {},
       "sportEventScore": 0
     },
     {
@@ -3208,7 +3168,6 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [],
-      "skills": {},
       "sportEventScore": 0
     },
     {
@@ -3218,7 +3177,6 @@
       "teamId": "team2",
       "role": "leader",
       "collection": [],
-      "skills": {},
       "sportEventScore": 0
     },
     {
@@ -3228,7 +3186,6 @@
       "teamId": "team2",
       "role": "normal",
       "collection": [],
-      "skills": {},
       "sportEventScore": 0
     },
     {
@@ -3238,7 +3195,6 @@
       "teamId": "team2",
       "role": "normal",
       "collection": [],
-      "skills": {},
       "sportEventScore": 0
     },
     {
@@ -3248,7 +3204,6 @@
       "teamId": "team2",
       "role": "normal",
       "collection": [],
-      "skills": {},
       "sportEventScore": 0
     },
     {
@@ -3258,7 +3213,6 @@
       "teamId": "team2",
       "role": "normal",
       "collection": [],
-      "skills": {},
       "sportEventScore": 0
     },
     {
@@ -3268,7 +3222,6 @@
       "teamId": "team2",
       "role": "normal",
       "collection": [],
-      "skills": {},
       "sportEventScore": 0
     }
   ],
@@ -3315,22 +3268,7 @@
           "work": "10 days",
           "salary": 9
         }
-      ],
-      "prizes": {
-        "1st": {
-          "characterId": "rare_token",
-          "degree": "iron"
-        },
-        "2nd": {
-          "characterId": "common_token",
-          "degree": "bronze"
-        },
-        "3rd": {
-          "characterId": "common_token",
-          "degree": "iron"
-        }
-      },
-      "waitingList": []
+      ]
     },
     {
       "id": "proj-bible1.2",
@@ -3374,22 +3312,7 @@
           "work": "10 days",
           "salary": 9
         }
-      ],
-      "prizes": {
-        "1st": {
-          "characterId": "rare_token",
-          "degree": "iron"
-        },
-        "2nd": {
-          "characterId": "common_token",
-          "degree": "bronze"
-        },
-        "3rd": {
-          "characterId": "common_token",
-          "degree": "iron"
-        }
-      },
-      "waitingList": []
+      ]
     },
     {
       "id": "proj-bible2",
@@ -3476,22 +3399,7 @@
           "work": "50 habits",
           "salary": 19
         }
-      ],
-      "prizes": {
-        "1st": {
-          "characterId": "rare_token",
-          "degree": "iron"
-        },
-        "2nd": {
-          "characterId": "common_token",
-          "degree": "bronze"
-        },
-        "3rd": {
-          "characterId": "common_token",
-          "degree": "iron"
-        }
-      },
-      "waitingList": []
+      ]
     },
     {
       "id": "proj-hidden_in_my_heart",
@@ -3588,22 +3496,7 @@
           "work": "50 hours",
           "salary": 25
         }
-      ],
-      "prizes": {
-        "1st": {
-          "characterId": "rare_token",
-          "degree": "iron"
-        },
-        "2nd": {
-          "characterId": "common_token",
-          "degree": "bronze"
-        },
-        "3rd": {
-          "characterId": "common_token",
-          "degree": "iron"
-        }
-      },
-      "waitingList": []
+      ]
     },
     {
       "id": "proj-work",
@@ -3645,9 +3538,7 @@
           "work": "100 hours",
           "salary": 15
         }
-      ],
-      "prizes": {},
-      "waitingList": []
+      ]
     },
     {
       "id": "proj-languages",

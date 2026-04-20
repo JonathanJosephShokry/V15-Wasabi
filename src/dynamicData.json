@@ -2,405 +2,387 @@
   "memberData": [
     {
       "id": "member_daniel_rafik",
-      "wabi": 1, "spice": 0, "exp": 3,
-      "restricted": true,
-      "statistics": [
-        { "label": "Bible Days", "value": 5 },
-        { "label": "Habits Completed", "value": 2 }
-      ]
+      "wabi": 1,
+      "spice": 0,
+      "exp": 3,
+      "restricted": true
     },
     {
       "id": "member_david_michael",
-      "wabi": 9, "spice": 0, "exp": 5,
-      "restricted": true,
-      "statistics": [
-        { "label": "Bible Days", "value": 17 },
-        { "label": "Bible Verses Memorized", "value": 5}
-      ]
+      "wabi": 9,
+      "spice": 0,
+      "exp": 5,
+      "restricted": true
     },
     {
       "id": "member_jonathan_joseph",
-      "wabi": 102, "spice": 25, "exp": 6,
-      "restricted": false,
-      "statistics": [
-        { "label": "Bible Days", "value": 39 },
-        { "label": "Habits Completed", "value": 199 },
-        { "label": "Bible Verses Memorized", "value": 15}
-      ]
+      "wabi": 102,
+      "spice": 25,
+      "exp": 6,
+      "restricted": false
     },
     {
       "id": "member_samih_nasser",
-      "wabi": 13, "spice": 0, "exp": 6,
-      "restricted": false,
-      "statistics": [
-        { "label": "Bible Days", "value": 13 }
-      ]
+      "wabi": 13,
+      "spice": 0,
+      "exp": 6,
+      "restricted": false
     },
     {
       "id": "member_yassa",
-      "wabi": 11, "spice": 3, "exp": 6,
-      "restricted": false,
-      "statistics": [
-        { "label": "Bible Days", "value": 11 }
-      ]
+      "wabi": 11,
+      "spice": 3,
+      "exp": 6,
+      "restricted": false
     },
     {
       "id": "member_peter_boshra",
-      "wabi": 1, "spice": 0, "exp": 6,
-      "restricted": false,
-      "statistics": [
-        { "label": "Bible Days", "value": 18 },
-        { "label": "Habits Completed", "value": 101 }
-      ]
+      "wabi": 1,
+      "spice": 0,
+      "exp": 6,
+      "restricted": false
     },
     {
       "id": "member_david_nasser",
-      "wabi": 3, "spice": 1, "exp": 1,
-      "restricted": false,
-      "statistics": []
+      "wabi": 3,
+      "spice": 1,
+      "exp": 1,
+      "restricted": false
     },
     {
       "id": "member_joren",
-      "wabi": 64, "spice": 0, "exp": 6,
-      "restricted": false,
-      "statistics": [
-        { "label": "Bible Days", "value": 34 },
-        { "label": "Bible Verses Memorized", "value": 5 }
-      ]
+      "wabi": 64,
+      "spice": 0,
+      "exp": 6,
+      "restricted": false
     },
     {
       "id": "member_haneen",
-      "wabi": 36, "spice": 18, "exp": 6,
-      "restricted": false,
-      "statistics": [
-        { "label": "Bible Days", "value": 34 }
-      ]
+      "wabi": 36,
+      "spice": 18,
+      "exp": 6,
+      "restricted": false
     },
     {
       "id": "member_marette",
-      "wabi": 7, "spice": 0, "exp": 4,
-      "restricted": false,
-      "statistics": [
-        { "label": "Bible Days", "value": 6 }
-      ]
+      "wabi": 7,
+      "spice": 0,
+      "exp": 4,
+      "restricted": false
     },
     {
       "id": "member_nour",
-      "wabi": 21, "spice": 0, "exp": 5,
-      "restricted": false,
-      "statistics": [
-        { "label": "Bible Days", "value": 21 }
-      ]
+      "wabi": 21,
+      "spice": 0,
+      "exp": 5,
+      "restricted": false
     },
     {
       "id": "member_philip",
-      "wabi": 100, "spice": 3, "exp": 5,
-      "restricted": false,
-      "statistics": [
-        { "label": "Bible Days", "value": 36 },
-        { "label": "Habits Completed", "value": 170 }
-      ]
+      "wabi": 100,
+      "spice": 3,
+      "exp": 5,
+      "restricted": false
     },
     {
       "id": "member_karen",
-      "wabi": 32, "spice": 0, "exp": 5,
-      "restricted": false,
-      "statistics": [
-        { "label": "Bible Days", "value": 37 }
-      ]
+      "wabi": 32,
+      "spice": 0,
+      "exp": 5,
+      "restricted": false
     },
     {
       "id": "member_karim",
-      "wabi": 15, "spice": 5, "exp": 4,
-      "restricted": false,
-      "statistics": [
-        { "label": "Bible Days", "value": 18 }
-      ]
+      "wabi": 15,
+      "spice": 5,
+      "exp": 4,
+      "restricted": false
     },
     {
       "id": "member_yana",
-      "wabi": 43, "spice": 15, "exp": 4,
-      "restricted": false,
-      "statistics": [
-        { "label": "Bible Days", "value": 38 },
-        { "label": "Habits Completed", "value": 57 }
-      ]
+      "wabi": 43,
+      "spice": 15,
+      "exp": 4,
+      "restricted": false
     },
     {
       "id": "member_kevin",
-      "wabi": 41, "spice": 37, "exp": 4,
-      "restricted": false,
-      "statistics": [
-        { "label": "Bible Days", "value": 14 }
-      ]
+      "wabi": 41,
+      "spice": 37,
+      "exp": 4,
+      "restricted": false
     },
     {
       "id": "member_chris",
-      "wabi": 89, "spice": 21, "exp": 4,
-      "restricted": false,
-      "statistics": [
-        { "label": "Bible Days", "value": 33 },
-        { "label": "Habits Completed", "value": 171 }
-      ]
+      "wabi": 89,
+      "spice": 21,
+      "exp": 4,
+      "restricted": false
     },
     {
       "id": "member_daniel_walaa",
-      "wabi": 16, "spice": 1, "exp": 4,
-      "restricted": false,
-      "statistics": [
-        { "label": "Bible Days", "value": 25 },
-        { "label": "Bible Verses Memorized", "value": 8}
-      ]
+      "wabi": 16,
+      "spice": 1,
+      "exp": 4,
+      "restricted": false
     },
     {
       "id": "member_manuel",
-      "wabi": 32, "spice": 2, "exp": 4,
-      "restricted": false,
-      "statistics": [
-        { "label": "Bible Days", "value": 34 }
-      ]
+      "wabi": 32,
+      "spice": 2,
+      "exp": 4,
+      "restricted": false
     },
     {
       "id": "member_jenny",
-      "wabi": 6, "spice": 0, "exp": 4,
-      "restricted": false,
-      "statistics": [
-        { "label": "Bible Days", "value": 8 }
-      ]
+      "wabi": 6,
+      "spice": 0,
+      "exp": 4,
+      "restricted": false
     },
     {
       "id": "member_yasmine",
-      "wabi": 55, "spice": 0, "exp": 3,
-      "restricted": false,
-      "statistics": [
-        { "label": "Bible Days", "value": 26 },
-        { "label": "Habits Completed", "value": 79 }
-      ]
+      "wabi": 55,
+      "spice": 0,
+      "exp": 3,
+      "restricted": false
     },
     {
       "id": "member_julie",
-      "wabi": 10, "spice": 0, "exp": 2,
-      "restricted": false,
-      "statistics": [
-        { "label": "Bible Days", "value": 10 }
-      ]
+      "wabi": 10,
+      "spice": 0,
+      "exp": 2,
+      "restricted": false
     },
     {
       "id": "member_carla_walaa",
-      "wabi": 6, "spice": 0, "exp": 1,
-      "restricted": false,
-      "statistics": [
-        { "label": "Bible Days", "value": 6 }
-      ]
+      "wabi": 6,
+      "spice": 0,
+      "exp": 1,
+      "restricted": false
     },
     {
       "id": "member_joy_magued",
-      "wabi": 4, "spice": 0, "exp": 1,
-      "restricted": false,
-      "statistics": [
-        { "label": "Bible Days", "value": 4 }
-      ]
+      "wabi": 4,
+      "spice": 0,
+      "exp": 1,
+      "restricted": false
     },
     {
       "id": "member_lydia_rafik",
-      "wabi": 1, "spice": 0, "exp": 1,
-      "restricted": false,
-      "statistics": [
-        { "label": "Bible Days", "value": 1 }
-      ]
+      "wabi": 1,
+      "spice": 0,
+      "exp": 1,
+      "restricted": false
     },
     {
       "id": "member_venus",
-      "wabi": 6, "spice": 0, "exp": 1,
-      "restricted": false,
-      "statistics": [
-        { "label": "Bible Days", "value": 6 }
-      ]
+      "wabi": 6,
+      "spice": 0,
+      "exp": 1,
+      "restricted": false
     },
     {
       "id": "member_nana",
-      "wabi": 2, "spice": 0, "exp": 1,
-      "restricted": false,
-      "statistics": [
-        { "label": "Bible Days", "value": 3 }
-      ]
+      "wabi": 2,
+      "spice": 0,
+      "exp": 1,
+      "restricted": false
     },
     {
       "id": "member_mai_hassaan",
-      "wabi": 6, "spice": 0, "exp": 1,
-      "restricted": false,
-      "statistics": [
-        { "label": "Bible Days", "value": 6 }
-      ]
+      "wabi": 6,
+      "spice": 0,
+      "exp": 1,
+      "restricted": false
     },
     {
       "id": "member_shady_hassan",
-      "wabi": 0, "spice": 0, "exp": 0,
-      "restricted": false,
-      "statistics": [
-        { "label": "Bible Days", "value": 0 }
-      ]
+      "wabi": 0,
+      "spice": 0,
+      "exp": 0,
+      "restricted": false
     },
     {
       "id": "member_mina",
-      "wabi": 15, "spice": 0, "exp": 6,
-      "restricted": false,
-      "statistics": [
-        { "label": "Bible Days", "value": 8 },
-        { "label": "Habits Completed", "value": 21 }
-      ]
+      "wabi": 15,
+      "spice": 0,
+      "exp": 6,
+      "restricted": false
     },
     {
       "id": "member_lucas",
-      "wabi": 23, "spice": 0, "exp": 3,
-      "restricted": false,
-      "statistics": [
-        { "label": "Bible Days", "value": 24 }
-      ]
+      "wabi": 23,
+      "spice": 0,
+      "exp": 3,
+      "restricted": false
     },
     {
       "id": "member_rafik_boules",
-      "wabi": 13, "spice": 0, "exp": 2,
-      "restricted": true,
-      "statistics": [
-        { "label": "Bible Days", "value": 13 }
-      ]
+      "wabi": 13,
+      "spice": 0,
+      "exp": 2,
+      "restricted": true
     },
     {
       "id": "member_abanoub_mohsen",
-      "wabi": 3, "spice": 0, "exp": 2,
-      "restricted": false,
-      "statistics": [
-        { "label": "Bible Days", "value": 3 }
-      ]
+      "wabi": 3,
+      "spice": 0,
+      "exp": 2,
+      "restricted": false
     },
     {
       "id": "member_bassem_mounir",
-      "wabi": 13, "spice": 0, "exp": 2,
-      "restricted": false,
-      "statistics": [
-        { "label": "Bible Days", "value": 14 }
-      ]
+      "wabi": 13,
+      "spice": 0,
+      "exp": 2,
+      "restricted": false
     },
     {
       "id": "member_yohana",
-      "wabi": 0, "spice": 0, "exp": 0,
-      "restricted": true,
-      "statistics": [
-        { "label": "Bible Days", "value": 0 }
-      ]
+      "wabi": 0,
+      "spice": 0,
+      "exp": 0,
+      "restricted": true
     }
   ],
   "projectData": [
     {
       "id": "proj-bible1.1",
       "members": [
-        "member_joren", "member_lydia", "member_yassa", "member_samih_nasser", "member_philip", "member_karen",
-        "member_yana", "member_david_michael", "member_manuel", "member_daniel_walaa", "member_jenny", "member_haneen",
+        "member_joren",
+        "member_lydia",
+        "member_yassa",
+        "member_samih_nasser",
+        "member_philip",
+        "member_karen",
+        "member_yana",
+        "member_david_michael",
+        "member_manuel",
+        "member_daniel_walaa",
+        "member_jenny",
+        "member_haneen",
         "member_nana"
-      ],
-      "lastCycleLeaderboard": [
-        { "memberId": "member_yana", "days": 10 },
-        { "memberId": "member_philip", "days": 10 },
-        { "memberId": "member_manuel", "days": 10 },
-        { "memberId": "member_haneen", "days": 9 },
-        { "memberId": "member_karen", "days": 9 },
-        { "memberId": "member_joren", "days": 9 },
-        { "memberId": "member_daniel_walaa", "days": 8 }
       ]
     },
     {
       "id": "proj-bible1.2",
       "members": [
-        "member_nour", "member_jonathan_joseph", "member_venus",
-        "member_karim", "member_kevin", "member_chris", "member_peter_boshra",
-        "member_yasmine", "member_julie", "member_carla_walaa", "member_mai_hassaan",
-        "member_joy_magued", "member_shady_hassan"
-      ],
-      "lastCycleLeaderboard": [
-        { "memberId": "member_jonathan_joseph", "days": 10 },
-        { "memberId": "member_yasmine", "days": 10 },
-        { "memberId": "member_chris", "days": 9 },
-        { "memberId": "member_julie", "days": 8 }
+        "member_nour",
+        "member_jonathan_joseph",
+        "member_venus",
+        "member_karim",
+        "member_kevin",
+        "member_chris",
+        "member_peter_boshra",
+        "member_yasmine",
+        "member_julie",
+        "member_carla_walaa",
+        "member_mai_hassaan",
+        "member_joy_magued",
+        "member_shady_hassan"
       ]
     },
     {
       "id": "proj-bible2",
       "members": [
-        "member_abanoub_mohsen", "member_mina", "member_lucas", "member_bassem_mounir"
-      ],
-      "lastCycleLeaderboard": []
+        "member_abanoub_mohsen",
+        "member_mina",
+        "member_lucas",
+        "member_bassem_mounir"
+      ]
     },
     {
       "id": "proj-habits",
       "members": [
-        "member_peter_boshra", "member_jonathan_joseph", "member_mina", "member_philip", "member_chris", "member_yasmine",
-        "member_samih_nasser", "member_yana", "member_daniel_walaa", "member_joren", "member_karen"
-      ],
-      "lastCycleLeaderboard": [
-        { "memberId": "member_chris", "habits": 62 },
-        { "memberId": "member_yana", "habits": 58 },
-        { "memberId": "member_jonathan_joseph", "habits": 54 }
+        "member_peter_boshra",
+        "member_jonathan_joseph",
+        "member_mina",
+        "member_philip",
+        "member_chris",
+        "member_yasmine",
+        "member_samih_nasser",
+        "member_yana",
+        "member_daniel_walaa",
+        "member_joren",
+        "member_karen"
       ]
     },
     {
       "id": "proj-hidden_in_my_heart",
-      "members": ["member_jonathan_joseph", "member_joren", "member_daniel_walaa"],
-      "lastCycleLeaderboard": []
+      "members": [
+        "member_jonathan_joseph",
+        "member_joren",
+        "member_daniel_walaa"
+      ]
     },
     {
       "id": "proj-study",
       "members": [
-        "member_kevin", "member_karim", "member_haneen", "member_joren", "member_chris", "member_yana", "member_karen",
+        "member_kevin",
+        "member_karim",
+        "member_haneen",
+        "member_joren",
+        "member_chris",
+        "member_yana",
+        "member_karen",
         "member_yassa"
-      ],
-      "lastCycleLeaderboard": [
-        { "memberId": "member_kevin", "hours": 62 },
-        { "memberId": "member_haneen", "hours": 58 },
-        { "memberId": "member_yana", "hours": 54 }
       ]
     },
     {
       "id": "proj-work",
       "members": [
-        "member_jonathan_joseph", "member_peter_boshra", "member_samih_nasser"
-      ],
-      "lastCycleLeaderboard": []
+        "member_jonathan_joseph",
+        "member_peter_boshra",
+        "member_samih_nasser"
+      ]
     },
     {
       "id": "proj-languages",
-      "members": ["member_joren", "member_philip", "member_jonathan_joseph"],
-      "lastCycleLeaderboard": []
+      "members": [
+        "member_joren",
+        "member_philip",
+        "member_jonathan_joseph"
+      ]
     },
     {
       "id": "proj-pm",
-      "members": ["member_karen", "member_jonathan_joseph", "member_joren", "member_peter_boshra", "member_samih_nasser"],
-      "lastCycleLeaderboard": []
+      "members": [
+        "member_karen",
+        "member_jonathan_joseph",
+        "member_joren",
+        "member_peter_boshra",
+        "member_samih_nasser"
+      ]
     },
     {
       "id": "fun_edu",
-      "members": ["member_daniel_rafik", "member_jonathan_joseph", "member_peter_boshra"],
-      "lastCycleLeaderboard": []
+      "members": [
+        "member_daniel_rafik",
+        "member_jonathan_joseph",
+        "member_peter_boshra"
+      ]
     },
     {
       "id": "5am",
-      "members": ["member_peter_boshra", "member_jonathan_joseph"],
-      "lastCycleLeaderboard": []
+      "members": [
+        "member_peter_boshra",
+        "member_jonathan_joseph"
+      ]
     },
     {
       "id": "book_club",
-      "members": ["member_samih_nasser"],
-      "lastCycleLeaderboard": []
+      "members": [
+        "member_samih_nasser"
+      ]
     },
     {
       "id": "bible_study",
-      "members": [],
-      "lastCycleLeaderboard": []
+      "members": []
     },
     {
       "id": "tasbe7",
-      "members": [],
-      "lastCycleLeaderboard": []
+      "members": []
     }
   ]
 }

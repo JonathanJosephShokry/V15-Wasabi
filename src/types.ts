@@ -37,10 +37,8 @@ export interface Member {
   teamId: string;
   role: 'leader' | 'normal';
   collection: CollectionEntry[];
-  skills: Record<string, number>;
   restricted?: boolean;
   sportEventScore?: number;
-  statistics?: { label: string; value: number }[];
 }
 
 export interface Team {
@@ -77,11 +75,6 @@ export interface SpiceDeal {
   highlight: boolean;
 }
 
-export interface ProjectLeaderboardEntry {
-  memberId: string;
-  [key: string]: any;
-}
-
 export interface Project {
   id: string;
   teamId: string;
@@ -97,9 +90,6 @@ export interface Project {
   maxMembers: number;
   rules?: string[];
   bonusSystem: { work: string; salary: number }[];
-  prizes?: Record<string, { characterId: string; degree?: string }>;
-  waitingList?: string[];
-  lastCycleLeaderboard?: ProjectLeaderboardEntry[];
 }
 
 export interface TeamShopItem {
@@ -160,13 +150,11 @@ export interface DynamicMemberData {
   spice: number;
   exp: number;
   restricted: boolean;
-  statistics: { label: string; value: number }[];
 }
 
 export interface DynamicProjectData {
   id: string;
   members: string[];
-  lastCycleLeaderboard: ProjectLeaderboardEntry[];
 }
 
 export interface DynamicData {

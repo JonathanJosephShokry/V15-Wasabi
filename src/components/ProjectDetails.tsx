@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { WasabiData, Project, Member } from '../types';
-import { ArrowLeft, Clock, Users, Trophy, ListChecks, UserPlus } from 'lucide-react';
+import { ArrowLeft, Clock, Users } from 'lucide-react';
 import { getProjectAge, getProjectTheme } from '../utils';
 
 interface ProjectDetailsProps {
@@ -110,114 +110,6 @@ export const ProjectDetails: React.FC<ProjectDetailsProps> = ({ data }) => {
                 })}
               </div>
             </section>
-
-            {/* Prizes Section */}
-            {project.prizes && (
-              <section className="bg-white p-8 rounded-2xl border-2 border-[#E0E0E0] shadow-md">
-                <h3 className="text-xl font-bold text-[#6B5435] mb-6 flex items-center gap-2">
-                  <Trophy size={20} className="text-yellow-500" /> Project Prizes
-                </h3>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                  {['1st', '2nd', '3rd'].map((place) => {
-                    const prize = (project.prizes as any)[place];
-                    if (!prize) return null;
-                    const char = data.characters.find(c => c.id === prize.characterId);
-                    if (!char) return null;
-                    const degree = prize.degree || 'iron';
-                    const degColors = data.cardConfig.degrees[degree];
-                    const imgSrc = char.images[degree] || char.images.iron;
-                    
-                    return (
-                      <div key={place} className="bg-[#FAFAFA] p-4 rounded-xl border-2 border-[#E0E0E0] text-center flex flex-col items-center">
-                        <div className={`text-xs font-black mb-2 uppercase tracking-widest ${
-                          place === '1st' ? 'text-yellow-600' : 
-                          place === '2nd' ? 'text-gray-500' : 'text-orange-600'
-                        }`}>
-                          {place} Place
-                        </div>
-                        <div className="relative w-24 h-32 rounded-lg overflow-hidden border-2 mb-2" style={{ borderColor: degColors.border }}>
-                          <img src={`/icons/${imgSrc}`} alt={char.name} className="w-full h-full object-cover" />
-                        </div>
-                        <div className="text-[10px] font-bold text-[#6B5435] truncate w-full">{char.name}</div>
-                        <div className="text-[8px] font-black uppercase tracking-widest" style={{ color: degColors.color }}>{degree}</div>
-                      </div>
-                    );
-                  })}
-                </div>
-              </section>
-            )}
-
-            {/* Leaderboard Section */}
-            {project.lastCycleLeaderboard && project.lastCycleLeaderboard.length > 0 && (
-              <section className="bg-white p-8 rounded-2xl border-2 border-[#E0E0E0] shadow-md">
-                <h3 className="text-base sm:text-xl font-bold text-[#6B5435] mb-6 flex items-center gap-2">
-                  <Trophy size={20} className="text-yellow-500 shrink-0" />
-                  <span className="leading-tight">Leaderboard (Last Cycle – 10 Days)</span>
-                </h3>
-                <div className="space-y-3">
-                  {project.lastCycleLeaderboard.map((entry: any, i) => {
-                    // Find the value key (the one that isn't 'memberId')
-                    const valueKey = Object.keys(entry).find(k => k !== 'memberId');
-                    if (!valueKey) return null;
-                    
-                    const value = entry[valueKey];
-                    const unitLabel = valueKey.charAt(0).toUpperCase() + valueKey.slice(1);
-                    
-                    // Dense ranking: users with same score share same rank, next rank is +1
-                    const uniqueValuesAbove = new Set(
-                      project.lastCycleLeaderboard!
-                        .map((e: any) => e[valueKey])
-                        .filter((v: any) => v > value)
-                    ).size;
-                    const rank = uniqueValuesAbove + 1;
-                    const member = data.members.find(m => m.id === entry.memberId);
-                    
-                    return (
-                      <div key={i} className={`flex items-center justify-between p-4 rounded-xl border-2 transition-all hover:bg-[#FAFAFA] ${
-                        rank === 1 ? 'bg-yellow-50 border-yellow-200' : 
-                        rank === 2 ? 'bg-gray-50 border-gray-200' : 
-                        rank === 3 ? 'bg-orange-50 border-orange-200' : 'bg-white border-[#E0E0E0]'
-                      }`}>
-                        <div className="flex items-center gap-4">
-                          <div className={`w-8 h-8 flex items-center justify-center font-black rounded-full ${
-                            rank === 1 ? 'bg-yellow-500 text-white' : 
-                            rank === 2 ? 'bg-gray-400 text-white' : 
-                            rank === 3 ? 'bg-orange-400 text-white' : 'bg-[#E0E0E0] text-[#666666]'
-                          }`}>
-                            {rank}
-                          </div>
-                          <div className="font-bold text-[#6B5435]">{member?.name || 'Unknown'}</div>
-                        </div>
-                        <div className="text-sm font-black text-[#9FD356] bg-white px-4 py-1.5 rounded-full border border-[#E0E0E0] shadow-sm">
-                          {value} {unitLabel}
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-              </section>
-            )}
-
-            {/* Waiting List Section */}
-            {project.waitingList && project.waitingList.length > 0 && (
-              <section className="bg-white p-8 rounded-2xl border-2 border-[#E0E0E0] shadow-md">
-                <h3 className="text-xl font-bold text-[#6B5435] mb-6 flex items-center gap-2">
-                  <ListChecks size={20} /> Waiting List
-                </h3>
-                <div className="flex flex-wrap gap-3">
-                  {project.waitingList.map(memberId => {
-                    const m = data.members.find(x => x.id === memberId);
-                    if (!m) return null;
-                    return (
-                      <div key={memberId} className="flex items-center gap-2 bg-[#FAFAFA] border-2 border-[#E0E0E0] px-4 py-2 rounded-full transition-all hover:border-[#9FD356]">
-                        <img src={`/icons/${m.icon}`} alt={m.name} className="w-6 h-6 rounded-full object-cover" />
-                        <span className="text-sm font-bold text-[#6B5435]">{m.name}</span>
-                      </div>
-                    );
-                  })}
-                </div>
-              </section>
-            )}
           </div>
 
           <div className="space-y-8">

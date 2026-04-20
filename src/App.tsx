@@ -41,8 +41,7 @@ const App: React.FC = () => {
           wabi: dynamicMember.wabi,
           spice: dynamicMember.spice,
           exp: dynamicMember.exp,
-          restricted: dynamicMember.restricted,
-          statistics: dynamicMember.statistics
+          restricted: dynamicMember.restricted
         };
       }
       return member;
@@ -54,8 +53,7 @@ const App: React.FC = () => {
       if (dynamicProject) {
         return {
           ...project,
-          members: dynamicProject.members,
-          lastCycleLeaderboard: dynamicProject.lastCycleLeaderboard
+          members: dynamicProject.members
         };
       }
       return project;

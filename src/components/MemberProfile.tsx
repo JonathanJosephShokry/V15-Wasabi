@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { WasabiData, Member, Character } from '../types';
-import { ArrowLeft, Trophy, Star, Medal, BarChart3, Flame, Book, Dumbbell, Clock, Trophy as TrophyIcon, Zap } from 'lucide-react';
+import { ArrowLeft, Star, Medal, Trophy } from 'lucide-react';
 import { calculateLevel, calculateExpProgress, calcHiddenScore, getMemberTotalScore, formatRarity, formatDegree, getGlobalRank } from '../utils';
 
 interface MemberProfileProps {
@@ -128,77 +128,6 @@ export const MemberProfile: React.FC<MemberProfileProps> = ({ data }) => {
             </div>
           </div>
         </div>
-
-        {/* Member Statistics Section */}
-        {member.statistics && member.statistics.length > 0 && (
-          <div className="bg-white rounded-3xl border-2 border-[#E0E0E0] shadow-xl mb-10 relative overflow-hidden">
-            {/* Decorative Background */}
-            <div className="absolute inset-0 bg-gradient-to-br from-[#FAFAFA] via-white to-[#9FD356]/5 pointer-events-none"></div>
-            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#9FD356] via-[#8B6F47] to-[#9FD356] opacity-30"></div>
-            <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-[#9FD356] via-[#8B6F47] to-[#9FD356] opacity-30"></div>
-            
-            <div className="relative p-10">
-              <div className="flex items-center gap-3 mb-10">
-                <div className="p-3 bg-[#9FD356]/15 rounded-2xl border-2 border-[#9FD356]/30">
-                  <BarChart3 className="text-[#9FD356]" size={28} />
-                </div>
-                <h2 className="text-3xl font-black text-[#6B5435] tracking-tight">Member Statistics</h2>
-              </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                {member.statistics.map((stat, i) => {
-                  const getIcon = (label: string) => {
-                    const l = label.toLowerCase();
-                    if (l.includes('bible')) return <Book className="text-blue-500" size={18} />;
-                    if (l.includes('push')) return <Dumbbell className="text-orange-500" size={18} />;
-                    if (l.includes('habit')) return <Zap className="text-yellow-500" size={18} />;
-                    if (l.includes('hour') || l.includes('study')) return <Clock className="text-purple-500" size={18} />;
-                    return <Flame className="text-red-500" size={18} />;
-                  };
-
-                  return (
-                    <motion.div 
-                      key={i}
-                      initial={{ opacity: 0, scale: 0.95 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      transition={{ delay: i * 0.05 }}
-                      className="bg-white border-2 border-[#E0E0E0] p-6 rounded-2xl flex items-center gap-5 transition-all hover:border-[#9FD356] hover:shadow-lg hover:-translate-y-1 group"
-                    >
-                      <div className="p-3 bg-[#FAFAFA] rounded-xl border border-[#E0E0E0] group-hover:bg-[#9FD356]/10 group-hover:border-[#9FD356]/30 transition-colors">
-                        {getIcon(stat.label)}
-                      </div>
-                      <div className="flex flex-col">
-                        <span className="text-2xl font-black text-[#6B5435] tracking-tight">{stat.value.toLocaleString()}</span>
-                        <span className="text-[10px] font-bold text-[#666666] uppercase tracking-widest">{stat.label}</span>
-                      </div>
-                    </motion.div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        )}
-
-        {/* Skills Section */}
-        {Object.keys(member.skills).length > 0 && (
-          <div className="bg-white p-10 rounded-2xl border-2 border-[#E0E0E0] shadow-md mb-10">
-            <h2 className="text-3xl font-bold text-[#6B5435] mb-8">Skills</h2>
-            <div className="flex flex-wrap gap-4">
-              {Object.entries(member.skills).filter(([, v]) => (v as number) > 0).map(([name, pts], i) => (
-                <motion.div 
-                  key={name}
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: i * 0.08 }}
-                  className="flex items-center gap-3 px-5 py-3 bg-gradient-to-br from-[#FDDDC7] to-[#E8631A]/5 border-2 border-[#E8631A]/20 rounded-full transition-all hover:-translate-y-1 hover:bg-gradient-to-br hover:from-[#E8631A]/18 hover:to-[#FDDDC7] hover:border-[#E8631A] hover:shadow-md"
-                >
-                  <span className="font-bold text-[#6B5435] capitalize">{name}</span>
-                  <span className="bg-[#E8631A] text-white px-2.5 py-0.5 rounded-xl text-xs font-black">{pts} {pts === 1 ? 'pt' : 'pts'}</span>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        )}
 
         {/* Collection Section */}
         <div className="bg-white p-10 rounded-2xl border-2 border-[#E0E0E0] shadow-md">
