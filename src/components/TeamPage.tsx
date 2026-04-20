@@ -38,12 +38,7 @@ export const TeamPage: React.FC<TeamPageProps> = ({ data }) => {
   };
 
   const isMemberRestricted = (member: Member) => {
-    if (!member.restricted) return false;
-    if (!member.restrictedUntil) return member.restricted;
-    const today = new Date();
-    today.setHours(0, 0, 0, 0);
-    const until = new Date(member.restrictedUntil + 'T00:00:00');
-    return today <= until;
+    return member.restricted || false;
   };
 
   return (
@@ -204,7 +199,7 @@ export const TeamPage: React.FC<TeamPageProps> = ({ data }) => {
                           <span className="text-sm cursor-help">⚠️</span>
                           {activeTooltip === member.id && (
                             <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 bg-red-600 text-white text-[10px] px-3 py-1.5 rounded-lg whitespace-nowrap shadow-xl border border-white/20 z-50">
-                              Restricted {member.restrictedUntil ? `until ${member.restrictedUntil}` : ''}
+                              Restricted
                               <div className="absolute top-full left-1/2 -translate-x-1/2 border-8 border-transparent border-t-red-600"></div>
                             </div>
                           )}

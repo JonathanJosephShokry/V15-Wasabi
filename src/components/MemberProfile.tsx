@@ -45,25 +45,10 @@ export const MemberProfile: React.FC<MemberProfileProps> = ({ data }) => {
   };
 
   const isMemberRestricted = () => {
-    if (!member.restricted) return false;
-    if (!member.restrictedUntil) return member.restricted;
-    const today = new Date();
-    today.setHours(0, 0, 0, 0);
-    const until = new Date(member.restrictedUntil + 'T00:00:00');
-    return today <= until;
-  };
-
-  const restrictionDaysRemaining = () => {
-    if (!member.restrictedUntil) return 0;
-    const today = new Date();
-    today.setHours(0, 0, 0, 0);
-    const until = new Date(member.restrictedUntil + 'T00:00:00');
-    const diff = Math.ceil((until.getTime() - today.getTime()) / (1000 * 60 * 60 * 24));
-    return Math.max(0, diff);
+    return member.restricted || false;
   };
 
   const restricted = isMemberRestricted();
-  const daysLeft = restrictionDaysRemaining();
 
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="bg-[#FAFAFA] min-h-screen pb-20">
@@ -101,7 +86,7 @@ export const MemberProfile: React.FC<MemberProfileProps> = ({ data }) => {
                 >
                   <span className="text-2xl cursor-help">⚠️</span>
                   <div className={`absolute bottom-full left-1/2 -translate-x-1/2 mb-2 transition-opacity bg-red-600 text-white text-[10px] px-3 py-1.5 rounded-lg whitespace-nowrap pointer-events-none shadow-xl border border-white/20 z-50 ${showMobileTooltip ? 'opacity-100' : 'opacity-0 group-hover/restricted:opacity-100'}`}>
-                    Restricted for {daysLeft} days
+                    Restricted
                     <div className="absolute top-full left-1/2 -translate-x-1/2 border-8 border-transparent border-t-red-600"></div>
                   </div>
                 </div>

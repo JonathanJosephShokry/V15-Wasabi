@@ -8,8 +8,9 @@ import { AboutPage } from './components/AboutPage';
 import { WasabiCards } from './components/WasabiCards';
 import { TrainingPage } from './components/TrainingPage';
 import { Layout } from './components/Layout';
-import { WasabiData } from './types';
+import { WasabiData, DynamicData } from './types';
 import rawData from './data.json';
+import dynamicDataRaw from './dynamicData.json';
 
 // Scroll to top on navigation, except when going to Home ("/")
 const ScrollToTop: React.FC = () => {
@@ -28,7 +29,43 @@ const App: React.FC = () => {
   const [data, setData] = useState<WasabiData | null>(null);
 
   useEffect(() => {
-    setData(rawData as WasabiData);
+    const dynamicData = dynamicDataRaw as DynamicData;
+    const baseData = rawData as any;
+
+    // Merge member data
+    const mergedMembers = baseData.members.map(member => {
+      const dynamicMember = dynamicData.memberData.find(d => d.id === member.id);
+      if (dynamicMember) {
+        return {
+          ...member,
+          wabi: dynamicMember.wabi,
+          spice: dynamicMember.spice,
+          exp: dynamicMember.exp,
+          restricted: dynamicMember.restricted,
+          statistics: dynamicMember.statistics
+        };
+      }
+      return member;
+    });
+
+    // Merge project data
+    const mergedProjects = baseData.projects.map(project => {
+      const dynamicProject = dynamicData.projectData.find(d => d.id === project.id);
+      if (dynamicProject) {
+        return {
+          ...project,
+          members: dynamicProject.members,
+          lastCycleLeaderboard: dynamicProject.lastCycleLeaderboard
+        };
+      }
+      return project;
+    });
+
+    setData({
+      ...baseData,
+      members: mergedMembers,
+      projects: mergedProjects
+    });
   }, []);
 
   if (!data) return <div className="flex items-center justify-center min-h-screen">Loading Wasabi System...</div>;

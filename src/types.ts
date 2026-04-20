@@ -39,7 +39,6 @@ export interface Member {
   collection: CollectionEntry[];
   skills: Record<string, number>;
   restricted?: boolean;
-  restrictedUntil?: string | null;
   sportEventScore?: number;
   statistics?: { label: string; value: number }[];
 }
@@ -98,6 +97,7 @@ export interface Project {
   maxMembers: number;
   rules?: string[];
   bonusSystem: { work: string; salary: number }[];
+  prizes?: Record<string, { characterId: string; degree?: string }>;
   waitingList?: string[];
   lastCycleLeaderboard?: ProjectLeaderboardEntry[];
 }
@@ -152,6 +152,26 @@ export interface PackSale {
   start_date: string;
   end_date: string;
   packs: string[];
+}
+
+export interface DynamicMemberData {
+  id: string;
+  wabi: number;
+  spice: number;
+  exp: number;
+  restricted: boolean;
+  statistics: { label: string; value: number }[];
+}
+
+export interface DynamicProjectData {
+  id: string;
+  members: string[];
+  lastCycleLeaderboard: ProjectLeaderboardEntry[];
+}
+
+export interface DynamicData {
+  memberData: DynamicMemberData[];
+  projectData: DynamicProjectData[];
 }
 
 export interface WasabiData {
