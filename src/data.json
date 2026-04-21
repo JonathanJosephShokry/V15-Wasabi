@@ -1,5 +1,5 @@
 {
-  "version": "V31.3",
+  "version": "V31.4",
   "wasabiRulesLink": "https://docs.google.com/document/d/1SfoDRQbWs7yBSIc6YOW61q7s3s4s-D5OP9TCz7zFO30/edit?usp=sharing",
   "cardConfig": {
     "rarityScores": {
@@ -1127,14 +1127,14 @@
       "images": {
         "iron": "larry.jpg",
         "bronze": "larry20.jpg",
-        "silver": "larry.png",
-        "pearl": "larry.png",
-        "gold": "larry.png",
-        "jade": "larry.png",
-        "sapphire": "larry.png",
-        "ruby": "larry.png",
-        "emerald": "larry.png",
-        "diamond": "larry.png"
+        "silver": "larry30.jpg",
+        "pearl": "larry40.jpg",
+        "gold": "larry50.jpg",
+        "jade": "larry60.jpg",
+        "sapphire": "larry70.jpg",
+        "ruby": "larry80.jpg",
+        "emerald": "larry90.jpg",
+        "diamond": "larry100.jpg"
       }
     },
     {
@@ -2294,14 +2294,14 @@
   {
     "id": "member_daniel_rafik",
     "name": "Daniel Rafik",
-    "icon": "noicon.jpg",
+    "icon": "ice bear.jpg",
     "teamId": "team1",
     "role": "normal",
     "collection": [
       { "characterId": "monkey", "degree": "bronze", "count": 1 },
       { "characterId": "four_arms", "degree": "bronze", "count": 1 },
       { "characterId": "sarge", "degree": "silver", "count": 1 },
-      { "characterId": "igglepiggle", "degree": "iron", "count": 1 },
+      { "characterId": "ice_bear", "degree": "iron", "count": 1 },
       { "characterId": "manetti", "degree": "iron", "count": 1 }
     ],
     "sportEventScore": 0
@@ -2332,13 +2332,10 @@
       { "characterId": "jake", "degree": "bronze", "count": 1 },
       { "characterId": "finn", "degree": "silver", "count": 1 },
       { "characterId": "mater", "degree": "gold", "count": 1 },
-      { "characterId": "ice_bear", "degree": "iron", "count": 1 },
       { "characterId": "bmo", "degree": "iron", "count": 1 },
       { "characterId": "upsy_daisy", "degree": "gold", "count": 1 },
       { "characterId": "pontipines", "degree": "silver", "count": 1 },
-      { "characterId": "igglepiggle", "degree": "silver", "count": 1 },
-      { "characterId": "igglepiggle", "degree": "bronze", "count": 1 },
-      { "characterId": "igglepiggle", "degree": "iron", "count": 1 },
+      { "characterId": "igglepiggle", "degree": "pearl", "count": 1 },
       { "characterId": "upsy_daisy", "degree": "silver", "count": 1 },
       { "characterId": "upsy_daisy", "degree": "iron", "count": 1 }
     ],
