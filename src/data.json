@@ -1,5 +1,5 @@
 {
-  "version": "V24.4",
+  "version": "V31.3",
   "wasabiRulesLink": "https://docs.google.com/document/d/1SfoDRQbWs7yBSIc6YOW61q7s3s4s-D5OP9TCz7zFO30/edit?usp=sharing",
   "cardConfig": {
     "rarityScores": {
@@ -2291,942 +2291,457 @@
     }
   ],
   "members": [
-    {
-      "id": "member_daniel_rafik",
-      "name": "Daniel Rafik",
-      "icon": "noicon.jpg",
-      "teamId": "team1",
-      "role": "normal",
-      "collection": [
-        {
-          "characterId": "monkey",
-          "degree": "bronze",
-          "count": 1
-        },
-        {
-          "characterId": "four_arms",
-          "degree": "bronze",
-          "count": 1
-        },
-        {
-          "characterId": "sarge",
-          "degree": "silver",
-          "count": 1
-        },
-        {
-          "characterId": "igglepiggle",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "manetti",
-          "degree": "iron",
-          "count": 1
-        }
-      ],
-      "sportEventScore": 0
-    },
-    {
-      "id": "member_david_michael",
-      "name": "David Michael",
-      "icon": "burrito.png",
-      "teamId": "team1",
-      "role": "normal",
-      "collection": [
-        {
-          "characterId": "burrito",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "junior",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "bob_the_tomato",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "common_token",
-          "degree": "iron",
-          "count": 1
-        }
-      ],
-      "sportEventScore": 0
-    },
-    {
-      "id": "member_jonathan_joseph",
-      "name": "Jonathan",
-      "icon": "grizz.jpg",
-      "teamId": "team1",
-      "role": "leader",
-      "collection": [
-        {
-          "characterId": "grizz",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "shifu",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "jake",
-          "degree": "bronze",
-          "count": 1
-        },
-        {
-          "characterId": "finn",
-          "degree": "silver",
-          "count": 1
-        },
-        {
-          "characterId": "mater",
-          "degree": "gold",
-          "count": 1
-        },
-        {
-          "characterId": "makka_pakka",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "igglepiggle",
-          "degree": "bronze",
-          "count": 1
-        },
-        {
-          "characterId": "igglepiggle",
-          "degree": "pearl",
-          "count": 1
-        },
-        {
-          "characterId": "upsy_daisy",
-          "degree": "pearl",
-          "count": 1
-        },
-        {
-          "characterId": "pontipines",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "pontipines",
-          "degree": "bronze",
-          "count": 1
-        }
-      ],
-      "sportEventScore": 0
-    },
-    {
-      "id": "member_samih_nasser",
-      "name": "Samih",
-      "icon": "charlie.jpg",
-      "teamId": "team1",
-      "role": "leader",
-      "collection": [
-        {
-          "characterId": "charlie",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "larry",
-          "degree": "silver",
-          "count": 1
-        },
-        {
-          "characterId": "larry",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "igglepiggle",
-          "degree": "gold",
-          "count": 1
-        },
+  {
+    "id": "member_daniel_rafik",
+    "name": "Daniel Rafik",
+    "icon": "noicon.jpg",
+    "teamId": "team1",
+    "role": "normal",
+    "collection": [
+      { "characterId": "monkey", "degree": "bronze", "count": 1 },
+      { "characterId": "four_arms", "degree": "bronze", "count": 1 },
+      { "characterId": "sarge", "degree": "silver", "count": 1 },
+      { "characterId": "igglepiggle", "degree": "iron", "count": 1 },
+      { "characterId": "manetti", "degree": "iron", "count": 1 }
+    ],
+    "sportEventScore": 0
+  },
+  {
+    "id": "member_david_michael",
+    "name": "David Michael",
+    "icon": "burrito.png",
+    "teamId": "team1",
+    "role": "normal",
+    "collection": [
+      { "characterId": "burrito", "degree": "iron", "count": 1 },
+      { "characterId": "junior", "degree": "iron", "count": 1 },
+      { "characterId": "bob_the_tomato", "degree": "iron", "count": 1 },
+      { "characterId": "common_token", "degree": "iron", "count": 1 }
+    ],
+    "sportEventScore": 0
+  },
+  {
+    "id": "member_jonathan_joseph",
+    "name": "Jonathan",
+    "icon": "grizz.jpg",
+    "teamId": "team1",
+    "role": "leader",
+    "collection": [
+      { "characterId": "grizz", "degree": "iron", "count": 1 },
+      { "characterId": "shifu", "degree": "iron", "count": 1 },
+      { "characterId": "jake", "degree": "bronze", "count": 1 },
+      { "characterId": "finn", "degree": "silver", "count": 1 },
+      { "characterId": "mater", "degree": "gold", "count": 1 },
+      { "characterId": "ice_bear", "degree": "iron", "count": 1 },
+      { "characterId": "bmo", "degree": "iron", "count": 1 },
+      { "characterId": "upsy_daisy", "degree": "gold", "count": 1 },
+      { "characterId": "pontipines", "degree": "silver", "count": 1 },
+      { "characterId": "igglepiggle", "degree": "silver", "count": 1 },
+      { "characterId": "igglepiggle", "degree": "bronze", "count": 1 },
+      { "characterId": "igglepiggle", "degree": "iron", "count": 1 },
+      { "characterId": "upsy_daisy", "degree": "silver", "count": 1 },
+      { "characterId": "upsy_daisy", "degree": "iron", "count": 1 }
+    ],
+    "sportEventScore": 0
+  },
+  {
+    "id": "member_samih_nasser",
+    "name": "Samih",
+    "icon": "charlie.jpg",
+    "teamId": "team1",
+    "role": "leader",
+    "collection": [
+      { "characterId": "charlie", "degree": "iron", "count": 1 },
+      { "characterId": "larry", "degree": "silver", "count": 1 },
+      { "characterId": "larry", "degree": "iron", "count": 1 },
+      { "characterId": "igglepiggle", "degree": "jade", "count": 1 },
+      { "characterId": "makka_pakka", "degree": "pearl", "count": 1 },
+      { "characterId": "pontipines", "degree": "bronze", "count": 1 },
+      { "characterId": "upsy_daisy", "degree": "iron", "count": 1 },
+      { "characterId": "common_token", "degree": "bronze", "count": 1 }
 
-        {
-          "characterId": "upsy_daisy",
-          "degree": "bronze",
-          "count": 4
-        },
-  
-        {
-          "characterId": "makka_pakka",
-          "degree": "bronze",
-          "count": 1
-        },
-        {
-          "characterId": "makka_pakka",
-          "degree": "silver",
-          "count": 1
-        },
-        {
-          "characterId": "pontipines",
-          "degree": "bronze",
-          "count": 1
-        },
-        {
-          "characterId": "igglepiggle",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "igglepiggle",
-          "degree": "bronze",
-          "count": 1
-        },
-        {
-          "characterId": "common_token",
-          "degree": "bronze",
-          "count": 1
-        },
-        {
-          "characterId": "makka_pakka",
-          "degree": "bronze",
-          "count": 1
-        }
-      ],
-      "sportEventScore": 0
-    },
-    {
-      "id": "member_yassa",
-      "name": "Yassa",
-      "icon": "silver bear.jpg",
-      "teamId": "team1",
-      "role": "normal",
-      "collection": [
-        {
-          "characterId": "silver_bear",
-          "degree": "iron",
-          "count": 1
-        }
-      ],
-      "sportEventScore": 0
-    },
-    {
-      "id": "member_peter_boshra",
-      "name": "Peter",
-      "icon": "pu3.jpg",
-      "teamId": "team1",
-      "role": "normal",
-      "collection": [
-        {
-          "characterId": "pu",
-          "degree": "silver",
-          "count": 1
-        },
-        {
-          "characterId": "pu",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "four_arms",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "richard",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "sally",
-          "degree": "bronze",
-          "count": 1
-        },
-        {
-          "characterId": "mater",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "summer",
-          "degree": "bronze",
-          "count": 1
-        },
-        {
-          "characterId": "summer",
-          "degree": "iron",
-          "count": 2
-        },
-        {
-          "characterId": "david",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "sherwood_forrest",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "larry_the_cucumber",
-          "degree": "iron",
-          "count": 1
-        }
-      ],
-      "sportEventScore": 0
-    },
-    {
-      "id": "member_david_nasser",
-      "name": "David Nasser",
-      "icon": "noicon.jpg",
-      "teamId": "team1",
-      "role": "normal",
-      "collection": [],
-      "sportEventScore": 0
-    },
-    {
-      "id": "member_joren",
-      "name": "Joren",
-      "icon": "craboo.jpg",
-      "teamId": "team1",
-      "role": "normal",
-      "collection": [
-        {
-          "characterId": "craboo",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "finn",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "spongebob",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "sally",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "ben10",
-          "degree": "bronze",
-          "count": 1
-        },
-        {
-          "characterId": "sarge",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "luca",
-          "degree": "bronze",
-          "count": 1
-        },
-        {
-          "characterId": "tuffnut",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "madame_blueberyy",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "upsy_daisy",
-          "degree": "silver",
-          "count": 1
-        },
-        {
-          "characterId": "upsy_daisy",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "makka_pakka",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "igglepiggle",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "igglepiggle",
-          "degree": "bronze",
-          "count": 1
-        },
-        {
-          "characterId": "common_token",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "common_token",
-          "degree": "bronze",
-          "count": 1
-        }
-      ],
-      "sportEventScore": 0
-    },
-    {
-      "id": "member_haneen",
-      "name": "Haneen",
-      "icon": "hamster.jpg",
-      "teamId": "team1",
-      "role": "normal",
-      "collection": [
-        {
-          "characterId": "hamster",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "common_token",
-          "degree": "iron",
-          "count": 3
-        },
-        {
-          "characterId": "common_token",
-          "degree": "bronze",
-          "count": 1
-        },
-        {
-          "characterId": "rare_token",
-          "degree": "iron",
-          "count": 2
-        }
-      ],
-      "sportEventScore": 0
-    },
-    {
-      "id": "member_marette",
-      "name": "Marette",
-      "icon": "noicon.jpg",
-      "teamId": "team1",
-      "role": "normal",
-      "collection": [],
-      "sportEventScore": 0
-    },
-    {
-      "id": "member_nour",
-      "name": "Nour",
-      "icon": "noicon.jpg",
-      "teamId": "team1",
-      "role": "normal",
-      "collection": [],
-      "sportEventScore": 0
-    },
-    {
-      "id": "member_philip",
-      "name": "Philo",
-      "icon": "joey.jpg",
-      "teamId": "team1",
-      "role": "normal",
-      "collection": [
-        {
-          "characterId": "joey",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "darwin",
-          "degree": "bronze",
-          "count": 1
-        },
-        {
-          "characterId": "sarge",
-          "degree": "silver",
-          "count": 1
-        },
-        {
-          "characterId": "fillmore",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "pu",
-          "degree": "silver",
-          "count": 1
-        },
-        {
-          "characterId": "panda",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "ice_bear",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "bmo",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "nemo",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "marlin",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "crush",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "upsy_daisy",
-          "degree": "silver",
-          "count": 1
-        },
-        {
-          "characterId": "makka_pakka",
-          "degree": "bronze",
-          "count": 1
-        },
-        {
-          "characterId": "makka_pakka",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "rare_token",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "common_token",
-          "degree": "iron",
-          "count": 2
-        },
-        {
-          "characterId": "monkey",
-          "degree": "iron",
-          "count": 1
-        }
-      ],
-      "sportEventScore": 0
-    },
-    {
-      "id": "member_karen",
-      "name": "Karen",
-      "icon": "chloe.jpg",
-      "teamId": "team1",
-      "role": "normal",
-      "collection": [
-        {
-          "characterId": "chloe",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "david",
-          "degree": "bronze",
-          "count": 1
-        },
-        {
-          "characterId": "summer",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "manetti",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "common_token",
-          "degree": "bronze",
-          "count": 4
-        },
-        {
-          "characterId": "rare_token",
-          "degree": "iron",
-          "count": 1
-        }
-      ],
-      "sportEventScore": 0
-    },
-    {
-      "id": "member_karim",
-      "name": "Karim",
-      "icon": "albino aligator.jpg",
-      "teamId": "team1",
-      "role": "normal",
-      "collection": [
-        {
-          "characterId": "albino_aligator",
-          "degree": "iron",
-          "count": 1
-        }
-      ],
-      "sportEventScore": 0
-    },
-    {
-      "id": "member_yana",
-      "name": "Yana",
-      "icon": "chicken.jpg",
-      "teamId": "team1",
-      "role": "normal",
-      "collection": [
-        {
-          "characterId": "chicken",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "junior",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "common_token",
-          "degree": "bronze",
-          "count": 3
-        },
-        {
-          "characterId": "rare_token",
-          "degree": "iron",
-          "count": 2
-        }
-      ],
-      "sportEventScore": 0
-    },
-    {
-      "id": "member_kevin",
-      "name": "Kevin",
-      "icon": "pinatacat.jpg",
-      "teamId": "team1",
-      "role": "normal",
-      "collection": [
-        {
-          "characterId": "piniata_cat",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "rare_token",
-          "degree": "iron",
-          "count": 2
-        }
-      ],
-      "sportEventScore": 0
-    },
-    {
-      "id": "member_chris",
-      "name": "Chris",
-      "icon": "mcqueen10.jpg",
-      "teamId": "team1",
-      "role": "normal",
-      "collection": [
-        {
-          "characterId": "sarge",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "mcqueen",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "fillmore",
-          "degree": "silver",
-          "count": 1
-        },
-        {
-          "characterId": "marlin",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "igglepiggle",
-          "degree": "silver",
-          "count": 1
-        },
-        {
-          "characterId": "igglepiggle",
-          "degree": "bronze",
-          "count": 1
-        },
-        {
-          "characterId": "upsy_daisy",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "upsy_daisy",
-          "degree": "bronze",
-          "count": 1
-        },
-        {
-          "characterId": "upsy_daisy",
-          "degree": "silver",
-          "count": 1
-        },
-        {
-          "characterId": "common_token",
-          "degree": "bronze",
-          "count": 1
-        },
-        {
-          "characterId": "rare_token",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "ping",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "upsy_daisy",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "makka_pakka",
-          "degree": "iron",
-          "count": 1
-        }
-      ],
-      "sportEventScore": 0
-    },
-    {
-      "id": "member_daniel_walaa",
-      "name": "Daniel Walaa",
-      "icon": "french_peas10.jpg",
-      "teamId": "team1",
-      "role": "normal",
-      "collection": [
-        {
-          "characterId": "junior",
-          "degree": "bronze",
-          "count": 1
-        },
-        {
-          "characterId": "junior",
-          "degree": "iron",
-          "count": 2
-        },
-        {
-          "characterId": "laura",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "french_peas",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "larry_the_cucumber",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "mr_lunt",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "common_token",
-          "degree": "iron",
-          "count": 2
-        }
-      ],
-      "sportEventScore": 0
-    },
-    {
-      "id": "member_manuel",
-      "name": "Manuel",
-      "icon": "noicon.jpg",
-      "teamId": "team1",
-      "role": "normal",
-      "collection": [
-        {
-          "characterId": "finn",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "common_token",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "common_token",
-          "degree": "bronze",
-          "count": 2
-        }
-      ],
-      "sportEventScore": 0
-    },
-    {
-      "id": "member_jenny",
-      "name": "Jenny",
-      "icon": "noicon.jpg",
-      "teamId": "team1",
-      "role": "normal",
-      "collection": [],
-      "sportEventScore": 0
-    },
-    {
-      "id": "member_yasmine",
-      "name": "Yasmine",
-      "icon": "noicon.jpg",
-      "teamId": "team1",
-      "role": "normal",
-      "collection": [
-        {
-          "characterId": "rare_token",
-          "degree": "iron",
-          "count": 2
-        }
-      ],
-      "sportEventScore": 0
-    },
-    {
-      "id": "member_julie",
-      "name": "Julie",
-      "icon": "noicon.jpg",
-      "teamId": "team1",
-      "role": "normal",
-      "collection": [
-        {
-          "characterId": "common_token",
-          "degree": "iron",
-          "count": 1
-        }
-      ],
-      "sportEventScore": 0
-    },
-    {
-      "id": "member_carla_walaa",
-      "name": "Carla",
-      "icon": "noicon.jpg",
-      "teamId": "team1",
-      "role": "normal",
-      "collection": [],
-      "sportEventScore": 0
-    },
-    {
-      "id": "member_joy_magued",
-      "name": "Joy",
-      "icon": "noicon.jpg",
-      "teamId": "team1",
-      "role": "normal",
-      "collection": [],
-      "sportEventScore": 0
-    },
-    {
-      "id": "member_lydia_rafik",
-      "name": "Lydia",
-      "icon": "noicon.jpg",
-      "teamId": "team1",
-      "role": "normal",
-      "collection": [],
-      "sportEventScore": 0
-    },
-    {
-      "id": "member_venus",
-      "name": "Venus",
-      "icon": "noicon.jpg",
-      "teamId": "team1",
-      "role": "normal",
-      "collection": [],
-      "sportEventScore": 0
-    },
-    {
-      "id": "member_nana",
-      "name": "Nana",
-      "icon": "noicon.jpg",
-      "teamId": "team1",
-      "role": "normal",
-      "collection": [],
-      "sportEventScore": 0
-    },
-    {
-      "id": "member_mai_hassaan",
-      "name": "Mai",
-      "icon": "noicon.jpg",
-      "teamId": "team1",
-      "role": "normal",
-      "collection": [],
-      "sportEventScore": 0
-    },
-    {
-      "id": "member_shady_hassan",
-      "name": "Shady",
-      "icon": "noicon.jpg",
-      "teamId": "team1",
-      "role": "normal",
-      "collection": [],
-      "sportEventScore": 0
-    },
-    {
-      "id": "member_mina",
-      "name": "Mina",
-      "icon": "noicon.jpg",
-      "teamId": "team2",
-      "role": "leader",
-      "collection": [],
-      "sportEventScore": 0
-    },
-    {
-      "id": "member_lucas",
-      "name": "Lucas",
-      "icon": "noicon.jpg",
-      "teamId": "team2",
-      "role": "normal",
-      "collection": [],
-      "sportEventScore": 0
-    },
-    {
-      "id": "member_rafik_boules",
-      "name": "Rafik",
-      "icon": "noicon.jpg",
-      "teamId": "team2",
-      "role": "normal",
-      "collection": [],
-      "sportEventScore": 0
-    },
-    {
-      "id": "member_abanoub_mohsen",
-      "name": "Abanoub Mohsen",
-      "icon": "noicon.jpg",
-      "teamId": "team2",
-      "role": "normal",
-      "collection": [],
-      "sportEventScore": 0
-    },
-    {
-      "id": "member_bassem_mounir",
-      "name": "Bassem",
-      "icon": "noicon.jpg",
-      "teamId": "team2",
-      "role": "normal",
-      "collection": [],
-      "sportEventScore": 0
-    },
-    {
-      "id": "member_yohana",
-      "name": "Yohana",
-      "icon": "noicon.jpg",
-      "teamId": "team2",
-      "role": "normal",
-      "collection": [],
-      "sportEventScore": 0
-    }
-  ],
+    ],
+    "sportEventScore": 0
+  },
+  {
+    "id": "member_yassa",
+    "name": "Yassa",
+    "icon": "silver bear.jpg",
+    "teamId": "team1",
+    "role": "normal",
+    "collection": [
+      { "characterId": "silver_bear", "degree": "iron", "count": 1 }
+    ],
+    "sportEventScore": 0
+  },
+  {
+    "id": "member_peter_boshra",
+    "name": "Peter",
+    "icon": "pu3.jpg",
+    "teamId": "team1",
+    "role": "normal",
+    "collection": [
+      { "characterId": "pu", "degree": "silver", "count": 1 },
+      { "characterId": "pu", "degree": "iron", "count": 1 },
+      { "characterId": "four_arms", "degree": "iron", "count": 1 },
+      { "characterId": "richard", "degree": "iron", "count": 1 },
+      { "characterId": "sally", "degree": "bronze", "count": 1 },
+      { "characterId": "mater", "degree": "iron", "count": 1 },
+      { "characterId": "summer", "degree": "bronze", "count": 1 },
+      { "characterId": "summer", "degree": "iron", "count": 2 },
+      { "characterId": "david", "degree": "iron", "count": 1 },
+      { "characterId": "sherwood_forrest", "degree": "iron", "count": 1 },
+      { "characterId": "larry_the_cucumber", "degree": "iron", "count": 1 }
+    ],
+    "sportEventScore": 0
+  },
+  {
+    "id": "member_david_nasser",
+    "name": "David Nasser",
+    "icon": "noicon.jpg",
+    "teamId": "team1",
+    "role": "normal",
+    "collection": [],
+    "sportEventScore": 0
+  },
+  {
+    "id": "member_joren",
+    "name": "Joren",
+    "icon": "craboo.jpg",
+    "teamId": "team1",
+    "role": "normal",
+    "collection": [
+      { "characterId": "craboo", "degree": "iron", "count": 1 },
+      { "characterId": "finn", "degree": "iron", "count": 1 },
+      { "characterId": "spongebob", "degree": "iron", "count": 1 },
+      { "characterId": "sally", "degree": "iron", "count": 1 },
+      { "characterId": "ben10", "degree": "bronze", "count": 1 },
+      { "characterId": "sarge", "degree": "iron", "count": 1 },
+      { "characterId": "luca", "degree": "bronze", "count": 1 },
+      { "characterId": "tuffnut", "degree": "iron", "count": 1 },
+      { "characterId": "madame_blueberyy", "degree": "iron", "count": 1 },
+      { "characterId": "upsy_daisy", "degree": "silver", "count": 1 },
+      { "characterId": "upsy_daisy", "degree": "iron", "count": 1 },
+      { "characterId": "makka_pakka", "degree": "iron", "count": 1 },
+      { "characterId": "igglepiggle", "degree": "iron", "count": 1 },
+      { "characterId": "igglepiggle", "degree": "bronze", "count": 1 },
+      { "characterId": "common_token", "degree": "iron", "count": 1 },
+      { "characterId": "common_token", "degree": "bronze", "count": 1 }
+    ],
+    "sportEventScore": 0
+  },
+  {
+    "id": "member_haneen",
+    "name": "Haneen",
+    "icon": "hamster.jpg",
+    "teamId": "team1",
+    "role": "normal",
+    "collection": [
+      { "characterId": "hamster", "degree": "iron", "count": 1 },
+      { "characterId": "common_token", "degree": "iron", "count": 3 },
+      { "characterId": "common_token", "degree": "bronze", "count": 1 },
+      { "characterId": "rare_token", "degree": "iron", "count": 2 }
+    ],
+    "sportEventScore": 0
+  },
+  {
+    "id": "member_marette",
+    "name": "Marette",
+    "icon": "noicon.jpg",
+    "teamId": "team1",
+    "role": "normal",
+    "collection": [],
+    "sportEventScore": 0
+  },
+  {
+    "id": "member_nour",
+    "name": "Nour",
+    "icon": "noicon.jpg",
+    "teamId": "team1",
+    "role": "normal",
+    "collection": [],
+    "sportEventScore": 0
+  },
+  {
+    "id": "member_philip",
+    "name": "Philo",
+    "icon": "joey.jpg",
+    "teamId": "team1",
+    "role": "normal",
+    "collection": [
+      { "characterId": "joey", "degree": "iron", "count": 1 },
+      { "characterId": "darwin", "degree": "bronze", "count": 1 },
+      { "characterId": "sarge", "degree": "silver", "count": 1 },
+      { "characterId": "fillmore", "degree": "iron", "count": 1 },
+      { "characterId": "pu", "degree": "silver", "count": 1 },
+      { "characterId": "panda", "degree": "iron", "count": 1 },
+      { "characterId": "nemo", "degree": "iron", "count": 1 },
+      { "characterId": "marlin", "degree": "iron", "count": 1 },
+      { "characterId": "crush", "degree": "iron", "count": 1 },
+      { "characterId": "upsy_daisy", "degree": "silver", "count": 1 },
+      { "characterId": "makka_pakka", "degree": "silver", "count": 1 },
+      { "characterId": "monkey", "degree": "iron", "count": 1 },
+      { "characterId": "rare_token", "degree": "iron", "count": 1 },
+      { "characterId": "common_token", "degree": "iron", "count": 2 }
+    ],
+    "sportEventScore": 0
+  },
+  {
+    "id": "member_karen",
+    "name": "Karen",
+    "icon": "chloe.jpg",
+    "teamId": "team1",
+    "role": "normal",
+    "collection": [
+      { "characterId": "chloe", "degree": "iron", "count": 1 },
+      { "characterId": "david", "degree": "bronze", "count": 1 },
+      { "characterId": "summer", "degree": "iron", "count": 1 },
+      { "characterId": "manetti", "degree": "iron", "count": 1 },
+      { "characterId": "common_token", "degree": "bronze", "count": 4 },
+      { "characterId": "rare_token", "degree": "iron", "count": 1 }
+    ],
+    "sportEventScore": 0
+  },
+  {
+    "id": "member_karim",
+    "name": "Karim",
+    "icon": "albino aligator.jpg",
+    "teamId": "team1",
+    "role": "normal",
+    "collection": [
+      { "characterId": "albino_aligator", "degree": "iron", "count": 1 }
+    ],
+    "sportEventScore": 0
+  },
+  {
+    "id": "member_yana",
+    "name": "Yana",
+    "icon": "chicken.jpg",
+    "teamId": "team1",
+    "role": "normal",
+    "collection": [
+      { "characterId": "chicken", "degree": "iron", "count": 1 },
+      { "characterId": "junior", "degree": "iron", "count": 1 },
+      { "characterId": "common_token", "degree": "bronze", "count": 3 },
+      { "characterId": "rare_token", "degree": "iron", "count": 2 }
+    ],
+    "sportEventScore": 0
+  },
+  {
+    "id": "member_kevin",
+    "name": "Kevin",
+    "icon": "pinatacat.jpg",
+    "teamId": "team1",
+    "role": "normal",
+    "collection": [
+      { "characterId": "piniata_cat", "degree": "iron", "count": 1 },
+      { "characterId": "rare_token", "degree": "iron", "count": 2 }
+    ],
+    "sportEventScore": 0
+  },
+  {
+    "id": "member_chris",
+    "name": "Chris",
+    "icon": "mcqueen10.jpg",
+    "teamId": "team1",
+    "role": "normal",
+    "collection": [
+      { "characterId": "sarge", "degree": "iron", "count": 1 },
+      { "characterId": "mcqueen", "degree": "iron", "count": 1 },
+      { "characterId": "fillmore", "degree": "silver", "count": 1 },
+      { "characterId": "marlin", "degree": "iron", "count": 1 },
+      { "characterId": "igglepiggle", "degree": "silver", "count": 1 },
+      { "characterId": "igglepiggle", "degree": "bronze", "count": 1 },
+      { "characterId": "upsy_daisy", "degree": "iron", "count": 1 },
+      { "characterId": "upsy_daisy", "degree": "bronze", "count": 1 },
+      { "characterId": "upsy_daisy", "degree": "silver", "count": 1 },
+      { "characterId": "common_token", "degree": "bronze", "count": 1 },
+      { "characterId": "rare_token", "degree": "iron", "count": 1 },
+      { "characterId": "ping", "degree": "iron", "count": 1 },
+      { "characterId": "upsy_daisy", "degree": "iron", "count": 1 },
+      { "characterId": "makka_pakka", "degree": "iron", "count": 1 }
+    ],
+    "sportEventScore": 0
+  },
+  {
+    "id": "member_daniel_walaa",
+    "name": "Daniel Walaa",
+    "icon": "french_peas10.jpg",
+    "teamId": "team1",
+    "role": "normal",
+    "collection": [
+      { "characterId": "junior", "degree": "bronze", "count": 1 },
+      { "characterId": "junior", "degree": "iron", "count": 2 },
+      { "characterId": "laura", "degree": "iron", "count": 1 },
+      { "characterId": "french_peas", "degree": "iron", "count": 1 },
+      { "characterId": "larry_the_cucumber", "degree": "iron", "count": 1 },
+      { "characterId": "mr_lunt", "degree": "iron", "count": 1 },
+      { "characterId": "common_token", "degree": "iron", "count": 2 }
+    ],
+    "sportEventScore": 0
+  },
+  {
+    "id": "member_manuel",
+    "name": "Manuel",
+    "icon": "noicon.jpg",
+    "teamId": "team1",
+    "role": "normal",
+    "collection": [
+      { "characterId": "finn", "degree": "iron", "count": 1 },
+      { "characterId": "common_token", "degree": "iron", "count": 1 },
+      { "characterId": "common_token", "degree": "bronze", "count": 2 }
+    ],
+    "sportEventScore": 0
+  },
+  {
+    "id": "member_jenny",
+    "name": "Jenny",
+    "icon": "noicon.jpg",
+    "teamId": "team1",
+    "role": "normal",
+    "collection": [],
+    "sportEventScore": 0
+  },
+  {
+    "id": "member_yasmine",
+    "name": "Yasmine",
+    "icon": "noicon.jpg",
+    "teamId": "team1",
+    "role": "normal",
+    "collection": [
+      { "characterId": "rare_token", "degree": "iron", "count": 2 }
+    ],
+    "sportEventScore": 0
+  },
+  {
+    "id": "member_julie",
+    "name": "Julie",
+    "icon": "noicon.jpg",
+    "teamId": "team1",
+    "role": "normal",
+    "collection": [
+      { "characterId": "common_token", "degree": "iron", "count": 1 }
+    ],
+    "sportEventScore": 0
+  },
+  {
+    "id": "member_carla_walaa",
+    "name": "Carla",
+    "icon": "noicon.jpg",
+    "teamId": "team1",
+    "role": "normal",
+    "collection": [],
+    "sportEventScore": 0
+  },
+  {
+    "id": "member_joy_magued",
+    "name": "Joy",
+    "icon": "noicon.jpg",
+    "teamId": "team1",
+    "role": "normal",
+    "collection": [],
+    "sportEventScore": 0
+  },
+  {
+    "id": "member_lydia_rafik",
+    "name": "Lydia",
+    "icon": "noicon.jpg",
+    "teamId": "team1",
+    "role": "normal",
+    "collection": [],
+    "sportEventScore": 0
+  },
+  {
+    "id": "member_venus",
+    "name": "Venus",
+    "icon": "noicon.jpg",
+    "teamId": "team1",
+    "role": "normal",
+    "collection": [],
+    "sportEventScore": 0
+  },
+  {
+    "id": "member_nana",
+    "name": "Nana",
+    "icon": "noicon.jpg",
+    "teamId": "team1",
+    "role": "normal",
+    "collection": [],
+    "sportEventScore": 0
+  },
+  {
+    "id": "member_mai_hassaan",
+    "name": "Mai",
+    "icon": "noicon.jpg",
+    "teamId": "team1",
+    "role": "normal",
+    "collection": [],
+    "sportEventScore": 0
+  },
+  {
+    "id": "member_shady_hassan",
+    "name": "Shady",
+    "icon": "noicon.jpg",
+    "teamId": "team1",
+    "role": "normal",
+    "collection": [],
+    "sportEventScore": 0
+  },
+  {
+    "id": "member_mina",
+    "name": "Mina",
+    "icon": "noicon.jpg",
+    "teamId": "team2",
+    "role": "leader",
+    "collection": [],
+    "sportEventScore": 0
+  },
+  {
+    "id": "member_lucas",
+    "name": "Lucas",
+    "icon": "noicon.jpg",
+    "teamId": "team2",
+    "role": "normal",
+    "collection": [],
+    "sportEventScore": 0
+  },
+  {
+    "id": "member_rafik_boules",
+    "name": "Rafik",
+    "icon": "noicon.jpg",
+    "teamId": "team2",
+    "role": "normal",
+    "collection": [],
+    "sportEventScore": 0
+  },
+  {
+    "id": "member_abanoub_mohsen",
+    "name": "Abanoub Mohsen",
+    "icon": "noicon.jpg",
+    "teamId": "team2",
+    "role": "normal",
+    "collection": [],
+    "sportEventScore": 0
+  },
+  {
+    "id": "member_bassem_mounir",
+    "name": "Bassem",
+    "icon": "noicon.jpg",
+    "teamId": "team2",
+    "role": "normal",
+    "collection": [],
+    "sportEventScore": 0
+  },
+  {
+    "id": "member_yohana",
+    "name": "Yohana",
+    "icon": "noicon.jpg",
+    "teamId": "team2",
+    "role": "normal",
+    "collection": [],
+    "sportEventScore": 0
+  }
+],
   "projects": [
     {
       "id": "proj-bible1.1",
