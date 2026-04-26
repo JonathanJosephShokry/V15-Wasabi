@@ -80,7 +80,7 @@
     {
       "id": "member_philip",
       "wabi": 118,
-      "spice": 5,
+      "spice": 24,
       "exp": 6,
       "restricted": false
     },
@@ -101,7 +101,7 @@
     {
       "id": "member_yana",
       "wabi": 73,
-      "spice": 35,
+      "spice": 40,
       "exp": 5,
       "restricted": false
     },
@@ -115,14 +115,14 @@
     {
       "id": "member_chris",
       "wabi": 107,
-      "spice": 38,
+      "spice": 68,
       "exp": 5,
       "restricted": false
     },
     {
       "id": "member_daniel_walaa",
       "wabi": 35,
-      "spice": 1,
+      "spice": 2,
       "exp": 5,
       "restricted": false
     },
@@ -244,7 +244,15 @@
       "spice": 0,
       "exp": 0,
       "restricted": false
+    },
+    {
+      "id": "member_fady_barakat",
+      "wabi": 0,
+      "spice": 0,
+      "exp": 0,
+      "restricted": false
     }
+
   ],
   "projectData": [
     {
@@ -284,7 +292,8 @@
       "members": [
         "member_mina",
         "member_lucas",
-        "member_bassem_mounir"
+        "member_bassem_mounir",
+        "member_fady_barakat"
       ]
     },
     {
@@ -314,7 +323,8 @@
       "id": "proj-study",
       "members": [
         "member_chris",
-        "member_yana"
+        "member_yana",
+        "member_karen"
       ]
     },
     {
@@ -330,7 +340,8 @@
       "members": [
         "member_joren",
         "member_philip",
-        "member_jonathan_joseph"
+        "member_jonathan_joseph",
+        "member_daniel_walaa"
       ]
     },
     {
@@ -344,15 +355,17 @@
       "id": "book_club",
       "members": [
         "member_samih_nasser",
-        "member_daniel_walaa",
-        "member_carla_walaa"
+        "member_carla_walaa",
+        "member_philip",
+        "member_chris"
       ]
     },
     {
       "id": "tasbe7",
       "members": [
         "member_jonathan_joseph",
-        "member_peter_boshra"
+        "member_peter_boshra",
+        "member_daniel_rafik"
       ]
     }
   ]
