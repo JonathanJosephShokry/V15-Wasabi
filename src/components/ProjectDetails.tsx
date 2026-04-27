@@ -45,7 +45,17 @@ export const ProjectDetails: React.FC<ProjectDetailsProps> = ({ data }) => {
       <div className="container mx-auto px-5 mt-10">
         {/* Header Section */}
         <div className="bg-white p-10 rounded-2xl border-2 border-[#E0E0E0] text-center shadow-md mb-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-[#6B5435] mb-4">{project.name}</h1>
+          <div className="flex flex-col md:flex-row md:items-center justify-center gap-4 mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#6B5435]">{project.name}</h1>
+            <div className={`inline-flex px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest border-2 w-fit mx-auto md:mx-0 ${
+              project.difficulty === 'Easy' ? 'bg-green-50 border-green-200 text-green-600' :
+              project.difficulty === 'Medium' ? 'bg-blue-50 border-blue-200 text-blue-600' :
+              project.difficulty === 'Hard' ? 'bg-orange-50 border-orange-200 text-orange-600' :
+              'bg-red-50 border-red-200 text-red-600 animate-pulse'
+            }`}>
+              {project.difficulty} Difficulty
+            </div>
+          </div>
           <p className="text-lg text-[#666666] max-w-2xl mx-auto leading-relaxed mb-8">{project.description}</p>
           
           {/* Project Age Section */}

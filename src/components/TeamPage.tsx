@@ -111,7 +111,17 @@ export const TeamPage: React.FC<TeamPageProps> = ({ data }) => {
             {activeProjects.map((project, i) => (
               <Link key={project.id} to={`/project/${project.id}`} className="block group">
                 <div className="bg-white p-6 rounded-xl border-2 border-[#E0E0E0] transition-all hover:-translate-y-1 hover:shadow-xl hover:border-[#C8E6A0]">
-                  <div className="text-2xl font-bold text-[#6B5435] mb-2">{project.name}</div>
+                  <div className="flex items-center justify-between mb-2">
+                    <div className="text-2xl font-bold text-[#6B5435]">{project.name}</div>
+                    <div className={`px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider border-2 ${
+                      project.difficulty === 'Easy' ? 'bg-green-50 border-green-200 text-green-600' :
+                      project.difficulty === 'Medium' ? 'bg-blue-50 border-blue-200 text-blue-600' :
+                      project.difficulty === 'Hard' ? 'bg-orange-50 border-orange-200 text-orange-600' :
+                      'bg-red-50 border-red-200 text-red-600 animate-pulse'
+                    }`}>
+                      {project.difficulty}
+                    </div>
+                  </div>
                   <p className="text-sm text-[#666666] mb-5 line-clamp-2 leading-relaxed">{project.description}</p>
                   <div className="flex flex-wrap gap-2">
                     {project.members.map(memberId => {

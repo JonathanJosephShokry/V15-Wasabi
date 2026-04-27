@@ -164,6 +164,17 @@ export const WasabiCards: React.FC<WasabiCardsProps> = ({ data }) => {
   const [rollResult, setRollResult] = useState<{ character: Character; rarity: string } | null>(null);
   const [isRolling, setIsRolling] = useState(false);
   const [showRollResult, setShowRollResult] = useState(false);
+  const [activeLight, setActiveLight] = useState<number | null>(null);
+  const [rarityReached, setRarityReached] = useState(-1);
+  const [cardPhase, setCardPhase] = useState<'idle' | 'spinning' | 'flipping' | 'revealed'>('idle');
+
+  const rarities = [
+    { name: 'common', color: '#9E9E9E' },
+    { name: 'rare', color: '#4A90E2' },
+    { name: 'epic', color: '#9B59B6' },
+    { name: 'legendary', color: '#FF9800' },
+    { name: 'never', color: '#E91E63' }
+  ];
 
   const [now, setNow] = useState(new Date());
 
@@ -193,10 +204,9 @@ const handleRoll = (pack: CardPack) => {
   setIsRolling(true);
   setShowRollResult(false);
   setRollResult(null);
-
-  // ── DEBUG: log all outcomes and their parsed chances ──────────────────
-  console.group(`🎲 Rolling pack: "${pack.name}" (${pack.packageId})`);
-  console.log('Total outcomes:', pack.outcomes.length);
+  setActiveLight(null);
+  setRarityReached(-1);
+  setCardPhase('spinning');
 
   const parsedOutcomes = pack.outcomes.map(o => ({
     characterId: o.characterId,
@@ -205,11 +215,7 @@ const handleRoll = (pack: CardPack) => {
   }));
 
   const totalChance = parsedOutcomes.reduce((sum, o) => sum + o.chance, 0);
-  console.log('Parsed outcomes:', parsedOutcomes);
-  console.log(`Total chance sum: ${totalChance.toFixed(4)}% (${totalChance === 100 ? '✅ exactly 100' : totalChance < 100 ? '⚠️ UNDER 100 — gap of ' + (100 - totalChance).toFixed(4) + '%' : '⚠️ OVER 100 — excess of ' + (totalChance - 100).toFixed(4) + '%'})`);
-
   const random = Math.random() * totalChance;
-  console.log(`Random value: ${random.toFixed(4)} (out of ${totalChance.toFixed(4)})`);
 
   let cumulative = 0;
   let selectedOutcome = parsedOutcomes[0];
@@ -221,30 +227,54 @@ const handleRoll = (pack: CardPack) => {
     }
   }
 
-  console.log(`Selected outcome: "${selectedOutcome.characterId}" (chance: ${selectedOutcome.raw})`);
-
-  // ── DEBUG: verify the character exists in data ─────────────────────────
   const character = data.characters.find(c => c.id === selectedOutcome.characterId);
   if (character) {
-    console.log(`✅ Character found:`, { id: character.id, name: character.name, rarity: character.rarity });
-    console.log(`   images.iron: "${character.images?.iron ?? 'MISSING'}" `);
-    console.groupEnd();
+    const rarity = character.rarity;
+    const finalRarityIndex = 
+      rarity === 'common' ? 0 : 
+      rarity === 'rare' ? 1 : 
+      rarity === 'epic' ? 2 : 
+      rarity === 'legendary' ? 3 : 4;
 
-    setTimeout(() => {
-      setRollResult({ character, rarity: character.rarity });
+    // Animation Sequence
+    const animateSequence = async () => {
+      // 1. Sequentially light up from Common (0) to final rarity index
+      // Start slow to build suspense
+      const lightDelays = [800, 700, 600, 500, 400];
+      for (let i = 0; i <= finalRarityIndex; i++) {
+        setActiveLight(i);
+        setRarityReached(i);
+        await new Promise(r => setTimeout(r, lightDelays[i] || 400));
+      }
+
+      // 2. Special timing for high rarities to build suspense
+      if (rarity === 'legendary') {
+        await new Promise(r => setTimeout(r, 1200));
+      } else if (rarity === 'never') {
+        await new Promise(r => setTimeout(r, 600));
+        await new Promise(r => setTimeout(r, 1000));
+      } else {
+        // Small pause for lower rarities to hold the last light
+        await new Promise(r => setTimeout(r, 500));
+      }
+      
+      setRollResult({ character, rarity });
+      
+      // Reveal timing: Flip then show result
+      setCardPhase('flipping');
+      await new Promise(r => setTimeout(r, 650));
+      setCardPhase('revealed');
+      
       setIsRolling(false);
       setShowRollResult(true);
-    }, 2000);
-  } else {
-    console.error(`❌ Character NOT FOUND for id: "${selectedOutcome.characterId}"`);
-    console.log('Available character IDs:', data.characters.map(c => c.id));
-    console.groupEnd();
+    };
 
-    // ── FIX: reset state so the modal doesn't freeze ───────────────────
+    animateSequence();
+  } else {
     setTimeout(() => {
       setIsRolling(false);
       setRollingPack(null);
-      alert(`Roll failed: character "${selectedOutcome.characterId}" not found in data. Check the console for details.`);
+      alert(`Roll failed: character "${selectedOutcome.characterId}" not found in data.`);
     }, 2000);
   }
 };
@@ -921,121 +951,203 @@ const handleRoll = (pack: CardPack) => {
 
       {/* Roll Modal */}
       <AnimatePresence>
-        {rollingPack && (
-          <motion.div 
-            initial={{ opacity: 0 }} 
-            animate={{ opacity: 1 }} 
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/90 backdrop-blur-xl z-[10000] flex items-center justify-center p-5 overflow-hidden"
+      {rollingPack && (
+          <motion.div
+          initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+          className="fixed inset-0 bg-black/95 z-[10000] flex items-center justify-center p-5 overflow-hidden"
+          style={{ backdropFilter: 'blur(12px)' }}
           >
-            <div className="relative w-full max-w-lg aspect-[3/4] flex items-center justify-center">
-              {/* Background Effects */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <motion.div 
-                  animate={{ 
-                    scale: isRolling ? [1, 1.5, 1.2] : [1, 1.1, 1],
-                    rotate: isRolling ? [0, 180, 360] : 0,
-                    opacity: isRolling ? [0.2, 0.5, 0.2] : 0.1
-                  }}
-                  transition={{ duration: 2, repeat: Infinity }}
-                  className="w-[150%] h-[150%] bg-[radial-gradient(circle,rgba(159,211,86,0.3)_0%,transparent_70%)] rounded-full blur-3xl"
-                />
+          <style>{`
+              @keyframes ws-spin {
+              from { transform: rotateY(0deg) rotateZ(-2deg); }
+              to   { transform: rotateY(360deg) rotateZ(2deg); }
+              }
+              @keyframes ws-float {
+              0%,100% { transform: translateY(0px); }
+              50%      { transform: translateY(-10px); }
+              }
+              @keyframes ws-flip {
+              0%   { transform: rotateY(0deg); }
+              100% { transform: rotateY(180deg); }
+              }
+              @keyframes ws-particle {
+              0%   { transform: translate(-50%,-50%) scale(1); opacity: 1; }
+              100% { transform: translate(var(--px),var(--py)) scale(0); opacity: 0; }
+              }
+              @keyframes ws-pulse { 0%,100%{opacity:.3} 50%{opacity:.7} }
+              @keyframes ws-walkout-glow { 0%,100%{transform:scale(1);opacity:.55} 50%{transform:scale(1.35);opacity:.85} }
+              @keyframes ws-walkout-spin { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
+              @keyframes ws-walkout-beam { 0%{transform:translateX(-100%) rotate(25deg)} 100%{transform:translateX(200%) rotate(25deg)} }
+              .ws-wrap  { perspective: 1000px; }
+              .ws-card  { position:relative; width:200px; height:290px; transform-style:preserve-3d; }
+              .ws-card.spinning { animation: ws-spin 1.1s linear infinite, ws-float 2s ease-in-out infinite; }
+              .ws-card.flipping { animation: ws-flip 0.65s ease-in-out forwards; }
+              .ws-card.revealed { transform: rotateY(180deg); }
+              .ws-face  { position:absolute; inset:0; backface-visibility:hidden; border-radius:16px; overflow:hidden; }
+              .ws-front { transform: rotateY(180deg); }
+              .ws-pt    { position:absolute; left:50%; top:50%; border-radius:50%; animation: ws-particle 0.8s ease-out forwards; }
+          `}</style>
+
+          <div className="flex flex-col items-center gap-8 w-full max-w-sm">
+
+              {/* Rarity Bar */}
+              <div className="flex gap-1.5 w-full">
+              {rarities.map((r, i) => {
+                  const lit = i <= rarityReached;
+                  return (
+                  <div key={r.name} className="flex-1 flex flex-col items-center gap-1.5">
+                      <div
+                      className="h-2.5 w-full rounded-full transition-all duration-300"
+                      style={{
+                          background: lit ? r.color : 'rgba(255,255,255,0.08)',
+                          boxShadow: i === rarityReached ? `0 0 14px 4px ${r.color},0 0 28px 6px ${r.color}50` : lit ? `0 0 6px ${r.color}70` : 'none',
+                      }}
+                      />
+                      <span className="text-[8px] font-black uppercase tracking-widest transition-colors duration-300"
+                      style={{ color: lit ? r.color : 'rgba(255,255,255,0.2)' }}>
+                      {r.name}
+                      </span>
+                  </div>
+                  );
+              })}
               </div>
 
-              {/* The Card */}
-              <motion.div 
-                animate={isRolling ? {
-                  y: [0, -20, 0],
-                  scale: [1, 1.05, 1],
-                  rotateY: [0, 360, 720, 1080],
-                } : {}}
-                transition={{ duration: 2, ease: "easeInOut" }}
-                className="relative w-64 h-96 preserve-3d"
-              >
-                <AnimatePresence mode="wait">
-                  {!showRollResult ? (
-                    <motion.div 
-                      key="back"
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      exit={{ opacity: 0, rotateY: 90 }}
-                      className="absolute inset-0 rounded-2xl border-4 border-[#9FD356] shadow-[0_0_40px_rgba(159,211,86,0.4)] overflow-hidden bg-[#161b22]"
-                    >
-                      <img src="/icons/cardBack.png" alt="Card Back" className="w-full h-full object-cover" />
-                      {isRolling && (
-                        <div className="absolute inset-0 bg-gradient-to-t from-[#9FD356]/40 to-transparent animate-pulse"></div>
-                      )}
-                    </motion.div>
-                  ) : (
-                    <motion.div 
-                      key="front"
-                      initial={{ opacity: 0, rotateY: -90 }}
-                      animate={{ opacity: 1, rotateY: 0 }}
-                      className="absolute inset-0 rounded-2xl overflow-hidden shadow-[0_0_60px_rgba(255,255,255,0.2)]"
-                      style={{
-                        backgroundColor: (data.cardConfig.degrees as any).iron.border,
-                        border: `4px solid ${(data.cardConfig.degrees as any).iron.border}`,
-                        boxShadow: rollResult?.rarity === 'legendary' ? '0 0 60px #FF9800' : 
-                                   rollResult?.rarity === 'epic' ? '0 0 60px #9B59B6' :
-                                   rollResult?.rarity === 'rare' ? '0 0 60px #4A90E2' : '0 0 40px rgba(255,255,255,0.2)'
-                      }}
-                    >
-                      <div className="absolute inset-1 rounded-xl overflow-hidden" style={{ bottom: '40px' }}>
-                        <img src={`/icons/${rollResult?.character.images.iron}`} alt={rollResult?.character.name} className="w-full h-full object-cover" />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-                        
-                        {/* Rarity Effect */}
-                        {rollResult?.rarity === 'legendary' && (
-                          <motion.div 
-                            animate={{ opacity: [0.4, 0.8, 0.4] }}
-                            transition={{ duration: 1.5, repeat: Infinity }}
-                            className="absolute inset-0 bg-[radial-gradient(circle,rgba(255,152,0,0.3)_0%,transparent_70%)]"
-                          />
-                        )}
-                      </div>
-                      <div className="absolute bottom-0 left-0 right-0 h-10 flex flex-col items-center justify-center px-2" style={{ backgroundColor: (data.cardConfig.degrees as any).iron.border }}>
-                        <div className="text-xs font-black text-white truncate w-full text-center">{rollResult?.character.name}</div>
-                        <div className="text-[8px] font-black uppercase tracking-[0.2em]" style={{ color: rollResult?.rarity === 'legendary' ? '#FF9800' : rollResult?.rarity === 'epic' ? '#9B59B6' : rollResult?.rarity === 'rare' ? '#4A90E2' : '#9E9E9E' }}>{rollResult?.rarity}</div>
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </motion.div>
+              {/* Card */}
+              <div className="ws-wrap relative flex items-center justify-center" style={{ height: 290 }}>
 
-              {/* Action Buttons */}
-              {showRollResult && (
-                <motion.div 
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  className="absolute -bottom-24 left-0 right-0 flex flex-col items-center gap-4"
-                >
-                  <div className="text-center">
-                    <h4 className="text-2xl font-black text-white mb-1">You got {rollResult?.character.name}!</h4>
-                    <p className="text-white/50 text-sm uppercase tracking-widest">{rollResult?.rarity} Rarity</p>
-                  </div>
-                  <div className="flex gap-4">
-                    <button 
-                      onClick={() => handleRoll(rollingPack)}
-                      className="px-8 py-3 bg-[#9FD356] text-white rounded-xl font-black text-sm uppercase tracking-widest transition-all hover:bg-[#8B6F47]"
-                    >
-                      Roll Again
-                    </button>
-                    <button 
-                      onClick={() => {
-                        setRollingPack(null);
-                        setShowRollResult(false);
-                      }}
-                      className="px-8 py-3 bg-white/10 border border-white/20 text-white rounded-xl font-black text-sm uppercase tracking-widest transition-all hover:bg-white/20"
-                    >
-                      Close
-                    </button>
-                  </div>
-                </motion.div>
+              {/* LEGENDARY: Gold FIFA-style glow */}
+              {cardPhase === 'revealed' && rollResult && rollResult.rarity === 'legendary' && (
+                <div className="absolute -inset-12 rounded-full blur-3xl -z-10"
+                  style={{ 
+                    background: 'radial-gradient(circle, rgba(255,152,0,0.55) 0%, transparent 65%)',
+                    animation: 'ws-walkout-glow 2.5s ease-in-out infinite'
+                  }} />
               )}
-            </div>
+
+              {/* NEVER: Full walkout treatment — much stronger than legendary */}
+              {cardPhase === 'revealed' && rollResult && rollResult.rarity === 'never' && (
+                <>
+                  <div className="absolute -inset-24 rounded-full blur-3xl -z-20"
+                    style={{ 
+                      background: 'radial-gradient(circle, rgba(233,30,99,0.8) 0%, rgba(156,39,176,0.5) 30%, transparent 70%)',
+                      animation: 'ws-walkout-glow 2s ease-in-out infinite'
+                    }} />
+                  <div className="absolute -inset-10 rounded-3xl blur-2xl -z-10 opacity-70"
+                    style={{ 
+                      background: 'conic-gradient(from 0deg, rgba(233,30,99,0.6), rgba(255,152,0,0.5), rgba(156,39,176,0.6), rgba(233,30,99,0.6))',
+                      animation: 'ws-walkout-spin 3s linear infinite'
+                    }} />
+                  <div className="absolute -inset-4 rounded-2xl blur-xl -z-10"
+                    style={{ 
+                      background: '#E91E63',
+                      opacity: 0.5,
+                      boxShadow: '0 0 80px 30px rgba(233,30,99,0.7), inset 0 0 40px rgba(255,255,255,0.2)'
+                    }} />
+                  <div className="absolute inset-0 rounded-3xl overflow-hidden -z-10 opacity-30">
+                    <div className="absolute inset-0"
+                      style={{
+                        background: 'linear-gradient(105deg, transparent 40%, rgba(255,255,255,0.4) 50%, transparent 60%)',
+                        animation: 'ws-walkout-beam 2s ease-in-out infinite'
+                      }} />
+                  </div>
+                </>
+              )}
+
+              <div className={`ws-card ${cardPhase}`}>
+                  {/* Back */}
+                  <div className="ws-face ws-back border-4" style={{ borderColor: '#9FD356', boxShadow: '0 0 30px rgba(159,211,86,0.35)' }}>
+                  <img src="/icons/cardBack.png" alt="Card Back" className="w-full h-full object-cover" />
+                  {cardPhase === 'spinning' && (
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#9FD356]/30 to-transparent" />
+                  )}
+                  </div>
+
+                  {/* Front */}
+                  {rollResult && (
+                  <div className="ws-face ws-front border-4 flex flex-col"
+                      style={{
+                      borderColor: rarities.find(r => r.name === rollResult.rarity)?.color ?? '#9E9E9E',
+                      boxShadow: `0 0 40px ${rarities.find(r => r.name === rollResult.rarity)?.color ?? '#9E9E9E'}80`,
+                      backgroundColor: (data.cardConfig.degrees as any).iron.border,
+                      }}>
+                      <div className="flex-1 relative overflow-hidden">
+                      <img src={`/icons/${rollResult.character.images.iron}`} alt={rollResult.character.name} className="w-full h-full object-cover" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+                      </div>
+                      <div className="h-10 flex flex-col items-center justify-center px-2 shrink-0"
+                      style={{ backgroundColor: (data.cardConfig.degrees as any).iron.border }}>
+                      <div className="text-xs font-black text-white truncate w-full text-center">{rollResult.character.name}</div>
+                      <div className="text-[8px] font-black uppercase tracking-[0.2em]"
+                          style={{ color: rarities.find(r => r.name === rollResult.rarity)?.color ?? '#9E9E9E' }}>
+                          {rollResult.rarity}
+                      </div>
+                      </div>
+                  </div>
+                  )}
+              </div>
+
+              {/* Particle burst — only for Legendary & Never */}
+              {cardPhase === 'revealed' && rollResult && (rollResult.rarity === 'legendary' || rollResult.rarity === 'never') && (
+                  <div className="absolute inset-0 pointer-events-none">
+                  {Array.from({ length: rollResult.rarity === 'never' ? 40 : 20 }).map((_, i) => {
+                      const angle = (i / (rollResult.rarity === 'never' ? 40 : 20)) * 360;
+                      const dist = rollResult.rarity === 'never' ? 100 + (i * 6 % 120) : 80 + (i * 7 % 60);
+                      const rad = angle * Math.PI / 180;
+                      const color = rarities.find(r => r.name === rollResult.rarity)?.color ?? '#fff';
+                      const size = rollResult.rarity === 'never' ? (4 + (i % 5)) : 6;
+                      return (
+                      <div key={i} className="ws-pt"
+                          style={{
+                          '--px': `${Math.cos(rad) * dist}px`,
+                          '--py': `${Math.sin(rad) * dist}px`,
+                          backgroundColor: color,
+                          boxShadow: `0 0 ${rollResult.rarity === 'never' ? 10 : 6}px ${color}`,
+                          width: `${size}px`,
+                          height: `${size}px`,
+                          animationDelay: `${i * (rollResult.rarity === 'never' ? 12 : 18)}ms`,
+                          animationDuration: rollResult.rarity === 'never' ? '1s' : '0.7s'
+                          } as React.CSSProperties}
+                      />
+                      );
+                  })}
+                  </div>
+              )}
+              </div>
+
+              {/* Result + Buttons */}
+              <AnimatePresence>
+              {showRollResult && rollResult && (
+                  <motion.div
+                  initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}
+                  transition={{ duration: 0.4 }}
+                  className="flex flex-col items-center gap-4 text-center"
+                  >
+                  <div>
+                      <h4 className="text-2xl font-black text-white mb-1">You got {rollResult.character.name}!</h4>
+                      <p className="text-sm font-bold uppercase tracking-widest"
+                      style={{ color: rarities.find(r => r.name === rollResult.rarity)?.color ?? '#9E9E9E' }}>
+                      {rollResult.rarity} Rarity
+                      </p>
+                  </div>
+                  <div className="flex gap-3">
+                      <button onClick={() => handleRoll(rollingPack)}
+                      className="px-7 py-3 bg-[#9FD356] text-white rounded-xl font-black text-sm uppercase tracking-widest transition-all hover:brightness-110 active:scale-95">
+                      Roll Again
+                      </button>
+                      <button onClick={() => { setRollingPack(null); setShowRollResult(false); setCardPhase('idle'); setRarityReached(-1); }}
+                      className="px-7 py-3 bg-white/10 border border-white/20 text-white rounded-xl font-black text-sm uppercase tracking-widest transition-all hover:bg-white/20 active:scale-95">
+                      Close
+                      </button>
+                  </div>
+                  </motion.div>
+              )}
+              </AnimatePresence>
+
+          </div>
           </motion.div>
-        )}
+      )}
       </AnimatePresence>
+
     </motion.div>
   );
 };
