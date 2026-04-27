@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useSearchParams, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
 import { WasabiData, Character, Member, CollectionEntry, CardPack } from '../types';
 import { ArrowLeft, X, Trophy, BookOpen, Package, Zap, Sparkles, Clock, Plus, Dices, Medal, ChevronLeft, ChevronRight } from 'lucide-react';
 import { calcHiddenScore, getMemberTotalScore, formatRarity, formatDegree, getActiveCraftingRecipes, calculateDaysRemaining, getActiveCraftingSet, getActivePackSale, getTimeRemaining } from '../utils';
@@ -168,6 +170,10 @@ export const WasabiCards: React.FC<WasabiCardsProps> = ({ data }) => {
   const [rarityReached, setRarityReached] = useState(-1);
   const [cardPhase, setCardPhase] = useState<'idle' | 'spinning' | 'flipping' | 'revealed'>('idle');
 
+  const rerollRef = useRef(0);
+  const cardRef = useRef<HTMLDivElement>(null);
+  const walkoutTimeline = useRef<gsap.core.Timeline | null>(null);
+
   const rarities = [
     { name: 'common', color: '#9E9E9E' },
     { name: 'rare', color: '#4A90E2' },
@@ -200,13 +206,17 @@ export const WasabiCards: React.FC<WasabiCardsProps> = ({ data }) => {
   };
 
 const handleRoll = (pack: CardPack) => {
-  setRollingPack(pack);
   setIsRolling(true);
   setShowRollResult(false);
   setRollResult(null);
   setActiveLight(null);
   setRarityReached(-1);
   setCardPhase('spinning');
+  setRollingPack(pack);
+  rerollRef.current += 1;
+  
+  // Kill any existing animations on the card
+  gsap.killTweensOf(cardRef.current);
 
   const parsedOutcomes = pack.outcomes.map(o => ({
     characterId: o.characterId,
@@ -236,40 +246,80 @@ const handleRoll = (pack: CardPack) => {
       rarity === 'epic' ? 2 : 
       rarity === 'legendary' ? 3 : 4;
 
-    // Animation Sequence
-    const animateSequence = async () => {
-      // 1. Sequentially light up from Common (0) to final rarity index
-      // Start slow to build suspense
-      const lightDelays = [800, 700, 600, 500, 400];
-      for (let i = 0; i <= finalRarityIndex; i++) {
-        setActiveLight(i);
-        setRarityReached(i);
-        await new Promise(r => setTimeout(r, lightDelays[i] || 400));
+    // Start GSAP Animation Sequence
+    const tl = gsap.timeline({
+      onComplete: () => {
+        setIsRolling(false);
+        setShowRollResult(true);
+        setCardPhase('revealed');
       }
+    });
 
-      // 2. Special timing for high rarities to build suspense
-      if (rarity === 'legendary') {
-        await new Promise(r => setTimeout(r, 1200));
-      } else if (rarity === 'never') {
-        await new Promise(r => setTimeout(r, 600));
-        await new Promise(r => setTimeout(r, 1000));
-      } else {
-        // Small pause for lower rarities to hold the last light
-        await new Promise(r => setTimeout(r, 500));
+    // Reset card state before animation
+    tl.set(cardRef.current, { rotateY: 0, scale: 1, z: 0, x: 0, y: 0 });
+
+    // 1. Initial spin-up with scale bounce and slight tilt
+    tl.to(cardRef.current, {
+      scale: 1.1,
+      rotationZ: 3,
+      duration: 0.5,
+      ease: "back.out(2)"
+    });
+
+    // 2. The Loop (Spinning)
+    // We'll spin for a duration while updating the rarity bar
+    const spinDuration = 3.8;
+    tl.to(cardRef.current, {
+      rotateY: "+=2160", // 6 full rotations
+      rotationZ: 0,
+      duration: spinDuration,
+      ease: "power3.inOut",
+      onUpdate: function() {
+        const progress = this.progress(); // 0 to 1
+        const reached = Math.floor(progress * (finalRarityIndex + 0.99));
+        setRarityReached(reached);
+        setActiveLight(reached);
+        
+        // Add some jitter/noise as it spins faster
+        if (progress > 0.3 && progress < 0.8) {
+          gsap.set(cardRef.current, {
+            x: (Math.random() - 0.5) * 4,
+            y: (Math.random() - 0.5) * 4
+          });
+        } else {
+          gsap.set(cardRef.current, { x: 0, y: 0 });
+        }
       }
-      
-      setRollResult({ character, rarity });
-      
-      // Reveal timing: Flip then show result
-      setCardPhase('flipping');
-      await new Promise(r => setTimeout(r, 650));
-      setCardPhase('revealed');
-      
-      setIsRolling(false);
-      setShowRollResult(true);
-    };
+    }, "-=0.3");
 
-    animateSequence();
+    // 3. Reveal Setup - Anticipation
+    tl.to(cardRef.current, {
+      scale: 1.4,
+      z: 100,
+      rotateY: "+=45", // Slight extra tilt before snap
+      duration: 0.6,
+      ease: "elastic.out(1, 0.3)",
+      onStart: () => {
+        setRollResult({ character, rarity: rarity as string });
+        setCardPhase('flipping');
+      }
+    });
+
+    // 4. Final Flip Snap
+    tl.to(cardRef.current, {
+      rotateY: 180, // Target reveal state
+      duration: 0.9,
+      ease: "expo.out"
+    }, "-=0.1");
+
+    // 5. Landing settle with a "hit" effect
+    tl.to(cardRef.current, {
+      scale: 1,
+      z: 0,
+      duration: 0.5,
+      ease: "bounce.out"
+    });
+
   } else {
     setTimeout(() => {
       setIsRolling(false);
@@ -958,38 +1008,45 @@ const handleRoll = (pack: CardPack) => {
           style={{ backdropFilter: 'blur(12px)' }}
           >
           <style>{`
-              @keyframes ws-spin {
-              from { transform: rotateY(0deg); }
-              to   { transform: rotateY(360deg); }
-              }
-              @keyframes ws-flip {
-              0%   { transform: rotateY(0deg); }
-              100% { transform: rotateY(180deg); }
-              }
-              @keyframes ws-particle {
-              0%   { transform: translate(-50%,-50%) scale(1); opacity: 1; }
-              100% { transform: translate(var(--px),var(--py)) scale(0); opacity: 0; }
-              }
-              @keyframes ws-pulse { 0%,100%{opacity:.3} 50%{opacity:.7} }
-              @keyframes ws-walkout-glow { 0%,100%{transform:scale(1);opacity:.4} 50%{transform:scale(1.5);opacity:.9} }
-              @keyframes ws-walkout-spin { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
-              @keyframes ws-walkout-beam { 0%{transform:translateX(-100%) rotate(25deg)} 100%{transform:translateX(200%) rotate(25deg)} }
-              @keyframes ws-rays { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
-              @keyframes ws-flash { 0%{opacity:0} 10%{opacity:1} 100%{opacity:0} }
-              @keyframes ws-shake {
+            @keyframes ws-spin {
+                from { transform: rotateY(0deg); }
+                to   { transform: rotateY(360deg); }
+            }
+            @keyframes ws-flip {
+                0%   { transform: rotateY(0deg); }
+                100% { transform: rotateY(180deg); }
+            }
+            @keyframes ws-particle {
+                0%   { transform: translate(-50%,-50%) scale(1); opacity: 1; }
+                100% { transform: translate(var(--px),var(--py)) scale(0); opacity: 0; }
+            }
+            @keyframes ws-pulse { 0%,100%{opacity:.3} 50%{opacity:.7} }
+            @keyframes ws-walkout-glow { 0%,100%{transform:scale(1);opacity:.4} 50%{transform:scale(1.5);opacity:.9} }
+            @keyframes ws-walkout-spin { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
+            @keyframes ws-walkout-beam { 0%{transform:translateX(-100%) rotate(25deg)} 100%{transform:translateX(200%) rotate(25deg)} }
+            @keyframes ws-rays { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
+            @keyframes ws-flash { 0%{opacity:0} 10%{opacity:1} 100%{opacity:0} }
+            @keyframes ws-shake {
                 0%, 100% { transform: translate(0, 0); }
                 10%, 30%, 50%, 70%, 90% { transform: translate(-4px, -4px); }
                 20%, 40%, 60%, 80% { transform: translate(4px, 4px); }
-              }
-              .ws-wrap  { perspective: 1000px; }
-              .ws-card  { position:relative; width:200px; height:290px; transform-style:preserve-3d; }
-              .ws-card.spinning { animation: ws-spin 1.2s linear infinite; }
-              .ws-card.flipping { animation: ws-flip 0.65s ease-in-out forwards; }
-              .ws-card.revealed { transform: rotateY(180deg); }
-              .ws-face  { position:absolute; inset:0; backface-visibility:hidden; border-radius:16px; overflow:hidden; }
-              .ws-front { transform: rotateY(180deg); }
-              .ws-pt    { position:absolute; left:50%; top:50%; border-radius:50%; animation: ws-particle 0.8s ease-out forwards; }
-          `}</style>
+            }
+            .ws-wrap  { perspective: 1200px; }
+            .ws-card  { position:relative; width:200px; height:290px; transform-style:preserve-3d; will-change: transform; transition: transform 0.1s ease-out; }
+            
+            /* FIXES APPLIED HERE */
+            .ws-face  { 
+                position:absolute; 
+                inset:0; 
+                backface-visibility:hidden; 
+                -webkit-backface-visibility:hidden; /* Safari/iOS fix */
+                border-radius:16px; 
+                overflow:hidden; 
+            }
+            .ws-back  { transform: rotateY(0deg) translateZ(1px); } /* Z-fighting fix */
+            .ws-front { transform: rotateY(180deg) translateZ(1px); } /* Z-fighting fix */
+            .ws-pt    { position:absolute; left:50%; top:50%; border-radius:50%; animation: ws-particle 0.8s ease-out forwards; }
+        `}</style>
 
           <div 
             className="flex flex-col items-center gap-6 w-full max-w-sm relative mt-10 pb-20"
@@ -1026,75 +1083,74 @@ const handleRoll = (pack: CardPack) => {
 
               {/* Card */}
               <div className="ws-wrap relative flex items-center justify-center" style={{ height: 290 }}>
-
-              {/* LEGENDARY: FIFA-style walkout */}
-              {cardPhase === 'revealed' && rollResult && rollResult.rarity === 'legendary' && (
-                <>
-                  {/* Rays of Glory */}
-                  <div className="absolute -inset-64 opacity-20 -z-30 pointer-events-none"
-                    style={{
-                      background: 'repeating-conic-gradient(from 0deg, #FFD700 0deg 10deg, transparent 10deg 20deg)',
-                      animation: 'ws-rays 20s linear infinite',
-                      maskImage: 'radial-gradient(circle, black 30%, transparent 70%)'
-                    }} />
-                  <div className="absolute -inset-16 rounded-full blur-3xl -z-10"
-                    style={{ 
-                      background: 'radial-gradient(circle, rgba(255,152,0,0.6) 0%, rgba(255,215,0,0.3) 50%, transparent 80%)',
-                      animation: 'ws-walkout-glow 3s ease-in-out infinite'
-                    }} />
-                  <div className="absolute -inset-4 rounded-3xl blur-xl -z-10 bg-[#FF9800]/30" />
-                </>
-              )}
-
-              {/* NEVER: Mythic / Dark Void Walkout */}
-              {cardPhase === 'revealed' && rollResult && rollResult.rarity === 'never' && (
-                <>
-                  {/* Background Void / Distortion */}
-                  <div className="fixed inset-0 bg-[#E91E63]/5 -z-10" />
-                  
-                  {/* Intense Glitchy Rays */}
-                  <div className="absolute -inset-[600px] opacity-20 -z-30 pointer-events-none"
-                    style={{
-                      background: 'repeating-conic-gradient(from 0deg, #E91E63 0deg 3deg, #9C27B0 3deg 6deg, #FF9800 6deg 9deg, transparent 9deg 12deg)',
-                      animation: 'ws-rays 8s linear infinite reverse',
-                      maskImage: 'radial-gradient(circle, black 15%, transparent 60%)'
-                    }} />
-
-                  <div className="absolute -inset-32 rounded-full blur-3xl -z-20"
-                    style={{ 
-                      background: 'radial-gradient(circle, rgba(233,30,99,0.85) 0%, rgba(156,39,176,0.6) 40%, transparent 75%)',
-                      animation: 'ws-walkout-glow 1.5s ease-in-out infinite'
-                    }} />
-                    
-                  <div className="absolute -inset-12 rounded-3xl blur-2xl -z-10 opacity-80"
-                    style={{ 
-                      background: 'conic-gradient(from 0deg, #E91E63, #FF9800, #9C27B0, #E91E63)',
-                      animation: 'ws-walkout-spin 2s linear infinite'
-                    }} />
-                  
-                  {/* Inner Core Glow */}
-                  <div className="absolute -inset-8 rounded-2xl blur-xl -z-10"
-                    style={{ 
-                      background: '#E91E63',
-                      opacity: 0.6,
-                      boxShadow: '0 0 100px 40px rgba(233,30,99,0.8), inset 0 0 60px rgba(255,255,255,0.4)'
-                    }} />
-
-                  <div className="absolute inset-0 rounded-3xl overflow-hidden -z-10 opacity-40">
-                    <div className="absolute inset-0"
+                {/* LEGENDARY: FIFA-style walkout */}
+                {cardPhase === 'revealed' && rollResult && rollResult.rarity === 'legendary' && (
+                  <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="absolute inset-0 -z-10 flex items-center justify-center">
+                    {/* Rays of Glory */}
+                    <div className="absolute -inset-64 opacity-20 -z-30 pointer-events-none"
                       style={{
-                        background: 'linear-gradient(105deg, transparent 35%, rgba(255,255,255,0.6) 50%, transparent 65%)',
-                        animation: 'ws-walkout-beam 1.2s ease-in-out infinite'
+                        background: 'repeating-conic-gradient(from 0deg, #FFD700 0deg 10deg, transparent 10deg 20deg)',
+                        animation: 'ws-rays 20s linear infinite',
+                        maskImage: 'radial-gradient(circle, black 30%, transparent 70%)'
                       }} />
-                  </div>
-                </>
-              )}
+                    <div className="absolute -inset-16 rounded-full blur-3xl -z-10"
+                      style={{ 
+                        background: 'radial-gradient(circle, rgba(255,152,0,0.6) 0%, rgba(255,215,0,0.3) 50%, transparent 80%)',
+                        animation: 'ws-walkout-glow 3s ease-in-out infinite'
+                      }} />
+                    <div className="absolute -inset-4 rounded-3xl blur-xl -z-10 bg-[#FF9800]/30" />
+                  </motion.div>
+                )}
 
-              <div className={`ws-card ${cardPhase}`}>
+                {/* NEVER: Mythic / Dark Void Walkout */}
+                {cardPhase === 'revealed' && rollResult && rollResult.rarity === 'never' && (
+                  <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="absolute inset-0 -z-10 flex items-center justify-center">
+                    {/* Background Void / Distortion */}
+                    <div className="fixed inset-0 bg-[#E91E63]/5 -z-10" />
+                    
+                    {/* Intense Glitchy Rays */}
+                    <div className="absolute -inset-[600px] opacity-20 -z-30 pointer-events-none"
+                      style={{
+                        background: 'repeating-conic-gradient(from 0deg, #E91E63 0deg 3deg, #9C27B0 3deg 6deg, #FF9800 6deg 9deg, transparent 9deg 12deg)',
+                        animation: 'ws-rays 8s linear infinite reverse',
+                        maskImage: 'radial-gradient(circle, black 15%, transparent 60%)'
+                      }} />
+
+                    <div className="absolute -inset-32 rounded-full blur-3xl -z-20"
+                      style={{ 
+                        background: 'radial-gradient(circle, rgba(233,30,99,0.85) 0%, rgba(156,39,176,0.6) 40%, transparent 75%)',
+                        animation: 'ws-walkout-glow 1.5s ease-in-out infinite'
+                      }} />
+                      
+                    <div className="absolute -inset-12 rounded-3xl blur-2xl -z-10 opacity-80"
+                      style={{ 
+                        background: 'conic-gradient(from 0deg, #E91E63, #FF9800, #9C27B0, #E91E63)',
+                        animation: 'ws-walkout-spin 2s linear infinite'
+                      }} />
+                    
+                    {/* Inner Core Glow */}
+                    <div className="absolute -inset-8 rounded-2xl blur-xl -z-10"
+                      style={{ 
+                        background: '#E91E63',
+                        opacity: 0.6,
+                        boxShadow: '0 0 100px 40px rgba(233,30,99,0.8), inset 0 0 60px rgba(255,255,255,0.4)'
+                      }} />
+
+                    <div className="absolute inset-0 rounded-3xl overflow-hidden -z-10 opacity-40">
+                      <div className="absolute inset-0"
+                        style={{
+                          background: 'linear-gradient(105deg, transparent 35%, rgba(255,255,255,0.6) 50%, transparent 65%)',
+                          animation: 'ws-walkout-beam 1.2s ease-in-out infinite'
+                        }} />
+                    </div>
+                  </motion.div>
+                )}
+
+                <div ref={cardRef} className="ws-card">
                   {/* Back */}
                   <div className="ws-face ws-back border-4" style={{ borderColor: '#9FD356', boxShadow: '0 0 30px rgba(159,211,86,0.35)' }}>
                   <img src="/icons/cardBack.png" alt="Card Back" className="w-full h-full object-cover" />
-                  {cardPhase === 'spinning' && (
+                  {isRolling && (
                       <div className="absolute inset-0 bg-gradient-to-t from-[#9FD356]/30 to-transparent" />
                   )}
                   </div>
@@ -1133,6 +1189,7 @@ const handleRoll = (pack: CardPack) => {
                       </div>
                   </div>
                   )}
+                </div>
               </div>
 
               {/* Particle burst — only for Legendary & Never */}
@@ -1161,9 +1218,8 @@ const handleRoll = (pack: CardPack) => {
                   })}
                   </div>
               )}
-              </div>
 
-              {/* Result + Buttons — Absolute to prevent layout shift */}
+              {/* Result + Buttons — Now inside the gap container */}
               <AnimatePresence>
               {showRollResult && rollResult && (
                   <motion.div
@@ -1191,7 +1247,6 @@ const handleRoll = (pack: CardPack) => {
                   </motion.div>
               )}
               </AnimatePresence>
-
           </div>
           </motion.div>
       )}
