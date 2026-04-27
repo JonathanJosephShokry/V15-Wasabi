@@ -169,6 +169,7 @@ export const WasabiCards: React.FC<WasabiCardsProps> = ({ data }) => {
   const [activeLight, setActiveLight] = useState<number | null>(null);
   const [rarityReached, setRarityReached] = useState(-1);
   const [cardPhase, setCardPhase] = useState<'idle' | 'spinning' | 'flipping' | 'revealed'>('idle');
+  const [pendingRoll, setPendingRoll] = useState<{ character: Character; finalRarityIndex: number } | null>(null);
 
   const rerollRef = useRef(0);
   const cardRef = useRef<HTMLDivElement>(null);
@@ -246,88 +247,96 @@ const handleRoll = (pack: CardPack) => {
       rarity === 'epic' ? 2 : 
       rarity === 'legendary' ? 3 : 4;
 
-    // Start GSAP Animation Sequence
-    const tl = gsap.timeline({
-      onComplete: () => {
-        setIsRolling(false);
-        setShowRollResult(true);
-        setCardPhase('revealed');
-      }
-    });
-
-    // Reset card state before animation
-    tl.set(cardRef.current, { rotateY: 0, scale: 1, z: 0, x: 0, y: 0 });
-
-    // 1. Initial spin-up with scale bounce and slight tilt
-    tl.to(cardRef.current, {
-      scale: 1.1,
-      rotationZ: 3,
-      duration: 0.5,
-      ease: "back.out(2)"
-    });
-
-    // 2. The Loop (Spinning)
-    // We'll spin for a duration while updating the rarity bar
-    const spinDuration = 3.8;
-    tl.to(cardRef.current, {
-      rotateY: "+=2160", // 6 full rotations
-      rotationZ: 0,
-      duration: spinDuration,
-      ease: "power3.inOut",
-      onUpdate: function() {
-        const progress = this.progress(); // 0 to 1
-        const reached = Math.floor(progress * (finalRarityIndex + 0.99));
-        setRarityReached(reached);
-        setActiveLight(reached);
-        
-        // Add some jitter/noise as it spins faster
-        if (progress > 0.3 && progress < 0.8) {
-          gsap.set(cardRef.current, {
-            x: (Math.random() - 0.5) * 4,
-            y: (Math.random() - 0.5) * 4
-          });
-        } else {
-          gsap.set(cardRef.current, { x: 0, y: 0 });
-        }
-      }
-    }, "-=0.3");
-
-    // 3. Reveal Setup - Anticipation
-    tl.to(cardRef.current, {
-      scale: 1.4,
-      z: 100,
-      rotateY: "+=45", // Slight extra tilt before snap
-      duration: 0.6,
-      ease: "elastic.out(1, 0.3)",
-      onStart: () => {
-        setRollResult({ character, rarity: rarity as string });
-        setCardPhase('flipping');
-      }
-    });
-
-    // 4. Final Flip Snap
-    tl.to(cardRef.current, {
-      rotateY: 180, // Target reveal state
-      duration: 0.9,
-      ease: "expo.out"
-    }, "-=0.1");
-
-    // 5. Landing settle with a "hit" effect
-    tl.to(cardRef.current, {
-      scale: 1,
-      z: 0,
-      duration: 0.5,
-      ease: "bounce.out"
-    });
-
+    setPendingRoll({ character, finalRarityIndex });
   } else {
     setTimeout(() => {
       setIsRolling(false);
       setRollingPack(null);
-      alert(`Roll failed: character "${selectedOutcome.characterId}" not found in data.`);
-    }, 2000);
+    }, 500);
   }
 };
+
+useGSAP(() => {
+  if (!cardRef.current || !pendingRoll || !isRolling) return;
+
+  const { character, finalRarityIndex } = pendingRoll;
+  const rarity = character.rarity;
+
+  // Start GSAP Animation Sequence
+  const tl = gsap.timeline({
+    onComplete: () => {
+      setIsRolling(false);
+      setShowRollResult(true);
+      setCardPhase('revealed');
+    }
+  });
+
+  // Reset card state before animation
+  tl.set(cardRef.current, { rotateY: 0, scale: 1, z: 0, x: 0, y: 0 });
+
+  // 1. Initial spin-up with scale bounce and slight tilt
+  tl.to(cardRef.current, {
+    scale: 1.1,
+    rotationZ: 3,
+    duration: 0.5,
+    ease: "back.out(2)"
+  });
+
+  // 2. The Loop (Spinning)
+  // We'll spin for a duration while updating the rarity bar
+  const spinDuration = 3.8;
+  tl.to(cardRef.current, {
+    rotateY: "+=2160", // 6 full rotations
+    rotationZ: 0,
+    duration: spinDuration,
+    ease: "power3.inOut",
+    onUpdate: function() {
+      const progress = this.progress(); // 0 to 1
+      const reached = Math.floor(progress * (finalRarityIndex + 0.99));
+      setRarityReached(reached);
+      setActiveLight(reached);
+      
+      // Add some jitter/noise as it spins faster
+      if (progress > 0.3 && progress < 0.8) {
+        gsap.set(cardRef.current, {
+          x: (Math.random() - 0.5) * 4,
+          y: (Math.random() - 0.5) * 4
+        });
+      } else {
+        gsap.set(cardRef.current, { x: 0, y: 0 });
+      }
+    }
+  }, "-=0.3");
+
+  // 3. Reveal Setup - Anticipation
+  tl.to(cardRef.current, {
+    scale: 1.4,
+    z: 100,
+    rotateY: "+=45", // Slight extra tilt before snap
+    duration: 0.6,
+    ease: "elastic.out(1, 0.3)",
+    onStart: () => {
+      setRollResult({ character, rarity: rarity as string });
+      setCardPhase('flipping');
+    }
+  });
+
+  // 4. Final Flip Snap
+  tl.to(cardRef.current, {
+    rotateY: 180, // Target reveal state
+    duration: 0.9,
+    ease: "expo.out"
+  }, "-=0.1");
+
+  // 5. Landing settle with a "hit" effect
+  tl.to(cardRef.current, {
+    scale: 1,
+    z: 0,
+    duration: 0.5,
+    ease: "bounce.out"
+  });
+
+}, [pendingRoll, isRolling]);
 
   const renderEvents = () => {
     const visibleEventPacks = activePackSale
