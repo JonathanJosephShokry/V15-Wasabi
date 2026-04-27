@@ -954,17 +954,13 @@ const handleRoll = (pack: CardPack) => {
       {rollingPack && (
           <motion.div
           initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
-          className="fixed inset-0 bg-black/95 z-[10000] flex items-center justify-center p-5 overflow-hidden"
+          className="fixed inset-0 bg-black/95 z-[10000] flex justify-center p-5 overflow-y-auto"
           style={{ backdropFilter: 'blur(12px)' }}
           >
           <style>{`
               @keyframes ws-spin {
-              from { transform: rotateY(0deg) rotateZ(-2deg); }
-              to   { transform: rotateY(360deg) rotateZ(2deg); }
-              }
-              @keyframes ws-float {
-              0%,100% { transform: translateY(0px); }
-              50%      { transform: translateY(-10px); }
+              from { transform: rotateY(0deg); }
+              to   { transform: rotateY(360deg); }
               }
               @keyframes ws-flip {
               0%   { transform: rotateY(0deg); }
@@ -975,12 +971,19 @@ const handleRoll = (pack: CardPack) => {
               100% { transform: translate(var(--px),var(--py)) scale(0); opacity: 0; }
               }
               @keyframes ws-pulse { 0%,100%{opacity:.3} 50%{opacity:.7} }
-              @keyframes ws-walkout-glow { 0%,100%{transform:scale(1);opacity:.55} 50%{transform:scale(1.35);opacity:.85} }
+              @keyframes ws-walkout-glow { 0%,100%{transform:scale(1);opacity:.4} 50%{transform:scale(1.5);opacity:.9} }
               @keyframes ws-walkout-spin { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
               @keyframes ws-walkout-beam { 0%{transform:translateX(-100%) rotate(25deg)} 100%{transform:translateX(200%) rotate(25deg)} }
+              @keyframes ws-rays { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
+              @keyframes ws-flash { 0%{opacity:0} 10%{opacity:1} 100%{opacity:0} }
+              @keyframes ws-shake {
+                0%, 100% { transform: translate(0, 0); }
+                10%, 30%, 50%, 70%, 90% { transform: translate(-4px, -4px); }
+                20%, 40%, 60%, 80% { transform: translate(4px, 4px); }
+              }
               .ws-wrap  { perspective: 1000px; }
               .ws-card  { position:relative; width:200px; height:290px; transform-style:preserve-3d; }
-              .ws-card.spinning { animation: ws-spin 1.1s linear infinite, ws-float 2s ease-in-out infinite; }
+              .ws-card.spinning { animation: ws-spin 1.2s linear infinite; }
               .ws-card.flipping { animation: ws-flip 0.65s ease-in-out forwards; }
               .ws-card.revealed { transform: rotateY(180deg); }
               .ws-face  { position:absolute; inset:0; backface-visibility:hidden; border-radius:16px; overflow:hidden; }
@@ -988,7 +991,16 @@ const handleRoll = (pack: CardPack) => {
               .ws-pt    { position:absolute; left:50%; top:50%; border-radius:50%; animation: ws-particle 0.8s ease-out forwards; }
           `}</style>
 
-          <div className="flex flex-col items-center gap-8 w-full max-w-sm">
+          <div 
+            className="flex flex-col items-center gap-6 w-full max-w-sm relative mt-10 pb-20"
+            style={{ 
+              animation: (cardPhase === 'revealed' && rollResult?.rarity === 'never') ? 'ws-shake 0.5s ease-in-out' : 'none'
+            }}
+          >
+              {/* Flash effect for rare pulls */}
+              {cardPhase === 'revealed' && rollResult && (rollResult.rarity === 'legendary' || rollResult.rarity === 'never') && (
+                <div className="fixed inset-0 bg-white z-[100] pointer-events-none" style={{ animation: 'ws-flash 0.8s ease-out forwards' }} />
+              )}
 
               {/* Rarity Bar */}
               <div className="flex gap-1.5 w-full">
@@ -1015,39 +1027,64 @@ const handleRoll = (pack: CardPack) => {
               {/* Card */}
               <div className="ws-wrap relative flex items-center justify-center" style={{ height: 290 }}>
 
-              {/* LEGENDARY: Gold FIFA-style glow */}
+              {/* LEGENDARY: FIFA-style walkout */}
               {cardPhase === 'revealed' && rollResult && rollResult.rarity === 'legendary' && (
-                <div className="absolute -inset-12 rounded-full blur-3xl -z-10"
-                  style={{ 
-                    background: 'radial-gradient(circle, rgba(255,152,0,0.55) 0%, transparent 65%)',
-                    animation: 'ws-walkout-glow 2.5s ease-in-out infinite'
-                  }} />
+                <>
+                  {/* Rays of Glory */}
+                  <div className="absolute -inset-64 opacity-20 -z-30 pointer-events-none"
+                    style={{
+                      background: 'repeating-conic-gradient(from 0deg, #FFD700 0deg 10deg, transparent 10deg 20deg)',
+                      animation: 'ws-rays 20s linear infinite',
+                      maskImage: 'radial-gradient(circle, black 30%, transparent 70%)'
+                    }} />
+                  <div className="absolute -inset-16 rounded-full blur-3xl -z-10"
+                    style={{ 
+                      background: 'radial-gradient(circle, rgba(255,152,0,0.6) 0%, rgba(255,215,0,0.3) 50%, transparent 80%)',
+                      animation: 'ws-walkout-glow 3s ease-in-out infinite'
+                    }} />
+                  <div className="absolute -inset-4 rounded-3xl blur-xl -z-10 bg-[#FF9800]/30" />
+                </>
               )}
 
-              {/* NEVER: Full walkout treatment — much stronger than legendary */}
+              {/* NEVER: Mythic / Dark Void Walkout */}
               {cardPhase === 'revealed' && rollResult && rollResult.rarity === 'never' && (
                 <>
-                  <div className="absolute -inset-24 rounded-full blur-3xl -z-20"
-                    style={{ 
-                      background: 'radial-gradient(circle, rgba(233,30,99,0.8) 0%, rgba(156,39,176,0.5) 30%, transparent 70%)',
-                      animation: 'ws-walkout-glow 2s ease-in-out infinite'
+                  {/* Background Void / Distortion */}
+                  <div className="fixed inset-0 bg-[#E91E63]/5 -z-10" />
+                  
+                  {/* Intense Glitchy Rays */}
+                  <div className="absolute -inset-[600px] opacity-20 -z-30 pointer-events-none"
+                    style={{
+                      background: 'repeating-conic-gradient(from 0deg, #E91E63 0deg 3deg, #9C27B0 3deg 6deg, #FF9800 6deg 9deg, transparent 9deg 12deg)',
+                      animation: 'ws-rays 8s linear infinite reverse',
+                      maskImage: 'radial-gradient(circle, black 15%, transparent 60%)'
                     }} />
-                  <div className="absolute -inset-10 rounded-3xl blur-2xl -z-10 opacity-70"
+
+                  <div className="absolute -inset-32 rounded-full blur-3xl -z-20"
                     style={{ 
-                      background: 'conic-gradient(from 0deg, rgba(233,30,99,0.6), rgba(255,152,0,0.5), rgba(156,39,176,0.6), rgba(233,30,99,0.6))',
-                      animation: 'ws-walkout-spin 3s linear infinite'
+                      background: 'radial-gradient(circle, rgba(233,30,99,0.85) 0%, rgba(156,39,176,0.6) 40%, transparent 75%)',
+                      animation: 'ws-walkout-glow 1.5s ease-in-out infinite'
                     }} />
-                  <div className="absolute -inset-4 rounded-2xl blur-xl -z-10"
+                    
+                  <div className="absolute -inset-12 rounded-3xl blur-2xl -z-10 opacity-80"
+                    style={{ 
+                      background: 'conic-gradient(from 0deg, #E91E63, #FF9800, #9C27B0, #E91E63)',
+                      animation: 'ws-walkout-spin 2s linear infinite'
+                    }} />
+                  
+                  {/* Inner Core Glow */}
+                  <div className="absolute -inset-8 rounded-2xl blur-xl -z-10"
                     style={{ 
                       background: '#E91E63',
-                      opacity: 0.5,
-                      boxShadow: '0 0 80px 30px rgba(233,30,99,0.7), inset 0 0 40px rgba(255,255,255,0.2)'
+                      opacity: 0.6,
+                      boxShadow: '0 0 100px 40px rgba(233,30,99,0.8), inset 0 0 60px rgba(255,255,255,0.4)'
                     }} />
-                  <div className="absolute inset-0 rounded-3xl overflow-hidden -z-10 opacity-30">
+
+                  <div className="absolute inset-0 rounded-3xl overflow-hidden -z-10 opacity-40">
                     <div className="absolute inset-0"
                       style={{
-                        background: 'linear-gradient(105deg, transparent 40%, rgba(255,255,255,0.4) 50%, transparent 60%)',
-                        animation: 'ws-walkout-beam 2s ease-in-out infinite'
+                        background: 'linear-gradient(105deg, transparent 35%, rgba(255,255,255,0.6) 50%, transparent 65%)',
+                        animation: 'ws-walkout-beam 1.2s ease-in-out infinite'
                       }} />
                   </div>
                 </>
@@ -1072,6 +1109,18 @@ const handleRoll = (pack: CardPack) => {
                       }}>
                       <div className="flex-1 relative overflow-hidden">
                       <img src={`/icons/${rollResult.character.images.iron}`} alt={rollResult.character.name} className="w-full h-full object-cover" />
+                      
+                      {/* Holo Shine for Legendary/Never */}
+                      {(rollResult.rarity === 'legendary' || rollResult.rarity === 'never') && (
+                        <div className="absolute inset-0 z-10 pointer-events-none"
+                          style={{
+                            background: 'linear-gradient(135deg, transparent 0%, rgba(255,255,255,0.4) 45%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0.4) 55%, transparent 100%)',
+                            backgroundSize: '200% 200%',
+                            animation: 'ws-walkout-beam 1.5s ease-in-out infinite',
+                            mixBlendMode: 'overlay'
+                          }} />
+                      )}
+                      
                       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
                       </div>
                       <div className="h-10 flex flex-col items-center justify-center px-2 shrink-0"
@@ -1114,13 +1163,13 @@ const handleRoll = (pack: CardPack) => {
               )}
               </div>
 
-              {/* Result + Buttons */}
+              {/* Result + Buttons — Absolute to prevent layout shift */}
               <AnimatePresence>
               {showRollResult && rollResult && (
                   <motion.div
-                  initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}
+                  initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}
                   transition={{ duration: 0.4 }}
-                  className="flex flex-col items-center gap-4 text-center"
+                  className="flex flex-col items-center gap-4 text-center w-full"
                   >
                   <div>
                       <h4 className="text-2xl font-black text-white mb-1">You got {rollResult.character.name}!</h4>
