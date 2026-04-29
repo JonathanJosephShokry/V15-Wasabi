@@ -1,5 +1,5 @@
 {
-  "version": "V35",
+  "version": "V32",
   "wasabiRulesLink": "https://docs.google.com/document/d/1SfoDRQbWs7yBSIc6YOW61q7s3s4s-D5OP9TCz7zFO30/edit?usp=sharing",
   "cardConfig": {
     "rarityScores": {
@@ -93,24 +93,15 @@
     "combineRecipe": 2
   },
   "characters": [
-    {
-      "id": "________",
-      "name": "______",
-      "rarity": "________",
-      "packageId": "________",
-      "images": {
-        "iron": "________",
-        "bronze": "________",
-        "silver": "________",
-        "pearl": "________",
-        "gold": "________",
-        "jade": "________",
-        "sapphire": "________",
-        "ruby": "________",
-        "emerald": "________",
-        "diamond": "________"
-      }
-    },
+    {"id": "________","name": "______","rarity": "________","packageId": "________","images": {"iron": "________","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+    {"id": "mordecai","name": "Mordecai","rarity": "common","packageId": "regular_show_pack","images": {"iron": "mordecai10.jpg","bronze": "mordecai20.jpg","silver": "mordecai30.jpg","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+    {"id": "rigby","name": "Rigby","rarity": "common","packageId": "regular_show_pack","images": {"iron": "rigby10.jpg","bronze": "rigby20.jpg","silver": "rigby30.jpg","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+    {"id": "muscleman","name": "Muscleman","rarity": "rare","packageId": "regular_show_pack","images": {"iron": "muscleman10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+    {"id": "hi_five_ghost","name": "Hi Five Ghost","rarity": "rare","packageId": "regular_show_pack","images": {"iron": "hi_five_ghost10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+    {"id": "skips","name": "Skips","rarity": "epic","packageId": "regular_show_pack","images": {"iron": "skips10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+    {"id": "pops","name": "Pops","rarity": "epic","packageId": "regular_show_pack","images": {"iron": "pops10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+    {"id": "benson","name": "Benson","rarity": "legendary","packageId": "regular_show_pack","images": {"iron": "benson10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+    {"id": "margaret","name": "Margaret","rarity": "never","packageId": "regular_show_pack","images": {"iron": "margaret10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
     {
       "id": "bob_the_tomato",
       "name": "Bob the Tomato",
@@ -2577,6 +2568,7 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [
+        {"characterId": "marlin", "degree": "bronze", "count": 1},
         {
           "characterId": "craboo",
           "degree": "iron",
@@ -2635,11 +2627,6 @@
         {
           "characterId": "makka_pakka",
           "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "igglepiggle",
-          "degree": "silver",
           "count": 1
         },
         {
@@ -2936,13 +2923,8 @@
           "count": 1
         },
         {
-          "characterId": "marlin",
-          "degree": "bronze",
-          "count": 1
-        },
-        {
           "characterId": "igglepiggle",
-          "degree": "silver",
+          "degree": "pearl",
           "count": 1
         },
         {
@@ -3158,6 +3140,15 @@
       "sportEventScore": 0
     },
     {
+      "id": "member_lydia_rafik_youssef",
+      "name": "Lydia R Youssef",
+      "icon": "noicon.jpg",
+      "teamId": "team1",
+      "role": "normal",
+      "collection": [],
+      "sportEventScore": 0
+    },
+    {
       "id": "member_shady_hassan",
       "name": "Shady",
       "icon": "noicon.jpg",
@@ -3311,7 +3302,7 @@
           "salary": 9
         }
       ],
-      "difficulty": "Medium"
+      "difficulty": "Easy"
     },
     {
       "id": "proj-bible2",
@@ -3331,28 +3322,13 @@
         "Miss 10 days in a cycle and you are out"
       ],
       "bonusSystem": [
-        {
-          "work": "2 days",
-          "salary": 1
-        },
-        {
-          "work": "4 days",
-          "salary": 3
-        },
-        {
-          "work": "6 days",
-          "salary": 5
-        },
-        {
-          "work": "8 days",
-          "salary": 7
-        },
-        {
-          "work": "10 days",
-          "salary": 9
-        }
+        {"work": "2 days", "salary": 1},
+        {"work": "4 days", "salary": 3},
+        {"work": "6 days", "salary": 5},
+        { "work": "8 days", "salary": 7},
+        {"work": "10 days", "salary": 9}
       ],
-      "difficulty": "Hard"
+      "difficulty": "Easy"
     },
     {
       "id": "proj-habits",
@@ -3396,7 +3372,7 @@
           "salary": 19
         }
       ],
-      "difficulty": "Extreme"
+      "difficulty": "Easy"
     },
     {
       "id": "proj-hidden_in_my_heart",
@@ -3434,7 +3410,7 @@
           "salary": 15
         }
       ],
-      "difficulty": "Easy"
+      "difficulty": "Medium"
     },
     {
       "id": "proj-study",
@@ -3514,7 +3490,7 @@
           "salary": 15
         }
       ],
-      "difficulty": "Hard"
+      "difficulty": "Medium"
     },
     {
       "id": "proj-languages",
@@ -3547,12 +3523,12 @@
           "salary": 9
         }
       ],
-      "difficulty": "Extreme"
+      "difficulty": "Easy"
     },
     {
-      "id": "fun_edu",
+      "id": "game_dev",
       "teamId": "team1",
-      "name": "Fun Edu",
+      "name": "Game Dev",
       "description": "Game dev company",
       "currency": "spice",
       "minimumWork": "FUN EDU TASKS",
@@ -3563,7 +3539,7 @@
       "maxMembers": 14,
       "rules": [],
       "bonusSystem": [],
-      "difficulty": "Easy"
+      "difficulty": "Hard"
     },
     {
       "id": "book_club",
@@ -3579,7 +3555,7 @@
       "maxMembers": 14,
       "rules": [],
       "bonusSystem": [],
-      "difficulty": "Medium"
+      "difficulty": "Easy"
     },
     {
       "id": "tasbe7",
@@ -3589,13 +3565,13 @@
       "minimumWork": "None",
       "baseSalary": 0,
       "startDate": "01-01-2026",
-      "active": false,
+      "active": true,
       "maxMembers": 14,
       "rules": [
         "___"
       ],
       "bonusSystem": [],
-      "difficulty": "Hard"
+      "difficulty": "Easy"
     }
   ],
   "teams": [
@@ -3691,6 +3667,14 @@
       "image": "Padel.jpg",
       "wabiCost": 85,
       "description": "Good sport"
+    },
+    {
+      "id": "tss-4",
+      "teamId": "team1",
+      "name": "14h-Minecraft!",
+      "image": "minecraft_banner.jpg",
+      "wabiCost": 25,
+      "description": "Good game"
     }
   ],
   "sportEvents": [
@@ -4254,33 +4238,33 @@
       "banner": "",
       "score": 0,
       "cost": {
-        "wabi": 10,
-        "spice": 5
+        "wabi": 1000,
+        "spice": 100
       },
       "outcomes": [
         {
           "characterId": "common_token",
-          "chance": "50%"
+          "chance": "16.5%"
         },
         {
           "characterId": "rare_token",
-          "chance": "30%"
+          "chance": "16.5%"
         },
         {
           "characterId": "epic_token",
-          "chance": "15%"
+          "chance": "16.5%"
         },
         {
           "characterId": "legendary_token",
-          "chance": "4.9%"
+          "chance": "16.5%"
         },
         {
           "characterId": "never_token",
-          "chance": "0.1%"
+          "chance": "16.5%"
         },
         {
           "characterId": "split_token",
-          "chance": "0%"
+          "chance": "16.5%"
         }
       ]
     },
@@ -4496,14 +4480,23 @@
     },
     {
       "packageId": "regular_show_pack",
-      "name": "NA",
-      "banner": "na.jpg",
+      "name": "Regular Show",
+      "banner": "regular_show_banner.jpg",
       "score": 7,
       "cost": {
         "wabi": 14,
         "spice": 7
       },
-      "outcomes": []
+      "outcomes": [
+        {"characterId": "mordecai","chance": "25%"},
+        {"characterId": "rigby","chance": "25%"},
+        {"characterId": "muscleman","chance": "15%"},
+        {"characterId": "hi_five_ghost","chance": "15%"},
+        {"characterId": "skips","chance": "7.5%"},
+        {"characterId": "pops","chance": "7.5%"},
+        {"characterId": "benson","chance": "4.9%"},
+        {"characterId": "margaret","chance": "0.1%"}
+      ]
     },
     {
       "packageId": "wreck_it_ralph_pack",
@@ -5081,7 +5074,8 @@
       "packs": [
         "angelo_rules_pack",
         "in_the_night_garden_pack",
-        "veggie_tails_pack"
+        "veggie_tails_pack",
+        "tokens_pack"
       ]
     },
     {
