@@ -9,38 +9,38 @@
     },
     {
       "id": "member_david_michael",
-      "wabi": 11,
+      "wabi": 15,
       "spice": 0,
-      "exp": 6,
+      "exp": 7,
       "restricted": false
     },
     {
       "id": "member_jonathan_joseph",
-      "wabi": 133,
-      "spice": 2,
-      "exp": 7,
+      "wabi": 160,
+      "spice": 42,
+      "exp": 8,
       "restricted": false
     },
     {
       "id": "member_samih_nasser",
-      "wabi": 18,
-      "spice": 5,
-      "exp": 7,
+      "wabi": 23,
+      "spice": 14,
+      "exp": 8,
       "restricted": false
     },
     {
       "id": "member_yassa",
-      "wabi": 17,
+      "wabi": 19,
       "spice": 3,
-      "exp": 7,
-      "restricted": true
+      "exp": 8,
+      "restricted": false
     },
     {
       "id": "member_peter_boshra",
-      "wabi": 25,
+      "wabi": 41,
       "spice": 5,
-      "exp": 7,
-      "restricted": false
+      "exp": 8,
+      "restricted": true
     },
     {
       "id": "member_david_nasser",
@@ -51,17 +51,17 @@
     },
     {
       "id": "member_joren",
-      "wabi": 1,
-      "spice": 1,
-      "exp": 7,
-      "restricted": true
+      "wabi": 12,
+      "spice": 11,
+      "exp": 8,
+      "restricted": false
     },
     {
       "id": "member_haneen",
-      "wabi": 37,
+      "wabi": 38,
       "spice": 18,
-      "exp": 7,
-      "restricted": true
+      "exp": 8,
+      "restricted": false
     },
     {
       "id": "member_marette",
@@ -79,16 +79,16 @@
     },
     {
       "id": "member_philip",
-      "wabi": 118,
-      "spice": 24,
-      "exp": 6,
+      "wabi": 142,
+      "spice": 28,
+      "exp": 7,
       "restricted": false
     },
     {
       "id": "member_karen",
-      "wabi": 46,
-      "spice": 0,
-      "exp": 6,
+      "wabi": 68,
+      "spice": 5,
+      "exp": 7,
       "restricted": false
     },
     {
@@ -96,13 +96,13 @@
       "wabi": 15,
       "spice": 5,
       "exp": 4,
-      "restricted": true
+      "restricted": false
     },
     {
       "id": "member_yana",
-      "wabi": 73,
-      "spice": 40,
-      "exp": 5,
+      "wabi": 103,
+      "spice": 52,
+      "exp": 6,
       "restricted": false
     },
     {
@@ -110,62 +110,62 @@
       "wabi": 42,
       "spice": 37,
       "exp": 5,
-      "restricted": true
+      "restricted": false
     },
     {
       "id": "member_chris",
-      "wabi": 107,
-      "spice": 68,
-      "exp": 5,
+      "wabi": 137,
+      "spice": 88,
+      "exp": 6,
       "restricted": false
     },
     {
       "id": "member_daniel_walaa",
-      "wabi": 35,
-      "spice": 2,
-      "exp": 5,
-      "restricted": false
+      "wabi": 61,
+      "spice": 3,
+      "exp": 6,
+      "restricted": true
     },
     {
       "id": "member_manuel",
-      "wabi": 42,
+      "wabi": 52,
       "spice": 2,
-      "exp": 5,
+      "exp": 6,
       "restricted": false
     },
     {
       "id": "member_jenny",
-      "wabi": 7,
+      "wabi": 8,
+      "spice": 0,
+      "exp": 6,
+      "restricted": false
+    },
+    {
+      "id": "member_yasmine",
+      "wabi": 105,
       "spice": 0,
       "exp": 5,
       "restricted": false
     },
     {
-      "id": "member_yasmine",
-      "wabi": 83,
+      "id": "member_julie",
+      "wabi": 28,
       "spice": 0,
       "exp": 4,
       "restricted": false
     },
     {
-      "id": "member_julie",
-      "wabi": 18,
-      "spice": 0,
+      "id": "member_carla_walaa",
+      "wabi": 12,
+      "spice": 1,
       "exp": 3,
       "restricted": false
     },
     {
-      "id": "member_carla_walaa",
-      "wabi": 8,
-      "spice": 0,
-      "exp": 2,
-      "restricted": false
-    },
-    {
       "id": "member_joy_magued",
-      "wabi": 10,
+      "wabi": 16,
       "spice": 0,
-      "exp": 2,
+      "exp": 3,
       "restricted": false
     },
     {
@@ -173,48 +173,55 @@
       "wabi": 1,
       "spice": 0,
       "exp": 1,
-      "restricted": true
+      "restricted": false
     },
     {
       "id": "member_venus",
-      "wabi": 16,
+      "wabi": 24,
       "spice": 0,
-      "exp": 2,
+      "exp": 3,
       "restricted": false
     },
     {
       "id": "member_nana",
-      "wabi": 6,
+      "wabi": 10,
       "spice": 0,
-      "exp": 2,
+      "exp": 3,
       "restricted": false
     },
     {
       "id": "member_mai_hassaan",
-      "wabi": 10,
+      "wabi": 12,
       "spice": 0,
-      "exp": 2,
+      "exp": 3,
       "restricted": false
     },
     {
       "id": "member_shady_hassan",
-      "wabi": 0,
+      "wabi": 1,
       "spice": 0,
-      "exp": 0,
+      "exp": 1,
+      "restricted": false
+    },
+    {
+      "id": "member_lydia_rafik_youssef",
+      "wabi": 2,
+      "spice": 0,
+      "exp": 1,
       "restricted": false
     },
     {
       "id": "member_mina",
-      "wabi": 25,
+      "wabi": 30,
       "spice": 0,
-      "exp": 7,
+      "exp": 8,
       "restricted": false
     },
     {
       "id": "member_lucas",
-      "wabi": 29,
+      "wabi": 35,
       "spice": 0,
-      "exp": 4,
+      "exp": 5,
       "restricted": false
     },
     {
@@ -222,20 +229,20 @@
       "wabi": 13,
       "spice": 0,
       "exp": 2,
-      "restricted": true
+      "restricted": false
     },
     {
       "id": "member_abanoub_mohsen",
-      "wabi": 3,
+      "wabi": 5,
       "spice": 0,
-      "exp": 2,
-      "restricted": true
+      "exp": 3,
+      "restricted": false
     },
     {
       "id": "member_bassem_mounir",
-      "wabi": 21,
+      "wabi": 29,
       "spice": 0,
-      "exp": 3,
+      "exp": 4,
       "restricted": false
     },
     {
@@ -247,9 +254,9 @@
     },
     {
       "id": "member_fady_barakat",
-      "wabi": 0,
+      "wabi": 4,
       "spice": 0,
-      "exp": 0,
+      "exp": 1,
       "restricted": false
     }
 

@@ -1013,7 +1013,7 @@ useGSAP(() => {
       {rollingPack && (
           <motion.div
           initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
-          className="fixed inset-0 bg-black/95 z-[10000] flex items-center justify-center p-5 overflow-hidden"
+          className="fixed inset-0 bg-black/95 z-[10000] flex flex-col items-center overflow-y-auto pt-20 pb-20 px-5"
           style={{ backdropFilter: 'blur(12px)' }}
           >
           <style>{`
@@ -1058,7 +1058,7 @@ useGSAP(() => {
         `}</style>
 
           <div 
-            className="flex flex-col items-center justify-center w-full max-w-sm relative z-10"
+            className="flex flex-col items-center w-full max-w-sm relative z-10"
           >
               {/* Walkout Background Layer - CLIPPED */}
               <AnimatePresence>

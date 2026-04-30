@@ -3541,8 +3541,8 @@
       "name": "Game Dev",
       "description": "Game dev company",
       "currency": "spice",
-      "minimumWork": "FUN EDU TASKS",
-      "baseSalary": 1,
+      "minimumWork": "Game Dev Learning and working tasks",
+      "baseSalary": 0,
       "startDate": "07-04-2026",
       "active": true,
       "projectManagerId": "member_jonathan_joseph",
@@ -3558,13 +3558,21 @@
       "description": "reading books",
       "currency": "spice",
       "minimumWork": "Read 10 Pages",
-      "baseSalary": 0,
+      "baseSalary": 1,
       "startDate": "14-04-2026",
       "active": true,
       "projectManagerId": "member_samih_nasser",
       "maxMembers": 14,
       "rules": [],
-      "bonusSystem": [],
+      "bonusSystem": [
+        {"work": "20 pages","salary": 1},
+        {"work": "30 pages","salary": 2},
+        {"work": "40 pages","salary": 3},
+        {"work": "50 pages","salary": 4},
+        {"work": "60 pages","salary": 5},
+        {"work": "70 pages","salary": 6},
+        {"work": "80 pages","salary": 7}
+        ],
       "difficulty": "Easy"
     },
     {
@@ -4433,7 +4441,7 @@
     {
       "packageId": "kungfu_evil_pack",
       "name": "Kung Fu Evil",
-      "banner": "na.jpg",
+      "banner": "kunf_fu_evil_banner.jpg",
       "score": 20,
       "cost": {
         "wabi": 40,
