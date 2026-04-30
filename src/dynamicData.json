@@ -16,8 +16,8 @@
     },
     {
       "id": "member_jonathan_joseph",
-      "wabi": 160,
-      "spice": 42,
+      "wabi": 118,
+      "spice": 0,
       "exp": 8,
       "restricted": false
     },
@@ -365,7 +365,8 @@
         "member_samih_nasser",
         "member_carla_walaa",
         "member_philip",
-        "member_chris"
+        "member_chris",
+        "member_jonathan_joseph"
       ]
     },
     {
