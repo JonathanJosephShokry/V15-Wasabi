@@ -94,7 +94,7 @@
   },
   "characters": [
     {"id": "________","name": "______","rarity": "________","packageId": "________","images": {"iron": "________","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
-    {"id": "krisoff","name": "Krisoff","rarity": "common","packageId": "frozen_pack","images": {"iron": "kristoff10.jpg","bronze": "kristoff20.jpg","silver": "_______","pearl": "_______","gold": "chameleon50.jpg","jade": "chameleon60.jpg","sapphire": "chameleon70.jpg","ruby": "chameleon80.jpg","emerald": "chameleon90.jpg","diamond": "chameleon100.jpg"}},
+    {"id": "kristoff","name": "Kristoff","rarity": "common","packageId": "frozen_pack","images": {"iron": "kristoff10.jpg","bronze": "kristoff20.jpg","silver": "_______","pearl": "_______","gold": "chameleon50.jpg","jade": "chameleon60.jpg","sapphire": "chameleon70.jpg","ruby": "chameleon80.jpg","emerald": "chameleon90.jpg","diamond": "chameleon100.jpg"}},
     {"id": "sven","name": "Sven","rarity": "rare","packageId": "frozen_pack","images": {"iron": "sven10.jpg","bronze": "sven20.jpg","silver": "________","pearl": "________","gold": "________","jade": "chameleon60.jpg","sapphire": "chameleon70.jpg","ruby": "chameleon80.jpg","emerald": "chameleon90.jpg","diamond": "chameleon100.jpg"}},
     {"id": "olaf","name": "Olaf","rarity": "epic","packageId": "frozen_pack","images": {"iron": "olaf10.jpg","bronze": "olaf20.jpg","silver": "________","pearl": "_________","gold": "_______","jade": "chameleon60.jpg","sapphire": "chameleon70.jpg","ruby": "chameleon80.jpg","emerald": "chameleon90.jpg","diamond": "chameleon100.jpg"}},
     {"id": "anna","name": "Anna","rarity": "legendary","packageId": "frozen_pack","images": {"iron": "anna10.jpg","bronze": "anna20.jpg","silver": "________","pearl": "________","gold": "_______","jade": "chameleon60.jpg","sapphire": "chameleon70.jpg","ruby": "chameleon80.jpg","emerald": "chameleon90.jpg","diamond": "chameleon100.jpg"}},
@@ -2352,7 +2352,7 @@
         {
           "characterId": "common_token",
           "degree": "iron",
-          "count": 1
+          "count": 2
         }
       ],
       "sportEventScore": 0
@@ -2374,7 +2374,8 @@
         {"characterId": "makka_pakka","degree": "iron","count": 1},
         {"characterId": "makka_pakka","degree": "silver","count": 1},
         {"characterId": "upsy_daisy","degree": "jade","count": 1},
-        {"characterId": "igglepiggle","degree": "gold","count": 1}
+        {"characterId": "igglepiggle","degree": "gold","count": 1},
+        {"characterId": "rare_token","degree": "iron","count": 1}
       ],
       "sportEventScore": 0
     },
@@ -2620,16 +2621,9 @@
           "degree": "iron",
           "count": 1
         },
-        {
-          "characterId": "common_token",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "common_token",
-          "degree": "bronze",
-          "count": 1
-        }
+        {"characterId": "common_token", "degree": "iron", "count": 1},
+        {"characterId": "common_token", "degree": "bronze", "count": 1},
+        {"characterId": "rare_token","degree": "iron","count": 1}
       ],
       "sportEventScore": 0
     },
@@ -2786,7 +2780,7 @@
         {
           "characterId": "rare_token",
           "degree": "iron",
-          "count": 1
+          "count": 3
         }
       ],
       "sportEventScore": 0
@@ -2831,12 +2825,12 @@
         {
           "characterId": "common_token",
           "degree": "bronze",
-          "count": 3
+          "count": 4
         },
         {
           "characterId": "rare_token",
           "degree": "iron",
-          "count": 3
+          "count": 4
         }
       ],
       "sportEventScore": 0
@@ -2912,7 +2906,8 @@
           "characterId": "common_token",
           "degree": "bronze",
           "count": 2
-        }
+        },
+        {"characterId": "rare_token", "degree": "iron", "count": 2}
       ],
       "sportEventScore": 0
     },
@@ -2956,12 +2951,12 @@
         {
           "characterId": "common_token",
           "degree": "bronze",
-          "count": 1
+          "count": 2
         },
         {
           "characterId": "common_token",
           "degree": "iron",
-          "count": 3
+          "count": 4
         }
       ],
       "sportEventScore": 0
@@ -2991,7 +2986,7 @@
         {
           "characterId": "rare_token",
           "degree": "iron",
-          "count": 1
+          "count": 2
         }
       ],
       "sportEventScore": 0
@@ -3015,7 +3010,7 @@
         {
           "characterId": "rare_token",
           "degree": "iron",
-          "count": 2
+          "count": 3
         },
         {
           "characterId": "common_token",
@@ -3032,11 +3027,8 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [
-        {
-          "characterId": "common_token",
-          "degree": "iron",
-          "count": 2
-        }
+        {"characterId": "common_token","degree": "iron","count": 2},
+        {"characterId": "rare_token","degree": "iron","count": 1}
       ],
       "sportEventScore": 0
     },
@@ -3055,7 +3047,9 @@
       "icon": "noicon.jpg",
       "teamId": "team1",
       "role": "normal",
-      "collection": [],
+      "collection": [
+        {"characterId": "common_token","degree": "iron","count": 1}
+      ],
       "sportEventScore": 0
     },
     {
@@ -3074,11 +3068,8 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [
-        {
-          "characterId": "rare_token",
-          "degree": "iron",
-          "count": 1
-        }
+        {"characterId": "rare_token","degree": "iron","count": 1},
+        {"characterId": "common_token","degree": "bronze","count": 1}
       ],
       "sportEventScore": 0
     },
@@ -3796,6 +3787,25 @@
     }
   ],
   "packs": [
+        {
+      "packageId": "tokens_pack",
+      "name": "Tokens Pack",
+      "banner": "________",
+      "score": 0,
+      "cost": {
+        "wabi": 4,
+        "spice": 2
+      },
+      "outcomes": [
+        {"characterId": "common_token", "chance": "49.9%"},
+        {"characterId": "rare_token", "chance": "30%"},
+        {"characterId": "epic_token", "chance": "15%"},
+        {"characterId": "legendary_token", "chance": "4.9%"},
+        {"characterId": "never_token", "chance": "0.1%"},
+        {"characterId": "split_token", "chance": "0.1%"}
+
+      ]
+    },
     {
       "packageId": "atlantis_pack",
       "name": "Atlantis",
@@ -4388,10 +4398,10 @@
       "packageId": "kungfu_evil_pack",
       "name": "Kung Fu Evil",
       "banner": "kunf_fu_evil_banner.jpg",
-      "score": 20,
+      "score": 13,
       "cost": {
-        "wabi": 40,
-        "spice": 20
+        "wabi": 30,
+        "spice": 15
       },
       "outcomes": [
         {"characterId": "chameleon","chance": "60%"},
@@ -4410,7 +4420,7 @@
         "spice": 9
       },
       "outcomes": [
-        {"characterId": "krisoff","chance": "50%"},
+        {"characterId": "kristoff","chance": "50%"},
         {"characterId": "sven","chance": "30%"},
         {"characterId": "olaf","chance": "15%"},
         {"characterId": "anna","chance": "5.9%"},
@@ -4911,26 +4921,26 @@
   ],
   "crafting_sets": [
     {
-      "id": "set_5",
-      "start_date": "2026-04-15",
-      "end_date": "2026-05-01",
+      "id": "set_1",
+      "start_date": "2026-05-01",
+      "end_date": "2026-05-15",
       "crafts": [
         {
           "id": "craft_1",
           "recipe": {
             "inputs": [
               {
-                "card_id": "junior",
-                "degree": "iron"
+                "card_id": "chameleon",
+                "degree": "bronze"
               },
               {
-                "card_id": "laura",
-                "degree": "silver"
+                "card_id": "shen",
+                "degree": "iron"
               }
             ],
             "output": {
-              "card_id": "pa_grape",
-              "degree": "iron"
+              "card_id": "shen",
+              "degree": "bronze"
             }
           }
         },
@@ -4939,17 +4949,17 @@
           "recipe": {
             "inputs": [
               {
-                "card_id": "summer",
-                "degree": "iron"
+                "card_id": "kristoff",
+                "degree": "bronze"
               },
               {
                 "card_id": "common_token",
-                "degree": "iron"
+                "degree": "pearl"
               }
             ],
             "output": {
-              "card_id": "summer",
-              "degree": "bronze"
+              "card_id": "kristoff",
+              "degree": "silver"
             }
           }
         },
@@ -4958,8 +4968,8 @@
           "recipe": {
             "inputs": [
               {
-                "card_id": "upsy_daisy",
-                "degree": "bronze"
+                "card_id": "muscleman",
+                "degree": "iron"
               },
               {
                 "card_id": "rare_token",
@@ -4967,8 +4977,8 @@
               }
             ],
             "output": {
-              "card_id": "upsy_daisy",
-              "degree": "silver"
+              "card_id": "muscleman",
+              "degree": "bronze"
             }
           }
         }
