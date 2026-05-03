@@ -94,7 +94,7 @@
   },
   "characters": [
     {"id": "________","name": "______","rarity": "________","packageId": "________","images": {"iron": "________","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
-    {"id": "kristoff","name": "Kristoff","rarity": "common","packageId": "frozen_pack","images": {"iron": "kristoff10.jpg","bronze": "kristoff20.jpg","silver": "_______","pearl": "_______","gold": "chameleon50.jpg","jade": "chameleon60.jpg","sapphire": "chameleon70.jpg","ruby": "chameleon80.jpg","emerald": "chameleon90.jpg","diamond": "chameleon100.jpg"}},
+    {"id": "kristoff","name": "Kristoff","rarity": "common","packageId": "frozen_pack","images": {"iron": "kristoff10.jpg","bronze": "kristoff20.jpg","silver": "kristoff30.jpg","pearl": "_______","gold": "chameleon50.jpg","jade": "chameleon60.jpg","sapphire": "chameleon70.jpg","ruby": "chameleon80.jpg","emerald": "chameleon90.jpg","diamond": "chameleon100.jpg"}},
     {"id": "sven","name": "Sven","rarity": "rare","packageId": "frozen_pack","images": {"iron": "sven10.jpg","bronze": "sven20.jpg","silver": "________","pearl": "________","gold": "________","jade": "chameleon60.jpg","sapphire": "chameleon70.jpg","ruby": "chameleon80.jpg","emerald": "chameleon90.jpg","diamond": "chameleon100.jpg"}},
     {"id": "olaf","name": "Olaf","rarity": "epic","packageId": "frozen_pack","images": {"iron": "olaf10.jpg","bronze": "olaf20.jpg","silver": "________","pearl": "_________","gold": "_______","jade": "chameleon60.jpg","sapphire": "chameleon70.jpg","ruby": "chameleon80.jpg","emerald": "chameleon90.jpg","diamond": "chameleon100.jpg"}},
     {"id": "anna","name": "Anna","rarity": "legendary","packageId": "frozen_pack","images": {"iron": "anna10.jpg","bronze": "anna20.jpg","silver": "________","pearl": "________","gold": "_______","jade": "chameleon60.jpg","sapphire": "chameleon70.jpg","ruby": "chameleon80.jpg","emerald": "chameleon90.jpg","diamond": "chameleon100.jpg"}},
@@ -106,7 +106,7 @@
     {"id": "tai_lung","name": "Tai Lung","rarity": "never","packageId": "kungfu_evil_pack","images": {"iron": "tai_lung10.jpg","bronze": "tai_lung20.jpg","silver": "tai_lung30.jpg","pearl": "tai_lung40.jpg","gold": "tai_lung50.jpg","jade": "tai_lung60.jpg","sapphire": "tai_lung70.jpg","ruby": "tai_lung80.jpg","emerald": "tai_lung90.jpg","diamond": "tai_lung100.jpg"}},
     {"id": "mordecai","name": "Mordecai","rarity": "common","packageId": "regular_show_pack","images": {"iron": "mordecai10.jpg","bronze": "mordecai20.jpg","silver": "mordecai30.jpg","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
     {"id": "rigby","name": "Rigby","rarity": "common","packageId": "regular_show_pack","images": {"iron": "rigby10.jpg","bronze": "rigby20.jpg","silver": "rigby30.jpg","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
-    {"id": "muscleman","name": "Muscleman","rarity": "rare","packageId": "regular_show_pack","images": {"iron": "muscleman10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+    {"id": "muscleman","name": "Muscleman","rarity": "rare","packageId": "regular_show_pack","images": {"iron": "muscleman10.jpg","bronze": "muscleman20.jpg","silver": "muscleman30.jpg","pearl": "muscleman40.jpg","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
     {"id": "hi_five_ghost","name": "Hi Five Ghost","rarity": "rare","packageId": "regular_show_pack","images": {"iron": "hi_five_ghost10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
     {"id": "skips","name": "Skips","rarity": "epic","packageId": "regular_show_pack","images": {"iron": "skips10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
     {"id": "pops","name": "Pops","rarity": "epic","packageId": "regular_show_pack","images": {"iron": "pops10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
@@ -2359,7 +2359,7 @@
     },
     {
       "id": "member_jonathan_joseph",
-      "name": "Jonathan",
+      "name": "Jonathan Joseph",
       "icon": "grizz.jpg",
       "teamId": "team1",
       "role": "leader",
@@ -2421,6 +2421,7 @@
           "degree": "iron",
           "count": 1
         },
+        {"characterId": "chameleon", "degree": "iron", "count": 2},
         {
           "characterId": "common_token",
           "degree": "bronze",
@@ -2436,11 +2437,9 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [
-        {
-          "characterId": "silver_bear",
-          "degree": "iron",
-          "count": 1
-        }
+        {"characterId": "silver_bear", "degree": "iron", "count": 1},
+        {"characterId": "chameleon", "degree": "iron", "count": 1},
+        {"characterId": "sven", "degree": "iron", "count": 1}
       ],
       "sportEventScore": 0
     },
@@ -2682,11 +2681,8 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [
-        {
-          "characterId": "joey",
-          "degree": "iron",
-          "count": 1
-        },
+        {"characterId": "joey", "degree": "iron", "count": 1},
+        {"characterId": "shen", "degree": "bronze", "count": 1},
         {
           "characterId": "darwin",
           "degree": "bronze",
@@ -2792,11 +2788,8 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [
-        {
-          "characterId": "albino_aligator",
-          "degree": "iron",
-          "count": 1
-        }
+        {"characterId": "albino_aligator", "degree": "iron", "count": 1},
+        {"characterId": "chameleon", "degree": "bronze", "count": 1}
       ],
       "sportEventScore": 0
     },
@@ -2807,11 +2800,10 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [
-        {
-          "characterId": "chicken",
-          "degree": "iron",
-          "count": 1
-        },
+        {"characterId": "chicken", "degree": "iron", "count": 1},
+        {"characterId": "kristoff", "degree": "iron", "count": 1},
+        {"characterId": "kristoff", "degree": "bronze", "count": 1},
+        {"characterId": "sven", "degree": "bronze", "count": 1},
         {
           "characterId": "junior",
           "degree": "iron",
@@ -2862,21 +2854,11 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [
-        {
-          "characterId": "sarge",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "mcqueen",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "fillmore",
-          "degree": "silver",
-          "count": 1
-        },
+        {"characterId": "mcqueen", "degree": "iron", "count": 1},
+        {"characterId": "shen", "degree": "bronze", "count": 1},
+        {"characterId": "chameleon", "degree": "bronze", "count": 2},
+        {"characterId": "sarge", "degree": "iron", "count": 1},
+        {"characterId": "fillmore","degree": "silver","count": 1},
         {
           "characterId": "igglepiggle",
           "degree": "pearl",
@@ -2968,11 +2950,8 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [
-        {
-          "characterId": "finn",
-          "degree": "iron",
-          "count": 1
-        },
+        {"characterId": "finn", "degree": "iron", "count": 1},
+        {"characterId": "shen", "degree": "iron", "count": 1},
         {
           "characterId": "common_token",
           "degree": "iron",
@@ -3094,6 +3073,24 @@
     {
       "id": "member_lydia_rafik_youssef",
       "name": "Lydia R Youssef",
+      "icon": "noicon.jpg",
+      "teamId": "team1",
+      "role": "normal",
+      "collection": [],
+      "sportEventScore": 0
+    },
+    {
+      "id": "member_andrea",
+      "name": "Andrea",
+      "icon": "noicon.jpg",
+      "teamId": "team1",
+      "role": "normal",
+      "collection": [],
+      "sportEventScore": 0
+    },
+    {
+      "id": "member_jonathan_john",
+      "name": "Jonathan John",
       "icon": "noicon.jpg",
       "teamId": "team1",
       "role": "normal",

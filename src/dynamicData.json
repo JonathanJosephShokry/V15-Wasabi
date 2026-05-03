@@ -24,14 +24,14 @@
     {
       "id": "member_samih_nasser",
       "wabi": 23,
-      "spice": 14,
+      "spice": 9,
       "exp": 8,
       "restricted": false
     },
     {
       "id": "member_yassa",
       "wabi": 19,
-      "spice": 3,
+      "spice": 4,
       "exp": 8,
       "restricted": false
     },
@@ -80,7 +80,7 @@
     {
       "id": "member_philip",
       "wabi": 144,
-      "spice": 53,
+      "spice": 8,
       "exp": 7,
       "restricted": false
     },
@@ -94,14 +94,14 @@
     {
       "id": "member_karim",
       "wabi": 15,
-      "spice": 5,
+      "spice": 0,
       "exp": 4,
       "restricted": false
     },
     {
       "id": "member_yana",
       "wabi": 103,
-      "spice": 52,
+      "spice": 7,
       "exp": 6,
       "restricted": false
     },
@@ -115,7 +115,7 @@
     {
       "id": "member_chris",
       "wabi": 137,
-      "spice": 88,
+      "spice": 8,
       "exp": 6,
       "restricted": false
     },
@@ -129,7 +129,7 @@
     {
       "id": "member_manuel",
       "wabi": 52,
-      "spice": 2,
+      "spice": 12,
       "exp": 6,
       "restricted": false
     },
@@ -211,6 +211,20 @@
       "restricted": false
     },
     {
+      "id": "member_andrea",
+      "wabi": 10,
+      "spice": 0,
+      "exp": 2,
+      "restricted": false
+    },
+    {
+      "id": "member_jonathan_john",
+      "wabi": 0,
+      "spice": 0,
+      "exp": 0,
+      "restricted": false
+    },
+    {
       "id": "member_mina",
       "wabi": 30,
       "spice": 0,
@@ -266,8 +280,6 @@
       "id": "proj-bible1.1",
       "members": [
         "member_joren",
-        "member_yassa",
-        "member_samih_nasser",
         "member_philip",
         "member_karen",
         "member_yana",
@@ -277,7 +289,10 @@
         "member_jenny",
         "member_haneen",
         "member_nana",
-        "member_lydia_rafik_youssef"
+        "member_lydia_rafik_youssef",
+        "member_yasmine",
+        "member_carla_walaa",
+        "member_joy_magued"
       ]
     },
     {
@@ -287,12 +302,16 @@
         "member_venus",
         "member_chris",
         "member_peter_boshra",
-        "member_yasmine",
         "member_julie",
-        "member_carla_walaa",
         "member_mai_hassaan",
-        "member_joy_magued",
-        "member_shady_hassan"
+        "member_yassa",
+        "member_samih_nasser",
+        "member_shady_hassan",
+        "member_andrea",
+        "member_jonathan_john",
+        "member_david_nasser",
+        "member_daniel_rafik",
+        "member_karim"
       ]
     },
     {
