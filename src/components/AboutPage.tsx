@@ -125,7 +125,7 @@ export const AboutPage: React.FC = () => {
             
             <div className="max-w-2xl mx-auto">
               <p className="text-xl md:text-2xl text-gray-300 leading-relaxed font-medium mb-8 italic">
-                "Like the intense heat of wasabi, the smallest habit can wake up your entire life."
+                "Transformation doesn't announce itself. It accumulates — one precise habit at a time."
               </p>
               
               <div className="h-px w-20 bg-white/20 mx-auto mb-8" />
