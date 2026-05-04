@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { ArrowLeft, CheckCircle2, Users, Rocket, Trophy, Target, ShieldCheck } from 'lucide-react';
+import { ArrowLeft, CheckCircle2, Users, Rocket, Trophy, Target, ShieldCheck, Zap } from 'lucide-react';
 
 export const AboutPage: React.FC = () => {
   const containerVariants = {
@@ -102,6 +102,48 @@ export const AboutPage: React.FC = () => {
             </div>
           </motion.div>
         </div>
+
+        {/* The Wasabi Philosophy Moment */}
+        <motion.div 
+          variants={itemVariants} 
+          className="mt-20 relative overflow-hidden bg-[#121212] rounded-[2.5rem] p-10 md:p-16 border-4 border-[#9FD356] group shadow-2xl"
+        >
+          {/* Decorative Elements */}
+          <div className="absolute top-0 right-0 w-64 h-64 bg-[#9FD356]/10 rounded-full blur-[80px] -mr-32 -mt-32 transition-all group-hover:bg-[#9FD356]/20" />
+          <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#9FD356]/5 rounded-full blur-[60px] -ml-32 -mb-32" />
+          
+          <div className="relative z-10 flex flex-col items-center text-center">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#9FD356] text-black text-[10px] font-black uppercase tracking-[0.2em] rounded-full mb-8 shadow-[0_0_20px_rgba(159,211,86,0.4)]">
+              <Zap size={14} fill="black" />
+              The Meaning
+            </div>
+            
+            <h2 className="text-4xl md:text-6xl font-black text-white mb-8 tracking-tighter leading-[0.9]">
+              SMALL INTENSITY.<br />
+              <span className="text-[#9FD356]">MASSIVE IMPACT.</span>
+            </h2>
+            
+            <div className="max-w-2xl mx-auto">
+              <p className="text-xl md:text-2xl text-gray-300 leading-relaxed font-medium mb-8 italic">
+                "Like the intense heat of wasabi, the smallest habit can wake up your entire life."
+              </p>
+              
+              <div className="h-px w-20 bg-white/20 mx-auto mb-8" />
+              
+              <p className="text-lg text-gray-400 leading-relaxed mb-4">
+                We chose the name <span className="text-white font-bold">Wasabi</span> because of its unique properties: it is potent, transformative, and unforgettable in even the smallest doses.
+              </p>
+              
+              <p className="text-lg text-gray-400 leading-relaxed">
+                Our system isn't about massive, unsustainable changes. It's about that <span className="text-[#9FD356] font-bold">tiny daily dollop</span> of discipline that, over time, completely alters the trajectory of your growth.
+              </p>
+
+              <div className="mt-12 text-[10px] font-black uppercase tracking-[0.3em] text-[#9FD356]/40">
+                by Bassem Mounir
+              </div>
+            </div>
+          </div>
+        </motion.div>
 
         <motion.div variants={itemVariants} className="mt-20 text-center bg-gradient-to-br from-[#6B5435] to-[#8B6F47] p-12 rounded-3xl text-white shadow-2xl">
           <h2 className="text-3xl font-bold mb-6">Ready to transform?</h2>
