@@ -93,7 +93,15 @@
     "combineRecipe": 2
   },
   "characters": [
-    {"id": "________","name": "______","rarity": "________","packageId": "________","images": {"iron": "________","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+    {"id": "______","name": "______","rarity": "________","packageId": "________","images": {"iron": "________","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+    {"id": "gene","name": "Gene","rarity": "common","packageId": "wreck_it_ralph_pack","images": {"iron": "gene10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+    {"id": "qbert","name": "Q*bert","rarity": "common","packageId": "wreck_it_ralph_pack","images": {"iron": "qbert10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+    {"id": "sour_bill","name": "Sour Bill","rarity": "rare","packageId": "wreck_it_ralph_pack","images": {"iron": "sour_bill10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+    {"id": "king_candy","name": "King Candy","rarity": "rare","packageId": "wreck_it_ralph_pack","images": {"iron": "king_candy10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+    {"id": "fix_it_felix","name": "Fix it Felix","rarity": "epic","packageId": "wreck_it_ralph_pack","images": {"iron": "fix_it_felix10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+    {"id": "sergeant_calhoun","name": "Sergeant Calhoun","rarity": "epic","packageId": "wreck_it_ralph_pack","images": {"iron": "sergeant_calhoun10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+    {"id": "ralph","name": "Ralph","rarity": "legendary","packageId": "wreck_it_ralph_pack","images": {"iron": "ralph10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+    {"id": "vanellope","name": "Vanellope","rarity": "never","packageId": "wreck_it_ralph_pack","images": {"iron": "vanellope10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
     {"id": "kristoff","name": "Kristoff","rarity": "common","packageId": "frozen_pack","images": {"iron": "kristoff10.jpg","bronze": "kristoff20.jpg","silver": "kristoff30.jpg","pearl": "_______","gold": "chameleon50.jpg","jade": "chameleon60.jpg","sapphire": "chameleon70.jpg","ruby": "chameleon80.jpg","emerald": "chameleon90.jpg","diamond": "chameleon100.jpg"}},
     {"id": "sven","name": "Sven","rarity": "rare","packageId": "frozen_pack","images": {"iron": "sven10.jpg","bronze": "sven20.jpg","silver": "________","pearl": "________","gold": "________","jade": "chameleon60.jpg","sapphire": "chameleon70.jpg","ruby": "chameleon80.jpg","emerald": "chameleon90.jpg","diamond": "chameleon100.jpg"}},
     {"id": "olaf","name": "Olaf","rarity": "epic","packageId": "frozen_pack","images": {"iron": "olaf10.jpg","bronze": "olaf20.jpg","silver": "________","pearl": "_________","gold": "_______","jade": "chameleon60.jpg","sapphire": "chameleon70.jpg","ruby": "chameleon80.jpg","emerald": "chameleon90.jpg","diamond": "chameleon100.jpg"}},
@@ -3623,9 +3631,9 @@
     {
       "id": "tss-4",
       "teamId": "team1",
-      "name": "14h-Minecraft!",
+      "name": "1h-Minecraft!",
       "image": "minecraft_banner.jpg",
-      "wabiCost": 25,
+      "wabiCost": 1,
       "description": "Good game"
     }
   ],
@@ -4446,14 +4454,23 @@
     },
     {
       "packageId": "wreck_it_ralph_pack",
-      "name": "NA",
-      "banner": "na.jpg",
+      "name": "Wreck It Ralph",
+      "banner": "wreck-it-ralph_banner.jpg",
       "score": 7,
       "cost": {
         "wabi": 14,
         "spice": 7
       },
-      "outcomes": []
+      "outcomes": [
+        {"characterId": "gene","chance": "25%"},
+        {"characterId": "qbert","chance": "25%"},
+        {"characterId": "sour_bill","chance": "15%"},
+        {"characterId": "king_candy","chance": "15%"},
+        {"characterId": "fix_it_felix","chance": "7.5%"},
+        {"characterId": "sergeant_calhoun","chance": "7.5%"},
+        {"characterId": "ralph","chance": "4.9%"},
+        {"characterId": "vanellope","chance": "0.1%"}
+      ]
     },
     {
       "packageId": "ratatouille_pack",
