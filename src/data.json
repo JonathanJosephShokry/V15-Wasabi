@@ -2383,6 +2383,7 @@
         {"characterId": "makka_pakka","degree": "silver","count": 1},
         {"characterId": "upsy_daisy","degree": "jade","count": 1},
         {"characterId": "igglepiggle","degree": "gold","count": 1},
+        {"characterId": "shen","degree": "iron","count": 1},
         {"characterId": "rare_token","degree": "iron","count": 1}
       ],
       "sportEventScore": 0
@@ -2691,6 +2692,8 @@
       "collection": [
         {"characterId": "joey", "degree": "iron", "count": 1},
         {"characterId": "shen", "degree": "bronze", "count": 1},
+        {"characterId": "kai", "degree": "iron", "count": 1},
+        {"characterId": "chameleon", "degree": "bronze", "count": 1},
         {
           "characterId": "darwin",
           "degree": "bronze",
@@ -2959,7 +2962,7 @@
       "role": "normal",
       "collection": [
         {"characterId": "finn", "degree": "iron", "count": 1},
-        {"characterId": "shen", "degree": "iron", "count": 1},
+        {"characterId": "shen", "degree": "iron", "count": 3},
         {
           "characterId": "common_token",
           "degree": "iron",
@@ -3230,7 +3233,7 @@
       "currency": "wabi",
       "startDate": "16-02-2026",
       "active": true,
-      "projectManagerId": "member_jonathan_joseph",
+      "projectManagerId": "member_karen",
       "maxMembers": 14,
       "rules": [
         "Send daily passages you read from the bible",
@@ -3379,7 +3382,7 @@
       "currency": "spice",
       "startDate": "01-03-2026",
       "active": true,
-      "projectManagerId": "member_joren",
+      "projectManagerId": "member_jonathan_joseph",
       "maxMembers": 14,
       "rules": [
         "Use a timer app to track study sessions.",
@@ -3454,7 +3457,7 @@
       "teamId": "team1",
       "name": "Languages",
       "description": "Studying a foregeion language",
-      "minimumWork": "2 lessons, 30 min",
+      "minimumWork": "2 lessons",
       "baseSalary": 1,
       "currency": "spice",
       "startDate": "10-03-2026",
@@ -3518,10 +3521,12 @@
       "teamId": "team1",
       "name": "Tasbe7",
       "description": "Instruments learning",
+      "currency": "spice",
       "minimumWork": "1 Lesson",
       "baseSalary": 1,
       "startDate": "01-01-2026",
       "active": true,
+      "projectManagerId": "member_jonathan_joseph",
       "maxMembers": 14,
       "rules": [
         "___"
@@ -3627,14 +3632,6 @@
       "image": "Padel.jpg",
       "wabiCost": 85,
       "description": "Good sport"
-    },
-    {
-      "id": "tss-4",
-      "teamId": "team1",
-      "name": "1h-Minecraft!",
-      "image": "minecraft_banner.jpg",
-      "wabiCost": 1,
-      "description": "Good game"
     }
   ],
   "sportEvents": [
