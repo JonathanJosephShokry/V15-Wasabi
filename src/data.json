@@ -94,6 +94,27 @@
   },
   "characters": [
     {"id": "______","name": "______","rarity": "________","packageId": "________","images": {"iron": "________","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+    
+    {"id": "mustafa","name": "Mustafa","rarity": "common","packageId": "ratatouille_pack","images": {"iron": "mustafa10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+    {"id": "git","name": "Git","rarity": "common","packageId": "ratatouille_pack","images": {"iron": "git10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+    {"id": "horst","name": "Horst","rarity": "common","packageId": "ratatouille_pack","images": {"iron": "horst10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+    {"id": "nadar_kessard","name": "Nadar Kessard","rarity": "common","packageId": "ratatouille_pack","images": {"iron": "nadar_kessard10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+    {"id": "emile","name": "Emile","rarity": "rare","packageId": "ratatouille_pack","images": {"iron": "emile10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+    {"id": "skinner","name": "Skinner","rarity": "rare","packageId": "ratatouille_pack","images": {"iron": "skinner10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+    {"id": "django","name": "Django","rarity": "rare","packageId": "ratatouille_pack","images": {"iron": "django10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+    {"id": "anton_ego","name": "Anton Ego","rarity": "epic","packageId": "ratatouille_pack","images": {"iron": "anton_ego10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+    {"id": "colette","name": "Colette","rarity": "epic","packageId": "ratatouille_pack","images": {"iron": "colette10.jpg","bronze": "colette20.jpg","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+    {"id": "linguini","name": "Linguini","rarity": "epic","packageId": "ratatouille_pack","images": {"iron": "linguini10.jpg","bronze": "linguini20.jpg","silver": "linguini30.jpg","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+    {"id": "remy","name": "Remy","rarity": "legendary","packageId": "ratatouille_pack","images": {"iron": "remy10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+    {"id": "auguste_gusteau","name": "Auguste Gusteau","rarity": "never","packageId": "ratatouille_pack","images": {"iron": "auguste_gusteau10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+
+    {"id": "michelangelo","name": "Michelangelo","rarity": "rare","packageId": "ninja_turtles_pack","images": {"iron": "________","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+    {"id": "donatello","name": "Donatello","rarity": "rare","packageId": "ninja_turtles_pack","images": {"iron": "________","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+    {"id": "leonardo","name": "Leonardo","rarity": "epic","packageId": "ninja_turtles_pack","images": {"iron": "________","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+    {"id": "raphael","name": "Raphael","rarity": "epic","packageId": "ninja_turtles_pack","images": {"iron": "________","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+    {"id": "master_splinter","name": "Master_splinter","rarity": "legendary","packageId": "ninja_turtles_pack","images": {"iron": "________","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+    {"id": "shredder","name": "Shredder","rarity": "never","packageId": "ninja_turtles_pack","images": {"iron": "________","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+
     {"id": "gene","name": "Gene","rarity": "common","packageId": "wreck_it_ralph_pack","images": {"iron": "gene10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
     {"id": "qbert","name": "Q*bert","rarity": "common","packageId": "wreck_it_ralph_pack","images": {"iron": "qbert10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
     {"id": "sour_bill","name": "Sour Bill","rarity": "rare","packageId": "wreck_it_ralph_pack","images": {"iron": "sour_bill10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
@@ -2377,13 +2398,12 @@
         {"characterId": "jake","degree": "bronze","count": 1},
         {"characterId": "finn","degree": "silver","count": 1},
         {"characterId": "mater","degree": "gold","count": 1},
-        {"characterId": "bmo","degree": "iron","count": 1},
         {"characterId": "pontipines","degree": "silver","count": 1},
         {"characterId": "makka_pakka","degree": "iron","count": 1},
         {"characterId": "makka_pakka","degree": "silver","count": 1},
         {"characterId": "upsy_daisy","degree": "jade","count": 1},
         {"characterId": "igglepiggle","degree": "gold","count": 1},
-        {"characterId": "shen","degree": "iron","count": 1},
+        {"characterId": "shen","degree": "bronze","count": 1},
         {"characterId": "rare_token","degree": "iron","count": 1}
       ],
       "sportEventScore": 0
@@ -2539,11 +2559,8 @@
       "role": "normal",
       "collection": [
         {"characterId": "marlin", "degree": "bronze", "count": 1},
-        {
-          "characterId": "craboo",
-          "degree": "iron",
-          "count": 1
-        },
+        {"characterId": "bmo","degree": "iron","count": 1},
+        {"characterId": "craboo","degree": "iron","count": 1},
         {
           "characterId": "finn",
           "degree": "iron",
@@ -2691,37 +2708,16 @@
       "role": "normal",
       "collection": [
         {"characterId": "joey", "degree": "iron", "count": 1},
-        {"characterId": "shen", "degree": "bronze", "count": 1},
+        {"characterId": "shen", "degree": "silver", "count": 1},
         {"characterId": "kai", "degree": "iron", "count": 1},
-        {"characterId": "chameleon", "degree": "bronze", "count": 1},
-        {
-          "characterId": "darwin",
-          "degree": "bronze",
-          "count": 1
-        },
         {
           "characterId": "sarge",
           "degree": "silver",
           "count": 1
         },
         {
-          "characterId": "fillmore",
-          "degree": "iron",
-          "count": 1
-        },
-        {
           "characterId": "pu",
           "degree": "silver",
-          "count": 1
-        },
-        {
-          "characterId": "panda",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "nemo",
-          "degree": "iron",
           "count": 1
         },
         {
@@ -2962,7 +2958,19 @@
       "role": "normal",
       "collection": [
         {"characterId": "finn", "degree": "iron", "count": 1},
-        {"characterId": "shen", "degree": "iron", "count": 3},
+        {"characterId": "shen", "degree": "iron", "count": 2},
+        {"characterId": "darwin","degree": "bronze","count": 1},
+        {"characterId": "nemo","degree": "iron","count": 1},
+        {
+          "characterId": "fillmore",
+          "degree": "iron",
+          "count": 1
+        },
+        {
+          "characterId": "panda",
+          "degree": "iron",
+          "count": 1
+        },
         {
           "characterId": "common_token",
           "degree": "iron",
@@ -4471,14 +4479,26 @@
     },
     {
       "packageId": "ratatouille_pack",
-      "name": "NA",
-      "banner": "na.jpg",
+      "name": "Ratatouille",
+      "banner": "rata_banner.jpg",
       "score": 9,
       "cost": {
         "wabi": 18,
         "spice": 9
       },
-      "outcomes": []
+      "outcomes": [
+        {"characterId": "mustafa","chance": "12.5%"},
+        {"characterId": "git","chance": "12.5%"},
+        {"characterId": "horst","chance": "12.5%"},
+        {"characterId": "nadar_kessard","chance": "12.5%"},
+        {"characterId": "emile","chance": "10%"},
+        {"characterId": "skinner","chance": "10%"},
+        {"characterId": "django","chance": "10%"},
+        {"characterId": "anton_ego","chance": "5%"},
+        {"characterId": "colette","chance": "5%"},
+        {"characterId": "linguini","chance": "5%"},
+        {"characterId": "remy","chance": "4.9%"},
+        {"characterId": "auguste_gusteau","chance": "0.1%"}]
     },
     {
       "packageId": "clarence_pack",
@@ -4928,6 +4948,24 @@
         "spice": 8
       },
       "outcomes": []
+    },
+    {
+      "packageId": "ninja_turtles_pack",
+      "name": "Ninja Turtles",
+      "banner": "____________",
+      "score": 10,
+      "cost": {
+        "wabi": 20,
+        "spice": 10
+      },
+      "outcomes": [
+        {"characterId": "michelangelo","chance": "30%"},
+        {"characterId": "donatello","chance": "30%"},
+        {"characterId": "leonardo","chance": "15%"},
+        {"characterId": "raphael","chance": "15%"},
+        {"characterId": "master_splinter","chance": "4.9%"},
+        {"characterId": "shredder","chance": "0.1%"}
+      ]
     }
   ],
   "crafting_sets": [

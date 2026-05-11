@@ -17,7 +17,7 @@
     {
       "id": "member_jonathan_joseph",
       "wabi": 145,
-      "spice": 29,
+      "spice": 2,
       "exp": 9,
       "restricted": false
     },
@@ -52,7 +52,7 @@
     {
       "id": "member_joren",
       "wabi": 34,
-      "spice": 22,
+      "spice": 19,
       "exp": 9,
       "restricted": false
     },
@@ -79,8 +79,8 @@
     },
     {
       "id": "member_philip",
-      "wabi": 144,
-      "spice": 10,
+      "wabi": 174,
+      "spice": 0,
       "exp": 8,
       "restricted": false
     },
@@ -129,7 +129,7 @@
     {
       "id": "member_manuel",
       "wabi": 62,
-      "spice": 7,
+      "spice": 2,
       "exp": 7,
       "restricted": false
     },
@@ -303,13 +303,8 @@
         "member_chris",
         "member_peter_boshra",
         "member_julie",
-        "member_mai_hassaan",
-        "member_yassa",
-        "member_samih_nasser",
-        "member_shady_hassan",
         "member_andrea",
         "member_jonathan_john",
-        "member_david_nasser",
         "member_daniel_rafik",
         "member_karim"
       ]
@@ -343,7 +338,8 @@
       "id": "proj-hidden_in_my_heart",
       "members": [
         "member_jonathan_joseph",
-        "member_chris"
+        "member_chris",
+        "member_daniel_walaa"
       ]
     },
     {
@@ -351,14 +347,18 @@
       "members": [
         "member_chris",
         "member_yana",
-        "member_karen"
+        "member_karen",
+        "member_jonathan_joseph",
+        "member_haneen",
+        "member_philip",
+        "member_yasmine",
+        "member_manuel"
       ]
     },
     {
       "id": "proj-work",
       "members": [
-        "member_jonathan_joseph",
-        "member_samih_nasser"
+        "member_jonathan_joseph"
       ]
     },
     {
@@ -391,8 +391,7 @@
       "id": "tasbe7",
       "members": [
         "member_jonathan_joseph",
-        "member_peter_boshra",
-        "member_daniel_rafik"
+        "member_peter_boshra"
       ]
     }
   ]
