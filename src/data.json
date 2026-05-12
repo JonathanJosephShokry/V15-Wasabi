@@ -2359,7 +2359,7 @@
     {
       "id": "member_david_michael",
       "name": "David Michael",
-      "icon": "burrito.png",
+      "icon": "bob_the_tomato10.jpg",
       "teamId": "team1",
       "role": "normal",
       "collection": [
@@ -2534,6 +2534,8 @@
           "degree": "iron",
           "count": 1
         },
+        {"characterId": "muscleman", "degree": "iron", "count": 1},
+        {"characterId": "chameleon", "degree": "iron", "count": 1},
         {
           "characterId": "common_token",
           "degree": "bronze",
@@ -2863,9 +2865,11 @@
       "collection": [
         {"characterId": "mcqueen", "degree": "iron", "count": 1},
         {"characterId": "shen", "degree": "bronze", "count": 1},
-        {"characterId": "chameleon", "degree": "bronze", "count": 2},
+        {"characterId": "chameleon", "degree": "bronze", "count": 3},
+        {"characterId": "chameleon", "degree": "iron", "count": 1},
         {"characterId": "sarge", "degree": "iron", "count": 1},
         {"characterId": "fillmore","degree": "silver","count": 1},
+        {"characterId": "tai_lung","degree": "iron","count": 1},
         {
           "characterId": "igglepiggle",
           "degree": "pearl",

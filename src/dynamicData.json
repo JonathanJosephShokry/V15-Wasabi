@@ -37,8 +37,8 @@
     },
     {
       "id": "member_peter_boshra",
-      "wabi": 63,
-      "spice": 8,
+      "wabi": 33,
+      "spice": 1,
       "exp": 9,
       "restricted": false
     },
@@ -115,7 +115,7 @@
     {
       "id": "member_chris",
       "wabi": 171,
-      "spice": 21,
+      "spice": 1,
       "exp": 7,
       "restricted": false
     },
