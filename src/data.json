@@ -2399,12 +2399,18 @@
         {"characterId": "finn","degree": "silver","count": 1},
         {"characterId": "mater","degree": "gold","count": 1},
         {"characterId": "pontipines","degree": "silver","count": 1},
-        {"characterId": "makka_pakka","degree": "iron","count": 1},
         {"characterId": "makka_pakka","degree": "silver","count": 1},
+        {"characterId": "makka_pakka","degree": "bronze","count": 1},
         {"characterId": "upsy_daisy","degree": "jade","count": 1},
+        {"characterId": "upsy_daisy","degree": "pearl","count": 1},
         {"characterId": "igglepiggle","degree": "gold","count": 1},
-        {"characterId": "shen","degree": "bronze","count": 1},
-        {"characterId": "rare_token","degree": "iron","count": 1}
+        {"characterId": "igglepiggle","degree": "pearl","count": 1},
+        {"characterId": "igglepiggle","degree": "bronze","count": 1},
+        {"characterId": "sven", "degree": "bronze", "count": 1},
+        {"characterId": "sarge", "degree": "iron", "count": 1},
+        {"characterId": "kristoff", "degree": "iron", "count": 1},
+        {"characterId": "kristoff", "degree": "bronze", "count": 1},
+        {"characterId": "rare_token","degree": "iron","count": 2}
       ],
       "sportEventScore": 0
     },
@@ -2810,29 +2816,13 @@
       "role": "normal",
       "collection": [
         {"characterId": "chicken", "degree": "iron", "count": 1},
-        {"characterId": "kristoff", "degree": "iron", "count": 1},
-        {"characterId": "kristoff", "degree": "bronze", "count": 1},
-        {"characterId": "sven", "degree": "bronze", "count": 1},
-        {
-          "characterId": "junior",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "common_token",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "common_token",
-          "degree": "bronze",
-          "count": 4
-        },
-        {
-          "characterId": "rare_token",
-          "degree": "iron",
-          "count": 4
-        }
+        {"characterId": "olaf", "degree": "iron", "count": 1},
+        {"characterId": "kristoff", "degree": "silver", "count": 1},
+        {"characterId": "sven", "degree": "iron", "count": 1},
+        {"characterId": "junior","degree": "iron","count": 1},
+        {"characterId": "common_token","degree": "iron","count": 1},
+        {"characterId": "common_token","degree": "bronze","count": 4},
+        {"characterId": "rare_token","degree": "iron","count": 4}
       ],
       "sportEventScore": 0
     },
@@ -2864,43 +2854,13 @@
       "role": "normal",
       "collection": [
         {"characterId": "mcqueen", "degree": "iron", "count": 1},
-        {"characterId": "shen", "degree": "bronze", "count": 1},
+        {"characterId": "shen", "degree": "silver", "count": 1},
         {"characterId": "chameleon", "degree": "bronze", "count": 3},
         {"characterId": "chameleon", "degree": "iron", "count": 1},
-        {"characterId": "sarge", "degree": "iron", "count": 1},
         {"characterId": "fillmore","degree": "silver","count": 1},
-        {"characterId": "tai_lung","degree": "iron","count": 1},
-        {
-          "characterId": "igglepiggle",
-          "degree": "pearl",
-          "count": 1
-        },
-        {
-          "characterId": "igglepiggle",
-          "degree": "bronze",
-          "count": 1
-        },
-        {
-          "characterId": "upsy_daisy",
-          "degree": "pearl",
-          "count": 1
-        },
-        {
-          "characterId": "ping",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "makka_pakka",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "common_token",
-          "degree": "bronze",
-          "count": 2
-        },
-        {"characterId": "rare_token", "degree": "iron", "count": 2}
+        {"characterId": "ping","degree": "iron","count": 1},
+        {"characterId": "common_token","degree": "bronze","count": 2},
+        {"characterId": "rare_token", "degree": "iron", "count": 1}
       ],
       "sportEventScore": 0
     },
