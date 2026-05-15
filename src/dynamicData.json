@@ -142,7 +142,7 @@
     },
     {
       "id": "member_yasmine",
-      "wabi": 133,
+      "wabi": 135,
       "spice": 0,
       "exp": 6,
       "restricted": false
@@ -353,12 +353,6 @@
         "member_philip",
         "member_yasmine",
         "member_manuel"
-      ]
-    },
-    {
-      "id": "proj-work",
-      "members": [
-        "member_jonathan_joseph"
       ]
     },
     {

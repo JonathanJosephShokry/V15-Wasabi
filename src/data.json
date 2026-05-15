@@ -95,6 +95,12 @@
   "characters": [
     {"id": "______","name": "______","rarity": "________","packageId": "________","images": {"iron": "________","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
     
+    {"id": "clarence","name": "Clarence","rarity": "common","packageId": "clarence_pack","images": {"iron": "clarence10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+    {"id": "sumo","name": "Sumo","rarity": "rare","packageId": "clarence_pack","images": {"iron": "sumo10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+    {"id": "jeff","name": "Jeff","rarity": "epic","packageId": "clarence_pack","images": {"iron": "jeff10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+    {"id": "mel","name": "Mel","rarity": "legendary","packageId": "clarence_pack","images": {"iron": "mel10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+    {"id": "amy_gillis","name": "Amy Gillis","rarity": "never","packageId": "clarence_pack","images": {"iron": "amy_gillis10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+
     {"id": "mustafa","name": "Mustafa","rarity": "common","packageId": "ratatouille_pack","images": {"iron": "mustafa10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
     {"id": "git","name": "Git","rarity": "common","packageId": "ratatouille_pack","images": {"iron": "git10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
     {"id": "horst","name": "Horst","rarity": "common","packageId": "ratatouille_pack","images": {"iron": "horst10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
@@ -2410,7 +2416,7 @@
         {"characterId": "sarge", "degree": "iron", "count": 1},
         {"characterId": "kristoff", "degree": "iron", "count": 1},
         {"characterId": "kristoff", "degree": "bronze", "count": 1},
-        {"characterId": "rare_token","degree": "iron","count": 2}
+        {"characterId": "rare_token","degree": "iron","count": 3}
       ],
       "sportEventScore": 0
     },
@@ -2644,19 +2650,11 @@
           "degree": "iron",
           "count": 1
         },
-        {
-          "characterId": "jerry",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "summer",
-          "degree": "iron",
-          "count": 1
-        },
+        {"characterId": "jerry","degree": "iron","count": 1},
+        {"characterId": "summer","degree": "iron","count": 1},
         {"characterId": "common_token", "degree": "iron", "count": 1},
         {"characterId": "common_token", "degree": "bronze", "count": 1},
-        {"characterId": "rare_token","degree": "iron","count": 1}
+        {"characterId": "rare_token","degree": "iron","count": 2}
       ],
       "sportEventScore": 0
     },
@@ -2748,6 +2746,7 @@
           "degree": "iron",
           "count": 1
         },
+        {"characterId": "rare_token","degree": "iron","count": 1},
         {
           "characterId": "common_token",
           "degree": "iron",
@@ -2783,16 +2782,8 @@
           "degree": "iron",
           "count": 1
         },
-        {
-          "characterId": "common_token",
-          "degree": "bronze",
-          "count": 5
-        },
-        {
-          "characterId": "rare_token",
-          "degree": "iron",
-          "count": 3
-        }
+        {"characterId": "common_token","degree": "bronze","count": 5},
+        {"characterId": "rare_token","degree": "iron","count": 4}
       ],
       "sportEventScore": 0
     },
@@ -2820,9 +2811,9 @@
         {"characterId": "kristoff", "degree": "silver", "count": 1},
         {"characterId": "sven", "degree": "iron", "count": 1},
         {"characterId": "junior","degree": "iron","count": 1},
-        {"characterId": "common_token","degree": "iron","count": 1},
+        {"characterId": "common_token","degree": "iron","count": 2},
         {"characterId": "common_token","degree": "bronze","count": 4},
-        {"characterId": "rare_token","degree": "iron","count": 4}
+        {"characterId": "rare_token","degree": "iron","count": 5}
       ],
       "sportEventScore": 0
     },
@@ -2849,18 +2840,15 @@
     {
       "id": "member_chris",
       "name": "Chris",
-      "icon": "mcqueen10.jpg",
+      "icon": "shen30.jpg",
       "teamId": "team1",
       "role": "normal",
       "collection": [
-        {"characterId": "mcqueen", "degree": "iron", "count": 1},
-        {"characterId": "shen", "degree": "silver", "count": 1},
-        {"characterId": "chameleon", "degree": "bronze", "count": 3},
+        {"characterId": "shen", "degree": "pearl", "count": 1},
+        {"characterId": "chameleon", "degree": "bronze", "count": 1},
         {"characterId": "chameleon", "degree": "iron", "count": 1},
-        {"characterId": "fillmore","degree": "silver","count": 1},
-        {"characterId": "ping","degree": "iron","count": 1},
         {"characterId": "common_token","degree": "bronze","count": 2},
-        {"characterId": "rare_token", "degree": "iron", "count": 1}
+        {"characterId": "rare_token", "degree": "iron", "count": 3}
       ],
       "sportEventScore": 0
     },
@@ -2917,12 +2905,14 @@
     {
       "id": "member_manuel",
       "name": "Manuel",
-      "icon": "noicon.jpg",
+      "icon": "mcqueen10.jpg",
       "teamId": "team1",
       "role": "normal",
       "collection": [
+        {"characterId": "mcqueen", "degree": "iron", "count": 1},
+        {"characterId": "fillmore","degree": "silver","count": 1},
+        {"characterId": "ping","degree": "iron","count": 1},
         {"characterId": "finn", "degree": "iron", "count": 1},
-        {"characterId": "shen", "degree": "iron", "count": 2},
         {"characterId": "darwin","degree": "bronze","count": 1},
         {"characterId": "nemo","degree": "iron","count": 1},
         {
@@ -2945,11 +2935,7 @@
           "degree": "bronze",
           "count": 2
         },
-        {
-          "characterId": "rare_token",
-          "degree": "iron",
-          "count": 2
-        }
+        {"characterId": "rare_token","degree": "iron","count": 3}
       ],
       "sportEventScore": 0
     },
@@ -2969,16 +2955,8 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [
-        {
-          "characterId": "rare_token",
-          "degree": "iron",
-          "count": 3
-        },
-        {
-          "characterId": "common_token",
-          "degree": "bronze",
-          "count": 1
-        }
+        {"characterId": "rare_token","degree": "iron","count": 4},
+        {"characterId": "common_token","degree": "bronze","count": 2}
       ],
       "sportEventScore": 0
     },
@@ -2989,7 +2967,7 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [
-        {"characterId": "common_token","degree": "iron","count": 2},
+        {"characterId": "common_token","degree": "iron","count": 3},
         {"characterId": "rare_token","degree": "iron","count": 1}
       ],
       "sportEventScore": 0
@@ -3031,7 +3009,7 @@
       "role": "normal",
       "collection": [
         {"characterId": "rare_token","degree": "iron","count": 1},
-        {"characterId": "common_token","degree": "bronze","count": 1}
+        {"characterId": "common_token","degree": "bronze","count": 2}
       ],
       "sportEventScore": 0
     },
@@ -3059,7 +3037,9 @@
       "icon": "noicon.jpg",
       "teamId": "team1",
       "role": "normal",
-      "collection": [],
+      "collection": [
+        {"characterId": "rare_token","degree": "iron","count": 1}
+      ],
       "sportEventScore": 0
     },
     {
@@ -3312,7 +3292,7 @@
       "name": "Hidden in My Heart",
       "description": "Bible verses memorization",
       "minimumWork": "5 Verses",
-      "baseSalary": 1,
+      "baseSalary": 3,
       "currency": "wabi",
       "startDate": "10-03-2026",
       "active": true,
@@ -3339,7 +3319,7 @@
         },
         {
           "work": "30 verses",
-          "salary": 15
+          "salary": 22
         }
       ],
       "difficulty": "Medium"
@@ -3385,41 +3365,6 @@
         {
           "work": "50 hours",
           "salary": 25
-        }
-      ],
-      "difficulty": "Medium"
-    },
-    {
-      "id": "proj-work",
-      "teamId": "team1",
-      "name": "Work",
-      "description": "Work hours",
-      "minimumWork": "Work 30 hours",
-      "baseSalary": 5,
-      "currency": "spice",
-      "startDate": "06-04-2026",
-      "active": true,
-      "projectManagerId": "member_jonathan_joseph",
-      "maxMembers": 14,
-      "rules": [
-        "Use a timer app to track working hours."
-      ],
-      "bonusSystem": [
-        {
-          "work": "40 hours",
-          "salary": 2
-        },
-        {
-          "work": "60 hours",
-          "salary": 7
-        },
-        {
-          "work": "80 hours",
-          "salary": 12
-        },
-        {
-          "work": "100 hours",
-          "salary": 15
         }
       ],
       "difficulty": "Medium"
@@ -4466,14 +4411,19 @@
     },
     {
       "packageId": "clarence_pack",
-      "name": "NA",
-      "banner": "na.jpg",
+      "name": "Calrence",
+      "banner": "clarence_banner.jpg",
       "score": 5,
       "cost": {
         "wabi": 10,
         "spice": 5
       },
-      "outcomes": []
+      "outcomes": [
+        {"characterId": "clarence","chance": "50%"},
+        {"characterId": "sumo","chance": "30%"},
+        {"characterId": "jeff","chance": "15%"},
+        {"characterId": "mel","chance": "4.9%"},
+        {"characterId": "amy_gillis","chance": "0.1%"}]
     },
     {
       "packageId": "adventure_time_2_pack",
