@@ -3,7 +3,7 @@
     {
       "id": "member_daniel_rafik",
       "wabi": 5,
-      "spice": 28,
+      "spice": 31,
       "exp": 5,
       "restricted": false
     },
@@ -17,7 +17,7 @@
     {
       "id": "member_jonathan_joseph",
       "wabi": 73,
-      "spice": 2,
+      "spice": 5,
       "exp": 9,
       "restricted": false
     },
@@ -45,7 +45,7 @@
     {
       "id": "member_david_nasser",
       "wabi": 3,
-      "spice": 1,
+      "spice": 4,
       "exp": 1,
       "restricted": true
     },
@@ -80,7 +80,7 @@
     {
       "id": "member_philip",
       "wabi": 174,
-      "spice": 0,
+      "spice": 3,
       "exp": 8,
       "restricted": false
     },
@@ -101,7 +101,7 @@
     {
       "id": "member_yana",
       "wabi": 133,
-      "spice": 1,
+      "spice": 29,
       "exp": 7,
       "restricted": false
     },
@@ -115,14 +115,14 @@
     {
       "id": "member_chris",
       "wabi": 171,
-      "spice": 1,
+      "spice": 3,
       "exp": 7,
       "restricted": false
     },
     {
       "id": "member_daniel_walaa",
       "wabi": 75,
-      "spice": 4,
+      "spice": 7,
       "exp": 7,
       "restricted": false
     },
@@ -143,7 +143,7 @@
     {
       "id": "member_yasmine",
       "wabi": 135,
-      "spice": 0,
+      "spice": 3,
       "exp": 6,
       "restricted": false
     },
