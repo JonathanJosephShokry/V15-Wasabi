@@ -272,6 +272,20 @@
       "spice": 0,
       "exp": 2,
       "restricted": false
+    },
+    {
+      "id": "member_sama_usama",
+      "wabi": 0,
+      "spice": 0,
+      "exp": 0,
+      "restricted": false
+    },
+    {
+      "id": "member_antony",
+      "wabi": 0,
+      "spice": 0,
+      "exp": 0,
+      "restricted": false
     }
 
   ],
@@ -316,6 +330,14 @@
         "member_lucas",
         "member_bassem_mounir",
         "member_fady_barakat"
+      ]
+    },
+    {
+      "id": "proj-bible2",
+      "members": [
+        "member_yassa",
+        "member_antony",
+        "member_sama_usama"
       ]
     },
     {

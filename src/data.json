@@ -1,5 +1,5 @@
 {
-  "version": "V32",
+  "version": "V50",
   "wasabiRulesLink": "https://docs.google.com/document/d/1SfoDRQbWs7yBSIc6YOW61q7s3s4s-D5OP9TCz7zFO30/edit?usp=sharing",
   "cardConfig": {
     "rarityScores": {
@@ -2475,7 +2475,7 @@
       "id": "member_yassa",
       "name": "Yassa",
       "icon": "silver bear.jpg",
-      "teamId": "team1",
+      "teamId": "team3",
       "role": "normal",
       "collection": [
         {"characterId": "silver_bear", "degree": "iron", "count": 1},
@@ -3128,6 +3128,24 @@
       "role": "normal",
       "collection": [],
       "sportEventScore": 0
+    },
+    {
+      "id": "member_sama_usama",
+      "name": "Sama Usama",
+      "icon": "noicon.jpg",
+      "teamId": "team3",
+      "role": "normal",
+      "collection": [],
+      "sportEventScore": 0
+    },
+    {
+      "id": "member_antony",
+      "name": "Antony",
+      "icon": "noicon.jpg",
+      "teamId": "team3",
+      "role": "normal",
+      "collection": [],
+      "sportEventScore": 0
     }
   ],
   "projects": [
@@ -3451,6 +3469,47 @@
         {"work": "7 lessons","salary": 3}
       ],
       "difficulty": "Easy"
+    },
+      {
+      "id": "proj-bible3",
+      "teamId": "team3",
+      "name": "Bible",
+      "description": "Daily Bible Time",
+      "minimumWork": "Read 1 passage",
+      "baseSalary": 1,
+      "currency": "wabi",
+      "startDate": "15-05-2026",
+      "active": true,
+      "projectManagerId": "member_antony",
+      "maxMembers": 14,
+      "rules": [
+        "Send daily passages you read from the bible",
+        "(Optionaly) Share one reflection or verse that stood out",
+        "Miss 10 days in a cycle and you are out"
+      ],
+      "bonusSystem": [
+        {
+          "work": "2 days",
+          "salary": 1
+        },
+        {
+          "work": "4 days",
+          "salary": 3
+        },
+        {
+          "work": "6 days",
+          "salary": 5
+        },
+        {
+          "work": "8 days",
+          "salary": 7
+        },
+        {
+          "work": "10 days",
+          "salary": 9
+        }
+      ],
+      "difficulty": "Easy"
     }
   ],
   "teams": [
@@ -3461,6 +3520,10 @@
     {
       "id": "team2",
       "name": "Team 2"
+    },
+    {
+      "id": "team3",
+      "name": "Team 3"
     }
   ],
   "trainings": [
@@ -4882,8 +4945,8 @@
   "crafting_sets": [
     {
       "id": "set_1",
-      "start_date": "2026-05-01",
-      "end_date": "2026-05-15",
+      "start_date": "2026-05-15",
+      "end_date": "2026-06-01",
       "crafts": [
         {
           "id": "craft_1",

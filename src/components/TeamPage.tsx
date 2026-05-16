@@ -195,11 +195,11 @@ export const TeamPage: React.FC<TeamPageProps> = ({ data }) => {
                       } ${restricted ? 'grayscale opacity-75' : ''}`} />
                       {restricted && <div className="absolute -top-1 -right-1 w-3.5 h-3.5 bg-red-500 rounded-full border-2 border-white animate-pulse"></div>}
                     </div>
-                    <div className="text-lg font-bold text-[#6B5435] mb-1.5 flex items-center justify-center gap-2">
-                      {member.name}
+                    <div className="text-lg font-bold text-[#6B5435] mb-1.5 flex items-center justify-center gap-2 px-1">
+                      <span className="truncate">{member.name}</span>
                       {restricted && (
                         <div 
-                          className="relative inline-block"
+                          className="relative inline-block shrink-0"
                           onClick={(e) => {
                             e.preventDefault();
                             e.stopPropagation();
@@ -216,18 +216,20 @@ export const TeamPage: React.FC<TeamPageProps> = ({ data }) => {
                         </div>
                       )}
                     </div>
-                    {isLeader && <span className="inline-block bg-gradient-to-r from-[#F59E0B] to-[#FBBF24] text-[#1a1a1a] font-extrabold px-2.5 py-1 rounded-full text-[10px] uppercase tracking-wider mb-2 shadow-sm">Leader</span>}
+                    <div className="h-6 flex items-center justify-center mb-2">
+                      {isLeader && <span className="inline-block bg-gradient-to-r from-[#F59E0B] to-[#FBBF24] text-[#1a1a1a] font-extrabold px-3 py-0.5 rounded-full text-[10px] uppercase tracking-wider shadow-sm truncate max-w-full">Leader</span>}
+                    </div>
                     <div className="text-sm text-[#666666] mb-3.5">Level {level}</div>
-                    <div className="bg-[#E0E0E0] rounded-full h-2 mb-4 overflow-hidden">
+                    <div className="bg-[#E0E0E0] rounded-full h-2 mb-4 overflow-hidden mx-1">
                       <motion.div initial={{ width: 0 }} whileInView={{ width: `${expProg}%` }} transition={{ duration: 1.2 }} className="h-full bg-gradient-to-r from-[#9FD356] to-[#8B6F47]"></motion.div>
                     </div>
-                    <div className="flex justify-center gap-3.5">
-                      <div className="flex items-center gap-1 text-sm font-bold text-[#9FD356] bg-[#9FD356]/10 px-2.5 py-1 rounded-full">
-                        <img src="/icons/wabi-icon.png" alt="Wabi" className="w-4 h-4" />
+                    <div className="flex flex-wrap justify-center gap-2">
+                      <div className="flex items-center gap-1 text-[11px] md:text-sm font-bold text-[#9FD356] bg-[#9FD356]/10 px-2 py-0.5 md:px-2.5 md:py-1 rounded-full shrink-0">
+                        <img src="/icons/wabi-icon.png" alt="Wabi" className="w-3.5 h-3.5 md:w-4 md:h-4" />
                         <span>{member.wabi}</span>
                       </div>
-                      <div className="flex items-center gap-1 text-sm font-bold text-[#E8631A] bg-[#E8631A]/10 px-2.5 py-1 rounded-full">
-                        <img src="/icons/spice-icon.png" alt="Spice" className="w-4 h-4" />
+                      <div className="flex items-center gap-1 text-[11px] md:text-sm font-bold text-[#E8631A] bg-[#E8631A]/10 px-2 py-0.5 md:px-2.5 md:py-1 rounded-full shrink-0">
+                        <img src="/icons/spice-icon.png" alt="Spice" className="w-3.5 h-3.5 md:w-4 md:h-4" />
                         <span>{member.spice}</span>
                       </div>
                     </div>
