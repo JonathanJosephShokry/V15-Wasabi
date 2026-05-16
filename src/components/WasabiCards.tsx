@@ -798,26 +798,26 @@ useGSAP(() => {
                 initial={{ opacity: 0, x: -20 }} 
                 animate={{ opacity: 1, x: 0 }} 
                 transition={{ delay: i * 0.05 }}
-                className={`flex items-center gap-5 p-5 bg-white/5 border border-white/10 rounded-2xl transition-all hover:bg-white/10 hover:translate-x-1 ${
+                className={`flex items-center gap-3 md:gap-5 p-5 bg-white/5 border border-white/10 rounded-2xl transition-all hover:bg-white/10 hover:translate-x-1 overflow-hidden ${
                   rank === 1 ? 'bg-gradient-to-r from-[#D4AF37]/18 to-[#FFD700]/10 border-[#D4AF37]/50 shadow-[0_4px_20px_rgba(212,175,55,0.15)]' :
                   rank === 2 ? 'bg-gradient-to-r from-white/10 to-white/5 border-white/40' :
                   rank === 3 ? 'bg-gradient-to-r from-[#CD7F32]/12 to-[#CD7F32]/5 border-[#CD7F32]/40' : ''
                 }`}
               >
-                <div className={`text-2xl font-black min-w-[48px] text-center ${
+                <div className={`text-2xl font-black min-w-[40px] md:min-w-[48px] shrink-0 text-center ${
                   rank === 1 ? 'text-[#FFD700] drop-shadow-[0_0_12px_rgba(255,215,0,0.5)]' :
                   rank === 2 ? 'text-[#C0C0C0]' :
                   rank === 3 ? 'text-[#CD7F32]' : 'text-white/30 text-lg'
                 }`}>
                   {rank === 1 ? '🥇' : rank === 2 ? '🥈' : rank === 3 ? '🥉' : `#${rank}`}
                 </div>
-                <img src={`/icons/${entry.member.icon}`} alt={entry.member.name} className="w-12 h-12 rounded-full object-cover border-2 border-white/15" />
-                <div className="flex-1">
-                  <div className="text-lg font-bold text-white">{entry.member.name}{entry.member.role === 'leader' ? ' ⭐' : ''}</div>
-                  <div className="text-xs text-white/40">{entry.cardCount} card{entry.cardCount !== 1 ? 's' : ''}</div>
+                <img src={`/icons/${entry.member.icon}`} alt={entry.member.name} className="w-10 h-10 md:w-12 md:h-12 shrink-0 rounded-full object-cover border-2 border-white/15" />
+                <div className="flex-1 min-w-0">
+                  <div className="text-base md:text-lg font-bold text-white truncate">{entry.member.name}{entry.member.role === 'leader' ? ' ⭐' : ''}</div>
+                  <div className="text-[10px] md:text-xs text-white/40">{entry.cardCount} card{entry.cardCount !== 1 ? 's' : ''}</div>
                 </div>
-                <div className="text-right">
-                  <div className={`text-2xl font-black ${
+                <div className="text-right shrink-0">
+                  <div className={`text-xl md:text-2xl font-black ${
                     rank === 1 ? 'text-[#FFD700]' :
                     rank === 2 ? 'text-[#C0C0C0]' :
                     rank === 3 ? 'text-[#CD7F32]' : 'text-[#9FD356]'

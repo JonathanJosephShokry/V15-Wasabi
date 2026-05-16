@@ -302,17 +302,19 @@ export const Home: React.FC<HomeProps> = ({ data }) => {
                   <div className="space-y-3">
                     {sportLeaderboard.length > 0 ? (
                       sportLeaderboard.map((m: any, i: number) => (
-                        <Link key={m.id} to={`/member/${m.id}`} className="flex items-center gap-4 p-4 bg-[#FAFAFA] border-2 border-[#E0E0E0] rounded-2xl transition-all hover:border-[#9FD356] hover:translate-x-1 group">
-                          <div className={`w-8 h-8 flex items-center justify-center font-black rounded-full ${
+                        <Link key={m.id} to={`/member/${m.id}`} className="flex items-center gap-3 md:gap-4 p-4 bg-[#FAFAFA] border-2 border-[#E0E0E0] rounded-2xl transition-all hover:border-[#9FD356] hover:translate-x-1 group overflow-hidden">
+                          <div className={`w-8 h-8 shrink-0 flex items-center justify-center font-black rounded-full ${
                             i === 0 ? 'bg-yellow-500 text-white' :
                             i === 1 ? 'bg-gray-400 text-white' :
                             i === 2 ? 'bg-orange-400 text-white' : 'bg-[#E0E0E0] text-[#666666]'
                           }`}>
                             {i + 1}
                           </div>
-                          <img src={`/icons/${m.icon}`} alt={m.name} className="w-10 h-10 rounded-full object-cover border-2 border-white shadow-sm" />
-                          <div className="flex-1 font-bold text-[#6B5435] group-hover:text-[#9FD356]">{m.name}</div>
-                          <div className="text-right">
+                          <img src={`/icons/${m.icon}`} alt={m.name} className="w-10 h-10 shrink-0 rounded-full object-cover border-2 border-white shadow-sm" />
+                          <div className="flex-1 min-w-0 font-bold text-[#6B5435] group-hover:text-[#9FD356] truncate">
+                            {m.name}
+                          </div>
+                          <div className="text-right shrink-0">
                             <div className="text-xl font-black text-[#6B5435]">{m.sportEventScore}</div>
                             <div className="text-[10px] font-bold text-[#666666] uppercase tracking-widest">{activeSport.type === 'distance' ? 'km' : 'pts'}</div>
                           </div>

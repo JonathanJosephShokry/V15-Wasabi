@@ -2491,11 +2491,8 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [
-        {
-          "characterId": "pu",
-          "degree": "silver",
-          "count": 1
-        },
+        {"characterId": "pu","degree": "silver","count": 1},
+        {"characterId": "anton_ego","degree": "iron","count": 1},
         {
           "characterId": "pu",
           "degree": "iron",
@@ -2904,7 +2901,7 @@
     },
     {
       "id": "member_manuel",
-      "name": "Manuel",
+      "name": "Mannuel",
       "icon": "mcqueen10.jpg",
       "teamId": "team1",
       "role": "normal",
@@ -4893,17 +4890,17 @@
           "recipe": {
             "inputs": [
               {
-                "card_id": "chameleon",
-                "degree": "bronze"
+                "card_id": "clarence",
+                "degree": "silver"
               },
               {
-                "card_id": "shen",
-                "degree": "iron"
+                "card_id": "mel",
+                "degree": "silver"
               }
             ],
             "output": {
-              "card_id": "shen",
-              "degree": "bronze"
+              "card_id": "sumo",
+              "degree": "jade"
             }
           }
         },
@@ -4912,7 +4909,7 @@
           "recipe": {
             "inputs": [
               {
-                "card_id": "kristoff",
+                "card_id": "gene",
                 "degree": "bronze"
               },
               {
@@ -4921,7 +4918,7 @@
               }
             ],
             "output": {
-              "card_id": "kristoff",
+              "card_id": "gene",
               "degree": "silver"
             }
           }
@@ -4931,16 +4928,16 @@
           "recipe": {
             "inputs": [
               {
-                "card_id": "muscleman",
+                "card_id": "emile",
                 "degree": "iron"
               },
               {
                 "card_id": "rare_token",
-                "degree": "bronze"
+                "degree": "silver"
               }
             ],
             "output": {
-              "card_id": "muscleman",
+              "card_id": "emile",
               "degree": "bronze"
             }
           }
