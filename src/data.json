@@ -147,42 +147,8 @@
     {"id": "pops","name": "Pops","rarity": "epic","packageId": "regular_show_pack","images": {"iron": "pops10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
     {"id": "benson","name": "Benson","rarity": "legendary","packageId": "regular_show_pack","images": {"iron": "benson10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
     {"id": "margaret","name": "Margaret","rarity": "never","packageId": "regular_show_pack","images": {"iron": "margaret10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
-    {
-      "id": "bob_the_tomato",
-      "name": "Bob the Tomato",
-      "rarity": "common",
-      "packageId": "veggie_tails_pack",
-      "images": {
-        "iron": "bob_the_tomato10.jpg",
-        "bronze": "bob_the_tomato20.jpg",
-        "silver": "bob_the_tomato30.jpg",
-        "pearl": "bob_the_tomato40.jpg",
-        "gold": "bob_the_tomato50.jpg",
-        "jade": "bob_the_tomato60.jpg",
-        "sapphire": "bob_the_tomato70.jpg",
-        "ruby": "bob_the_tomato80.jpg",
-        "emerald": "bob_the_tomato90.jpg",
-        "diamond": "bob_the_tomato100.jpg"
-      }
-    },
-    {
-      "id": "larry_the_cucumber",
-      "name": "Larry The Cucumber",
-      "rarity": "common",
-      "packageId": "veggie_tails_pack",
-      "images": {
-        "iron": "larry_the_cucumber10.jpg",
-        "bronze": "larry_the_cucumber20.jpg",
-        "silver": "larry_the_cucumber30.jpg",
-        "pearl": "larry_the_cucumber40.jpg",
-        "gold": "larry_the_cucumber50.jpg",
-        "jade": "________",
-        "sapphire": "________",
-        "ruby": "________",
-        "emerald": "________",
-        "diamond": "________"
-      }
-    },
+    {"id": "bob_the_tomato","name": "Bob the Tomato","rarity": "common","packageId": "veggie_tails_pack","images": {"iron": "bob_the_tomato10.jpg","bronze": "bob_the_tomato20.jpg","silver": "bob_the_tomato30.jpg","pearl": "bob_the_tomato40.jpg","gold": "bob_the_tomato50.jpg","jade": "bob_the_tomato60.jpg","sapphire": "bob_the_tomato70.jpg","ruby": "bob_the_tomato80.jpg","emerald": "bob_the_tomato90.jpg","diamond": "bob_the_tomato100.jpg"}},
+    {"id": "larry_the_cucumber","name": "Larry The Cucumber","rarity": "common","packageId": "veggie_tails_pack","images": {"iron": "larry_the_cucumber10.jpg","bronze": "larry_the_cucumber20.jpg","silver": "larry_the_cucumber30.jpg","pearl": "larry_the_cucumber40.jpg","gold": "larry_the_cucumber50.jpg","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
     {
       "id": "junior",
       "name": "Junior",
@@ -2572,83 +2538,31 @@
         {"characterId": "marlin", "degree": "bronze", "count": 1},
         {"characterId": "bmo","degree": "iron","count": 1},
         {"characterId": "craboo","degree": "iron","count": 1},
-        {
-          "characterId": "finn",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "spongebob",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "sally",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "ben10",
-          "degree": "bronze",
-          "count": 1
-        },
-        {
-          "characterId": "sarge",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "luca",
-          "degree": "bronze",
-          "count": 1
-        },
-        {
-          "characterId": "tuffnut",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "madame_blueberyy",
-          "degree": "iron",
-          "count": 1
-        },
+        {"characterId": "finn","degree": "iron","count": 1},
+        {"characterId": "spongebob","degree": "iron","count": 1},
+        {"characterId": "sally","degree": "iron","count": 1},
+        {"characterId": "ben10","degree": "bronze","count": 1},
+        {"characterId": "sarge","degree": "iron","count": 1},
+        {"characterId": "luca","degree": "bronze","count": 1},
+        {"characterId": "tuffnut","degree": "iron","count": 1},
+        {"characterId": "madame_blueberyy","degree": "iron","count": 1},
         {"characterId": "igglepiggle", "degree": "iron", "count": 1},
-        {
-          "characterId": "upsy_daisy",
-          "degree": "silver",
-          "count": 1
-        },
-        {
-          "characterId": "upsy_daisy",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "makka_pakka",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "larry_the_cucumber",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "larry_the_cucumber",
-          "degree": "bronze",
-          "count": 1
-        },
+        {"characterId": "upsy_daisy","degree": "silver","count": 1},
+        {"characterId": "upsy_daisy","degree": "iron","count": 1},
+        {"characterId": "makka_pakka","degree": "iron","count": 1},
+        {"characterId": "larry_the_cucumber","degree": "iron","count": 1},
+        {"characterId": "larry_the_cucumber","degree": "bronze","count": 1},
         {"characterId": "junior","degree": "bronze","count": 1},
         {"characterId": "junior","degree": "iron","count": 1},
         {"characterId": "petunia","degree": "bronze","count": 1},
         {"characterId": "petunia","degree": "iron","count": 1},
-        {
-          "characterId": "jimmy",
-          "degree": "iron",
-          "count": 1
-        },
+        {"characterId": "jimmy","degree": "iron","count": 1},
         {"characterId": "jerry","degree": "iron","count": 1},
         {"characterId": "summer","degree": "iron","count": 1},
+        {"characterId": "mustafa","degree": "iron","count": 1},
+        {"characterId": "skinner","degree": "iron","count": 1},
+        {"characterId": "git","degree": "iron","count": 1},
+        {"characterId": "qbert","degree": "iron","count": 1},
         {"characterId": "common_token", "degree": "iron", "count": 1},
         {"characterId": "common_token", "degree": "bronze", "count": 1},
         {"characterId": "rare_token","degree": "iron","count": 2}
@@ -2805,6 +2719,9 @@
       "collection": [
         {"characterId": "chicken", "degree": "iron", "count": 1},
         {"characterId": "olaf", "degree": "iron", "count": 1},
+        {"characterId": "horst", "degree": "iron", "count": 1},
+        {"characterId": "skinner", "degree": "iron", "count": 1},
+        {"characterId": "git", "degree": "iron", "count": 1},
         {"characterId": "kristoff", "degree": "silver", "count": 1},
         {"characterId": "sven", "degree": "iron", "count": 1},
         {"characterId": "junior","degree": "iron","count": 1},
@@ -2900,7 +2817,7 @@
       "sportEventScore": 0
     },
     {
-      "id": "member_manuel",
+      "id": "member_mannuel",
       "name": "Mannuel",
       "icon": "mcqueen10.jpg",
       "teamId": "team1",
@@ -2972,10 +2889,12 @@
     {
       "id": "member_carla_walaa",
       "name": "Carla",
-      "icon": "noicon.jpg",
+      "icon": "emile10.jpg",
       "teamId": "team1",
       "role": "normal",
-      "collection": [],
+      "collection": [
+        {"characterId": "emile","degree": "iron","count": 1}
+      ],
       "sportEventScore": 0
     },
     {
@@ -3278,26 +3197,13 @@
         "You can only one negative habit (Not doing something)"
       ],
       "bonusSystem": [
-        {
-          "work": "10 habits",
-          "salary": 3
-        },
-        {
-          "work": "20 habits",
-          "salary": 7
-        },
-        {
-          "work": "30 habits",
-          "salary": 11
-        },
-        {
-          "work": "40 habits",
-          "salary": 15
-        },
-        {
-          "work": "50 habits",
-          "salary": 19
-        }
+        {"work": "10 habits","salary": 3},
+        {"work": "20 habits","salary": 7},
+        {"work": "30 habits","salary": 11},
+        {"work": "40 habits","salary": 15},
+        {"work": "50 habits","salary": 19},
+        {"work": "60 habits","salary": 25},
+        {"work": "70 habits","salary": 30}
       ],
       "difficulty": "Easy"
     },
@@ -3357,30 +3263,16 @@
         "Minimum 3 hours per 10-day cycle."
       ],
       "bonusSystem": [
-        {
-          "work": "5 hours",
-          "salary": 2
-        },
-        {
-          "work": "10 hours",
-          "salary": 4
-        },
-        {
-          "work": "20 hours",
-          "salary": 10
-        },
-        {
-          "work": "30 hours",
-          "salary": 15
-        },
-        {
-          "work": "40 hours",
-          "salary": 20
-        },
-        {
-          "work": "50 hours",
-          "salary": 25
-        }
+        {"work": "5 hours","salary": 2},
+        {"work": "10 hours","salary": 4},
+        {"work": "15 hours","salary": 6},
+        {"work": "20 hours","salary": 10},
+        {"work": "25 hours","salary": 12},
+        {"work": "30 hours","salary": 15},
+        {"work": "35 hours","salary": 17},
+        {"work": "40 hours","salary": 20},
+        {"work": "45 hours","salary": 22},
+        {"work": "50 hours","salary": 25}
       ],
       "difficulty": "Medium"
     },
@@ -3444,7 +3336,9 @@
         {"work": "50 pages","salary": 4},
         {"work": "60 pages","salary": 5},
         {"work": "70 pages","salary": 6},
-        {"work": "80 pages","salary": 7}
+        {"work": "80 pages","salary": 7},
+        {"work": "90 pages","salary": 8},
+        {"work": "100 pages","salary": 9}
         ],
       "difficulty": "Easy"
     },
@@ -3685,7 +3579,7 @@
         {
           "id": "match_4",
           "team1": "Chris",
-          "team2": "Manuel",
+          "team2": "Mannuel",
           "active": true,
           "date": "2026-04-30"
         },
@@ -3754,7 +3648,7 @@
         },
         {
           "place": 9,
-          "memberId": "member_manuel",
+          "memberId": "member_mannuel",
           "score": 0
         },
         {
