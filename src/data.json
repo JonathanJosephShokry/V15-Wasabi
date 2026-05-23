@@ -1,5 +1,5 @@
 {
-  "version": "V50",
+  "version": "V51",
   "wasabiRulesLink": "https://docs.google.com/document/d/1SfoDRQbWs7yBSIc6YOW61q7s3s4s-D5OP9TCz7zFO30/edit?usp=sharing",
   "cardConfig": {
     "rarityScores": {
@@ -2382,6 +2382,10 @@
         {"characterId": "sarge", "degree": "iron", "count": 1},
         {"characterId": "kristoff", "degree": "iron", "count": 1},
         {"characterId": "kristoff", "degree": "bronze", "count": 1},
+        {"characterId": "mustafa", "degree": "bronze", "count": 1},
+        {"characterId": "mustafa", "degree": "iron", "count": 1},
+        {"characterId": "git", "degree": "iron", "count": 1},
+        {"characterId": "emile", "degree": "iron", "count": 1},
         {"characterId": "rare_token","degree": "iron","count": 3}
       ],
       "sportEventScore": 0
@@ -2393,47 +2397,15 @@
       "teamId": "team1",
       "role": "leader",
       "collection": [
-        {
-          "characterId": "charlie",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "larry",
-          "degree": "silver",
-          "count": 1
-        },
-        {
-          "characterId": "larry",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "igglepiggle",
-          "degree": "jade",
-          "count": 1
-        },
-        {
-          "characterId": "makka_pakka",
-          "degree": "pearl",
-          "count": 1
-        },
-        {
-          "characterId": "pontipines",
-          "degree": "bronze",
-          "count": 1
-        },
-        {
-          "characterId": "upsy_daisy",
-          "degree": "iron",
-          "count": 1
-        },
-        {"characterId": "chameleon", "degree": "iron", "count": 2},
-        {
-          "characterId": "common_token",
-          "degree": "bronze",
-          "count": 1
-        }
+        {"characterId": "charlie","degree": "iron","count": 1},
+        {"characterId": "larry","degree": "silver","count": 1},
+        {"characterId": "larry","degree": "iron","count": 1},
+        {"characterId": "igglepiggle","degree": "jade","count": 1},
+        {"characterId": "makka_pakka","degree": "pearl","count": 1},
+        {"characterId": "pontipines","degree": "bronze","count": 1},
+        {"characterId": "upsy_daisy","degree": "iron","count": 1},
+        {"characterId": "chameleon", "degree": "bronze", "count": 1},
+        {"characterId": "common_token","degree": "bronze","count": 1}
       ],
       "sportEventScore": 0
     },
@@ -2458,74 +2430,30 @@
       "role": "normal",
       "collection": [
         {"characterId": "pu","degree": "silver","count": 1},
-        {"characterId": "anton_ego","degree": "iron","count": 1},
-        {
-          "characterId": "pu",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "four_arms",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "richard",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "sally",
-          "degree": "bronze",
-          "count": 1
-        },
-        {
-          "characterId": "mater",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "summer",
-          "degree": "bronze",
-          "count": 1
-        },
-        {
-          "characterId": "summer",
-          "degree": "iron",
-          "count": 2
-        },
-        {
-          "characterId": "david",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "sherwood_forrest",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "larry_the_cucumber",
-          "degree": "iron",
-          "count": 1
-        },
-        {"characterId": "muscleman", "degree": "iron", "count": 1},
-        {"characterId": "chameleon", "degree": "iron", "count": 1},
-        {
-          "characterId": "common_token",
-          "degree": "bronze",
-          "count": 1
-        }
+        {"characterId": "anton_ego","degree": "bronze","count": 1},
+        {"characterId": "pu","degree": "iron","count": 1},
+        {"characterId": "four_arms","degree": "iron","count": 1},
+        {"characterId": "richard","degree": "iron","count": 1},
+        {"characterId": "sally","degree": "bronze","count": 1},
+        {"characterId": "mater","degree": "iron","count": 1},
+        {"characterId": "summer","degree": "bronze","count": 1},
+        {"characterId": "summer","degree": "iron","count": 2},
+        {"characterId": "david","degree": "iron","count": 1},
+        {"characterId": "sherwood_forrest","degree": "iron","count": 1},
+        {"characterId": "larry_the_cucumber","degree": "iron","count": 1},
+        {"characterId": "common_token","degree": "bronze","count": 1}
       ],
       "sportEventScore": 0
     },
     {
       "id": "member_david_nasser",
       "name": "David Nasser",
-      "icon": "noicon.jpg",
+      "icon": "linguini10.jpg",
       "teamId": "team1",
       "role": "normal",
-      "collection": [],
+      "collection": [
+        {"characterId": "linguini", "degree": "iron", "count": 1}
+      ],
       "sportEventScore": 0
     },
     {
@@ -2562,6 +2490,8 @@
         {"characterId": "mustafa","degree": "iron","count": 1},
         {"characterId": "skinner","degree": "iron","count": 1},
         {"characterId": "git","degree": "iron","count": 1},
+        {"characterId": "emile","degree": "iron","count": 1},
+        {"characterId": "anton_ego","degree": "iron","count": 1},
         {"characterId": "qbert","degree": "iron","count": 1},
         {"characterId": "common_token", "degree": "iron", "count": 1},
         {"characterId": "common_token", "degree": "bronze", "count": 1},
@@ -2620,49 +2550,25 @@
     {
       "id": "member_philip",
       "name": "Philo",
-      "icon": "joey.jpg",
+      "icon": "remy10.jpg",
       "teamId": "team1",
       "role": "normal",
       "collection": [
+        {"characterId": "remy","degree": "iron","count": 1},
         {"characterId": "joey", "degree": "iron", "count": 1},
+        {"characterId": "horst", "degree": "iron", "count": 1},
+        {"characterId": "git", "degree": "bronze", "count": 1},
+        {"characterId": "skinner", "degree": "iron", "count": 1},
+        {"characterId": "colette", "degree": "iron", "count": 1},
         {"characterId": "shen", "degree": "silver", "count": 1},
         {"characterId": "kai", "degree": "iron", "count": 1},
-        {
-          "characterId": "sarge",
-          "degree": "silver",
-          "count": 1
-        },
-        {
-          "characterId": "pu",
-          "degree": "silver",
-          "count": 1
-        },
-        {
-          "characterId": "crush",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "upsy_daisy",
-          "degree": "pearl",
-          "count": 1
-        },
-        {
-          "characterId": "makka_pakka",
-          "degree": "silver",
-          "count": 1
-        },
-        {
-          "characterId": "monkey",
-          "degree": "iron",
-          "count": 1
-        },
+        {"characterId": "sarge","degree": "silver","count": 1},
+        {"characterId": "pu","degree": "silver","count": 1},
+        {"characterId": "upsy_daisy","degree": "pearl","count": 1},
+        {"characterId": "makka_pakka","degree": "silver","count": 1},
+        {"characterId": "monkey","degree": "iron","count": 1},
         {"characterId": "rare_token","degree": "iron","count": 1},
-        {
-          "characterId": "common_token",
-          "degree": "iron",
-          "count": 2
-        }
+        {"characterId": "common_token","degree": "iron","count": 2}
       ],
       "sportEventScore": 0
     },
@@ -2719,12 +2625,14 @@
       "collection": [
         {"characterId": "chicken", "degree": "iron", "count": 1},
         {"characterId": "olaf", "degree": "iron", "count": 1},
-        {"characterId": "horst", "degree": "iron", "count": 1},
-        {"characterId": "skinner", "degree": "iron", "count": 1},
-        {"characterId": "git", "degree": "iron", "count": 1},
+        {"characterId": "crush","degree": "iron","count": 1},
+        {"characterId": "linguini", "degree": "iron", "count": 1},
+        {"characterId": "colette","degree": "iron","count": 1},
         {"characterId": "kristoff", "degree": "silver", "count": 1},
         {"characterId": "sven", "degree": "iron", "count": 1},
         {"characterId": "junior","degree": "iron","count": 1},
+        {"characterId": "horst", "degree": "iron", "count": 1},
+        {"characterId": "skinner", "degree": "iron", "count": 1},
         {"characterId": "common_token","degree": "iron","count": 2},
         {"characterId": "common_token","degree": "bronze","count": 4},
         {"characterId": "rare_token","degree": "iron","count": 5}
@@ -2759,8 +2667,10 @@
       "role": "normal",
       "collection": [
         {"characterId": "shen", "degree": "pearl", "count": 1},
-        {"characterId": "chameleon", "degree": "bronze", "count": 1},
-        {"characterId": "chameleon", "degree": "iron", "count": 1},
+        {"characterId": "chameleon", "degree": "silver", "count": 1},
+        {"characterId": "muscleman", "degree": "iron", "count": 1},
+        {"characterId": "emile", "degree": "iron", "count": 1},
+        {"characterId": "emile", "degree": "bronze", "count": 1},
         {"characterId": "common_token","degree": "bronze","count": 2},
         {"characterId": "rare_token", "degree": "iron", "count": 3}
       ],
@@ -2924,6 +2834,8 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [
+        {"characterId": "horst","degree": "iron","count": 1},
+        {"characterId": "remy","degree": "iron","count": 1},
         {"characterId": "rare_token","degree": "iron","count": 1},
         {"characterId": "common_token","degree": "bronze","count": 2}
       ],
@@ -2941,6 +2853,15 @@
     {
       "id": "member_mai_hassaan",
       "name": "Mai",
+      "icon": "noicon.jpg",
+      "teamId": "team1",
+      "role": "normal",
+      "collection": [],
+      "sportEventScore": 0
+    },
+    {
+      "id": "member_shady_hassan",
+      "name": "Shady",
       "icon": "noicon.jpg",
       "teamId": "team1",
       "role": "normal",
@@ -2977,8 +2898,8 @@
       "sportEventScore": 0
     },
     {
-      "id": "member_shady_hassan",
-      "name": "Shady",
+      "id": "member_miracle_ramy",
+      "name": "Coco",
       "icon": "noicon.jpg",
       "teamId": "team1",
       "role": "normal",
@@ -3277,6 +3198,37 @@
       "difficulty": "Medium"
     },
     {
+      "id": "proj-study2",
+      "teamId": "team1",
+      "name": "Hanenga7",
+      "description": "Acedemic study on a timer app for college students",
+      "minimumWork": "Study 3 hours",
+      "baseSalary": 1,
+      "currency": "spice",
+      "startDate": "01-03-2026",
+      "active": true,
+      "projectManagerId": "member_yassa",
+      "maxMembers": 14,
+      "rules": [
+        "Use a timer app to track study sessions.",
+        "Any focused study time is counted",
+        "Minimum 3 hours per 10-day cycle."
+      ],
+      "bonusSystem": [
+        {"work": "5 hours","salary": 2},
+        {"work": "10 hours","salary": 4},
+        {"work": "15 hours","salary": 6},
+        {"work": "20 hours","salary": 10},
+        {"work": "25 hours","salary": 12},
+        {"work": "30 hours","salary": 15},
+        {"work": "35 hours","salary": 17},
+        {"work": "40 hours","salary": 20},
+        {"work": "45 hours","salary": 22},
+        {"work": "50 hours","salary": 25}
+      ],
+      "difficulty": "Medium"
+    },
+    {
       "id": "proj-languages",
       "teamId": "team1",
       "name": "Languages",
@@ -3301,22 +3253,6 @@
       "difficulty": "Easy"
     },
     {
-      "id": "game_dev",
-      "teamId": "team1",
-      "name": "Game Dev",
-      "description": "Game dev company",
-      "currency": "spice",
-      "minimumWork": "Finish you game dev tasks",
-      "baseSalary": 3,
-      "startDate": "07-04-2026",
-      "active": true,
-      "projectManagerId": "member_jonathan_joseph",
-      "maxMembers": 14,
-      "rules": [],
-      "bonusSystem": [],
-      "difficulty": "Hard"
-    },
-    {
       "id": "book_club",
       "teamId": "team1",
       "name": "Book Club",
@@ -3333,12 +3269,12 @@
         {"work": "20 pages","salary": 1},
         {"work": "30 pages","salary": 2},
         {"work": "40 pages","salary": 3},
-        {"work": "50 pages","salary": 4},
-        {"work": "60 pages","salary": 5},
-        {"work": "70 pages","salary": 6},
-        {"work": "80 pages","salary": 7},
-        {"work": "90 pages","salary": 8},
-        {"work": "100 pages","salary": 9}
+        {"work": "50 pages","salary": 5},
+        {"work": "60 pages","salary": 6},
+        {"work": "70 pages","salary": 7},
+        {"work": "80 pages","salary": 9},
+        {"work": "90 pages","salary": 10},
+        {"work": "100 pages","salary": 11}
         ],
       "difficulty": "Easy"
     },
@@ -3352,7 +3288,7 @@
       "baseSalary": 1,
       "startDate": "01-01-2026",
       "active": true,
-      "projectManagerId": "member_jonathan_joseph",
+      "projectManagerId": "member_daniel_walaa",
       "maxMembers": 14,
       "rules": [
         "___"
