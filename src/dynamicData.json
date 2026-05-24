@@ -80,14 +80,14 @@
     {
       "id": "member_philip",
       "wabi": 215,
-      "spice": 7,
+      "spice": 1,
       "exp": 9,
       "restricted": false
     },
     {
       "id": "member_karen",
       "wabi": 94,
-      "spice": 28,
+      "spice": 1,
       "exp": 9,
       "restricted": false
     },
@@ -129,7 +129,7 @@
     {
       "id": "member_mannuel",
       "wabi": 72,
-      "spice": 28,
+      "spice": 1,
       "exp": 8,
       "restricted": false
     },
@@ -308,7 +308,6 @@
         "member_mannuel",
         "member_daniel_walaa",
         "member_jenny",
-        "member_haneen",
         "member_nana",
         "member_lydia_rafik_youssef",
         "member_yasmine",

@@ -111,7 +111,7 @@
     {"id": "anton_ego","name": "Anton Ego","rarity": "epic","packageId": "ratatouille_pack","images": {"iron": "anton_ego10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
     {"id": "colette","name": "Colette","rarity": "epic","packageId": "ratatouille_pack","images": {"iron": "colette10.jpg","bronze": "colette20.jpg","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
     {"id": "linguini","name": "Linguini","rarity": "epic","packageId": "ratatouille_pack","images": {"iron": "linguini10.jpg","bronze": "linguini20.jpg","silver": "linguini30.jpg","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
-    {"id": "remy","name": "Remy","rarity": "legendary","packageId": "ratatouille_pack","images": {"iron": "remy10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
+    {"id": "remy","name": "Remy","rarity": "legendary","packageId": "ratatouille_pack","images": {"iron": "remy10.jpg","bronze": "remy20.jpg","silver": "remy30.jpg","pearl": "remy40.jpg","gold": "remy50.jpg","jade": "remy60.jpg","sapphire": "remy70.jpg","ruby": "remy80.jpg","emerald": "________","diamond": "________"}},
     {"id": "auguste_gusteau","name": "Auguste Gusteau","rarity": "never","packageId": "ratatouille_pack","images": {"iron": "auguste_gusteau10.jpg","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
 
     {"id": "michelangelo","name": "Michelangelo","rarity": "rare","packageId": "ninja_turtles_pack","images": {"iron": "________","bronze": "________","silver": "________","pearl": "________","gold": "________","jade": "________","sapphire": "________","ruby": "________","emerald": "________","diamond": "________"}},
@@ -2550,11 +2550,11 @@
     {
       "id": "member_philip",
       "name": "Philo",
-      "icon": "remy10.jpg",
+      "icon": "remy20.jpg",
       "teamId": "team1",
       "role": "normal",
       "collection": [
-        {"characterId": "remy","degree": "iron","count": 1},
+        {"characterId": "remy","degree": "bronze","count": 1},
         {"characterId": "joey", "degree": "iron", "count": 1},
         {"characterId": "horst", "degree": "iron", "count": 1},
         {"characterId": "git", "degree": "bronze", "count": 1},
@@ -2567,7 +2567,6 @@
         {"characterId": "upsy_daisy","degree": "pearl","count": 1},
         {"characterId": "makka_pakka","degree": "silver","count": 1},
         {"characterId": "monkey","degree": "iron","count": 1},
-        {"characterId": "rare_token","degree": "iron","count": 1},
         {"characterId": "common_token","degree": "iron","count": 2}
       ],
       "sportEventScore": 0
@@ -2579,26 +2578,13 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [
-        {
-          "characterId": "chloe",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "david",
-          "degree": "bronze",
-          "count": 1
-        },
-        {
-          "characterId": "summer",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "manetti",
-          "degree": "iron",
-          "count": 1
-        },
+        {"characterId": "chloe","degree": "iron","count": 1},
+        {"characterId": "emile","degree": "iron","count": 1},
+        {"characterId": "mustafa","degree": "iron","count": 1},
+        {"characterId": "colette","degree": "iron","count": 1},
+        {"characterId": "david","degree": "bronze","count": 1},
+        {"characterId": "summer","degree": "iron","count": 1},
+        {"characterId": "manetti","degree": "iron","count": 1},
         {"characterId": "common_token","degree": "bronze","count": 5},
         {"characterId": "rare_token","degree": "iron","count": 4}
       ],
@@ -2669,10 +2655,8 @@
         {"characterId": "shen", "degree": "pearl", "count": 1},
         {"characterId": "chameleon", "degree": "silver", "count": 1},
         {"characterId": "muscleman", "degree": "iron", "count": 1},
-        {"characterId": "emile", "degree": "iron", "count": 1},
-        {"characterId": "emile", "degree": "bronze", "count": 1},
-        {"characterId": "common_token","degree": "bronze","count": 2},
-        {"characterId": "rare_token", "degree": "iron", "count": 3}
+        {"characterId": "emile", "degree": "silver", "count": 1},
+        {"characterId": "common_token","degree": "bronze","count": 2}
       ],
       "sportEventScore": 0
     },
@@ -2734,31 +2718,18 @@
       "role": "normal",
       "collection": [
         {"characterId": "mcqueen", "degree": "iron", "count": 1},
+        {"characterId": "colette","degree": "iron","count": 1},
+        {"characterId": "nadar_kessard","degree": "iron","count": 1},
+        {"characterId": "emile","degree": "iron","count": 1},
         {"characterId": "fillmore","degree": "silver","count": 1},
         {"characterId": "ping","degree": "iron","count": 1},
         {"characterId": "finn", "degree": "iron", "count": 1},
         {"characterId": "darwin","degree": "bronze","count": 1},
         {"characterId": "nemo","degree": "iron","count": 1},
-        {
-          "characterId": "fillmore",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "panda",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "common_token",
-          "degree": "iron",
-          "count": 1
-        },
-        {
-          "characterId": "common_token",
-          "degree": "bronze",
-          "count": 2
-        },
+        {"characterId": "fillmore","degree": "iron","count": 1},
+        {"characterId": "panda","degree": "iron","count": 1},
+        {"characterId": "common_token","degree": "iron","count": 1},
+        {"characterId": "common_token","degree": "bronze","count": 2},
         {"characterId": "rare_token","degree": "iron","count": 3}
       ],
       "sportEventScore": 0
@@ -2894,12 +2865,14 @@
       "icon": "noicon.jpg",
       "teamId": "team1",
       "role": "normal",
-      "collection": [],
+      "collection": [
+        {"characterId": "sumo","degree": "iron","count": 1}
+      ],
       "sportEventScore": 0
     },
     {
       "id": "member_miracle_ramy",
-      "name": "Coco",
+      "name": "Koko",
       "icon": "noicon.jpg",
       "teamId": "team1",
       "role": "normal",
