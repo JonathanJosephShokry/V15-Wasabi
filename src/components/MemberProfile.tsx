@@ -111,9 +111,17 @@ export const MemberProfile: React.FC<MemberProfileProps> = ({ data }) => {
                   <span className="text-3xl font-bold">{member.wabi}</span>
                 </div>
                 {member.cycle_wabi !== undefined && (
-                  <div className="flex items-center gap-1 mt-1.5 text-[10px] font-bold text-[#7ca83e] bg-[#9FD356]/15 px-2 py-0.5 rounded-md w-fit whitespace-nowrap">
-                    <span className="font-extrabold">+{member.cycle_wabi}</span>
-                    <span className="text-[#888888] font-bold text-[8px] uppercase tracking-wider">last cycle</span>
+                  <div className="flex flex-col gap-1 mt-1.5">
+                    <div className="flex items-center gap-1 text-[10px] font-bold text-[#7ca83e] bg-[#9FD356]/15 px-2 py-0.5 rounded-md w-fit whitespace-nowrap">
+                      <span className="font-extrabold">+{member.cycle_wabi}</span>
+                      <span className="text-[#888888] font-bold text-[8px] uppercase tracking-wider">last cycle</span>
+                    </div>
+                    {member.last_wabi !== undefined && (
+                      <div className="text-[10px] font-bold text-[#888888] uppercase tracking-wider pl-1 flex items-center gap-1">
+                        <span>was:</span>
+                        <span className="font-black text-[#6B5435]/80 bg-[#E0E0E0]/30 px-1.5 py-0.5 rounded text-[11px]">{member.last_wabi}</span>
+                      </div>
+                    )}
                   </div>
                 )}
               </div>
@@ -124,9 +132,17 @@ export const MemberProfile: React.FC<MemberProfileProps> = ({ data }) => {
                   <span className="text-3xl font-bold">{member.spice}</span>
                 </div>
                 {member.cycle_spice !== undefined && (
-                  <div className="flex items-center gap-1 mt-1.5 text-[10px] font-bold text-[#c95110] bg-[#E8631A]/15 px-2 py-0.5 rounded-md w-fit whitespace-nowrap">
-                    <span className="font-extrabold">+{member.cycle_spice}</span>
-                    <span className="text-[#888888] font-bold text-[8px] uppercase tracking-wider">last cycle</span>
+                  <div className="flex flex-col gap-1 mt-1.5">
+                    <div className="flex items-center gap-1 text-[10px] font-bold text-[#c95110] bg-[#E8631A]/15 px-2 py-0.5 rounded-md w-fit whitespace-nowrap">
+                      <span className="font-extrabold">+{member.cycle_spice}</span>
+                      <span className="text-[#888888] font-bold text-[8px] uppercase tracking-wider">last cycle</span>
+                    </div>
+                    {member.last_spice !== undefined && (
+                      <div className="text-[10px] font-bold text-[#888888] uppercase tracking-wider pl-1 flex items-center gap-1">
+                        <span>was:</span>
+                        <span className="font-black text-[#6B5435]/80 bg-[#E0E0E0]/30 px-1.5 py-0.5 rounded text-[11px]">{member.last_spice}</span>
+                      </div>
+                    )}
                   </div>
                 )}
               </div>

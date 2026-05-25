@@ -43,7 +43,9 @@ const App: React.FC = () => {
           exp: dynamicMember.exp,
           restricted: dynamicMember.restricted,
           cycle_wabi: dynamicMember.cycle_wabi ?? 0,
-          cycle_spice: dynamicMember.cycle_spice ?? 0
+          cycle_spice: dynamicMember.cycle_spice ?? 0,
+          last_wabi: dynamicMember.last_wabi ?? 0,
+          last_spice: dynamicMember.last_spice ?? 0
         };
       }
       return member;

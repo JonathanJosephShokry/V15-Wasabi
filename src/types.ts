@@ -41,6 +41,8 @@ export interface Member {
   sportEventScore?: number;
   cycle_wabi?: number;
   cycle_spice?: number;
+  last_wabi?: number;
+  last_spice?: number;
 }
 
 export interface Team {
@@ -155,6 +157,8 @@ export interface DynamicMemberData {
   restricted: boolean;
   cycle_wabi?: number;
   cycle_spice?: number;
+  last_wabi?: number;
+  last_spice?: number;
 }
 
 export interface DynamicProjectData {
