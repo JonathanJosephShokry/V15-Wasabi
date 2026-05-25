@@ -39,6 +39,8 @@ export interface Member {
   collection: CollectionEntry[];
   restricted?: boolean;
   sportEventScore?: number;
+  cycle_wabi?: number;
+  cycle_spice?: number;
 }
 
 export interface Team {
@@ -90,6 +92,7 @@ export interface Project {
   maxMembers: number;
   rules?: string[];
   bonusSystem: { work: string; salary: number }[];
+  difficulty: 'Easy' | 'Medium' | 'Hard' | 'Extreme';
 }
 
 export interface TeamShopItem {
@@ -150,6 +153,8 @@ export interface DynamicMemberData {
   spice: number;
   exp: number;
   restricted: boolean;
+  cycle_wabi?: number;
+  cycle_spice?: number;
 }
 
 export interface DynamicProjectData {

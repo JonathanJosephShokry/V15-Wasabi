@@ -110,6 +110,12 @@ export const MemberProfile: React.FC<MemberProfileProps> = ({ data }) => {
                   <img src="/icons/wabi-icon.png" alt="Wabi" className="w-6 h-6" />
                   <span className="text-3xl font-bold">{member.wabi}</span>
                 </div>
+                {member.cycle_wabi !== undefined && (
+                  <div className="flex items-center gap-1 mt-1.5 text-[10px] font-bold text-[#7ca83e] bg-[#9FD356]/15 px-2 py-0.5 rounded-md w-fit whitespace-nowrap">
+                    <span className="font-extrabold">+{member.cycle_wabi}</span>
+                    <span className="text-[#888888] font-bold text-[8px] uppercase tracking-wider">last cycle</span>
+                  </div>
+                )}
               </div>
               <div className="flex flex-col gap-1">
                 <span className="text-xs font-bold text-[#666666] uppercase tracking-widest">Spice</span>
@@ -117,6 +123,12 @@ export const MemberProfile: React.FC<MemberProfileProps> = ({ data }) => {
                   <img src="/icons/spice-icon.png" alt="Spice" className="w-6 h-6" />
                   <span className="text-3xl font-bold">{member.spice}</span>
                 </div>
+                {member.cycle_spice !== undefined && (
+                  <div className="flex items-center gap-1 mt-1.5 text-[10px] font-bold text-[#c95110] bg-[#E8631A]/15 px-2 py-0.5 rounded-md w-fit whitespace-nowrap">
+                    <span className="font-extrabold">+{member.cycle_spice}</span>
+                    <span className="text-[#888888] font-bold text-[8px] uppercase tracking-wider">last cycle</span>
+                  </div>
+                )}
               </div>
             </div>
 
