@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { WasabiData, Team, Member, Project } from '../types';
 import { ArrowLeft, Info, Calendar } from 'lucide-react';
-import { calculateLevel, calculateExpProgress, getCurrentCycle } from '../utils';
+import { calculateLevel, calculateExpProgress, getCurrentCycle, getMemberIcon } from '../utils';
 
 interface TeamPageProps {
   data: WasabiData;
@@ -132,7 +132,7 @@ export const TeamPage: React.FC<TeamPageProps> = ({ data }) => {
                       return (
                         <div key={m.id} className="relative">
                           <img 
-                            src={`/icons/${m.icon}`} 
+                            src={`/icons/${getMemberIcon(m, data)}`} 
                             alt={m.name} 
                             className={`w-11 h-11 rounded-full object-cover border-2 transition-all hover:scale-110 ${
                               isPM ? 'border-[#E8631A] ring-2 ring-[#E8631A]/20' : restricted ? 'grayscale opacity-75 border-red-400' : 'border-[#9FD356]'
@@ -190,7 +190,7 @@ export const TeamPage: React.FC<TeamPageProps> = ({ data }) => {
                     isLeader ? 'border-[#F59E0B]/55 bg-gradient-to-br from-[#F59E0B]/5 to-transparent shadow-md' : 'border-[#E0E0E0]'
                   } ${restricted ? 'border-red-400/40 bg-gradient-to-br from-red-50 to-transparent' : ''}`}>
                     <div className="relative inline-block mb-4">
-                      <img src={`/icons/${member.icon}`} alt={member.name} className={`w-24 h-24 rounded-full object-cover border-4 transition-all group-hover:scale-105 ${
+                      <img src={`/icons/${getMemberIcon(member, data)}`} alt={member.name} className={`w-24 h-24 rounded-full object-cover border-4 transition-all group-hover:scale-105 ${
                         isLeader ? 'border-[#F59E0B]' : 'border-[#9FD356]'
                       } ${restricted ? 'grayscale opacity-75' : ''}`} />
                       {restricted && <div className="absolute -top-1 -right-1 w-3.5 h-3.5 bg-red-500 rounded-full border-2 border-white animate-pulse"></div>}

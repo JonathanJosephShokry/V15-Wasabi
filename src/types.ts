@@ -25,6 +25,7 @@ export interface CollectionEntry {
   characterId: string;
   degree?: string;
   count?: number;
+  state?: 'fav' | 'trade' | 'none' | 'profile';
 }
 
 export interface Member {

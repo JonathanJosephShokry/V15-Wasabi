@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { WasabiData, Team, Member, CraftingRecipe } from '../types';
 import { ArrowRight, Trophy as TrophyIcon, Medal, Clock, Plus, Zap, ExternalLink, GraduationCap, UserPlus } from 'lucide-react';
-import { getActiveSportEvent, getLastFinishedSportEvent, getActiveCraftingRecipes, calculateDaysRemaining, getActiveCraftingSet, getActivePackSale, getTimeRemaining } from '../utils';
+import { getActiveSportEvent, getLastFinishedSportEvent, getActiveCraftingRecipes, calculateDaysRemaining, getActiveCraftingSet, getActivePackSale, getTimeRemaining, getMemberIcon } from '../utils';
 
 interface HomeProps {
   data: WasabiData;
@@ -135,7 +135,7 @@ export const Home: React.FC<HomeProps> = ({ data }) => {
                     </div>
                     <div className="flex items-center gap-1.5 mb-6 flex-wrap">
                       {members.slice(0, 5).map((m: any) => (
-                        <img key={m.id} src={`/icons/${m.icon}`} alt={m.name} className="w-12 h-12 rounded-full object-cover border-2 border-white shadow-md transition-all hover:scale-110 hover:-translate-y-0.5 hover:z-10 bg-[#C8E6A0]" title={m.name} />
+                        <img key={m.id} src={`/icons/${getMemberIcon(m, data)}`} alt={m.name} className="w-12 h-12 rounded-full object-cover border-2 border-white shadow-md transition-all hover:scale-110 hover:-translate-y-0.5 hover:z-10 bg-[#C8E6A0]" title={m.name} />
                       ))}
                       {members.length > 5 && (
                         <div className="w-12 h-12 rounded-full bg-[#8B6F47] text-white text-[10px] font-extrabold flex items-center justify-center border-2 border-white shadow-md">+{members.length - 5}</div>
@@ -310,7 +310,7 @@ export const Home: React.FC<HomeProps> = ({ data }) => {
                           }`}>
                             {i + 1}
                           </div>
-                          <img src={`/icons/${m.icon}`} alt={m.name} className="w-10 h-10 shrink-0 rounded-full object-cover border-2 border-white shadow-sm" />
+                          <img src={`/icons/${getMemberIcon(m, data)}`} alt={m.name} className="w-10 h-10 shrink-0 rounded-full object-cover border-2 border-white shadow-sm" />
                           <div className="flex-1 min-w-0 font-bold text-[#6B5435] group-hover:text-[#9FD356] truncate">
                             {m.name}
                           </div>

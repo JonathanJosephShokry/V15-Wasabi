@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { WasabiData, Project, Member } from '../types';
 import { ArrowLeft, Clock, Users } from 'lucide-react';
-import { getProjectAge, getProjectTheme } from '../utils';
+import { getProjectAge, getProjectTheme, getMemberIcon } from '../utils';
 
 interface ProjectDetailsProps {
   data: WasabiData;
@@ -106,7 +106,7 @@ export const ProjectDetails: React.FC<ProjectDetailsProps> = ({ data }) => {
                     <Link key={m.id} to={`/member/${m.id}`} className="flex flex-col items-center gap-1 group">
                       <div className="relative">
                         <img
-                          src={`/icons/${m.icon}`}
+                          src={`/icons/${getMemberIcon(m, data)}`}
                           alt={m.name}
                           className={`w-16 h-16 rounded-full object-cover border-4 transition-all group-hover:scale-110 ${isPM ? 'border-[#E8631A]' : 'border-[#9FD356]'}`}
                         />

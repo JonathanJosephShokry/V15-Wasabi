@@ -32,6 +32,23 @@ export function calcHiddenScore(characterId: string, degree: string, data: Wasab
   return packScore * rarityScore * mult;
 }
 
+export function getMemberIcon(member: Member, data: WasabiData): string {
+  if (member.collection && member.collection.length > 0) {
+    const profileCard = member.collection.find(entry => entry.state === 'profile');
+    if (profileCard) {
+      const char = data.characters.find(c => c.id === profileCard.characterId);
+      if (char) {
+        const degree = profileCard.degree || 'iron';
+        const img = char.images[degree] || char.images.iron;
+        if (img && img !== '________') {
+          return img;
+        }
+      }
+    }
+  }
+  return member.icon || 'noicon.jpg';
+}
+
 export function getMemberTotalScore(member: Member, data: WasabiData): number {
   if (!member.collection || member.collection.length === 0) return 0;
   return member.collection.reduce((sum, entry) => {

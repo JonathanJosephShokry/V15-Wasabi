@@ -5,7 +5,7 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { WasabiData, Character, Member, CollectionEntry, CardPack } from '../types';
 import { ArrowLeft, X, Trophy, BookOpen, Package, Zap, Sparkles, Clock, Plus, Dices, Medal, ChevronLeft, ChevronRight } from 'lucide-react';
-import { calcHiddenScore, getMemberTotalScore, formatRarity, formatDegree, getActiveCraftingRecipes, calculateDaysRemaining, getActiveCraftingSet, getActivePackSale, getTimeRemaining } from '../utils';
+import { calcHiddenScore, getMemberTotalScore, formatRarity, formatDegree, getActiveCraftingRecipes, calculateDaysRemaining, getActiveCraftingSet, getActivePackSale, getTimeRemaining, getMemberIcon } from '../utils';
 
 interface WasabiCardsProps {
   data: WasabiData;
@@ -811,7 +811,7 @@ useGSAP(() => {
                 }`}>
                   {rank === 1 ? '🥇' : rank === 2 ? '🥈' : rank === 3 ? '🥉' : `#${rank}`}
                 </div>
-                <img src={`/icons/${entry.member.icon}`} alt={entry.member.name} className="w-10 h-10 md:w-12 md:h-12 shrink-0 rounded-full object-cover border-2 border-white/15" />
+                <img src={`/icons/${getMemberIcon(entry.member, data)}`} alt={entry.member.name} className="w-10 h-10 md:w-12 md:h-12 shrink-0 rounded-full object-cover border-2 border-white/15" />
                 <div className="flex-1 min-w-0">
                   <div className="text-base md:text-lg font-bold text-white truncate">{entry.member.name}{entry.member.role === 'leader' ? ' ⭐' : ''}</div>
                   <div className="text-[10px] md:text-xs text-white/40">{entry.cardCount} card{entry.cardCount !== 1 ? 's' : ''}</div>

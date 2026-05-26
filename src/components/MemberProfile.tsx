@@ -2,8 +2,8 @@ import React from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { WasabiData, Member, Character } from '../types';
-import { ArrowLeft, Star, Medal, Trophy } from 'lucide-react';
-import { calculateLevel, calculateExpProgress, calcHiddenScore, getMemberTotalScore, formatRarity, formatDegree, getGlobalRank } from '../utils';
+import { ArrowLeft, Star, Medal, Trophy, Heart, ArrowLeftRight, User } from 'lucide-react';
+import { calculateLevel, calculateExpProgress, calcHiddenScore, getMemberTotalScore, formatRarity, formatDegree, getGlobalRank, getMemberIcon } from '../utils';
 
 interface MemberProfileProps {
   data: WasabiData;
@@ -64,7 +64,7 @@ export const MemberProfile: React.FC<MemberProfileProps> = ({ data }) => {
         <div className="bg-white p-10 rounded-2xl border-2 border-[#E0E0E0] flex flex-col md:flex-row gap-10 items-center shadow-md mb-10">
           <div className="relative">
             <img 
-              src={`/icons/${member.icon}`} 
+              src={`/icons/${getMemberIcon(member, data)}`} 
               alt={member.name} 
               className={`w-40 h-40 rounded-full object-cover border-4 transition-all hover:scale-105 ${
                 member.role === 'leader' ? 'border-[#F59E0B]' : 'border-[#9FD356]'
@@ -197,6 +197,22 @@ export const MemberProfile: React.FC<MemberProfileProps> = ({ data }) => {
 
                 return (
                   <div key={i} className="relative group">
+                    {/* Card State Badges */}
+                    {entry.state === 'fav' && (
+                      <div className="absolute top-2 right-2 bg-pink-500 text-white rounded-full w-8 h-8 flex items-center justify-center shadow-lg border-2 border-white z-20" title="Favorite Card">
+                        <Heart size={14} fill="currentColor" className="text-white" />
+                      </div>
+                    )}
+                    {entry.state === 'trade' && (
+                      <div className="absolute top-2 right-2 bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center shadow-lg border-2 border-white z-20" title="For Trade">
+                        <ArrowLeftRight size={14} className="text-white" />
+                      </div>
+                    )}
+                    {entry.state === 'profile' && (
+                      <div className="absolute top-2 right-2 bg-emerald-500 text-white rounded-full w-8 h-8 flex items-center justify-center shadow-lg border-2 border-white z-20" title="Profile Photo Card">
+                        <User size={14} className="text-white" />
+                      </div>
+                    )}
                     <div className={`bg-[#FAFAFA] rounded-xl overflow-hidden border-3 transition-all hover:-translate-y-1.5 hover:shadow-xl ${
                       char.rarity === 'common' ? 'border-[#9E9E9E]' :
                       char.rarity === 'rare' ? 'border-[#4A90E2]' :
