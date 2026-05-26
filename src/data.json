@@ -1,5 +1,5 @@
 {
-  "version": "V55",
+  "version": "V56",
   "wasabiRulesLink": "https://docs.google.com/document/d/1SfoDRQbWs7yBSIc6YOW61q7s3s4s-D5OP9TCz7zFO30/edit?usp=sharing",
   "cardConfig": {
     "rarityScores": { "common": 2, "rare": 3, "epic": 6, "legendary": 20, "never": 1000 },
@@ -1391,7 +1391,7 @@
         { "characterId": "pontipines", "degree": "silver", "count": 1 },
         { "characterId": "igglepiggle", "degree": "gold", "count": 1 },
         { "characterId": "shifu", "degree": "iron", "count": 1, "state": "fav" },
-        { "characterId": "upsy_daisy", "degree": "pearl", "count": 1 },
+        { "characterId": "upsy_daisy", "degree": "pearl", "count": 1, "state": "trade"},
         { "characterId": "makka_pakka", "degree": "silver", "count": 1 },
         { "characterId": "finn", "degree": "silver", "count": 1 },
         { "characterId": "jake", "degree": "bronze", "count": 1, "state": "fav" },
@@ -1650,9 +1650,9 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [
+        { "characterId": "french_peas", "degree": "bronze", "count": 1, "state": "profile" },
         { "characterId": "junior", "degree": "silver", "count": 1 },
         { "characterId": "laura", "degree": "iron", "count": 1 },
-        { "characterId": "french_peas", "degree": "bronze", "count": 1, "state": "profile" },
         { "characterId": "larry_the_cucumber", "degree": "silver", "count": 1 },
         { "characterId": "jimmy", "degree": "bronze", "count": 1 },
         { "characterId": "mr_lunt", "degree": "iron", "count": 1 },
@@ -1698,7 +1698,7 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [
-        { "characterId": "rare_token", "degree": "iron", "count": 5, "state": "profile" },
+        { "characterId": "rare_token", "degree": "iron", "count": 5, "state": "none" },
         { "characterId": "common_token", "degree": "bronze", "count": 2 }
       ],
       "sportEventScore": 0
@@ -1709,7 +1709,7 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [
-        { "characterId": "common_token", "degree": "iron", "count": 3, "state": "profile" },
+        { "characterId": "common_token", "degree": "iron", "count": 3, "state": "none" },
         { "characterId": "rare_token", "degree": "iron", "count": 1 }
       ],
       "sportEventScore": 0
@@ -1730,7 +1730,7 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [
-        { "characterId": "common_token", "degree": "iron", "count": 1, "state": "profile" }
+        { "characterId": "common_token", "degree": "iron", "count": 1, "state": "none" }
       ],
       "sportEventScore": 0
     },
@@ -1748,7 +1748,7 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [
-        { "characterId": "horst", "degree": "iron", "count": 1, "state": "profile" },
+        { "characterId": "horst", "degree": "iron", "count": 1, "state": "none" },
         { "characterId": "remy", "degree": "iron", "count": 1 },
         { "characterId": "rare_token", "degree": "iron", "count": 2 },
         { "characterId": "common_token", "degree": "bronze", "count": 3 }
@@ -1785,7 +1785,7 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [
-        { "characterId": "rare_token", "degree": "iron", "count": 1, "state": "profile" }
+        { "characterId": "rare_token", "degree": "iron", "count": 1, "state": "none" }
       ],
       "sportEventScore": 0
     },
@@ -1803,7 +1803,7 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [
-        { "characterId": "sumo", "degree": "iron", "count": 1, "state": "profile" },
+        { "characterId": "sumo", "degree": "iron", "count": 1, "state": "none" },
         { "characterId": "common_token", "degree": "iron", "count": 1 }
       ],
       "sportEventScore": 0
