@@ -1,596 +1,92 @@
 {
   "memberData": [
-    {
-      "id": "member_daniel_rafik",
-      "wabi": 15,
-      "spice": 57,
-      "exp": 6,
-      "restricted": false,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    },
-    {
-      "id": "member_david_michael",
-      "wabi": 22,
-      "spice": 0,
-      "exp": 9,
-      "restricted": false,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    },
-    {
-      "id": "member_jonathan_joseph",
-      "wabi": 117,
-      "spice": 2,
-      "exp": 10,
-      "restricted": false,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    },
-    {
-      "id": "member_samih_nasser",
-      "wabi": 24,
-      "spice": 9,
-      "exp": 9,
-      "restricted": false,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    },
-    {
-      "id": "member_yassa",
-      "wabi": 19,
-      "spice": 4,
-      "exp": 8,
-      "restricted": false,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    },
-    {
-      "id": "member_peter_boshra",
-      "wabi": 13,
-      "spice": 5,
-      "exp": 10,
-      "restricted": false,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    },
-    {
-      "id": "member_david_nasser",
-      "wabi": 3,
-      "spice": 0,
-      "exp": 2,
-      "restricted": false,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    },
-    {
-      "id": "member_joren",
-      "wabi": 24,
-      "spice": 0,
-      "exp": 10,
-      "restricted": false,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    },
-    {
-      "id": "member_haneen",
-      "wabi": 39,
-      "spice": 23,
-      "exp": 10,
-      "restricted": true,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    },
-    {
-      "id": "member_marette",
-      "wabi": 11,
-      "spice": 0,
-      "exp": 5,
-      "restricted": false,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    },
-    {
-      "id": "member_nour",
-      "wabi": 23,
-      "spice": 0,
-      "exp": 7,
-      "restricted": false,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    },
-    {
-      "id": "member_philip",
-      "wabi": 215,
-      "spice": 1,
-      "exp": 9,
-      "restricted": false,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    },
-    {
-      "id": "member_karen",
-      "wabi": 118,
-      "spice": 11,
-      "exp": 9,
-      "restricted": false,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    },
-    {
-      "id": "member_karim",
-      "wabi": 45,
-      "spice": 0,
-      "exp": 5,
-      "restricted": true,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    },
-    {
-      "id": "member_yana",
-      "wabi": 169,
-      "spice": 35,
-      "exp": 8,
-      "restricted": false,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    },
-    {
-      "id": "member_kevin",
-      "wabi": 42,
-      "spice": 37,
-      "exp": 5,
-      "restricted": false,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    },
-    {
-      "id": "member_chris",
-      "wabi": 207,
-      "spice": 3,
-      "exp": 8,
-      "restricted": false,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    },
-    {
-      "id": "member_daniel_walaa",
-      "wabi": 114,
-      "spice": 8,
-      "exp": 8,
-      "restricted": false,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    },
-    {
-      "id": "member_mannuel",
-      "wabi": 72,
-      "spice": 1,
-      "exp": 8,
-      "restricted": false,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    },
-    {
-      "id": "member_jenny",
-      "wabi": 16,
-      "spice": 0,
-      "exp": 8,
-      "restricted": false,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    },
-    {
-      "id": "member_yasmine",
-      "wabi": 165,
-      "spice": 26,
-      "exp": 7,
-      "restricted": false,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    },
-    {
-      "id": "member_julie",
-      "wabi": 40,
-      "spice": 0,
-      "exp": 6,
-      "restricted": false,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    },
-    {
-      "id": "member_carla_walaa",
-      "wabi": 17,
-      "spice": 1,
-      "exp": 5,
-      "restricted": true,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    },
-    {
-      "id": "member_joy_magued",
-      "wabi": 26,
-      "spice": 0,
-      "exp": 5,
-      "restricted": false,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    },
-    {
-      "id": "member_lydia_rafik",
-      "wabi": 1,
-      "spice": 0,
-      "exp": 1,
-      "restricted": false,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    },
-    {
-      "id": "member_venus",
-      "wabi": 4,
-      "spice": 0,
-      "exp": 5,
-      "restricted": false,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    },
-    {
-      "id": "member_nana",
-      "wabi": 18,
-      "spice": 0,
-      "exp": 5,
-      "restricted": false,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    },
-    {
-      "id": "member_mai_hassaan",
-      "wabi": 12,
-      "spice": 0,
-      "exp": 3,
-      "restricted": false,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    },
-    {
-      "id": "member_shady_hassan",
-      "wabi": 1,
-      "spice": 0,
-      "exp": 1,
-      "restricted": false,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    },
-    {
-      "id": "member_lydia_rafik_youssef",
-      "wabi": 22,
-      "spice": 0,
-      "exp": 3,
-      "restricted": false,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    },
-    {
-      "id": "member_andrea",
-      "wabi": 16,
-      "spice": 0,
-      "exp": 4,
-      "restricted": false,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    },
-    {
-      "id": "member_jonathan_john",
-      "wabi": 12,
-      "spice": 0,
-      "exp": 2,
-      "restricted": false,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    },
-    {
-      "id": "member_miracle_ramy",
-      "wabi": 0,
-      "spice": 0,
-      "exp": 0,
-      "restricted": false,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    },
-    {
-      "id": "member_mina",
-      "wabi": 33,
-      "spice": 0,
-      "exp": 10,
-      "restricted": true,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    },
-    {
-      "id": "member_lucas",
-      "wabi": 49,
-      "spice": 0,
-      "exp": 7,
-      "restricted": false,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    },
-    {
-      "id": "member_rafik_boules",
-      "wabi": 13,
-      "spice": 0,
-      "exp": 2,
-      "restricted": false,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    },
-    {
-      "id": "member_abanoub_mohsen",
-      "wabi": 6,
-      "spice": 0,
-      "exp": 4,
-      "restricted": true,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    },
-    {
-      "id": "member_bassem_mounir",
-      "wabi": 45,
-      "spice": 0,
-      "exp": 6,
-      "restricted": false,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    },
-    {
-      "id": "member_yohana",
-      "wabi": 0,
-      "spice": 0,
-      "exp": 0,
-      "restricted": false,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    },
-    {
-      "id": "member_fady_barakat",
-      "wabi": 12,
-      "spice": 0,
-      "exp": 3,
-      "restricted": false,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    },
-    {
-      "id": "member_sama_usama",
-      "wabi": 0,
-      "spice": 0,
-      "exp": 0,
-      "restricted": false,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    },
-    {
-      "id": "member_antony",
-      "wabi": 0,
-      "spice": 0,
-      "exp": 0,
-      "restricted": false,
-      "cycle_wabi": 0,
-      "cycle_spice": 0,
-      "last_wabi": 0,
-      "last_spice": 0
-    }
-
+    { "id": "member_daniel_rafik", "wabi": 15, "spice": 57, "exp": 6, "restricted": false, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 },
+    { "id": "member_david_michael", "wabi": 22, "spice": 0, "exp": 9, "restricted": false, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 },
+    { "id": "member_jonathan_joseph", "wabi": 117, "spice": 2, "exp": 10, "restricted": false, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 },
+    { "id": "member_samih_nasser", "wabi": 24, "spice": 9, "exp": 9, "restricted": false, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 },
+    { "id": "member_yassa", "wabi": 19, "spice": 4, "exp": 8, "restricted": false, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 },
+    { "id": "member_peter_boshra", "wabi": 13, "spice": 5, "exp": 10, "restricted": false, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 },
+    { "id": "member_david_nasser", "wabi": 3, "spice": 0, "exp": 2, "restricted": false, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 },
+    { "id": "member_joren", "wabi": 24, "spice": 0, "exp": 10, "restricted": false, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 },
+    { "id": "member_haneen", "wabi": 39, "spice": 23, "exp": 10, "restricted": true, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 },
+    { "id": "member_marette", "wabi": 11, "spice": 0, "exp": 5, "restricted": false, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 },
+    { "id": "member_nour", "wabi": 23, "spice": 0, "exp": 7, "restricted": false, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 },
+    { "id": "member_philip", "wabi": 215, "spice": 1, "exp": 9, "restricted": false, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 },
+    { "id": "member_karen", "wabi": 118, "spice": 11, "exp": 9, "restricted": false, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 },
+    { "id": "member_karim", "wabi": 45, "spice": 0, "exp": 5, "restricted": true, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 },
+    { "id": "member_yana", "wabi": 169, "spice": 35, "exp": 8, "restricted": false, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 },
+    { "id": "member_kevin", "wabi": 42, "spice": 37, "exp": 5, "restricted": false, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 },
+    { "id": "member_chris", "wabi": 207, "spice": 3, "exp": 8, "restricted": false, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 },
+    { "id": "member_daniel_walaa", "wabi": 114, "spice": 8, "exp": 8, "restricted": false, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 },
+    { "id": "member_mannuel", "wabi": 72, "spice": 1, "exp": 8, "restricted": false, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 },
+    { "id": "member_jenny", "wabi": 16, "spice": 0, "exp": 8, "restricted": false, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 },
+    { "id": "member_yasmine", "wabi": 165, "spice": 26, "exp": 7, "restricted": false, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 },
+    { "id": "member_julie", "wabi": 40, "spice": 0, "exp": 6, "restricted": false, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 },
+    { "id": "member_carla_walaa", "wabi": 17, "spice": 1, "exp": 5, "restricted": true, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 },
+    { "id": "member_joy_magued", "wabi": 26, "spice": 0, "exp": 5, "restricted": false, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 },
+    { "id": "member_lydia_rafik", "wabi": 1, "spice": 0, "exp": 1, "restricted": false, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 },
+    { "id": "member_venus", "wabi": 4, "spice": 0, "exp": 5, "restricted": false, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 },
+    { "id": "member_nana", "wabi": 18, "spice": 0, "exp": 5, "restricted": false, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 },
+    { "id": "member_mai_hassaan", "wabi": 12, "spice": 0, "exp": 3, "restricted": false, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 },
+    { "id": "member_shady_hassan", "wabi": 1, "spice": 0, "exp": 1, "restricted": false, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 },
+    { "id": "member_lydia_rafik_youssef", "wabi": 22, "spice": 0, "exp": 3, "restricted": false, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 },
+    { "id": "member_andrea", "wabi": 16, "spice": 0, "exp": 4, "restricted": false, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 },
+    { "id": "member_jonathan_john", "wabi": 12, "spice": 0, "exp": 2, "restricted": false, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 },
+    { "id": "member_miracle_ramy", "wabi": 0, "spice": 0, "exp": 0, "restricted": false, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 },
+    { "id": "member_mina", "wabi": 33, "spice": 0, "exp": 10, "restricted": true, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 },
+    { "id": "member_lucas", "wabi": 49, "spice": 0, "exp": 7, "restricted": false, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 },
+    { "id": "member_rafik_boules", "wabi": 13, "spice": 0, "exp": 2, "restricted": false, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 },
+    { "id": "member_abanoub_mohsen", "wabi": 6, "spice": 0, "exp": 4, "restricted": true, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 },
+    { "id": "member_bassem_mounir", "wabi": 45, "spice": 0, "exp": 6, "restricted": false, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 },
+    { "id": "member_yohana", "wabi": 0, "spice": 0, "exp": 0, "restricted": false, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 },
+    { "id": "member_fady_barakat", "wabi": 12, "spice": 0, "exp": 3, "restricted": false, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 },
+    { "id": "member_sama_usama", "wabi": 0, "spice": 0, "exp": 0, "restricted": false, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 },
+    { "id": "member_antony", "wabi": 0, "spice": 0, "exp": 0, "restricted": false, "cycle_wabi": 0, "cycle_spice": 0, "last_wabi": 0, "last_spice": 0 }
   ],
   "projectData": [
     {
       "id": "proj-bible1.1",
-      "members": [
-        "member_joren",
-        "member_philip",
-        "member_karen",
-        "member_yana",
-        "member_david_michael",
-        "member_mannuel",
-        "member_daniel_walaa",
-        "member_jenny",
-        "member_nana",
-        "member_lydia_rafik_youssef",
-        "member_yasmine",
-        "member_carla_walaa",
-        "member_joy_magued"
-      ]
+      "members": ["member_joren", "member_philip", "member_karen", "member_yana", "member_david_michael", "member_mannuel", "member_daniel_walaa", "member_jenny", "member_nana", "member_lydia_rafik_youssef", "member_yasmine", "member_carla_walaa", "member_joy_magued"]
     },
     {
       "id": "proj-bible1.2",
-      "members": [
-        "member_jonathan_joseph",
-        "member_venus",
-        "member_chris",
-        "member_peter_boshra",
-        "member_julie",
-        "member_andrea",
-        "member_jonathan_john",
-        "member_daniel_rafik",
-        "member_marette",
-        "member_mai_hassaan",
-        "member_miracle_ramy"
-      ]
+      "members": ["member_jonathan_joseph", "member_venus", "member_chris", "member_peter_boshra", "member_julie", "member_andrea", "member_jonathan_john", "member_daniel_rafik", "member_marette", "member_mai_hassaan", "member_miracle_ramy"]
     },
     {
       "id": "proj-bible2",
-      "members": [
-        "member_mina",
-        "member_lucas",
-        "member_bassem_mounir",
-        "member_fady_barakat"
-      ]
+      "members": ["member_mina", "member_lucas", "member_bassem_mounir", "member_fady_barakat"]
     },
     {
       "id": "proj-bible3",
-      "members": [
-        "member_yassa",
-        "member_antony",
-        "member_sama_usama"
-      ]
+      "members": ["member_yassa", "member_antony", "member_sama_usama"]
     },
     {
       "id": "proj-habits",
-      "members": [
-        "member_peter_boshra",
-        "member_jonathan_joseph",
-        "member_mina",
-        "member_philip",
-        "member_chris",
-        "member_yasmine",
-        "member_samih_nasser",
-        "member_yana",
-        "member_daniel_walaa",
-        "member_joren",
-        "member_karen",
-        "member_mannuel"
-      ]
+      "members": ["member_peter_boshra", "member_jonathan_joseph", "member_mina", "member_philip", "member_chris", "member_yasmine", "member_samih_nasser", "member_yana", "member_daniel_walaa", "member_joren", "member_karen", "member_mannuel"]
     },
     {
       "id": "proj-hidden_in_my_heart",
-      "members": [
-        "member_jonathan_joseph",
-        "member_chris",
-        "member_daniel_walaa"
-      ]
+      "members": ["member_jonathan_joseph", "member_chris", "member_daniel_walaa"]
     },
     {
       "id": "proj-study",
-      "members": [
-        "member_yana",
-        "member_karen",
-        "member_jonathan_joseph",
-        "member_haneen",
-        "member_philip",
-        "member_yasmine",
-        "member_mannuel",
-        "member_david_michael"
-      ]
+      "members": ["member_yana", "member_karen", "member_jonathan_joseph", "member_haneen", "member_philip", "member_yasmine", "member_mannuel", "member_david_michael"]
     },
     {
       "id": "proj-study2",
-      "members": [
-        "member_jonathan_joseph",
-        "member_yassa"
-      ]
+      "members": ["member_jonathan_joseph", "member_yassa"]
     },
     {
       "id": "proj-languages",
-      "members": [
-        "member_joren",
-        "member_philip",
-        "member_jonathan_joseph",
-        "member_daniel_walaa",
-        "member_david_nasser"
-      ]
+      "members": ["member_joren", "member_philip", "member_jonathan_joseph", "member_daniel_walaa", "member_david_nasser"]
     },
     {
       "id": "book_club",
-      "members": [
-        "member_samih_nasser",
-        "member_carla_walaa",
-        "member_philip",
-        "member_chris",
-        "member_jonathan_joseph",
-        "member_lydia_rafik_youssef"
-      ]
+      "members": ["member_samih_nasser", "member_carla_walaa", "member_philip", "member_chris", "member_jonathan_joseph", "member_lydia_rafik_youssef"]
     },
     {
       "id": "tasbe7",
-      "members": [
-        "member_jonathan_joseph",
-        "member_peter_boshra",
-        "member_jenny",
-        "member_daniel_walaa",
-        "member_philip"
-      ]
+      "members": ["member_jonathan_joseph", "member_peter_boshra", "member_jenny", "member_daniel_walaa", "member_philip"]
     }
   ]
 }
