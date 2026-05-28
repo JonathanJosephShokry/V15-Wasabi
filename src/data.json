@@ -2159,7 +2159,7 @@
   "spiceDeals": [
     { "spice": 10, "egp": 10, "highlight": false },
     { "spice": 25, "egp": 20, "highlight": true },
-    { "spice": 35, "egp": 30, "highlight": true }
+    { "spice": 35, "egp": 30, "highlight": false }
   ],
   "tss": [
     { "id": "tss-1", "teamId": "team1", "name": "El Barak Free Meal", "image": "ElBaraka.jpg", "wabiCost": 250, "description": "Good food" },
