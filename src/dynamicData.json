@@ -1,6 +1,5 @@
 {
   "memberData": [
-[
   {
     "id": "member_daniel_rafik",
     "wabi":   19, "cycle_wabi":  4, "last_wabi":  15,
@@ -294,7 +293,6 @@
     "spice":   0, "cycle_spice": 0, "last_spice": 0,
     "exp":     1, "restricted":  false
   }
-]
   ],
   "projectData": [
     {
