@@ -1,5 +1,5 @@
 {
-  "version": "V56",
+  "version": "V57",
   "wasabiRulesLink": "https://docs.google.com/document/d/1SfoDRQbWs7yBSIc6YOW61q7s3s4s-D5OP9TCz7zFO30/edit?usp=sharing",
   "cardConfig": {
     "rarityScores": { "common": 2, "rare": 3, "epic": 6, "legendary": 20, "never": 1000 },
@@ -1574,6 +1574,9 @@
       "role": "normal",
       "collection": [
         { "characterId": "chloe", "degree": "iron", "count": 1, "state": "profile" },
+        { "characterId": "remy", "degree": "bronze", "count": 1 },
+        { "characterId": "linguini", "degree": "iron", "count": 1 },
+        { "characterId": "skinner", "degree": "iron", "count": 1 },
         { "characterId": "emile", "degree": "bronze", "count": 1 },
         { "characterId": "mustafa", "degree": "iron", "count": 1 },
         { "characterId": "colette", "degree": "iron", "count": 1 },
@@ -2162,10 +2165,13 @@
     { "spice": 35, "egp": 30, "highlight": false }
   ],
   "tss": [
-    { "id": "tss-1", "teamId": "team1", "name": "El Barak Free Meal", "image": "ElBaraka.jpg", "wabiCost": 250, "description": "Good food" },
-    { "id": "tss-2", "teamId": "team1", "name": "El Wahsh Free Meal", "image": "ElWahsh.jpg", "wabiCost": 300, "description": "Good food" },
-    { "id": "tss-3", "teamId": "team1", "name": "Free Padel!", "image": "Padel.jpg", "wabiCost": 85, "description": "Good sport" },
+    { "id": "tss-1.1", "teamId": "team1", "name": "El Barak Free Meal 1/4", "image": "ElBaraka.jpg", "wabiCost": 216, "description": "Good food" },
+    { "id": "tss-1.1", "teamId": "team1", "name": "El Barak Free Meal 1/2", "image": "ElBaraka.jpg", "wabiCost": 306, "description": "Good food" },
+    { "id": "tss-2.1", "teamId": "team1", "name": "El Wahsh Free Meal Single", "image": "ElWahsh.jpg", "wabiCost": 240, "description": "Good food" },
+    { "id": "tss-2.2", "teamId": "team1", "name": "El Wahsh Free Meal Double", "image": "ElWahsh.jpg", "wabiCost": 300, "description": "Good food" },
+    { "id": "tss-3", "teamId": "team1", "name": "Free Padel!", "image": "Padel.jpg", "wabiCost": 96, "description": "Good sport" },
     { "id": "tss-4", "teamId": "team1", "name": "Wasabi Minecraft Monthly Supscriptions", "image": "minecraft_banner.jpg", "wabiCost": 10, "description": "Good game" },
+    
     { "id": "tss-5", "teamId": "team2", "name": "Wasabi Minecraft Monthly Supscriptions", "image": "minecraft_banner.jpg", "wabiCost": 10, "description": "Good game" }
   ],
   "sportEvents": [
@@ -2501,7 +2507,7 @@
       "name": "Regular Show",
       "banner": "regular_show_banner.jpg",
       "score": 7,
-      "cost": { "wabi": 14, "spice": 7 },
+      "cost": { "wabi": 10, "spice": 7 },
       "outcomes": [
         { "characterId": "mordecai", "chance": "25%" },
         { "characterId": "rigby", "chance": "25%" },
@@ -2518,7 +2524,7 @@
       "name": "Wreck It Ralph",
       "banner": "wreck-it-ralph_banner.jpg",
       "score": 7,
-      "cost": { "wabi": 14, "spice": 7 },
+      "cost": { "wabi": 10, "spice": 7 },
       "outcomes": [
         { "characterId": "gene", "chance": "25%" },
         { "characterId": "qbert", "chance": "25%" },
@@ -2535,7 +2541,7 @@
       "name": "Ratatouille",
       "banner": "rata_banner.jpg",
       "score": 9,
-      "cost": { "wabi": 18, "spice": 9 },
+      "cost": { "wabi": 13, "spice": 9 },
       "outcomes": [
         { "characterId": "mustafa", "chance": "12.5%" },
         { "characterId": "git", "chance": "12.5%" },
@@ -2556,7 +2562,7 @@
       "name": "Calrence",
       "banner": "clarence_banner.jpg",
       "score": 5,
-      "cost": { "wabi": 10, "spice": 5 },
+      "cost": { "wabi": 7, "spice": 5 },
       "outcomes": [
         { "characterId": "clarence", "chance": "50%" },
         { "characterId": "sumo", "chance": "30%" },
@@ -2570,7 +2576,7 @@
       "name": "Adventure Timer 2",
       "banner": "adventure_time_2_banner.jpg",
       "score": 7,
-      "cost": { "wabi": 14, "spice": 7 },
+      "cost": { "wabi": 10, "spice": 7 },
       "outcomes": [
         { "characterId": "peppermint_butler", "chance": "50%" },
         { "characterId": "earl_of_lemongrab", "chance": "30%" },
@@ -2584,7 +2590,7 @@
       "name": "Teen Titans Go",
       "banner": "teen_titans_go_banner.jpg",
       "score": 6,
-      "cost": { "wabi": 12, "spice": 6 },
+      "cost": { "wabi": 9, "spice": 6 },
       "outcomes": [
         { "characterId": "beast_boy", "chance": "50%" },
         { "characterId": "cyborg", "chance": "30%" },
@@ -2598,7 +2604,7 @@
       "name": "Flapjack",
       "banner": "flapjack_banner.jpg",
       "score": 6,
-      "cost": { "wabi": 12, "spice": 6 },
+      "cost": { "wabi": 9, "spice": 6 },
       "outcomes": [
         { "characterId": "flapjack", "chance": "50%" },
         { "characterId": "bubbie", "chance": "30%" },
@@ -2612,7 +2618,7 @@
       "name": "NA",
       "banner": "na.jpg",
       "score": 7,
-      "cost": { "wabi": 14, "spice": 7 },
+      "cost": { "wabi": 10, "spice": 7 },
       "outcomes": []
     },
     {
@@ -2620,7 +2626,7 @@
       "name": "NA",
       "banner": "na.jpg",
       "score": 6,
-      "cost": { "wabi": 12, "spice": 6 },
+      "cost": { "wabi": 9, "spice": 6 },
       "outcomes": []
     },
     {
@@ -2628,7 +2634,7 @@
       "name": "Courage",
       "banner": "courage_banner.jpg",
       "score": 8,
-      "cost": { "wabi": 16, "spice": 8 },
+      "cost": { "wabi": 12, "spice": 8 },
       "outcomes": [
         { "characterId": "police_courage", "chance": "50%" },
         { "characterId": "computer_courage", "chance": "30%" },
@@ -2643,7 +2649,7 @@
       "name": "NA",
       "banner": "na.jpg",
       "score": 7,
-      "cost": { "wabi": 14, "spice": 7 },
+      "cost": { "wabi": 10, "spice": 7 },
       "outcomes": []
     },
     {
@@ -2651,7 +2657,7 @@
       "name": "NA",
       "banner": "na.jpg",
       "score": 4,
-      "cost": { "wabi": 8, "spice": 4 },
+      "cost": { "wabi": 6, "spice": 4 },
       "outcomes": []
     },
     {
