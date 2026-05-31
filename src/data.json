@@ -116,7 +116,7 @@
       "name": "Huntress Wizard",
       "rarity": "epic",
       "packageId": "adventure_time_2_pack",
-      "images": { "iron": "huntress_wizard10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+      "images": { "iron": "huntress_wizard10.jpg", "bronze": "huntress_wizard20.jpg", "silver": "huntress_wizard30.jpg", "pearl": "huntress_wizard40.jpg", "gold": "huntress_wizard50.jpg", "jade": "huntress_wizard60.jpg", "sapphire": "huntress_wizard70.jpg", "ruby": "huntress_wizard80.jpg", "emerald": "huntress_wizard90.jpg", "diamond": "huntress_wizard100.jpg" }
     },
     {
       "id": "flame_princess",
@@ -228,7 +228,7 @@
       "name": "Nadar Kessard",
       "rarity": "common",
       "packageId": "ratatouille_pack",
-      "images": { "iron": "nadar_kessard10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+      "images": { "iron": "nadar_kessard10.jpg", "bronze": "nadar_kessard20.jpg", "silver": "nadar_kessard30.jpg", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
     },
     {
       "id": "emile",
@@ -1400,16 +1400,15 @@
         { "characterId": "igglepiggle", "degree": "bronze", "count": 1, "state": "trade"},
         { "characterId": "sven", "degree": "bronze", "count": 1, "state": "fav" },
         { "characterId": "kristoff", "degree": "bronze", "count": 1, "state": "trade"},
-        { "characterId": "mustafa", "degree": "silver", "count": 1 },
-        { "characterId": "mustafa", "degree": "bronze", "count": 1 },
-        { "characterId": "linguini", "degree": "iron", "count": 1 },
-        { "characterId": "skinner", "degree": "iron", "count": 1 },
-        { "characterId": "nadar_kessard", "degree": "bronze", "count": 1},
+        { "characterId": "mustafa", "degree": "silver", "count": 1, "state": "trade"},
+        { "characterId": "mustafa", "degree": "bronze", "count": 1, "state": "trade"},
+        { "characterId": "skinner", "degree": "iron", "count": 1, "state": "trade"},
+        { "characterId": "nadar_kessard", "degree": "silver", "count": 1, "state": "trade"},
         { "characterId": "git", "degree": "bronze", "count": 1, "state": "trade"},
-        { "characterId": "skinner", "degree": "bronze", "count": 1 },
+        { "characterId": "skinner", "degree": "bronze", "count": 1, "state": "trade"},
         { "characterId": "kristoff", "degree": "iron", "count": 1, "state": "trade" },
         { "characterId": "sarge", "degree": "iron", "count": 1, "state": "trade"},
-        { "characterId": "common_token", "degree": "bronze", "count": 1 }
+        { "characterId": "common_token", "degree": "bronze", "count": 1, "state": "trade"}
       ],
       "sportEventScore": 0
     },
@@ -1494,7 +1493,6 @@
         { "characterId": "madame_blueberyy", "degree": "iron", "count": 1 },
         { "characterId": "igglepiggle", "degree": "iron", "count": 1 },
         { "characterId": "upsy_daisy", "degree": "silver", "count": 1 },
-        { "characterId": "upsy_daisy", "degree": "iron", "count": 1 },
         { "characterId": "makka_pakka", "degree": "iron", "count": 1 },
         { "characterId": "larry_the_cucumber", "degree": "iron", "count": 1 },
         { "characterId": "larry_the_cucumber", "degree": "bronze", "count": 1 },
@@ -1505,17 +1503,13 @@
         { "characterId": "jimmy", "degree": "iron", "count": 1 },
         { "characterId": "jerry", "degree": "iron", "count": 1 },
         { "characterId": "summer", "degree": "iron", "count": 1 },
-        { "characterId": "remy", "degree": "iron", "count": 1 },
         { "characterId": "colette", "degree": "iron", "count": 1 },
-        { "characterId": "nadar_kessard", "degree": "bronze", "count": 1 },
+        { "characterId": "linguini", "degree": "iron", "count": 1},
         { "characterId": "horst", "degree": "iron", "count": 1 },
+        { "characterId": "emile", "degree": "pearl", "count": 1 },
         { "characterId": "emile", "degree": "silver", "count": 1 },
-        { "characterId": "emile", "degree": "iron", "count": 1 },
         { "characterId": "anton_ego", "degree": "iron", "count": 1 },
-        { "characterId": "qbert", "degree": "iron", "count": 1 },
-        { "characterId": "common_token", "degree": "iron", "count": 1 },
-        { "characterId": "common_token", "degree": "bronze", "count": 1 },
-        { "characterId": "rare_token", "degree": "iron", "count": 3 }
+        { "characterId": "qbert", "degree": "iron", "count": 1 }
       ],
       "sportEventScore": 0
     },
@@ -1592,8 +1586,8 @@
         { "characterId": "david", "degree": "bronze", "count": 1 },
         { "characterId": "summer", "degree": "iron", "count": 1 },
         { "characterId": "manetti", "degree": "iron", "count": 1 },
-        { "characterId": "common_token", "degree": "bronze", "count": 5 },
-        { "characterId": "rare_token", "degree": "iron", "count": 1 }
+        { "characterId": "common_token", "degree": "bronze", "count": 6 },
+        { "characterId": "common_token", "degree": "iron", "count": 1 }
       ],
       "sportEventScore": 0
     },
@@ -1626,7 +1620,7 @@
         { "characterId": "skinner", "degree": "iron", "count": 1 },
         { "characterId": "common_token", "degree": "iron", "count": 3 },
         { "characterId": "common_token", "degree": "bronze", "count": 4 },
-        { "characterId": "rare_token", "degree": "iron", "count": 6 }
+        { "characterId": "rare_token", "degree": "iron", "count": 2 }
       ],
       "sportEventScore": 0
     },
@@ -1650,7 +1644,8 @@
         { "characterId": "shen", "degree": "pearl", "count": 1, "state": "profile" },
         { "characterId": "chameleon", "degree": "silver", "count": 1 },
         { "characterId": "muscleman", "degree": "iron", "count": 1 },
-        { "characterId": "emile", "degree": "silver", "count": 1 },
+        { "characterId": "remy", "degree": "iron", "count": 1 },
+        { "characterId": "upsy_daisy", "degree": "iron", "count": 1 },
         { "characterId": "rare_token", "degree": "iron", "count": 1 },
         { "characterId": "common_token", "degree": "bronze", "count": 2 }
       ],
@@ -1682,7 +1677,7 @@
         { "characterId": "mcqueen", "degree": "iron", "count": 1, "state": "profile" },
         { "characterId": "colette", "degree": "iron", "count": 1 },
         { "characterId": "nadar_kessard", "degree": "iron", "count": 1 },
-        { "characterId": "emile", "degree": "bronze", "count": 1 },
+        { "characterId": "emile", "degree": "bronze", "count": 1, "state": "fav" },
         { "characterId": "fillmore", "degree": "silver", "count": 1 },
         { "characterId": "ping", "degree": "iron", "count": 1 },
         { "characterId": "finn", "degree": "iron", "count": 1 },
@@ -1736,7 +1731,6 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [
-        { "characterId": "emile", "degree": "iron", "count": 1, "state": "profile" }
       ],
       "sportEventScore": 0
     },
