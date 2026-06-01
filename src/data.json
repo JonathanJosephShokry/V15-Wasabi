@@ -1565,11 +1565,10 @@
         { "characterId": "chloe", "degree": "iron", "count": 1, "state": "profile" },
         { "characterId": "remy", "degree": "bronze", "count": 1 },
         { "characterId": "linguini", "degree": "bronze", "count": 1 },
-        { "characterId": "emile", "degree": "bronze", "count": 1 },
         { "characterId": "colette", "degree": "bronze", "count": 1 },
+        { "characterId": "git", "degree": "silver", "count": 1, "state": "none" },
         { "characterId": "django", "degree": "iron", "count": 1 },
         { "characterId": "joey", "degree": "iron", "count": 1 },
-        { "characterId": "git", "degree": "silver", "count": 1, "state": "none" },
         { "characterId": "common_token", "degree": "bronze", "count": 6 },
         { "characterId": "common_token", "degree": "iron", "count": 1 }
       ],
