@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { WasabiData, Project, Member } from '../types';
 import { ArrowLeft, Clock, Users } from 'lucide-react';
-import { getProjectAge, getProjectTheme, getMemberIcon } from '../utils';
+import { getProjectAge, getProjectTheme, getMemberIcon, getProjectLimitInfo } from '../utils';
 
 interface ProjectDetailsProps {
   data: WasabiData;
@@ -12,6 +12,7 @@ interface ProjectDetailsProps {
 export const ProjectDetails: React.FC<ProjectDetailsProps> = ({ data }) => {
   const { projectId } = useParams<{ projectId: string }>();
   const project = data.projects.find(p => p.id === projectId);
+  const [now] = useState(new Date());
 
   if (!project) return <div className="p-20 text-center">Project not found</div>;
 
@@ -58,29 +59,49 @@ export const ProjectDetails: React.FC<ProjectDetailsProps> = ({ data }) => {
           </div>
           <p className="text-lg text-[#666666] max-w-2xl mx-auto leading-relaxed mb-8">{project.description}</p>
           
-          {/* Project Age Section */}
-          <div className={`mt-8 inline-flex flex-col items-center gap-2 p-6 rounded-2xl border-2 transition-all shadow-sm min-w-[220px] ${
-            theme === "Child" ? "bg-pink-50 border-pink-200 text-pink-600" :
-            theme === "Growing" ? "bg-emerald-50 border-emerald-200 text-emerald-600" :
-            theme === "Teen" ? "bg-violet-50 border-violet-200 text-violet-600" :
-            theme === "Mature" ? "bg-blue-50 border-blue-200 text-blue-600" :
-            "bg-orange-50 border-orange-200 text-orange-700"
-          }`}>
-            <div className="text-xs font-black uppercase tracking-widest opacity-70 flex items-center gap-1.5">
-              <Clock size={14} /> Project Age
-            </div>
-            <div className="text-4xl font-black">{age}</div>
-            <div className="flex items-center gap-2 mt-1">
-              <span className="text-2xl">
-                {visual === "🐛" ? "🐛" : 
-                 visual === "🦎" ? "🦎" : 
-                 visual === "🐊" ? "🐊" : 
-                 visual === "🦖" ? "🦖" : "🐉"}
-              </span>
-              <div className="text-[11px] font-bold uppercase tracking-tight">
-                {theme} Stage
+          {/* Project Age & Limited Time Section */}
+          <div className="flex flex-wrap justify-center gap-6 mt-8">
+            <div className={`inline-flex flex-col items-center gap-2 p-6 rounded-2xl border-2 transition-all shadow-sm min-w-[220px] ${
+              theme === "Child" ? "bg-pink-50 border-pink-200 text-pink-600" :
+              theme === "Growing" ? "bg-emerald-50 border-emerald-200 text-emerald-600" :
+              theme === "Teen" ? "bg-violet-50 border-violet-200 text-violet-600" :
+              theme === "Mature" ? "bg-blue-50 border-blue-200 text-blue-600" :
+              "bg-orange-50 border-orange-200 text-orange-700"
+            }`}>
+              <div className="text-xs font-black uppercase tracking-widest opacity-70 flex items-center gap-1.5">
+                <Clock size={14} /> Project Age
+              </div>
+              <div className="text-4xl font-black">{age}</div>
+              <div className="flex items-center gap-2 mt-1">
+                <span className="text-2xl">
+                  {visual === "🐛" ? "🐛" : 
+                   visual === "🦎" ? "🦎" : 
+                   visual === "🐊" ? "🐊" : 
+                   visual === "🦖" ? "🦖" : "🐉"}
+                </span>
+                <div className="text-[11px] font-bold uppercase tracking-tight">
+                  {theme} Stage
+                </div>
               </div>
             </div>
+
+            {(() => {
+              const limitInfo = getProjectLimitInfo(project, now);
+              if (!limitInfo) return null;
+              return (
+                <div className="inline-flex flex-col items-center gap-2 p-6 rounded-2xl border-2 transition-all shadow-sm min-w-[220px] bg-amber-50 border-amber-200 text-amber-700 animate-pulse">
+                  <div className="text-xs font-black uppercase tracking-widest opacity-75 flex items-center gap-1.5 text-amber-800">
+                    <span>⏳ Limited Time Only</span>
+                  </div>
+                  <div className="text-4xl font-black">{limitInfo.cyclesRemaining} Cycle{limitInfo.cyclesRemaining !== 1 ? 's' : ''}</div>
+                  <div className="flex items-center gap-2 mt-1">
+                    <div className="text-[11px] font-bold uppercase tracking-tight text-amber-800">
+                      {limitInfo.daysRemaining} days left
+                    </div>
+                  </div>
+                </div>
+              );
+            })()}
           </div>
         </div>
 

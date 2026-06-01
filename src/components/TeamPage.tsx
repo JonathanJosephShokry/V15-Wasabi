@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { WasabiData, Team, Member, Project } from '../types';
 import { ArrowLeft, Info, Calendar } from 'lucide-react';
-import { calculateLevel, calculateExpProgress, getCurrentCycle, getMemberIcon } from '../utils';
+import { calculateLevel, calculateExpProgress, getCurrentCycle, getMemberIcon, getProjectLimitInfo } from '../utils';
 
 interface TeamPageProps {
   data: WasabiData;
@@ -122,6 +122,15 @@ export const TeamPage: React.FC<TeamPageProps> = ({ data }) => {
                       {project.difficulty}
                     </div>
                   </div>
+                  {(() => {
+                    const limitInfo = getProjectLimitInfo(project, now);
+                    if (!limitInfo) return null;
+                    return (
+                      <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[11px] font-black uppercase tracking-widest bg-amber-50 border border-amber-200 text-amber-700 animate-pulse w-fit mb-3">
+                        <span>⏳ Limited: {limitInfo.cyclesRemaining} cycle{limitInfo.cyclesRemaining !== 1 ? 's' : ''} left ({limitInfo.daysRemaining}d)</span>
+                      </div>
+                    );
+                  })()}
                   <p className="text-sm text-[#666666] mb-5 line-clamp-2 leading-relaxed">{project.description}</p>
                   <div className="flex flex-wrap gap-2">
                     {project.members.map(memberId => {

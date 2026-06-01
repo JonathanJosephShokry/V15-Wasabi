@@ -1,5 +1,5 @@
 {
-  "version": "V57",
+  "version": "V60",
   "wasabiRulesLink": "https://docs.google.com/document/d/1SfoDRQbWs7yBSIc6YOW61q7s3s4s-D5OP9TCz7zFO30/edit?usp=sharing",
   "cardConfig": {
     "rarityScores": { "common": 2, "rare": 3, "epic": 6, "legendary": 20, "never": 1000 },
@@ -242,14 +242,14 @@
       "name": "Skinner",
       "rarity": "rare",
       "packageId": "ratatouille_pack",
-      "images": { "iron": "skinner10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+      "images": { "iron": "skinner10.jpg", "bronze": "skinner20.jpg", "silver": "skinner30.jpg", "pearl": "skinner40.jpg", "gold": "skinner50.jpg", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
     },
     {
       "id": "django",
       "name": "Django",
       "rarity": "rare",
       "packageId": "ratatouille_pack",
-      "images": { "iron": "django10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+      "images": { "iron": "django10.jpg", "bronze": "django20.jpg", "silver": "django30.jpg", "pearl": "django40.jpg", "gold": "django50.jpg", "jade": "django60.jpg", "sapphire": "django70.jpg", "ruby": "django80.jpg", "emerald": "________", "diamond": "________" }
     },
     {
       "id": "anton_ego",
@@ -263,7 +263,7 @@
       "name": "Colette",
       "rarity": "epic",
       "packageId": "ratatouille_pack",
-      "images": { "iron": "colette10.jpg", "bronze": "colette20.jpg", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+      "images": { "iron": "colette10.jpg", "bronze": "colette20.jpg", "silver": "colette30.jpg", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
     },
     {
       "id": "linguini",
@@ -1386,29 +1386,28 @@
       "role": "leader",
       "collection": [
         { "characterId": "grizz", "degree": "iron", "count": 1, "state": "profile" },
-        { "characterId": "upsy_daisy", "degree": "jade", "count": 1},
+        { "characterId": "upsy_daisy", "degree": "jade", "count": 1 },
         { "characterId": "mater", "degree": "gold", "count": 1 },
         { "characterId": "pontipines", "degree": "silver", "count": 1 },
         { "characterId": "igglepiggle", "degree": "gold", "count": 1 },
         { "characterId": "shifu", "degree": "iron", "count": 1, "state": "fav" },
-        { "characterId": "upsy_daisy", "degree": "pearl", "count": 1, "state": "trade"},
+        { "characterId": "upsy_daisy", "degree": "pearl", "count": 1, "state": "trade" },
         { "characterId": "makka_pakka", "degree": "silver", "count": 1 },
         { "characterId": "finn", "degree": "silver", "count": 1 },
         { "characterId": "jake", "degree": "bronze", "count": 1, "state": "fav" },
-        { "characterId": "makka_pakka", "degree": "bronze", "count": 1, "state": "trade"},
-        { "characterId": "igglepiggle", "degree": "pearl", "count": 1, "state": "trade"},
-        { "characterId": "igglepiggle", "degree": "bronze", "count": 1, "state": "trade"},
+        { "characterId": "makka_pakka", "degree": "bronze", "count": 1 },
+        { "characterId": "igglepiggle", "degree": "pearl", "count": 1, "state": "trade" },
+        { "characterId": "igglepiggle", "degree": "bronze", "count": 1, "state": "trade" },
         { "characterId": "sven", "degree": "bronze", "count": 1, "state": "fav" },
-        { "characterId": "kristoff", "degree": "bronze", "count": 1, "state": "trade"},
-        { "characterId": "mustafa", "degree": "silver", "count": 1, "state": "trade"},
-        { "characterId": "mustafa", "degree": "bronze", "count": 1, "state": "trade"},
-        { "characterId": "skinner", "degree": "iron", "count": 1, "state": "trade"},
-        { "characterId": "nadar_kessard", "degree": "silver", "count": 1, "state": "trade"},
-        { "characterId": "git", "degree": "bronze", "count": 1, "state": "trade"},
-        { "characterId": "skinner", "degree": "bronze", "count": 1, "state": "trade"},
-        { "characterId": "kristoff", "degree": "iron", "count": 1, "state": "trade" },
-        { "characterId": "sarge", "degree": "iron", "count": 1, "state": "trade"},
-        { "characterId": "common_token", "degree": "bronze", "count": 1, "state": "trade"}
+        { "characterId": "kristoff", "degree": "bronze", "count": 1, "state": "trade" },
+        { "characterId": "mustafa", "degree": "silver", "count": 1, "state": "trade" },
+        { "characterId": "mustafa", "degree": "bronze", "count": 1, "state": "trade" },
+        { "characterId": "mustafa", "degree": "iron", "count": 1 },
+        { "characterId": "skinner", "degree": "bronze", "count": 1, "state": "trade" },
+        { "characterId": "skinner", "degree": "iron", "count": 1, "state": "trade" },
+        { "characterId": "nadar_kessard", "degree": "silver", "count": 1, "state": "trade" },
+        { "characterId": "git", "degree": "bronze", "count": 1, "state": "trade" },
+        { "characterId": "common_token", "degree": "bronze", "count": 1, "state": "trade" }
       ],
       "sportEventScore": 0
     },
@@ -1504,7 +1503,7 @@
         { "characterId": "jerry", "degree": "iron", "count": 1 },
         { "characterId": "summer", "degree": "iron", "count": 1 },
         { "characterId": "colette", "degree": "iron", "count": 1 },
-        { "characterId": "linguini", "degree": "iron", "count": 1},
+        { "characterId": "linguini", "degree": "iron", "count": 1 },
         { "characterId": "horst", "degree": "iron", "count": 1 },
         { "characterId": "emile", "degree": "pearl", "count": 1 },
         { "characterId": "emile", "degree": "silver", "count": 1 },
@@ -1688,7 +1687,8 @@
         { "characterId": "django", "degree": "bronze", "count": 1 },
         { "characterId": "linguini", "degree": "bronze", "count": 1 },
         { "characterId": "horst", "degree": "iron", "count": 1 },
-        { "characterId": "mustafa", "degree": "iron", "count": 1 },
+        { "characterId": "kristoff", "degree": "iron", "count": 1, "state": "none" },
+        { "characterId": "sarge", "degree": "iron", "count": 1, "state": "none" },
         { "characterId": "common_token", "degree": "iron", "count": 1 },
         { "characterId": "common_token", "degree": "bronze", "count": 2 },
         { "characterId": "rare_token", "degree": "iron", "count": 4 }
@@ -1730,8 +1730,7 @@
       "name": "Carla",
       "teamId": "team1",
       "role": "normal",
-      "collection": [
-      ],
+      "collection": [],
       "sportEventScore": 0
     },
     {
@@ -1902,6 +1901,7 @@
       "baseSalary": 1,
       "currency": "wabi",
       "startDate": "16-02-2026",
+      "end_date": null,
       "active": true,
       "projectManagerId": "member_karen",
       "maxMembers": 14,
@@ -2013,6 +2013,7 @@
       "baseSalary": 1,
       "currency": "spice",
       "startDate": "01-03-2026",
+      "end_date": "01-07-2026",
       "active": true,
       "projectManagerId": "member_jonathan_joseph",
       "maxMembers": 14,
@@ -2171,7 +2172,6 @@
     { "id": "tss-2.2", "teamId": "team1", "name": "El Wahsh Free Meal Double", "image": "ElWahsh.jpg", "wabiCost": 300, "description": "Good food" },
     { "id": "tss-3", "teamId": "team1", "name": "Free Padel!", "image": "Padel.jpg", "wabiCost": 96, "description": "Good sport" },
     { "id": "tss-4", "teamId": "team1", "name": "Wasabi Minecraft Monthly Supscriptions", "image": "minecraft_banner.jpg", "wabiCost": 10, "description": "Good game" },
-    
     { "id": "tss-5", "teamId": "team2", "name": "Wasabi Minecraft Monthly Supscriptions", "image": "minecraft_banner.jpg", "wabiCost": 10, "description": "Good game" }
   ],
   "sportEvents": [
@@ -2180,8 +2180,8 @@
       "name": "Winter Run",
       "description": "Keep warm by running!",
       "type": "distance",
-      "startDate": "2026-02-01",
-      "endDate": "2026-02-28",
+      "startDate": "01-02-2026",
+      "endDate": "28-02-2026",
       "visible": false,
       "prizes": {
         "1st": { "characterId": "common_token", "degree": "iron" },
@@ -2199,15 +2199,15 @@
       "name": "Ping Pong Tournament",
       "description": "Compete in 1v1 matches.",
       "type": "points",
-      "startDate": "2026-03-01",
-      "endDate": "2026-04-30",
+      "startDate": "01-03-2026",
+      "endDate": "30-04-2026",
       "visible": true,
       "upcomingMatches": [
-        { "id": "match_1", "team1": "Jonathan", "team2": "Dani", "active": true, "date": "2026-04-30" },
-        { "id": "match_2", "team1": "Samih", "team2": "Karen", "active": true, "date": "2026-04-30" },
-        { "id": "match_3", "team1": "Daniel", "team2": "Yanna", "active": true, "date": "2026-04-30" },
-        { "id": "match_4", "team1": "Chris", "team2": "Mannuel", "active": true, "date": "2026-04-30" },
-        { "id": "match_5", "team1": "Philo", "team2": "Karim", "active": true, "date": "2026-04-30" }
+        { "id": "match_1", "team1": "Jonathan", "team2": "Dani", "active": true, "date": "30-04-2026" },
+        { "id": "match_2", "team1": "Samih", "team2": "Karen", "active": true, "date": "30-04-2026" },
+        { "id": "match_3", "team1": "Daniel", "team2": "Yanna", "active": true, "date": "30-04-2026" },
+        { "id": "match_4", "team1": "Chris", "team2": "Mannuel", "active": true, "date": "30-04-2026" },
+        { "id": "match_5", "team1": "Philo", "team2": "Karim", "active": true, "date": "30-04-2026" }
       ],
       "prizes": {
         "1st": { "characterId": "legendary_token", "degree": "iron" },
@@ -2908,8 +2908,8 @@
   "crafting_sets": [
     {
       "id": "set_1",
-      "start_date": "2026-05-15",
-      "end_date": "2026-06-01",
+      "start_date": "15-05-2026",
+      "end_date": "01-06-2026",
       "crafts": [
         {
           "id": "craft_1",
@@ -2945,8 +2945,8 @@
     },
     {
       "id": "set_2",
-      "start_date": "2026-06-01",
-      "end_date": "2026-06-15",
+      "start_date": "01-06-2026",
+      "end_date": "15-06-2026",
       "crafts": [
         {
           "id": "craft_1",
@@ -2984,128 +2984,128 @@
   "pack_sales": [
     {
       "id": "sale_1",
-      "start_date": "2026-03-01",
-      "end_date": "2026-03-15",
+      "start_date": "01-03-2026",
+      "end_date": "15-03-2026",
       "packs": ["gumball_pack", "kungfu_pack", "ben10_pack"]
     },
     {
       "id": "sale_2",
-      "start_date": "2026-03-15",
-      "end_date": "2026-04-01",
+      "start_date": "15-03-2026",
+      "end_date": "01-04-2026",
       "packs": ["adventure_time_pack", "cars_pack", "spongebob_pack"]
     },
     {
       "id": "sale_3",
-      "start_date": "2026-04-01",
-      "end_date": "2026-04-15",
+      "start_date": "01-04-2026",
+      "end_date": "15-04-2026",
       "packs": ["httyd_pack", "nemo_pack", "luca_pack"]
     },
     {
       "id": "sale_4",
-      "start_date": "2026-04-15",
-      "end_date": "2026-05-01",
+      "start_date": "15-04-2026",
+      "end_date": "01-05-2026",
       "packs": ["angelo_rules_pack", "in_the_night_garden_pack", "veggie_tails_pack"]
     },
     {
       "id": "sale_5",
-      "start_date": "2026-05-01",
-      "end_date": "2026-05-15",
+      "start_date": "01-05-2026",
+      "end_date": "15-05-2026",
       "packs": ["kungfu_evil_pack", "frozen_pack", "regular_show_pack"]
     },
     {
       "id": "sale_6",
-      "start_date": "2026-05-15",
-      "end_date": "2026-06-1",
+      "start_date": "15-05-2026",
+      "end_date": "01-06-2026",
       "packs": ["wreck_it_ralph_pack", "ratatouille_pack", "clarence_pack"]
     },
     {
       "id": "sale_7",
-      "start_date": "2026-06-1",
-      "end_date": "2026-06-15",
+      "start_date": "01-06-2026",
+      "end_date": "15-06-2026",
       "packs": ["adventure_time_2_pack", "teen_titans_go_pack", "flapjack_pack"]
     },
     {
       "id": "sale_8",
-      "start_date": "2026-06-15",
-      "end_date": "2026-07-01",
+      "start_date": "15-06-2026",
+      "end_date": "01-07-2026",
       "packs": ["over_the_garden_wall_pack", "chowder_pack", "courage_pack"]
     },
     {
       "id": "sale_9",
-      "start_date": "2026-07-01",
-      "end_date": "2026-07-15",
+      "start_date": "01-07-2026",
+      "end_date": "15-07-2026",
       "packs": ["steven_univers_pack", "uncle_grandpa_pack", "ed_edd_eddy_pack"]
     },
     {
       "id": "sale_10",
-      "start_date": "2026-07-15",
-      "end_date": "2026-08-1",
+      "start_date": "15-07-2026",
+      "end_date": "01-08-2026",
       "packs": ["lion_king_pack", "monsters_inc_pack", "httyd_dragons_pack"]
     },
     {
       "id": "sale_10.5",
-      "start_date": "2026-08-1",
-      "end_date": "2026-08-15",
+      "start_date": "01-08-2026",
+      "end_date": "15-08-2026",
       "packs": ["cars_2_pack", "pooh_pack"]
     },
     {
       "id": "sale_10",
-      "start_date": "2026-08-15",
-      "end_date": "2026-09-01",
+      "start_date": "15-08-2026",
+      "end_date": "01-09-2026",
       "packs": ["monsters_inc_university_pack", "penguins_of_madagascar_pack"]
     },
     {
       "id": "sale_11",
-      "start_date": "2026-09-01",
-      "end_date": "2026-09-15",
+      "start_date": "01-09-2026",
+      "end_date": "15-09-2026",
       "packs": ["monsters_inc_university_pack", "up_pack"]
     },
     {
       "id": "sale_12",
-      "start_date": "2026-09-15",
-      "end_date": "2026-10-01",
+      "start_date": "15-09-2026",
+      "end_date": "01-10-2026",
       "packs": ["monsters_inc_university_pack", "the_incredibles_pack"]
     },
     {
       "id": "sale_13",
-      "start_date": "2026-10-01",
-      "end_date": "2026-10-15",
+      "start_date": "01-10-2026",
+      "end_date": "15-10-2026",
       "packs": ["toy_story_pack", "despicable_me_pack"]
     },
     {
       "id": "sale_14",
-      "start_date": "2026-10-15",
-      "end_date": "2026-11-01",
+      "start_date": "15-10-2026",
+      "end_date": "01-11-2026",
       "packs": ["inside_out_pack", "kuzco_pack"]
     },
     {
       "id": "sale_15",
-      "start_date": "2026-11-01",
-      "end_date": "2026-11-15",
+      "start_date": "01-11-2026",
+      "end_date": "15-11-2026",
       "packs": ["zootopia_pack", "ice_age_pack"]
     },
     {
       "id": "sale_16",
-      "start_date": "2026-11-15",
-      "end_date": "2026-12-01",
+      "start_date": "15-11-2026",
+      "end_date": "01-12-2026",
       "packs": ["angry_birds_pack", "a_bug's_life_pack", "the_tuner_gang_pack"]
     },
     {
       "id": "sale_17",
-      "start_date": "2026-12-01",
-      "end_date": "2026-12-15",
+      "start_date": "01-12-2026",
+      "end_date": "15-12-2026",
       "packs": ["phineas_and_ferb_pack", "tom_and_jerry_pack", "bugs_bunny_pack"]
     },
     {
       "id": "sale_18",
-      "start_date": "2026-12-15",
-      "end_date": "2026-01-01",
+      "start_date": "15-12-2026",
+      "end_date": "01-01-2026",
       "packs": ["the_fairly_oddparents_pack", "onward_pack", "coco_pack"]
     },
     {
       "id": "sale_19",
-      "start_date": "2026-01-01",
-      "end_date": "2026-01-15",
+      "start_date": "01-01-2026",
+      "end_date": "15-01-2026",
       "packs": ["wall_e_pack", "moana_pack", "big_hero_six_pack"]
     }
   ]

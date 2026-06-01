@@ -1,5 +1,30 @@
 import { WasabiData, Member, Character, SportEvent, CraftingSet, PackSale } from './types';
 
+export function parseDate(dateStr: string): Date {
+  if (!dateStr || dateStr.toLowerCase() === 'none' || dateStr === '________') {
+    return new Date();
+  }
+  const cleaned = dateStr.trim();
+  const parts = cleaned.split(/[-/]/);
+  if (parts.length === 3) {
+    const p0 = parts[0];
+    const p1 = parts[1];
+    const p2 = parts[2];
+    if (p2.length === 4) {
+      const day = p0.padStart(2, '0');
+      const month = p1.padStart(2, '0');
+      const year = p2;
+      return new Date(`${year}-${month}-${day}`);
+    } else if (p0.length === 4) {
+      const year = p0;
+      const month = p1.padStart(2, '0');
+      const day = p2.padStart(2, '0');
+      return new Date(`${year}-${month}-${day}`);
+    }
+  }
+  return new Date(cleaned);
+}
+
 export function calculateLevel(exp: number): number {
   if (exp === 0) return 1;
   let level = 1, req = 0;
@@ -76,10 +101,10 @@ export function getGlobalRank(memberId: string, data: WasabiData): number {
 
 export function getActiveSportEvent(data: WasabiData, date: Date): SportEvent | undefined {
   return [...data.sportEvents]
-    .sort((a, b) => new Date(b.startDate).getTime() - new Date(a.startDate).getTime())
+    .sort((a, b) => parseDate(b.startDate).getTime() - parseDate(a.startDate).getTime())
     .find(event => {
-      const start = new Date(event.startDate);
-      const end = new Date(event.endDate);
+      const start = parseDate(event.startDate);
+      const end = parseDate(event.endDate);
       end.setHours(23, 59, 59, 999);
       return date >= start && date <= end && event.visible;
     });
@@ -88,21 +113,21 @@ export function getActiveSportEvent(data: WasabiData, date: Date): SportEvent | 
 export function getLastFinishedSportEvent(data: WasabiData, date: Date): SportEvent | undefined {
   const finished = data.sportEvents
     .filter(event => {
-      const end = new Date(event.endDate);
+      const end = parseDate(event.endDate);
       end.setHours(23, 59, 59, 999);
       return end < date && event.visible;
     })
-    .sort((a, b) => new Date(b.endDate).getTime() - new Date(a.endDate).getTime());
+    .sort((a, b) => parseDate(b.endDate).getTime() - parseDate(a.endDate).getTime());
   
   return finished[0];
 }
 
 export function getActiveCraftingSet(data: WasabiData, now: Date): CraftingSet | undefined {
   return [...data.crafting_sets]
-    .sort((a, b) => new Date(b.start_date).getTime() - new Date(a.start_date).getTime())
+    .sort((a, b) => parseDate(b.start_date).getTime() - parseDate(a.start_date).getTime())
     .find(set => {
-      const start = new Date(set.start_date);
-      const end = new Date(set.end_date);
+      const start = parseDate(set.start_date);
+      const end = parseDate(set.end_date);
       end.setHours(23, 59, 59, 999);
       return now >= start && now <= end;
     });
@@ -110,17 +135,17 @@ export function getActiveCraftingSet(data: WasabiData, now: Date): CraftingSet |
 
 export function getActivePackSale(data: WasabiData, now: Date): PackSale | undefined {
   return [...data.pack_sales]
-    .sort((a, b) => new Date(b.start_date).getTime() - new Date(a.start_date).getTime())
+    .sort((a, b) => parseDate(b.start_date).getTime() - parseDate(a.start_date).getTime())
     .find(sale => {
-      const start = new Date(sale.start_date);
-      const end = new Date(sale.end_date);
+      const start = parseDate(sale.start_date);
+      const end = parseDate(sale.end_date);
       end.setHours(23, 59, 59, 999);
       return now >= start && now <= end;
     });
 }
 
 export function getTimeRemaining(endDate: string, now: Date): string {
-  const end = new Date(endDate);
+  const end = parseDate(endDate);
   const diffMs = end.getTime() - now.getTime();
   if (diffMs <= 0) return "Expired";
 
@@ -138,7 +163,7 @@ export function getTimeRemaining(endDate: string, now: Date): string {
 }
 
 export function getProjectAge(startDate: string): string {
-  const start = new Date(startDate.split('-').reverse().join('-'));
+  const start = parseDate(startDate);
   const now = new Date("2026-03-11T08:34:22-07:00");
   const diffMs = now.getTime() - start.getTime();
   
@@ -161,7 +186,7 @@ export function getProjectAge(startDate: string): string {
 }
 
 export function getProjectTheme(startDate: string): { theme: string, visual: string } {
-  const start = new Date(startDate.split('-').reverse().join('-'));
+  const start = parseDate(startDate);
   const now = new Date("2026-03-11T08:34:22-07:00");
   const diffMs = now.getTime() - start.getTime();
   const days = diffMs / (1000 * 60 * 60 * 24);
@@ -183,9 +208,29 @@ export function formatDegree(degree: string): string {
 }
 
 export function calculateDaysRemaining(endDate: string, now: Date): number {
-  const end = new Date(endDate);
+  const end = parseDate(endDate);
   const diffMs = end.getTime() - now.getTime();
   return Math.max(0, Math.ceil(diffMs / (1000 * 60 * 60 * 24)));
+}
+
+export interface ProjectLimitInfo {
+  daysRemaining: number;
+  cyclesRemaining: number;
+  isLimited: boolean;
+}
+
+export function getProjectLimitInfo(project: { end_date?: string; endDate?: string }, now: Date): ProjectLimitInfo | null {
+  const endDateStr = project.endDate || project.end_date;
+  if (!endDateStr || endDateStr.toLowerCase() === 'none') {
+    return null;
+  }
+  const daysRemaining = calculateDaysRemaining(endDateStr, now);
+  const cyclesRemaining = Math.ceil(daysRemaining / 10);
+  return {
+    daysRemaining,
+    cyclesRemaining,
+    isLimited: true
+  };
 }
 
 export function getActiveCraftingRecipes(data: WasabiData, now: Date) {

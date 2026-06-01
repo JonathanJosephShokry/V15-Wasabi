@@ -96,6 +96,8 @@ export interface Project {
   rules?: string[];
   bonusSystem: { work: string; salary: number }[];
   difficulty: 'Easy' | 'Medium' | 'Hard' | 'Extreme';
+  end_date?: string;
+  endDate?: string;
 }
 
 export interface TeamShopItem {

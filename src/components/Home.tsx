@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { WasabiData, Team, Member, CraftingRecipe } from '../types';
 import { ArrowRight, Trophy as TrophyIcon, Medal, Clock, Plus, Zap, ExternalLink, GraduationCap, UserPlus } from 'lucide-react';
-import { getActiveSportEvent, getLastFinishedSportEvent, getActiveCraftingRecipes, calculateDaysRemaining, getActiveCraftingSet, getActivePackSale, getTimeRemaining, getMemberIcon } from '../utils';
+import { getActiveSportEvent, getLastFinishedSportEvent, getActiveCraftingRecipes, calculateDaysRemaining, getActiveCraftingSet, getActivePackSale, getTimeRemaining, getMemberIcon, parseDate } from '../utils';
 
 interface HomeProps {
   data: WasabiData;
@@ -261,7 +261,7 @@ export const Home: React.FC<HomeProps> = ({ data }) => {
                     <div className="flex flex-wrap gap-6 mb-8">
                       <div className="flex flex-col">
                         <span className="text-white/50 text-[10px] font-bold uppercase tracking-widest">Ends On</span>
-                        <span className="text-xl font-bold">{new Date(activeSport.endDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'long' })}</span>
+                        <span className="text-xl font-bold">{parseDate(activeSport.endDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'long' })}</span>
                       </div>
                       <div className="flex flex-col">
                         <span className="text-white/50 text-[10px] font-bold uppercase tracking-widest">Scoring Type</span>
@@ -284,7 +284,7 @@ export const Home: React.FC<HomeProps> = ({ data }) => {
                               {match.date && (
                                 <div className="mt-3 text-[10px] font-bold text-white/40 uppercase tracking-widest flex items-center gap-1.5">
                                   <Clock size={10} />
-                                  {new Date(match.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}
+                                  {parseDate(match.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}
                                 </div>
                               )}
                             </div>
