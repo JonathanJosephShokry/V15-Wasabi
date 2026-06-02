@@ -60,7 +60,7 @@
     "id": "member_haneen",
     "wabi":   39, "cycle_wabi":  0, "last_wabi":  39,
     "spice":  36, "cycle_spice": 0, "last_spice": 23,
-    "exp":    11, "restricted":  true
+    "exp":    11, "restricted":  false
   },
 
   {
@@ -95,7 +95,7 @@
     "id": "member_karim",
     "wabi":   45, "cycle_wabi":  0, "last_wabi":  45,
     "spice":   0, "cycle_spice": 0, "last_spice": 0,
-    "exp":     6, "restricted":  true
+    "exp":     6, "restricted":  false
   },
 
   {
@@ -158,7 +158,7 @@
     "id": "member_carla_walaa",
     "wabi":   19, "cycle_wabi":  0, "last_wabi":  17,
     "spice":   1, "cycle_spice": 0, "last_spice": 1,
-    "exp":     6, "restricted":  true
+    "exp":     6, "restricted":  false
   },
 
   {
@@ -228,7 +228,7 @@
     "id": "member_mina",
     "wabi":   33, "cycle_wabi":  0, "last_wabi":  33,
     "spice":   0, "cycle_spice": 0, "last_spice": 0,
-    "exp":    11, "restricted":  true
+    "exp":    11, "restricted":  false
   },
 
   {
@@ -249,7 +249,7 @@
     "id": "member_abanoub_mohsen",
     "wabi":    6, "cycle_wabi":  0, "last_wabi":  6,
     "spice":   0, "cycle_spice": 0, "last_spice": 0,
-    "exp":     4, "restricted":  true
+    "exp":     4, "restricted":  false
   },
 
   {
@@ -294,7 +294,7 @@
     },
     {
       "id": "proj-bible1.2",
-      "members": ["member_jonathan_joseph", "member_venus", "member_chris_ramy", "member_peter_boshra", "member_julie", "member_andrea", "member_jonathan_john", "member_daniel_rafik", "member_marette", "member_mai_hassaan", "member_miracle_ramy"]
+      "members": ["member_jonathan_joseph", "member_venus", "member_chris_ramy", "member_peter_boshra", "member_julie", "member_andrea", "member_jonathan_john", "member_daniel_rafik", "member_mai_hassaan", "member_miracle_ramy"]
     },
     {
       "id": "proj-bible2",
@@ -306,27 +306,23 @@
     },
     {
       "id": "proj-habits",
-      "members": ["member_peter_boshra", "member_jonathan_joseph", "member_mina", "member_philip", "member_chris_ramy", "member_yasmine", "member_samih_nasser", "member_yana", "member_daniel_walaa", "member_joren", "member_karen", "member_mannuel"]
+      "members": ["member_peter_boshra", "member_jonathan_joseph", "member_philip", "member_chris_ramy", "member_yasmine", "member_samih_nasser", "member_yana", "member_daniel_walaa", "member_joren", "member_karen", "member_mannuel", "member_lydia_rafik_youssef", "member_david_nasser", "member_karim"]
     },
     {
       "id": "proj-hidden_in_my_heart",
-      "members": ["member_jonathan_joseph", "member_chris_ramy", "member_daniel_walaa"]
+      "members": ["member_jonathan_joseph", "member_chris_ramy", "member_daniel_walaa", "member_yana", "member_joren"]
     },
     {
       "id": "proj-study",
-      "members": ["member_yana", "member_karen", "member_jonathan_joseph", "member_haneen", "member_philip", "member_yasmine", "member_mannuel", "member_david_michael"]
-    },
-    {
-      "id": "proj-study2",
-      "members": ["member_jonathan_joseph", "member_yassa"]
+      "members": ["member_karen", "member_jonathan_joseph", "member_haneen", "member_yasmine", "member_david_michael", "member_joren", "member_carla_walaa"]
     },
     {
       "id": "proj-languages",
-      "members": ["member_joren", "member_philip", "member_jonathan_joseph", "member_daniel_walaa", "member_david_nasser"]
+      "members": ["member_joren", "member_philip", "member_jonathan_joseph", "member_david_nasser"]
     },
     {
       "id": "book_club",
-      "members": ["member_samih_nasser", "member_carla_walaa", "member_philip", "member_chris_ramy", "member_jonathan_joseph", "member_lydia_rafik_youssef"]
+      "members": ["member_joren", "member_carla_walaa", "member_philip", "member_chris_ramy", "member_jonathan_joseph", "member_lydia_rafik_youssef", "member_yana", "member_venus", "member_mannuel", "member_jenny_john", "member_david_michael"]
     },
     {
       "id": "tasbe7",

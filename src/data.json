@@ -1,5 +1,5 @@
 {
-  "version": "V61",
+  "version": "V63",
   "wasabiRulesLink": "https://docs.google.com/document/d/1SfoDRQbWs7yBSIc6YOW61q7s3s4s-D5OP9TCz7zFO30/edit?usp=sharing",
   "cardConfig": {
     "rarityScores": { "common": 2, "rare": 3, "epic": 6, "legendary": 20, "never": 1000 },
@@ -1481,6 +1481,7 @@
         { "characterId": "emile", "degree": "gold", "count": 1, "state": "profile"},
         { "characterId": "craboo", "degree": "iron", "count": 1, "state": "fav"},
         { "characterId": "sally", "degree": "iron", "count": 1, "state": "fav"},
+        { "characterId": "makka_pakka", "degree": "iron", "count": 1, "state": "fav"},
         { "characterId": "marlin", "degree": "bronze", "count": 1 },
         { "characterId": "bmo", "degree": "iron", "count": 1 },
         { "characterId": "spongebob", "degree": "iron", "count": 1 },
@@ -1491,7 +1492,6 @@
         { "characterId": "madame_blueberyy", "degree": "iron", "count": 1 },
         { "characterId": "igglepiggle", "degree": "iron", "count": 1 },
         { "characterId": "upsy_daisy", "degree": "silver", "count": 1 },
-        { "characterId": "makka_pakka", "degree": "iron", "count": 1 },
         { "characterId": "larry_the_cucumber", "degree": "iron", "count": 1 },
         { "characterId": "larry_the_cucumber", "degree": "bronze", "count": 1 },
         { "characterId": "junior", "degree": "iron", "count": 1 },
@@ -1539,18 +1539,13 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [
-        { "characterId": "remy", "degree": "bronze", "count": 1, "state": "profile" },
+        { "characterId": "remy", "degree": "silver", "count": 1, "state": "profile" },
         { "characterId": "horst", "degree": "silver", "count": 1 },
-        { "characterId": "skinner", "degree": "iron", "count": 1 },
-        { "characterId": "skinner", "degree": "silver", "count": 1 },
-        { "characterId": "colette", "degree": "bronze", "count": 1 },
         { "characterId": "shen", "degree": "silver", "count": 1 },
         { "characterId": "kai", "degree": "iron", "count": 1 },
-        { "characterId": "sarge", "degree": "silver", "count": 1 },
         { "characterId": "pu", "degree": "silver", "count": 1 },
         { "characterId": "upsy_daisy", "degree": "pearl", "count": 1 },
         { "characterId": "makka_pakka", "degree": "silver", "count": 1 },
-        { "characterId": "monkey", "degree": "iron", "count": 1 },
         { "characterId": "rare_token", "degree": "iron", "count": 2 },
         { "characterId": "common_token", "degree": "iron", "count": 2 }
       ],
@@ -1591,15 +1586,15 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [
-        { "characterId": "chicken", "degree": "iron", "count": 1, "state": "profile" },
+        { "characterId": "chicken", "degree": "iron", "count": 1},
         { "characterId": "olaf", "degree": "iron", "count": 1 },
-        { "characterId": "crush", "degree": "iron", "count": 1 },
         { "characterId": "linguini", "degree": "iron", "count": 1 },
         { "characterId": "colette", "degree": "iron", "count": 1 },
         { "characterId": "git", "degree": "iron", "count": 1 },
         { "characterId": "kristoff", "degree": "silver", "count": 1 },
         { "characterId": "sven", "degree": "iron", "count": 1 },
         { "characterId": "junior", "degree": "iron", "count": 1 },
+        { "characterId": "skinner", "degree": "silver", "count": 1, "state": "profile"},
         { "characterId": "skinner", "degree": "iron", "count": 1 },
         { "characterId": "common_token", "degree": "iron", "count": 3 },
         { "characterId": "common_token", "degree": "bronze", "count": 4 },
@@ -1624,10 +1619,12 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [
+        { "characterId": "skinner", "degree": "iron", "count": 1 },
+        { "characterId": "crush", "degree": "iron", "count": 1 },
+        { "characterId": "monkey", "degree": "iron", "count": 1 },
         { "characterId": "shen", "degree": "pearl", "count": 1, "state": "profile" },
         { "characterId": "chameleon", "degree": "silver", "count": 1 },
         { "characterId": "muscleman", "degree": "iron", "count": 1 },
-        { "characterId": "remy", "degree": "iron", "count": 1 },
         { "characterId": "upsy_daisy", "degree": "iron", "count": 1 },
         { "characterId": "rare_token", "degree": "iron", "count": 1 },
         { "characterId": "common_token", "degree": "bronze", "count": 2 }
@@ -1743,7 +1740,8 @@
       "role": "normal",
       "collection": [
         { "characterId": "horst", "degree": "iron", "count": 1, "state": "none" },
-        { "characterId": "remy", "degree": "iron", "count": 1 },
+        { "characterId": "colette", "degree": "bronze", "count": 1, "state": "profile"},
+        { "characterId": "sarge", "degree": "silver", "count": 1 },
         { "characterId": "rare_token", "degree": "iron", "count": 2 },
         { "characterId": "common_token", "degree": "bronze", "count": 3 }
       ],
@@ -2018,33 +2016,6 @@
       "difficulty": "Medium"
     },
     {
-      "id": "proj-study2",
-      "teamId": "team1",
-      "name": "Hanenga7",
-      "description": "Acedemic study on a timer app for college students",
-      "minimumWork": "Study 3 hours",
-      "baseSalary": 1,
-      "currency": "spice",
-      "startDate": "01-03-2026",
-      "active": true,
-      "projectManagerId": "member_yassa",
-      "maxMembers": 14,
-      "rules": ["Use a timer app to track study sessions.", "Any focused study time is counted", "Minimum 3 hours per 10-day cycle."],
-      "bonusSystem": [
-        { "work": "5 hours", "salary": 2 },
-        { "work": "10 hours", "salary": 4 },
-        { "work": "15 hours", "salary": 6 },
-        { "work": "20 hours", "salary": 10 },
-        { "work": "25 hours", "salary": 12 },
-        { "work": "30 hours", "salary": 15 },
-        { "work": "35 hours", "salary": 17 },
-        { "work": "40 hours", "salary": 20 },
-        { "work": "45 hours", "salary": 22 },
-        { "work": "50 hours", "salary": 25 }
-      ],
-      "difficulty": "Medium"
-    },
-    {
       "id": "proj-languages",
       "teamId": "team1",
       "name": "Languages",
@@ -2074,7 +2045,7 @@
       "baseSalary": 1,
       "startDate": "14-04-2026",
       "active": true,
-      "projectManagerId": "member_samih_nasser",
+      "projectManagerId": "member_jonathan_joseph",
       "maxMembers": 14,
       "rules": [],
       "bonusSystem": [
