@@ -1,5 +1,5 @@
 {
-  "version": "V63",
+  "version": "V64",
   "wasabiRulesLink": "https://docs.google.com/document/d/1SfoDRQbWs7yBSIc6YOW61q7s3s4s-D5OP9TCz7zFO30/edit?usp=sharing",
   "cardConfig": {
     "rarityScores": { "common": 2, "rare": 3, "epic": 6, "legendary": 20, "never": 1000 },
@@ -26,6 +26,76 @@
       "rarity": "________",
       "packageId": "________",
       "images": { "iron": "________", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "gregory",
+      "name": "Gregory",
+      "rarity": "common",
+      "packageId": "over_the_garden_wall_pack",
+      "images": { "iron": "gregory10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "wirt",
+      "name": "Wirt",
+      "rarity": "rare",
+      "packageId": "over_the_garden_wall_pack",
+      "images": { "iron": "wirt10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "beatrice",
+      "name": "Beatrice",
+      "rarity": "epic",
+      "packageId": "over_the_garden_wall_pack",
+      "images": { "iron": "beatrice10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "woodsman",
+      "name": "Woodsman",
+      "rarity": "legendary",
+      "packageId": "over_the_garden_wall_pack",
+      "images": { "iron": "woodsman10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "beast",
+      "name": "Beast",
+      "rarity": "never",
+      "packageId": "over_the_garden_wall_pack",
+      "images": { "iron": "beast10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "mung_daal",
+      "name": "Mung Daal",
+      "rarity": "common",
+      "packageId": "chowder_pack",
+      "images": { "iron": "mung_daal10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "gazpacho",
+      "name": "Gazpacho",
+      "rarity": "rare",
+      "packageId": "chowder_pack",
+      "images": { "iron": "gazpacho10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+        {
+      "id": "chowder",
+      "name": "Chowder",
+      "rarity": "epic",
+      "packageId": "chowder_pack",
+      "images": { "iron": "chowder10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+        {
+      "id": "shnitzel",
+      "name": "Shnitzel",
+      "rarity": "legendary",
+      "packageId": "chowder_pack",
+      "images": { "iron": "shnitzel10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "meanie_cream_cake",
+      "name": "Meanie Cream Cake",
+      "rarity": "never",
+      "packageId": "chowder_pack",
+      "images": { "iron": "meanie_cream_cake10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
     },
     {
       "id": "flapjack",
@@ -1490,14 +1560,11 @@
         { "characterId": "luca", "degree": "bronze", "count": 1 },
         { "characterId": "tuffnut", "degree": "iron", "count": 1 },
         { "characterId": "madame_blueberyy", "degree": "iron", "count": 1 },
-        { "characterId": "igglepiggle", "degree": "iron", "count": 1 },
         { "characterId": "upsy_daisy", "degree": "silver", "count": 1 },
         { "characterId": "larry_the_cucumber", "degree": "iron", "count": 1 },
-        { "characterId": "larry_the_cucumber", "degree": "bronze", "count": 1 },
         { "characterId": "junior", "degree": "iron", "count": 1 },
         { "characterId": "petunia", "degree": "bronze", "count": 1 },
         { "characterId": "petunia", "degree": "iron", "count": 1 },
-        { "characterId": "jimmy", "degree": "iron", "count": 1 },
         { "characterId": "jerry", "degree": "iron", "count": 1 },
         { "characterId": "summer", "degree": "iron", "count": 1 },
         { "characterId": "qbert", "degree": "iron", "count": 1 }
@@ -1596,6 +1663,9 @@
         { "characterId": "junior", "degree": "iron", "count": 1 },
         { "characterId": "skinner", "degree": "silver", "count": 1, "state": "profile"},
         { "characterId": "skinner", "degree": "iron", "count": 1 },
+        { "characterId": "jimmy", "degree": "iron", "count": 1 },
+        { "characterId": "larry_the_cucumber", "degree": "bronze", "count": 1 },
+        { "characterId": "igglepiggle", "degree": "iron", "count": 1 },
         { "characterId": "common_token", "degree": "iron", "count": 3 },
         { "characterId": "common_token", "degree": "bronze", "count": 4 },
         { "characterId": "rare_token", "degree": "iron", "count": 2 }
@@ -1778,7 +1848,9 @@
       "name": "Andrea",
       "teamId": "team1",
       "role": "normal",
-      "collection": [],
+      "collection": [
+        { "characterId": "beast_boy", "degree": "iron", "count": 1, "state": "profile" },
+        { "characterId": "cyborg", "degree": "iron", "count": 1, "state": "none" }],
       "sportEventScore": 0
     },
     {
@@ -1789,6 +1861,7 @@
       "collection": [
         { "characterId": "sumo", "degree": "iron", "count": 1, "state": "none" },
         { "characterId": "horst", "degree": "iron", "count": 1, "state": "none" },
+        { "characterId": "beast_boy", "degree": "iron", "count": 1, "state": "none" },
         { "characterId": "common_token", "degree": "iron", "count": 1 }
       ],
       "sportEventScore": 0
@@ -2126,9 +2199,7 @@
     { "id": "tss-1.1", "teamId": "team1", "name": "El Barak Free Meal 1/2", "image": "ElBaraka.jpg", "wabiCost": 306, "description": "Good food" },
     { "id": "tss-2.1", "teamId": "team1", "name": "El Wahsh Free Meal Single", "image": "ElWahsh.jpg", "wabiCost": 240, "description": "Good food" },
     { "id": "tss-2.2", "teamId": "team1", "name": "El Wahsh Free Meal Double", "image": "ElWahsh.jpg", "wabiCost": 300, "description": "Good food" },
-    { "id": "tss-3", "teamId": "team1", "name": "Free Padel!", "image": "Padel.jpg", "wabiCost": 96, "description": "Good sport" },
-    { "id": "tss-4", "teamId": "team1", "name": "Wasabi Minecraft Monthly Supscriptions", "image": "minecraft_banner.jpg", "wabiCost": 10, "description": "Good game" },
-    { "id": "tss-5", "teamId": "team2", "name": "Wasabi Minecraft Monthly Supscriptions", "image": "minecraft_banner.jpg", "wabiCost": 10, "description": "Good game" }
+    { "id": "tss-3", "teamId": "team1", "name": "Free Padel!", "image": "Padel.jpg", "wabiCost": 96, "description": "Good sport" }
   ],
   "sportEvents": [
     {
@@ -2161,7 +2232,7 @@
       "upcomingMatches": [
         { "id": "match_1", "team1": "Jonathan", "team2": "Dani", "active": true, "date": "30-04-2026" },
         { "id": "match_2", "team1": "Samih", "team2": "Karen", "active": true, "date": "30-04-2026" },
-        { "id": "match_3", "team1": "Daniel", "team2": "Yanna", "active": true, "date": "30-04-2026" },
+        { "id": "match_3", "team1": "Daniel", "team2": "Yana", "active": true, "date": "30-04-2026" },
         { "id": "match_4", "team1": "Chris", "team2": "Mannuel", "active": true, "date": "30-04-2026" },
         { "id": "match_5", "team1": "Philo", "team2": "Karim", "active": true, "date": "30-04-2026" }
       ],
@@ -2571,19 +2642,31 @@
     },
     {
       "packageId": "over_the_garden_wall_pack",
-      "name": "NA",
-      "banner": "na.jpg",
+      "name": "Over The Garden Wall",
+      "banner": "over_the_garden_wall_banner.jpg",
       "score": 7,
       "cost": { "wabi": 10, "spice": 7 },
-      "outcomes": []
+      "outcomes": [
+        { "characterId": "gregory", "chance": "50%" },
+        { "characterId": "wirt", "chance": "30%" },
+        { "characterId": "beatrice", "chance": "15%" },
+        { "characterId": "woodsman", "chance": "4.9%" },
+        { "characterId": "beast", "chance": "0.1%" }
+      ]
     },
     {
       "packageId": "chowder_pack",
-      "name": "NA",
-      "banner": "na.jpg",
+      "name": "Chowder",
+      "banner": "chowder_banner.jpg",
       "score": 6,
       "cost": { "wabi": 9, "spice": 6 },
-      "outcomes": []
+      "outcomes": [
+        { "characterId": "mung_daal", "chance": "50%" },
+        { "characterId": "gazpacho", "chance": "30%" },
+        { "characterId": "chowder", "chance": "15%" },
+        { "characterId": "shnitzel", "chance": "4.9%" },
+        { "characterId": "meanie_cream_cake", "chance": "0.1%" }
+      ]
     },
     {
       "packageId": "courage_pack",
