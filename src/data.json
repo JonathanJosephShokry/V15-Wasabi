@@ -1,5 +1,5 @@
 {
-  "version": "V64",
+  "version": "V66",
   "wasabiRulesLink": "https://docs.google.com/document/d/1SfoDRQbWs7yBSIc6YOW61q7s3s4s-D5OP9TCz7zFO30/edit?usp=sharing",
   "cardConfig": {
     "rarityScores": { "common": 2, "rare": 3, "epic": 6, "legendary": 20, "never": 1000 },
@@ -1476,6 +1476,7 @@
         { "characterId": "manetti", "degree": "iron", "count": 1, "state": "trade"},
         { "characterId": "skinner", "degree": "bronze", "count": 1, "state": "trade"},
         { "characterId": "igglepiggle", "degree": "bronze", "count": 1, "state": "trade" },
+        { "characterId": "rare_token", "degree": "iron", "count": 1, "state": "trade" },
         { "characterId": "common_token", "degree": "bronze", "count": 1, "state": "trade" }
       ],
       "sportEventScore": 0
@@ -1528,7 +1529,7 @@
         { "characterId": "david", "degree": "iron", "count": 1 },
         { "characterId": "sherwood_forrest", "degree": "iron", "count": 1 },
         { "characterId": "larry_the_cucumber", "degree": "iron", "count": 1 },
-        { "characterId": "common_token", "degree": "bronze", "count": 1 }
+        { "characterId": "common_token", "degree": "bronze", "count": 2 }
       ],
       "sportEventScore": 0
     },
@@ -1567,7 +1568,9 @@
         { "characterId": "petunia", "degree": "iron", "count": 1 },
         { "characterId": "jerry", "degree": "iron", "count": 1 },
         { "characterId": "summer", "degree": "iron", "count": 1 },
-        { "characterId": "qbert", "degree": "iron", "count": 1 }
+        { "characterId": "qbert", "degree": "iron", "count": 1 },
+        { "characterId": "common_token", "degree": "iron", "count": 1 },
+        { "characterId": "rare_token", "degree": "iron", "count": 1 }
       ],
       "sportEventScore": 0
     },
@@ -1613,7 +1616,7 @@
         { "characterId": "pu", "degree": "silver", "count": 1 },
         { "characterId": "upsy_daisy", "degree": "pearl", "count": 1 },
         { "characterId": "makka_pakka", "degree": "silver", "count": 1 },
-        { "characterId": "rare_token", "degree": "iron", "count": 2 },
+        { "characterId": "rare_token", "degree": "iron", "count": 3 },
         { "characterId": "common_token", "degree": "iron", "count": 2 }
       ],
       "sportEventScore": 0
@@ -1631,6 +1634,7 @@
         { "characterId": "git", "degree": "silver", "count": 1, "state": "none" },
         { "characterId": "django", "degree": "iron", "count": 1 },
         { "characterId": "joey", "degree": "iron", "count": 1 },
+        { "characterId": "rare_token", "degree": "iron", "count": 1 },
         { "characterId": "common_token", "degree": "bronze", "count": 6 },
         { "characterId": "common_token", "degree": "iron", "count": 1 }
       ],
@@ -1666,9 +1670,9 @@
         { "characterId": "jimmy", "degree": "iron", "count": 1 },
         { "characterId": "larry_the_cucumber", "degree": "bronze", "count": 1 },
         { "characterId": "igglepiggle", "degree": "iron", "count": 1 },
-        { "characterId": "common_token", "degree": "iron", "count": 3 },
+        { "characterId": "common_token", "degree": "iron", "count": 4 },
         { "characterId": "common_token", "degree": "bronze", "count": 4 },
-        { "characterId": "rare_token", "degree": "iron", "count": 2 }
+        { "characterId": "rare_token", "degree": "iron", "count": 4 }
       ],
       "sportEventScore": 0
     },
@@ -1696,8 +1700,8 @@
         { "characterId": "chameleon", "degree": "silver", "count": 1 },
         { "characterId": "muscleman", "degree": "iron", "count": 1 },
         { "characterId": "upsy_daisy", "degree": "iron", "count": 1 },
-        { "characterId": "rare_token", "degree": "iron", "count": 1 },
-        { "characterId": "common_token", "degree": "bronze", "count": 2 }
+        { "characterId": "rare_token", "degree": "iron", "count": 2 },
+        { "characterId": "common_token", "degree": "bronze", "count": 3 }
       ],
       "sportEventScore": 0
     },
@@ -1741,7 +1745,7 @@
         { "characterId": "anton_ego", "degree": "iron", "count": 1 },
         { "characterId": "common_token", "degree": "iron", "count": 1 },
         { "characterId": "common_token", "degree": "bronze", "count": 2 },
-        { "characterId": "rare_token", "degree": "iron", "count": 4 }
+        { "characterId": "rare_token", "degree": "iron", "count": 6 }
       ],
       "sportEventScore": 0
     },
@@ -1759,7 +1763,7 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [
-        { "characterId": "rare_token", "degree": "iron", "count": 5, "state": "none" },
+        { "characterId": "rare_token", "degree": "iron", "count": 6, "state": "none" },
         { "characterId": "common_token", "degree": "bronze", "count": 2 }
       ],
       "sportEventScore": 0
@@ -1781,7 +1785,8 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [
-        { "characterId": "junior", "degree": "bronze", "count": 1, "state": "profile" }
+        { "characterId": "junior", "degree": "bronze", "count": 1, "state": "profile" },
+        { "characterId": "common_token", "degree": "iron", "count": 1}
       ],
       "sportEventScore": 0
     },
@@ -1812,8 +1817,8 @@
         { "characterId": "horst", "degree": "iron", "count": 1, "state": "none" },
         { "characterId": "colette", "degree": "bronze", "count": 1, "state": "profile"},
         { "characterId": "sarge", "degree": "silver", "count": 1 },
-        { "characterId": "rare_token", "degree": "iron", "count": 2 },
-        { "characterId": "common_token", "degree": "bronze", "count": 3 }
+        { "characterId": "rare_token", "degree": "iron", "count": 3 },
+        { "characterId": "common_token", "degree": "bronze", "count": 4 }
       ],
       "sportEventScore": 0
     },
@@ -1839,7 +1844,8 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [
-        { "characterId": "rare_token", "degree": "iron", "count": 1, "state": "none" }
+        { "characterId": "common_token", "degree": "bronze", "count": 1},
+        { "characterId": "rare_token", "degree": "iron", "count": 1}
       ],
       "sportEventScore": 0
     },
@@ -1879,7 +1885,7 @@
       "name": "Mina",
       "teamId": "team2",
       "role": "leader",
-      "collection": [],
+      "collection": [{ "characterId": "chloe", "degree": "iron", "count": 1, "state": "profile" }],
       "sportEventScore": 0
     },
     {
@@ -1887,7 +1893,9 @@
       "name": "Lucas",
       "teamId": "team2",
       "role": "normal",
-      "collection": [],
+      "collection": [
+
+      ],
       "sportEventScore": 0
     },
     {
@@ -1911,7 +1919,7 @@
       "name": "Bassem",
       "teamId": "team2",
       "role": "normal",
-      "collection": [],
+      "collection": [{ "characterId": "panda", "degree": "iron", "count": 1, "state": "profile" }],
       "sportEventScore": 0
     },
     {
@@ -2020,22 +2028,22 @@
       "teamId": "team1",
       "name": "Habits",
       "description": "Daily habit tracking and accountability",
-      "minimumWork": "Send 1 habit",
-      "baseSalary": 1,
+      "minimumWork": "Send 10 habit",
+      "baseSalary": 2,
       "currency": "wabi",
       "startDate": "12-10-2025",
       "active": true,
       "projectManagerId": "member_peter_boshra",
       "maxMembers": 14,
-      "rules": ["Have a habit tracker app", "Pick 8 habtis that you consider challengeing, make sure they are quantifiable", "Pick only 2 habits that can be done more than once per day up to 3 times", "Send 1 screen shot of your habit tracker once per cycle", "Miss 10 days in a cycle and you are out", "You can only one negative habit (Not doing something)"],
+      "rules": ["Have a habit tracker app", "Pick 8 habtis that you consider challengeing, make sure they are quantifiable", "Pick only 2 habits that can be done more than once per day up to 3 times", "Send 1 screen shot of your habit tracker once per cycle", "Miss 10 days in a cycle and you are out", "You can only one negative habit (Not doing something)", "If you didn't send a screenshot you will be capped at 40 habits"],
       "bonusSystem": [
-        { "work": "10 habits", "salary": 1 },
-        { "work": "20 habits", "salary": 3 },
-        { "work": "30 habits", "salary": 7 },
-        { "work": "40 habits", "salary": 9 },
-        { "work": "50 habits", "salary": 12 },
-        { "work": "60 habits", "salary": 16 },
-        { "work": "70 habits", "salary": 19 }
+        { "work": "20 habits", "salary": 2 },
+        { "work": "30 habits", "salary": 6 },
+        { "work": "40 habits", "salary": 8 },
+        { "work": "50 habits", "salary": 11 },
+        { "work": "60 habits", "salary": 15 },
+        { "work": "70 habits", "salary": 18 },
+        { "work": "80 habits", "salary": 20 }
       ],
       "difficulty": "Easy"
     },
@@ -2130,7 +2138,11 @@
         { "work": "70 pages", "salary": 7 },
         { "work": "80 pages", "salary": 9 },
         { "work": "90 pages", "salary": 10 },
-        { "work": "100 pages", "salary": 11 }
+        { "work": "100 pages", "salary": 11 },
+        { "work": "200 pages", "salary": 12 },
+        { "work": "300 pages", "salary": 13 },
+        { "work": "400 pages", "salary": 14 },
+        { "work": "500 pages", "salary": 15 }
       ],
       "difficulty": "Easy"
     },
