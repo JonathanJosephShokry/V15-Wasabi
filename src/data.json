@@ -28,6 +28,153 @@
       "images": { "iron": "________", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
     },
     {
+      "id": "uncle_grandpa",
+      "name": "Uncle Grandpa",
+      "rarity": "common",
+      "packageId": "uncle_grandpa_pack",
+      "images": { "iron": "uncle_grandpa10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "pizza_steve",
+      "name": "Pizza Steve",
+      "rarity": "common",
+      "packageId": "uncle_grandpa_pack",
+      "images": { "iron": "pizza_steve10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "mr_gus",
+      "name": "Mr Gus",
+      "rarity": "common",
+      "packageId": "uncle_grandpa_pack",
+      "images": { "iron": "mr_gus.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "belly_bag",
+      "name": "Belly Bag",
+      "rarity": "rare",
+      "packageId": "uncle_grandpa_pack",
+      "images": { "iron": "belly_bag10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "giant_realistic_flying_tiger",
+      "name": "Giant Realistic Flying Tiger",
+      "rarity": "epic",
+      "packageId": "uncle_grandpa_pack",
+      "images": { "iron": "giant_realistic_flying_tiger10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "tiny_miracle",
+      "name": "Tiny Miracle",
+      "rarity": "legendary",
+      "packageId": "uncle_grandpa_pack",
+      "images": { "iron": "tiny_miracle10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "emperor_krell",
+      "name": "Emperor Krell",
+      "rarity": "never",
+      "packageId": "uncle_grandpa_pack",
+      "images": { "iron": "emperor_krell10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "steven_universe",
+      "name": "Steven Universe",
+      "rarity": "common",
+      "packageId": "steven_universe_pack",
+      "images": { "iron": "steven_universe10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "garnet",
+      "name": "Garnet",
+      "rarity": "common",
+      "packageId": "steven_universe_pack",
+      "images": { "iron": "garnet10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "amethyst",
+      "name": "Amethyst",
+      "rarity": "common",
+      "packageId": "steven_universe_pack",
+      "images": { "iron": "amethyst10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "pearl",
+      "name": "Pearl",
+      "rarity": "rare",
+      "packageId": "steven_universe_pack",
+      "images": { "iron": "pearl10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "peridot",
+      "name": "Peridot",
+      "rarity": "epic",
+      "packageId": "steven_universe_pack",
+      "images": { "iron": "peridot10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "lapis_lazuli",
+      "name": "Lapis Lazuli",
+      "rarity": "legendary",
+      "packageId": "steven_universe_pack",
+      "images": { "iron": "lapis_lazuli10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "white_diamond",
+      "name": "White Diamond",
+      "rarity": "never",
+      "packageId": "steven_universe_pack",
+      "images": { "iron": "white_diamond10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "ed",
+      "name": "Ed",
+      "rarity": "common",
+      "packageId": "ed_edd_eddy_pack",
+      "images": { "iron": "ed10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "edd",
+      "name": "Edd",
+      "rarity": "common",
+      "packageId": "ed_edd_eddy_pack",
+      "images": { "iron": "edd10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "eddy",
+      "name": "Eddy",
+      "rarity": "common",
+      "packageId": "ed_edd_eddy_pack",
+      "images": { "iron": "eddy10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "rolf",
+      "name": "Rolf",
+      "rarity": "rare",
+      "packageId": "ed_edd_eddy_pack",
+      "images": { "iron": "rolf10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "kevin",
+      "name": "Kevin",
+      "rarity": "epic",
+      "packageId": "ed_edd_eddy_pack",
+      "images": { "iron": "kevin10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "plank",
+      "name": "Plank",
+      "rarity": "legendary",
+      "packageId": "ed_edd_eddy_pack",
+      "images": { "iron": "plank10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "eddy_brother",
+      "name": "Eddy's Brother",
+      "rarity": "never",
+      "packageId": "ed_edd_eddy_pack",
+      "images": { "iron": "eddy_brother10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
       "id": "gregory",
       "name": "Gregory",
       "rarity": "common",
@@ -1445,7 +1592,7 @@
         { "characterId": "burrito", "degree": "iron", "count": 1 },
         { "characterId": "junior", "degree": "iron", "count": 1 },
         { "characterId": "bob_the_tomato", "degree": "iron", "count": 1, "state": "profile" },
-        { "characterId": "common_token", "degree": "iron", "count": 2 }
+        { "characterId": "common_token", "degree": "iron", "count": 3 }
       ],
       "sportEventScore": 0
     },
@@ -1476,7 +1623,7 @@
         { "characterId": "manetti", "degree": "iron", "count": 1, "state": "trade"},
         { "characterId": "skinner", "degree": "bronze", "count": 1, "state": "trade"},
         { "characterId": "igglepiggle", "degree": "bronze", "count": 1, "state": "trade" },
-        { "characterId": "rare_token", "degree": "iron", "count": 1, "state": "trade" },
+        { "characterId": "rare_token", "degree": "iron", "count": 2, "state": "trade" },
         { "characterId": "common_token", "degree": "bronze", "count": 1, "state": "trade" }
       ],
       "sportEventScore": 0
@@ -1569,8 +1716,8 @@
         { "characterId": "jerry", "degree": "iron", "count": 1 },
         { "characterId": "summer", "degree": "iron", "count": 1 },
         { "characterId": "qbert", "degree": "iron", "count": 1 },
-        { "characterId": "common_token", "degree": "iron", "count": 1 },
-        { "characterId": "rare_token", "degree": "iron", "count": 1 }
+        { "characterId": "common_token", "degree": "iron", "count": 2 },
+        { "characterId": "rare_token", "degree": "iron", "count": 2 }
       ],
       "sportEventScore": 0
     },
@@ -1600,7 +1747,9 @@
       "name": "Nour",
       "teamId": "team1",
       "role": "normal",
-      "collection": [],
+      "collection": [
+        { "characterId": "common_token", "degree": "bronze", "count": 1 }
+      ],
       "sportEventScore": 0
     },
     {
@@ -1616,8 +1765,8 @@
         { "characterId": "pu", "degree": "silver", "count": 1 },
         { "characterId": "upsy_daisy", "degree": "pearl", "count": 1 },
         { "characterId": "makka_pakka", "degree": "silver", "count": 1 },
-        { "characterId": "rare_token", "degree": "iron", "count": 3 },
-        { "characterId": "common_token", "degree": "iron", "count": 2 }
+        { "characterId": "rare_token", "degree": "iron", "count": 4 },
+        { "characterId": "common_token", "degree": "iron", "count": 3 }
       ],
       "sportEventScore": 0
     },
@@ -1634,7 +1783,7 @@
         { "characterId": "git", "degree": "silver", "count": 1, "state": "none" },
         { "characterId": "django", "degree": "iron", "count": 1 },
         { "characterId": "joey", "degree": "iron", "count": 1 },
-        { "characterId": "rare_token", "degree": "iron", "count": 1 },
+        { "characterId": "rare_token", "degree": "iron", "count": 2 },
         { "characterId": "common_token", "degree": "bronze", "count": 6 },
         { "characterId": "common_token", "degree": "iron", "count": 1 }
       ],
@@ -1672,7 +1821,7 @@
         { "characterId": "igglepiggle", "degree": "iron", "count": 1 },
         { "characterId": "common_token", "degree": "iron", "count": 4 },
         { "characterId": "common_token", "degree": "bronze", "count": 4 },
-        { "characterId": "rare_token", "degree": "iron", "count": 4 }
+        { "characterId": "rare_token", "degree": "iron", "count": 6 }
       ],
       "sportEventScore": 0
     },
@@ -1700,7 +1849,7 @@
         { "characterId": "chameleon", "degree": "silver", "count": 1 },
         { "characterId": "muscleman", "degree": "iron", "count": 1 },
         { "characterId": "upsy_daisy", "degree": "iron", "count": 1 },
-        { "characterId": "rare_token", "degree": "iron", "count": 2 },
+        { "characterId": "rare_token", "degree": "iron", "count": 4 },
         { "characterId": "common_token", "degree": "bronze", "count": 3 }
       ],
       "sportEventScore": 0
@@ -1744,8 +1893,8 @@
         { "characterId": "sarge", "degree": "iron", "count": 1, "state": "none" },
         { "characterId": "anton_ego", "degree": "iron", "count": 1 },
         { "characterId": "common_token", "degree": "iron", "count": 1 },
-        { "characterId": "common_token", "degree": "bronze", "count": 2 },
-        { "characterId": "rare_token", "degree": "iron", "count": 6 }
+        { "characterId": "common_token", "degree": "bronze", "count": 3 },
+        { "characterId": "rare_token", "degree": "iron", "count": 7 }
       ],
       "sportEventScore": 0
     },
@@ -1763,7 +1912,7 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [
-        { "characterId": "rare_token", "degree": "iron", "count": 6, "state": "none" },
+        { "characterId": "rare_token", "degree": "iron", "count": 7, "state": "none" },
         { "characterId": "common_token", "degree": "bronze", "count": 2 }
       ],
       "sportEventScore": 0
@@ -1818,7 +1967,7 @@
         { "characterId": "colette", "degree": "bronze", "count": 1, "state": "profile"},
         { "characterId": "sarge", "degree": "silver", "count": 1 },
         { "characterId": "rare_token", "degree": "iron", "count": 3 },
-        { "characterId": "common_token", "degree": "bronze", "count": 4 }
+        { "characterId": "common_token", "degree": "bronze", "count": 6 }
       ],
       "sportEventScore": 0
     },
@@ -1868,7 +2017,7 @@
         { "characterId": "sumo", "degree": "iron", "count": 1, "state": "none" },
         { "characterId": "horst", "degree": "iron", "count": 1, "state": "none" },
         { "characterId": "beast_boy", "degree": "iron", "count": 1, "state": "none" },
-        { "characterId": "common_token", "degree": "iron", "count": 1 }
+        { "characterId": "common_token", "degree": "iron", "count": 2 }
       ],
       "sportEventScore": 0
     },
@@ -2207,11 +2356,11 @@
     { "spice": 35, "egp": 30, "highlight": false }
   ],
   "tss": [
-    { "id": "tss-1.1", "teamId": "team1", "name": "El Barak Free Meal 1/4", "image": "ElBaraka.jpg", "wabiCost": 216, "description": "Good food" },
-    { "id": "tss-1.1", "teamId": "team1", "name": "El Barak Free Meal 1/2", "image": "ElBaraka.jpg", "wabiCost": 306, "description": "Good food" },
-    { "id": "tss-2.1", "teamId": "team1", "name": "El Wahsh Free Meal Single", "image": "ElWahsh.jpg", "wabiCost": 240, "description": "Good food" },
-    { "id": "tss-2.2", "teamId": "team1", "name": "El Wahsh Free Meal Double", "image": "ElWahsh.jpg", "wabiCost": 300, "description": "Good food" },
-    { "id": "tss-3", "teamId": "team1", "name": "Free Padel!", "image": "Padel.jpg", "wabiCost": 96, "description": "Good sport" }
+    { "id": "tss-1.1", "teamId": "team1", "name": "El Barak Meal 1/4", "image": "ElBaraka.jpg", "wabiCost": 216, "description": "Good food" },
+    { "id": "tss-1.1", "teamId": "team1", "name": "El Barak Meal 1/2", "image": "ElBaraka.jpg", "wabiCost": 306, "description": "Good food" },
+    { "id": "tss-2.1", "teamId": "team1", "name": "El Wahsh Meal Single", "image": "ElWahsh.jpg", "wabiCost": 240, "description": "Good food" },
+    { "id": "tss-2.2", "teamId": "team1", "name": "El Wahsh Meal Double", "image": "ElWahsh.jpg", "wabiCost": 300, "description": "Good food" },
+    { "id": "tss-3", "teamId": "team1", "name": "Padel!", "image": "Padel.jpg", "wabiCost": 96, "description": "Good sport" }
   ],
   "sportEvents": [
     {
@@ -2696,28 +2845,52 @@
       ]
     },
     {
-      "packageId": "steven_univers_pack",
-      "name": "NA",
-      "banner": "na.jpg",
+      "packageId": "steven_universe_pack",
+      "name": "Steven Universe",
+      "banner": "steven_universe_banner.jpg",
       "score": 7,
       "cost": { "wabi": 10, "spice": 7 },
-      "outcomes": []
+      "outcomes": [
+        { "characterId": "steven_universe", "chance": "16%" },
+        { "characterId": "garnet", "chance": "16%" },
+        { "characterId": "amethyst", "chance": "16%" },
+        { "characterId": "pearl", "chance": "30%" },
+        { "characterId": "peridot", "chance": "15%" },
+        { "characterId": "lapis_lazuli", "chance": "6.9%" },
+        { "characterId": "white_diamond", "chance": "0.1%" }
+      ]
     },
     {
       "packageId": "uncle_grandpa_pack",
-      "name": "NA",
-      "banner": "na.jpg",
+      "name": "Uncle Grandpa",
+      "banner": "uncle_grandpa_banner.jpg",
       "score": 4,
       "cost": { "wabi": 6, "spice": 4 },
-      "outcomes": []
+      "outcomes": [
+        { "characterId": "uncle_grandpa", "chance": "16%" },
+        { "characterId": "pizza_steve", "chance": "16%" },
+        { "characterId": "mr_gus", "chance": "16%" },
+        { "characterId": "belly_bag", "chance": "30%" },
+        { "characterId": "giant_realistic_flying_tiger", "chance": "15%" },
+        { "characterId": "tiny_miracle", "chance": "6.9%" },
+        { "characterId": "emperor_krell", "chance": "0.1%" }
+      ]
     },
     {
       "packageId": "ed_edd_eddy_pack",
-      "name": "NA",
-      "banner": "na.jpg",
+      "name": "Ed Edd Eddy",
+      "banner": "ed-edd-eddy_banner.jpg",
       "score": 8,
       "cost": { "wabi": 16, "spice": 8 },
-      "outcomes": []
+      "outcomes": [
+        { "characterId": "ed", "chance": "16%" },
+        { "characterId": "edd", "chance": "16%" },
+        { "characterId": "eddy", "chance": "16%" },
+        { "characterId": "rolf", "chance": "30%" },
+        { "characterId": "kevin", "chance": "15%" },
+        { "characterId": "plank", "chance": "6.9%" },
+        { "characterId": "eddy_brother", "chance": "0.1%" }
+      ]
     },
     {
       "packageId": "lion_king_pack",
@@ -3085,7 +3258,7 @@
       "id": "sale_9",
       "start_date": "01-07-2026",
       "end_date": "15-07-2026",
-      "packs": ["steven_univers_pack", "uncle_grandpa_pack", "ed_edd_eddy_pack"]
+      "packs": ["steven_universe_pack", "uncle_grandpa_pack", "ed_edd_eddy_pack"]
     },
     {
       "id": "sale_10",
