@@ -1716,6 +1716,12 @@
         { "characterId": "jerry", "degree": "iron", "count": 1 },
         { "characterId": "summer", "degree": "iron", "count": 1 },
         { "characterId": "qbert", "degree": "iron", "count": 1 },
+
+        { "characterId": "peridot", "degree": "iron", "count": 1 },
+        { "characterId": "pearl", "degree": "iron", "count": 1 },
+        { "characterId": "steven_universe", "degree": "iron", "count": 1 },
+        { "characterId": "garnet", "degree": "iron", "count": 1 },
+
         { "characterId": "common_token", "degree": "iron", "count": 2 },
         { "characterId": "rare_token", "degree": "iron", "count": 2 }
       ],
@@ -1819,6 +1825,8 @@
         { "characterId": "jimmy", "degree": "iron", "count": 1 },
         { "characterId": "larry_the_cucumber", "degree": "bronze", "count": 1 },
         { "characterId": "igglepiggle", "degree": "iron", "count": 1 },
+        { "characterId": "pizza_steve", "degree": "bronze", "count": 1 },
+        { "characterId": "belly_bag", "degree": "bronze", "count": 1 },
         { "characterId": "common_token", "degree": "iron", "count": 4 },
         { "characterId": "common_token", "degree": "bronze", "count": 4 },
         { "characterId": "rare_token", "degree": "iron", "count": 6 }
@@ -2017,6 +2025,7 @@
         { "characterId": "sumo", "degree": "iron", "count": 1, "state": "none" },
         { "characterId": "horst", "degree": "iron", "count": 1, "state": "none" },
         { "characterId": "beast_boy", "degree": "iron", "count": 1, "state": "none" },
+        { "characterId": "mr_gus", "degree": "bronze", "count": 1, "state": "none" },
         { "characterId": "common_token", "degree": "iron", "count": 2 }
       ],
       "sportEventScore": 0
@@ -2334,6 +2343,27 @@
         { "work": "6 days", "salary": 5 },
         { "work": "8 days", "salary": 7 },
         { "work": "10 days", "salary": 9 }
+      ],
+      "difficulty": "Easy"
+    },
+    {
+      "id": "proj-chess",
+      "teamId": "team1",
+      "name": "Chess",
+      "description": "Learn Chess",
+      "minimumWork": "1 Lesson & 1 Game",
+      "baseSalary": 1,
+      "currency": "wabi",
+      "startDate": "15-05-2026",
+      "active": true,
+      "projectManagerId": "member_antony",
+      "maxMembers": 14,
+      "rules": ["..."],
+      "bonusSystem": [
+        { "work": "5 Lessons & 5 Games", "salary": 2 },
+        { "work": "10 Lessons & 10 Games", "salary": 4 },
+        { "work": "15 Lessons & 15 Games", "salary": 6 },
+        { "work": "20 Lessons & 20 Games", "salary": 8 }
       ],
       "difficulty": "Easy"
     }
