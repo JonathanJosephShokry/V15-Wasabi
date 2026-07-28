@@ -27,6 +27,136 @@
       "packageId": "________",
       "images": { "iron": "________", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
     },
+
+    {
+      "id": "pumbaa",
+      "name": "Pumbaa",
+      "rarity": "common",
+      "packageId": "lion_king_pack",
+      "images": { "iron": "pumpaa10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "timon",
+      "name": "Timon",
+      "rarity": "rare",
+      "packageId": "lion_king_pack",
+      "images": { "iron": "timon10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "scar",
+      "name": "Scar",
+      "rarity": "epic",
+      "packageId": "lion_king_pack",
+      "images": { "iron": "scar10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "simba",
+      "name": "Simba",
+      "rarity": "legendary",
+      "packageId": "lion_king_pack",
+      "images": { "iron": "simba10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "mufasa",
+      "name": "Mufasa",
+      "rarity": "never",
+      "packageId": "lion_king_pack",
+      "images": { "iron": "mufasa10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+
+    {
+      "id": "george_sanderson",
+      "name": "George Sanderson",
+      "rarity": "common",
+      "packageId": "monsters_inc_pack",
+      "images": { "iron": "george_sanderson10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "randall",
+      "name": "Randall",
+      "rarity": "rare",
+      "packageId": "monsters_inc_pack",
+      "images": { "iron": "randal10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "james_p_sullivan",
+      "name": "James P. Sullivan",
+      "rarity": "epic",
+      "packageId": "monsters_inc_pack",
+      "images": { "iron": "james_p_sullivan10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "mike_wazowski",
+      "name": "Mike Wazowski",
+      "rarity": "legendary",
+      "packageId": "monsters_inc_pack",
+      "images": { "iron": "mike_wazowski10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "henry_j_waternoose",
+      "name": "Henry J. Waternoose III",
+      "rarity": "never",
+      "packageId": "monsters_inc_pack",
+      "images": { "iron": "henry_j_waternoose10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+
+    {
+      "id": "terrible_terror",
+      "name": "Terrible Terror",
+      "rarity": "common",
+      "packageId": "httyd_dragons_pack",
+      "images": { "iron": "terrible_terror10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "meatlug",
+      "name": "Meatlug",
+      "rarity": "common",
+      "packageId": "httyd_dragons_pack",
+      "images": { "iron": "meatlug10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "barf_and_belch",
+      "name": "Barf and Belch",
+      "rarity": "rare",
+      "packageId": "httyd_dragons_pack",
+      "images": { "iron": "barf_and_belch10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "hookfang",
+      "name": "Hookfang",
+      "rarity": "rare",
+      "packageId": "httyd_dragons_pack",
+      "images": { "iron": "hookfang10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "thunderdrum",
+      "name": "Thunderdrum",
+      "rarity": "epic",
+      "packageId": "httyd_dragons_pack",
+      "images": { "iron": "thunderdrum10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "stormfly",
+      "name": "Stormfly",
+      "rarity": "epic",
+      "packageId": "httyd_dragons_pack",
+      "images": { "iron": "stormfly10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "toothless",
+      "name": "Toothless",
+      "rarity": "legendary",
+      "packageId": "httyd_dragons_pack",
+      "images": { "iron": "toothless10.jpg", "bronze": "________", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+    {
+      "id": "the_red_death",
+      "name": "The Red Death",
+      "rarity": "never",
+      "packageId": "httyd_dragons_pack",
+      "images": { "iron": "the_red_death10.jpg", "bronze": "the_red_death20.jpg", "silver": "________", "pearl": "________", "gold": "________", "jade": "________", "sapphire": "________", "ruby": "________", "emerald": "________", "diamond": "________" }
+    },
+
     {
       "id": "uncle_grandpa",
       "name": "Uncle Grandpa",
@@ -2358,7 +2488,7 @@
       "active": true,
       "projectManagerId": "member_antony",
       "maxMembers": 14,
-      "rules": ["..."],
+      "rules": ["...", ">>>"],
       "bonusSystem": [
         { "work": "5 Lessons & 5 Games", "salary": 2 },
         { "work": "10 Lessons & 10 Games", "salary": 4 },
@@ -2924,27 +3054,48 @@
     },
     {
       "packageId": "lion_king_pack",
-      "name": "NA",
-      "banner": "na.jpg",
+      "name": "The Lion King",
+      "banner": "lion_king_banner.jpg",
       "score": 10,
       "cost": { "wabi": 20, "spice": 10 },
-      "outcomes": []
+      "outcomes": [
+        { "characterId": "pumbaa", "chance": "50%" },
+        { "characterId": "timon", "chance": "30%" },
+        { "characterId": "scar", "chance": "15%" },
+        { "characterId": "simba", "chance": "4.9%" },
+        { "characterId": "mufasa", "chance": "0.1%" }
+      ]
     },
     {
       "packageId": "monsters_inc_pack",
-      "name": "NA",
-      "banner": "na.jpg",
+      "name": "Monsters Inc",
+      "banner": "monsters_inc_banner.jpg",
       "score": 9,
       "cost": { "wabi": 18, "spice": 9 },
-      "outcomes": []
+      "outcomes": [
+        { "characterId": "george_sanderson", "chance": "50%" },
+        { "characterId": "randall", "chance": "30%" },
+        { "characterId": "james_p_sullivan", "chance": "15%" },
+        { "characterId": "mike_wazowski", "chance": "4.9%" },
+        { "characterId": "henry_j_waternoose", "chance": "0.1%" }
+      ]
     },
     {
       "packageId": "httyd_dragons_pack",
-      "name": "NA",
-      "banner": "na.jpg",
+      "name": "HTTYD: Dragons",
+      "banner": "httyd_dragons_banner.jpg",
       "score": 7,
       "cost": { "wabi": 14, "spice": 7 },
-      "outcomes": []
+      "outcomes": [
+        { "characterId": "terrible_terror", "chance": "25%" },
+        { "characterId": "meatlug", "chance": "25%" },
+        { "characterId": "barf_and_belch", "chance": "15%" },
+        { "characterId": "hookfang", "chance": "15%" },
+        { "characterId": "thunderdrum", "chance": "7.5%" },
+        { "characterId": "stormfly", "chance": "7.5%" },
+        { "characterId": "toothless", "chance": "4.9%" },
+        { "characterId": "the_red_death", "chance": "0.1%" }
+      ]
     },
     {
       "packageId": "cars_2_pack",

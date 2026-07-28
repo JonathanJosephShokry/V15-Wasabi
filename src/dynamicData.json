@@ -576,6 +576,12 @@
         "member_daniel_walaa",
         "member_philip"
       ]
+    },
+    {
+      "id": "proj-chess",
+      "members": [
+        "member_philip"
+      ]
     }
   ]
 }
