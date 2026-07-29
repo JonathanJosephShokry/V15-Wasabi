@@ -3085,7 +3085,7 @@
       "name": "HTTYD: Dragons",
       "banner": "httyd_dragons_banner.jpg",
       "score": 7,
-      "cost": { "wabi": 14, "spice": 7 },
+      "cost": { "wabi": 12, "spice": 6 },
       "outcomes": [
         { "characterId": "terrible_terror", "chance": "25%" },
         { "characterId": "meatlug", "chance": "25%" },
