@@ -1753,6 +1753,13 @@
         { "characterId": "manetti", "degree": "iron", "count": 1, "state": "trade"},
         { "characterId": "skinner", "degree": "bronze", "count": 1, "state": "trade"},
         { "characterId": "igglepiggle", "degree": "bronze", "count": 1, "state": "trade" },
+
+        { "characterId": "george_sanderson", "degree": "pearl", "count": 1, "state": "none" },
+        { "characterId": "george_sanderson", "degree": "bronze", "count": 1, "state": "none" },
+        { "characterId": "george_sanderson", "degree": "iron", "count": 1, "state": "none" },
+        { "characterId": "james_p_sullivan", "degree": "bronze", "count": 1, "state": "none" },
+        { "characterId": "randall", "degree": "silver", "count": 1, "state": "none" },
+
         { "characterId": "rare_token", "degree": "iron", "count": 2, "state": "trade" },
         { "characterId": "common_token", "degree": "bronze", "count": 1, "state": "trade" }
       ],
@@ -1846,11 +1853,16 @@
         { "characterId": "jerry", "degree": "iron", "count": 1 },
         { "characterId": "summer", "degree": "iron", "count": 1 },
         { "characterId": "qbert", "degree": "iron", "count": 1 },
-
         { "characterId": "peridot", "degree": "iron", "count": 1 },
         { "characterId": "pearl", "degree": "iron", "count": 1 },
         { "characterId": "steven_universe", "degree": "iron", "count": 1 },
         { "characterId": "garnet", "degree": "iron", "count": 1 },
+
+        { "characterId": "terrible_terror", "degree": "bronze", "count": 1 },
+        { "characterId": "hookfang", "degree": "iron", "count": 1 },
+        { "characterId": "randall", "degree": "iron", "count": 1 },
+        { "characterId": "meatlug", "degree": "bronze", "count": 1 },
+        { "characterId": "barf_and_belch", "degree": "iron", "count": 1 },
 
         { "characterId": "common_token", "degree": "iron", "count": 2 },
         { "characterId": "rare_token", "degree": "iron", "count": 2 }
@@ -1901,6 +1913,19 @@
         { "characterId": "pu", "degree": "silver", "count": 1 },
         { "characterId": "upsy_daisy", "degree": "pearl", "count": 1 },
         { "characterId": "makka_pakka", "degree": "silver", "count": 1 },
+
+        { "characterId": "scar", "degree": "iron", "count": 1 },
+        { "characterId": "pumbaa", "degree": "iron", "count": 1 },
+        { "characterId": "pumbaa", "degree": "bronze", "count": 1 },
+        { "characterId": "timon", "degree": "bronze", "count": 1 },
+        { "characterId": "james_p_sullivan", "degree": "bronze", "count": 1 },
+        { "characterId": "mike_wazowski", "degree": "iron", "count": 1 },
+        { "characterId": "george_sanderson", "degree": "pearl", "count": 1 },
+        { "characterId": "george_sanderson", "degree": "bronze", "count": 1 },
+        { "characterId": "randall", "degree": "iron", "count": 1 },
+        { "characterId": "randall", "degree": "bronze", "count": 1 },
+        { "characterId": "randall", "degree": "silver", "count": 1 },
+
         { "characterId": "rare_token", "degree": "iron", "count": 4 },
         { "characterId": "common_token", "degree": "iron", "count": 3 }
       ],
@@ -1919,6 +1944,11 @@
         { "characterId": "git", "degree": "silver", "count": 1, "state": "none" },
         { "characterId": "django", "degree": "iron", "count": 1 },
         { "characterId": "joey", "degree": "iron", "count": 1 },
+
+        { "characterId": "terrible_terror", "degree": "iron", "count": 1 },
+        { "characterId": "scar", "degree": "iron", "count": 1 },
+        { "characterId": "pumbaa", "degree": "bronze", "count": 1 },
+
         { "characterId": "rare_token", "degree": "iron", "count": 2 },
         { "characterId": "common_token", "degree": "bronze", "count": 6 },
         { "characterId": "common_token", "degree": "iron", "count": 1 }
@@ -2004,6 +2034,11 @@
         { "characterId": "larry_the_cucumber", "degree": "silver", "count": 1 },
         { "characterId": "jimmy", "degree": "bronze", "count": 1 },
         { "characterId": "mr_lunt", "degree": "iron", "count": 1 },
+
+        { "characterId": "scar", "degree": "iron", "count": 1 },
+        { "characterId": "pumbaa", "degree": "bronze", "count": 1 },
+        { "characterId": "pumbaa", "degree": "iron", "count": 1 },
+
         { "characterId": "common_token", "degree": "bronze", "count": 2 },
         { "characterId": "common_token", "degree": "iron", "count": 4 }
       ],
@@ -2072,7 +2107,12 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [
+
         { "characterId": "junior", "degree": "bronze", "count": 1, "state": "profile" },
+
+        { "characterId": "timon", "degree": "iron", "count": 1},
+        { "characterId": "george_sanderson", "degree": "bronze", "count": 1},
+
         { "characterId": "common_token", "degree": "iron", "count": 1}
       ],
       "sportEventScore": 0
@@ -3444,7 +3484,7 @@
     {
       "id": "sale_10",
       "start_date": "15-07-2026",
-      "end_date": "01-08-2026",
+      "end_date": "01-08-2027",
       "packs": ["lion_king_pack", "monsters_inc_pack", "httyd_dragons_pack"]
     },
     {
