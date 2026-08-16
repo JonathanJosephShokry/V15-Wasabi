@@ -3484,31 +3484,31 @@
     {
       "id": "sale_10",
       "start_date": "15-07-2026",
-      "end_date": "01-08-2027",
+      "end_date": "01-10-2026",
       "packs": ["lion_king_pack", "monsters_inc_pack", "httyd_dragons_pack"]
     },
     {
       "id": "sale_10.5",
-      "start_date": "01-08-2026",
-      "end_date": "15-08-2026",
+      "start_date": "01-08-2028",
+      "end_date": "15-08-2028",
       "packs": ["cars_2_pack", "pooh_pack"]
     },
     {
       "id": "sale_10",
-      "start_date": "15-08-2026",
-      "end_date": "01-09-2026",
+      "start_date": "15-08-2028",
+      "end_date": "01-09-2028",
       "packs": ["monsters_inc_university_pack", "penguins_of_madagascar_pack"]
     },
     {
       "id": "sale_11",
-      "start_date": "01-09-2026",
-      "end_date": "15-09-2026",
+      "start_date": "01-09-2028",
+      "end_date": "15-09-2028",
       "packs": ["monsters_inc_university_pack", "up_pack"]
     },
     {
       "id": "sale_12",
-      "start_date": "15-09-2026",
-      "end_date": "01-10-2026",
+      "start_date": "15-09-2028",
+      "end_date": "01-10-2028",
       "packs": ["monsters_inc_university_pack", "the_incredibles_pack"]
     },
     {
