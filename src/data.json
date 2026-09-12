@@ -1754,8 +1754,11 @@
         { "characterId": "skinner", "degree": "bronze", "count": 1, "state": "trade"},
         { "characterId": "igglepiggle", "degree": "bronze", "count": 1, "state": "trade" },
 
+        { "characterId": "terrible_terror", "degree": "silver", "count": 1 },
+        { "characterId": "terrible_terror", "degree": "iron", "count": 1 },
+        { "characterId": "barf_and_belch", "degree": "iron", "count": 1 },
+
         { "characterId": "george_sanderson", "degree": "pearl", "count": 1, "state": "none" },
-        { "characterId": "george_sanderson", "degree": "silver", "count": 1, "state": "none" },
         { "characterId": "george_sanderson", "degree": "iron", "count": 1, "state": "none" },
         { "characterId": "james_p_sullivan", "degree": "bronze", "count": 1, "state": "none" },
         { "characterId": "james_p_sullivan", "degree": "iron", "count": 1, "state": "none" },
@@ -1860,11 +1863,12 @@
         { "characterId": "steven_universe", "degree": "iron", "count": 1 },
         { "characterId": "garnet", "degree": "iron", "count": 1 },
 
-        { "characterId": "terrible_terror", "degree": "bronze", "count": 1 },
-        { "characterId": "hookfang", "degree": "iron", "count": 1 },
-        { "characterId": "randall", "degree": "iron", "count": 1 },
+        { "characterId": "hookfang", "degree": "iron", "count": 3 },
         { "characterId": "meatlug", "degree": "bronze", "count": 1 },
-        { "characterId": "barf_and_belch", "degree": "iron", "count": 1 },
+        { "characterId": "meatlug", "degree": "iron", "count": 1 },
+        { "characterId": "stormfly", "degree": "bronze", "count": 1 },
+        { "characterId": "crush", "degree": "iron", "count": 1 },
+
 
         { "characterId": "common_token", "degree": "iron", "count": 2 },
         { "characterId": "rare_token", "degree": "iron", "count": 2 }
@@ -1976,13 +1980,13 @@
         { "characterId": "chicken", "degree": "iron", "count": 1},
         { "characterId": "olaf", "degree": "iron", "count": 1 },
         { "characterId": "linguini", "degree": "iron", "count": 1 },
-        { "characterId": "colette", "degree": "iron", "count": 1 },
         { "characterId": "git", "degree": "iron", "count": 1 },
         { "characterId": "kristoff", "degree": "silver", "count": 1 },
         { "characterId": "sven", "degree": "iron", "count": 1 },
         { "characterId": "junior", "degree": "iron", "count": 1 },
         { "characterId": "skinner", "degree": "silver", "count": 1, "state": "profile"},
-        { "characterId": "skinner", "degree": "iron", "count": 1 },
+        { "characterId": "skinner", "degree": "bronze", "count": 1 },
+
         { "characterId": "jimmy", "degree": "iron", "count": 1 },
         { "characterId": "larry_the_cucumber", "degree": "bronze", "count": 1 },
         { "characterId": "igglepiggle", "degree": "iron", "count": 1 },
@@ -2011,20 +2015,16 @@
       "teamId": "team1",
       "role": "normal",
       "collection": [
-        { "characterId": "skinner", "degree": "iron", "count": 1 },
-        { "characterId": "crush", "degree": "iron", "count": 1 },
         { "characterId": "monkey", "degree": "iron", "count": 1 },
         { "characterId": "shen", "degree": "pearl", "count": 1, "state": "profile" },
         { "characterId": "chameleon", "degree": "silver", "count": 1 },
         { "characterId": "muscleman", "degree": "iron", "count": 1 },
         { "characterId": "upsy_daisy", "degree": "iron", "count": 1 },
 
-        { "characterId": "george_sanderson", "degree": "pearl", "count": 1 },
-        { "characterId": "george_sanderson", "degree": "silver", "count": 1 },
+        { "characterId": "george_sanderson", "degree": "gold", "count": 1 },
         { "characterId": "james_p_sullivan", "degree": "bronze", "count": 1 },
-        { "characterId": "randall", "degree": "silver", "count": 1 },
-        { "characterId": "randall", "degree": "bronze", "count": 1 },
-        { "characterId": "randall", "degree": "iron", "count": 1 },
+        { "characterId": "randall", "degree": "pearl", "count": 1 },
+        { "characterId": "colette", "degree": "iron", "count": 1 },
 
         { "characterId": "rare_token", "degree": "iron", "count": 4 },
         { "characterId": "common_token", "degree": "bronze", "count": 3 }
@@ -2422,7 +2422,7 @@
       "baseSalary": 1,
       "currency": "spice",
       "startDate": "01-03-2026",
-      "end_date": "01-07-2026",
+      "end_date": "01-07-2027",
       "active": true,
       "projectManagerId": "member_jonathan_joseph",
       "maxMembers": 14,
@@ -2553,6 +2553,25 @@
         { "work": "20 Lessons & 20 Games", "salary": 8 }
       ],
       "difficulty": "Easy"
+    },
+    {
+      "id": "proj-cooking",
+      "teamId": "team1",
+      "name": "Cooking",
+      "description": "Cooking",
+      "minimumWork": "Cook 1 Meal",
+      "baseSalary": 1,
+      "currency": "wabi",
+      "startDate": "18-08-2026",
+      "active": true,
+      "projectManagerId": "member_david_michael",
+      "maxMembers": 7,
+      "rules": ["...", ">>>"],
+      "bonusSystem": [
+        { "work": "Every 4 C", "salary": 1 },
+        { "work": "Max 60 C", "salary": 15 }
+      ],
+      "difficulty": "Medium"
     }
   ],
   "teams": [
