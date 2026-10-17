@@ -2411,7 +2411,7 @@
         { "work": "20 verses", "salary": 10 },
         { "work": "30 verses", "salary": 22 }
       ],
-      "difficulty": "Medium"
+      "difficulty": "Hard"
     },
     {
       "id": "proj-study",
@@ -2582,6 +2582,24 @@
         { "work": "Max 60 C", "salary": 15 }
       ],
       "difficulty": "Medium"
+    },
+    {
+      "id": "gym",
+      "teamId": "team1",
+      "name": "Gym",
+      "description": "Eat then workout",
+      "currency": "spice",
+      "minimumWork": "3 meals & 30 min (Everyday)",
+      "baseSalary": 1,
+      "startDate": "12-10-2026",
+      "active": true,
+      "projectManagerId": "member_jonathan_joseph",
+      "maxMembers": 14,
+      "rules": ["___"],
+      "bonusSystem": [
+        { "work": "Max", "salary": 16 }
+      ],
+      "difficulty": "Hard"
     }
   ],
   "teams": [
