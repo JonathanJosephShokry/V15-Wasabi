@@ -2584,7 +2584,7 @@
       "difficulty": "Medium"
     },
     {
-      "id": "gym",
+      "id": "proj-gym",
       "teamId": "team1",
       "name": "Gym",
       "description": "Eat then workout",
