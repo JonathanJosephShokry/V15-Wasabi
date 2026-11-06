@@ -2382,13 +2382,7 @@
       "maxMembers": 14,
       "rules": ["Have a habit tracker app", "Pick 8 habtis that you consider challengeing, make sure they are quantifiable", "Pick only 2 habits that can be done more than once per day up to 3 times", "Send 1 screen shot of your habit tracker once per cycle", "Miss 10 days in a cycle and you are out", "You can only one negative habit (Not doing something)", "If you didn't send a screenshot you will be capped at 40 habits"],
       "bonusSystem": [
-        { "work": "20 habits", "salary": 2 },
-        { "work": "30 habits", "salary": 6 },
-        { "work": "40 habits", "salary": 8 },
-        { "work": "50 habits", "salary": 11 },
-        { "work": "60 habits", "salary": 15 },
-        { "work": "70 habits", "salary": 18 },
-        { "work": "80 habits", "salary": 20 }
+        { "work": "Max 80 habits, 1 screenshot", "salary": 11 }
       ],
       "difficulty": "Easy"
     },
