@@ -80,6 +80,11 @@ export interface SpiceDeal {
   highlight: boolean;
 }
 
+export interface ProjectLeaderboardEntry {
+  memberId: string;
+  progress: number;
+}
+
 export interface Project {
   id: string;
   teamId: string;
@@ -89,6 +94,7 @@ export interface Project {
   minimumWork: string;
   baseSalary: number;
   currency?: 'wabi' | 'spice';
+  unit?: string;
   startDate: string;
   active: boolean;
   projectManagerId?: string;
@@ -98,6 +104,7 @@ export interface Project {
   difficulty: 'Easy' | 'Medium' | 'Hard' | 'Extreme';
   end_date?: string;
   endDate?: string;
+  leaderboard?: ProjectLeaderboardEntry[];
 }
 
 export interface TeamShopItem {
@@ -167,6 +174,7 @@ export interface DynamicMemberData {
 export interface DynamicProjectData {
   id: string;
   members: string[];
+  leaderboard?: ProjectLeaderboardEntry[];
 }
 
 export interface DynamicData {

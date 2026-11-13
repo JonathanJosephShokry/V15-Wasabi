@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { WasabiData, Project, Member } from '../types';
-import { ArrowLeft, Clock, Users } from 'lucide-react';
+import { WasabiData, Member } from '../types';
+import { ArrowLeft, Clock, Users, Trophy } from 'lucide-react';
 import { getProjectAge, getProjectTheme, getMemberIcon, getProjectLimitInfo } from '../utils';
 
 interface ProjectDetailsProps {
@@ -16,9 +16,34 @@ export const ProjectDetails: React.FC<ProjectDetailsProps> = ({ data }) => {
 
   if (!project) return <div className="p-20 text-center">Project not found</div>;
 
-  const age = getProjectAge(project.startDate);
-  const { theme, visual } = getProjectTheme(project.startDate);
-  const pm = data.members.find(m => m.id === project.projectManagerId);
+  const age = getProjectAge(project.startDate, now);
+  const { theme, visual } = getProjectTheme(project.startDate, now);
+
+  const rawLeaderboard = project.leaderboard ?? [];
+  const resolvedSorted = rawLeaderboard
+    .map(entry => {
+      const member = data.members.find(m => m.id === entry.memberId);
+      if (!member) return null;
+      return {
+        member,
+        progress: entry.progress
+      };
+    })
+    .filter((item): item is { member: Member; progress: number } => item !== null)
+    .sort((a, b) => b.progress - a.progress);
+
+  const rankedLeaderboard = resolvedSorted.map(entry => {
+    const higherCount = resolvedSorted.filter(other => other.progress > entry.progress).length;
+    return {
+      ...entry,
+      rank: higherCount + 1
+    };
+  });
+
+  const podiumEntries = rankedLeaderboard.slice(0, 3);
+  const remainingEntries = rankedLeaderboard.slice(3);
+  const progressUnit = project.unit?.trim() || '';
+  const isSpiceProject = project.currency === 'spice';
 
   const renderCurrency = (amount: number) => {
     const isSpice = project.currency === 'spice';
@@ -32,6 +57,34 @@ export const ProjectDetails: React.FC<ProjectDetailsProps> = ({ data }) => {
         <span>{amount}</span>
       </div>
     );
+  };
+
+  const getPodiumStyles = (rank: number) => {
+    if (rank === 1) {
+      return {
+        card: 'bg-gradient-to-b from-[#FFFBEB] to-white border-[#D4AF37] shadow-md hover:shadow-lg',
+        avatarBorder: 'border-[#D4AF37]',
+        rankColor: 'text-[#B45309]',
+        medal: '🥇',
+        label: '1st Place'
+      };
+    }
+    if (rank === 2) {
+      return {
+        card: 'bg-gradient-to-b from-[#F8FAFC] to-white border-[#CBD5E1] shadow-sm hover:shadow-md',
+        avatarBorder: 'border-[#94A3B8]',
+        rankColor: 'text-[#475569]',
+        medal: '🥈',
+        label: '2nd Place'
+      };
+    }
+    return {
+      card: 'bg-gradient-to-b from-[#FFF7ED] to-white border-[#E0A878] shadow-sm hover:shadow-md',
+      avatarBorder: 'border-[#CD7F32]',
+      rankColor: 'text-[#9A3412]',
+      medal: '🥉',
+      label: '3rd Place'
+    };
   };
 
   return (
@@ -140,6 +193,156 @@ export const ProjectDetails: React.FC<ProjectDetailsProps> = ({ data }) => {
                   );
                 })}
               </div>
+            </section>
+
+            {/* Last Cycle Leaderboard Section */}
+            <section className="bg-white p-8 rounded-2xl border-2 border-[#E0E0E0] shadow-md">
+              <div className="flex items-baseline justify-between mb-6 gap-3 flex-wrap">
+                <h3 className="text-base sm:text-xl font-bold text-[#6B5435] flex items-center gap-2.5 min-w-0">
+                  <Trophy size={20} className="text-[#D4AF37] shrink-0" />
+                  <span className="truncate">Last Cycle Leaderboard</span>
+                </h3>
+                {rankedLeaderboard.length > 0 && (
+                  <div className="text-xs font-semibold text-[#8B6F47] shrink-0 whitespace-nowrap">
+                    {rankedLeaderboard.length} ranked
+                    {progressUnit ? ` · ${progressUnit}` : ''}
+                  </div>
+                )}
+              </div>
+
+              {rankedLeaderboard.length === 0 ? (
+                <div className="border-2 border-dashed border-[#E0E0E0] rounded-xl p-10 text-center bg-[#FAFAFA]">
+                  <Trophy size={32} className="mx-auto text-[#8B6F47]/40 mb-3" />
+                  <div className="font-bold text-[#6B5435] text-base">
+                    No rankings recorded for the last cycle yet
+                  </div>
+                  <p className="text-sm text-[#666666] mt-1 max-w-md mx-auto">
+                    Once last cycle results are added, top performers and member progress will appear here.
+                  </p>
+                </div>
+              ) : (
+                <div>
+                  {/* Top 3 Podium */}
+                  <div
+                    className={`grid gap-4 items-end ${
+                      podiumEntries.length === 1
+                        ? 'grid-cols-1 max-w-xs mx-auto'
+                        : podiumEntries.length === 2
+                        ? 'grid-cols-1 sm:grid-cols-2 max-w-xl mx-auto'
+                        : 'grid-cols-1 sm:grid-cols-3'
+                    }`}
+                  >
+                    {podiumEntries.map((entry, idx) => {
+                      const styles = getPodiumStyles(entry.rank);
+                      const isFirstSlot = podiumEntries.length === 3 && idx === 0;
+                      const orderClass =
+                        podiumEntries.length === 3
+                          ? idx === 0
+                            ? 'sm:order-2'
+                            : idx === 1
+                            ? 'sm:order-1'
+                            : 'sm:order-3'
+                          : '';
+
+                      return (
+                        <motion.div
+                          key={entry.member.id}
+                          initial={{ opacity: 0, y: 12 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 0.25, delay: idx * 0.06 }}
+                          className={orderClass}
+                        >
+                          <Link
+                            to={`/member/${entry.member.id}`}
+                            className={`flex flex-col items-center text-center rounded-2xl border-2 transition-all hover:-translate-y-1 group ${
+                              styles.card
+                            } ${isFirstSlot ? 'p-6 sm:pt-7 sm:pb-8' : 'p-5'}`}
+                          >
+                            <div className="flex items-center gap-1.5 mb-3">
+                              <span className="text-xl leading-none" aria-hidden="true">
+                                {styles.medal}
+                              </span>
+                              <span className={`text-xs font-extrabold tracking-wide uppercase tabular-nums ${styles.rankColor}`}>
+                                #{entry.rank}
+                              </span>
+                            </div>
+
+                            <img
+                              src={`/icons/${getMemberIcon(entry.member, data)}`}
+                              alt={entry.member.name}
+                              referrerPolicy="no-referrer"
+                              className={`rounded-full object-cover border-4 transition-transform group-hover:scale-105 mb-3 ${
+                                styles.avatarBorder
+                              } ${isFirstSlot ? 'w-20 h-20' : 'w-16 h-16'}`}
+                            />
+
+                            <div className="w-full font-bold text-[#6B5435] group-hover:text-[#9FD356] transition-colors truncate px-1">
+                              {entry.member.name}
+                            </div>
+
+                            <div className="mt-2 flex items-baseline justify-center gap-1 tabular-nums">
+                              <span
+                                className={`font-black ${
+                                  isFirstSlot ? 'text-2xl' : 'text-xl'
+                                } ${isSpiceProject ? 'text-[#E8631A]' : 'text-[#6B5435]'}`}
+                              >
+                                {entry.progress.toLocaleString()}
+                              </span>
+                              {progressUnit && (
+                                <span className="text-xs font-semibold text-[#8B6F47]">
+                                  {progressUnit}
+                                </span>
+                              )}
+                            </div>
+                          </Link>
+                        </motion.div>
+                      );
+                    })}
+                  </div>
+
+                  {/* Remaining Ranked List (#4+) */}
+                  {remainingEntries.length > 0 && (
+                    <div className="mt-6 border border-[#E0E0E0] rounded-xl divide-y divide-[#E0E0E0] bg-[#FAFAFA]/60 overflow-hidden">
+                      {remainingEntries.map((entry, idx) => (
+                        <motion.div
+                          key={entry.member.id}
+                          initial={{ opacity: 0, y: 8 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 0.2, delay: 0.18 + idx * 0.04 }}
+                        >
+                          <Link
+                            to={`/member/${entry.member.id}`}
+                            className="flex items-center gap-3.5 px-4 py-3.5 hover:bg-[#F3F8EC] transition-colors group"
+                          >
+                            <div className="w-8 shrink-0 text-center font-black text-sm text-[#8B6F47] tabular-nums">
+                              #{entry.rank}
+                            </div>
+                            <img
+                              src={`/icons/${getMemberIcon(entry.member, data)}`}
+                              alt={entry.member.name}
+                              referrerPolicy="no-referrer"
+                              className="w-10 h-10 rounded-full object-cover border-2 border-[#9FD356]/70 shrink-0 transition-transform group-hover:scale-105"
+                            />
+                            <div className="flex-1 min-w-0 font-bold text-sm text-[#6B5435] group-hover:text-[#9FD356] transition-colors truncate">
+                              {entry.member.name}
+                            </div>
+                            <div className="text-right shrink-0 tabular-nums">
+                              <span className={`text-base font-black ${isSpiceProject ? 'text-[#E8631A]' : 'text-[#6B5435]'}`}>
+                                {entry.progress.toLocaleString()}
+                              </span>
+                              {progressUnit && (
+                                <span className="text-xs font-semibold text-[#8B6F47] ml-1.5">
+                                  {progressUnit}
+                                </span>
+                              )}
+                            </div>
+                          </Link>
+                        </motion.div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              )}
             </section>
           </div>
 

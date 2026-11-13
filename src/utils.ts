@@ -162,9 +162,8 @@ export function getTimeRemaining(endDate: string, now: Date): string {
   return parts.length > 0 ? parts.join(' ') : "Less than a minute";
 }
 
-export function getProjectAge(startDate: string): string {
+export function getProjectAge(startDate: string, now: Date = new Date()): string {
   const start = parseDate(startDate);
-  const now = new Date("2026-03-11T08:34:22-07:00");
   const diffMs = now.getTime() - start.getTime();
   
   if (diffMs < 0) return "Just Born";
@@ -176,18 +175,17 @@ export function getProjectAge(startDate: string): string {
   if (days < 7) return `${days}d`;
   
   const weeks = Math.floor(days / 7);
-  if (weeks < 4) return `${weeks}w`;
-  
   const months = Math.floor(days / 30.44);
+  if (weeks < 4 || months < 1) return `${weeks}w`;
+  
   if (months < 12) return `${months}mo`;
   
   const years = Math.floor(days / 365.25);
   return `${years}y`;
 }
 
-export function getProjectTheme(startDate: string): { theme: string, visual: string } {
+export function getProjectTheme(startDate: string, now: Date = new Date()): { theme: string, visual: string } {
   const start = parseDate(startDate);
-  const now = new Date("2026-03-11T08:34:22-07:00");
   const diffMs = now.getTime() - start.getTime();
   const days = diffMs / (1000 * 60 * 60 * 24);
 

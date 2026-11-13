@@ -477,7 +477,8 @@
         "member_lydia_rafik_youssef",
         "member_peter_boshra",
         "member_david_michael"
-      ]
+      ],
+      "leaderboard": []
     },
     {
       "id": "proj-bible1.2",
@@ -488,7 +489,8 @@
         "member_venus",
         "member_chris_ramy",
         "member_daniel_rafik"
-      ]
+      ],
+      "leaderboard": []
     },
     {
       "id": "proj-bible2",
@@ -496,7 +498,8 @@
         "member_mina",
         "member_lucas",
         "member_bassem_mounir"
-      ]
+      ],
+      "leaderboard": []
     },
     {
       "id": "proj-bible3",
@@ -504,7 +507,8 @@
         "member_yassa",
         "member_antony",
         "member_sama_usama"
-      ]
+      ],
+      "leaderboard": []
     },
     {
       "id": "proj-habits",
@@ -520,7 +524,8 @@
         "member_daniel_walaa",
         "member_peter_boshra",
         "member_lydia_rafik_youssef"
-      ]
+      ],
+      "leaderboard": []
     },
     {
       "id": "proj-hidden_in_my_heart",
@@ -529,7 +534,8 @@
         "member_jonathan_joseph",
         "member_daniel_walaa",
         "member_yana"
-      ]
+      ],
+      "leaderboard": []
     },
     {
       "id": "proj-study",
@@ -546,7 +552,8 @@
         "member_haneen",
         "member_joren",
         "member_carla_walaa"
-      ]
+      ],
+      "leaderboard": []
     },
     {
       "id": "proj-languages",
@@ -554,7 +561,8 @@
         "member_joren",
         "member_daniel_walaa",
         "member_yana"
-      ]
+      ],
+      "leaderboard": []
     },
     {
       "id": "book_club",
@@ -567,6 +575,13 @@
         "member_peter_boshra",
         "member_mannuel",
         "member_chris_ramy"
+      ],
+      "leaderboard": [
+        { "memberId": "member_joren", "progress": 600 },
+        { "memberId": "member_daniel_walaa", "progress": 450 },
+        { "memberId": "member_lydia_rafik_youssef", "progress": 320 },
+        { "memberId": "member_nour", "progress": 210 },
+        { "memberId": "member_chris_ramy", "progress": 140 }
       ]
     },
     {
@@ -579,7 +594,8 @@
         "member_chris_ramy",
         "member_karen",
         "member_daniel_walaa"
-      ]
+      ],
+      "leaderboard": []
     },
     {
       "id": "proj-chess",
@@ -589,7 +605,8 @@
         "member_mannuel",
         "member_karen",
         "member_yana"
-      ]
+      ],
+      "leaderboard": []
     },
     {
       "id": "proj-cooking",
@@ -597,13 +614,15 @@
         "member_joren",
         "member_andrea",
         "member_haneen"
-      ]
+      ],
+      "leaderboard": []
     },
     {
       "id": "proj-gym",
       "members": [
         "member_chris_ramy"
-      ]
+      ],
+      "leaderboard": []
     }
   ]
 }

@@ -57,10 +57,14 @@ const App: React.FC = () => {
       if (dynamicProject) {
         return {
           ...project,
-          members: dynamicProject.members
+          members: dynamicProject.members,
+          leaderboard: dynamicProject.leaderboard ?? []
         };
       }
-      return project;
+      return {
+        ...project,
+        leaderboard: []
+      };
     });
 
     setData({
