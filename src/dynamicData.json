@@ -3,7 +3,7 @@
     {
       "id": "member_daniel_rafik",
       "wabi": 47,
-      "cycle_wabi": 1,
+      "cycle_wabi": 0,
       "last_wabi": 46,
       "spice": 162,
       "cycle_spice": 0,
@@ -13,24 +13,24 @@
     },
     {
       "id": "member_david_michael",
-      "wabi": 93,
-      "cycle_wabi": 1,
-      "last_wabi": 92,
+      "wabi": 95,
+      "cycle_wabi": 2,
+      "last_wabi": 93,
       "spice": 34,
       "cycle_spice": 0,
       "last_spice": 34,
-      "exp": 26,
+      "exp": 27,
       "restricted": false
     },
     {
       "id": "member_jonathan_joseph",
-      "wabi": 143,
-      "cycle_wabi": 15,
-      "last_wabi": 128,
+      "wabi": 159,
+      "cycle_wabi": 16,
+      "last_wabi": 143,
       "spice": 35,
-      "cycle_spice": 5,
-      "last_spice": 30,
-      "exp": 27,
+      "cycle_spice": 0,
+      "last_spice": 35,
+      "exp": 28,
       "restricted": false
     },
     {
@@ -57,13 +57,13 @@
     },
     {
       "id": "member_peter_boshra",
-      "wabi": 135,
-      "cycle_wabi": 3,
-      "last_wabi": 132,
-      "spice": 48,
+      "wabi": 136,
+      "cycle_wabi": 1,
+      "last_wabi": 135,
+      "spice": 49,
       "cycle_spice": 1,
-      "last_spice": 47,
-      "exp": 27,
+      "last_spice": 48,
+      "exp": 28,
       "restricted": false
     },
     {
@@ -79,24 +79,24 @@
     },
     {
       "id": "member_joren",
-      "wabi": 327,
-      "cycle_wabi": 23,
-      "last_wabi": 304,
-      "spice": 207,
-      "cycle_spice": 31,
-      "last_spice": 176,
-      "exp": 27,
+      "wabi": 343,
+      "cycle_wabi": 16,
+      "last_wabi": 327,
+      "spice": 234,
+      "cycle_spice": 27,
+      "last_spice": 207,
+      "exp": 28,
       "restricted": false
     },
     {
       "id": "member_haneen",
-      "wabi": 83,
-      "cycle_wabi": 4,
-      "last_wabi": 79,
-      "spice": 88,
-      "cycle_spice": 8,
-      "last_spice": 80,
-      "exp": 23,
+      "wabi": 85,
+      "cycle_wabi": 2,
+      "last_wabi": 83,
+      "spice": 101,
+      "cycle_spice": 13,
+      "last_spice": 88,
+      "exp": 24,
       "restricted": false
     },
     {
@@ -112,35 +112,35 @@
     },
     {
       "id": "member_nour",
-      "wabi": 65,
-      "cycle_wabi": 4,
-      "last_wabi": 61,
-      "spice": 162,
-      "cycle_spice": 13,
-      "last_spice": 149,
-      "exp": 22,
+      "wabi": 66,
+      "cycle_wabi": 1,
+      "last_wabi": 65,
+      "spice": 165,
+      "cycle_spice": 3,
+      "last_spice": 162,
+      "exp": 23,
       "restricted": false
     },
     {
       "id": "member_philip",
-      "wabi": 252,
-      "cycle_wabi": 16,
-      "last_wabi": 236,
-      "spice": 161,
-      "cycle_spice": 26,
-      "last_spice": 135,
-      "exp": 26,
+      "wabi": 265,
+      "cycle_wabi": 13,
+      "last_wabi": 252,
+      "spice": 180,
+      "cycle_spice": 19,
+      "last_spice": 161,
+      "exp": 27,
       "restricted": false
     },
     {
       "id": "member_karen",
-      "wabi": 367,
-      "cycle_wabi": 14,
-      "last_wabi": 353,
-      "spice": 86,
-      "cycle_spice": 18,
-      "last_spice": 68,
-      "exp": 26,
+      "wabi": 379,
+      "cycle_wabi": 12,
+      "last_wabi": 367,
+      "spice": 103,
+      "cycle_spice": 17,
+      "last_spice": 86,
+      "exp": 27,
       "restricted": false
     },
     {
@@ -156,13 +156,13 @@
     },
     {
       "id": "member_yana",
-      "wabi": 538,
+      "wabi": 553,
       "cycle_wabi": 15,
-      "last_wabi": 523,
-      "spice": 298,
-      "cycle_spice": 20,
-      "last_spice": 278,
-      "exp": 25,
+      "last_wabi": 538,
+      "spice": 325,
+      "cycle_spice": 27,
+      "last_spice": 298,
+      "exp": 26,
       "restricted": false
     },
     {
@@ -179,34 +179,34 @@
     {
       "id": "member_chris_ramy",
       "wabi": 189,
-      "cycle_wabi": 9,
-      "last_wabi": 180,
-      "spice": 134,
-      "cycle_spice": 18,
-      "last_spice": 116,
-      "exp": 25,
+      "cycle_wabi": 0,
+      "last_wabi": 189,
+      "spice": 140,
+      "cycle_spice": 6,
+      "last_spice": 134,
+      "exp": 26,
       "restricted": false
     },
     {
       "id": "member_daniel_walaa",
-      "wabi": 341,
-      "cycle_wabi": 7,
-      "last_wabi": 334,
-      "spice": 118,
-      "cycle_spice": 14,
-      "last_spice": 104,
-      "exp": 25,
+      "wabi": 356,
+      "cycle_wabi": 15,
+      "last_wabi": 341,
+      "spice": 128,
+      "cycle_spice": 10,
+      "last_spice": 118,
+      "exp": 26,
       "restricted": false
     },
     {
       "id": "member_mannuel",
-      "wabi": 316,
-      "cycle_wabi": 18,
-      "last_wabi": 298,
-      "spice": 123,
-      "cycle_spice": 12,
-      "last_spice": 111,
-      "exp": 25,
+      "wabi": 331,
+      "cycle_wabi": 15,
+      "last_wabi": 316,
+      "spice": 133,
+      "cycle_spice": 10,
+      "last_spice": 123,
+      "exp": 26,
       "restricted": false
     },
     {
@@ -222,13 +222,13 @@
     },
     {
       "id": "member_yasmine",
-      "wabi": 527,
-      "cycle_wabi": 16,
-      "last_wabi": 511,
-      "spice": 171,
-      "cycle_spice": 11,
-      "last_spice": 160,
-      "exp": 24,
+      "wabi": 535,
+      "cycle_wabi": 8,
+      "last_wabi": 527,
+      "spice": 177,
+      "cycle_spice": 6,
+      "last_spice": 171,
+      "exp": 25,
       "restricted": false
     },
     {
@@ -244,13 +244,13 @@
     },
     {
       "id": "member_carla_walaa",
-      "wabi": 40,
-      "cycle_wabi": 0,
+      "wabi": 41,
+      "cycle_wabi": 1,
       "last_wabi": 40,
-      "spice": 138,
-      "cycle_spice": 14,
-      "last_spice": 124,
-      "exp": 20,
+      "spice": 147,
+      "cycle_spice": 9,
+      "last_spice": 138,
+      "exp": 21,
       "restricted": false
     },
     {
@@ -277,13 +277,13 @@
     },
     {
       "id": "member_venus",
-      "wabi": 106,
-      "cycle_wabi": 2,
-      "last_wabi": 104,
-      "spice": 159,
-      "cycle_spice": 3,
-      "last_spice": 156,
-      "exp": 22,
+      "wabi": 112,
+      "cycle_wabi": 6,
+      "last_wabi": 106,
+      "spice": 182,
+      "cycle_spice": 23,
+      "last_spice": 159,
+      "exp": 23,
       "restricted": false
     },
     {
@@ -310,13 +310,13 @@
     },
     {
       "id": "member_lydia_rafik_youssef",
-      "wabi": 312,
-      "cycle_wabi": 8,
-      "last_wabi": 304,
-      "spice": 108,
-      "cycle_spice": 9,
-      "last_spice": 99,
-      "exp": 20,
+      "wabi": 317,
+      "cycle_wabi": 5,
+      "last_wabi": 312,
+      "spice": 114,
+      "cycle_spice": 6,
+      "last_spice": 108,
+      "exp": 21,
       "restricted": false
     },
     {
@@ -324,10 +324,10 @@
       "wabi": 3,
       "cycle_wabi": 0,
       "last_wabi": 3,
-      "spice": 23,
-      "cycle_spice": 4,
-      "last_spice": 19,
-      "exp": 11,
+      "spice": 25,
+      "cycle_spice": 2,
+      "last_spice": 23,
+      "exp": 12,
       "restricted": false
     },
     {
@@ -467,30 +467,91 @@
     {
       "id": "proj-bible1.1",
       "members": [
+        "member_david_michael",
         "member_joren",
-        "member_karen",
-        "member_yana",
         "member_philip",
-        "member_yasmine",
         "member_mannuel",
-        "member_daniel_walaa",
+        "member_karen",
+        "member_yasmine",
+        "member_yana",
         "member_lydia_rafik_youssef",
+        "member_daniel_walaa",
         "member_peter_boshra",
-        "member_david_michael"
+        "member_carla_walaa"
       ],
-      "leaderboard": []
+      "leaderboard": [
+        {
+          "memberId": "member_mannuel",
+          "progress": 11
+        },
+        {
+          "memberId": "member_joren",
+          "progress": 9
+        },
+        {
+          "memberId": "member_karen",
+          "progress": 9
+        },
+        {
+          "memberId": "member_philip",
+          "progress": 9
+        },
+        {
+          "memberId": "member_yana",
+          "progress": 8
+        },
+        {
+          "memberId": "member_yasmine",
+          "progress": 5
+        },
+        {
+          "memberId": "member_daniel_walaa",
+          "progress": 4
+        },
+        {
+          "memberId": "member_lydia_rafik_youssef",
+          "progress": 4
+        },
+        {
+          "memberId": "member_david_michael",
+          "progress": 2
+        },
+        {
+          "memberId": "member_carla_walaa",
+          "progress": 1
+        },
+        {
+          "memberId": "member_peter_boshra",
+          "progress": 1
+        }
+      ]
     },
     {
       "id": "proj-bible1.2",
       "members": [
         "member_jonathan_joseph",
-        "member_haneen",
         "member_nour",
         "member_venus",
-        "member_chris_ramy",
-        "member_daniel_rafik"
+        "member_haneen"
       ],
-      "leaderboard": []
+      "leaderboard": [
+        {
+          "memberId": "member_jonathan_joseph",
+          "progress": 9
+        },
+        {
+          "memberId": "member_venus",
+          "progress": 6
+        },
+        {
+          "memberId": "member_haneen",
+          "progress": 2
+        },
+        {
+          "memberId": "member_nour",
+          "progress": 1
+        }
+      ]
     },
     {
       "id": "proj-bible2",
@@ -515,114 +576,321 @@
       "members": [
         "member_jonathan_joseph",
         "member_joren",
-        "member_karen",
-        "member_chris_ramy",
-        "member_yana",
         "member_philip",
-        "member_yasmine",
         "member_mannuel",
-        "member_daniel_walaa",
-        "member_peter_boshra",
-        "member_lydia_rafik_youssef"
+        "member_karen",
+        "member_yasmine",
+        "member_yana",
+        "member_lydia_rafik_youssef",
+        "member_daniel_walaa"
       ],
-      "leaderboard": []
+      "leaderboard": [
+        {
+          "memberId": "member_mannuel",
+          "progress": 56
+        },
+        {
+          "memberId": "member_philip",
+          "progress": 48
+        },
+        {
+          "memberId": "member_joren",
+          "progress": 46
+        },
+        {
+          "memberId": "member_jonathan_joseph",
+          "progress": 45
+        },
+        {
+          "memberId": "member_daniel_walaa",
+          "progress": 43
+        },
+        {
+          "memberId": "member_karen",
+          "progress": 38
+        },
+        {
+          "memberId": "member_yana",
+          "progress": 31
+        },
+        {
+          "memberId": "member_yasmine",
+          "progress": 30
+        },
+        {
+          "memberId": "member_lydia_rafik_youssef",
+          "progress": 19
+        },
+        {
+          "memberId": "member_peter_boshra",
+          "progress": 7
+        }
+      ]
     },
     {
       "id": "proj-hidden_in_my_heart",
       "members": [
-        "member_joren",
-        "member_jonathan_joseph",
         "member_daniel_walaa",
-        "member_yana"
+        "member_joren",
+        "member_yana",
+        "member_jonathan_joseph"
       ],
-      "leaderboard": []
+      "leaderboard": [
+        {
+          "memberId": "member_daniel_walaa",
+          "progress": 12
+        },
+        {
+          "memberId": "member_yana",
+          "progress": 6
+        },
+        {
+          "memberId": "member_jonathan_joseph",
+          "progress": 5
+        },
+        {
+          "memberId": "member_joren",
+          "progress": 5
+        }
+      ]
     },
     {
       "id": "proj-study",
       "members": [
-        "member_karen",
-        "member_chris_ramy",
-        "member_yana",
-        "member_philip",
-        "member_yasmine",
-        "member_lydia_rafik_youssef",
-        "member_venus",
-        "member_jonathan_joseph",
-        "member_daniel_walaa",
-        "member_haneen",
         "member_joren",
-        "member_carla_walaa"
+        "member_haneen",
+        "member_karen",
+        "member_carla_walaa",
+        "member_yasmine",
+        "member_venus",
+        "member_yana",
+        "member_lydia_rafik_youssef",
+        "member_daniel_walaa",
+        "member_philip",
+        "member_chris_ramy"
       ],
-      "leaderboard": []
+      "leaderboard": [
+        {
+          "memberId": "member_yana",
+          "progress": 1670
+        },
+        {
+          "memberId": "member_joren",
+          "progress": 1647
+        },
+        {
+          "memberId": "member_venus",
+          "progress": 1325
+        },
+        {
+          "memberId": "member_haneen",
+          "progress": 1240
+        },
+        {
+          "memberId": "member_karen",
+          "progress": 1055
+        },
+        {
+          "memberId": "member_carla_walaa",
+          "progress": 900
+        },
+        {
+          "memberId": "member_daniel_walaa",
+          "progress": 890
+        },
+        {
+          "memberId": "member_lydia_rafik_youssef",
+          "progress": 760
+        },
+        {
+          "memberId": "member_philip",
+          "progress": 660
+        },
+        {
+          "memberId": "member_chris_ramy",
+          "progress": 360
+        },
+        {
+          "memberId": "member_yasmine",
+          "progress": 320
+        }
+      ]
     },
     {
       "id": "proj-languages",
       "members": [
-        "member_joren",
         "member_daniel_walaa",
-        "member_yana"
+        "member_yana",
+        "member_joren"
       ],
-      "leaderboard": []
+      "leaderboard": [
+        {
+          "memberId": "member_joren",
+          "progress": 21
+        },
+        {
+          "memberId": "member_daniel_walaa",
+          "progress": 12
+        },
+        {
+          "memberId": "member_yana",
+          "progress": 5
+        }
+      ]
     },
     {
       "id": "book_club",
       "members": [
-        "member_joren",
         "member_daniel_walaa",
-        "member_lydia_rafik_youssef",
         "member_nour",
-        "member_carla_walaa",
+        "member_venus",
+        "member_joren",
+        "member_lydia_rafik_youssef",
         "member_peter_boshra",
-        "member_mannuel",
-        "member_chris_ramy"
+        "member_carla_walaa",
+        "member_mannuel"
       ],
       "leaderboard": [
-        { "memberId": "member_joren", "progress": 600 },
-        { "memberId": "member_daniel_walaa", "progress": 450 },
-        { "memberId": "member_lydia_rafik_youssef", "progress": 320 },
-        { "memberId": "member_nour", "progress": 210 },
-        { "memberId": "member_chris_ramy", "progress": 140 }
+        {
+          "memberId": "member_venus",
+          "progress": 105
+        },
+        {
+          "memberId": "member_joren",
+          "progress": 88
+        },
+        {
+          "memberId": "member_nour",
+          "progress": 35
+        },
+        {
+          "memberId": "member_carla_walaa",
+          "progress": 20
+        },
+        {
+          "memberId": "member_peter_boshra",
+          "progress": 15
+        },
+        {
+          "memberId": "member_lydia_rafik_youssef",
+          "progress": 13
+        },
+        {
+          "memberId": "member_daniel_walaa",
+          "progress": 12
+        },
+        {
+          "memberId": "member_mannuel",
+          "progress": 12
+        }
       ]
     },
     {
       "id": "tasbe7",
       "members": [
-        "member_joren",
         "member_philip",
-        "member_yasmine",
         "member_yana",
-        "member_chris_ramy",
+        "member_daniel_walaa",
         "member_karen",
-        "member_daniel_walaa"
+        "member_chris_ramy",
+        "member_yasmine",
+        "member_joren"
       ],
-      "leaderboard": []
+      "leaderboard": [
+        {
+          "memberId": "member_yana",
+          "progress": 750
+        },
+        {
+          "memberId": "member_philip",
+          "progress": 285
+        },
+        {
+          "memberId": "member_daniel_walaa",
+          "progress": 170
+        },
+        {
+          "memberId": "member_yasmine",
+          "progress": 120
+        },
+        {
+          "memberId": "member_joren",
+          "progress": 85
+        },
+        {
+          "memberId": "member_chris_ramy",
+          "progress": 75
+        },
+        {
+          "memberId": "member_karen",
+          "progress": 45
+        }
+      ]
     },
     {
       "id": "proj-chess",
       "members": [
-        "member_chris_ramy",
-        "member_philip",
         "member_mannuel",
         "member_karen",
-        "member_yana"
+        "member_philip",
+        "member_chris_ramy"
       ],
-      "leaderboard": []
+      "leaderboard": [
+        {
+          "memberId": "member_mannuel",
+          "progress": 41
+        },
+        {
+          "memberId": "member_karen",
+          "progress": 21
+        },
+        {
+          "memberId": "member_philip",
+          "progress": 13
+        },
+        {
+          "memberId": "member_chris_ramy",
+          "progress": 2
+        }
+      ]
     },
     {
       "id": "proj-cooking",
       "members": [
         "member_joren",
-        "member_andrea",
-        "member_haneen"
+        "member_haneen",
+        "member_andrea"
       ],
-      "leaderboard": []
+      "leaderboard": [
+        {
+          "memberId": "member_andrea",
+          "progress": 9
+        },
+        {
+          "memberId": "member_haneen",
+          "progress": 9
+        },
+        {
+          "memberId": "member_joren",
+          "progress": 5
+        }
+      ]
     },
     {
       "id": "proj-gym",
       "members": [
-        "member_chris_ramy"
+        "member_philip"
       ],
-      "leaderboard": []
+      "leaderboard": [
+        {
+          "memberId": "member_philip",
+          "progress": 33
+        },
+        {
+          "memberId": "member_jonathan_joseph",
+          "progress": 8
+        }
+      ]
     }
   ]
 }
